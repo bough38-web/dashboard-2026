@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>월별 관리고객 재계약/사전리텐션 활동 실적 종합 대시보드</title>
+<style>
+:root {
+/* 컬러 팔레트 */
+--bg-body: #f1f5f9;
+--surface-bg: #ffffff;
+--primary-dark: #0f172a;
+--primary-blue: #3b82f6;
+--border-color: #e2e8f0;
+--text-main: #334155;
+--text-muted: #64748b;
+/* 테이블 헤더 컬러 */
+--th-bg: #f8fafc;
+--th-total-bg: #eff6ff;
+/* 달성률 뱃지 컬러 */
+--badge-green-bg: #dcfce7;
+--badge-green-text: #166534;
+--badge-red-bg: #fee2e2;
+--badge-red-text: #991b1b;
+--badge-blue-bg: #dbeafe;
+--badge-blue-text: #1e40af;
+--badge-gray-bg: #f1f5f9;
+--badge-gray-text: #475569;
+
+--shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+--shadow-hover: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+body {
+font-family: 'Pretendard', 'Malgun Gothic', '맑은 고딕', sans-serif;
+background-color: var(--bg-body);
+margin: 0;
+padding: 40px 20px;
+display: flex;
+justify-content: center;
+color: var(--text-main);
+}
+
+.dashboard-wrapper {
+width: 100%;
+max-width: 1400px;
+display: flex;
+flex-direction: column;
+gap: 25px;
+}
+
+/* 메인 대시보드 타이틀 */
+.main-title {
+font-size: 26px;
+color: var(--primary-dark);
+margin: 0;
+padding-bottom: 10px;
+border-bottom: 3px solid var(--primary-dark);
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.main-title::before { content: '🎯'; font-size: 28px; }
+
+/* =======================================================
+상단 KPI 패널 영역 (요청하신 이미지 2개 적용)
+======================================================= */
+.kpi-section {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 25px;
+}
+
+.kpi-box {
+background: #f8fafc;
+border: 1px solid var(--border-color);
+border-radius: 12px;
+padding: 20px;
+box-shadow: var(--shadow-soft);
+}
+
+.kpi-header {
+color: white;
+text-align: center;
+padding: 12px;
+border-radius: 8px;
+font-weight: 700;
+font-size: 16px;
+margin-bottom: 20px;
+letter-spacing: -0.3px;
+}
+.bg-navy { background-color: #1e3a8a; }
+.bg-green { background-color: #2f855a; }
+
+/* KPI - 왼쪽 (재계약 활동) */
+.target-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 15px; }
+.t-card {
+background: white; border: 1px solid var(--border-color); border-radius: 8px; text-align: center;
+overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+.t-card.highlight { border: 2px solid #4ade80; }
+.t-card.highlight .t-head { background-color: #f0fdf4; color: #166534; border-bottom: 1px solid #4ade80; }
+.t-head { background-color: #f1f5f9; padding: 12px 6px; font-size: 13px; font-weight: 700; border-bottom: 1px solid var(--border-color); }
+.t-head span { display: block; font-size: 11px; color: var(--text-muted); margin-top: 4px; font-weight: 400; }
+.t-body { padding: 15px 5px; font-size: 13px; color: var(--text-muted); }
+.t-body strong { display: block; font-size: 17px; color: var(--primary-dark); margin: 6px 0; font-weight: 800; }
+.t-body .percent { color: var(--badge-red-text); font-weight: 700; }
+.total-row { background-color: #e0e7ff; border: 1px solid #c7d2fe; color: var(--primary-dark); text-align: center; padding: 14px; border-radius: 8px; font-weight: 700; margin-bottom: 12px; font-size: 15px; }
+.total-row span { color: var(--badge-red-text); font-size: 19px; }
+.note-text { color: var(--badge-red-text); font-size: 13px; text-align: center; font-weight: 600; border: 1px solid #fca5a5; padding: 8px; border-radius: 6px; background: #fef2f2; }
+
+/* KPI - 오른쪽 (사전리텐션 스텝) */
+.steps-wrapper { display: flex; justify-content: space-around; align-items: center; margin-bottom: 30px; margin-top: 30px; padding: 0 10px; }
+.step { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.hexagon {
+width: 56px; height: 48px; color: white; display: flex; align-items: center; justify-content: center;
+font-weight: 800; font-size: 15px; clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+box-shadow: var(--shadow-soft);
+}
+.hex-1 { background-color: #3b82f6; }
+.hex-2 { background-color: #eab308; }
+.hex-3 { background-color: #ef4444; }
+.data-card {
+background-color: white; border: 1.5px solid var(--border-color); border-radius: 25px; padding: 12px 20px; text-align: center;
+box-shadow: var(--shadow-soft); min-width: 110px;
+}
+.data-card .val { font-size: 16px; font-weight: 800; color: var(--text-main); margin-bottom: 4px; display: block; }
+.data-card .pct { font-size: 14px; font-weight: 500; color: var(--text-muted); }
+.data-card.highlight { background-color: #dcfce7; border-color: #86efac; }
+.arrow-box {
+height: 60px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; color: var(--primary-dark); padding-right: 15px; margin: 0 20px;
+background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='1,1 95,1 99,50 95,99 1,99' fill='%23ffffff' stroke='%23cbd5e1' stroke-width='2' vector-effect='non-scaling-stroke' stroke-linejoin='miter'/%3E%3C/svg%3E");
+background-size: 100% 100%; background-repeat: no-repeat; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.04));
+}
+
+/* =======================================================
+하단 표 영역
+======================================================= */
+.table-section {
+background: var(--surface-bg);
+padding: 25px 30px;
+border-radius: 12px;
+box-shadow: var(--shadow-soft);
+}
+
+.table-header-control {
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+margin-bottom: 20px;
+}
+
+.table-title {
+font-size: 18px;
+font-weight: 700;
+color: var(--primary-dark);
+margin: 0;
+}
+
+.meta-info { font-size: 13px; color: var(--text-muted); text-align: right; line-height: 1.6; }
+
+/* 탭 버튼 스타일 */
+.tab-nav { display: flex; gap: 8px; background: #f1f5f9; padding: 6px; border-radius: 8px; border: 1px solid var(--border-color); }
+.tab-btn { padding: 8px 20px; background-color: transparent; border: none; color: var(--text-muted); font-size: 14px; font-weight: 700; border-radius: 6px; cursor: pointer; transition: all 0.2s ease; }
+.tab-btn:hover { color: var(--primary-dark); }
+.tab-btn.active { background-color: var(--primary-dark); color: white; box-shadow: var(--shadow-soft); }
+
+.table-scroll { overflow-x: auto; border: 1px solid var(--border-color); border-radius: 8px; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: center; white-space: nowrap; }
+th, td { border-bottom: 1px solid var(--border-color); border-right: 1px solid var(--border-color); padding: 12px 6px; vertical-align: middle; }
+th:last-child, td:last-child { border-right: none; }
+
+thead th { background-color: var(--th-bg); color: var(--primary-dark); font-weight: 700; }
+thead tr:first-child th { border-bottom: 2px solid #cbd5e1; }
+.bg-total-col { background-color: var(--th-total-bg) !important; }
+.text-blue { color: var(--primary-blue); font-weight: 800; }
+
+/* 신규(1st) 굵은 적색 테두리 강조 */
+.highlight-col-top { border-top: 4px solid #991b1b !important; }
+.highlight-col-bottom { border-bottom: 4px solid #991b1b !important; }
+.highlight-col-left { border-left: 4px solid #991b1b !important; }
+.highlight-col-right { border-right: 4px solid #991b1b !important; }
+.highlight-head-bg { background-color: #fee2e2 !important; color: #991b1b !important; }
+.highlight-bg { background-color: #fffafb !important; }
+tfoot .highlight-foot-bg { background-color: #7f1d1d !important; border-color: #7f1d1d; }
+
+tbody, tfoot { transition: opacity 0.3s ease-in-out; }
+tbody tr:hover { background-color: #f8fafc; }
+tbody tr:hover .highlight-bg { background-color: #ffe4e6 !important; }
+tbody td:first-child { font-weight: 700; color: var(--primary-dark); background-color: #f8fafc; position: sticky; left: 0; border-right: 2px solid var(--border-color); }
+.val-target { color: #64748b; text-align: right; padding-right: 10px; }
+.val-cnt { color: #334155; font-weight: 600; background-color: #fcfcfd; }
+.val-amt { color: var(--primary-dark); font-weight: 800; text-align: right; padding-right: 10px; }
+.col-total { background-color: #fbfcff !important; }
+
+tfoot tr { background-color: var(--primary-dark); }
+tfoot td { border-bottom: none; border-color: #334155; color: white; font-weight: 700; }
+tfoot td:first-child { background-color: var(--primary-dark); position: sticky; left: 0; border-right: 2px solid #334155; }
+tfoot .val-target, tfoot .val-cnt { color: #cbd5e1; background-color: transparent; }
+tfoot .val-amt { color: white; }
+tfoot .bg-total-col { background-color: #1e3a8a !important; border-color: #1e40af; }
+</style>
+</head>
+<body>
+
+<div class="dashboard-wrapper">
+<h1 class="main-title">월별 관리고객 재계약/사전리텐션 활동 실적 대시보드</h1>
+
+<div class="kpi-section">
+<div class="kpi-box">
+<div class="kpi-header bg-navy">① 관리고객 재계약 활동 (목표/실적 관리)</div>
+<div class="target-cards">
+<div class="t-card highlight">
+<div class="t-head">① 만기도래_신규(1st)<br><span>※ '26년 만기도래 (1월~12월)</span></div>
+<div class="t-body">월 목표<br><strong>4,003천원</strong><span class="percent">(58%)</span></div>
+</div>
+<div class="t-card">
+<div class="t-head">② 만기도래_재계약<br><span>※ '26년 만기도래 (수동재계약)</span></div>
+<div class="t-body">월 목표<br><strong>212천원</strong><span class="percent">(3%)</span></div>
+</div>
+<div class="t-card">
+<div class="t-head">③ 약정만료<br><span>※ '26년 만기도래 (자동재계약)</span></div>
+<div class="t-body">월 목표<br><strong>2,634천원</strong><span class="percent">(38%)</span></div>
+</div>
+</div>
+<div class="total-row">재계약활동 월 목표 합계 : <span>6,849천원</span></div>
+<div class="note-text">매월 실적집계 : 당월 전산 수동재계약 적용분만 당월 실적 인정</div>
+</div>
+
+<div class="kpi-box">
+<div class="kpi-header bg-green">② 사전리텐션 활동 (방문율 관리)</div>
+<div class="steps-wrapper">
+<div class="step">
+<div class="hexagon hex-1">1월</div>
+<div class="data-card"><span class="val">304건/301건</span><span class="pct">(99.3%)</span></div>
+</div>
+<div class="step">
+<div class="hexagon hex-2">2월</div>
+<div class="data-card"><span class="val">200건/148건</span><span class="pct">(74.0%)</span></div>
+</div>
+<div class="step">
+<div class="hexagon hex-3">3월</div>
+<div class="data-card highlight"><span class="val">231건/49건</span><span class="pct">(25.0%)</span></div>
+</div>
+</div>
+<div class="arrow-box">~12월 매월 대상 선정 및 VOC지령(담당SP)</div>
+</div>
+</div>
+
+<div class="table-section">
+<div class="table-header-control">
+<div>
+<h2 class="table-title">지사별 재계약 활동 실적 상세 (<span id="titleMonth" class="text-blue">1Q 합계</span>)</h2>
+<div class="tab-nav" style="margin-top: 15px;">
+<button class="tab-btn" data-month="1월" onclick="changeTab('1월')">1월</button>
+<button class="tab-btn" data-month="2월" onclick="changeTab('2월')">2월</button>
+<button class="tab-btn" data-month="3월" onclick="changeTab('3월')">3월</button>
+<button class="tab-btn active" data-month="1Q 합계" onclick="changeTab('1Q 합계')">1Q 합계</button>
+</div>
+</div>
+<div class="meta-info">
+<strong>집계일자 :</strong> 2026. 03. 11 기준<br>
+<strong>단위 :</strong> 건, 천원, %
+</div>
+</div>
+
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th rowspan="2" style="min-width: 80px;">거점명</th>
+<th colspan="4" class="bg-total-col text-blue">총 실적 (계)</th>
+<th colspan="4" class="highlight-col-top highlight-col-left highlight-col-right highlight-head-bg">① 만기도래_신규(1st)</th>
+<th colspan="4">② 만기도래_재계약</th>
+<th colspan="4">③ 약정만료</th>
+</tr>
+<tr>
+<th class="bg-total-col">목표(금액)</th><th class="bg-total-col">실적(건)</th><th class="bg-total-col">실적(금액)</th><th class="bg-total-col">달성률</th>
+<th class="highlight-col-left highlight-bg">목표(금액)</th><th class="highlight-bg">실적(건)</th><th class="highlight-bg">실적(금액)</th><th class="highlight-col-right highlight-bg">달성률</th>
+<th>목표(금액)</th><th>실적(건)</th><th>실적(금액)</th><th>달성률</th>
+<th>목표(금액)</th><th>실적(건)</th><th>실적(금액)</th><th>달성률</th>
+</tr>
+</thead>
+<tbody id="tableBody"></tbody>
+<tfoot id="tableFoot"></tfoot>
+</table>
+</div>
+</div>
+
+</div>
+
+<script>
+// 데이터셋: 중앙과 강북 값 정상 매핑 완벽 반영
+const tableData = {
+"1월": {
+rows: [
+{ name: "중앙", total: [1217, 1, 375], new: [680, 0, 0], renew: [14, 0, 0], expire: [523, 1, 375] },
+{ name: "강북", total: [704, 3, 298], new: [389, 0, 0], renew: [18, 0, 0], expire: [297, 3, 298] },
+{ name: "서대문", total: [929, 1, 275], new: [607, 0, 0], renew: [15, 0, 0], expire: [308, 1, 275] },
+{ name: "고양", total: [952, 12, 1254], new: [632, 0, 0], renew: [30, 3, 341], expire: [291, 9, 913] },
+{ name: "의정부", total: [740, 5, 779], new: [395, 0, 0], renew: [37, 0, 0], expire: [308, 5, 779] },
+{ name: "남양주", total: [679, 0, 0], new: [385, 0, 0], renew: [20, 0, 0], expire: [275, 0, 0] },
+{ name: "강릉", total: [594, 1, 91], new: [355, 0, 0], renew: [18, 0, 0], expire: [221, 1, 91] },
+{ name: "원주", total: [1034, 19, 1613], new: [560, 0, 0], renew: [62, 1, 100], expire: [412, 18, 1513] }
+],
+footer: { total: [6849, 42, 4685], new: [4003, 0, 0], renew: [212, 4, 441], expire: [2634, 38, 4244] }
+},
+"2월": {
+rows: [
+{ name: "중앙", total: [1217, 6, 560], new: [680, 0, 0], renew: [14, 0, 0], expire: [523, 6, 560] },
+{ name: "강북", total: [704, 0, 0], new: [389, 0, 0], renew: [18, 0, 0], expire: [297, 0, 0] },
+{ name: "서대문", total: [929, 1, 282], new: [607, 0, 0], renew: [15, 0, 0], expire: [308, 1, 282] },
+{ name: "고양", total: [952, 3, 337], new: [632, 0, 0], renew: [30, 1, 88], expire: [291, 2, 249] },
+{ name: "의정부", total: [740, 4, 316], new: [395, 0, 0], renew: [37, 0, 0], expire: [308, 3, 271] },
+{ name: "남양주", total: [679, 0, 0], new: [385, 0, 0], renew: [20, 0, 0], expire: [275, 0, 0] },
+{ name: "강릉", total: [594, 1, 70], new: [355, 0, 0], renew: [18, 0, 0], expire: [221, 1, 70] },
+{ name: "원주", total: [1034, 5, 881], new: [560, 0, 0], renew: [62, 1, 536], expire: [412, 4, 345] }
+],
+footer: { total: [6849, 20, 2445], new: [4003, 0, 0], renew: [212, 2, 624], expire: [2634, 18, 1821] }
+},
+"3월": {
+rows: [
+{ name: "중앙", total: [1217, 4, 406], new: [680, 3, 325], renew: [14, 0, 0], expire: [523, 1, 81] },
+{ name: "강북", total: [704, 1, 95], new: [389, 1, 95], renew: [18, 0, 0], expire: [297, 0, 0] },
+{ name: "서대문", total: [929, 3, 263], new: [607, 3, 263], renew: [15, 0, 0], expire: [308, 0, 0] },
+{ name: "고양", total: [952, 19, 1555], new: [632, 2, 117], renew: [30, 0, 0], expire: [291, 17, 1437] },
+{ name: "의정부", total: [740, 12, 1123], new: [395, 5, 232], renew: [37, 1, 163], expire: [308, 7, 773] },
+{ name: "남양주", total: [679, 9, 1146], new: [385, 6, 981], renew: [20, 0, 0], expire: [275, 3, 165] },
+{ name: "강릉", total: [594, 0, 0], new: [355, 0, 0], renew: [18, 0, 0], expire: [221, 0, 0] },
+{ name: "원주", total: [1034, 3, 490], new: [560, 1, 180], renew: [62, 0, 0], expire: [412, 2, 310] }
+],
+footer: { total: [6849, 20, 5079], new: [4003, 21, 2193], renew: [212, 1, 163], expire: [2634, 29, 2722] }
+},
+"1Q 합계": {
+rows: [
+{ name: "중앙", total: [3652, 11, 1341], new: [2041, 3, 325], renew: [42, 0, 0], expire: [1569, 8, 1016] },
+{ name: "강북", total: [2112, 4, 393], new: [1168, 1, 95], renew: [53, 0, 0], expire: [891, 3, 298] },
+{ name: "서대문", total: [2788, 5, 820], new: [1822, 3, 263], renew: [44, 0, 0], expire: [923, 2, 557] },
+{ name: "고양", total: [2857, 34, 3145], new: [1895, 2, 117], renew: [89, 4, 429], expire: [873, 28, 2599] },
+{ name: "의정부", total: [2219, 21, 2218], new: [1186, 5, 232], renew: [110, 1, 163], expire: [923, 15, 1823] },
+{ name: "남양주", total: [2038, 9, 1146], new: [1154, 6, 981], renew: [59, 0, 0], expire: [826, 3, 165] },
+{ name: "강릉", total: [1781, 2, 161], new: [1065, 0, 0], renew: [53, 0, 0], expire: [663, 2, 161] },
+{ name: "원주", total: [3101, 27, 2984], new: [1680, 1, 180], renew: [186, 2, 636], expire: [1236, 24, 2168] }
+],
+footer: { total: [20548, 82, 12208], new: [12010, 21, 2193], renew: [635, 7, 1228], expire: [7903, 85, 8787] }
+}
+};
+
+function getBadge(target, actual) {
+if (target === 0 || actual === 0) return '<span class="badge zero">-</span>';
+const pct = Math.round((actual / target) * 100);
+let cls = 'poor';
+if (pct >= 100) cls = 'excellent';
+else if (pct >= 50) cls = 'good';
+return `<span class="badge ${cls}">${pct}%</span>`;
+}
+
+function formatNum(num) {
+return num === 0 ? '-' : num.toLocaleString();
+}
+
+function renderTable(month) {
+const tbody = document.getElementById('tableBody');
+const tfoot = document.getElementById('tableFoot');
+const monthData = tableData[month];
+let bodyHtml = '';
+monthData.rows.forEach(r => {
+bodyHtml += `
+<tr>
+<td>${r.name}</td>
+<td class="val-target bg-total-col">${formatNum(r.total[0])}</td>
+<td class="val-cnt bg-total-col">${formatNum(r.total[1])}</td>
+<td class="val-amt bg-total-col">${formatNum(r.total[2])}</td>
+<td class="bg-total-col">${getBadge(r.total[0], r.total[2])}</td>
+<td class="val-target highlight-col-left highlight-bg">${formatNum(r.new[0])}</td>
+<td class="val-cnt highlight-bg">${formatNum(r.new[1])}</td>
+<td class="val-amt highlight-bg">${formatNum(r.new[2])}</td>
+<td class="highlight-col-right highlight-bg">${getBadge(r.new[0], r.new[2])}</td>
+<td class="val-target">${formatNum(r.renew[0])}</td>
+<td class="val-cnt">${formatNum(r.renew[1])}</td>
+<td class="val-amt">${formatNum(r.renew[2])}</td>
+<td>${getBadge(r.renew[0], r.renew[2])}</td>
+<td class="val-target">${formatNum(r.expire[0])}</td>
+<td class="val-cnt">${formatNum(r.expire[1])}</td>
+<td class="val-amt">${formatNum(r.expire[2])}</td>
+<td>${getBadge(r.expire[0], r.expire[2])}</td>
+</tr>
+`;
+});
+tbody.innerHTML = bodyHtml;
+const f = monthData.footer;
+tfoot.innerHTML = `
+<tr>
+<td>총 합계</td>
+<td class="val-target bg-total-col">${formatNum(f.total[0])}</td>
+<td class="val-cnt bg-total-col" style="color:#fff;">${formatNum(f.total[1])}</td>
+<td class="val-amt bg-total-col">${formatNum(f.total[2])}</td>
+<td class="bg-total-col">${getBadge(f.total[0], f.total[2])}</td>
+<td class="val-target highlight-col-left highlight-col-bottom highlight-foot-bg">${formatNum(f.new[0])}</td>
+<td class="val-cnt highlight-col-bottom highlight-foot-bg" style="color:#f1f5f9;">${formatNum(f.new[1])}</td>
+<td class="val-amt highlight-col-bottom highlight-foot-bg">${formatNum(f.new[2])}</td>
+<td class="highlight-col-right highlight-col-bottom highlight-foot-bg">${getBadge(f.new[0], f.new[2])}</td>
+<td class="val-target">${formatNum(f.renew[0])}</td>
+<td class="val-cnt" style="color:#cbd5e1;">${formatNum(f.renew[1])}</td>
+<td class="val-amt">${formatNum(f.renew[2])}</td>
+<td>${getBadge(f.renew[0], f.renew[2])}</td>
+<td class="val-target">${formatNum(f.expire[0])}</td>
+<td class="val-cnt" style="color:#cbd5e1;">${formatNum(f.expire[1])}</td>
+<td class="val-amt">${formatNum(f.expire[2])}</td>
+<td>${getBadge(f.expire[0], f.expire[2])}</td>
+</tr>
+`;
+}
+
+function changeTab(month) {
+document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+document.querySelector(`.tab-btn[data-month="${month}"]`).classList.add('active');
+document.getElementById('titleMonth').innerText = month;
+const tbody = document.getElementById('tableBody');
+const tfoot = document.getElementById('tableFoot');
+tbody.style.opacity = 0;
+tfoot.style.opacity = 0;
+setTimeout(() => {
+renderTable(month);
+tbody.style.opacity = 1;
+tfoot.style.opacity = 1;
+}, 200);
+}
+
+window.onload = () => {
+renderTable('1Q 합계');
+};
+</script>
+
+</body>
+</html>
