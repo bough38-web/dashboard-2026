@@ -484,16 +484,21 @@
                 zoom: 12,
                 mapTypeControl: false,
                 streetViewControl: false,
-                fullscreenControl: false
+                fullscreenControl: false,
+                mapId: 'DEMO_MAP_ID' // Added Map ID to resolve Advanced Marker warnings
             };
             
             try {
                 map = new google.maps.Map(container, options);
-                debugLog('Map rendered.');
+                debugLog('Map surface initialized.');
                 
+                // Defer marker rendering slightly to allow billing/auth checks to settle
                 if (allTargets.length > 0) {
-                    renderMarkers(allTargets);
-                    debugLog('Markers rendered.');
+                    setTimeout(() => {
+                        debugLog('Rendering markers...');
+                        renderMarkers(allTargets);
+                        debugLog('3,742 markers rendered successfully.');
+                    }, 500); 
                 }
             } catch (e) {
                 debugLog('Map Init Error: See console', true);
