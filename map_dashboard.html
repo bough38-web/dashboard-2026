@@ -398,9 +398,13 @@
                 <!-- Progress filters will be injected here -->
             </div>
 
-            <label class="filter-label">특별 필터</label>
-            <div class="filter-group">
-                <button class="filter-btn" id="high-arpu-btn">고ARPU (10만 이상)</button>
+            <label class="filter-label">월정료(ARPU) 필터</label>
+            <div id="arpu-filters" class="filter-group">
+                <button class="filter-btn active" data-arpu="all">전체</button>
+                <button class="filter-btn" data-arpu="under5">5만미만</button>
+                <button class="filter-btn" data-arpu="under10">10만미만</button>
+                <button class="filter-btn" data-arpu="10to20">10-20만</button>
+                <button class="filter-btn" data-arpu="over20">20만이상</button>
             </div>
         </div>
 
@@ -476,7 +480,7 @@
         status: '만기도래_신규(1st)',
         quarter: '1Q',
         progress: 'all',
-        highArpu: false
+        arpu: 'all'
     };
 
     function debugLog(msg, isError = false) {
@@ -675,12 +679,16 @@
             progressContainer.appendChild(btn);
         });
 
-        // --- High ARPU Filter ---
-        document.getElementById('high-arpu-btn').onclick = (e) => {
-            filters.highArpu = !filters.highArpu;
-            e.target.classList.toggle('active', filters.highArpu);
-            applyFilters();
-        };
+        // --- ARPU Filters ---
+        const arpuBtns = document.querySelectorAll('#arpu-filters .filter-btn');
+        arpuBtns.forEach(btn => {
+            btn.onclick = () => {
+                arpuBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                filters.arpu = btn.dataset.arpu;
+                applyFilters();
+            };
+        });
 
         applyFilters(); // Apply initials (defaults)
     }
@@ -737,7 +745,14 @@
         if (filters.status !== 'all') filtered = filtered.filter(t => t.status === filters.status);
         if (filters.quarter !== 'all') filtered = filtered.filter(t => t.quarter === filters.quarter);
         if (filters.progress !== 'all') filtered = filtered.filter(t => t.progress === filters.progress);
-        if (filters.highArpu) filtered = filtered.filter(t => t.isHighArpu);
+        
+        // ARPU Range logic
+        if (filters.arpu !== 'all') {
+            if (filters.arpu === 'under5') filtered = filtered.filter(t => t.arpu < 50000);
+            else if (filters.arpu === 'under10') filtered = filtered.filter(t => t.arpu < 100000);
+            else if (filters.arpu === '10to20') filtered = filtered.filter(t => t.arpu >= 100000 && t.arpu <= 200000);
+            else if (filters.arpu === 'over20') filtered = filtered.filter(t => t.arpu > 200000);
+        }
         
         updateDashboard(filtered);
         renderMarkers(filtered);
@@ -962,7 +977,13 @@
         if (filters.status !== 'all') res = res.filter(t => t.status === filters.status);
         if (filters.quarter !== 'all') res = res.filter(t => t.quarter === filters.quarter);
         if (filters.progress !== 'all') res = res.filter(t => t.progress === filters.progress);
-        if (filters.highArpu) res = res.filter(t => t.isHighArpu);
+        
+        if (filters.arpu !== 'all') {
+            if (filters.arpu === 'under5') res = res.filter(t => t.arpu < 50000);
+            else if (filters.arpu === 'under10') res = res.filter(t => t.arpu < 100000);
+            else if (filters.arpu === '10to20') res = res.filter(t => t.arpu >= 100000 && t.arpu <= 200000);
+            else if (filters.arpu === 'over20') res = res.filter(t => t.arpu > 200000);
+        }
         return res;
     }
 
