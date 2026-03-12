@@ -94,10 +94,16 @@
             border-color: var(--primary);
         }
 
-        /* Target List */
-        #target-list {
+        /* Sidebar Content Area */
+        #sidebar-content {
             flex: 1;
             overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Target List */
+        #target-list {
             padding: 16px;
         }
 
@@ -349,17 +355,110 @@
             color: var(--text-sub);
         }
 
+        /* Lock Screen Styling */
+        #lock-screen {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(20px);
+            z-index: 9999;
+            display: none;
+            align-items: center; justify-content: center;
+            transition: opacity 0.3s ease;
+        }
+
+        .lock-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            width: 360px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .lock-icon {
+            width: 64px; height: 64px;
+            background: #fef2f2;
+            color: #ef4444;
+            border-radius: 50%;
+            display: flex;
+            align-items: center; justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .lock-title { font-size: 1.5rem; font-weight: 800; margin-bottom: 10px; color: #1e293b; }
+        .lock-desc { font-size: 0.875rem; color: #64748b; margin-bottom: 25px; line-height: 1.5; }
+
+        .code-input {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            font-size: 1.25rem;
+            text-align: center;
+            letter-spacing: 0.5rem;
+            margin-bottom: 15px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .code-input:focus { border-color: var(--primary); }
+
+        .verify-btn {
+            width: 100%;
+            padding: 14px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .verify-btn:hover { background: var(--primary-hover); transform: translateY(-1px); }
+
+        .error-msg {
+            color: #ef4444;
+            font-size: 0.8125rem;
+            margin-top: 10px;
+            display: none;
+            font-weight: 600;
+        }
+
+        .shake { animation: shake 0.4s ease-in-out; }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-8px); }
+            75% { transform: translateX(8px); }
+        }
+
+        /* Collapsible Section */
+        .filter-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 10px;
+            user-select: none;
+        }
+        .filter-header:hover .filter-label { color: var(--primary); }
+        .toggle-icon { transition: transform 0.2s; }
+        .collapsed .toggle-icon { transform: rotate(-90deg); }
+        .collapsed .filter-group { display: none; }
+
         @media (max-width: 768px) {
             #sidebar {
                 width: 100%;
                 position: absolute;
                 bottom: 0;
-                height: 40%;
+                height: 50%;
                 border-right: none;
                 border-top: 1px solid var(--border-color);
             }
             #app { flex-direction: column; }
-            .route-btn { bottom: 45%; }
+            .route-btn { bottom: 55%; }
         }
     </style>
 </head>
@@ -372,57 +471,65 @@
             <h1 class="sidebar-title"><i data-lucide="map-pin"></i> 재계약 관리 지도</h1>
         </div>
         
-        <div class="filter-section">
-            <label class="filter-label">담당지사/팀 선택</label>
-            <div id="branch-filters" class="filter-group">
-                <button class="filter-btn active" data-branch="all">전체</button>
-            </div>
-            
-            <label class="filter-label">담당자 선택</label>
-            <div id="manager-filters" class="filter-group">
-                <!-- Managers will be injected here -->
+        <div id="sidebar-content">
+            <div class="filter-section">
+                <div class="filter-header" onclick="toggleFilter('branch')">
+                    <label class="filter-label" style="margin-bottom:0">담당지사/팀 선택</label>
+                    <i data-lucide="chevron-down" class="toggle-icon" id="branch-toggle"></i>
+                </div>
+                <div id="branch-filters" class="filter-group">
+                    <button class="filter-btn active" data-branch="all">전체</button>
+                </div>
+                
+                <div class="filter-header" onclick="toggleFilter('manager')">
+                    <label class="filter-label" style="margin-bottom:0">담당자 선택</label>
+                    <i data-lucide="chevron-down" class="toggle-icon" id="manager-toggle"></i>
+                </div>
+                <div id="manager-filters" class="filter-group">
+                    <!-- Managers will be injected here -->
+                </div>
+
+                <label class="filter-label">계약상태 필터</label>
+                <div id="status-filters" class="filter-group">
+                    <!-- Status filters will be injected here -->
+                </div>
+
+                <label class="filter-label">만기도래 분기</label>
+                <div id="quarter-filters" class="filter-group">
+                    <!-- Quarter filters will be injected here -->
+                </div>
+
+                <label class="filter-label">진행상황</label>
+                <div id="progress-filters" class="filter-group">
+                    <!-- Progress filters will be injected here -->
+                </div>
+
+                <label class="filter-label">월정료(ARPU) 필터</label>
+                <div id="arpu-filters" class="filter-group">
+                    <button class="filter-btn active" data-arpu="all">전체</button>
+                    <button class="filter-btn" data-arpu="under5">5만미만</button>
+                    <button class="filter-btn" data-arpu="under10">10만미만</button>
+                    <button class="filter-btn" data-arpu="10to20">10-20만</button>
+                    <button class="filter-btn" data-arpu="over20">20만이상</button>
+                </div>
             </div>
 
-            <label class="filter-label">계약상태 필터</label>
-            <div id="status-filters" class="filter-group">
-                <!-- Status filters will be injected here -->
+            <div class="stats-grid" style="margin-top: 20px;">
+                <div class="stat-item">
+                    <span class="stat-count" id="total-count">0</span>
+                    <span class="stat-label">관리 대상</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-count" id="urgent-count">0</span>
+                    <span class="stat-label">만기 임박</span>
+                </div>
             </div>
 
-            <label class="filter-label">만기도래 분기</label>
-            <div id="quarter-filters" class="filter-group">
-                <!-- Quarter filters will be injected here -->
-            </div>
-
-            <label class="filter-label">진행상황</label>
-            <div id="progress-filters" class="filter-group">
-                <!-- Progress filters will be injected here -->
-            </div>
-
-            <label class="filter-label">월정료(ARPU) 필터</label>
-            <div id="arpu-filters" class="filter-group">
-                <button class="filter-btn active" data-arpu="all">전체</button>
-                <button class="filter-btn" data-arpu="under5">5만미만</button>
-                <button class="filter-btn" data-arpu="under10">10만미만</button>
-                <button class="filter-btn" data-arpu="10to20">10-20만</button>
-                <button class="filter-btn" data-arpu="over20">20만이상</button>
-            </div>
-        </div>
-
-        <div class="stats-grid">
-            <div class="stat-item">
-                <span class="stat-count" id="total-count">0</span>
-                <span class="stat-label">관리 대상</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-count" id="urgent-count">0</span>
-                <span class="stat-label">만기 임박</span>
-            </div>
-        </div>
-
-        <div id="target-list">
-            <!-- Target cards will be injected here -->
-            <div style="text-align:center; color: #94a3b8; margin-top: 40px;">
-                <p>데이터를 로드하는 중...</p>
+            <div id="target-list">
+                <!-- Target cards will be injected here -->
+                <div style="text-align:center; color: #94a3b8; margin-top: 40px;">
+                    <p>데이터를 로드하는 중...</p>
+                </div>
             </div>
         </div>
     </aside>
@@ -445,18 +552,22 @@
             <i data-lucide="navigation"></i> 효율적 방문 루트 추천
         </button>
 
-        <div id="api-overlay">
-            <div class="api-input-box">
-                <h2 style="margin-top:0">Google 지도 API 키 설정</h2>
-                <p style="color: var(--text-sub); font-size: 0.875rem;">지도를 표시하려면 <strong>Google Maps JavaScript API 키</strong>가 필요합니다.</p>
-                <input type="text" id="api-key-input" placeholder="Google API 키 입력" style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; margin: 15px 0; box-sizing: border-box;">
-                <button onclick="setApiKey()" style="width: 100%; padding: 12px; background: var(--primary); color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">적용 및 실행</button>
-                <div id="api-error-display"></div>
-                <button onclick="clearSavedKey()" style="margin-top: 10px; background: none; border: none; color: #94a3b8; font-size: 11px; cursor: pointer; text-decoration: underline;">저장된 키 삭제</button>
-                <p style="font-size: 0.75rem; margin-top: 15px;"><a href="https://console.cloud.google.com/google/maps-apis/credentials" target="_blank">키 발급 안내 (Google Cloud)</a></p>
-            </div>
-        </div>
     </main>
+</div>
+
+<!-- Lock Screen Overlay -->
+<div id="lock-screen">
+    <div class="lock-box" id="lock-container">
+        <div class="lock-icon">
+            <i data-lucide="lock"></i>
+        </div>
+        <h2 class="lock-title">Access Locked</h2>
+        <p class="lock-desc">라이센스 기간이 만료되었거나 보호된 페이지입니다.<br>승인 코드를 입력해주세요.</p>
+        <input type="password" id="accessCode" class="code-input" placeholder="••••" maxlength="12">
+        <button class="verify-btn" onclick="verifyAccess()">Access Unlock</button>
+        <p id="error-msg" class="error-msg">잘못된 코드입니다. 다시 시도해주세요.</p>
+        <p style="font-size: 11px; margin-top: 20px; color: #94a3b8;">문의: 관리자 승인 요청</p>
+    </div>
 </div>
 
 <!-- Google Maps Marker Clusterer library -->
@@ -483,6 +594,14 @@
         arpu: 'all'
     };
 
+    // Access Management
+    const ACCESS_CONFIG = {
+        LIMIT_DATE: "2026-03-31", 
+        ADMIN_CODE: "0303",      // Master Admin Code
+        CODE_PREFIX: "0303",     // Prefix for dynamic month code
+        STORAGE_KEY: 'map_dashboard_access_approved_2026'
+    };
+
     function debugLog(msg, isError = false) {
         console.log(msg);
         const logEl = document.getElementById('debug-log');
@@ -497,6 +616,7 @@
 
     // Initialize Page
     window.onload = async () => {
+        checkExpiration();
         debugLog('Initializing Application...');
         
         const savedKey = localStorage.getItem(CONFIG.STORAGE_KEY);
@@ -582,6 +702,57 @@
             }
         };
         document.head.appendChild(script);
+    }
+
+    // --- Security Logic ---
+    function checkExpiration() {
+        const isApproved = localStorage.getItem(ACCESS_CONFIG.STORAGE_KEY) === 'true';
+        const today = new Date().toISOString().split('T')[0];
+
+        // If direct access or expired, show lock screen
+        if (!isApproved || today > ACCESS_CONFIG.LIMIT_DATE) {
+            document.getElementById('lock-screen').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+            lucide.createIcons(); // For lock icon
+        }
+    }
+
+    function verifyAccess() {
+        const input = document.getElementById('accessCode').value;
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = String(now.getMonth() + 1).padStart(2, '0');
+        const dynamicCode = ACCESS_CONFIG.CODE_PREFIX + year + month;
+
+        // Allow either Master 0303 or dynamic monthly code
+        if (input === ACCESS_CONFIG.ADMIN_CODE || input === dynamicCode) {
+            localStorage.setItem(ACCESS_CONFIG.STORAGE_KEY, 'true');
+            const lockScreen = document.getElementById('lock-screen');
+            lockScreen.style.opacity = '0';
+            setTimeout(() => {
+                lockScreen.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }, 300);
+        } else {
+            const container = document.getElementById('lock-container');
+            const errorMsg = document.getElementById('error-msg');
+            errorMsg.style.display = 'block';
+            container.classList.add('shake');
+            setTimeout(() => container.classList.remove('shake'), 500);
+        }
+    }
+
+    // --- UI Logic ---
+    function toggleFilter(type) {
+        const container = document.getElementById(`${type}-filters`);
+        const header = container.previousElementSibling;
+        const isCollapsed = container.style.display === 'none';
+        
+        container.style.display = isCollapsed ? 'flex' : 'none';
+        header.classList.toggle('collapsed', !isCollapsed);
+        
+        // Refresh icons if needed
+        lucide.createIcons();
     }
 
 
