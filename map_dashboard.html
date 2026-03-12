@@ -572,9 +572,8 @@
                 // Defer marker rendering slightly to allow billing/auth checks to settle
                 if (allTargets.length > 0) {
                     setTimeout(() => {
-                        debugLog('Rendering markers...');
-                        renderMarkers(allTargets);
-                        debugLog(`${data.length.toLocaleString()} markers rendered successfully.`);
+                        debugLog('Applying initial filters...');
+                        applyFilters(); 
                     }, 500); 
                 }
             } catch (e) {
