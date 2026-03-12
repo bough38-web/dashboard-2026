@@ -565,20 +565,31 @@
 
 
     function populateFilters(data) {
-        const branches = [...new Set(data.map(t => t.branch).filter(b => b))].sort();
+        const branchOrder = ['중앙', '강북', '서대문', '고양', '의정부', '남양주', '강릉', '원주'];
+        
+        // Get unique branches and map them for sorting/display
+        const branches = [...new Set(data.map(t => t.branch).filter(b => b))].map(original => {
+            const display = original.replace('지사', '').trim();
+            const orderIdx = branchOrder.indexOf(display);
+            return { original, display, orderIdx: orderIdx === -1 ? 999 : orderIdx };
+        });
+
+        // Sort by defined order
+        branches.sort((a, b) => a.orderIdx - b.orderIdx);
+
         const branchContainer = document.getElementById('branch-filters');
         
         branches.forEach(br => {
             const btn = document.createElement('button');
             btn.className = 'filter-btn';
-            btn.textContent = br;
-            btn.dataset.branch = br;
+            btn.textContent = br.display;
+            btn.dataset.branch = br.original;
             btn.onclick = () => {
                 document.querySelectorAll('#branch-filters .filter-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
-                filters.branch = br;
-                filters.manager = 'all'; // Reset manager when branch changes
-                updateManagerFilters(data.filter(t => t.branch === br || br === 'all'));
+                filters.branch = br.original;
+                filters.manager = 'all'; 
+                updateManagerFilters(data.filter(t => t.branch === br.original));
                 applyFilters();
             };
             branchContainer.appendChild(btn);
