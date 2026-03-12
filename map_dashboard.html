@@ -624,6 +624,7 @@
         // --- Status Filters ---
         const statuses = [...new Set(data.map(t => t.status))].sort();
         const statusContainer = document.getElementById('status-filters');
+        statusContainer.innerHTML = ''; // Clear previous
         statusContainer.appendChild(createAllButton('status'));
         statuses.forEach(s => {
             const btn = document.createElement('button');
@@ -641,6 +642,7 @@
         // --- Quarter Filters ---
         const quarters = [...new Set(data.map(t => t.quarter))].sort();
         const quarterContainer = document.getElementById('quarter-filters');
+        quarterContainer.innerHTML = ''; // Clear previous
         quarterContainer.appendChild(createAllButton('quarter'));
         quarters.forEach(q => {
             const btn = document.createElement('button');
@@ -658,10 +660,11 @@
         // --- Progress Filters ---
         const progresses = [...new Set(data.map(t => t.progress))].sort();
         const progressContainer = document.getElementById('progress-filters');
+        progressContainer.innerHTML = ''; // Clear previous
         progressContainer.appendChild(createAllButton('progress'));
         progresses.forEach(p => {
             const btn = document.createElement('button');
-            btn.className = 'filter-btn';
+            btn.className = 'filter-btn' + (filters.progress === p ? ' active' : '');
             btn.textContent = p;
             btn.onclick = () => {
                 document.querySelectorAll('#progress-filters .filter-btn').forEach(b => b.classList.remove('active'));

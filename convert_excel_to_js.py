@@ -44,13 +44,19 @@ def convert_excel_to_js():
         if ' ' in expiry_date:
             expiry_date = expiry_date.split(' ')[0]
             
-        # Quarter mapping: "'26.1Q" -> "1Q"
-        month_val = str(row['만기도래 월']) if pd.notna(row['만기도래 월']) else ""
-        quarter = month_val.replace("'26.", "") if month_val else "미지정"
+        # Quarter mapping: "'26.1Q" -> "1Q", etc.
+        month_val = str(row['만기도래 월']).strip() if pd.notna(row['만기도래 월']) else ""
+        if month_val and '.' in month_val:
+            quarter = month_val.split('.')[-1]
+        else:
+            quarter = "미지정"
         
         # Progress mapping: empty or '진행중' -> '진행대상'
-        prog_val = str(row['정리2']) if pd.notna(row['정리2']) else ""
-        progress = prog_val if prog_val not in ["", "nan", "진행중"] else "진행대상"
+        prog_val = str(row['정리2']).strip() if pd.notna(row['정리2']) else ""
+        if prog_val in ["", "nan", "진행중"]:
+            progress = "진행대상"
+        else:
+            progress = prog_val
         
         # Contract Number
         contract_no = str(row['계약번호']) if pd.notna(row['계약번호']) else ""
