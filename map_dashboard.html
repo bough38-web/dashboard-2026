@@ -383,6 +383,21 @@
                 <!-- Managers will be injected here -->
             </div>
 
+            <label class="filter-label">계약상태 필터</label>
+            <div id="status-filters" class="filter-group">
+                <!-- Status filters will be injected here -->
+            </div>
+
+            <label class="filter-label">만기도래 분기</label>
+            <div id="quarter-filters" class="filter-group">
+                <!-- Quarter filters will be injected here -->
+            </div>
+
+            <label class="filter-label">진행상황</label>
+            <div id="progress-filters" class="filter-group">
+                <!-- Progress filters will be injected here -->
+            </div>
+
             <label class="filter-label">특별 필터</label>
             <div class="filter-group">
                 <button class="filter-btn" id="high-arpu-btn">고ARPU (10만 이상)</button>
@@ -458,6 +473,9 @@
     let filters = {
         branch: 'all',
         manager: 'all',
+        status: '만기도래_신규(1st)',
+        quarter: '1Q',
+        progress: 'all',
         highArpu: false
     };
 
@@ -567,29 +585,25 @@
     function populateFilters(data) {
         const branchOrder = ['중앙', '강북', '서대문', '고양', '의정부', '남양주', '강릉', '원주'];
         
-        // Get unique branches and map them for sorting/display
+        // --- Branch Filters ---
         const branches = [...new Set(data.map(t => t.branch).filter(b => b))].map(original => {
             const display = original.replace('지사', '').trim();
             const orderIdx = branchOrder.indexOf(display);
             return { original, display, orderIdx: orderIdx === -1 ? 999 : orderIdx };
         });
-
-        // Sort by defined order
         branches.sort((a, b) => a.orderIdx - b.orderIdx);
 
         const branchContainer = document.getElementById('branch-filters');
-        
         branches.forEach(br => {
             const btn = document.createElement('button');
             btn.className = 'filter-btn';
             btn.textContent = br.display;
-            btn.dataset.branch = br.original;
             btn.onclick = () => {
                 document.querySelectorAll('#branch-filters .filter-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 filters.branch = br.original;
                 filters.manager = 'all'; 
-                updateManagerFilters(data.filter(t => t.branch === br.original));
+                updateManagerFilters(allTargets.filter(t => t.branch === br.original));
                 applyFilters();
             };
             branchContainer.appendChild(btn);
@@ -600,17 +614,85 @@
             document.querySelector('[data-branch="all"]').classList.add('active');
             filters.branch = 'all';
             filters.manager = 'all';
-            updateManagerFilters(data);
+            updateManagerFilters(allTargets);
             applyFilters();
         };
 
+        // --- Manager Filters ---
         updateManagerFilters(data);
 
+        // --- Status Filters ---
+        const statuses = [...new Set(data.map(t => t.status))].sort();
+        const statusContainer = document.getElementById('status-filters');
+        statusContainer.appendChild(createAllButton('status'));
+        statuses.forEach(s => {
+            const btn = document.createElement('button');
+            btn.className = 'filter-btn' + (filters.status === s ? ' active' : '');
+            btn.textContent = s;
+            btn.onclick = () => {
+                document.querySelectorAll('#status-filters .filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                filters.status = s;
+                applyFilters();
+            };
+            statusContainer.appendChild(btn);
+        });
+
+        // --- Quarter Filters ---
+        const quarters = [...new Set(data.map(t => t.quarter))].sort();
+        const quarterContainer = document.getElementById('quarter-filters');
+        quarterContainer.appendChild(createAllButton('quarter'));
+        quarters.forEach(q => {
+            const btn = document.createElement('button');
+            btn.className = 'filter-btn' + (filters.quarter === q ? ' active' : '');
+            btn.textContent = q;
+            btn.onclick = () => {
+                document.querySelectorAll('#quarter-filters .filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                filters.quarter = q;
+                applyFilters();
+            };
+            quarterContainer.appendChild(btn);
+        });
+
+        // --- Progress Filters ---
+        const progresses = [...new Set(data.map(t => t.progress))].sort();
+        const progressContainer = document.getElementById('progress-filters');
+        progressContainer.appendChild(createAllButton('progress'));
+        progresses.forEach(p => {
+            const btn = document.createElement('button');
+            btn.className = 'filter-btn';
+            btn.textContent = p;
+            btn.onclick = () => {
+                document.querySelectorAll('#progress-filters .filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                filters.progress = p;
+                applyFilters();
+            };
+            progressContainer.appendChild(btn);
+        });
+
+        // --- High ARPU Filter ---
         document.getElementById('high-arpu-btn').onclick = (e) => {
             filters.highArpu = !filters.highArpu;
             e.target.classList.toggle('active', filters.highArpu);
             applyFilters();
         };
+
+        applyFilters(); // Apply initials (defaults)
+    }
+
+    function createAllButton(type) {
+        const btn = document.createElement('button');
+        btn.className = 'filter-btn' + (filters[type] === 'all' ? ' active' : '');
+        btn.textContent = '전체';
+        btn.onclick = () => {
+            document.querySelectorAll(`#${type}-filters .filter-btn`).forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            filters[type] = 'all';
+            applyFilters();
+        };
+        return btn;
     }
 
     function updateManagerFilters(data) {
@@ -649,6 +731,9 @@
         let filtered = allTargets;
         if (filters.branch !== 'all') filtered = filtered.filter(t => t.branch === filters.branch);
         if (filters.manager !== 'all') filtered = filtered.filter(t => t.manager === filters.manager);
+        if (filters.status !== 'all') filtered = filtered.filter(t => t.status === filters.status);
+        if (filters.quarter !== 'all') filtered = filtered.filter(t => t.quarter === filters.quarter);
+        if (filters.progress !== 'all') filtered = filtered.filter(t => t.progress === filters.progress);
         if (filters.highArpu) filtered = filtered.filter(t => t.isHighArpu);
         
         updateDashboard(filtered);
@@ -683,7 +768,7 @@
                 <span class="target-name">${item.name} ${item.isHighArpu ? '<span class="arpu-badge">고ARPU</span>' : ''}</span>
                 <div class="target-info">
                     <p style="margin:2px 0;"><i data-lucide="building" style="width:12px; height:12px; display:inline-block; vertical-align:middle; margin-right:4px;"></i> ${item.branch}</p>
-                    <p style="margin:2px 0;"><i data-lucide="user" style="width:12px; height:12px; display:inline-block; vertical-align:middle; margin-right:4px;"></i> ${item.manager}</p>
+                    <p style="margin:2px 0;"><i data-lucide="user" style="width:12px; height:12px; display:inline-block; vertical-align:middle; margin-right:4px;"></i> ${item.manager} | 계약번호: ${item.contractNo}</p>
                     <p style="margin:2px 0;"><i data-lucide="map-pin" style="width:12px; height:12px; display:inline-block; vertical-align:middle; margin-right:4px;"></i> ${maskAddress(item.address)}</p>
                     <p style="margin:2px 0; font-weight:600; color:var(--primary);">${item.expiryDate ? '만기: ' + item.expiryDate : ''}</p>
                 </div>
@@ -727,7 +812,7 @@
                 <div style="padding:15px; width:250px; font-family: Pretendard, sans-serif;">
                     <h4 style="margin:0 0 5px 0; color:#1e293b;">${item.name} ${item.isHighArpu ? '<span class="arpu-badge">고ARPU</span>' : ''}</h4>
                     <p style="font-size:12px; color:#64748b; margin:5px 0;">지사: ${item.branch}</p>
-                    <p style="font-size:12px; color:#64748b; margin:5px 0;">담당: ${item.manager}</p>
+                    <p style="font-size:12px; color:#64748b; margin:5px 0;">담당: ${item.manager} (${item.contractNo})</p>
                     <p style="font-size:12px; color:#64748b; margin:5px 0;">주소: ${maskAddress(item.address)}</p>
                     <div style="margin-top:10px; display:flex; gap:5px;">
                         <a href="https://www.google.com/maps/dir/?api=1&destination=${item.lat},${item.lng}" target="_blank" style="background:#4f46e5; color:white; border-radius:4px; padding:6px 12px; text-decoration:none; font-size:11px; font-weight:bold; flex:1; text-align:center;">길찾기</a>
@@ -871,6 +956,9 @@
         let res = data;
         if (filters.branch !== 'all') res = res.filter(t => t.branch === filters.branch);
         if (filters.manager !== 'all') res = res.filter(t => t.manager === filters.manager);
+        if (filters.status !== 'all') res = res.filter(t => t.status === filters.status);
+        if (filters.quarter !== 'all') res = res.filter(t => t.quarter === filters.quarter);
+        if (filters.progress !== 'all') res = res.filter(t => t.progress === filters.progress);
         if (filters.highArpu) res = res.filter(t => t.isHighArpu);
         return res;
     }

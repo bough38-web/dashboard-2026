@@ -11,7 +11,8 @@ def convert_excel_to_js():
     # Load specific columns to save memory
     cols = [
         '관리고객명', '담당자명', '담당지사/팀', '설치주소', '계약상태', 
-        '계약종료일', '위도', '경도', '시', '합산월정료(KTT+KT)', '정리2'
+        '계약종료일', '위도', '경도', '시', '합산월정료(KTT+KT)', '정리2',
+        '계약번호', '만기도래 월'
     ]
     df = pd.read_excel(excel_path, usecols=cols)
     
@@ -20,7 +21,6 @@ def convert_excel_to_js():
     df = df[df['시'].isin(target_cities)]
 
     # Filter by '정리2' column: Exclude '정지', '설변', '해지'
-    # Include: everything else (NaN, empty, '계약', '진행중' 등)
     exclude_status = ['정지', '설변', '해지']
     df = df[~df['정리2'].isin(exclude_status)]
     
@@ -33,8 +33,27 @@ def convert_excel_to_js():
         manager = str(row['담당자명']) if pd.notna(row['담당자명']) else "미지정"
         branch = str(row['담당지사/팀']) if pd.notna(row['담당지사/팀']) else "기타"
         address = str(row['설치주소']) if pd.notna(row['설치주소']) else ""
+        
+        # Status renaming: '만기도래_신규' -> '만기도래_신규(1st)'
         status = str(row['계약상태']) if pd.notna(row['계약상태']) else "정보없음"
+        if status == '만기도래_신규':
+            status = '만기도래_신규(1st)'
+            
+        # Expiry Date: Remove time part
         expiry_date = str(row['계약종료일']) if pd.notna(row['계약종료일']) else ""
+        if ' ' in expiry_date:
+            expiry_date = expiry_date.split(' ')[0]
+            
+        # Quarter mapping: "'26.1Q" -> "1Q"
+        month_val = str(row['만기도래 월']) if pd.notna(row['만기도래 월']) else ""
+        quarter = month_val.replace("'26.", "") if month_val else "미지정"
+        
+        # Progress mapping: empty or '진행중' -> '진행대상'
+        prog_val = str(row['정리2']) if pd.notna(row['정리2']) else ""
+        progress = prog_val if prog_val not in ["", "nan", "진행중"] else "진행대상"
+        
+        # Contract Number
+        contract_no = str(row['계약번호']) if pd.notna(row['계약번호']) else ""
         
         # ARPU calculation (Handle string with commas like '100,000')
         arpu_val = row['합산월정료(KTT+KT)']
@@ -56,6 +75,9 @@ def convert_excel_to_js():
             "branch": branch,
             "address": address,
             "status": status,
+            "quarter": quarter,
+            "progress": progress,
+            "contractNo": contract_no,
             "lat": float(row['위도']),
             "lng": float(row['경도']),
             "expiryDate": expiry_date,
