@@ -398,15 +398,20 @@
     }
 
     const CONFIG = {
-        STORAGE_KEY: 'kakao_map_api_key_2026'
+        STORAGE_KEY: 'kakao_map_api_key_2026',
+        DEFAULT_API_KEY: '198152a8a99d3e64203e26f2871068d0' // User's JavaScript Key
     };
 
     // Initialize Page
     window.onload = async () => {
         debugLog('Initializing Application...');
+        
+        // Priority: Saved Key > Default Key
         const savedKey = localStorage.getItem(CONFIG.STORAGE_KEY);
-        if (savedKey) {
-            loadKakaoMap(savedKey);
+        const activeKey = savedKey || CONFIG.DEFAULT_API_KEY;
+
+        if (activeKey) {
+            loadKakaoMap(activeKey);
         } else {
             document.getElementById('api-overlay').style.display = 'flex';
         }
