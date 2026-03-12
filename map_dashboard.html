@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026년 관리고객 재계약 관리 - 지도 대시보드</title>
+    <!-- Font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --primary-hover: #4338ca;
+            --bg-color: #f8fafc;
+            --sidebar-bg: rgba(255, 255, 255, 0.8);
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-sub: #64748b;
+            --border-color: #e2e8f0;
+            --glass-bg: rgba(255, 255, 255, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.3);
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Pretendard', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            overflow: hidden;
+        }
+
+        #app {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* Sidebar Styling */
+        #sidebar {
+            width: 380px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            border-right: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+
+        .sidebar-header {
+            padding: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .sidebar-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary);
+        }
+
+        .filter-section {
+            padding: 20px 24px;
+            background: rgba(255, 255, 255, 0.5);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .filter-label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: block;
+            color: var(--text-sub);
+        }
+
+        select {
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background: white;
+            font-size: 0.9375rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        select:focus {
+            border-color: var(--primary);
+        }
+
+        /* Target List */
+        #target-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px;
+        }
+
+        .target-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 12px;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .target-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary);
+        }
+
+        .target-card.active {
+            border-color: var(--primary);
+            background: #eef2ff;
+        }
+
+        .target-name {
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .target-info {
+            font-size: 0.8125rem;
+            color: var(--text-sub);
+            line-height: 1.5;
+        }
+
+        .status-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+
+        .status-alert { background-color: #fee2e2; color: #dc2626; }
+        .status-warning { background-color: #fef3c7; color: #d97706; }
+        .status-normal { background-color: #dcfce7; color: #16a34a; }
+
+        /* Map Area */
+        #map-container {
+            flex: 1;
+            position: relative;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Map Controls */
+        .map-controls {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 500;
+        }
+        
+        .debug-console {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(0,0,0,0.7);
+            color: #4ade80;
+            padding: 10px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 11px;
+            max-width: 300px;
+            pointer-events: none;
+            z-index: 400;
+        }
+
+        .map-btn {
+            background: white;
+            border: 1px solid var(--border-color);
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s;
+        }
+
+        .map-btn:hover {
+            background: #f1f5f9;
+        }
+
+        .route-btn {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.4);
+            cursor: pointer;
+            transition: all 0.3s;
+            z-index: 500;
+            border: none;
+        }
+
+        .route-btn:hover {
+            background: var(--primary-hover);
+            transform: translateX(-50%) translateY(-3px);
+            box-shadow: 0 20px 25px -5px rgba(79, 70, 229, 0.4);
+        }
+
+        /* API Key Overlay */
+        #api-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(15, 23, 42, 0.9);
+            z-index: 2000;
+            display: none;
+            align-items: center; justify-content: center;
+            color: white; text-align: center;
+            backdrop-filter: blur(8px);
+        }
+
+        .api-input-box {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            color: var(--text-main);
+            width: 440px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        #api-error-display {
+            margin-top: 15px;
+            padding: 10px;
+            background: #fff1f2;
+            border: 1px solid #fecaca;
+            color: #e11d48;
+            border-radius: 8px;
+            font-size: 12px;
+            display: none;
+            text-align: left;
+            word-break: break-all;
+        }
+
+        /* Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 0 24px 20px 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .stat-item {
+            background: white;
+            padding: 12px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+
+        .stat-count {
+            display: block;
+            font-size: 1.125rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-sub);
+        }
+
+        @media (max-width: 768px) {
+            #sidebar {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                height: 40%;
+                border-right: none;
+                border-top: 1px solid var(--border-color);
+            }
+            #app { flex-direction: column; }
+            .route-btn { bottom: 45%; }
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        <div class="sidebar-header">
+            <h1 class="sidebar-title"><i data-lucide="map-pin"></i> 재계약 관리 지도</h1>
+        </div>
+        
+        <div class="filter-section">
+            <label class="filter-label">담당자 선택</label>
+            <select id="manager-filter">
+                <option value="all">전체 담당자</option>
+            </select>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-count" id="total-count">0</span>
+                <span class="stat-label">관리 대상</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-count" id="urgent-count">0</span>
+                <span class="stat-label">만기 임박</span>
+            </div>
+        </div>
+
+        <div id="target-list">
+            <!-- Target cards will be injected here -->
+            <div style="text-align:center; color: #94a3b8; margin-top: 40px;">
+                <p>데이터를 로드하는 중...</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Map -->
+    <main id="map-container">
+        <div id="map"></div>
+        <div id="debug-log" class="debug-console">System Ready.</div>
+        
+        <div class="map-controls">
+            <button class="map-btn" title="현재 위치" id="my-location-btn">
+                <i data-lucide="crosshair"></i>
+            </button>
+            <button class="map-btn" title="지도 초기화" id="reset-map-btn">
+                <i data-lucide="refresh-cw"></i>
+            </button>
+        </div>
+
+        <button class="route-btn" id="find-route-btn">
+            <i data-lucide="navigation"></i> 효율적 방문 루트 추천
+        </button>
+
+        <div id="api-overlay">
+            <div class="api-input-box">
+                <h2 style="margin-top:0">카카오 지도 API 키 설정</h2>
+                <p style="color: var(--text-sub); font-size: 0.875rem;">지도를 표시하려면 카카오 <strong>JavaScript 키</strong>가 필요합니다.<br>(승인 코드 '0303...'와는 다른 키입니다.)</p>
+                <input type="text" id="api-key-input" placeholder="카카오 JavaScript 키 입력" style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 8px; margin: 15px 0; box-sizing: border-box;">
+                <button onclick="setApiKey()" style="width: 100%; padding: 12px; background: var(--primary); color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">적용 및 실행</button>
+                <div id="api-error-display"></div>
+                <button onclick="clearSavedKey()" style="margin-top: 10px; background: none; border: none; color: #94a3b8; font-size: 11px; cursor: pointer; text-decoration: underline;">저장된 키 삭제</button>
+                <p style="font-size: 0.75rem; margin-top: 15px;"><a href="https://apis.map.kakao.com/web/guide/" target="_blank">키 발급 안내 보러가기</a></p>
+            </div>
+        </div>
+    </main>
+</div>
+
+<!-- Kakao Map SDK Placeholder -->
+<script id="kakao-sdk"></script>
+<!-- Target Data -->
+<script src="data/targets.js"></script>
+
+<script>
+    // Lucide Icons Initialization
+    lucide.createIcons();
+
+    let map;
+    let markers = [];
+    let clusterer;
+    let allTargets = [];
+    let currentRouteLine = null;
+    let myMarker = null;
+
+    function debugLog(msg, isError = false) {
+        console.log(msg);
+        const logEl = document.getElementById('debug-log');
+        logEl.textContent = msg;
+        logEl.style.color = isError ? '#f87171' : '#4ade80';
+    }
+
+    const CONFIG = {
+        STORAGE_KEY: 'kakao_map_api_key_2026'
+    };
+
+    // Initialize Page
+    window.onload = async () => {
+        debugLog('Initializing Application...');
+        const savedKey = localStorage.getItem(CONFIG.STORAGE_KEY);
+        if (savedKey) {
+            loadKakaoMap(savedKey);
+        } else {
+            document.getElementById('api-overlay').style.display = 'flex';
+        }
+        
+        // Data integration
+        if (typeof TARGET_DATA !== 'undefined') {
+            allTargets = TARGET_DATA;
+            debugLog(`Data Loaded: ${allTargets.length} records`);
+            populateFilters(allTargets);
+            updateDashboard(allTargets);
+        } else {
+            debugLog('Data load failed: TARGET_DATA not found', true);
+            document.getElementById('target-list').innerHTML = `
+                <div style="text-align:center; color: #ef4444; padding: 20px;">
+                    <p>데이터 로드에 실패했습니다.<br>data/targets.js 파일이 존재하지 않거나 형식이 잘못되었습니다.</p>
+                </div>
+            `;
+        }
+    };
+
+    function clearSavedKey() {
+        localStorage.removeItem(CONFIG.STORAGE_KEY);
+        location.reload();
+    }
+
+    function setApiKey() {
+        const key = document.getElementById('api-key-input').value.trim();
+        if (key) {
+            localStorage.setItem(CONFIG.STORAGE_KEY, key);
+            location.reload();
+        } else {
+            alert('키를 입력해주세요.');
+        }
+    }
+
+    function loadKakaoMap(key) {
+        debugLog('Loading Kakao Map SDK...');
+        const script = document.createElement('script');
+        script.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${key}&libraries=services,clusterer,drawing&autoload=false`;
+        
+        script.onerror = () => {
+            debugLog('SDK Load Error: Network connection or CORS issue', true);
+            const errEl = document.getElementById('api-error-display');
+            errEl.textContent = '카카오 SDK 로드 실패. 인터넷 연결이나 도메인 설정을 확인하세요.';
+            errEl.style.display = 'block';
+            document.getElementById('api-overlay').style.display = 'flex';
+        };
+
+        script.onload = () => {
+            debugLog('SDK Loaded successfully');
+            kakao.maps.load(() => {
+                debugLog('Map components initializing...');
+                const container = document.getElementById('map');
+                const options = {
+                    center: new kakao.maps.LatLng(37.5665, 126.9780),
+                    level: 8
+                };
+                try {
+                    map = new kakao.maps.Map(container, options);
+                    debugLog('Map rendered.');
+                    
+                    const zoomControl = new kakao.maps.ZoomControl();
+                    map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+                    clusterer = new kakao.maps.MarkerClusterer({
+                        map: map,
+                        averageCenter: true,
+                        minLevel: 6
+                    });
+
+                    if (allTargets.length > 0) {
+                        renderMarkers(allTargets);
+                        debugLog('Markers rendered.');
+                    }
+                } catch (e) {
+                    debugLog('Map Init Error: Check API Key and Domain', true);
+                    console.error(e);
+                    const errEl = document.getElementById('api-error-display');
+                    errEl.textContent = '지도 초기화 실패: ' + e.message;
+                    errEl.style.display = 'block';
+                    document.getElementById('api-overlay').style.display = 'flex';
+                }
+            });
+        };
+        document.head.appendChild(script);
+    }
+
+
+    function populateFilters(data) {
+        const managers = [...new Set(data.map(t => t.manager).filter(m => m))].sort();
+        const filterSelect = document.getElementById('manager-filter');
+        
+        managers.forEach(mgr => {
+            const option = document.createElement('option');
+            option.value = mgr;
+            option.textContent = mgr;
+            filterSelect.appendChild(option);
+        });
+
+        filterSelect.addEventListener('change', (e) => {
+            const selected = e.target.value;
+            const filtered = selected === 'all' ? data : data.filter(t => t.manager === selected);
+            updateDashboard(filtered);
+            renderMarkers(filtered);
+        });
+    }
+
+    function updateDashboard(data) {
+        document.getElementById('total-count').textContent = data.length.toLocaleString();
+        
+        // Count urgent (simple logic: random for demo or check date if possible)
+        const urgent = data.filter(t => t.expiry_month && t.expiry_month.includes('2026-03')).length;
+        document.getElementById('urgent-count').textContent = urgent.toLocaleString();
+
+        const listContainer = document.getElementById('target-list');
+        listContainer.innerHTML = '';
+
+        if (data.length === 0) {
+            listContainer.innerHTML = '<p style="text-align:center; color:var(--text-sub); margin-top:20px;">검색 결과가 없습니다.</p>';
+            return;
+        }
+
+        // Render first 100 for performance
+        data.slice(0, 100).forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'target-card';
+            
+            const isUrgent = item.expiry_month && item.expiry_month.includes('2026-03');
+            const statusClass = isUrgent ? 'status-alert' : 'status-normal';
+            const statusText = isUrgent ? '만기 임박' : '재계약 관리중';
+
+            card.innerHTML = `
+                <span class="target-name">${item.name}</span>
+                <div class="target-info">
+                    <p style="margin:2px 0;"><i data-lucide="user" style="width:12px; height:12px; display:inline-block; vertical-align:middle; margin-right:4px;"></i> ${item.manager}</p>
+                    <p style="margin:2px 0;"><i data-lucide="map-pin" style="width:12px; height:12px; display:inline-block; vertical-align:middle; margin-right:4px;"></i> ${item.address}</p>
+                    <p style="margin:2px 0; font-weight:600; color:var(--primary);">${item.expiry_month ? '만기: ' + item.expiry_month : ''}</p>
+                </div>
+                <span class="status-tag ${statusClass}">${statusText}</span>
+            `;
+            
+            card.onclick = () => focusTarget(item, card);
+            listContainer.appendChild(card);
+        });
+        
+        if (data.length > 100) {
+            const more = document.createElement('p');
+            more.style.cssText = 'text-align:center; font-size:12px; color:var(--text-sub); padding:10px;';
+            more.textContent = `...외 ${data.length - 100}건 더 있음 (담당자 필터를 사용하세요)`;
+            listContainer.appendChild(more);
+        }
+
+        lucide.createIcons();
+    }
+
+    function renderMarkers(data) {
+        if (!map) return;
+
+        // Clear existing
+        markers.forEach(m => m.setMap(null));
+        markers = [];
+        clusterer.clear();
+
+        const bounds = new kakao.maps.LatLngBounds();
+
+        data.forEach(item => {
+            if (!item.lat || !item.lon) return;
+
+            const pos = new kakao.maps.LatLng(item.lat, item.lon);
+            const marker = new kakao.maps.Marker({
+                position: pos,
+                title: item.name
+            });
+
+            const iwContent = `
+                <div style="padding:15px; width:250px;">
+                    <h4 style="margin:0 0 5px 0;">${item.name}</h4>
+                    <p style="font-size:12px; color:#666; margin:5px 0;">담당: ${item.manager}</p>
+                    <p style="font-size:12px; color:#666; margin:5px 0;">주소: ${item.address}</p>
+                    <div style="margin-top:10px; display:flex; gap:5px;">
+                        <a href="https://map.kakao.com/link/to/${item.name},${item.lat},${item.lon}" target="_blank" style="background:#4f46e5; color:white; border-radius:4px; padding:5px 10px; text-decoration:none; font-size:11px; font-weight:bold; flex:1; text-align:center;">길찾기</a>
+                    </div>
+                </div>
+            `;
+
+            const infowindow = new kakao.maps.InfoWindow({
+                content: iwContent,
+                removable: true
+            });
+
+            kakao.maps.event.addListener(marker, 'click', () => {
+                infowindow.open(map, marker);
+            });
+
+            markers.push(marker);
+            bounds.extend(pos);
+        });
+
+        clusterer.addMarkers(markers);
+        if (data.length > 0) {
+            map.setBounds(bounds);
+        }
+    }
+
+    function focusTarget(item, cardElement) {
+        if (!map) return;
+
+        // UI Feedback
+        document.querySelectorAll('.target-card').forEach(c => c.classList.remove('active'));
+        cardElement.classList.add('active');
+
+        const moveLatLon = new kakao.maps.LatLng(item.lat, item.lon);
+        map.setCenter(moveLatLon);
+        map.setLevel(3);
+
+        // Find and trigger marker click if exists
+        const marker = markers.find(m => m.getTitle() === item.name);
+        if (marker) {
+            kakao.maps.event.trigger(marker, 'click');
+        }
+    }
+
+    // Controls Logic
+    document.getElementById('reset-map-btn').onclick = () => {
+        if (markers.length > 0) {
+            const bounds = new kakao.maps.LatLngBounds();
+            markers.forEach(m => bounds.extend(m.getPosition()));
+            map.setBounds(bounds);
+        }
+    };
+
+    document.getElementById('my-location-btn').onclick = () => {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition((pos) => {
+                const lat = pos.coords.latitude;
+                const lon = pos.coords.longitude;
+                const locPos = new kakao.maps.LatLng(lat, lon);
+                
+                if (myMarker) myMarker.setMap(null);
+                
+                myMarker = new kakao.maps.Marker({
+                    position: locPos,
+                    image: new kakao.maps.MarkerImage(
+                        'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_red.png',
+                        new kakao.maps.Size(40, 44),
+                        { offset: new kakao.maps.Point(20, 44) }
+                    )
+                });
+                myMarker.setMap(map);
+                map.setCenter(locPos);
+                map.setLevel(4);
+            });
+        } else {
+            alert('위치 정보를 사용할 수 없습니다.');
+        }
+    };
+
+    // Route Optimization (Nearest Neighbor)
+    document.getElementById('find-route-btn').onclick = () => {
+        if (!navigator.geolocation) {
+            alert('GPS를 지원하지 않는 브라우저입니다.');
+            return;
+        }
+
+        navigator.geolocation.getCurrentPosition((position) => {
+            const startLat = position.coords.latitude;
+            const startLon = position.coords.longitude;
+            
+            // Get currently filtered targets
+            const manager = document.getElementById('manager-filter').value;
+            const currentTargets = manager === 'all' ? allTargets : allTargets.filter(t => t.manager === manager);
+
+            if (currentTargets.length === 0) {
+                alert('경로를 계산할 대상이 없습니다.');
+                return;
+            }
+
+            // Greedy Nearest Neighbor
+            let route = [];
+            let unvisited = [...currentTargets];
+            let currentLat = startLat;
+            let currentLon = startLon;
+
+            const maxStops = 10; // Limit to 10 for display
+            
+            for (let i = 0; i < maxStops && unvisited.length > 0; i++) {
+                let nearestIdx = -1;
+                let minDist = Infinity;
+
+                unvisited.forEach((target, idx) => {
+                    const d = getDist(currentLat, currentLon, target.lat, target.lon);
+                    if (d < minDist) {
+                        minDist = d;
+                        nearestIdx = idx;
+                    }
+                });
+
+                if (nearestIdx !== -1) {
+                    const nearest = unvisited.splice(nearestIdx, 1)[0];
+                    route.push(nearest);
+                    currentLat = nearest.lat;
+                    currentLon = nearest.lon;
+                }
+            }
+
+            drawRoute(startLat, startLon, route);
+            alert('최적의 방문 추천 경로가 생성되었습니다 (상위 10곳).');
+        });
+    };
+
+    function getDist(lat1, lon1, lat2, lon2) {
+        return Math.sqrt(Math.pow(lat1 - lat2, 2) + Math.pow(lon1 - lon2, 2));
+    }
+
+    function drawRoute(sLat, sLon, path) {
+        if (currentRouteLine) currentRouteLine.setMap(null);
+
+        const linePath = [
+            new kakao.maps.LatLng(sLat, sLon),
+            ...path.map(p => new kakao.maps.LatLng(p.lat, p.lon))
+        ];
+
+        currentRouteLine = new kakao.maps.Polyline({
+            path: linePath,
+            strokeWeight: 5,
+            strokeColor: '#4f46e5',
+            strokeOpacity: 0.7,
+            strokeStyle: 'solid'
+        });
+
+        currentRouteLine.setMap(map);
+        
+        // Focus first stop
+        if (path.length > 0) {
+            const bounds = new kakao.maps.LatLngBounds();
+            linePath.forEach(p => bounds.extend(p));
+            map.setBounds(bounds);
+        }
+    }
+</script>
+
+</body>
+</html>
