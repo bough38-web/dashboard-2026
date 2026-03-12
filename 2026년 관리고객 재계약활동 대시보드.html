@@ -617,10 +617,11 @@ tfoot.style.opacity = 1;
 
 // 액세스 관리 설정
 const CONFIG = {
-    LIMIT_DATE: "2026-03-11", // 테스트를 위해 과거 날짜로 설정 (3월 11일)
-    CODE_PREFIX: "0303",      // 고정 접두어
+    LIMIT_DATE: "2026-03-31", // Updated limit date
+    ADMIN_CODE: "0303",      // Master Admin Code added
+    CODE_PREFIX: "0303",     // Prefix for dynamic month code
     STORAGE_KEY: 'dashboard_access_approved_2026',
-    KAKAO_LINK: "https://invite.kakao.com/tc/GfDLhXls01" // 카카오톡 초대 링크 적용됨
+    KAKAO_LINK: "https://invite.kakao.com/tc/GfDLhXls01"
 };
 
 function checkExpiration() {
@@ -640,7 +641,8 @@ function verifyAccess() {
     const month = String(now.getMonth() + 1).padStart(2, '0');
     const dynamicCode = CONFIG.CODE_PREFIX + year + month;
 
-    if (input === dynamicCode) {
+    // Allow Master 0303 or dynamic monthly code
+    if (input === CONFIG.ADMIN_CODE || input === dynamicCode) {
         localStorage.setItem(CONFIG.STORAGE_KEY, 'true');
         document.getElementById('lock-screen').style.opacity = '0';
         setTimeout(() => {
@@ -650,8 +652,9 @@ function verifyAccess() {
     } else {
         const errorMsg = document.getElementById('error-msg');
         errorMsg.style.display = 'block';
-        errorMsg.classList.add('shake');
-        setTimeout(() => errorMsg.classList.remove('shake'), 500);
+        const lockBox = document.querySelector('.lock-box');
+        lockBox.classList.add('shake');
+        setTimeout(() => lockBox.classList.remove('shake'), 500);
     }
 }
 
