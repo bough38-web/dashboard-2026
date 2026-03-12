@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>2026년 리텐션 P값 집행 현황 (스마트 대시보드)</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        :root {
+            /* 고급화 컬러 팔레트 */
+            --bg-body: #f4f7f9;
+            --surface-bg: #ffffff;
+            --primary-dark: #0f172a;
+            --primary-blue: #2563eb;
+            --primary-light: #eff6ff;
+            --border-light: #e2e8f0;
+            --border-medium: #cbd5e1;
+            --border-heavy: #334155;
+            --text-main: #334155;
+            --text-muted: #64748b;
+            
+            /* 달성률 뱃지 컬러 */
+            --badge-safe-bg: #dcfce7; --badge-safe-text: #166534;
+            --badge-warn-bg: #fef08a; --badge-warn-text: #854d0e;
+            --badge-danger-bg: #fee2e2; --badge-danger-text: #991b1b;
+
+            /* UI 트랜지션 및 그림자 */
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.05);
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body { font-family: 'Pretendard', 'Malgun Gothic', '맑은 고딕', sans-serif; background-color: var(--bg-body); margin: 0; padding: 40px 20px; display: flex; justify-content: center; color: var(--text-main); }
+        .dashboard-wrapper { width: 100%; max-width: 1400px; display: none; flex-direction: column; gap: 24px; }
+        #pdf-content { display: flex; flex-direction: column; gap: 24px; }
+
+        /* --- 로그인 오버레이 --- */
+        #loginOverlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--bg-body); z-index: 9999; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(5px); }
+        .login-box { background: #fff; padding: 40px; border-radius: 16px; box-shadow: var(--shadow-lg); text-align: center; width: 320px; border: 1px solid var(--border-light); }
+        .login-box h2 { margin-top: 0; color: var(--primary-dark); font-size: 22px; }
+        .login-box input { width: 80%; padding: 14px; margin: 20px 0; border: 1px solid var(--border-light); border-radius: 8px; font-size: 18px; text-align: center; letter-spacing: 5px; outline: none; }
+        .login-box input:focus { border-color: var(--primary-blue); box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1); }
+        .login-box button { width: 90%; padding: 14px; background: var(--primary-blue); color: #fff; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; }
+
+        /* PDF 다운로드 버튼 */
+        .pdf-btn-container { text-align: right; margin-top: -5px; margin-bottom: 20px; }
+        .pdf-btn { background: var(--primary-dark); color: #fff; border: none; padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: bold; cursor: pointer; box-shadow: var(--shadow-md); transition: var(--transition-smooth); }
+        .pdf-btn:hover { background: var(--primary-blue); transform: translateY(-2px); }
+
+        /* PDF 최적화 모드 */
+        .pdf-mode { background-color: white !important; padding: 0 !important; width: 1400px !important; min-width: 1400px !important; margin: 0 auto !important; }
+        .pdf-mode .dashboard-wrapper, .pdf-mode #pdf-content { width: 1400px !important; max-width: 1400px !important; padding: 20px !important; background-color: white !important; }
+        .pdf-mode .card, .pdf-mode .table-card { page-break-inside: avoid !important; box-shadow: none !important; border: 1px solid #d1d5db !important; margin-bottom: 25px !important; }
+        .pdf-mode tbody td:first-child, .pdf-mode tfoot td:first-child, .pdf-mode thead th:first-child { position: static !important; }
+        .pdf-mode * { animation: none !important; transition: none !important; opacity: 1 !important; visibility: visible !important; transform: none !important; }
+
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-up { opacity: 0; animation: fadeInUp 0.7s forwards; }
+
+        /* =======================================================
+           헤더 컨트롤 패널
+           ======================================================= */
+        .header-control-box { 
+            background: var(--surface-bg); padding: 32px 40px; border-radius: 16px; 
+            box-shadow: var(--shadow-md); display: flex; flex-direction: column; gap: 28px;
+        }
+        
+        .title-group { border-left: 6px solid var(--primary-blue); padding-left: 18px; }
+        .title-group h1 { margin: 0 0 8px 0; font-size: 24px; color: var(--primary-dark); font-weight: 800; letter-spacing: -0.5px; }
+        .title-group p { margin: 0; font-size: 14px; color: var(--text-muted); font-weight: 500; }
+        
+        .controls-wrapper { display: flex; gap: 40px; flex-wrap: wrap; width: 100%; align-items: flex-end; }
+        .filter-section { display: flex; flex-direction: column; gap: 10px; }
+        .filter-label { font-size: 13px; font-weight: 800; color: var(--text-muted); padding-left: 4px; }
+        
+        .filter-group { display: flex; gap: 4px; background: #f8fafc; padding: 4px; border-radius: 10px; border: 1px solid var(--border-light); }
+        .filter-btn { padding: 10px 20px; background: transparent; border: none; border-radius: 8px; color: var(--text-muted); font-size: 14px; font-weight: 700; cursor: pointer; transition: var(--transition-smooth); }
+        .filter-btn:hover { color: var(--primary-dark); background: #f1f5f9; }
+        
+        .filter-btn.active { background: var(--surface-bg); box-shadow: 0 2px 4px rgba(0,0,0,0.06); }
+        .filter-btn.level-btn.active { color: #9333ea; } 
+        .filter-btn.view-btn.active { color: #db2777; }  
+        .filter-btn.item-btn.active { color: #2563eb; }  
+
+        /* =======================================================
+           상단 KPI 및 차트 레이아웃
+           ======================================================= */
+        .top-grid { display: grid; grid-template-columns: 1fr 1.5fr 1.5fr; gap: 24px; }
+        .card { background: var(--surface-bg); border-radius: 16px; padding: 28px; box-shadow: var(--shadow-md); border: 1px solid var(--border-light); }
+        .card-title { font-size: 16px; font-weight: 800; margin-bottom: 24px; color: var(--primary-dark); border-bottom: 2px solid var(--border-light); padding-bottom: 12px; }
+        
+        .kpi-wrapper { display: flex; flex-direction: column; gap: 20px; justify-content: center; }
+        .kpi-box { padding: 28px 24px; border-radius: 12px; text-align: center; transition: var(--transition-smooth); }
+        .kpi-box h3 { margin: 0 0 12px 0; font-size: 14px; font-weight: 700; }
+        .kpi-box .value { font-size: 32px; font-weight: 800; letter-spacing: -0.5px; }
+        .kpi-box .sub-value { font-size: 16px; font-weight: 700; margin-left: 6px; }
+        
+        .kpi-box.box-blue { background: #f0f9ff; border: 1px solid #bae6fd; }
+        .kpi-box.box-blue h3 { color: #0284c7; }
+        .kpi-box.box-blue .value { color: #2563eb; }
+
+        .kpi-box.box-red { background: #fff1f2; border: 1px solid #fecaca; }
+        .kpi-box.box-red h3 { color: #e11d48; }
+        .kpi-box.box-red .value { color: #e11d48; }
+
+        .chart-container { position: relative; height: 240px; width: 100%; }
+
+        /* =======================================================
+           하단 상세 테이블 디자인
+           ======================================================= */
+        .table-card { background-color: var(--surface-bg); border-radius: 16px; box-shadow: var(--shadow-md); overflow-x: auto; padding: 24px; border: 1px solid var(--border-light); }
+        table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: center; white-space: nowrap; }
+        
+        thead tr:first-child th { border-top: 2px solid var(--primary-dark); }
+        th, td { padding: 14px 10px; vertical-align: middle; border-bottom: 1px solid var(--border-light); border-right: 1px solid var(--border-light); }
+        th:last-child, td:last-child { border-right: none; }
+        
+        thead tr:last-child th, thead tr:first-child th[rowspan="2"] { border-bottom: 4px double var(--primary-dark) !important; }
+        .group-end { border-right: 2px solid var(--border-heavy) !important; }
+
+        /* 파스텔 헤더 */
+        .bg-budget { background-color: #f8fafc; color: var(--primary-dark); font-weight: 800;}
+        .bg-jan { background-color: #eff6ff; color: #1d4ed8; font-weight: 800;}
+        .bg-feb { background-color: #f0fdf4; color: #15803d; font-weight: 800;}
+        .bg-mom { background-color: #fdf4ff; color: #86198f; font-weight: 800;}
+        .bg-acc { background-color: #eef2ff; color: #3730a3; font-weight: 800;}
+
+        .sub-th { background-color: #ffffff; color: var(--text-muted); font-size: 12.5px; font-weight: 600; }
+        .txt-blue { color: #2563eb !important; font-weight: 800 !important; }
+        .txt-pink { color: #db2777 !important; font-weight: 800 !important; }
+        .txt-navy { color: #312e81 !important; font-weight: 800 !important; }
+
+        tbody tr:hover { background-color: #f8fafc; }
+        tbody td:first-child, thead th:first-child, tfoot td:first-child { position: sticky; left: 0; background: inherit; z-index: 2; font-weight: 800; color: var(--primary-dark); }
+        tbody td:first-child { background: var(--surface-bg); }
+        
+        .val-num { text-align: right; padding-right: 12px; font-family: 'Segoe UI', Tahoma, sans-serif; font-weight: 500; }
+        .val-highlight { font-weight: 800; color: var(--primary-blue); }
+        
+        /* 💡 [신규 추가] 본부별 '강북/강원' 진파랑 강조 행 */
+        .row-highlight-blue td {
+            border-top: 3px solid #1e3a8a !important;
+            border-bottom: 3px solid #1e3a8a !important;
+            background-color: #f0f9ff !important; /* 연한 파란 배경 */
+        }
+        .row-highlight-blue td:first-child {
+            border-left: 3px solid #1e3a8a !important;
+            background-color: #e0f2fe !important; /* 조금 더 진한 파란 배경 */
+            color: #1e3a8a !important;
+        }
+        .row-highlight-blue td:last-child {
+            border-right: 3px solid #1e3a8a !important;
+        }
+        /* 호버 시 강조 유지 */
+        tbody tr.row-highlight-blue:hover td { background-color: #e0f2fe !important; }
+
+        tfoot tr { background-color: #f1f5f9; }
+        tfoot td { color: var(--primary-dark); font-weight: 800; border-bottom: none; border-top: 2px solid var(--primary-dark) !important; border-bottom: 4px double var(--primary-dark) !important; }
+        tfoot td:first-child { background-color: #f1f5f9; border-right: 2px solid var(--border-heavy) !important; }
+        tfoot .val-num { color: var(--primary-dark); }
+        tfoot .val-highlight { color: var(--primary-blue); }
+
+        .badge { padding: 4px 8px; border-radius: 6px; font-weight: 800; font-size: 11.5px; display: inline-block; min-width: 40px; text-align: center; }
+        .badge.danger { background-color: var(--badge-danger-bg); color: var(--badge-danger-text); }
+        .badge.warn { background-color: var(--badge-warn-bg); color: var(--badge-warn-text); }
+        .badge.safe { background-color: var(--badge-safe-bg); color: var(--badge-safe-text); }
+        .badge.zero { background-color: var(--chart-muted); color: var(--text-muted); }
+    </style>
+</head>
+<body>
+
+<div id="loginOverlay">
+    <div class="login-box">
+        <h2>🔒 대시보드 접근</h2>
+        <p style="font-size:13px; color:#666;">비밀번호를 입력해주세요.</p>
+        <input type="password" id="pwdInput" placeholder="비밀번호" onkeypress="if(event.keyCode==13) loginCheck();">
+        <button onclick="loginCheck()">확인</button>
+    </div>
+</div>
+
+<div class="dashboard-wrapper" id="mainDashboard">
+    
+    <div id="pdf-content">
+        <div class="header-control-box animate-up">
+            <div class="title-group">
+                <h1 id="mainTitleText">리텐션 P값 집행 현황 (본부별 / 2월 누적)</h1>
+                <p>집계 기준 : 2026. 2월 말 &nbsp;|&nbsp; 단위 : 천원, %</p>
+            </div>
+            
+            <div class="controls-wrapper">
+                <div class="filter-section">
+                    <span class="filter-label">조회 단위</span>
+                    <div class="filter-group">
+                        <button class="filter-btn level-btn active" data-level="hq" onclick="changeLevel('hq')">본부별 현황</button>
+                        <button class="filter-btn level-btn" data-level="branch" onclick="changeLevel('branch')">지사별(강북/강원) 현황</button>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <span class="filter-label">월별 데이터 보기</span>
+                    <div class="filter-group">
+                        <button class="filter-btn view-btn active" data-view="all" onclick="changeView('all')">전체 현황</button>
+                        <button class="filter-btn view-btn" data-view="1월" onclick="changeView('1월')">1월 실적</button>
+                        <button class="filter-btn view-btn" data-view="2월" onclick="changeView('2월')">2월 실적</button>
+                    </div>
+                </div>
+
+                <div class="filter-section" id="filterSection">
+                    <span class="filter-label" id="filterLabelText">본부 선택</span>
+                    <div class="filter-group" id="filterBtnGroup">
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-grid animate-up">
+            <div class="card kpi-wrapper">
+                <div class="kpi-box box-blue">
+                    <h3 id="kpiTitle1">전국 본부 2월 누적 예산</h3>
+                    <div class="value" id="kpiBudget">-<span class="sub-value">천원</span></div>
+                </div>
+                <div class="kpi-box box-red">
+                    <h3 id="kpiTitle2">전국 본부 2월 누적 실적 (사용률)</h3>
+                    <div class="value"><span id="kpiActual">-</span><span class="sub-value">천원</span> <span id="kpiRate" style="margin-left:8px; font-size: 22px;">(0%)</span></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">📊 <span id="chartTitle1">2월 누적 실적 현황</span></div>
+                <div class="chart-container"><canvas id="budgetChart"></canvas></div>
+            </div>
+            <div class="card">
+                <div class="card-title">📈 1월 vs 2월 실적(소계) 추이</div>
+                <div class="chart-container"><canvas id="trendChart"></canvas></div>
+            </div>
+        </div>
+
+        <div class="table-card animate-up">
+            <table id="mainTable">
+                <thead id="tableHead">
+                    </thead>
+                <tbody id="tableBody">
+                    </tbody>
+                <tfoot id="tableFoot">
+                    </tfoot>
+            </table>
+        </div>
+    </div> <div class="pdf-btn-container">
+        <button id="downloadPdfBtn" class="pdf-btn" onclick="downloadPDF()">📄 PDF 다운로드</button>
+    </div>
+
+</div>
+
+<script>
+    function loginCheck() {
+        const pwd = document.getElementById('pwdInput').value;
+        if (pwd === '0303') {
+            document.getElementById('loginOverlay').style.display = 'none';
+            document.getElementById('mainDashboard').style.display = 'flex';
+            initDashboard();
+        } else {
+            alert('비밀번호가 일치하지 않습니다.');
+            document.getElementById('pwdInput').value = '';
+            document.getElementById('pwdInput').focus();
+        }
+    }
+
+    const hqData = [
+        { name: "강남/서부", base: 4401, qBudget: 13204, mBudget: 4401, jan: [2720, 1758, 4478, 6534], feb: [5465, 1105, 6571, 8874], mom: [2745, -653, 2092], acc: [8803, 11049, 126, 15409] },
+        { name: "강북/강원", base: 2867, qBudget: 8600, mBudget: 2867, jan: [1381, 154, 1535, 970], feb: [1669, 220, 1889, 361], mom: [288, 67, 354], acc: [5734, 3424, 60, 1331] },
+        { name: "부산/경남", base: 2142, qBudget: 6425, mBudget: 2142, jan: [1708, 170, 1879, 682], feb: [2279, 0, 2279, 917], mom: [570, -170, 400], acc: [4284, 4157, 97, 1599] },
+        { name: "전남/전북", base: 2239, qBudget: 6717, mBudget: 2239, jan: [2656, 40, 2696, 1473], feb: [1463, 10, 1473, 1580], mom: [-1192, -30, -1223], acc: [4478, 4169, 93, 3054] },
+        { name: "충남/충북", base: 1798, qBudget: 5395, mBudget: 1798, jan: [3309, 1391, 4700, 909], feb: [657, 1719, 2376, 419], mom: [-2652, 328, -2324], acc: [3596, 7076, 197, 1328] },
+        { name: "대구/경북", base: 1592, qBudget: 4775, mBudget: 1592, jan: [2233, 0, 2233, 1403], feb: [1427, 0, 1427, 6660], mom: [-806, 0, -806], acc: [3183, 3661, 115, 8063] }
+    ];
+    const totalHqData = { name: "전체 합계", base: 15039, qBudget: 45117, mBudget: 15039, jan: [14007, 3513, 17521, 11971], feb: [12961, 3055, 16015, 18812], mom: [-1047, -459, -1505], acc: [30078, 28014, 93, 30783] };
+
+    const branchData = [
+        { name: "중앙", base: 427, qBudget: 1280, mBudget: 427, jan: [31, 12, 43, 49], feb: [216, 12, 229, 127], mom: [185, 0, 185], acc: [854, 272, 32, 176] },
+        { name: "강북", base: 353, qBudget: 1058, mBudget: 353, jan: [123, 0, 123, 0], feb: [0, 11, 11, 0], mom: [-123, 11, -112], acc: [705, 134, 19, 0] },
+        { name: "서대문", base: 318, qBudget: 953, mBudget: 318, jan: [215, 0, 215, 90], feb: [334, 6, 340, 90], mom: [119, 6, 125], acc: [635, 555, 87, 180] },
+        { name: "고양", base: 414, qBudget: 1243, mBudget: 414, jan: [178, 0, 178, 645], feb: [93, 0, 93, 23], mom: [-85, 0, -85], acc: [828, 271, 33, 668] },
+        { name: "의정부", base: 321, qBudget: 962, mBudget: 321, jan: [243, 0, 243, 0], feb: [200, 27, 227, 60], mom: [-43, 27, -16], acc: [642, 470, 73, 60] },
+        { name: "남양주", base: 338, qBudget: 1015, mBudget: 338, jan: [84, 37, 121, 120], feb: [64, 9, 73, 38], mom: [-20, -28, -48], acc: [677, 194, 29, 158] },
+        { name: "강릉", base: 321, qBudget: 964, mBudget: 321, jan: [191, 10, 201, 22], feb: [386, 8, 394, 22], mom: [195, -2, 193], acc: [642, 595, 93, 44] },
+        { name: "원주", base: 375, qBudget: 1125, mBudget: 375, jan: [316, 94, 410, 104], feb: [375, 148, 523, 361], mom: [59, 54, 113], acc: [750, 934, 124, 465] }
+    ];
+    const totalBranchData = { name: "강북/강원 합계", base: 2867, qBudget: 8600, mBudget: 2867, jan: [1381, 154, 1535, 1030], feb: [1669, 220, 1889, 721], mom: [288, 67, 354], acc: [5734, 3424, 60, 1751] };
+
+    let currentLevel = 'hq'; 
+    let currentView = 'all'; 
+    let currentFilter = 'all'; 
+    
+    let budgetChartInstance = null;
+    let trendChartInstance = null;
+
+    function fmt(num) { return num === 0 ? '-' : num.toLocaleString(); }
+    function getBadge(rate) {
+        if (rate === 0 || isNaN(rate)) return `<span class="badge zero">-</span>`;
+        if (rate >= 100) return `<span class="badge danger">${rate}%</span>`;
+        if (rate >= 80) return `<span class="badge warn">${rate}%</span>`;
+        return `<span class="badge safe">${rate}%</span>`;
+    }
+    function getColor(num) {
+        if (num < 0) return 'color: #2563eb;';
+        if (num > 0) return 'color: #e11d48;';
+        return 'color: #64748b;';
+    }
+    
+    function getActiveDataArray() { return currentLevel === 'hq' ? hqData : branchData; }
+    function getActiveTotalData() { return currentLevel === 'hq' ? totalHqData : totalBranchData; }
+    function getLabelName() { return currentLevel === 'hq' ? '본부명' : '지사명'; }
+
+    function changeLevel(level) {
+        currentLevel = level;
+        currentFilter = 'all';
+        document.querySelectorAll('.level-btn').forEach(b => b.classList.remove('active'));
+        document.querySelector(`.level-btn[data-level="${level}"]`).classList.add('active');
+
+        const filterGroup = document.getElementById('filterBtnGroup');
+        document.getElementById('filterLabelText').innerText = level === 'hq' ? '본부 선택' : '지사 선택';
+        document.getElementById('mainTitleText').innerText = `리텐션 P값 집행 현황 (${level === 'hq' ? '본부별' : '지사별'} / ${currentView === 'all' ? '2월 누적' : currentView})`;
+
+        let btnsHtml = `<button class="filter-btn item-btn active" data-target="all" onclick="filterItem('all')">전체</button>`;
+        const dataArr = getActiveDataArray();
+        dataArr.forEach(d => {
+            btnsHtml += `<button class="filter-btn item-btn" data-target="${d.name}" onclick="filterItem('${d.name}')">${d.name}</button>`;
+        });
+        filterGroup.innerHTML = btnsHtml;
+
+        refreshAll();
+    }
+
+    function changeView(viewMode) {
+        document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+        document.querySelector(`.view-btn[data-view="${viewMode}"]`).classList.add('active');
+        currentView = viewMode;
+        
+        let viewText = viewMode === 'all' ? '2월 누적' : viewMode;
+        document.getElementById('mainTitleText').innerText = `리텐션 P값 집행 현황 (${currentLevel === 'hq' ? '본부별' : '지사별'} / ${viewText})`;
+        
+        refreshAll(true);
+    }
+
+    function filterItem(targetName) {
+        document.querySelectorAll('.item-btn').forEach(b => b.classList.remove('active'));
+        document.querySelector(`.item-btn[data-target="${targetName}"]`).classList.add('active');
+        currentFilter = targetName;
+        refreshAll(false);
+    }
+
+    function refreshAll(withFade = false) {
+        if(withFade) {
+            const tableCard = document.querySelector('.table-card');
+            tableCard.style.opacity = 0;
+            setTimeout(() => {
+                updateKPIs();
+                renderTable();
+                updateCharts();
+                tableCard.style.opacity = 1;
+            }, 200);
+        } else {
+            updateKPIs();
+            renderTable();
+            updateCharts();
+        }
+    }
+
+    function updateKPIs() {
+        const title1 = document.getElementById('kpiTitle1');
+        const title2 = document.getElementById('kpiTitle2');
+        const vBudget = document.getElementById('kpiBudget');
+        const vActual = document.getElementById('kpiActual');
+        const vRate = document.getElementById('kpiRate');
+
+        let targetData = currentFilter === 'all' ? getActiveTotalData() : getActiveDataArray().find(d => d.name === currentFilter);
+        let prefix = currentFilter === 'all' ? (currentLevel === 'hq' ? '전국 본부' : '강북/강원 산하') : `[${currentFilter}]`;
+        let viewText = currentView === 'all' ? '2월 누적' : currentView;
+
+        title1.innerText = `${prefix} ${viewText} 예산`;
+        title2.innerText = `${prefix} ${viewText} 실적 (사용률)`;
+
+        let budget, actual, rate;
+        if(currentView === '1월') {
+            budget = targetData.mBudget;
+            actual = targetData.jan[2];
+            rate = Math.round((actual/budget)*100);
+        } else if (currentView === '2월') {
+            budget = targetData.mBudget;
+            actual = targetData.feb[2];
+            rate = Math.round((actual/budget)*100);
+        } else {
+            budget = targetData.acc[0];
+            actual = targetData.acc[1];
+            rate = targetData.acc[2];
+        }
+
+        vBudget.innerHTML = `${fmt(budget)}<span class="sub-value">천원</span>`;
+        vActual.innerText = fmt(actual);
+        vRate.innerText = `(${rate || 0}%)`;
+        vRate.style.color = rate >= 100 ? '#e11d48' : (rate >= 80 ? '#ca8a04' : '#2563eb');
+
+        document.getElementById('chartTitle1').innerText = `${viewText} 실적 현황`;
+    }
+
+    function renderTable() {
+        const thead = document.getElementById('tableHead');
+        const tbody = document.getElementById('tableBody');
+        const tfoot = document.getElementById('tableFoot');
+        
+        const showBudget = currentView === 'all';
+        const showJan = currentView === 'all' || currentView === '1월';
+        const showFeb = currentView === 'all' || currentView === '2월';
+        const showMom = currentView === 'all';
+        const showAcc = currentView === 'all' || currentView === '2월';
+
+        thead.innerHTML = `
+            <tr>
+                <th rowspan="2" class="group-end">${getLabelName()}</th>
+                <th rowspan="2" class="group-end" style="font-size: 12px; color: #64748b;">'25.12월말<br>L형 유지</th>
+                ${showBudget ? `<th colspan="2" class="bg-budget group-end">총 예산 현황</th>` : ''}
+                ${showJan ? `<th colspan="4" class="bg-jan group-end">1월 실적</th>` : ''}
+                ${showFeb ? `<th colspan="4" class="bg-feb group-end">2월 실적</th>` : ''}
+                ${showMom ? `<th colspan="3" class="bg-mom group-end">전월대비 (증감)</th>` : ''}
+                ${showAcc ? `<th colspan="4" class="bg-acc group-end">2월 누적 종합</th>` : ''}
+            </tr>
+            <tr>
+                ${showBudget ? `<th class="sub-th">분기 예산</th><th class="sub-th group-end">월 예산</th>` : ''}
+                ${showJan ? `<th class="sub-th">인하</th><th class="sub-th">할인</th><th class="sub-th txt-blue">소계</th><th class="sub-th group-end">면제</th>` : ''}
+                ${showFeb ? `<th class="sub-th">인하</th><th class="sub-th">할인</th><th class="sub-th txt-blue">소계</th><th class="sub-th group-end">면제</th>` : ''}
+                ${showMom ? `<th class="sub-th">인하</th><th class="sub-th">할인</th><th class="sub-th txt-pink group-end">합계</th>` : ''}
+                ${showAcc ? `<th class="sub-th">예산</th><th class="sub-th txt-navy">실적</th><th class="sub-th">사용률</th><th class="sub-th group-end">면제</th>` : ''}
+            </tr>
+        `;
+
+        let bodyHtml = '';
+        let dataArr = getActiveDataArray();
+
+        dataArr.forEach(r => {
+            if(currentFilter !== 'all' && r.name !== currentFilter) return;
+
+            // 💡 [핵심] 본부별 모드에서 '강북/강원' 로우 진파랑 테두리 강조
+            let trClass = '';
+            if (currentLevel === 'hq' && r.name === '강북/강원') {
+                trClass = 'row-highlight-blue';
+            }
+
+            bodyHtml += `<tr class="${trClass}">
+                <td class="group-end">${r.name}</td>
+                <td class="val-num group-end" style="color:#64748b;">${fmt(r.base)}백만</td>
+                
+                ${showBudget ? `<td class="val-num">${fmt(r.qBudget)}</td><td class="val-num group-end">${fmt(r.mBudget)}</td>` : ''}
+                
+                ${showJan ? `<td class="val-num">${fmt(r.jan[0])}</td><td class="val-num">${fmt(r.jan[1])}</td>
+                <td class="val-num val-highlight">${fmt(r.jan[2])}</td><td class="val-num group-end">${fmt(r.jan[3])}</td>` : ''}
+
+                ${showFeb ? `<td class="val-num">${fmt(r.feb[0])}</td><td class="val-num">${fmt(r.feb[1])}</td>
+                <td class="val-num val-highlight">${fmt(r.feb[2])}</td><td class="val-num group-end">${fmt(r.feb[3])}</td>` : ''}
+
+                ${showMom ? `<td class="val-num" style="${getColor(r.mom[0])}">${fmt(r.mom[0])}</td><td class="val-num" style="${getColor(r.mom[1])}">${fmt(r.mom[1])}</td>
+                <td class="val-num txt-pink group-end">${fmt(r.mom[2])}</td>` : ''}
+
+                ${showAcc ? `<td class="val-num" style="color:#475569;">${fmt(r.acc[0])}</td><td class="val-num txt-navy">${fmt(r.acc[1])}</td>
+                <td>${getBadge(r.acc[2])}</td><td class="val-num group-end">${fmt(r.acc[3])}</td>` : ''}
+            </tr>`;
+        });
+        tbody.innerHTML = bodyHtml;
+
+        if (currentFilter === 'all') {
+            tfoot.style.display = 'table-row-group';
+            const f = getActiveTotalData();
+            tfoot.innerHTML = `<tr>
+                <td class="group-end">${f.name}</td>
+                <td class="val-num group-end">${fmt(f.base)}백만</td>
+                
+                ${showBudget ? `<td class="val-num">${fmt(f.qBudget)}</td><td class="val-num group-end">${fmt(f.mBudget)}</td>` : ''}
+                
+                ${showJan ? `<td class="val-num">${fmt(f.jan[0])}</td><td class="val-num">${fmt(f.jan[1])}</td>
+                <td class="val-num val-highlight">${fmt(f.jan[2])}</td><td class="val-num group-end">${fmt(f.jan[3])}</td>` : ''}
+
+                ${showFeb ? `<td class="val-num">${fmt(f.feb[0])}</td><td class="val-num">${fmt(f.feb[1])}</td>
+                <td class="val-num val-highlight">${fmt(f.feb[2])}</td><td class="val-num group-end">${fmt(f.feb[3])}</td>` : ''}
+
+                ${showMom ? `<td class="val-num">${fmt(f.mom[0])}</td><td class="val-num">${fmt(f.mom[1])}</td>
+                <td class="val-num val-highlight group-end" style="color:#db2777;">${fmt(f.mom[2])}</td>` : ''}
+
+                ${showAcc ? `<td class="val-num">${fmt(f.acc[0])}</td><td class="val-num val-highlight" style="color:#93c5fd;">${fmt(f.acc[1])}</td>
+                <td>${getBadge(f.acc[2])}</td><td class="val-num group-end">${fmt(f.acc[3])}</td>` : ''}
+            </tr>`;
+        } else {
+            tfoot.style.display = 'none';
+        }
+    }
+
+    function updateCharts() {
+        Chart.defaults.font.family = "'Pretendard', 'Malgun Gothic', sans-serif";
+        Chart.defaults.color = '#64748b';
+        
+        let dataArr = getActiveDataArray();
+        const labels = dataArr.map(d => d.name);
+        
+        const getBgColor = (baseColor, isHighlight) => {
+            return dataArr.map(d => {
+                if (currentFilter === 'all') return baseColor;
+                return d.name === currentFilter ? isHighlight : 'rgba(226, 232, 240, 0.5)';
+            });
+        };
+
+        let chartTargetBudget, chartTargetActual, targetLabel;
+        if(currentView === '1월') {
+            chartTargetBudget = dataArr.map(d => d.mBudget);
+            chartTargetActual = dataArr.map(d => d.jan[2]);
+            targetLabel = '1월';
+        } else if (currentView === '2월') {
+            chartTargetBudget = dataArr.map(d => d.mBudget);
+            chartTargetActual = dataArr.map(d => d.feb[2]);
+            targetLabel = '2월';
+        } else {
+            chartTargetBudget = dataArr.map(d => d.acc[0]);
+            chartTargetActual = dataArr.map(d => d.acc[1]);
+            targetLabel = '누적';
+        }
+
+        if (budgetChartInstance) budgetChartInstance.destroy();
+        budgetChartInstance = new Chart(document.getElementById('budgetChart').getContext('2d'), {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [
+                    { label: `${targetLabel} 예산`, data: chartTargetBudget, backgroundColor: getBgColor('#cbd5e1', '#94a3b8'), borderRadius: 4, barPercentage: 0.6 },
+                    { label: `${targetLabel} 실적`, data: chartTargetActual, backgroundColor: getBgColor('#3b82f6', '#2563eb'), borderRadius: 4, barPercentage: 0.6 }
+                ]
+            },
+            options: {
+                responsive: true, maintainAspectRatio: false,
+                plugins: { legend: { position: 'bottom', labels: { boxWidth: 10, usePointStyle: true } } },
+                scales: { x: { grid: { display: false } }, y: { border: { display: false }, grid: { color: '#f1f5f9' } } }
+            }
+        });
+
+        if (trendChartInstance) trendChartInstance.destroy();
+        trendChartInstance = new Chart(document.getElementById('trendChart').getContext('2d'), {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [
+                    { label: '2월 소계(실적)', data: dataArr.map(d => d.feb[2]), backgroundColor: getBgColor('#f43f5e', '#e11d48'), borderRadius: 4, order: 2 },
+                    { label: '1월 소계(실적)', type: 'line', data: dataArr.map(d => d.jan[2]), borderColor: currentFilter==='all' ? '#94a3b8' : '#cbd5e1', backgroundColor: currentFilter==='all' ? '#94a3b8' : '#cbd5e1', borderWidth: 2, pointRadius: 4, order: 1 }
+                ]
+            },
+            options: {
+                responsive: true, maintainAspectRatio: false,
+                plugins: { legend: { position: 'bottom', labels: { boxWidth: 10, usePointStyle: true } } },
+                scales: { x: { grid: { display: false } }, y: { border: { display: false }, grid: { color: '#f1f5f9' } } }
+            }
+        });
+    }
+
+    function initDashboard() {
+        changeLevel('hq'); 
+    }
+
+    function downloadPDF() {
+        const btn = document.getElementById('downloadPdfBtn');
+        btn.innerText = '⏳ PDF 생성 중...';
+        btn.disabled = true;
+
+        window.scrollTo(0, 0);
+        document.body.classList.add('pdf-mode');
+        for(let id in Chart.instances) { Chart.instances[id].resize(); }
+        
+        const element = document.getElementById('pdf-content');
+        const opt = {
+            margin:       [10, 10, 10, 10], 
+            filename:     '2026_리텐션P값_집행현황.pdf',
+            image:        { type: 'jpeg', quality: 0.95 },
+            html2canvas:  { scale: 1.5, useCORS: true, scrollY: 0, windowWidth: 1400 },
+            jsPDF:        { unit: 'mm', format: 'a4', orientation: 'landscape' },
+            pagebreak:    { mode: ['css', 'legacy'] } 
+        };
+
+        setTimeout(() => {
+            html2pdf().set(opt).from(element).save().then(() => {
+                document.body.classList.remove('pdf-mode');
+                for(let id in Chart.instances) { Chart.instances[id].resize(); }
+                btn.innerText = '📄 PDF 다운로드';
+                btn.disabled = false;
+            }).catch(err => {
+                console.error(err);
+                document.body.classList.remove('pdf-mode');
+                btn.innerText = '📄 PDF 다운로드';
+                btn.disabled = false;
+                alert('PDF 생성 중 오류가 발생했습니다.');
+            });
+        }, 500); 
+    }
+</script>
+
+</body>
+</html>
