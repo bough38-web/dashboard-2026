@@ -743,7 +743,7 @@
 
         const linePath = [
             { lat: sLat, lng: sLon },
-            ...path.map(p => ({ lat: p.lat, lng: p.lon }))
+            ...path.map(p => ({ lat: p.lat, lng: p.lng }))
         ];
 
         currentRouteLine = new google.maps.Polyline({
