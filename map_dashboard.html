@@ -432,13 +432,13 @@
         }
         
         // Data integration
-        if (typeof TARGET_DATA !== 'undefined') {
-            allTargets = TARGET_DATA.filter(t => t.lat && t.lon);
+        if (typeof TARGETS !== 'undefined') {
+            allTargets = TARGETS.filter(t => t.lat && t.lng);
             debugLog(`Data Loaded: ${allTargets.length} records`);
             populateFilters(allTargets);
             updateDashboard(allTargets);
         } else {
-            debugLog('Data load failed: TARGET_DATA not found', true);
+            debugLog('Data load failed: TARGETS not found', true);
             document.getElementById('target-list').innerHTML = `
                 <div style="text-align:center; color: #ef4444; padding: 20px;">
                     <p>데이터 로드에 실패했습니다.<br>data/targets.js 파일이 존재하지 않거나 형식이 잘못되었습니다.</p>
@@ -526,8 +526,8 @@
     function updateDashboard(data) {
         document.getElementById('total-count').textContent = data.length.toLocaleString();
         
-        // Count urgent (simple logic: random for demo or check date if possible)
-        const urgent = data.filter(t => t.expiry_month && t.expiry_month.includes('2026-03')).length;
+        // Count urgent (Expiry date in March 2026)
+        const urgent = data.filter(t => t.expiryDate && t.expiryDate.includes('2026-03')).length;
         document.getElementById('urgent-count').textContent = urgent.toLocaleString();
 
         const listContainer = document.getElementById('target-list');
@@ -543,7 +543,7 @@
             const card = document.createElement('div');
             card.className = 'target-card';
             
-            const isUrgent = item.expiry_month && item.expiry_month.includes('2026-03');
+            const isUrgent = item.expiryDate && item.expiryDate.includes('2026-03');
             const statusClass = isUrgent ? 'status-alert' : 'status-normal';
             const statusText = isUrgent ? '만기 임박' : '재계약 관리중';
 
@@ -552,7 +552,7 @@
                 <div class="target-info">
                     <p style="margin:2px 0;"><i data-lucide="user" style="width:12px; height:12px; display:inline-block; vertical-align:middle; margin-right:4px;"></i> ${item.manager}</p>
                     <p style="margin:2px 0;"><i data-lucide="map-pin" style="width:12px; height:12px; display:inline-block; vertical-align:middle; margin-right:4px;"></i> ${item.address}</p>
-                    <p style="margin:2px 0; font-weight:600; color:var(--primary);">${item.expiry_month ? '만기: ' + item.expiry_month : ''}</p>
+                    <p style="margin:2px 0; font-weight:600; color:var(--primary);">${item.expiryDate ? '만기: ' + item.expiryDate : ''}</p>
                 </div>
                 <span class="status-tag ${statusClass}">${statusText}</span>
             `;
@@ -581,9 +581,9 @@
         const bounds = new google.maps.LatLngBounds();
 
         data.forEach(item => {
-            if (!item.lat || !item.lon) return;
+            if (!item.lat || !item.lng) return;
 
-            const pos = { lat: item.lat, lng: item.lon };
+            const pos = { lat: item.lat, lng: item.lng };
             const marker = new google.maps.Marker({
                 position: pos,
                 title: item.name,
@@ -596,7 +596,7 @@
                     <p style="font-size:12px; color:#64748b; margin:5px 0;">담당: ${item.manager}</p>
                     <p style="font-size:12px; color:#64748b; margin:5px 0;">주소: ${item.address}</p>
                     <div style="margin-top:10px; display:flex; gap:5px;">
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=${item.lat},${item.lon}" target="_blank" style="background:#4f46e5; color:white; border-radius:4px; padding:6px 12px; text-decoration:none; font-size:11px; font-weight:bold; flex:1; text-align:center;">길찾기</a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=${item.lat},${item.lng}" target="_blank" style="background:#4f46e5; color:white; border-radius:4px; padding:6px 12px; text-decoration:none; font-size:11px; font-weight:bold; flex:1; text-align:center;">길찾기</a>
                     </div>
                 </div>
             `;
@@ -631,7 +631,7 @@
         document.querySelectorAll('.target-card').forEach(c => c.classList.remove('active'));
         cardElement.classList.add('active');
 
-        const pos = { lat: item.lat, lng: item.lon };
+        const pos = { lat: item.lat, lng: item.lng };
         map.panTo(pos);
         map.setZoom(16);
 
@@ -683,7 +683,7 @@
 
         navigator.geolocation.getCurrentPosition((position) => {
             const startLat = position.coords.latitude;
-            const startLon = position.coords.longitude;
+            const startLng = position.coords.longitude;
             
             // Get currently filtered targets
             const manager = document.getElementById('manager-filter').value;
@@ -698,31 +698,33 @@
             let route = [];
             let unvisited = [...currentTargets];
             let currentLat = startLat;
-            let currentLon = startLon;
+            let currentLng = startLng;
 
             const maxStops = 10; // Limit to 10 for display
             
             for (let i = 0; i < maxStops && unvisited.length > 0; i++) {
                 let nearestIdx = -1;
                 let minDist = Infinity;
+                let nearest = null;
 
                 unvisited.forEach((target, idx) => {
-                    const d = getDist(currentLat, currentLon, target.lat, target.lon);
+                    const d = getDist(currentLat, currentLng, target.lat, target.lng);
                     if (d < minDist) {
                         minDist = d;
                         nearestIdx = idx;
+                        nearest = target;
                     }
                 });
 
-                if (nearestIdx !== -1) {
-                    const nearest = unvisited.splice(nearestIdx, 1)[0];
-                    route.push(nearest);
+                if (nearest) {
+                    route.push(nearest); // Push the full target object
+                    unvisited.splice(nearestIdx, 1); // Remove from unvisited
                     currentLat = nearest.lat;
-                    currentLon = nearest.lon;
+                    currentLng = nearest.lng;
                 }
             }
 
-            drawRoute(startLat, startLon, route);
+            drawRoute(startLat, startLng, route);
             alert('최적의 방문 추천 경로가 생성되었습니다 (상위 10곳).');
         });
     };
