@@ -51,9 +51,9 @@ def convert_excel_to_js():
         else:
             quarter = "미지정"
         
-        # Progress mapping: empty or '진행중' -> '진행대상'
+        # Progress mapping: empty or nan -> '진행대상', keep others (like '진행중')
         prog_val = str(row['정리2']).strip() if pd.notna(row['정리2']) else ""
-        if prog_val in ["", "nan", "진행중"]:
+        if prog_val in ["", "nan"]:
             progress = "진행대상"
         else:
             progress = prog_val

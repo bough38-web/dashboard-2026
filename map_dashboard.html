@@ -832,7 +832,7 @@
         });
 
         // --- Progress Filters ---
-        const progresses = [...new Set(data.map(t => t.progress))].sort();
+        const progresses = [...new Set(data.map(t => t.progress))].filter(p => ["진행대상", "진행중"].includes(p)).sort();
         const progressContainer = document.getElementById('progress-filters');
         progressContainer.innerHTML = ''; // Clear previous
         progressContainer.appendChild(createAllButton('progress'));
