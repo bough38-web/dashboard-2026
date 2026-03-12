@@ -9,12 +9,20 @@ def convert_excel_to_js():
     
     print(f"Reading Excel file: {excel_path}")
     # Load specific columns to save memory
-    cols = ['관리고객명', '담당자명', '설치주소', '계약상태', '계약종료일', '위도', '경도', '시']
+    cols = [
+        '관리고객명', '담당자명', '담당지사/팀', '설치주소', '계약상태', 
+        '계약종료일', '위도', '경도', '시', '합산월정료(KTT+KT)', '정리2'
+    ]
     df = pd.read_excel(excel_path, usecols=cols)
     
     # Filter by specific cities: 서울, 강원, 경기
     target_cities = ['서울', '강원', '경기']
     df = df[df['시'].isin(target_cities)]
+
+    # Filter by '정리2' column: Exclude '정지', '설변', '해지'
+    # Include: everything else (NaN, empty, '계약', '진행중' 등)
+    exclude_status = ['정지', '설변', '해지']
+    df = df[~df['정리2'].isin(exclude_status)]
     
     # Drop rows without names or coordinates
     df = df.dropna(subset=['관리고객명', '위도', '경도'])
@@ -23,18 +31,36 @@ def convert_excel_to_js():
     for _, row in df.iterrows():
         # Handle nan values for other fields
         manager = str(row['담당자명']) if pd.notna(row['담당자명']) else "미지정"
+        branch = str(row['담당지사/팀']) if pd.notna(row['담당지사/팀']) else "기타"
         address = str(row['설치주소']) if pd.notna(row['설치주소']) else ""
         status = str(row['계약상태']) if pd.notna(row['계약상태']) else "정보없음"
         expiry_date = str(row['계약종료일']) if pd.notna(row['계약종료일']) else ""
         
+        # ARPU calculation (Handle string with commas like '100,000')
+        arpu_val = row['합산월정료(KTT+KT)']
+        if pd.isna(arpu_val):
+            arpu = 0
+        elif isinstance(arpu_val, str):
+            try:
+                arpu = int(arpu_val.replace(',', ''))
+            except ValueError:
+                arpu = 0
+        else:
+            arpu = int(arpu_val)
+            
+        is_high_arpu = arpu >= 100000
+        
         targets.append({
             "name": str(row['관리고객명']),
             "manager": manager,
+            "branch": branch,
             "address": address,
             "status": status,
             "lat": float(row['위도']),
             "lng": float(row['경도']),
-            "expiryDate": expiry_date
+            "expiryDate": expiry_date,
+            "arpu": arpu,
+            "isHighArpu": is_high_arpu
         })
     
     print(f"Converted {len(targets)} targets.")

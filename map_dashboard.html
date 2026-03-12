@@ -145,6 +145,46 @@
             margin-top: 8px;
         }
 
+        /* Button Filter Styling */
+        .filter-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+
+        .filter-btn {
+            padding: 6px 12px;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            background: white;
+            font-size: 0.8125rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--text-sub);
+        }
+
+        .filter-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .filter-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .arpu-badge {
+            background: #fef3c7;
+            color: #d97706;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
         .status-alert { background-color: #fee2e2; color: #dc2626; }
         .status-warning { background-color: #fef3c7; color: #d97706; }
         .status-normal { background-color: #dcfce7; color: #16a34a; }
@@ -333,10 +373,20 @@
         </div>
         
         <div class="filter-section">
+            <label class="filter-label">담당지사/팀 선택</label>
+            <div id="branch-filters" class="filter-group">
+                <button class="filter-btn active" data-branch="all">전체</button>
+            </div>
+            
             <label class="filter-label">담당자 선택</label>
-            <select id="manager-filter">
-                <option value="all">전체 담당자</option>
-            </select>
+            <div id="manager-filters" class="filter-group">
+                <!-- Managers will be injected here -->
+            </div>
+
+            <label class="filter-label">특별 필터</label>
+            <div class="filter-group">
+                <button class="filter-btn" id="high-arpu-btn">고ARPU (10만 이상)</button>
+            </div>
         </div>
 
         <div class="stats-grid">
@@ -405,6 +455,11 @@
     let allTargets = [];
     let currentRouteLine = null;
     let myMarker = null;
+    let filters = {
+        branch: 'all',
+        manager: 'all',
+        highArpu: false
+    };
 
     function debugLog(msg, isError = false) {
         console.log(msg);
@@ -510,22 +565,83 @@
 
 
     function populateFilters(data) {
-        const managers = [...new Set(data.map(t => t.manager).filter(m => m))].sort();
-        const filterSelect = document.getElementById('manager-filter');
+        const branches = [...new Set(data.map(t => t.branch).filter(b => b))].sort();
+        const branchContainer = document.getElementById('branch-filters');
         
-        managers.forEach(mgr => {
-            const option = document.createElement('option');
-            option.value = mgr;
-            option.textContent = mgr;
-            filterSelect.appendChild(option);
+        branches.forEach(br => {
+            const btn = document.createElement('button');
+            btn.className = 'filter-btn';
+            btn.textContent = br;
+            btn.dataset.branch = br;
+            btn.onclick = () => {
+                document.querySelectorAll('#branch-filters .filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                filters.branch = br;
+                filters.manager = 'all'; // Reset manager when branch changes
+                updateManagerFilters(data.filter(t => t.branch === br || br === 'all'));
+                applyFilters();
+            };
+            branchContainer.appendChild(btn);
         });
 
-        filterSelect.addEventListener('change', (e) => {
-            const selected = e.target.value;
-            const filtered = selected === 'all' ? data : data.filter(t => t.manager === selected);
-            updateDashboard(filtered);
-            renderMarkers(filtered);
+        document.querySelector('[data-branch="all"]').onclick = () => {
+            document.querySelectorAll('#branch-filters .filter-btn').forEach(b => b.classList.remove('active'));
+            document.querySelector('[data-branch="all"]').classList.add('active');
+            filters.branch = 'all';
+            filters.manager = 'all';
+            updateManagerFilters(data);
+            applyFilters();
+        };
+
+        updateManagerFilters(data);
+
+        document.getElementById('high-arpu-btn').onclick = (e) => {
+            filters.highArpu = !filters.highArpu;
+            e.target.classList.toggle('active', filters.highArpu);
+            applyFilters();
+        };
+    }
+
+    function updateManagerFilters(data) {
+        const managers = [...new Set(data.map(t => t.manager).filter(m => m))].sort();
+        const managerContainer = document.getElementById('manager-filters');
+        managerContainer.innerHTML = '';
+
+        // Add "All" for managers
+        const allBtn = document.createElement('button');
+        allBtn.className = 'filter-btn active';
+        allBtn.textContent = '전체';
+        allBtn.onclick = () => {
+            document.querySelectorAll('#manager-filters .filter-btn').forEach(b => b.classList.remove('active'));
+            allBtn.classList.add('active');
+            filters.manager = 'all';
+            applyFilters();
+        };
+        managerContainer.appendChild(allBtn);
+
+        managers.forEach(mgr => {
+            const btn = document.createElement('button');
+            btn.className = 'filter-btn';
+            btn.textContent = mgr;
+            if (filters.manager === mgr) btn.classList.add('active');
+            btn.onclick = () => {
+                document.querySelectorAll('#manager-filters .filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                filters.manager = mgr;
+                applyFilters();
+            };
+            managerContainer.appendChild(btn);
         });
+    }
+
+    function applyFilters() {
+        let filtered = allTargets;
+        if (filters.branch !== 'all') filtered = filtered.filter(t => t.branch === filters.branch);
+        if (filters.manager !== 'all') filtered = filtered.filter(t => t.manager === filters.manager);
+        if (filters.highArpu) filtered = filtered.filter(t => t.isHighArpu);
+        
+        updateDashboard(filtered);
+        renderMarkers(filtered);
     }
 
     function updateDashboard(data) {
@@ -553,10 +669,11 @@
             const statusText = isUrgent ? '만기 임박' : '재계약 관리중';
 
             card.innerHTML = `
-                <span class="target-name">${item.name}</span>
+                <span class="target-name">${item.name} ${item.isHighArpu ? '<span class="arpu-badge">고ARPU</span>' : ''}</span>
                 <div class="target-info">
+                    <p style="margin:2px 0;"><i data-lucide="building" style="width:12px; height:12px; display:inline-block; vertical-align:middle; margin-right:4px;"></i> ${item.branch}</p>
                     <p style="margin:2px 0;"><i data-lucide="user" style="width:12px; height:12px; display:inline-block; vertical-align:middle; margin-right:4px;"></i> ${item.manager}</p>
-                    <p style="margin:2px 0;"><i data-lucide="map-pin" style="width:12px; height:12px; display:inline-block; vertical-align:middle; margin-right:4px;"></i> ${item.address}</p>
+                    <p style="margin:2px 0;"><i data-lucide="map-pin" style="width:12px; height:12px; display:inline-block; vertical-align:middle; margin-right:4px;"></i> ${maskAddress(item.address)}</p>
                     <p style="margin:2px 0; font-weight:600; color:var(--primary);">${item.expiryDate ? '만기: ' + item.expiryDate : ''}</p>
                 </div>
                 <span class="status-tag ${statusClass}">${statusText}</span>
@@ -597,9 +714,10 @@
 
             const content = `
                 <div style="padding:15px; width:250px; font-family: Pretendard, sans-serif;">
-                    <h4 style="margin:0 0 5px 0; color:#1e293b;">${item.name}</h4>
+                    <h4 style="margin:0 0 5px 0; color:#1e293b;">${item.name} ${item.isHighArpu ? '<span class="arpu-badge">고ARPU</span>' : ''}</h4>
+                    <p style="font-size:12px; color:#64748b; margin:5px 0;">지사: ${item.branch}</p>
                     <p style="font-size:12px; color:#64748b; margin:5px 0;">담당: ${item.manager}</p>
-                    <p style="font-size:12px; color:#64748b; margin:5px 0;">주소: ${item.address}</p>
+                    <p style="font-size:12px; color:#64748b; margin:5px 0;">주소: ${maskAddress(item.address)}</p>
                     <div style="margin-top:10px; display:flex; gap:5px;">
                         <a href="https://www.google.com/maps/dir/?api=1&destination=${item.lat},${item.lng}" target="_blank" style="background:#4f46e5; color:white; border-radius:4px; padding:6px 12px; text-decoration:none; font-size:11px; font-weight:bold; flex:1; text-align:center;">길찾기</a>
                     </div>
@@ -690,22 +808,20 @@
             const startLat = position.coords.latitude;
             const startLng = position.coords.longitude;
             
-            // Get currently filtered targets
-            const manager = document.getElementById('manager-filter').value;
-            const currentTargets = manager === 'all' ? allTargets : allTargets.filter(t => t.manager === manager);
-
-            if (currentTargets.length === 0) {
+            const filtered = applyFiltersToData(allTargets);
+            if (filtered.length === 0) {
                 alert('경로를 계산할 대상이 없습니다.');
                 return;
             }
 
             // Greedy Nearest Neighbor
             let route = [];
-            let unvisited = [...currentTargets];
+            let unvisited = [...filtered];
             let currentLat = startLat;
             let currentLng = startLng;
+            let totalDist = 0;
 
-            const maxStops = 10; // Limit to 10 for display
+            const maxStops = 10; 
             
             for (let i = 0; i < maxStops && unvisited.length > 0; i++) {
                 let nearestIdx = -1;
@@ -722,17 +838,40 @@
                 });
 
                 if (nearest) {
-                    route.push(nearest); // Push the full target object
-                    unvisited.splice(nearestIdx, 1); // Remove from unvisited
+                    totalDist += minDist;
+                    route.push(nearest);
+                    unvisited.splice(nearestIdx, 1);
                     currentLat = nearest.lat;
                     currentLng = nearest.lng;
                 }
             }
 
             drawRoute(startLat, startLng, route);
-            alert('최적의 방문 추천 경로가 생성되었습니다 (상위 10곳).');
+            
+            // Convert approximate degrees to KM (coarse estimation: 1 deg ~= 111km)
+            const distKm = (totalDist * 111).toFixed(1);
+            const timeMin = Math.round(distKm * 2); // Roughly 2 min per km in city
+            
+            alert(`최적 방문 경로(상위 10곳)가 생성되었습니다.\n총 거리: 약 ${distKm}km\n예상 소요시간: 약 ${timeMin}분`);
         });
     };
+
+    function applyFiltersToData(data) {
+        let res = data;
+        if (filters.branch !== 'all') res = res.filter(t => t.branch === filters.branch);
+        if (filters.manager !== 'all') res = res.filter(t => t.manager === filters.manager);
+        if (filters.highArpu) res = res.filter(t => t.isHighArpu);
+        return res;
+    }
+
+    function maskAddress(addr) {
+        if (!addr) return "";
+        // Keep Si/Gun/Gu parts, mask the rest
+        // Approx: "Seoul Gangnam-gu Yeoksam-dong 123-45" -> "Seoul Gangnam-gu Yeoksam-dong ***"
+        const parts = addr.split(' ');
+        if (parts.length <= 3) return addr;
+        return parts.slice(0, 3).join(' ') + " " + "*".repeat(5);
+    }
 
     function getDist(lat1, lon1, lat2, lon2) {
         return Math.sqrt(Math.pow(lat1 - lat2, 2) + Math.pow(lon1 - lon2, 2));
