@@ -58,8 +58,10 @@ def convert_excel_to_js():
         else:
             progress = prog_val
         
-        # Contract Number
+        # Contract Number: Remove '.0' if present
         contract_no = str(row['계약번호']) if pd.notna(row['계약번호']) else ""
+        if contract_no.endswith('.0'):
+            contract_no = contract_no[:-2]
         
         # ARPU calculation (Handle string with commas like '100,000')
         arpu_val = row['합산월정료(KTT+KT)']
