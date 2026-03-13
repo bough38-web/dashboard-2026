@@ -1036,7 +1036,17 @@
     }
 
     function applyFilters() {
-        let filtered = allTargets;
+        // Reconcile allTargets with PROGRESS_STORAGE_KEY content
+        const allProgress = JSON.parse(localStorage.getItem(PROGRESS_STORAGE_KEY) || '{}');
+        let reconciledTargets = allTargets.map(t => {
+            const prog = allProgress[t.contractNo];
+            if (prog) {
+                return { ...t, progress: prog.summary, lastContactDetail: prog.detail, lastContactDate: prog.date };
+            }
+            return t;
+        });
+
+        let filtered = reconciledTargets;
         if (filters.branch !== 'all') filtered = filtered.filter(t => t.branch === filters.branch);
         if (filters.manager !== 'all') filtered = filtered.filter(t => t.manager === filters.manager);
         if (filters.status !== 'all') filtered = filtered.filter(t => t.status === filters.status);
@@ -1076,8 +1086,15 @@
             card.className = 'target-card';
             
             const isUrgent = item.expiryDate && item.expiryDate.includes('2026-03');
-            const statusClass = isUrgent ? 'status-alert' : 'status-normal';
-            const statusText = isUrgent ? '만기 임박' : '재계약 관리중';
+            
+            // Reconciled Status Handling
+            let statusClass = isUrgent ? 'status-alert' : 'status-normal';
+            let statusText = isUrgent ? '만기 임박' : '재계약 관리중';
+            
+            if (item.progress && item.progress !== '진행대상') {
+                statusClass = getStatusClass(item.progress);
+                statusText = item.progress;
+            }
 
             card.innerHTML = `
                 <span class="target-name">${item.name} ${item.isHighArpu ? '<span class="arpu-badge">고ARPU</span>' : ''}</span>
@@ -1086,6 +1103,7 @@
                     <p style="margin:2px 0;"><i data-lucide="user" style="width:12px; height:12px; display:inline-block; vertical-align:middle; margin-right:4px;"></i> ${item.manager} | 계약번호: ${item.contractNo}</p>
                     <p style="margin:2px 0;"><i data-lucide="map-pin" style="width:12px; height:12px; display:inline-block; vertical-align:middle; margin-right:4px;"></i> ${maskAddress(item.address)}</p>
                     <p style="margin:2px 0; font-weight:600; color:var(--primary);">${item.expiryDate ? '만기: ' + item.expiryDate : ''}</p>
+                    ${item.lastContactDate ? `<p style="margin:2px 0; font-size:11px; color:#10b981;"><b>최근등록:</b> ${item.lastContactDate} (${item.progress})</p>` : ''}
                 </div>
                 <div style="display:flex; justify-content:space-between; align-items:center;">
                     <span class="status-tag ${statusClass}">${statusText}</span>
@@ -1142,9 +1160,10 @@
                     <p style="font-size:12px; color:#64748b; margin:5px 0;">담당: ${item.manager} (${item.contractNo})</p>
                     <p style="font-size:12px; color:#64748b; margin:5px 0;">주소: ${maskAddress(item.address)}</p>
                     <div style="margin:10px 0; padding:10px; background:#f8fafc; border-radius:8px; border:1px solid #e2e8f0;">
-                        <p style="font-size:11px; color:#475569; margin:3px 0;"><b>계약상태:</b> ${item.status}</p>
+                        <p style="font-size:11px; color:#475569; margin:3px 0;"><b>상태:</b> <span class="status-tag ${getStatusClass(item.progress)}" style="display:inline; padding:1px 6px;">${item.progress || '진행대상'}</span></p>
                         <p style="font-size:11px; color:#475569; margin:3px 0;"><b>월정료:</b> ${formatArpuRange(item.arpu)}</p>
                         <p style="font-size:11px; color:#475569; margin:3px 0; color:#ef4444;"><b>만기일:</b> ${item.expiryDate || '정보없음'}</p>
+                        ${item.lastContactDate ? `<p style="font-size:10px; color:#10b981; margin:5px 0 0 0; border-top:1px dashed #ced4da; padding-top:5px;"><b>최근상담(${item.lastContactDate}):</b><br>${item.lastContactDetail || '-'}</p>` : ''}
                     </div>
                     <div style="margin-top:10px; display:flex; gap:5px;">
                         <a href="https://www.google.com/maps/dir/?api=1&destination=${item.lat},${item.lng}" target="_blank" style="background:#4f46e5; color:white; border-radius:4px; padding:6px 12px; text-decoration:none; font-size:11px; font-weight:bold; flex:1; text-align:center;">길찾기</a>
@@ -1286,7 +1305,13 @@
     };
 
     function applyFiltersToData(data) {
-        let res = data;
+        const allProgress = JSON.parse(localStorage.getItem(PROGRESS_STORAGE_KEY) || '{}');
+        const reconciled = data.map(t => {
+            const prog = allProgress[t.contractNo];
+            return prog ? { ...t, progress: prog.summary } : t;
+        });
+
+        let res = reconciled;
         if (filters.branch !== 'all') res = res.filter(t => t.branch === filters.branch);
         if (filters.manager !== 'all') res = res.filter(t => t.manager === filters.manager);
         if (filters.status !== 'all') res = res.filter(t => t.status === filters.status);
@@ -1384,6 +1409,7 @@
             date,
             summary,
             detail,
+            contractNo: currentEditingId,
             name: target ? target.name : 'Unknown',
             branch: target ? target.branch : '-',
             manager: target ? target.manager : '-'
@@ -1400,6 +1426,11 @@
     window.toggleAdminPanel = function() {
         const panel = document.getElementById('admin-panel');
         if (panel.style.display === 'none') {
+            const pw = prompt('관리자 보안 코드를 입력하세요:');
+            if (pw !== '0303') {
+                if (pw !== null) alert('보안 코드가 일치하지 않습니다.');
+                return;
+            }
             panel.style.display = 'flex';
             updateAdminTable();
         } else {
@@ -1427,6 +1458,7 @@
                 <td style="white-space:nowrap;">${rec.date}</td>
                 <td>${rec.branch}</td>
                 <td>${rec.manager}</td>
+                <td>${rec.contractNo || '-'}</td>
                 <td style="font-weight:700;">${rec.name}</td>
                 <td><span class="status-tag ${statusClass}">${rec.summary}</span></td>
                 <td style="white-space:pre-wrap;">${rec.detail || '-'}</td>
@@ -1436,6 +1468,7 @@
     };
 
     function getStatusClass(summary) {
+        if (!summary || summary === '진행대상') return 'status-normal';
         if (summary === '계약완료') return 'status-normal';
         if (summary === '진행중') return 'status-warning';
         return 'status-alert';
@@ -1450,10 +1483,10 @@
             return;
         }
         
-        let csvContent = "\ufeff등록일,지사,담당자,고객명,진행요약,상세내역\n";
+        let csvContent = "\ufeff등록일,지사,담당자,계약번호,고객명,진행요약,상세내역\n";
         records.forEach(rec => {
             const detailCsv = (rec.detail || '').replace(/"/g, '""').replace(/\n/g, ' ');
-            csvContent += `"${rec.date}","${rec.branch}","${rec.manager}","${rec.name}","${rec.summary}","${detailCsv}"\n`;
+            csvContent += `"${rec.date}","${rec.branch}","${rec.manager}","${rec.contractNo || ''}","${rec.name}","${rec.summary}","${detailCsv}"\n`;
         });
         
         const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
@@ -1518,6 +1551,7 @@
                         <th>등록일</th>
                         <th>지사</th>
                         <th>담당자</th>
+                        <th>계약번호</th>
                         <th>고객명</th>
                         <th>진행요약</th>
                         <th>진행내역 상세</th>
