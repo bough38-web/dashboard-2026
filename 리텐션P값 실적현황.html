@@ -307,7 +307,9 @@
         const isFromMain = ref && (
             ref.includes('index.html') || 
             ref.includes('2026%EB%85%84') || 
-            ref.includes('2026년')
+            ref.includes('2026년') ||
+            ref.endsWith('dashboard-2026/') ||
+            ref.endsWith('dashboard-2026')
         );
 
         if (!isApproved) {
