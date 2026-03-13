@@ -325,6 +325,13 @@
         });
     });
 
+    function maskName(name) {
+        if (!name) return "";
+        if (name.length <= 1) return name;
+        if (name.length === 2) return name[0] + "*";
+        return name[0] + "*" + name.slice(2); 
+    }
+
     // Populate manager select based on branch
     document.getElementById('branch-select').onchange = (e) => {
         const branch = e.target.value;
@@ -336,11 +343,13 @@
             return;
         }
 
+        // Use a Set to handle potential duplicates in data if they have same masked name and ID
         const filtered = AUTH_CONFIG.managers.filter(m => m.branch === branch);
         filtered.forEach(m => {
             const opt = document.createElement('option');
             opt.value = m.id;
-            opt.textContent = `${m.name} (${m.id})`;
+            // Mask name and remove ID from display text
+            opt.textContent = maskName(m.name);
             managerSelect.appendChild(opt);
         });
         managerSelect.disabled = false;

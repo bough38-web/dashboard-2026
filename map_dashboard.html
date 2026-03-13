@@ -1488,6 +1488,8 @@
             let currentLat = startLat;
             let currentLng = startLng;
             let totalDist = 0;
+            let totalWalkingMins = 0;
+            let totalDrivingMins = 0;
 
             const maxStops = 10; 
             
@@ -1506,8 +1508,14 @@
                 });
 
                 if (nearest) {
-                    totalDist += minDist;
-                    route.push(nearest);
+                    const distSubKm = minDist * 111;
+                    totalDist += distSubKm;
+                    // Walking: ~5km/h -> 12 min/km
+                    // Driving: ~30km/h (city) -> 2 min/km
+                    totalWalkingMins += distSubKm * 12;
+                    totalDrivingMins += distSubKm * 2;
+
+                    route.push({ ...nearest, distFromPrev: distSubKm });
                     unvisited.splice(nearestIdx, 1);
                     currentLat = nearest.lat;
                     currentLng = nearest.lng;
@@ -1516,11 +1524,7 @@
 
             drawRoute(startLat, startLng, route);
             
-            // Convert approximate degrees to KM (coarse estimation: 1 deg ~= 111km)
-            const distKm = (totalDist * 111).toFixed(1);
-            const timeMin = Math.round(distKm * 2); // Roughly 2 min per km in city
-            
-            alert(`최적 방문 경로(상위 10곳)가 생성되었습니다.\n총 거리: 약 ${distKm}km\n예상 소요시간: 약 ${timeMin}분`);
+            alert(`최적 방문 경로(상위 10곳)가 생성되었습니다.\n총 거리: 약 ${totalDist.toFixed(1)}km\n예상 소요시간: 도보 약 ${totalWalkingMins.toFixed(0)}분 / 차량 약 ${totalDrivingMins.toFixed(0)}분`);
         });
     };
 
@@ -1560,25 +1564,107 @@
         return Math.sqrt(Math.pow(lat1 - lat2, 2) + Math.pow(lon1 - lon2, 2));
     }
 
+    let routeMarkers = [];
+    let distanceLabels = [];
+
     function drawRoute(sLat, sLon, path) {
         if (currentRouteLine) currentRouteLine.setMap(null);
+        routeMarkers.forEach(m => m.setMap(null));
+        distanceLabels.forEach(l => l.setMap(null));
+        routeMarkers = [];
+        distanceLabels = [];
 
         const linePath = [
             { lat: sLat, lng: sLon },
             ...path.map(p => ({ lat: p.lat, lng: p.lng }))
         ];
 
+        // Dashed Polyline Implementation
+        const lineSymbol = {
+            path: 'M 0,-1 0,1',
+            strokeOpacity: 1,
+            scale: 2
+        };
+
         currentRouteLine = new google.maps.Polyline({
             path: linePath,
             geodesic: true,
-            strokeColor: '#4f46e5',
-            strokeOpacity: 0.8,
+            strokeColor: '#16a34a', // Use green for route as per image
+            strokeOpacity: 0,
+            icons: [{
+                icon: lineSymbol,
+                offset: '0',
+                repeat: '20px'
+            }],
             strokeWeight: 4,
             map: map
         });
+
+        // Add start marker (optional, but good for clarity)
+        const startMarker = new google.maps.Marker({
+            position: { lat: sLat, lng: sLon },
+            map: map,
+            icon: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+            title: '출발지'
+        });
+        routeMarkers.push(startMarker);
         
-        // Focus first stop
-        if (path.length > 0) {
+        // Add step markers and labels
+        path.forEach((p, idx) => {
+            const stopNum = idx + 1;
+            
+            // Marker with number
+            const marker = new google.maps.Marker({
+                position: { lat: p.lat, lng: p.lng },
+                map: map,
+                label: {
+                    text: stopNum.toString(),
+                    color: 'white',
+                    fontWeight: 'bold'
+                },
+                icon: {
+                    path: google.maps.SymbolPath.CIRCLE,
+                    fillColor: '#dc2626', // Red circle
+                    fillOpacity: 1,
+                    strokeColor: 'white',
+                    strokeWeight: 2,
+                    scale: 12
+                },
+                zIndex: 1000
+            });
+            routeMarkers.push(marker);
+
+            // Distance labels at midpoints
+            const prev = linePath[idx];
+            const midLat = (prev.lat + p.lat) / 2;
+            const midLng = (prev.lng + p.lng) / 2;
+            
+            const distM = (p.distFromPrev * 1000).toFixed(0);
+            
+            const distLabel = new google.maps.Marker({
+                position: { lat: midLat, lng: midLng },
+                map: map,
+                label: {
+                    text: `${distM}m`,
+                    color: '#f97316', // Orange text
+                    fontWeight: '800',
+                    fontSize: '12px'
+                },
+                icon: {
+                    path: google.maps.SymbolPath.CIRCLE,
+                    fillColor: 'white',
+                    fillOpacity: 0.9,
+                    strokeColor: '#f97316',
+                    strokeWeight: 1,
+                    scale: 20
+                },
+                zIndex: 900
+            });
+            distanceLabels.push(distLabel);
+        });
+        
+        // Focus route
+        if (linePath.length > 0) {
             const bounds = new google.maps.LatLngBounds();
             linePath.forEach(p => bounds.extend(p));
             map.fitBounds(bounds);
