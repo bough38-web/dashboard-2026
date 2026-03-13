@@ -599,7 +599,7 @@
         LIMIT_DATE: "2026-03-31", 
         ADMIN_CODE: "0303",      // Master Admin Code
         CODE_PREFIX: "0303",     // Prefix for dynamic month code
-        STORAGE_KEY: 'map_dashboard_access_approved_2026'
+        STORAGE_KEY: 'dashboard_access_approved_2026'
     };
 
     function debugLog(msg, isError = false) {
@@ -708,12 +708,25 @@
     function checkExpiration() {
         const isApproved = localStorage.getItem(ACCESS_CONFIG.STORAGE_KEY) === 'true';
         const today = new Date().toISOString().split('T')[0];
+        const isExpired = today > ACCESS_CONFIG.LIMIT_DATE;
 
-        // If direct access or expired, show lock screen
-        if (!isApproved || today > ACCESS_CONFIG.LIMIT_DATE) {
-            document.getElementById('lock-screen').style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-            lucide.createIcons(); // For lock icon
+        // Check if navigated from main dashboard (index or 2026 dashboard)
+        const ref = document.referrer;
+        const isFromMain = ref && (
+            ref.includes('index.html') || 
+            ref.includes('2026%EB%85%84') || 
+            ref.includes('2026년')
+        );
+
+        // Locked if:
+        // 1. Expired AND not approved
+        // 2. Not expired BUT accessed directly (not from main) AND not approved
+        if (!isApproved) {
+            if (isExpired || !isFromMain) {
+                document.getElementById('lock-screen').style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+                if (typeof lucide !== 'undefined') lucide.createIcons(); 
+            }
         }
     }
 
