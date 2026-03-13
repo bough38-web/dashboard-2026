@@ -460,6 +460,115 @@
             #app { flex-direction: column; }
             .route-btn { bottom: 55%; }
         }
+
+        /* Progress Modal & Admin UI */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            align-items: center; justify-content: center;
+            z-index: 10000;
+        }
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            width: 450px;
+            max-width: 90%;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .modal-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary);
+        }
+        .form-group { margin-bottom: 15px; }
+        .form-label { font-size: 0.875rem; font-weight: 600; color: var(--text-sub); display: block; margin-bottom: 5px; }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            outline: none;
+            box-sizing: border-box;
+        }
+        textarea.form-control { height: 100px; resize: none; }
+        .modal-footer {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+        .btn { padding: 10px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; border: none; }
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-secondary { background: #e2e8f0; color: var(--text-main); }
+
+        /* Admin Dashboard Overlay */
+        #admin-panel {
+            position: fixed;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%; height: 85%;
+            background: white;
+            z-index: 10001;
+            border-radius: 20px;
+            display: none;
+            flex-direction: column;
+            padding: 30px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .admin-table-container { flex: 1; overflow: auto; border: 1px solid var(--border-color); border-radius: 12px; }
+        .admin-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+        .admin-table th { background: #f8fafc; padding: 12px; text-align: left; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; }
+        .admin-table td { padding: 12px; border-bottom: 1px solid var(--border-color); }
+        .admin-table tr:hover { background: #f1f5f9; }
+
+        .progress-btn-mini {
+            background: #f1f5f9;
+            color: var(--primary);
+            border: 1px solid var(--border-color);
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: 8px;
+            cursor: pointer;
+        }
+        .progress-btn-mini:hover { background: #e0e7ff; }
+
+        .view-admin-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(30, 41, 59, 0.8);
+            color: white;
+            padding: 10px 16px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 700;
+            backdrop-filter: blur(8px);
+            z-index: 500;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .view-admin-btn:hover { background: rgba(30, 41, 59, 1); }
     </style>
 </head>
 <body>
@@ -509,7 +618,7 @@
                     <button class="filter-btn active" data-arpu="all">전체</button>
                     <button class="filter-btn" data-arpu="under5">5만미만</button>
                     <button class="filter-btn" data-arpu="under10">10만미만</button>
-                    <button class="filter-btn" data-arpu="10to20">10-20만</button>
+                    <button class="filter-btn" data-arpu="10to20">10만~20만</button>
                     <button class="filter-btn" data-arpu="over20">20만이상</button>
                 </div>
             </div>
@@ -536,6 +645,9 @@
 
     <!-- Map -->
     <main id="map-container">
+        <button class="view-admin-btn" onclick="toggleAdminPanel()">
+            <i data-lucide="layout-dashboard"></i> 전체 진행상황 확인 (관리자)
+        </button>
         <div id="map"></div>
         <div id="debug-log" class="debug-console">System Ready.</div>
         
@@ -975,7 +1087,12 @@
                     <p style="margin:2px 0;"><i data-lucide="map-pin" style="width:12px; height:12px; display:inline-block; vertical-align:middle; margin-right:4px;"></i> ${maskAddress(item.address)}</p>
                     <p style="margin:2px 0; font-weight:600; color:var(--primary);">${item.expiryDate ? '만기: ' + item.expiryDate : ''}</p>
                 </div>
-                <span class="status-tag ${statusClass}">${statusText}</span>
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <span class="status-tag ${statusClass}">${statusText}</span>
+                    <button class="progress-btn-mini" onclick="event.stopPropagation(); openProgressModal('${item.contractNo}', '${item.name.replace(/'/g, "\\'")}')">
+                        <i data-lucide="edit-3" style="width:10px; height:10px;"></i> 진행등록
+                    </button>
+                </div>
             `;
             
             card.onclick = () => focusTarget(item, card);
@@ -1031,6 +1148,7 @@
                     </div>
                     <div style="margin-top:10px; display:flex; gap:5px;">
                         <a href="https://www.google.com/maps/dir/?api=1&destination=${item.lat},${item.lng}" target="_blank" style="background:#4f46e5; color:white; border-radius:4px; padding:6px 12px; text-decoration:none; font-size:11px; font-weight:bold; flex:1; text-align:center;">길찾기</a>
+                        <button onclick="openProgressModal('${item.contractNo}', '${item.name.replace(/'/g, "\\'")}')" style="background:#10b981; color:white; border-radius:4px; border:none; padding:6px 12px; font-size:11px; font-weight:bold; flex:1; cursor:pointer;">진행등록</button>
                     </div>
                 </div>
             `;
@@ -1221,7 +1339,197 @@
             map.fitBounds(bounds);
         }
     }
+
+    // --- Progress & Admin Interaction ---
+    let currentEditingId = null;
+    const PROGRESS_STORAGE_KEY = 'dashboard_targets_progress_2026';
+
+    window.openProgressModal = function(contractNo, name) {
+        currentEditingId = contractNo;
+        document.getElementById('modal-customer-name').textContent = `고객명: ${name} (${contractNo})`;
+        document.getElementById('reg-date').value = new Date().toISOString().split('T')[0];
+        
+        // Load existing if available
+        const allProgress = JSON.parse(localStorage.getItem(PROGRESS_STORAGE_KEY) || '{}');
+        const existing = allProgress[contractNo];
+        
+        if (existing) {
+            document.getElementById('reg-summary').value = existing.summary;
+            document.getElementById('reg-detail').value = existing.detail;
+        } else {
+            document.getElementById('reg-summary').value = '진행중';
+            document.getElementById('reg-detail').value = '';
+        }
+        
+        document.getElementById('progress-modal').style.display = 'flex';
+        lucide.createIcons();
+    };
+
+    window.closeProgressModal = function() {
+        document.getElementById('progress-modal').style.display = 'none';
+        currentEditingId = null;
+    };
+
+    window.saveProgress = function() {
+        if (!currentEditingId) return;
+        
+        const summary = document.getElementById('reg-summary').value;
+        const detail = document.getElementById('reg-detail').value;
+        const date = document.getElementById('reg-date').value;
+        
+        const allProgress = JSON.parse(localStorage.getItem(PROGRESS_STORAGE_KEY) || '{}');
+        const target = allTargets.find(t => t.contractNo === currentEditingId);
+
+        allProgress[currentEditingId] = {
+            date,
+            summary,
+            detail,
+            name: target ? target.name : 'Unknown',
+            branch: target ? target.branch : '-',
+            manager: target ? target.manager : '-'
+        };
+        
+        localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(allProgress));
+        alert('진행사항이 저장되었습니다.');
+        closeProgressModal();
+        if (document.getElementById('admin-panel').style.display === 'flex') {
+            updateAdminTable();
+        }
+    };
+
+    window.toggleAdminPanel = function() {
+        const panel = document.getElementById('admin-panel');
+        if (panel.style.display === 'none') {
+            panel.style.display = 'flex';
+            updateAdminTable();
+        } else {
+            panel.style.display = 'none';
+        }
+        lucide.createIcons();
+    };
+
+    window.updateAdminTable = function() {
+        const tbody = document.getElementById('admin-table-body');
+        tbody.innerHTML = '';
+        
+        const allProgress = JSON.parse(localStorage.getItem(PROGRESS_STORAGE_KEY) || '{}');
+        const records = Object.values(allProgress).sort((a, b) => b.date.localeCompare(a.date));
+        
+        if (records.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:40px; color:#94a3b8;">등록된 진행내역이 없습니다.</td></tr>';
+            return;
+        }
+        
+        records.forEach(rec => {
+            const tr = document.createElement('tr');
+            const statusClass = getStatusClass(rec.summary);
+            tr.innerHTML = `
+                <td style="white-space:nowrap;">${rec.date}</td>
+                <td>${rec.branch}</td>
+                <td>${rec.manager}</td>
+                <td style="font-weight:700;">${rec.name}</td>
+                <td><span class="status-tag ${statusClass}">${rec.summary}</span></td>
+                <td style="white-space:pre-wrap;">${rec.detail || '-'}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+    };
+
+    function getStatusClass(summary) {
+        if (summary === '계약완료') return 'status-normal';
+        if (summary === '진행중') return 'status-warning';
+        return 'status-alert';
+    }
+
+    window.exportToCSV = function() {
+        const allProgress = JSON.parse(localStorage.getItem(PROGRESS_STORAGE_KEY) || '{}');
+        const records = Object.values(allProgress);
+        
+        if (records.length === 0) {
+            alert('내보낼 데이터가 없습니다.');
+            return;
+        }
+        
+        let csvContent = "\ufeff등록일,지사,담당자,고객명,진행요약,상세내역\n";
+        records.forEach(rec => {
+            const detailCsv = (rec.detail || '').replace(/"/g, '""').replace(/\n/g, ' ');
+            csvContent += `"${rec.date}","${rec.branch}","${rec.manager}","${rec.name}","${rec.summary}","${detailCsv}"\n`;
+        });
+        
+        const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+        const link = document.createElement("a");
+        const url = URL.createObjectURL(blob);
+        link.setAttribute("href", url);
+        link.setAttribute("download", `dashboard_progress_export_${new Date().toISOString().split('T')[0]}.csv`);
+        link.style.visibility = 'hidden';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
 </script>
+
+<!-- Register Progress Modal -->
+<div id="progress-modal" class="modal-overlay">
+    <div class="modal-content">
+        <h3 class="modal-title"><i data-lucide="edit-3"></i> 진행사항 등록</h3>
+        <p id="modal-customer-name" style="font-size:14px; color:var(--text-sub); margin-bottom:15px;"></p>
+        
+        <div class="form-group">
+            <label class="form-label">등록일자</label>
+            <input type="text" id="reg-date" class="form-control" readonly>
+        </div>
+        
+        <div class="form-group">
+            <label class="form-label">진행요약</label>
+            <select id="reg-summary" class="form-control">
+                <option value="계약완료">계약완료 ✅</option>
+                <option value="진행중">진행중 ⏳</option>
+                <option value="해지예정">해지예정 ⚠️</option>
+                <option value="정지예정">정지예정 🛑</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label class="form-label">진행내역 상세</label>
+            <textarea id="reg-detail" class="form-control" placeholder="구체적인 상담 기록이나 특이사항을 입력하세요."></textarea>
+        </div>
+        
+        <div class="modal-footer">
+            <button class="btn btn-secondary" onclick="closeProgressModal()">취소</button>
+            <button class="btn btn-primary" onclick="saveProgress()">저장하기</button>
+        </div>
+    </div>
+</div>
+
+<!-- Admin Panel Overlay -->
+<div id="admin-panel" class="modal-overlay" style="display:none; background:rgba(15,23,42,0.6)">
+    <div style="background:white; width:90%; height:90%; border-radius:20px; display:flex; flex-direction:column; padding:30px; position:relative;">
+        <div class="admin-header">
+            <h2 style="margin:0; display:flex; align-items:center; gap:10px;"><i data-lucide="list-checks" style="color:var(--primary)"></i> 전체 진행상황 집계 (관리자)</h2>
+            <div style="display:flex; gap:10px;">
+                <button class="btn btn-primary" onclick="exportToCSV()" style="background:#10b981">CSV 내보내기</button>
+                <button class="btn btn-secondary" onclick="toggleAdminPanel()">닫기</button>
+            </div>
+        </div>
+        <div class="admin-table-container">
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>등록일</th>
+                        <th>지사</th>
+                        <th>담당자</th>
+                        <th>고객명</th>
+                        <th>진행요약</th>
+                        <th>진행내역 상세</th>
+                    </tr>
+                </thead>
+                <tbody id="admin-table-body">
+                    <!-- Progress records will be injected here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
