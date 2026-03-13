@@ -992,6 +992,13 @@
         lucide.createIcons();
     }
 
+    function formatArpuRange(arpu) {
+        if (arpu < 50000) return "5만 미만";
+        if (arpu < 100000) return "10만 미만";
+        if (arpu <= 200000) return "10만~20만";
+        return "20만 이상";
+    }
+
     function renderMarkers(data) {
         if (!map) return;
 
@@ -1017,6 +1024,11 @@
                     <p style="font-size:12px; color:#64748b; margin:5px 0;">지사: ${item.branch}</p>
                     <p style="font-size:12px; color:#64748b; margin:5px 0;">담당: ${item.manager} (${item.contractNo})</p>
                     <p style="font-size:12px; color:#64748b; margin:5px 0;">주소: ${maskAddress(item.address)}</p>
+                    <div style="margin:10px 0; padding:10px; background:#f8fafc; border-radius:8px; border:1px solid #e2e8f0;">
+                        <p style="font-size:11px; color:#475569; margin:3px 0;"><b>계약상태:</b> ${item.status}</p>
+                        <p style="font-size:11px; color:#475569; margin:3px 0;"><b>월정료:</b> ${formatArpuRange(item.arpu)}</p>
+                        <p style="font-size:11px; color:#475569; margin:3px 0; color:#ef4444;"><b>만기일:</b> ${item.expiryDate || '정보없음'}</p>
+                    </div>
                     <div style="margin-top:10px; display:flex; gap:5px;">
                         <a href="https://www.google.com/maps/dir/?api=1&destination=${item.lat},${item.lng}" target="_blank" style="background:#4f46e5; color:white; border-radius:4px; padding:6px 12px; text-decoration:none; font-size:11px; font-weight:bold; flex:1; text-align:center;">길찾기</a>
                     </div>
