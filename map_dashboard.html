@@ -3,7 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026년 관리고객 재계약 관리 - 지도 대시보드</title>
+    <title>강북/강원 관리 대시보드 - 지도</title>
+    <!-- Auth Guard -->
+    <script>
+        (function() {
+            const session = localStorage.getItem('sales_dashboard_session');
+            if (!session) {
+                location.href = 'login.html';
+                return;
+            }
+            const sessionData = JSON.parse(session);
+            const now = new Date().getTime();
+            // Session expires after 24 hours
+            if (now - sessionData.timestamp > 24 * 60 * 60 * 1000) {
+                localStorage.removeItem('sales_dashboard_session');
+                location.href = 'login.html';
+                return;
+            }
+            window.USER_SESSION = sessionData;
+        })();
+    </script>
     <!-- Font -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
     <!-- Lucide Icons -->
@@ -47,7 +66,52 @@
             display: flex;
             flex-direction: column;
             z-index: 1000;
-            transition: transform 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        #sidebar.collapsed {
+            width: 0;
+            min-width: 0;
+            transform: translateX(-100%);
+            border-right: none;
+        }
+
+        /* Toggle Button */
+        #sidebar-toggle {
+            position: absolute;
+            right: -32px;
+            top: 20px;
+            width: 32px;
+            height: 48px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-left: none;
+            border-radius: 0 8px 8px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 1001;
+            box-shadow: 4px 0 10px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        #sidebar-toggle:hover {
+            background: var(--bg-color);
+            color: var(--primary);
+        }
+
+        #sidebar-toggle i {
+            transition: transform 0.4s ease;
+        }
+
+        .collapsed #sidebar-toggle {
+            right: -33px;
+        }
+
+        .collapsed #sidebar-toggle i {
+            transform: rotate(180deg);
         }
 
         .sidebar-header {
@@ -61,8 +125,29 @@
             margin: 0;
             display: flex;
             align-items: center;
+            justify-content: space-between;
+            width: 100%;
             gap: 10px;
             color: var(--primary);
+        }
+
+        .logout-btn {
+            background: #ef4444;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            transition: background 0.2s;
+        }
+
+        .logout-btn:hover {
+            background: #dc2626;
         }
 
         .filter-section {
@@ -576,8 +661,17 @@
 <div id="app">
     <!-- Sidebar -->
     <aside id="sidebar">
+        <!-- Toggle Button -->
+        <div id="sidebar-toggle" onclick="toggleSidebar()">
+            <i data-lucide="chevron-left"></i>
+        </div>
         <div class="sidebar-header">
-            <h1 class="sidebar-title"><i data-lucide="map-pin"></i> 재계약 관리 지도</h1>
+            <h1 class="sidebar-title" style="display:flex; align-items:center; justify-content:space-between; width:100%;">
+                <span><i data-lucide="map-pin"></i> 강북/강원 관리 지도</span>
+                <button class="logout-btn" onclick="logout()">
+                    <i data-lucide="log-out" style="width:12px; height:12px;"></i> 로그아웃
+                </button>
+            </h1>
         </div>
         
         <div id="sidebar-content">
@@ -596,6 +690,12 @@
                 </div>
                 <div id="manager-filters" class="filter-group">
                     <!-- Managers will be injected here -->
+                </div>
+
+                <label class="filter-label">정지/부실 통합 조회</label>
+                <div id="suspension-filters" class="filter-group" style="margin-bottom: 20px;">
+                    <button class="filter-btn" id="btn-show-suspension" onclick="toggleSuspensionLayer('suspension')" style="border-color: #ef4444; color: #ef4444;">🔴 정지 고객 보기</button>
+                    <button class="filter-btn" id="btn-show-defect" onclick="toggleSuspensionLayer('defect')" style="border-color: #f59e0b; color: #f59e0b;">🟠 부실 고객 보기</button>
                 </div>
 
                 <label class="filter-label">계약상태 필터</label>
@@ -686,6 +786,7 @@
 <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
 <!-- Target Data (Cache Buster Added) -->
 <script src="data/targets.js?v=202603130700"></script>
+<script src="data/suspension_targets.js"></script>
 
 <script>
     // Lucide Icons Initialization
@@ -693,6 +794,8 @@
 
     let map;
     let markers = [];
+    let suspensionMarkers = [];
+    let activeSuspensionType = null; // 'suspension', 'defect', or null
     let clusterer;
     let allTargets = [];
     let currentRouteLine = null;
@@ -742,7 +845,21 @@
         
         // Data integration
         if (typeof TARGETS !== 'undefined') {
-            allTargets = TARGETS.filter(t => t.lat && t.lng);
+            allTargets = TARGETS.filter(t => {
+                if (!t.lat || !t.lng) return false;
+                if (!window.USER_SESSION) return false;
+                if (window.USER_SESSION.role === 'admin') return true;
+                if (window.USER_SESSION.role === 'branch') return t.branch === window.USER_SESSION.data.branch;
+                if (window.USER_SESSION.role === 'manager') return t.manager === window.USER_SESSION.data.name;
+                return false;
+            });
+
+            window.logout = function() {
+                if (confirm('로그아웃 하시겠습니까?')) {
+                    localStorage.removeItem('sales_dashboard_session');
+                    location.href = 'login.html';
+                }
+            };
             debugLog(`Data Loaded: ${allTargets.length} records`);
             populateFilters(allTargets);
             updateDashboard(allTargets);
@@ -843,6 +960,25 @@
             }
         }
     }
+
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('collapsed');
+        
+        // Notify map about resizing if needed
+        if (typeof map !== 'undefined') {
+            setTimeout(() => {
+                google.maps.event.trigger(map, 'resize');
+            }, 400); 
+        }
+    }
+
+    window.logout = function() {
+        if (confirm('로그아웃 하시겠습니까?')) {
+            localStorage.removeItem('sales_dashboard_session');
+            location.href = 'login.html';
+        }
+    };
 
     function verifyAccess() {
         const input = document.getElementById('accessCode').value;
@@ -1035,7 +1171,90 @@
         });
     }
 
+    // --- Suspension Layer Logic ---
+    function toggleSuspensionLayer(type) {
+        if (activeSuspensionType === type) {
+            activeSuspensionType = null;
+            document.getElementById('btn-show-suspension').classList.remove('active');
+            document.getElementById('btn-show-defect').classList.remove('active');
+        } else {
+            activeSuspensionType = type;
+            document.getElementById('btn-show-suspension').classList.toggle('active', type === 'suspension');
+            document.getElementById('btn-show-defect').classList.toggle('active', type === 'defect');
+        }
+        updateSuspensionMarkers();
+    }
+
+    function updateSuspensionMarkers() {
+        // Clear old suspension markers
+        if (typeof suspensionMarkers !== 'undefined') {
+            suspensionMarkers.forEach(m => m.setMap(null));
+        }
+        suspensionMarkers = [];
+
+        if (!activeSuspensionType) return;
+
+        // Filter suspension targets by current branch/manager
+        const branchFilter = document.querySelector('[data-branch].active').dataset.branch;
+        const managerFilter = document.querySelector('[data-manager].active')?.dataset.manager || 'all';
+
+        // Check if SUSPENSION_TARGETS is loaded
+        if (typeof SUSPENSION_TARGETS === 'undefined') {
+            log("Error: SUSPENSION_TARGETS not loaded.");
+            return;
+        }
+
+        const filtered = SUSPENSION_TARGETS.filter(t => {
+            const matchBranch = branchFilter === 'all' || t.branch === branchFilter;
+            const matchManager = managerFilter === 'all' || t.manager === managerFilter;
+            
+            if (activeSuspensionType === 'defect') {
+                return matchBranch && matchManager && (t.is_defect === 'Y' || t.is_defect === '예');
+            } else {
+                return matchBranch && matchManager; // All in suspension_targets are suspension
+            }
+        });
+
+        filtered.forEach(target => {
+            if (!target.lat || !target.lng) return;
+
+            const iconUrl = activeSuspensionType === 'defect' 
+                ? 'http://maps.google.com/mapfiles/ms/icons/orange-dot.png'
+                : 'http://maps.google.com/mapfiles/ms/icons/red-dot.png';
+
+            const marker = new google.maps.Marker({
+                position: { lat: parseFloat(target.lat), lng: parseFloat(target.lng) },
+                map: map,
+                icon: iconUrl,
+                title: target.name
+            });
+
+            const infoWindow = new google.maps.InfoWindow({
+                content: `
+                    <div style="padding:10px; font-family:sans-serif;">
+                        <h3 style="margin:0 0 5px 0; color:#ef4444;">${activeSuspensionType === 'defect' ? '⚠️ 부실고객' : '🚫 정지고객'}</h3>
+                        <p><strong>상호:</strong> ${target.name}</p>
+                        <p><strong>지사:</strong> ${target.branch}</p>
+                        <p><strong>담당:</strong> ${target.manager}</p>
+                        <p><strong>주소:</strong> ${target.address}</p>
+                        <p style="color:#64748b; font-size:12px;">계약번호: ${target.id}</p>
+                    </div>
+                `
+            });
+
+            marker.addListener('click', () => {
+                infoWindow.open(map, marker);
+            });
+
+            suspensionMarkers.push(marker);
+        });
+        
+        if (typeof log === 'function') log(`Suspension markers updated: ${filtered.length} found.`);
+    }
+
     function applyFilters() {
+        // Clear active suspension markers if any
+        updateSuspensionMarkers();
         // Reconcile allTargets with PROGRESS_STORAGE_KEY content
         const allProgress = JSON.parse(localStorage.getItem(PROGRESS_STORAGE_KEY) || '{}');
         let reconciledTargets = allTargets.map(t => {
@@ -1063,6 +1282,7 @@
         
         updateDashboard(filtered);
         renderMarkers(filtered);
+        updateSuspensionMarkers(); // Update suspension markers as well
     }
 
     function updateDashboard(data) {

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>2026년 정지/부실 실적 현황 (스마트 대시보드)</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        :root {
+            --bg-body: #f1f5f9;
+            --surface-bg: #ffffff;
+            --primary-dark: #0f172a;
+            --primary-red: #ef4444;
+            --primary-orange: #f59e0b;
+            --primary-blue: #3b82f6;
+            --border-light: #e2e8f0;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        body { font-family: 'Pretendard', sans-serif; background-color: var(--bg-body); margin: 0; padding: 40px 20px; color: var(--text-main); display: flex; justify-content: center; }
+        .dashboard-wrapper { width: 100%; max-width: 1400px; display: flex; flex-direction: column; gap: 24px; display: none; }
+        
+        /* Premium Lock Screen */
+        #lock-screen {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(10px);
+            z-index: 10000; display: flex; align-items: center; justify-content: center;
+        }
+        .lock-container { background: white; padding: 40px; border-radius: 24px; text-align: center; width: 350px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); }
+        .lock-container h2 { margin-bottom: 20px; font-weight: 800; }
+        .lock-input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 12px; font-size: 18px; text-align: center; margin-bottom: 15px; box-sizing: border-box; }
+        .lock-btn { width: 100%; padding: 12px; background: #0f172a; color: white; border: none; border-radius: 12px; font-weight: bold; cursor: pointer; }
+
+        .header-box { background: white; padding: 30px; border-radius: 16px; box-shadow: var(--shadow-md); border-left: 6px solid var(--primary-red); display: flex; justify-content: space-between; align-items: center; }
+        .header-title h1 { margin: 0; font-size: 24px; font-weight: 800; }
+        .header-title p { margin: 5px 0 0 0; color: var(--text-muted); font-size: 14px; }
+
+        .filter-container { background: white; padding: 20px 30px; border-radius: 16px; box-shadow: var(--shadow-md); display: flex; gap: 40px; align-items: center; }
+        .filter-section { display: flex; flex-direction: column; gap: 8px; }
+        .filter-label { font-size: 13px; font-weight: 800; color: var(--text-muted); }
+        .btn-group { display: flex; gap: 4px; background: #f8fafc; padding: 4px; border-radius: 10px; border: 1px solid var(--border-light); }
+        .btn { padding: 8px 16px; border: none; background: transparent; border-radius: 6px; cursor: pointer; font-weight: 700; font-size: 14px; color: var(--text-muted); transition: 0.2s; }
+        .btn.active { background: white; color: var(--primary-dark); box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+
+        .top-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 24px; }
+        .card { background: white; padding: 25px; border-radius: 16px; box-shadow: var(--shadow-md); }
+        .card-title { font-size: 16px; font-weight: 800; margin-bottom: 20px; border-bottom: 2px solid #f1f5f9; padding-bottom: 10px; }
+
+        .kpi-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .kpi-box { padding: 20px; border-radius: 12px; text-align: center; border: 1px solid #e2e8f0; }
+        .kpi-box.red { background: #fef2f2; color: #b91c1c; border-color: #fecaca; }
+        .kpi-box.orange { background: #fffbeb; color: #b45309; border-color: #fef3c7; }
+        .kpi-box .val { font-size: 28px; font-weight: 900; margin: 10px 0; }
+        .kpi-box .unit { font-size: 14px; font-weight: 600; margin-left: 4px; }
+
+        .table-card { background: white; border-radius: 16px; box-shadow: var(--shadow-md); padding: 25px; overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 13px; white-space: nowrap; }
+        th, td { padding: 12px 10px; border: 1px solid #e5e7eb; text-align: center; }
+        th { background: #f9fafb; font-weight: 800; color: #374151; }
+        .bg-total { background: #1e293b; color: white; }
+        .bg-defect { background: #fffbeb; color: #92400e; }
+        .bg-etc { background: #f0f9ff; color: #075985; }
+        .bg-pay { background: #fef2f2; color: #991b1b; }
+        .bg-gen { background: #f0fdf4; color: #166534; }
+        
+        .sticky-col { position: sticky; left: 0; background: white; font-weight: 800; z-index: 10; border-right: 2px solid #cbd5e1 !important; }
+        tr:hover { background: #f8fafc; }
+        .txt-num { text-align: right; font-family: 'Consolas', monospace; }
+        .highlight-row { background: #f0f9ff; transition: 0.3s; }
+        .highlight-row td:first-child { background: #e0f2fe; color: #0369a1; }
+
+        .pdf-btn { background: #0f172a; color: white; border: none; padding: 12px 24px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px; float: right; }
+    </style>
+</head>
+<body>
+
+<div id="lock-screen">
+    <div class="lock-container">
+        <h2>Dashboard Locked</h2>
+        <p>보안 코드를 입력해 주세요.</p>
+        <input type="password" id="accessCode" class="lock-input" placeholder="••••" onkeypress="if(event.key==='Enter') verifyCode()">
+        <button onclick="verifyCode()" class="lock-btn">Unlock</button>
+    </div>
+</div>
+
+<div class="dashboard-wrapper" id="app">
+    <div class="header-box">
+        <div class="header-title">
+            <h1>2026년 정지/부실 실적 현황 (스마트 대시보드)</h1>
+            <p>유형별 상세 실적 및 본부/지사별 점유율 실시간 분석</p>
+        </div>
+        <button class="pdf-btn" onclick="downloadPDF()">
+            📄 PDF 다운로드
+        </button>
+    </div>
+
+    <div class="filter-container">
+        <div class="filter-section">
+            <span class="filter-label">조회 단위</span>
+            <div class="btn-group">
+                <button class="btn active" id="btn-hq" onclick="setView('hq')">본부별 현황</button>
+                <button class="btn" id="btn-branch" onclick="setView('branch')">지사별(강북/강원) 현황</button>
+            </div>
+        </div>
+        <div class="filter-section">
+            <span class="filter-label">기준 월</span>
+            <div class="btn-group">
+                <button class="btn active">2026. 02월</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-grid">
+        <div class="card">
+            <div class="card-title">🚨 주요 KPI 요약</div>
+            <div class="kpi-row">
+                <div class="kpi-box red">
+                    <div class="label">총 정지 건수</div>
+                    <div class="val" id="kpi-total">-</div>
+                    <div class="unit">건</div>
+                </div>
+                <div class="kpi-box orange">
+                    <div class="label">부실(L형) 건수</div>
+                    <div class="val" id="kpi-defect">-</div>
+                    <div class="unit">건</div>
+                </div>
+            </div>
+            <div style="margin-top: 20px; font-size: 12px; color: #64748b; text-align: center;">
+                ※ 집계 데이터는 2026년 3월 13일 13:00 기준
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">📊 유형별 정지 건수 분포</div>
+            <div style="height: 200px;"><canvas id="suspensionChart"></canvas></div>
+        </div>
+    </div>
+
+    <div class="table-card" id="pdf-area">
+        <table id="main-table">
+            <thead>
+                <tr>
+                    <th rowspan="2" class="sticky-col">구분</th>
+                    <th colspan="2" class="bg-total">총정지</th>
+                    <th colspan="2" class="bg-defect">부실(L형)</th>
+                    <th colspan="2" class="bg-etc">L형,SP,장기</th>
+                    <th colspan="2" class="bg-pay">체납정지</th>
+                    <th colspan="2" class="bg-gen">일반정지</th>
+                </tr>
+                <tr>
+                    <th>건수</th><th>월정료</th>
+                    <th>건수</th><th>월정료</th>
+                    <th>건수</th><th>월정료</th>
+                    <th>건수</th><th>월정료</th>
+                    <th>건수</th><th>월정료</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+            <tfoot id="table-foot"></tfoot>
+        </table>
+    </div>
+</div>
+
+<script>
+    const HQ_DATA = [
+        { name: "강남/서부", total_c: 1226, total_v: 69732, def_c: 165, def_v: 10693, etc_c: 94, etc_v: 8025, pay_c: 486, pay_v: 15875, gen_c: 156, gen_v: 9611 },
+        { name: "강북/강원", total_c: 861, total_v: 53310, def_c: 89, def_v: 4903, etc_c: 71, etc_v: 5905, pay_c: 168, pay_v: 7165, gen_c: 87, gen_v: 4773 },
+        { name: "부산/경남", total_c: 545, total_v: 26269, def_c: 37, def_v: 2071, etc_c: 19, etc_v: 1206, pay_c: 162, pay_v: 4757, gen_c: 37, gen_v: 2071 },
+        { name: "전남/전북", total_c: 990, total_v: 42821, def_c: 99, def_v: 4119, etc_c: 78, etc_v: 5068, pay_c: 354, pay_v: 12219, gen_c: 96, gen_v: 3909 },
+        { name: "충남/충북", total_c: 187, total_v: 17137, def_c: 0, def_v: 0, etc_c: 0, etc_v: 0, pay_c: 0, pay_v: 0, gen_c: 0, gen_v: 0 },
+        { name: "대구/경북", total_c: 598, total_v: 28114, def_c: 145, def_v: 4061, etc_c: 0, etc_v: 0, pay_c: 155, pay_v: 4491, gen_c: 43, gen_v: 2141 }
+    ];
+
+    const BRANCH_DATA = [
+        { name: "중앙", total_c: 75, total_v: 6962, def_c: 18, def_v: 1126, etc_c: 18, etc_v: 1575, pay_c: 5, pay_v: 637, gen_c: 18, gen_v: 1126 },
+        { name: "강북", total_c: 52, total_v: 3763, def_c: 3, def_v: 127, etc_c: 4, etc_v: 152, pay_c: 3, pay_v: 127, gen_c: 3, gen_v: 127 },
+        { name: "서대문", total_c: 78, total_v: 6511, def_c: 11, def_v: 793, etc_c: 9, etc_v: 750, pay_c: 7, pay_v: 328, gen_c: 11, gen_v: 793 },
+        { name: "고양", total_c: 165, total_v: 11535, def_c: 16, def_v: 691, etc_c: 4, etc_v: 425, pay_c: 17, pay_v: 650, gen_c: 15, gen_v: 626 },
+        { name: "의정부", total_c: 86, total_v: 5309, def_c: 5, def_v: 152, etc_c: 2, etc_v: 260, pay_c: 7, pay_v: 395, gen_c: 5, gen_v: 152 },
+        { name: "남양주", total_c: 102, total_v: 5165, def_c: 12, def_v: 780, etc_c: 6, etc_v: 493, pay_c: 21, pay_v: 771, gen_c: 11, gen_v: 715 },
+        { name: "강릉", total_c: 93, total_v: 5845, def_c: 7, def_v: 577, etc_c: 9, etc_v: 1075, pay_c: 14, pay_v: 829, gen_c: 7, gen_v: 577 },
+        { name: "원주", total_c: 210, total_v: 8221, def_c: 17, def_v: 657, etc_c: 19, etc_v: 1175, pay_c: 94, pay_v: 3428, gen_c: 17, gen_v: 657 }
+    ];
+
+    let currentView = 'hq';
+    let chartInstance = null;
+
+    function verifyCode() {
+        const code = document.getElementById('accessCode').value;
+        if (code === '0303') {
+            document.getElementById('lock-screen').style.display = 'none';
+            document.getElementById('app').style.display = 'flex';
+            init();
+        } else {
+            alert('코드가 일치하지 않습니다.');
+        }
+    }
+
+    function setView(view) {
+        currentView = view;
+        document.getElementById('btn-hq').classList.toggle('active', view === 'hq');
+        document.getElementById('btn-branch').classList.toggle('active', view === 'branch');
+        render();
+    }
+
+    function fmt(n) { return n ? n.toLocaleString() : '0'; }
+
+    function render() {
+        const data = currentView === 'hq' ? HQ_DATA : BRANCH_DATA;
+        const tbody = document.getElementById('table-body');
+        tbody.innerHTML = '';
+
+        let sums = { total_c: 0, total_v: 0, def_c: 0, def_v: 0, etc_c: 0, etc_v: 0, pay_c: 0, pay_v: 0, gen_c: 0, gen_v: 0 };
+
+        data.forEach(item => {
+            const tr = document.createElement('tr');
+            if (item.name === '강북/강원') tr.className = 'highlight-row';
+            tr.innerHTML = `
+                <td class="sticky-col">${item.name}</td>
+                <td class="txt-num">${fmt(item.total_c)}</td><td class="txt-num">${fmt(item.total_v)}</td>
+                <td class="txt-num bg-defect">${fmt(item.def_c)}</td><td class="txt-num bg-defect">${fmt(item.def_v)}</td>
+                <td class="txt-num bg-etc">${fmt(item.etc_c)}</td><td class="txt-num bg-etc">${fmt(item.etc_v)}</td>
+                <td class="txt-num bg-pay">${fmt(item.pay_c)}</td><td class="txt-num bg-pay">${fmt(item.pay_v)}</td>
+                <td class="txt-num bg-gen">${fmt(item.gen_c)}</td><td class="txt-num bg-gen">${fmt(item.gen_v)}</td>
+            `;
+            tbody.appendChild(tr);
+
+            for (let key in sums) sums[key] += item[key];
+        });
+
+        // Foot
+        const tfoot = document.getElementById('table-foot');
+        tfoot.innerHTML = `
+            <tr style="background:#f1f5f9; font-weight:800;">
+                <td class="sticky-col " style="background:#f1f5f9;">합계</td>
+                <td class="txt-num">${fmt(sums.total_c)}</td><td class="txt-num">${fmt(sums.total_v)}</td>
+                <td class="txt-num">${fmt(sums.def_c)}</td><td class="txt-num">${fmt(sums.def_v)}</td>
+                <td class="txt-num">${fmt(sums.etc_c)}</td><td class="txt-num">${fmt(sums.etc_v)}</td>
+                <td class="txt-num">${fmt(sums.pay_c)}</td><td class="txt-num">${fmt(sums.pay_v)}</td>
+                <td class="txt-num">${fmt(sums.gen_c)}</td><td class="txt-num">${fmt(sums.gen_v)}</td>
+            </tr>
+        `;
+
+        updateKPIs(sums);
+        updateChart(sums);
+    }
+
+    function updateKPIs(sums) {
+        document.getElementById('kpi-total').innerText = fmt(sums.total_c);
+        document.getElementById('kpi-defect').innerText = fmt(sums.def_c);
+    }
+
+    function updateChart(sums) {
+        const ctx = document.getElementById('suspensionChart').getContext('2d');
+        if (chartInstance) chartInstance.destroy();
+
+        chartInstance = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['부실(L형)', 'L/SP/장기', '체납정지', '일반정지'],
+                datasets: [{
+                    data: [sums.def_c, sums.etc_c, sums.pay_c, sums.gen_c],
+                    backgroundColor: ['#f59e0b', '#3b82f6', '#ef4444', '#10b981'],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'right', labels: { boxWidth: 12, font: { weight: 'bold' } } }
+                },
+                cutout: '70%'
+            }
+        });
+    }
+
+    function downloadPDF() {
+        const element = document.getElementById('pdf-area');
+        const opt = {
+            margin: 10,
+            filename: `정지부실_실적현황_${currentView}.pdf`,
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }
+        };
+        html2pdf().from(element).set(opt).save();
+    }
+
+    function init() {
+        render();
+    }
+</script>
+
+</body>
+</html>
