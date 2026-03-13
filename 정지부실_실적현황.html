@@ -20,7 +20,7 @@
         }
 
         body { font-family: 'Pretendard', sans-serif; background-color: var(--bg-body); margin: 0; padding: 40px 20px; color: var(--text-main); display: flex; justify-content: center; }
-        .dashboard-wrapper { width: 100%; max-width: 1400px; display: flex; flex-direction: column; gap: 24px; display: none; }
+        .dashboard-wrapper { width: 100%; max-width: 1550px; display: flex; flex-direction: column; gap: 24px; display: none; }
         
         /* Premium Lock Screen */
         #lock-screen {
@@ -56,20 +56,29 @@
         .kpi-box .unit { font-size: 14px; font-weight: 600; margin-left: 4px; }
 
         .table-card { background: white; border-radius: 16px; box-shadow: var(--shadow-md); padding: 25px; overflow-x: auto; }
-        table { width: 100%; border-collapse: collapse; font-size: 13px; white-space: nowrap; }
-        th, td { padding: 12px 10px; border: 1px solid #e5e7eb; text-align: center; }
+        table { width: 100%; border-collapse: collapse; font-size: 11px; white-space: nowrap; }
+        th, td { padding: 8px 6px; border: 1px solid #e5e7eb; text-align: center; }
         th { background: #f9fafb; font-weight: 800; color: #374151; }
         .bg-total { background: #1e293b; color: white; }
-        .bg-defect { background: #fffbeb; color: #92400e; }
-        .bg-etc { background: #f0f9ff; color: #075985; }
-        .bg-pay { background: #fef2f2; color: #991b1b; }
-        .bg-gen { background: #f0fdf4; color: #166534; }
+        .bg-defect { background: #fbbf24; color: #1e293b; }
+        .bg-etc { background: #7c3aed; color: white; }
+        .bg-pay { background: #ef4444; color: white; }
+        .bg-gen { background: #10b981; color: white; }
+        .bg-sum { background: #ca8a04; color: white; }
+        .bg-sub { background: #f8fafc; font-weight: 600; }
         
         .sticky-col { position: sticky; left: 0; background: white; font-weight: 800; z-index: 10; border-right: 2px solid #cbd5e1 !important; }
         tr:hover { background: #f8fafc; }
         .txt-num { text-align: right; font-family: 'Consolas', monospace; }
         .highlight-row { background: #f0f9ff; transition: 0.3s; }
         .highlight-row td:first-child { background: #e0f2fe; color: #0369a1; }
+
+        /* Heat map colors */
+        .heat-high { background: #fecaca !important; color: #991b1b !important; }
+        .heat-mid { background: #fed7aa !important; color: #9a3412 !important; }
+        .heat-low { background: #dcfce7 !important; color: #166534 !important; }
+        .heat-vhigh { background: #ef4444 !important; color: white !important; }
+        .heat-sky { background: #bae6fd !important; color: #075985 !important; }
 
         .pdf-btn { background: #0f172a; color: white; border: none; padding: 12px 24px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px; float: right; }
     </style>
@@ -142,17 +151,27 @@
             <thead>
                 <tr>
                     <th rowspan="2" class="sticky-col">구분</th>
-                    <th colspan="2" class="bg-total">총정지</th>
-                    <th colspan="2" class="bg-defect">부실(L형)</th>
-                    <th colspan="2" class="bg-etc">L형,SP,장기</th>
-                    <th colspan="2" class="bg-pay">체납정지</th>
-                    <th colspan="2" class="bg-gen">일반정지</th>
+                    <th colspan="2" class="bg-total">총정지 실적</th>
+                    <th colspan="2" class="bg-total">총정지 점유율</th>
+                    <th colspan="2" class="bg-defect">부실(L형) 실적</th>
+                    <th colspan="2" class="bg-defect">부실(L형) 점유율</th>
+                    <th colspan="2" class="bg-etc">L형, SP, 장기정지 실적</th>
+                    <th colspan="2" class="bg-etc">L형, SP, 장기정지 점유율</th>
+                    <th colspan="2" class="bg-pay">체납정지 실적</th>
+                    <th colspan="2" class="bg-gen">일반정지(L+i) 실적</th>
+                    <th colspan="2" class="bg-sum">계 실적</th>
+                    <th colspan="2" class="bg-pay">체납정지 점유율</th>
                 </tr>
                 <tr>
                     <th>건수</th><th>월정료</th>
                     <th>건수</th><th>월정료</th>
+                    <th>건</th><th>월정료</th>
                     <th>건수</th><th>월정료</th>
                     <th>건수</th><th>월정료</th>
+                    <th>건수</th><th>월정료</th>
+                    <th>건</th><th>월정료</th>
+                    <th>건수</th><th>월정료</th>
+                    <th>건</th><th>월정료</th>
                     <th>건수</th><th>월정료</th>
                 </tr>
             </thead>
@@ -205,6 +224,22 @@
     }
 
     function fmt(n) { return n ? n.toLocaleString() : '0'; }
+    function pct(v) { return (v * 100).toFixed(2) + '%'; }
+    function pct0(v) { return Math.round(v * 100) + '%'; }
+
+    function getHeatColor(val, type='share') {
+        if (type === 'share') {
+            if (val > 0.3) return 'heat-vhigh';
+            if (val > 0.1) return 'heat-high';
+            if (val > 0.05) return 'heat-mid';
+            if (val > 0) return 'heat-sky';
+        } else if (type === 'pay_ratio') {
+            if (val > 0.8) return 'heat-vhigh';
+            if (val > 0.6) return 'heat-high';
+            if (val > 0.4) return 'heat-mid';
+        }
+        return '';
+    }
 
     function render() {
         const data = currentView === 'hq' ? HQ_DATA : BRANCH_DATA;
@@ -212,33 +247,59 @@
         tbody.innerHTML = '';
 
         let sums = { total_c: 0, total_v: 0, def_c: 0, def_v: 0, etc_c: 0, etc_v: 0, pay_c: 0, pay_v: 0, gen_c: 0, gen_v: 0 };
+        data.forEach(item => { for (let key in sums) sums[key] += item[key]; });
 
         data.forEach(item => {
             const tr = document.createElement('tr');
             if (item.name === '강북/강원') tr.className = 'highlight-row';
+            
+            const tc_s = item.total_c / sums.total_c;
+            const tv_s = item.total_v / sums.total_v;
+            const dc_s = item.def_c / sums.total_c;
+            const dv_s = item.def_v / sums.total_v;
+            const ec_s = item.etc_c / sums.total_c;
+            const ev_s = item.etc_v / sums.total_v;
+            
+            const total_sum_c = item.pay_c + item.gen_c;
+            const total_sum_v = item.pay_v + item.gen_v;
+            const pay_ratio_c = total_sum_c > 0 ? item.pay_c / total_sum_c : 0;
+            const pay_ratio_v = total_sum_v > 0 ? item.pay_v / total_sum_v : 0;
+
             tr.innerHTML = `
                 <td class="sticky-col">${item.name}</td>
                 <td class="txt-num">${fmt(item.total_c)}</td><td class="txt-num">${fmt(item.total_v)}</td>
-                <td class="txt-num bg-defect">${fmt(item.def_c)}</td><td class="txt-num bg-defect">${fmt(item.def_v)}</td>
-                <td class="txt-num bg-etc">${fmt(item.etc_c)}</td><td class="txt-num bg-etc">${fmt(item.etc_v)}</td>
-                <td class="txt-num bg-pay">${fmt(item.pay_c)}</td><td class="txt-num bg-pay">${fmt(item.pay_v)}</td>
-                <td class="txt-num bg-gen">${fmt(item.gen_c)}</td><td class="txt-num bg-gen">${fmt(item.gen_v)}</td>
+                <td class="txt-num ${getHeatColor(tc_s)}">${pct(tc_s)}</td><td class="txt-num ${getHeatColor(tv_s)}">${pct(tv_s)}</td>
+                <td class="txt-num bg-sub">${fmt(item.def_c)}</td><td class="txt-num bg-sub">${fmt(item.def_v)}</td>
+                <td class="txt-num ${getHeatColor(dc_s)}">${pct(dc_s)}</td><td class="txt-num ${getHeatColor(dv_s)}">${pct(dv_s)}</td>
+                <td class="txt-num bg-sub">${fmt(item.etc_c)}</td><td class="txt-num bg-sub">${fmt(item.etc_v)}</td>
+                <td class="txt-num ${getHeatColor(ec_s)}">${pct(ec_s)}</td><td class="txt-num ${getHeatColor(ev_s)}">${pct(ev_s)}</td>
+                <td class="txt-num">${fmt(item.pay_c)}</td><td class="txt-num">${fmt(item.pay_v)}</td>
+                <td class="txt-num">${fmt(item.gen_c)}</td><td class="txt-num">${fmt(item.gen_v)}</td>
+                <td class="txt-num bg-sub">${fmt(total_sum_c)}</td><td class="txt-num bg-sub">${fmt(total_sum_v)}</td>
+                <td class="txt-num ${getHeatColor(pay_ratio_c, 'pay_ratio')}">${pct0(pay_ratio_c)}</td>
+                <td class="txt-num ${getHeatColor(pay_ratio_v, 'pay_ratio')}">${pct0(pay_ratio_v)}</td>
             `;
             tbody.appendChild(tr);
-
-            for (let key in sums) sums[key] += item[key];
         });
 
         // Foot
         const tfoot = document.getElementById('table-foot');
+        const total_s_sum_c = sums.pay_c + sums.gen_c;
+        const total_s_sum_v = sums.pay_v + sums.gen_v;
+        
         tfoot.innerHTML = `
             <tr style="background:#f1f5f9; font-weight:800;">
-                <td class="sticky-col " style="background:#f1f5f9;">합계</td>
+                <td class="sticky-col" style="background:#f1f5f9;">합계</td>
                 <td class="txt-num">${fmt(sums.total_c)}</td><td class="txt-num">${fmt(sums.total_v)}</td>
+                <td class="txt-num">${pct(1)}</td><td class="txt-num">${pct(1)}</td>
                 <td class="txt-num">${fmt(sums.def_c)}</td><td class="txt-num">${fmt(sums.def_v)}</td>
+                <td class="txt-num">${pct(sums.def_c/sums.total_c)}</td><td class="txt-num">${pct(sums.def_v/sums.total_v)}</td>
                 <td class="txt-num">${fmt(sums.etc_c)}</td><td class="txt-num">${fmt(sums.etc_v)}</td>
+                <td class="txt-num">${pct(sums.etc_c/sums.total_c)}</td><td class="txt-num">${pct(sums.etc_v/sums.total_v)}</td>
                 <td class="txt-num">${fmt(sums.pay_c)}</td><td class="txt-num">${fmt(sums.pay_v)}</td>
                 <td class="txt-num">${fmt(sums.gen_c)}</td><td class="txt-num">${fmt(sums.gen_v)}</td>
+                <td class="txt-num">${fmt(total_s_sum_c)}</td><td class="txt-num">${fmt(total_s_sum_v)}</td>
+                <td class="txt-num">${pct0(sums.pay_c/total_s_sum_c)}</td><td class="txt-num">${pct0(sums.pay_v/total_s_sum_v)}</td>
             </tr>
         `;
 
@@ -261,16 +322,13 @@
                 labels: ['부실(L형)', 'L/SP/장기', '체납정지', '일반정지'],
                 datasets: [{
                     data: [sums.def_c, sums.etc_c, sums.pay_c, sums.gen_c],
-                    backgroundColor: ['#f59e0b', '#3b82f6', '#ef4444', '#10b981'],
+                    backgroundColor: ['#fbbf24', '#7c3aed', '#ef4444', '#10b981'],
                     borderWidth: 0
                 }]
             },
             options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: { position: 'right', labels: { boxWidth: 12, font: { weight: 'bold' } } }
-                },
+                responsive: true, maintainAspectRatio: false,
+                plugins: { legend: { position: 'right', labels: { boxWidth: 12, font: { weight: 'bold' } } } },
                 cutout: '70%'
             }
         });
@@ -279,18 +337,16 @@
     function downloadPDF() {
         const element = document.getElementById('pdf-area');
         const opt = {
-            margin: 10,
-            filename: `정지부실_실적현황_${currentView}.pdf`,
+            margin: [10, 5, 10, 5],
+            filename: `정지부실_스마트실적_${currentView}.pdf`,
             image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2 },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }
+            html2canvas: { scale: 1.5, useCORS: true },
+            jsPDF: { unit: 'mm', format: 'a3', orientation: 'landscape' }
         };
         html2pdf().from(element).set(opt).save();
     }
 
-    function init() {
-        render();
-    }
+    function init() { render(); }
 </script>
 
 </body>
