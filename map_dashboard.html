@@ -1194,13 +1194,13 @@
 
         if (!activeSuspensionType) return;
 
-        // Filter suspension targets by current branch/manager
-        const branchFilter = document.querySelector('[data-branch].active').dataset.branch;
-        const managerFilter = document.querySelector('[data-manager].active')?.dataset.manager || 'all';
+        // Filter suspension targets by current branch/manager from global filters
+        const branchFilter = filters.branch;
+        const managerFilter = filters.manager;
 
         // Check if SUSPENSION_TARGETS is loaded
         if (typeof SUSPENSION_TARGETS === 'undefined') {
-            log("Error: SUSPENSION_TARGETS not loaded.");
+            if (typeof log === 'function') log("Error: SUSPENSION_TARGETS not loaded.");
             return;
         }
 
@@ -1209,7 +1209,7 @@
             const matchManager = managerFilter === 'all' || t.manager === managerFilter;
             
             if (activeSuspensionType === 'defect') {
-                return matchBranch && matchManager && (t.is_defect === 'Y' || t.is_defect === '예');
+                return matchBranch && matchManager && (t.is_defect === 'Y' || t.is_defect === '예' || t.is_defect === '대상');
             } else {
                 return matchBranch && matchManager; // All in suspension_targets are suspension
             }
