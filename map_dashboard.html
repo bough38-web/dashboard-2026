@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026년 관리고객 재계약 / 리텐션P값 / 정지·부실 현황 보드 - 지도</title>
+    <title>강북/강원 관리 대시보드 - 지도</title>
     <!-- Auth Guard -->
     <script>
         (function() {
@@ -25,8 +25,8 @@
     </script>
     <!-- Font -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
             --primary: #4f46e5;
@@ -546,6 +546,52 @@
             .route-btn { bottom: 55%; }
         }
 
+        /* 내비게이션 허브 버튼 스타일 */
+        .nav-hub-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            color: var(--text-sub);
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav-hub-btn i {
+            font-size: 15px;
+            opacity: 0.8;
+        }
+
+        .nav-hub-btn:hover {
+            background: #eff6ff;
+            color: var(--primary);
+            border-color: var(--primary);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.08);
+        }
+
+        .nav-hub-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+        }
+
+        .nav-hub-btn.active i {
+            opacity: 1;
+        }
+
+        .nav-hub-btn.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background: #f1f5f9;
+        }
+
         /* Progress Modal & Admin UI */
         .modal-overlay {
             position: fixed;
@@ -658,7 +704,38 @@
 </head>
 <body>
 
-<div id="app">
+<div class="main-layout" style="display: flex; flex-direction: column; height: 100vh;">
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 25px; background: white; border-bottom: 1px solid var(--border-color); box-shadow: 0 2px 4px rgba(0,0,0,0.02); z-index: 2000;">
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <div style="background: var(--text-main); color: white; width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 16px;">
+                <i class="fas fa-chart-pie"></i>
+            </div>
+            <h1 style="font-size: 18px; font-weight: 800; color: var(--text-main); margin: 0;">2026 Management Hub <span style="font-size: 12px; font-weight: 400; color: var(--text-sub); margin-left:10px;">| 현장 지도/방문 관제</span></h1>
+        </div>
+        <div class="nav-buttons" style="display: flex; gap: 8px;">
+            <button class="nav-hub-btn active" onclick="location.href='map_dashboard.html'" title="지도/방문관리">
+                <i class="fas fa-map-marked-alt"></i><span>지도/방문</span>
+            </button>
+            <button class="nav-hub-btn" onclick="location.href='index.html'" title="재계약/사전리텐션">
+                <i class="fas fa-sync-alt"></i><span>재계약/리텐션</span>
+            </button>
+            <button class="nav-hub-btn" onclick="location.href='정지부실_실적현황.html'" title="정지/부실">
+                <i class="fas fa-exclamation-triangle"></i><span>정지/부실</span>
+            </button>
+            <button class="nav-hub-btn" onclick="location.href='리텐션P값 실적현황.html'" title="리텐션P값">
+                <i class="fas fa-coins"></i><span>리텐션P값</span>
+            </button>
+            <button class="nav-hub-btn disabled" title="해지율 (오픈예정)">
+                <i class="fas fa-user-slash"></i><span>해지율(예정)</span>
+            </button>
+            <div style="width: 1px; height: 20px; background: var(--border-color); margin: 0 10px;"></div>
+            <button class="logout-btn" onclick="logout()" style="background: #fee2e2; color: #ef4444; border: 1px solid #fecaca; padding: 6px 15px; border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: all 0.2s; height: 36px;">
+                <i class="fas fa-sign-out-alt"></i> 로그아웃
+            </button>
+        </div>
+    </div>
+    
+    <div id="app" style="flex: 1; display: flex; overflow: hidden; position: relative;">
     <!-- Sidebar -->
     <aside id="sidebar">
         <!-- Toggle Button -->
@@ -666,11 +743,8 @@
             <i data-lucide="chevron-left"></i>
         </div>
         <div class="sidebar-header">
-            <h1 class="sidebar-title" style="display:flex; align-items:center; justify-content:space-between; width:100%;">
-                <span><i data-lucide="map-pin"></i> 2026년 리텐션 전략 관제 지도</span>
-                <button class="logout-btn" onclick="logout()">
-                    <i data-lucide="log-out" style="width:12px; height:12px;"></i> 로그아웃
-                </button>
+            <h1 class="sidebar-title">
+                <span><i data-lucide="map-pin"></i> 강북/강원 관리 지도</span>
             </h1>
         </div>
         
@@ -766,6 +840,7 @@
 
     </main>
 </div>
+</div>
 
 <!-- Lock Screen Overlay -->
 <div id="lock-screen">
@@ -854,12 +929,6 @@
                 return false;
             });
 
-            window.logout = function() {
-                if (confirm('로그아웃 하시겠습니까?')) {
-                    localStorage.removeItem('sales_dashboard_session');
-                    location.href = 'login.html';
-                }
-            };
             debugLog(`Data Loaded: ${allTargets.length} records`);
             populateFilters(allTargets);
             updateDashboard(allTargets);
@@ -1171,6 +1240,22 @@
         });
     }
 
+    window.toggleAdminPanel = function() {
+        const panel = document.getElementById('admin-panel');
+        if (panel.style.display === 'none' || panel.style.display === '') {
+            const pw = prompt('관리자 보안 코드를 입력하세요:');
+            if (pw !== '0303') {
+                if (pw !== null) alert('보안 코드가 일치하지 않습니다.');
+                return;
+            }
+            panel.style.display = 'flex';
+            updateAdminTable();
+        } else {
+            panel.style.display = 'none';
+        }
+        lucide.createIcons();
+    };
+
     // --- Suspension Layer Logic ---
     function toggleSuspensionLayer(type) {
         if (activeSuspensionType === type) {
@@ -1231,13 +1316,21 @@
 
             const infoWindow = new google.maps.InfoWindow({
                 content: `
-                    <div style="padding:10px; font-family:sans-serif;">
-                        <h3 style="margin:0 0 5px 0; color:#ef4444;">${activeSuspensionType === 'defect' ? '⚠️ 부실고객' : '🚫 정지고객'}</h3>
-                        <p><strong>상호:</strong> ${target.name}</p>
-                        <p><strong>지사:</strong> ${target.branch}</p>
-                        <p><strong>담당:</strong> ${target.manager}</p>
-                        <p><strong>주소:</strong> ${target.address}</p>
-                        <p style="color:#64748b; font-size:12px;">계약번호: ${target.id}</p>
+                    <div style="padding:15px; width:220px; font-family: Pretendard, sans-serif;">
+                        <h4 style="margin:0 0 8px 0; color:${activeSuspensionType === 'defect' ? '#f59e0b' : '#ef4444'}; font-size:14px;">
+                            ${activeSuspensionType === 'defect' ? '⚠️ 부실고객' : '🚫 정지고객'}
+                        </h4>
+                        <div style="background:#f8fafc; padding:10px; border-radius:8px; border:1px solid #e2e8f0; margin-bottom:10px;">
+                            <p style="margin:4px 0; font-size:12px;"><strong>상호:</strong> ${target.name}</p>
+                            <p style="margin:4px 0; font-size:12px;"><strong>지사:</strong> ${target.branch}</p>
+                            <p style="margin:4px 0; font-size:12px;"><strong>담당:</strong> ${target.manager}</p>
+                            <p style="margin:4px 0; font-size:11px; color:#64748b; line-height:1.4;">${target.address}</p>
+                        </div>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=${target.lat},${target.lng}" 
+                           target="_blank" 
+                           style="display:block; background:#4f46e5; color:white; border-radius:6px; padding:8px; text-decoration:none; font-size:12px; font-weight:bold; text-align:center;">
+                           <i class="fas fa-directions"></i> 길찾기
+                        </a>
                     </div>
                 `
             });
@@ -1871,5 +1964,8 @@
     </div>
 </div>
 
+    <div style="position: fixed; bottom: 15px; right: 20px; font-size: 11px; color: #94a3b8; font-weight: 500; font-family: 'Segoe UI', sans-serif; opacity: 0.8; z-index: 9999; pointer-events: none; text-shadow: 0 1px 2px rgba(255,255,255,0.8);">
+        Developed by SE-EUN Daddy
+    </div>
 </body>
 </html>

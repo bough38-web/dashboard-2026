@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>2026년 관리고객 재계약 / 리텐션P값 / 정지·부실 현황 보드</title>
+    <title>강북/강원 관리 대시보드</title>
+    <!-- External Resources -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
     <!-- Auth Guard -->
     <script>
         (function() {
@@ -29,16 +29,25 @@
     <style>
         :root {
             /* 컬러 팔레트 */
-            --bg-body: #f1f5f9;
+            --bg-body: #f8fafc;
             --surface-bg: #ffffff;
-            --primary-dark: #0f172a;
+            --primary-dark: #1e293b;
             --primary-blue: #3b82f6;
-            --border-color: #e2e8f0;
+            --primary-color: #6366f1;
+            --border-color: #f1f5f9; /* Subtle Slate-100 for horizontal lines */
+            --border-divider: #94a3b8; /* Clear Slate-400 for group dividers */
             --text-main: #334155;
             --text-muted: #64748b;
+            
+            /* 그룹별 포인트 컬러 (High-End Minimalist - Further Softened) */
+            --group-new-bg: #fff1f2;    
+            --group-renew-bg: #f5f7ff;  
+            --group-expire-bg: #f8fafc; 
+
             /* 테이블 헤더 컬러 */
             --th-bg: #f8fafc;
-            --th-total-bg: #eff6ff;
+            --th-total-bg: #f1f5f9;
+
             /* 달성률 뱃지 컬러 */
             --badge-green-bg: #dcfce7;
             --badge-green-text: #166534;
@@ -51,6 +60,8 @@
 
             --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
             --shadow-hover: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05);
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         body {
@@ -381,14 +392,9 @@
         th,
         td {
             border-bottom: 1px solid var(--border-color);
-            border-right: 1px solid var(--border-color);
-            padding: 12px 6px;
+            padding: 12px 10px;
             vertical-align: middle;
-        }
-
-        th:last-child,
-        td:last-child {
-            border-right: none;
+            border-right: none; /* Reset all vertical borders */
         }
 
         thead th {
@@ -398,7 +404,43 @@
         }
 
         thead tr:first-child th {
-            border-bottom: 2px solid #cbd5e1;
+            background: linear-gradient(to bottom, #334155, #1e293b) !important;
+            color: white !important;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: -0.01em;
+            border-bottom: none !important;
+        }
+
+        /* 구분 컬럼 고정 및 경계선 */
+        th:first-child, td:first-child {
+            position: sticky;
+            left: 0;
+            z-index: 10;
+            background-color: inherit;
+            border-right: 2px solid var(--border-divider) !important;
+        }
+
+        thead th:first-child {
+            background-color: var(--th-bg) !important;
+        }
+
+        thead tr:first-child th:first-child {
+            background: #334155 !important;
+        }
+
+        /* 헤더 마감선 */
+        thead tr:last-child th {
+            border-bottom: 2px solid var(--border-divider) !important;
+            background-color: #f8fafc !important;
+            color: #475569 !important;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        /* 그룹 분리선 (Divider) */
+        .divider-right {
+            border-right: 2px solid var(--border-divider) !important;
         }
 
         .bg-total-col {
@@ -410,35 +452,16 @@
             font-weight: 800;
         }
 
-        /* 신규(1st) 굵은 적색 테두리 강조 */
-        .highlight-col-top {
-            border-top: 4px solid #991b1b !important;
-        }
-
-        .highlight-col-bottom {
-            border-bottom: 4px solid #991b1b !important;
-        }
-
-        .highlight-col-left {
-            border-left: 4px solid #991b1b !important;
-        }
-
-        .highlight-col-right {
-            border-right: 4px solid #991b1b !important;
-        }
-
-        .highlight-head-bg {
-            background-color: #fee2e2 !important;
-            color: #991b1b !important;
-        }
-
         .highlight-bg {
-            background-color: #fffafb !important;
+            background-color: var(--group-new-bg) !important;
         }
 
-        tfoot .highlight-foot-bg {
-            background-color: #7f1d1d !important;
-            border-color: #7f1d1d;
+        .bg-renew {
+            background-color: var(--group-renew-bg);
+        }
+
+        .bg-expire {
+            background-color: var(--group-expire-bg);
         }
 
         tbody,
@@ -451,7 +474,7 @@
         }
 
         tbody tr:hover .highlight-bg {
-            background-color: #ffe4e6 !important;
+            background-color: #ffe4e6 !important; /* Slightly darker pink on hover */
         }
 
         tbody td:first-child {
@@ -460,7 +483,8 @@
             background-color: #f8fafc;
             position: sticky;
             left: 0;
-            border-right: 2px solid var(--border-color);
+            border-right: 2px solid var(--border-heavy) !important;
+            z-index: 10;
         }
 
         .val-target {
@@ -487,36 +511,63 @@
         }
 
         tfoot tr {
-            background-color: var(--primary-dark);
+            background-color: #f1f5f9;
         }
 
         tfoot td {
-            border-bottom: none;
-            border-color: #334155;
-            color: white;
-            font-weight: 700;
+            border-bottom: 4px solid var(--primary-dark) !important;
+            border-top: 3px solid var(--primary-dark) !important;
+            border-color: var(--primary-dark);
+            color: var(--primary-dark) !important;
+            font-weight: 800;
+        }
+
+        tfoot td * {
+            color: var(--primary-dark) !important;
         }
 
         tfoot td:first-child {
-            background-color: var(--primary-dark);
+            background-color: #f1f5f9;
             position: sticky;
             left: 0;
-            border-right: 2px solid #334155;
+            border-right: 2px solid var(--border-heavy) !important;
         }
 
         tfoot .val-target,
         tfoot .val-cnt {
-            color: #cbd5e1;
+            color: #64748b;
             background-color: transparent;
         }
 
         tfoot .val-amt {
-            color: white;
+            color: var(--primary-dark);
         }
 
         tfoot .bg-total-col {
-            background-color: #1e3a8a !important;
-            border-color: #1e40af;
+            background-color: #dbeafe !important; /* Deeper Indigo for emphasis */
+        }
+        
+        /* 배지 디자인 고도화 (Modern Pill Design) */
+        .badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 800;
+            font-size: 11px;
+            letter-spacing: -0.02em;
+            box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1);
+            display: inline-block;
+            min-width: 45px;
+        }
+
+        .badge.excellent { background: var(--badge-green-bg); color: var(--badge-green-text); }
+        .badge.good { background: var(--badge-blue-bg); color: var(--badge-blue-text); }
+        .badge.poor { background: var(--badge-red-bg); color: var(--badge-red-text); }
+        .badge.zero { background: var(--badge-gray-bg); color: var(--badge-gray-text); opacity: 0.6; }
+
+        /* 테이블 숫자 가독성 튜닝 */
+        .val-num {
+            font-variant-numeric: tabular-nums;
+            letter-spacing: -0.01em;
         }
 
         /* 잠금 화면 스타일 - 프리미엄 글래스모피즘 디자인 */
@@ -666,43 +717,35 @@
             margin-top: 10px;
         }
 
-        /* 에러 흔들기 효과 */
-        .shake {
-            animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both;
+        /* 내비게이션 허브 버튼 스타일 */
+        .nav-hub-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            color: var(--text-muted);
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        @keyframes shake {
-            10%, 90% { transform: translate3d(-1px, 0, 0); }
-            20%, 80% { transform: translate3d(2px, 0, 0); }
-            30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
-            40%, 60% { transform: translate3d(4px, 0, 0); }
+        .nav-hub-btn i {
+            font-size: 15px;
+            opacity: 0.8;
         }
 
-        /* Merged Dashboard Styles */
-        .view-content { display: none; }
-        .view-content.active { display: block; }
-        .nav-buttons .nav-btn { background: rgba(255,255,255,0.1); color: var(--text-main); border: 1px solid var(--border-color); padding: 10px 18px; border-radius: 8px; font-weight: 700; cursor: pointer; transition: all 0.2s; }
-        .nav-buttons .nav-btn:hover { background: #f1f5f9; }
-        .nav-buttons .nav-btn.active { background: var(--primary-dark); color: white; border-color: var(--primary-dark); }
-        .card { background: white; border-radius: 12px; padding: 20px; box-shadow: var(--shadow-soft); border: 1px solid var(--border-color); }
-        .card-title { font-size: 16px; font-weight: 800; margin-bottom: 15px; color: var(--primary-dark); display: flex; align-items: center; gap: 8px; }
-        .table-card { background: white; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-soft); }
-        table { width: 100%; border-collapse: collapse; font-size: 13px; }
-        th, td { padding: 12px; border: 1px solid #e2e8f0; text-align: center; }
-        thead th { background: #f8fafc; font-weight: 800; color: var(--primary-dark); }
-        
-        #view-retention .kpi-box { border-radius: 12px; padding: 20px; text-align: center; }
-        #view-retention .box-blue { background: #eff6ff; border: 1px solid #dbeafe; }
-        #view-retention .box-red { background: #fff1f2; border: 1px solid #ffe4e6; }
-        #view-retention .chart-container { height: 200px; }
-        
-        #view-suspension .sticky-col { position: sticky; left: 0; background: white; font-weight: 800; border-right: 2px solid #cbd5e1 !important; z-index: 10; }
-        #view-suspension .bg-total { background: #1e293b; color: white; }
-        #view-suspension .bg-defect { background: #fbbf24; color: #1e293b; }
-        #view-suspension .bg-etc { background: #7c3aed; color: white; }
-        #view-suspension .bg-pay { background: #ef4444; color: white; }
-        #view-suspension .bg-gen { background: #10b981; color: white; }
-        #view-suspension .bg-sum { background: #ca8a04; color: white; }
+        .nav-hub-btn:hover {
+            background: #eff6ff;
+            color: var(--primary-blue);
+            border-color: var(--primary-blue);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.08);
+        }
+
     </style>
 </head>
 
@@ -732,27 +775,35 @@
     </div>
 
     <div class="dashboard-wrapper">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 2px solid #e2e8f0; padding-bottom: 15px;">
-            <h1 class="main-title" style="margin: 0; border: none;">
-                <div style="font-size: 0.6em; opacity: 0.8; margin-bottom: 4px; font-weight: 600;">2026년 고객</div>
-                재계약 / 리텐션P값 / 정지·부실 현황 보드
-            </h1>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; padding: 15px 25px; background: white; border-radius: 12px; box-shadow: var(--shadow-soft);">
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <div style="background: var(--primary-dark); color: white; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px;">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+                <h1 style="font-size: 22px; font-weight: 800; color: var(--primary-dark); margin: 0;">2026 Management Hub <span style="font-size: 14px; font-weight: 400; color: var(--text-muted); margin-left:10px;">| 강북/강원 통합 관제</span></h1>
+            </div>
             <div class="nav-buttons" style="display: flex; gap: 8px;">
-                <button class="nav-btn active" data-view="renewal" onclick="showView('renewal')">관리고객 재계약</button>
-                <button class="nav-btn" data-view="retention" onclick="showView('retention')">리텐션P값 현황</button>
-                <button class="nav-btn" data-view="suspension" onclick="showView('suspension')">정지/부실 실적현황</button>
-                <div style="width: 1px; background: #e2e8f0; margin: 0 4px;"></div>
-                <button class="map-nav-btn" onclick="window.open('map_dashboard.html', '_blank')" style="background: #4f46e5; color: white; border: none; padding: 10px 18px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px;">
-                    지도/방문관리
+                <button class="nav-hub-btn" onclick="location.href='map_dashboard.html'" title="지도/방문관리">
+                    <i class="fas fa-map-marked-alt"></i><span>지도/방문</span>
                 </button>
-                <button class="logout-btn" onclick="logout()" style="background: #ef4444; color: white; border: none; padding: 10px 18px; border-radius: 8px; font-weight: 700; cursor: pointer;">
-                    로그아웃
+                <button class="nav-hub-btn active" onclick="location.href='index.html'" title="재계약/사전리텐션">
+                    <i class="fas fa-sync-alt"></i><span>재계약/리텐션</span>
+                </button>
+                <button class="nav-hub-btn" onclick="location.href='정지부실_실적현황.html'" title="정지/부실">
+                    <i class="fas fa-exclamation-triangle"></i><span>정지/부실</span>
+                </button>
+                <button class="nav-hub-btn" onclick="location.href='리텐션P값 실적현황.html'" title="리텐션P값">
+                    <i class="fas fa-coins"></i><span>리텐션P값</span>
+                </button>
+                <button class="nav-hub-btn disabled" title="해지율 (오픈예정)">
+                    <i class="fas fa-user-slash"></i><span>해지율(예정)</span>
+                </button>
+                <div style="width: 1px; height: 24px; background: var(--border-color); margin: 0 10px;"></div>
+                <button class="logout-btn" onclick="logout()" style="background: #fee2e2; color: #ef4444; border: 1px solid #fecaca; padding: 8px 15px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: all 0.2s;">
+                    <i class="fas fa-sign-out-alt"></i> 로그아웃
                 </button>
             </div>
         </div>
-
-        <!-- View: Renewal (Default) -->
-        <div id="view-renewal" class="view-content active">
 
         <div class="kpi-section">
             <div class="kpi-box">
@@ -787,12 +838,33 @@
                         <div class="data-card"><span class="val">200건/148건</span><span class="pct">(74.0%)</span></div>
                     </div>
                     <div class="step">
-                        <div class="hexagon hex-3">3월</div>
-                        <div class="data-card highlight"><span class="val">231건/68건</span><span
-                                class="pct">(29.4%)</span></div>
+                        <div class="hexagon hex-1">3월</div>
+                        <div class="data-card"><span class="val">231건/68건</span><span class="pct">(29.4%)</span></div>
                     </div>
                 </div>
                 <div class="arrow-box">~12월 매월 대상 선정 및 VOC지령(담당SP)</div>
+            </div>
+        </div>
+
+        <div class="viz-card" id="viz-zone" style="margin-bottom: 25px;">
+            <div class="viz-header" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 20px; border-bottom: 2px solid var(--border-light); margin-bottom: 20px;">
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <div class="viz-title" style="font-size: 18px; font-weight: 800; color: var(--primary-dark); margin: 0;">
+                        <i class="fas fa-chart-column" style="color: var(--primary-color); margin-right: 8px;"></i> 지사별 실적/달성률 분석 (<span id="vizMonthText" class="text-blue">1Q 합계</span>)
+                    </div>
+                    <select id="chartMetricSelect" onchange="updateMainChart()" style="padding: 6px 12px; border-radius: 6px; border: 1px solid var(--border-light); font-size: 13px; font-weight: 700; color: var(--primary-dark); outline: none; background: #f8fafc; cursor: pointer;">
+                        <option value="total">총 실적 (건수)</option>
+                        <option value="new">만기도래_신규 (건수)</option>
+                        <option value="renew">만기도래_재계약 (건수)</option>
+                        <option value="expire">약정만료 (건수)</option>
+                    </select>
+                </div>
+                <button class="toggle-viz-btn" onclick="toggleViz()" style="background: none; border: none; font-size: 13px; font-weight: 700; color: var(--text-muted); cursor: pointer; display: flex; align-items: center; gap: 6px;">
+                    <i class="fas fa-chevron-up"></i> <span>시각화 접기</span>
+                </button>
+            </div>
+            <div id="viz-content" style="transition: all 0.3s ease; overflow: hidden; height: 350px;">
+                <canvas id="mainChart"></canvas>
             </div>
         </div>
 
@@ -817,19 +889,18 @@
                 <table>
                     <thead>
                         <tr>
-                            <th rowspan="2" style="min-width: 80px;">거점명</th>
+                            <th rowspan="2" style="min-width: 80px;">구분</th>
                             <th colspan="4" class="bg-total-col text-blue">총 실적 (계)</th>
                             <th colspan="4"
-                                class="highlight-col-top highlight-col-left highlight-col-right highlight-head-bg">①
-                                만기도래_신규(1st)</th>
+                                class="highlight-col-top highlight-col-left highlight-col-right highlight-head-bg">① 만기도래_신규(1st)</th>
                             <th colspan="4">② 만기도래_재계약</th>
                             <th colspan="4">③ 약정만료</th>
                         </tr>
                         <tr>
-                            <th class="bg-total-col">목표(금액)</th>
+                            <th class="bg-total-col border-thin">목표(금액)</th>
                             <th class="bg-total-col">실적(건)</th>
                             <th class="bg-total-col">실적(금액)</th>
-                            <th class="bg-total-col">달성률</th>
+                            <th class="bg-total-col group-end">달성률</th>
                             <th class="highlight-col-left highlight-bg">목표(금액)</th>
                             <th class="highlight-bg">실적(건)</th>
                             <th class="highlight-bg">실적(금액)</th>
@@ -837,98 +908,17 @@
                             <th>목표(금액)</th>
                             <th>실적(건)</th>
                             <th>실적(금액)</th>
-                            <th>달성률</th>
+                             <th class="border-heavy-right group-end">달성률</th>
                             <th>목표(금액)</th>
                             <th>실적(건)</th>
                             <th>실적(금액)</th>
                             <th>달성률</th>
                         </tr>
+                    </thead>
                     <tbody id="tableBody"></tbody>
                     <tfoot id="tableFoot"></tfoot>
                 </table>
             </div>
-        </div>
-    </div> <!-- End of view-renewal -->
-
-        <!-- View: Retention -->
-        <div id="view-retention" class="view-content" style="padding: 20px 0;">
-            <div id="retention-pdf-content">
-                <div class="header-control-box" style="background: white; padding: 32px 40px; border-radius: 16px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; gap: 28px; border: 1px solid #e2e8f0; margin-bottom: 24px;">
-                    <div class="title-group">
-                        <h1 id="retentionMainTitleText" style="margin: 0 0 8px 0; font-size: 24px; color: var(--primary-dark); font-weight: 800;">리텐션 P값 집행 현황 (본부별 / 2월 누적)</h1>
-                        <p style="margin: 0; font-size: 14px; color: var(--text-muted);">집계 기준 : 2026. 2월 말 &nbsp;|&nbsp; 단위 : 천원, %</p>
-                    </div>
-                    <div class="controls-wrapper" style="display: flex; gap: 40px; flex-wrap: wrap; align-items: flex-end;">
-                        <div class="filter-section">
-                            <span class="filter-label" style="display: block; font-size: 13px; font-weight: 800; color: var(--text-muted); margin-bottom: 8px;">조회 단위</span>
-                            <div class="filter-group" style="display: flex; gap: 4px; background: #f8fafc; padding: 4px; border-radius: 10px; border: 1px solid #e2e8f0;">
-                                <button class="filter-btn retention-level-btn active" data-level="hq" onclick="changeRetentionLevel('hq')">본부별 현황</button>
-                                <button class="filter-btn retention-level-btn" data-level="branch" onclick="changeRetentionLevel('branch')">지사별(강북/강원) 현황</button>
-                            </div>
-                        </div>
-                        <div class="filter-section">
-                            <span class="filter-label" style="display: block; font-size: 13px; font-weight: 800; color: var(--text-muted); margin-bottom: 8px;">월별 데이터 보기</span>
-                            <div class="filter-group" style="display: flex; gap: 4px; background: #f8fafc; padding: 4px; border-radius: 10px; border: 1px solid #e2e8f0;">
-                                <button class="filter-btn retention-view-btn active" data-view="all" onclick="changeRetentionView('all')">전체 현황</button>
-                                <button class="filter-btn retention-view-btn" data-view="1월" onclick="changeRetentionView('1월')">1월 실적</button>
-                                <button class="filter-btn retention-view-btn" data-view="2월" onclick="changeRetentionView('2월')">2월 실적</button>
-                            </div>
-                        </div>
-                        <div class="filter-section">
-                            <span id="retentionFilterLabelText" class="filter-label" style="display: block; font-size: 13px; font-weight: 800; color: var(--text-muted); margin-bottom: 8px;">본부 선택</span>
-                            <div id="retentionFilterBtnGroup" class="filter-group" style="display: flex; gap: 4px; background: #f8fafc; padding: 4px; border-radius: 10px; border: 1px solid #e2e8f0;"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="top-grid" style="display: grid; grid-template-columns: 1fr 1.5fr 1.5fr; gap: 24px; margin-bottom: 24px;">
-                    <div class="card kpi-wrapper" style="display: flex; flex-direction: column; gap: 15px;">
-                        <div class="kpi-box box-blue" style="padding: 20px; border-radius: 12px; text-align: center;">
-                            <h3 id="retentionKpiTitle1" style="margin: 0 0 8px 0; font-size: 14px;">전국 본부 2월 누적 예산</h3>
-                            <div class="value" id="retentionKpiBudget" style="font-size: 28px; font-weight: 800;">-</div>
-                        </div>
-                        <div class="kpi-box box-red" style="padding: 20px; border-radius: 12px; text-align: center;">
-                            <h3 id="retentionKpiTitle2" style="margin: 0 0 8px 0; font-size: 14px;">전국 본부 2월 누적 실적 (사용률)</h3>
-                            <div class="value" style="font-size: 28px; font-weight: 800;"><span id="retentionKpiActual">-</span><span id="retentionKpiRate" style="font-size: 18px; margin-left:8px;">(0%)</span></div>
-                        </div>
-                    </div>
-                    <div class="card"><div class="card-title">📊 <span id="retentionChartTitle1">2월 누적 실적 현황</span></div><div class="chart-container"><canvas id="retentionBudgetChart"></canvas></div></div>
-                    <div class="card"><div class="card-title">📈 1월 vs 2월 실적(소계) 추이</div><div class="chart-container"><canvas id="retentionTrendChart"></canvas></div></div>
-                </div>
-                <div class="table-card"><table id="retentionMainTable"><thead id="retentionTableHead"></thead><tbody id="retentionTableBody"></tbody><tfoot id="retentionTableFoot"></tfoot></table></div>
-            </div>
-            <div style="text-align: right; margin-top: 20px;"><button class="pdf-btn" onclick="downloadRetentionPDF()" style="background: var(--primary-dark); color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer;">📄 PDF 다운로드</button></div>
-        </div>
-
-        <!-- View: Suspension -->
-        <div id="view-suspension" class="view-content" style="padding: 20px 0;">
-            <div style="background: white; padding: 30px; border-radius: 16px; box-shadow: var(--shadow-sm); border-left: 6px solid #ef4444; display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
-                <div class="header-title">
-                    <h1 style="margin: 0; font-size: 24px; font-weight: 800;">정지/부실 실적 현황</h1>
-                    <p style="margin: 5px 0 0 0; color: var(--text-muted); font-size: 14px;">유형별 상세 실적 및 본부/지사별 점유율 실시간 분석</p>
-                </div>
-                <button class="pdf-btn" onclick="downloadSuspensionPDF()" style="background: #0f172a; color: white; border: none; padding: 12px 24px; border-radius: 8px; font-weight: 700; cursor: pointer;">📄 PDF 다운로드</button>
-            </div>
-            <div class="filter-container" style="background: white; padding: 20px 30px; border-radius: 16px; box-shadow: var(--shadow-sm); display: flex; gap: 40px; align-items: center; border: 1px solid #e2e8f0; margin-bottom: 24px;">
-                <div class="filter-section">
-                    <span class="filter-label" style="font-size: 13px; font-weight: 800; color: var(--text-muted); margin-bottom: 8px; display:block;">조회 단위</span>
-                    <div class="btn-group" style="display: flex; gap: 4px; background: #f8fafc; padding: 4px; border-radius: 10px; border: 1px solid #e2e8f0;">
-                        <button class="btn suspension-view-btn active" id="sus-btn-hq" onclick="setSuspensionViewType('hq')">본부별 현황</button>
-                        <button class="btn suspension-view-btn" id="sus-btn-branch" onclick="setSuspensionViewType('branch')">지사별(강북/강원) 현황</button>
-                    </div>
-                </div>
-                <div class="filter-section"><span class="filter-label" style="font-size: 13px; font-weight: 800; color: var(--text-muted); margin-bottom: 8px; display:block;">기준 월</span><div class="btn-group" style="padding: 8px 16px; font-weight:700;">2026. 02월</div></div>
-            </div>
-            <div class="top-grid" style="display: grid; grid-template-columns: 1fr 2fr; gap: 24px; margin-bottom: 24px;">
-                <div class="card">
-                    <div class="card-title">🚨 주요 KPI 요약</div>
-                    <div class="kpi-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
-                        <div class="kpi-box red" style="padding: 20px; border-radius: 12px; text-align: center;"><div class="label">총 정지 건수</div><div class="val" id="sus-kpi-total" style="font-size: 28px; font-weight: 900;">-</div><div class="unit">건</div></div>
-                        <div class="kpi-box orange" style="padding: 20px; border-radius: 12px; text-align: center;"><div class="label">부실(L형) 건수</div><div class="val" id="sus-kpi-defect" style="font-size: 28px; font-weight: 900;">-</div><div class="unit">건</div></div>
-                    </div>
-                </div>
-                <div class="card"><div class="card-title">📊 유형별 정지 건수 분포</div><div style="height: 200px;"><canvas id="suspensionDoughnutChart"></canvas></div></div>
-            </div>
-            <div class="table-card" id="suspension-pdf-area"><table id="suspension-main-table"><thead><tr><th rowspan="2" class="sticky-col">구분</th><th colspan="2" class="bg-total">총정지 실적</th><th colspan="2" class="bg-total">총정지 점유율</th><th colspan="2" class="bg-defect">부실(L형) 실적</th><th colspan="2" class="bg-defect">부실(L형) 점유율</th><th colspan="2" class="bg-etc">L형, SP, 장기정지 실적</th><th colspan="2" class="bg-etc">L형, SP, 장기정지 점유율</th><th colspan="2" class="bg-pay">체납정지 실적</th><th colspan="2" class="bg-gen">일반정지(L+i) 실적</th><th colspan="2" class="bg-sum">계 실적</th><th colspan="2" class="bg-pay">체납정지 점유율</th></tr><tr><th>건수</th><th>월정료</th><th>건수</th><th>월정료</th><th>건</th><th>월정료</th><th>건수</th><th>월정료</th><th>건수</th><th>월정료</th><th>건수</th><th>월정료</th><th>건</th><th>월정료</th><th>건수</th><th>월정료</th><th>건</th><th>월정료</th><th>건수</th><th>월정료</th></tr></thead><tbody id="suspension-table-body"></tbody><tfoot id="suspension-table-foot"></tfoot></table></div>
         </div>
 
     </div>
@@ -1003,85 +993,270 @@
             return num === 0 ? '-' : num.toLocaleString();
         }
 
+        let currentMonth = '1Q 합계';
+
         function renderTable(month) {
+            currentMonth = month;
             const tbody = document.getElementById('tableBody');
             const tfoot = document.getElementById('tableFoot');
             const monthData = tableData[month];
+            
             let bodyHtml = '';
             monthData.rows.forEach(r => {
                 bodyHtml += `
-<tr>
-<td>${r.name}</td>
-<td class="val-target bg-total-col">${formatNum(r.total[0])}</td>
-<td class="val-cnt bg-total-col">${formatNum(r.total[1])}</td>
-<td class="val-amt bg-total-col">${formatNum(r.total[2])}</td>
-<td class="bg-total-col">${getBadge(r.total[0], r.total[2])}</td>
-<td class="val-target highlight-col-left highlight-bg">${formatNum(r.new[0])}</td>
-<td class="val-cnt highlight-bg">${formatNum(r.new[1])}</td>
-<td class="val-amt highlight-bg">${formatNum(r.new[2])}</td>
-<td class="highlight-col-right highlight-bg">${getBadge(r.new[0], r.new[2])}</td>
-<td class="val-target">${formatNum(r.renew[0])}</td>
-<td class="val-cnt">${formatNum(r.renew[1])}</td>
-<td class="val-amt">${formatNum(r.renew[2])}</td>
-<td>${getBadge(r.renew[0], r.renew[2])}</td>
-<td class="val-target">${formatNum(r.expire[0])}</td>
-<td class="val-cnt">${formatNum(r.expire[1])}</td>
-<td class="val-amt">${formatNum(r.expire[2])}</td>
-<td>${getBadge(r.expire[0], r.expire[2])}</td>
-</tr>
-`;
+                    <tr>
+                        <td>${r.name}</td>
+                        <td class="val-num bg-total-col">${formatNum(r.total[0])}</td>
+                        <td class="val-num bg-total-col">${formatNum(r.total[1])}</td>
+                        <td class="val-num bg-total-col">${formatNum(r.total[2])}</td>
+                        <td class="bg-total-col divider-right">${getBadge(r.total[0], r.total[2])}</td>
+                        
+                        <td class="val-num highlight-bg">${formatNum(r.new[0])}</td>
+                        <td class="val-num highlight-bg">${formatNum(r.new[1])}</td>
+                        <td class="val-num highlight-bg">${formatNum(r.new[2])}</td>
+                        <td class="highlight-bg divider-right">${getBadge(r.new[0], r.new[2])}</td>
+                        
+                        <td class="val-num bg-renew">${formatNum(r.renew[0])}</td>
+                        <td class="val-num bg-renew">${formatNum(r.renew[1])}</td>
+                        <td class="val-num bg-renew">${formatNum(r.renew[2])}</td>
+                        <td class="bg-renew divider-right">${getBadge(r.renew[0], r.renew[2])}</td>
+                        
+                        <td class="val-num bg-expire">${formatNum(r.expire[0])}</td>
+                        <td class="val-num bg-expire">${formatNum(r.expire[1])}</td>
+                        <td class="val-num bg-expire">${formatNum(r.expire[2])}</td>
+                        <td>${getBadge(r.expire[0], r.expire[2])}</td>
+                    </tr>
+                `;
             });
             tbody.innerHTML = bodyHtml;
+
             const f = monthData.footer;
             tfoot.innerHTML = `
-<tr>
-<td>총 합계</td>
-<td class="val-target bg-total-col">${formatNum(f.total[0])}</td>
-<td class="val-cnt bg-total-col" style="color:#fff;">${formatNum(f.total[1])}</td>
-<td class="val-amt bg-total-col">${formatNum(f.total[2])}</td>
-<td class="bg-total-col">${getBadge(f.total[0], f.total[2])}</td>
-<td class="val-target highlight-col-left highlight-col-bottom highlight-foot-bg">${formatNum(f.new[0])}</td>
-<td class="val-cnt highlight-col-bottom highlight-foot-bg" style="color:#f1f5f9;">${formatNum(f.new[1])}</td>
-<td class="val-amt highlight-col-bottom highlight-foot-bg">${formatNum(f.new[2])}</td>
-<td class="highlight-col-right highlight-col-bottom highlight-foot-bg">${getBadge(f.new[0], f.new[2])}</td>
-<td class="val-target">${formatNum(f.renew[0])}</td>
-<td class="val-cnt" style="color:#cbd5e1;">${formatNum(f.renew[1])}</td>
-<td class="val-amt">${formatNum(f.renew[2])}</td>
-<td>${getBadge(f.renew[0], f.renew[2])}</td>
-<td class="val-target">${formatNum(f.expire[0])}</td>
-<td class="val-cnt" style="color:#cbd5e1;">${formatNum(f.expire[1])}</td>
-<td class="val-amt">${formatNum(f.expire[2])}</td>
-<td>${getBadge(f.expire[0], f.expire[2])}</td>
-</tr>
-`;
+                <tr>
+                    <td>합 계</td>
+                    <td class="val-num bg-total-col" style="color:var(--primary-dark) !important;">${formatNum(f.total[0])}</td>
+                    <td class="val-num bg-total-col text-blue" style="color:var(--primary-blue) !important;">${formatNum(f.total[1])}</td>
+                    <td class="val-num bg-total-col text-blue" style="color:var(--primary-blue) !important;">${formatNum(f.total[2])}</td>
+                    <td class="bg-total-col divider-right">${getBadge(f.total[0], f.total[2])}</td>
+                    
+                    <td class="val-num highlight-bg">${formatNum(f.new[0])}</td>
+                    <td class="val-num highlight-bg">${formatNum(f.new[1])}</td>
+                    <td class="val-num highlight-bg">${formatNum(f.new[2])}</td>
+                    <td class="highlight-bg divider-right">${getBadge(f.new[0], f.new[2])}</td>
+                    
+                    <td class="val-num bg-renew">${formatNum(f.renew[0])}</td>
+                    <td class="val-num bg-renew">${formatNum(f.renew[1])}</td>
+                    <td class="val-num bg-renew">${formatNum(f.renew[2])}</td>
+                    <td class="bg-renew divider-right">${getBadge(f.renew[0], f.renew[2])}</td>
+                    
+                    <td class="val-num bg-expire">${formatNum(f.expire[0])}</td>
+                    <td class="val-num bg-expire">${formatNum(f.expire[1])}</td>
+                    <td class="val-num bg-expire">${formatNum(f.expire[2])}</td>
+                    <td>${getBadge(f.expire[0], f.expire[2])}</td>
+                </tr>
+            `;
         }
 
         function changeTab(month) {
             document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-            document.querySelector(`.tab-btn[data-month="${month}"]`).classList.add('active');
+            const activeBtn = document.querySelector(`.tab-btn[data-month="${month}"]`);
+            if (activeBtn) activeBtn.classList.add('active');
+            
             document.getElementById('titleMonth').innerText = month;
+            document.getElementById('vizMonthText').innerText = month;
+            
             const tbody = document.getElementById('tableBody');
             const tfoot = document.getElementById('tableFoot');
             tbody.style.opacity = 0;
             tfoot.style.opacity = 0;
+            
             setTimeout(() => {
                 renderTable(month);
+                updateMainChart(month);
                 tbody.style.opacity = 1;
                 tfoot.style.opacity = 1;
             }, 200);
         }
-        function showView(viewId) {
-            document.querySelectorAll('.view-content').forEach(v => v.classList.remove('active'));
-            document.getElementById('view-' + viewId).classList.add('active');
-            
-            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
-            document.querySelector(`[data-view="${viewId}"]`).classList.add('active');
 
-            if (viewId === 'retention' && typeof initRetentionDashboard === 'function') {
-                initRetentionDashboard();
+        let mainChart = null;
+
+        function fmtSmart(val, unit = '천원') {
+            if (val === 0) return '0';
+            if (unit === '천원' && val >= 1000) {
+                // 천원 단위 데이터이므로 1000이면 1,000,000원임.
+                // 1000 이상이면 백만 단위로 환산 (천원 -> 백만원)
+                return (val / 1000).toFixed(1) + '백만원';
             }
-            if (viewId === 'suspension' && typeof initSuspensionDashboard === 'function') {
-                initSuspensionDashboard();
+            return val.toLocaleString() + unit;
+        }
+
+        function toggleViz() {
+            const content = document.getElementById('viz-content');
+            const btn = document.querySelector('.toggle-viz-btn');
+            const isCollapsed = content.style.height === '0px';
+
+            if (isCollapsed) {
+                content.style.height = '350px';
+                btn.innerHTML = '<i class="fas fa-chevron-up"></i> <span>시각화 접기</span>';
+                btn.classList.remove('collapsed');
+            } else {
+                content.style.height = '0px';
+                btn.innerHTML = '<i class="fas fa-chevron-down"></i> <span>시각화 펼치기</span>';
+                btn.classList.add('collapsed');
+            }
+        }
+
+        function updateMainChart(month) {
+            const activeMonth = month || currentMonth;
+            const ctx = document.getElementById('mainChart').getContext('2d');
+            const metric = document.getElementById('chartMetricSelect').value;
+            const data = tableData[activeMonth].rows;
+            
+            const labels = data.map(r => r.name);
+            const targets = data.map(r => r[metric][0]);
+            const actuals = data.map(r => r[metric][2]);
+            const rates = data.map(r => r[metric][0] > 0 ? Math.round((r[metric][2] / r[metric][0]) * 100) : 0);
+
+            const maxRate = Math.max(...rates);
+            const dynamicMaxY1 = Math.max(120, Math.ceil((maxRate + 20) / 20) * 20);
+
+            // [Expert Technique] Gradient Generator
+            const createGradient = (color1, color2) => {
+                const grad = ctx.createLinearGradient(0, 0, 0, 300);
+                grad.addColorStop(0, color1);
+                grad.addColorStop(1, color2);
+                return grad;
+            };
+
+            const blueGrad = createGradient('rgba(59, 130, 246, 0.9)', 'rgba(37, 99, 235, 0.7)');
+            const greenGrad = createGradient('rgba(34, 197, 94, 0.9)', 'rgba(22, 163, 74, 0.7)');
+            const grayGrad = createGradient('rgba(203, 213, 225, 0.8)', 'rgba(148, 163, 184, 0.6)');
+
+            const metricLabels = {
+                'total': '총 실적',
+                'new': '만기도래_신규',
+                'renew': '만기도래_재계약',
+                'expire': '약정만료'
+            };
+            const currentMetricLabel = metricLabels[metric];
+
+            const chartData = {
+                labels: labels,
+                datasets: [
+                    {
+                        label: `${currentMetricLabel} 달성률 (%)`,
+                        data: rates,
+                        type: 'line',
+                        borderColor: '#f43f5e',
+                        borderWidth: 3,
+                        tension: 0.4, // Smooth curve
+                        pointBackgroundColor: '#fff',
+                        pointBorderColor: '#f43f5e',
+                        pointBorderWidth: 2,
+                        pointRadius: 4,
+                        pointHoverRadius: 6,
+                        yAxisID: 'y1',
+                        datalabels: {
+                            align: 'top',
+                            offset: 4,
+                            color: '#e11d48',
+                            font: { weight: '800', size: 11 },
+                            formatter: (v) => v > 0 ? v + '%' : ''
+                        }
+                    },
+                    {
+                        label: `${currentMetricLabel} 목표`,
+                        data: targets,
+                        backgroundColor: grayGrad,
+                        borderRadius: 6,
+                        datalabels: { display: false }
+                    },
+                    {
+                        label: `${currentMetricLabel} 실적`,
+                        data: actuals,
+                        backgroundColor: rates.map(r => r >= 100 ? greenGrad : blueGrad),
+                        borderRadius: 6,
+                        datalabels: {
+                            anchor: 'end',
+                            align: 'top',
+                            color: '#475569',
+                            font: { weight: '700', size: 10 },
+                            formatter: (v) => v > 0 ? fmtSmart(v) : ''
+                        }
+                    }
+                ]
+            };
+
+            if (mainChart) {
+                mainChart.data = chartData;
+                mainChart.options.scales.y1.max = dynamicMaxY1;
+                mainChart.update();
+            } else {
+                mainChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: chartData,
+                    plugins: [ChartDataLabels],
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        layout: { padding: { top: 30, left: 10, right: 10 } },
+                        scales: {
+                            x: { 
+                                grid: { display: false },
+                                border: { display: false },
+                                ticks: { font: { weight: '600' } }
+                            },
+                            y: {
+                                beginAtZero: true,
+                                border: { display: false },
+                                grid: { color: '#f1f5f9' },
+                                ticks: { 
+                                    font: { size: 10 },
+                                    callback: v => v >= 1000 ? (v / 1000) + 'M' : v
+                                }
+                            },
+                            y1: {
+                                position: 'right',
+                                beginAtZero: true,
+                                max: dynamicMaxY1,
+                                border: { display: false },
+                                grid: { display: false },
+                                ticks: { 
+                                    font: { size: 10 },
+                                    callback: v => v + '%'
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: { 
+                                position: 'bottom', 
+                                align: 'center',
+                                labels: { 
+                                    boxWidth: 8, 
+                                    usePointStyle: true,
+                                    padding: 20,
+                                    font: { size: 12, weight: '600' } 
+                                } 
+                            },
+                            tooltip: {
+                                padding: 12,
+                                backgroundColor: 'rgba(15, 23, 42, 0.9)',
+                                titleFont: { size: 14, weight: '800' },
+                                bodyFont: { size: 13 },
+                                cornerRadius: 10,
+                                callbacks: {
+                                    label: function(context) {
+                                        let label = context.dataset.label || '';
+                                        if (label) label += ': ';
+                                        if (context.dataset.type === 'line') label += context.raw + '%';
+                                        else label += fmtSmart(context.raw);
+                                        return label;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
             }
         }
 
@@ -1150,131 +1325,13 @@
 
         window.onload = () => {
             checkExpiration();
-            renderTable('1Q 합계');
+            changeTab('1Q 합계');
         };
-
-        // ===================================
-        // RETENTION VIEW LOGIC
-        // ===================================
-        const retentionHqData = [
-            { name: "강남/서부", base: 4401, qBudget: 13204, mBudget: 4401, jan: [2720, 1758, 4478, 6534], feb: [5465, 1105, 6571, 8874], mom: [2745, -653, 2092], acc: [8803, 11049, 126, 15409] },
-            { name: "강북/강원", base: 2867, qBudget: 8600, mBudget: 2867, jan: [1381, 154, 1535, 970], feb: [1669, 220, 1889, 361], mom: [288, 67, 354], acc: [5734, 3424, 60, 1331] },
-            { name: "부산/경남", base: 2142, qBudget: 6425, mBudget: 2142, jan: [1708, 170, 1879, 682], feb: [2279, 0, 2279, 917], mom: [570, -170, 400], acc: [4284, 4157, 97, 1599] },
-            { name: "전남/전북", base: 2239, qBudget: 6717, mBudget: 2239, jan: [2656, 40, 2696, 1473], feb: [1463, 10, 1473, 1580], mom: [-1192, -30, -1223], acc: [4478, 4169, 93, 3054] },
-            { name: "충남/충북", base: 1798, qBudget: 5395, mBudget: 1798, jan: [3309, 1391, 4700, 909], feb: [657, 1719, 2376, 419], mom: [-2652, 328, -2324], acc: [3596, 7076, 197, 1328] },
-            { name: "대구/경북", base: 1592, qBudget: 4775, mBudget: 1592, jan: [2233, 0, 2233, 1403], feb: [1427, 0, 1427, 6660], mom: [-806, 0, -806], acc: [3183, 3661, 115, 8063] }
-        ];
-        const retentionTotalHqData = { name: "전체 합계", base: 15039, qBudget: 45117, mBudget: 15039, jan: [14007, 3513, 17521, 11971], feb: [12961, 3055, 16015, 18812], mom: [-1047, -459, -1505], acc: [30078, 28014, 93, 30783] };
-        const retentionBranchData = [
-            { name: "중앙", base: 427, qBudget: 1280, mBudget: 427, jan: [31, 12, 43, 49], feb: [216, 12, 229, 127], mom: [185, 0, 185], acc: [854, 272, 32, 176] },
-            { name: "강북", base: 353, qBudget: 1058, mBudget: 353, jan: [123, 0, 123, 0], feb: [0, 11, 11, 0], mom: [-123, 11, -112], acc: [705, 134, 19, 0] },
-            { name: "서대문", base: 318, qBudget: 953, mBudget: 318, jan: [215, 0, 215, 90], feb: [334, 6, 340, 90], mom: [119, 6, 125], acc: [635, 555, 87, 180] },
-            { name: "고양", base: 414, qBudget: 1243, mBudget: 414, jan: [178, 0, 178, 645], feb: [93, 0, 93, 23], mom: [-85, 0, -85], acc: [828, 271, 33, 668] },
-            { name: "의정부", base: 321, qBudget: 962, mBudget: 321, jan: [243, 0, 243, 0], feb: [200, 27, 227, 60], mom: [-43, 27, -16], acc: [642, 470, 73, 60] },
-            { name: "남양주", base: 338, qBudget: 1015, mBudget: 338, jan: [84, 37, 121, 120], feb: [64, 9, 73, 38], mom: [-20, -28, -48], acc: [677, 194, 29, 158] },
-            { name: "강릉", base: 321, qBudget: 964, mBudget: 321, jan: [191, 10, 201, 22], feb: [386, 8, 394, 22], mom: [195, -2, 193], acc: [642, 595, 93, 44] },
-            { name: "원주", base: 375, qBudget: 1125, mBudget: 375, jan: [316, 94, 410, 104], feb: [375, 148, 523, 361], mom: [59, 54, 113], acc: [750, 934, 124, 465] }
-        ];
-        const retentionTotalBranchData = { name: "강북/강원 합계", base: 2867, qBudget: 8600, mBudget: 2867, jan: [1381, 154, 1535, 1030], feb: [1669, 220, 1889, 721], mom: [288, 67, 354], acc: [5734, 3424, 60, 1751] };
-
-        let retentionCurrentLevel = 'hq'; let retentionCurrentView = 'all'; let retentionCurrentFilter = 'all'; 
-        let retentionBudgetChartInstance = null; let retentionTrendChartInstance = null;
-
-        function refreshRetentionAll() { updateRetentionKPIs(); renderRetentionTable(); updateRetentionCharts(); }
-        function changeRetentionLevel(level) {
-            retentionCurrentLevel = level; retentionCurrentFilter = 'all';
-            document.querySelectorAll('.retention-level-btn').forEach(b => b.classList.remove('active'));
-            if(document.querySelector(`.retention-level-btn[data-level="${level}"]`))
-                document.querySelector(`.retention-level-btn[data-level="${level}"]`).classList.add('active');
-            let btnsHtml = `<button class="filter-btn active" onclick="filterRetentionItem('all')">전체</button>`;
-            (level === 'hq' ? retentionHqData : retentionBranchData).forEach(d => { btnsHtml += `<button class="filter-btn" onclick="filterRetentionItem('${d.name}')">${d.name}</button>`; });
-            document.getElementById('retentionFilterBtnGroup').innerHTML = btnsHtml;
-            refreshRetentionAll();
-        }
-        function changeRetentionView(view) { retentionCurrentView = view; document.querySelectorAll('.retention-view-btn').forEach(b => b.classList.remove('active')); if(document.querySelector(`.retention-view-btn[data-view="${view}"]`)) document.querySelector(`.retention-view-btn[data-view="${view}"]`).classList.add('active'); refreshRetentionAll(); }
-        function filterRetentionItem(target) { retentionCurrentFilter = target; document.querySelectorAll('#retentionFilterBtnGroup .filter-btn').forEach(b => b.classList.toggle('active', b.innerText === target || (target === 'all' && b.innerText === '전체'))); refreshRetentionAll(); }
-        
-        function updateRetentionKPIs() {
-            let targetData = retentionCurrentFilter === 'all' ? (retentionCurrentLevel === 'hq' ? retentionTotalHqData : retentionTotalBranchData) : (retentionCurrentLevel === 'hq' ? retentionHqData : retentionBranchData).find(d => d.name === retentionCurrentFilter);
-            let budget, actual, rate;
-            if(retentionCurrentView === '1월') { budget = targetData.mBudget; actual = targetData.jan[2]; } 
-            else if (retentionCurrentView === '2월') { budget = targetData.mBudget; actual = targetData.feb[2]; } 
-            else { budget = targetData.acc[0]; actual = targetData.acc[1]; }
-            rate = Math.round((actual/budget)*100);
-            document.getElementById('retentionKpiBudget').innerText = budget.toLocaleString() + '천원';
-            document.getElementById('retentionKpiActual').innerText = actual.toLocaleString() + '천원';
-            document.getElementById('retentionKpiRate').innerText = `(${rate || 0}%)`;
-        }
-
-        function renderRetentionTable() {
-            const tbody = document.getElementById('retentionTableBody');
-            const dataArr = (retentionCurrentLevel === 'hq' ? retentionHqData : retentionBranchData);
-            let html = '';
-            dataArr.forEach(r => {
-                if(retentionCurrentFilter !== 'all' && r.name !== retentionCurrentFilter) return;
-                html += `<tr><td>${r.name}</td><td>${r.acc[0].toLocaleString()}</td><td>${r.acc[1].toLocaleString()}</td><td>${r.acc[2]}%</td><td>${r.acc[3].toLocaleString()}</td></tr>`;
-            });
-            tbody.innerHTML = html;
-        }
-
-        function updateRetentionCharts() {
-            const ctx1 = document.getElementById('retentionBudgetChart').getContext('2d');
-            if (retentionBudgetChartInstance) retentionBudgetChartInstance.destroy();
-            retentionBudgetChartInstance = new Chart(ctx1, { type: 'bar', data: { labels: (retentionCurrentLevel === 'hq' ? retentionHqData : retentionBranchData).map(d => d.name), datasets: [{ label: '실적', data: (retentionCurrentLevel === 'hq' ? retentionHqData : retentionBranchData).map(d => d.acc[1]), backgroundColor: '#3b82f6' }] }, options: { responsive: true, maintainAspectRatio: false } });
-        }
-
-        function initRetentionDashboard() { changeRetentionLevel('hq'); }
-        function downloadRetentionPDF() { const element = document.getElementById('retention-pdf-content'); const opt = { margin: 10, filename: '리텐션P값_실적현황.pdf', image: { type: 'jpeg', quality: 0.98 }, html2canvas: { scale: 2 }, jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' } }; html2pdf().set(opt).from(element).save(); }
-
-        // ===================================
-        // SUSPENSION VIEW LOGIC
-        // ===================================
-        const suspensionHqData = [
-            { name: "강남/서부", total_c: 1226, total_v: 69732, def_c: 165, def_v: 10693, etc_c: 94, etc_v: 8025, pay_c: 486, pay_v: 15875, gen_c: 156, gen_v: 9611 },
-            { name: "강북/강원", total_c: 861, total_v: 53310, def_c: 89, def_v: 4903, etc_c: 71, etc_v: 5905, pay_c: 168, pay_v: 7165, gen_c: 87, gen_v: 4773 },
-            { name: "부산/경남", total_c: 545, total_v: 26269, def_c: 37, def_v: 2071, etc_c: 19, etc_v: 1206, pay_c: 162, pay_v: 4757, gen_c: 37, gen_v: 2071 },
-            { name: "전남/전북", total_c: 990, total_v: 42821, def_c: 99, def_v: 4119, etc_c: 78, etc_v: 5068, pay_c: 354, pay_v: 12219, gen_c: 96, gen_v: 3909 },
-            { name: "충남/충북", total_c: 187, total_v: 17137, def_c: 0, def_v: 0, etc_c: 0, etc_v: 0, pay_c: 0, pay_v: 0, gen_c: 0, gen_v: 0 },
-            { name: "대구/경북", total_c: 598, total_v: 28114, def_c: 145, def_v: 4061, etc_c: 0, etc_v: 0, pay_c: 155, pay_v: 4491, gen_c: 43, gen_v: 2141 }
-        ];
-        const suspensionBranchData = [
-            { name: "중앙", total_c: 75, total_v: 6962, def_c: 18, def_v: 1126, etc_c: 18, etc_v: 1575, pay_c: 5, pay_v: 637, gen_c: 18, gen_v: 1126 },
-            { name: "강북", total_c: 52, total_v: 3763, def_c: 3, def_v: 127, etc_c: 4, etc_v: 152, pay_c: 3, pay_v: 127, gen_c: 3, gen_v: 127 },
-            { name: "서대문", total_c: 78, total_v: 6511, def_c: 11, def_v: 793, etc_c: 9, etc_v: 750, pay_c: 7, pay_v: 328, gen_c: 11, gen_v: 793 },
-            { name: "고양", total_c: 165, total_v: 11535, def_c: 16, def_v: 691, etc_c: 4, etc_v: 425, pay_c: 17, pay_v: 650, gen_c: 15, gen_v: 626 },
-            { name: "의정부", total_c: 86, total_v: 5309, def_c: 5, def_v: 152, etc_c: 2, etc_v: 260, pay_c: 7, pay_v: 395, gen_c: 5, gen_v: 152 },
-            { name: "남양주", total_c: 102, total_v: 5165, def_c: 12, def_v: 780, etc_c: 6, etc_v: 493, pay_c: 21, pay_v: 771, gen_c: 11, gen_v: 715 },
-            { name: "강릉", total_c: 93, total_v: 5845, def_c: 7, def_v: 577, etc_c: 9, etc_v: 1075, pay_c: 14, pay_v: 829, gen_c: 7, gen_v: 577 },
-            { name: "원주", total_c: 210, total_v: 8221, def_c: 17, def_v: 657, etc_c: 19, etc_v: 1175, pay_c: 94, pay_v: 3428, gen_c: 17, gen_v: 657 }
-        ];
-
-        let suspensionCurrentView = 'hq'; let suspensionChartInstance = null;
-
-        function setSuspensionViewType(view) { 
-            suspensionCurrentView = view; 
-            if(document.getElementById('sus-btn-hq')) document.getElementById('sus-btn-hq').classList.toggle('active', view === 'hq');
-            if(document.getElementById('sus-btn-branch')) document.getElementById('sus-btn-branch').classList.toggle('active', view === 'branch');
-            renderSuspension(); 
-        }
-        function renderSuspension() {
-            const data = suspensionCurrentView === 'hq' ? suspensionHqData : suspensionBranchData;
-            const tbody = document.getElementById('suspension-table-body');
-            let sums = { total_c: 0, total_v: 0, def_c: 0, def_v: 0, etc_c: 0, etc_v: 0, pay_c: 0, pay_v: 0, gen_c: 0, gen_v: 0 };
-            data.forEach(item => { for (let key in sums) sums[key] += item[key]; });
-            tbody.innerHTML = data.map(item => `<tr><td>${item.name}</td><td>${item.total_c.toLocaleString()}</td><td>${item.total_v.toLocaleString()}</td><td>${item.def_c.toLocaleString()}</td><td>${item.pay_c.toLocaleString()}</td></tr>`).join('');
-            document.getElementById('sus-kpi-total').innerText = sums.total_c.toLocaleString();
-            document.getElementById('sus-kpi-defect').innerText = sums.def_c.toLocaleString();
-            updateSuspensionChart(sums);
-        }
-        function updateSuspensionChart(sums) {
-            const ctx = document.getElementById('suspensionDoughnutChart').getContext('2d');
-            if (suspensionChartInstance) suspensionChartInstance.destroy();
-            suspensionChartInstance = new Chart(ctx, { type: 'doughnut', data: { labels: ['부실', '기타', '체납', '일반'], datasets: [{ data: [sums.def_c, sums.etc_c, sums.pay_c, sums.gen_c], backgroundColor: ['#fbbf24', '#7c3aed', '#ef4444', '#10b981'] }] } });
-        }
-        function initSuspensionDashboard() { renderSuspension(); }
-        function downloadSuspensionPDF() { const element = document.getElementById('view-suspension'); const opt = { margin: 10, filename: '정지부실_실적현황.pdf', image: { type: 'jpeg', quality: 0.98 }, html2canvas: { scale: 2 }, jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' } }; html2pdf().set(opt).from(element).save(); }
     </script>
 
+    <div style="position: fixed; bottom: 15px; right: 20px; font-size: 11px; color: #94a3b8; font-weight: 500; font-family: 'Segoe UI', sans-serif; opacity: 0.8; z-index: 9999; pointer-events: none;">
+        Developed by SE-EUN Daddy
+    </div>
 </body>
 
 </html>

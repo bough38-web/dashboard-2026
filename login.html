@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>시스템 로그인 - 2026년 관리고객 재계약 / 리텐션P값 / 정지·부실 현황 보드</title>
+    <title>시스템 로그인 - 강북/강원 관리 대시보드</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         :root {
-            --primary: #ff4d4d;
-            --primary-hover: #ff3333;
-            --bg-dark: #0f172a;
-            --card-bg: #ffffff;
-            --text-main: #1e293b;
-            --text-sub: #64748b;
-            --border-color: #e2e8f0;
-            --input-bg: #f8fafc;
+            --primary: #4f46e5;
+            --primary-hover: #4338ca;
+            --bg-body: #0f172a;
+            --card-bg: rgba(255, 255, 255, 0.08); /* Glassmorphism base */
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --input-bg: rgba(255, 255, 255, 0.05);
+            --border-glass: rgba(255, 255, 255, 0.1);
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         * { box-sizing: border-box; }
@@ -24,144 +25,105 @@
             margin: 0;
             padding: 0;
             font-family: 'Pretendard', sans-serif;
-            background-color: #f1f5f9;
+            background: radial-gradient(circle at top right, #1e293b, #0f172a);
             color: var(--text-main);
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
             min-height: 100vh;
-        }
-
-        .header {
-            width: 100%;
-            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-            position: relative;
             overflow: hidden;
         }
 
-        .header::before {
+        /* Subtle background animation */
+        body::before {
             content: '';
             position: absolute;
-            top: -50px; left: -50px;
-            width: 200px; height: 200px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 50%;
-        }
-
-        .header::after {
-            content: '';
-            position: absolute;
-            bottom: -30px; right: 10%;
-            width: 150px; height: 150px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 50%;
-        }
-
-        .sub-title-badge {
-            display: inline-block;
-            padding: 6px 16px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 20px;
-            font-size: 0.75rem;
-            letter-spacing: 0.1rem;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-
-        .main-title {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin: 0 0 15px 0;
-        }
-
-        .description {
-            font-size: 1rem;
-            color: rgba(255, 255, 255, 0.8);
-            font-weight: 400;
+            width: 300px; height: 300px;
+            background: var(--primary);
+            filter: blur(150px);
+            top: 10%; right: 10%;
+            opacity: 0.2;
+            z-index: -1;
         }
 
         .login-container {
             width: 100%;
-            max-width: 600px;
-            background: white;
-            margin-top: -40px;
-            border-radius: 20px;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            padding: 40px;
+            max-width: 480px;
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border-glass);
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
             z-index: 10;
+            animation: fadeIn 0.8s ease-out;
         }
 
-        .section-title {
-            text-align: center;
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
+
+        .header-section { text-align: center; margin-bottom: 40px; }
+        .header-section h1 { font-size: 28px; font-weight: 800; margin: 0; letter-spacing: -0.02em; }
+        .header-section p { font-size: 14px; color: var(--text-muted); margin: 8px 0 0 0; }
 
         .tabs {
             display: flex;
-            border-bottom: 1px solid var(--border-color);
-            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 4px;
+            border-radius: 12px;
+            margin-bottom: 32px;
+            border: 1px solid var(--border-glass);
         }
 
         .tab {
             flex: 1;
-            padding: 15px;
+            padding: 10px;
             text-align: center;
             cursor: pointer;
-            font-weight: 600;
-            color: var(--text-sub);
-            transition: all 0.2s;
+            font-weight: 700;
+            font-size: 13px;
+            color: var(--text-muted);
+            transition: var(--transition-smooth);
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
-            border-bottom: 3px solid transparent;
+            gap: 6px;
         }
 
         .tab.active {
-            color: var(--primary);
-            border-bottom-color: var(--primary);
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
         }
 
-        .form-group {
-            margin-bottom: 25px;
-        }
+        .form-group { margin-bottom: 24px; }
+        .form-label { display: block; font-size: 13px; font-weight: 700; color: var(--text-muted); margin-bottom: 8px; padding-left: 4px; }
 
-        .form-label {
-            display: block;
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--text-main);
-            margin-bottom: 8px;
-        }
-
-        .input-wrapper {
-            position: relative;
-        }
-
+        .input-wrapper { position: relative; }
         select, input {
             width: 100%;
             padding: 14px 16px;
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
-            background-color: var(--input-bg);
-            font-size: 1rem;
+            border: 1px solid var(--border-glass);
+            border-radius: 12px;
+            background: var(--input-bg);
+            color: white;
+            font-size: 15px;
             outline: none;
-            transition: all 0.2s;
+            transition: var(--transition-smooth);
             appearance: none;
         }
 
+        /* Style for select dropdown options */
+        select option { background: #1e293b; color: white; }
+
         select:focus, input:focus {
             border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(255, 77, 77, 0.1);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.15);
         }
 
         .pw-toggle {
@@ -170,66 +132,66 @@
             top: 50%;
             transform: translateY(-50%);
             cursor: pointer;
-            color: var(--text-sub);
+            color: var(--text-muted);
+            font-size: 18px;
         }
 
         .login-btn {
             width: 100%;
             padding: 16px;
-            background-color: var(--primary);
+            background: var(--primary);
             color: white;
             border: none;
-            border-radius: 12px;
-            font-size: 1.1rem;
-            font-weight: 700;
+            border-radius: 14px;
+            font-size: 16px;
+            font-weight: 800;
             cursor: pointer;
-            transition: all 0.2s;
-            margin-top: 10px;
+            transition: var(--transition-smooth);
+            margin-top: 8px;
         }
 
         .login-btn:hover {
-            background-color: var(--primary-hover);
+            background: var(--primary-hover);
             transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(255, 77, 77, 0.4);
+            box-shadow: 0 10px 20px -5px rgba(79, 70, 229, 0.5);
         }
 
         .error-msg {
-            color: #ef4444;
-            font-size: 0.85rem;
-            margin-top: 10px;
+            color: #fb7185;
+            font-size: 13px;
+            margin-top: 16px;
             text-align: center;
             display: none;
             font-weight: 600;
+            padding: 10px;
+            background: rgba(251, 113, 133, 0.1);
+            border-radius: 8px;
         }
 
-        /* Loading state */
-        .loading .login-btn {
-            opacity: 0.7;
-            pointer-events: none;
+        .footer-credit {
+            position: absolute;
+            bottom: 24px;
+            right: 24px;
+            font-size: 11px;
+            color: var(--text-muted);
+            font-weight: 500;
+            opacity: 0.6;
         }
 
-        /* Responsive */
         @media (max-width: 480px) {
-            .login-container {
-                padding: 20px;
-                margin-top: -20px;
-                border-radius: 0;
-            }
-            .main-title { font-size: 1.8rem; }
+            .login-container { padding: 32px 24px; border-radius: 0; border: none; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
         }
     </style>
 </head>
 <body>
 
-<div class="header">
-    <h1 class="main-title">
-        <div style="font-size: 0.6em; opacity: 0.9; margin-bottom: 5px; font-weight: 600;">2026년 고객</div>
-        재계약 / 리텐션P값 / 정지·부실 현황 보드
-    </h1>
-</div>
+<body>
 
 <div class="login-container">
-    <div class="section-title">🔑 시스템 로그인</div>
+    <div class="header-section">
+        <h1>2026 Management Hub</h1>
+        <p>강북강원본부 지표 관리 시스템</p>
+    </div>
 
     <div class="tabs">
         <div class="tab active" data-role="manager"><i data-lucide="user"></i> 담당자</div>
@@ -240,63 +202,65 @@
     <!-- Manager Form -->
     <div id="manager-form" class="role-form">
         <div class="form-group">
-            <label class="form-label">소속 지사 선택</label>
+            <label class="form-label">소속 지사</label>
             <select id="branch-select">
                 <option value="">지사를 선택하세요</option>
             </select>
         </div>
         <div class="form-group">
-            <label class="form-label">담당자 성함</label>
+            <label class="form-label">담당자</label>
             <select id="manager-select" disabled>
                 <option value="">지사를 먼저 선택하세요</option>
             </select>
         </div>
         <div class="form-group">
-            <label class="form-label">접속 패스워드</label>
+            <label class="form-label">비밀번호</label>
             <div class="input-wrapper">
                 <input type="password" id="manager-pw" placeholder="••••••••">
                 <i data-lucide="eye" class="pw-toggle" onclick="togglePassword('manager-pw')"></i>
             </div>
         </div>
-        <button class="login-btn" onclick="handleLogin('manager')">담당자 시스템 접속 🚀</button>
+        <button class="login-btn" onclick="handleLogin('manager')">시스템 접속</button>
     </div>
 
     <!-- Branch Form -->
     <div id="branch-form" class="role-form" style="display:none;">
         <div class="form-group">
-            <label class="form-label">지사 선택</label>
+            <label class="form-label">소속 지사</label>
             <select id="branch-only-select">
                 <option value="">지사를 선택하세요</option>
             </select>
         </div>
         <div class="form-group">
-            <label class="form-label">지사 보안 패스워드</label>
+            <label class="form-label">지사 보안 암호</label>
             <div class="input-wrapper">
                 <input type="password" id="branch-pw" placeholder="••••••••">
                 <i data-lucide="eye" class="pw-toggle" onclick="togglePassword('branch-pw')"></i>
             </div>
         </div>
-        <button class="login-btn" onclick="handleLogin('branch')">지사 대시보드 접속 🏢</button>
+        <button class="login-btn" onclick="handleLogin('branch')">지사 대시보드 접속</button>
     </div>
 
     <!-- Admin Form -->
     <div id="admin-form" class="role-form" style="display:none;">
         <div class="form-group">
-            <label class="form-label">관리자 ID</label>
+            <label class="form-label">관리자 아이디</label>
             <input type="text" id="admin-id" value="admin" readonly>
         </div>
         <div class="form-group">
-            <label class="form-label">마스터 패스워드</label>
+            <label class="form-label">마스터 암호</label>
             <div class="input-wrapper">
                 <input type="password" id="admin-pw" placeholder="••••••••">
                 <i data-lucide="eye" class="pw-toggle" onclick="togglePassword('admin-pw')"></i>
             </div>
         </div>
-        <button class="login-btn" onclick="handleLogin('admin')">관리자 모드 접속 🛡️</button>
+        <button class="login-btn" onclick="handleLogin('admin')">관리자 모드 접속</button>
     </div>
 
-    <p id="error-display" class="error-msg">비밀번호가 일치하지 않습니다.</p>
+    <p id="error-display" class="error-msg">인증 정보가 올바르지 않습니다.</p>
 </div>
+
+<div class="footer-credit">Developed by SE-EUN Daddy</div>
 
 <script src="data/auth_config.js"></script>
 <script>
@@ -337,7 +301,7 @@
 
     // Populate manager select based on branch
     document.getElementById('branch-select').onchange = (e) => {
-        const branch = e.target.value.trim();
+        const branch = e.target.value;
         const managerSelect = document.getElementById('manager-select');
         managerSelect.innerHTML = '<option value="">담당자를 선택하세요</option>';
         
@@ -346,24 +310,15 @@
             return;
         }
 
-        // De-duplicate by the string that will actually be displayed (masked name)
-        // Also trim all original names to catch "Name " vs "Name" cases
-        const seenMasked = new Set();
-        AUTH_CONFIG.managers.forEach(m => {
-            if (m.branch && m.branch.trim() === branch) {
-                const trimmedName = m.name.trim();
-                const masked = maskName(trimmedName);
-                
-                if (!seenMasked.has(masked)) {
-                    seenMasked.add(masked);
-                    const opt = document.createElement('option');
-                    opt.value = m.id;
-                    opt.textContent = masked;
-                    managerSelect.appendChild(opt);
-                }
-            }
+        // Use a Set to handle potential duplicates in data if they have same masked name and ID
+        const filtered = AUTH_CONFIG.managers.filter(m => m.branch === branch);
+        filtered.forEach(m => {
+            const opt = document.createElement('option');
+            opt.value = m.id;
+            // Mask name and remove ID from display text
+            opt.textContent = maskName(m.name);
+            managerSelect.appendChild(opt);
         });
-        
         managerSelect.disabled = false;
     };
 

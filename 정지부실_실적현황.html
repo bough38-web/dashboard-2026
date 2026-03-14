@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>2026년 관리고객 재계약 / 리텐션P값 / 정지·부실 현황 보드 (정지·부실)</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
             --bg-body: #f1f5f9;
@@ -33,9 +35,9 @@
         .lock-input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 12px; font-size: 18px; text-align: center; margin-bottom: 15px; box-sizing: border-box; }
         .lock-btn { width: 100%; padding: 12px; background: #0f172a; color: white; border: none; border-radius: 12px; font-weight: bold; cursor: pointer; }
 
-        .header-box { background: white; padding: 30px; border-radius: 16px; box-shadow: var(--shadow-md); border-left: 6px solid var(--primary-red); display: flex; justify-content: space-between; align-items: center; }
-        .header-title h1 { margin: 0; font-size: 24px; font-weight: 800; }
-        .header-title p { margin: 5px 0 0 0; color: var(--text-muted); font-size: 14px; }
+        .header-box { background: transparent; padding: 10px 0 30px 0; border-radius: 0; box-shadow: none; border-left: none; display: flex; justify-content: space-between; align-items: flex-end; }
+        .header-title h1 { margin: 0; font-size: 28px; font-weight: 900; color: var(--primary-dark); }
+        .header-title p { margin: 8px 0 0 0; color: var(--text-muted); font-size: 15px; font-weight: 500; }
 
         .filter-container { background: white; padding: 20px 30px; border-radius: 16px; box-shadow: var(--shadow-md); display: flex; gap: 40px; align-items: center; }
         .filter-section { display: flex; flex-direction: column; gap: 8px; }
@@ -49,23 +51,29 @@
         .card-title { font-size: 16px; font-weight: 800; margin-bottom: 20px; border-bottom: 2px solid #f1f5f9; padding-bottom: 10px; }
 
         .kpi-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-        .kpi-box { padding: 20px; border-radius: 12px; text-align: center; border: 1px solid #e2e8f0; }
-        .kpi-box.red { background: #fef2f2; color: #b91c1c; border-color: #fecaca; }
+        .kpi-box { padding: 15px; border-radius: 12px; text-align: center; border: 1px solid #e2e8f0; display: flex; flex-direction: column; justify-content: center; }
+        .kpi-box.red { background: #fff1f2; color: #be123c; border-color: #fecdd3; }
         .kpi-box.orange { background: #fffbeb; color: #b45309; border-color: #fef3c7; }
-        .kpi-box .val { font-size: 28px; font-weight: 900; margin: 10px 0; }
-        .kpi-box .unit { font-size: 14px; font-weight: 600; margin-left: 4px; }
+        .kpi-box .label { font-size: 13px; font-weight: 700; opacity: 0.8; }
+        .kpi-box .val-row { display: flex; align-items: baseline; justify-content: center; gap: 4px; margin: 4px 0; }
+        .kpi-box .val { font-size: 24px; font-weight: 900; }
+        .kpi-box .unit { font-size: 12px; font-weight: 600; }
+        .kpi-box .sub-val { font-size: 14px; font-weight: 700; opacity: 0.9; }
 
         .table-card { background: white; border-radius: 16px; box-shadow: var(--shadow-md); padding: 25px; overflow-x: auto; }
         table { width: 100%; border-collapse: collapse; font-size: 11px; white-space: nowrap; }
-        th, td { padding: 8px 6px; border: 1px solid #e5e7eb; text-align: center; }
-        th { background: #f9fafb; font-weight: 800; color: #374151; }
-        .bg-total { background: #1e293b; color: white; }
-        .bg-defect { background: #fbbf24; color: #1e293b; }
-        .bg-etc { background: #7c3aed; color: white; }
-        .bg-pay { background: #ef4444; color: white; }
-        .bg-gen { background: #10b981; color: white; }
-        .bg-sum { background: #ca8a04; color: white; }
+        th, td { padding: 10px 8px; border: 1px solid #cbd5e1; text-align: center; }
+        th { background: #f8fafc; font-weight: 800; color: #334155; }
+        .bg-total { background: #002060; color: white; }
+        .bg-defect { background: #ffc000; color: black; }
+        .bg-etc { background: #ff0000; color: white; }
+        .bg-pay { background: #ff0000; color: white; }
+        .bg-gen { background: #70ad47; color: white; }
+        .bg-orange { background: #ed7d31; color: white; }
         .bg-sub { background: #f8fafc; font-weight: 600; }
+        .bg-blue-l { background: #ffc000 !important; color: black !important; font-size: 10px; }
+        .bg-purple-l { background: #7030a0 !important; color: white !important; font-size: 10px; }
+        .sub-header-row th { background: #000 !important; color: white !important; border: 1px solid #444 !important; font-size: 10px; }
         
         .sticky-col { position: sticky; left: 0; background: white; font-weight: 800; z-index: 10; border-right: 2px solid #cbd5e1 !important; }
         tr:hover { background: #f8fafc; }
@@ -81,6 +89,33 @@
         .heat-sky { background: #bae6fd !important; color: #075985 !important; }
 
         .pdf-btn { background: #0f172a; color: white; border: none; padding: 12px 24px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px; float: right; }
+        
+        /* Boundary separators */
+        .sep-r { border-right: 3px solid #94a3b8 !important; }
+        .sep-l { border-left: 3px solid #94a3b8 !important; }
+
+        /* Small toggle style */
+        .small-toggle { display: flex; gap: 2px; background: #f1f5f9; padding: 2px; border-radius: 6px; border: 1px solid var(--border-light); }
+        .btn-sm { padding: 4px 12px; border: none; background: transparent; border-radius: 4px; cursor: pointer; font-weight: 700; font-size: 11px; color: var(--text-muted); transition: 0.1s; }
+        .btn-sm.active { background: white; color: var(--primary-dark); box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .nav-hub-btn.active {
+            background: var(--primary-blue);
+            color: white;
+            border-color: var(--primary-blue);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+        }
+
+        .nav-hub-btn.active i {
+            opacity: 1;
+        }
+
+        .nav-hub-btn.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background: #f1f5f9;
+        }
     </style>
 </head>
 <body>
@@ -95,14 +130,37 @@
 </div>
 
 <div class="dashboard-wrapper" id="app">
-    <div class="header-box">
-        <div class="header-title">
-            <h1>2026년 관리고객 재계약 / 리텐션P값 / 정지·부실 현황 보드 (정지·부실)</h1>
-            <p>유형별 상세 실적 및 본부/지사별 점유율 실시간 분석</p>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; padding: 15px 25px; background: white; border-radius: 12px; box-shadow: var(--shadow-md);">
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <div style="background: var(--primary-dark); color: white; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px;">
+                <i class="fas fa-chart-pie"></i>
+            </div>
+            <h1 style="font-size: 22px; font-weight: 800; color: var(--primary-dark); margin: 0;">2026 Management Hub <span style="font-size: 14px; font-weight: 400; color: var(--text-muted); margin-left:10px;">| 정지/부실 통합 분석</span></h1>
         </div>
-        <button class="pdf-btn" onclick="downloadPDF()">
-            📄 PDF 다운로드
-        </button>
+        <div class="nav-buttons" style="display: flex; gap: 8px;">
+            <button class="nav-hub-btn" onclick="location.href='map_dashboard.html'" title="지도/방문관리">
+                <i class="fas fa-map-marked-alt"></i><span>지도/방문</span>
+            </button>
+            <button class="nav-hub-btn" onclick="location.href='index.html'" title="재계약/사전리텐션">
+                <i class="fas fa-sync-alt"></i><span>재계약/리텐션</span>
+            </button>
+            <button class="nav-hub-btn active" onclick="location.href='정지부실_실적현황.html'" title="정지/부실">
+                <i class="fas fa-exclamation-triangle"></i><span>정지/부실</span>
+            </button>
+            <button class="nav-hub-btn" onclick="location.href='리텐션P값 실적현황.html'" title="리텐션P값">
+                <i class="fas fa-coins"></i><span>리텐션P값</span>
+            </button>
+            <button class="nav-hub-btn disabled" title="해지율 (오픈예정)">
+                <i class="fas fa-user-slash"></i><span>해지율(예정)</span>
+            </button>
+            <div style="width: 1px; height: 24px; background: var(--border-light); margin: 0 10px;"></div>
+            <button class="pdf-btn" onclick="downloadPDF()" style="background: #f1f5f9; color: var(--primary-dark); border: 1px solid var(--border-light); padding: 8px 15px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: none;">
+                📄 PDF
+            </button>
+            <button class="logout-btn" onclick="logout()" style="background: #fee2e2; color: #ef4444; border: 1px solid #fecaca; padding: 8px 15px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: all 0.2s;">
+                <i class="fas fa-sign-out-alt"></i> 로그아웃
+            </button>
+        </div>
     </div>
 
     <div class="filter-container">
@@ -121,58 +179,91 @@
         </div>
     </div>
 
-    <div class="top-grid">
+    <div class="top-grid" style="display: block;">
         <div class="card">
-            <div class="card-title">🚨 주요 KPI 요약</div>
+            <div class="card-title">📌 주요 현황</div>
             <div class="kpi-row">
                 <div class="kpi-box red">
-                    <div class="label">총 정지 건수</div>
-                    <div class="val" id="kpi-total">-</div>
-                    <div class="unit">건</div>
+                    <div class="label">총 정지 현황</div>
+                    <div class="val-row">
+                        <span class="val" id="kpi-total">-</span>
+                        <span class="unit">건</span>
+                    </div>
+                    <div class="sub-val" id="kpi-total-v">-</div>
                 </div>
                 <div class="kpi-box orange">
-                    <div class="label">부실(L형) 건수</div>
-                    <div class="val" id="kpi-defect">-</div>
-                    <div class="unit">건</div>
+                    <div class="label">부실(L형) 현황</div>
+                    <div class="val-row">
+                        <span class="val" id="kpi-defect">-</span>
+                        <span class="unit">건</span>
+                    </div>
+                    <div class="sub-val" id="kpi-defect-v">-</div>
                 </div>
             </div>
             <div style="margin-top: 20px; font-size: 12px; color: #64748b; text-align: center;">
                 ※ 집계 데이터는 2026년 3월 13일 13:00 기준
             </div>
         </div>
-        <div class="card">
-            <div class="card-title">📊 유형별 정지 건수 분포</div>
-            <div style="height: 200px;"><canvas id="suspensionChart"></canvas></div>
+    </div>
+
+    <div class="card" id="viz-section">
+        <div class="card-title" style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <span>📊 유형별 분포 분석</span>
+                <select id="rate-category-selector" class="btn-sm" style="display: none; background: white; border: 1px solid var(--border-light); outline: none;" onchange="updateChart(lastSums)">
+                    <option value="total">총정지</option>
+                    <option value="def">부실(L형)</option>
+                    <option value="etc">L형, SP, 장기</option>
+                    <option value="pay">체납정지</option>
+                    <option value="gen">일반정지</option>
+                </select>
+                <button class="btn-sm" onclick="toggleViz()" style="background: var(--bg-body); border: 1px solid var(--border-light);">시각화 접기/펼치기</button>
+            </div>
+            <div class="small-toggle">
+                <button class="btn-sm active" id="mode-count" onclick="setChartMode('count')">건수</button>
+                <button class="btn-sm" id="mode-value" onclick="setChartMode('value')">금액</button>
+                <button class="btn-sm" id="mode-rate" onclick="setChartMode('rate')">정지율</button>
+            </div>
+        </div>
+        <div id="chart-container" style="height: 250px; transition: height 0.3s ease, opacity 0.3s ease; overflow: hidden;">
+            <canvas id="suspensionChart"></canvas>
         </div>
     </div>
 
     <div class="table-card" id="pdf-area">
+        <div style="text-align: right; font-size: 13px; font-weight: 700; margin-bottom: 10px; color: var(--text-muted);">
+            [단위 : 건, 천원, %]
+        </div>
         <table id="main-table">
             <thead>
                 <tr>
-                    <th rowspan="2" class="sticky-col">구분</th>
-                    <th colspan="2" class="bg-total">총정지 실적</th>
-                    <th colspan="2" class="bg-total">총정지 점유율</th>
-                    <th colspan="2" class="bg-defect">부실(L형) 실적</th>
-                    <th colspan="2" class="bg-defect">부실(L형) 점유율</th>
-                    <th colspan="2" class="bg-etc">L형, SP, 장기정지 실적</th>
-                    <th colspan="2" class="bg-etc">L형, SP, 장기정지 점유율</th>
-                    <th colspan="2" class="bg-pay">체납정지 실적</th>
-                    <th colspan="2" class="bg-gen">일반정지(L+i) 실적</th>
-                    <th colspan="2" class="bg-sum">계 실적</th>
-                    <th colspan="2" class="bg-pay">체납정지 점유율</th>
+                    <th rowspan="2" class="sticky-col sep-r">구분</th>
+                    <th colspan="2" class="bg-total sep-r">총정지</th>
+                    <th colspan="2" class="bg-defect sep-r">부실(L형)</th>
+                    <th colspan="2" class="bg-etc sep-r">L형, SP, 장기</th>
+                    <th colspan="2" class="bg-pay sep-r">체납정지</th>
+                    <th colspan="2" class="bg-orange sep-r">일반정지</th>
+                    <th colspan="2" class="bg-gen sep-r">계(일반+체납)</th>
+                    <th class="bg-pay">체납비중</th>
                 </tr>
                 <tr>
-                    <th>건수</th><th>월정료</th>
-                    <th>건수</th><th>월정료</th>
-                    <th>건</th><th>월정료</th>
-                    <th>건수</th><th>월정료</th>
-                    <th>건수</th><th>월정료</th>
-                    <th>건수</th><th>월정료</th>
-                    <th>건</th><th>월정료</th>
-                    <th>건수</th><th>월정료</th>
-                    <th>건</th><th>월정료</th>
-                    <th>건수</th><th>월정료</th>
+                    <th class="bg-blue-l">실적</th><th class="bg-purple-l sep-r">정지율</th>
+                    <th class="bg-blue-l">실적</th><th class="bg-purple-l sep-r">정지율</th>
+                    <th class="bg-blue-l">실적</th><th class="bg-purple-l sep-r">정지율</th>
+                    <th class="bg-blue-l">실적</th><th class="bg-purple-l sep-r">정지율</th>
+                    <th class="bg-blue-l">실적</th><th class="bg-purple-l sep-r">정지율</th>
+                    <th class="bg-blue-l">실적</th><th class="bg-purple-l sep-r">정지율</th>
+                    <th class="bg-purple-l">비율(C/V)</th>
+                </tr>
+                <tr class="sub-header-row">
+                    <th class="sticky-col sep-r"></th>
+                    <th>건수<br>월정료</th><th class="sep-r">건수<br>월정료</th>
+                    <th>건수<br>월정료</th><th class="sep-r">건수<br>월정료</th>
+                    <th>건수<br>월정료</th><th class="sep-r">건수<br>월정료</th>
+                    <th>건수<br>월정료</th><th class="sep-r">건수<br>월정료</th>
+                    <th>건수<br>월정료</th><th class="sep-r">건수<br>월정료</th>
+                    <th>건수<br>월정료</th><th class="sep-r">건수<br>월정료</th>
+                    <th>건/금액</th>
                 </tr>
             </thead>
             <tbody id="table-body"></tbody>
@@ -183,27 +274,29 @@
 
 <script>
     const HQ_DATA = [
-        { name: "강남/서부", total_c: 1226, total_v: 69732, def_c: 165, def_v: 10693, etc_c: 94, etc_v: 8025, pay_c: 486, pay_v: 15875, gen_c: 156, gen_v: 9611 },
-        { name: "강북/강원", total_c: 861, total_v: 53310, def_c: 89, def_v: 4903, etc_c: 71, etc_v: 5905, pay_c: 168, pay_v: 7165, gen_c: 87, gen_v: 4773 },
-        { name: "부산/경남", total_c: 545, total_v: 26269, def_c: 37, def_v: 2071, etc_c: 19, etc_v: 1206, pay_c: 162, pay_v: 4757, gen_c: 37, gen_v: 2071 },
-        { name: "전남/전북", total_c: 990, total_v: 42821, def_c: 99, def_v: 4119, etc_c: 78, etc_v: 5068, pay_c: 354, pay_v: 12219, gen_c: 96, gen_v: 3909 },
-        { name: "충남/충북", total_c: 187, total_v: 17137, def_c: 0, def_v: 0, etc_c: 0, etc_v: 0, pay_c: 0, pay_v: 0, gen_c: 0, gen_v: 0 },
-        { name: "대구/경북", total_c: 598, total_v: 28114, def_c: 145, def_v: 4061, etc_c: 0, etc_v: 0, pay_c: 155, pay_v: 4491, gen_c: 43, gen_v: 2141 }
+        { name: "강남/서부", total_c: 1226, total_v: 69732, def_c: 165, def_v: 10693, etc_c: 94, etc_v: 8025, pay_c: 486, pay_v: 15875, gen_c: 156, gen_v: 9611, base_c: 121386, base_v: 6836470 },
+        { name: "강북/강원", total_c: 861, total_v: 53310, def_c: 89, def_v: 4903, etc_c: 71, etc_v: 5905, pay_c: 168, pay_v: 7165, gen_c: 87, gen_v: 4773, base_c: 90631, base_v: 5077142 },
+        { name: "부산/경남", total_c: 545, total_v: 26269, def_c: 37, def_v: 2071, etc_c: 19, etc_v: 1206, pay_c: 162, pay_v: 4757, gen_c: 37, gen_v: 2071, base_c: 64117, base_v: 3243086 },
+        { name: "전남/전북", total_c: 990, total_v: 42821, def_c: 99, def_v: 4119, etc_c: 78, etc_v: 5069, pay_c: 354, pay_v: 12218, gen_c: 96, gen_v: 3909, base_c: 67808, base_v: 3425680 },
+        { name: "충남/충북", total_c: 187, total_v: 17137, def_c: 0, def_v: 0, etc_c: 0, etc_v: 0, pay_c: 0, pay_v: 0, gen_c: 0, gen_v: 0, base_c: 51944, base_v: 3006491 },
+        { name: "대구/경북", total_c: 598, total_v: 28114, def_c: 145, def_v: 4061, etc_c: 0, etc_v: 0, pay_c: 155, pay_v: 4491, gen_c: 43, gen_v: 2141, base_c: 47840, base_v: 2444695 }
     ];
 
     const BRANCH_DATA = [
-        { name: "중앙", total_c: 75, total_v: 6962, def_c: 18, def_v: 1126, etc_c: 18, etc_v: 1575, pay_c: 5, pay_v: 637, gen_c: 18, gen_v: 1126 },
-        { name: "강북", total_c: 52, total_v: 3763, def_c: 3, def_v: 127, etc_c: 4, etc_v: 152, pay_c: 3, pay_v: 127, gen_c: 3, gen_v: 127 },
-        { name: "서대문", total_c: 78, total_v: 6511, def_c: 11, def_v: 793, etc_c: 9, etc_v: 750, pay_c: 7, pay_v: 328, gen_c: 11, gen_v: 793 },
-        { name: "고양", total_c: 165, total_v: 11535, def_c: 16, def_v: 691, etc_c: 4, etc_v: 425, pay_c: 17, pay_v: 650, gen_c: 15, gen_v: 626 },
-        { name: "의정부", total_c: 86, total_v: 5309, def_c: 5, def_v: 152, etc_c: 2, etc_v: 260, pay_c: 7, pay_v: 395, gen_c: 5, gen_v: 152 },
-        { name: "남양주", total_c: 102, total_v: 5165, def_c: 12, def_v: 780, etc_c: 6, etc_v: 493, pay_c: 21, pay_v: 771, gen_c: 11, gen_v: 715 },
-        { name: "강릉", total_c: 93, total_v: 5845, def_c: 7, def_v: 577, etc_c: 9, etc_v: 1075, pay_c: 14, pay_v: 829, gen_c: 7, gen_v: 577 },
-        { name: "원주", total_c: 210, total_v: 8221, def_c: 17, def_v: 657, etc_c: 19, etc_v: 1175, pay_c: 94, pay_v: 3428, gen_c: 17, gen_v: 657 }
+        { name: "중앙", total_c: 75, total_v: 6962, def_c: 18, def_v: 1126, etc_c: 18, etc_v: 1575, pay_c: 5, pay_v: 637, gen_c: 18, gen_v: 1126, base_c: 12711, base_v: 696200 },
+        { name: "강북", total_c: 52, total_v: 3763, def_c: 3, def_v: 127, etc_c: 4, etc_v: 152, pay_c: 3, pay_v: 127, gen_c: 3, gen_v: 127, base_c: 11304, base_v: 895952 },
+        { name: "서대문", total_c: 78, total_v: 6511, def_c: 11, def_v: 793, etc_c: 9, etc_v: 750, pay_c: 7, pay_v: 328, gen_c: 11, gen_v: 793, base_c: 8863, base_v: 542583 },
+        { name: "고양", total_c: 165, total_v: 11535, def_c: 16, def_v: 691, etc_c: 4, etc_v: 425, pay_c: 17, pay_v: 650, gen_c: 15, gen_v: 626, base_c: 13200, base_v: 640833 },
+        { name: "의정부", total_c: 86, total_v: 5309, def_c: 5, def_v: 152, etc_c: 2, etc_v: 260, pay_c: 7, pay_v: 395, gen_c: 5, gen_v: 152, base_c: 9772, base_v: 510480 },
+        { name: "남양주", total_c: 102, total_v: 5165, def_c: 12, def_v: 780, etc_c: 6, etc_v: 493, pay_c: 21, pay_v: 771, gen_c: 11, gen_v: 715, base_c: 9622, base_v: 521717 },
+        { name: "강릉", total_c: 93, total_v: 5845, def_c: 7, def_v: 577, etc_c: 9, etc_v: 1075, pay_c: 14, pay_v: 829, gen_c: 7, gen_v: 577, base_c: 10449, base_v: 487083 },
+        { name: "원주", total_c: 210, total_v: 8220, def_c: 17, def_v: 657, etc_c: 19, etc_v: 1175, pay_c: 94, pay_v: 3428, gen_c: 17, gen_v: 657, base_c: 15328, base_v: 768224 }
     ];
 
     let currentView = 'hq';
+    let chartMode = 'count';
     let chartInstance = null;
+    let lastSums = null;
 
     function verifyCode() {
         const code = document.getElementById('accessCode').value;
@@ -223,15 +316,62 @@
         render();
     }
 
+    let isVizCollapsed = false;
+    function toggleViz() {
+        isVizCollapsed = !isVizCollapsed;
+        const container = document.getElementById('chart-container');
+        if (isVizCollapsed) {
+            container.style.height = '0';
+            container.style.opacity = '0';
+            container.style.marginTop = '0';
+        } else {
+            container.style.height = '250px';
+            container.style.opacity = '1';
+            container.style.marginTop = '20px';
+        }
+    }
+
+    function setChartMode(mode) {
+        chartMode = mode;
+        document.getElementById('mode-count').classList.toggle('active', mode === 'count');
+        document.getElementById('mode-value').classList.toggle('active', mode === 'value');
+        document.getElementById('mode-rate').classList.toggle('active', mode === 'rate');
+        
+        // Show/hide category selector for Rate mode
+        const categorySelector = document.getElementById('rate-category-selector');
+        categorySelector.style.display = mode === 'rate' ? 'block' : 'none';
+        
+        render(); // render calls updateChart
+    }
+
     function fmt(n) { return n ? n.toLocaleString() : '0'; }
+    function fmtSmart(n, type='count') {
+        if (!n) return '0';
+        if (type === 'count') return fmt(n) + '건';
+        
+        // n is in thousands unit from raw data (e.g., 44,507 -> 44,507,000)
+        const val = n * 1000;
+        
+        if (val >= 1000000) { // 1M+ (Million)
+            return (val / 1000000).toFixed(1) + '백만원';
+        }
+        if (val >= 10000) { // 10k+
+            return (val / 10000).toFixed(1) + '만원';
+        }
+        if (val >= 1000) {
+            return (val / 1000).toFixed(1) + '천원';
+        }
+        return fmt(val) + '원';
+    }
     function pct(v) { return (v * 100).toFixed(2) + '%'; }
     function pct0(v) { return Math.round(v * 100) + '%'; }
 
     function getHeatColor(val, type='share') {
         if (type === 'share') {
-            if (val > 0.3) return 'heat-vhigh';
-            if (val > 0.1) return 'heat-high';
-            if (val > 0.05) return 'heat-mid';
+            if (val > 0.013) return 'heat-vhigh';
+            if (val > 0.011) return 'heat-high';
+            if (val > 0.010) return 'heat-mid';
+            if (val > 0.009) return '';
             if (val > 0) return 'heat-sky';
         } else if (type === 'pay_ratio') {
             if (val > 0.8) return 'heat-vhigh';
@@ -246,60 +386,66 @@
         const tbody = document.getElementById('table-body');
         tbody.innerHTML = '';
 
-        let sums = { total_c: 0, total_v: 0, def_c: 0, def_v: 0, etc_c: 0, etc_v: 0, pay_c: 0, pay_v: 0, gen_c: 0, gen_v: 0 };
+        let sums = { total_c: 0, total_v: 0, def_c: 0, def_v: 0, etc_c: 0, etc_v: 0, pay_c: 0, pay_v: 0, gen_c: 0, gen_v: 0, base_c: 0, base_v: 0 };
         data.forEach(item => { for (let key in sums) sums[key] += item[key]; });
+        lastSums = sums;
 
         data.forEach(item => {
             const tr = document.createElement('tr');
             if (item.name === '강북/강원') tr.className = 'highlight-row';
             
-            const tc_s = item.total_c / sums.total_c;
-            const tv_s = item.total_v / sums.total_v;
-            const dc_s = item.def_c / sums.total_c;
-            const dv_s = item.def_v / sums.total_v;
-            const ec_s = item.etc_c / sums.total_c;
-            const ev_s = item.etc_v / sums.total_v;
+            // Helper for 2-line performance cells
+            const cellPF = (c, v) => `<div class="txt-num">${fmt(c)}</div><div class="txt-num" style="font-size:10px; opacity:0.7;">${fmt(v)}</div>`;
+            // Helper for 2-line rate cells
+            const cellRT = (c_rate, v_rate) => `<div class="txt-num ${getHeatColor(c_rate)}">${pct(c_rate)}</div><div class="txt-num ${getHeatColor(v_rate)}" style="font-size:10px; opacity:0.7;">${pct(v_rate)}</div>`;
+
+            const tc_s = item.total_c / item.base_c;
+            const tv_s = item.total_v / item.base_v;
+            const dc_s = item.def_c / item.base_c;
+            const dv_s = item.def_v / item.base_v;
+            const ec_s = item.etc_c / item.base_c;
+            const ev_s = item.etc_v / item.base_v;
+            const pc_s = item.pay_c / item.base_c;
+            const pv_s = item.pay_v / item.base_v;
+            const gc_s = item.gen_c / item.base_c;
+            const gv_s = item.gen_v / item.base_v;
             
             const total_sum_c = item.pay_c + item.gen_c;
             const total_sum_v = item.pay_v + item.gen_v;
             const pay_ratio_c = total_sum_c > 0 ? item.pay_c / total_sum_c : 0;
             const pay_ratio_v = total_sum_v > 0 ? item.pay_v / total_sum_v : 0;
+            const acc_sc = total_sum_c / item.base_c;
+            const acc_sv = total_sum_v / item.base_v;
 
             tr.innerHTML = `
-                <td class="sticky-col">${item.name}</td>
-                <td class="txt-num">${fmt(item.total_c)}</td><td class="txt-num">${fmt(item.total_v)}</td>
-                <td class="txt-num ${getHeatColor(tc_s)}">${pct(tc_s)}</td><td class="txt-num ${getHeatColor(tv_s)}">${pct(tv_s)}</td>
-                <td class="txt-num bg-sub">${fmt(item.def_c)}</td><td class="txt-num bg-sub">${fmt(item.def_v)}</td>
-                <td class="txt-num ${getHeatColor(dc_s)}">${pct(dc_s)}</td><td class="txt-num ${getHeatColor(dv_s)}">${pct(dv_s)}</td>
-                <td class="txt-num bg-sub">${fmt(item.etc_c)}</td><td class="txt-num bg-sub">${fmt(item.etc_v)}</td>
-                <td class="txt-num ${getHeatColor(ec_s)}">${pct(ec_s)}</td><td class="txt-num ${getHeatColor(ev_s)}">${pct(ev_s)}</td>
-                <td class="txt-num">${fmt(item.pay_c)}</td><td class="txt-num">${fmt(item.pay_v)}</td>
-                <td class="txt-num">${fmt(item.gen_c)}</td><td class="txt-num">${fmt(item.gen_v)}</td>
-                <td class="txt-num bg-sub">${fmt(total_sum_c)}</td><td class="txt-num bg-sub">${fmt(total_sum_v)}</td>
-                <td class="txt-num ${getHeatColor(pay_ratio_c, 'pay_ratio')}">${pct0(pay_ratio_c)}</td>
-                <td class="txt-num ${getHeatColor(pay_ratio_v, 'pay_ratio')}">${pct0(pay_ratio_v)}</td>
+                <td class="sticky-col sep-r">${item.name}</td>
+                <td>${cellPF(item.total_c, item.total_v)}</td><td class="sep-r">${cellRT(tc_s, tv_s)}</td>
+                <td class="bg-sub">${cellPF(item.def_c, item.def_v)}</td><td class="bg-sub sep-r">${cellRT(dc_s, dv_s)}</td>
+                <td class="bg-sub">${cellPF(item.etc_c, item.etc_v)}</td><td class="bg-sub sep-r">${cellRT(ec_s, ev_s)}</td>
+                <td>${cellPF(item.pay_c, item.pay_v)}</td><td class="sep-r">${cellRT(pc_s, pv_s)}</td>
+                <td>${cellPF(item.gen_c, item.gen_v)}</td><td class="sep-r">${cellRT(gc_s, gv_s)}</td>
+                <td class="bg-sub">${cellPF(total_sum_c, total_sum_v)}</td><td class="bg-sub sep-r">${cellRT(acc_sc, acc_sv)}</td>
+                <td class="txt-num">C: ${pct0(pay_ratio_c)}<br>V: ${pct0(pay_ratio_v)}</td>
             `;
             tbody.appendChild(tr);
         });
 
         // Foot
         const tfoot = document.getElementById('table-foot');
-        const total_s_sum_c = sums.pay_c + sums.gen_c;
-        const total_s_sum_v = sums.pay_v + sums.gen_v;
+        const ts_c = sums.pay_c + sums.gen_c;
+        const ts_v = sums.pay_v + sums.gen_v;
+        const footRT = (c, v, bc, bv) => `<div class="txt-num">${pct(bc > 0 ? c/bc : 0)}</div><div class="txt-num" style="font-size:10px; opacity:0.7;">${pct(bv > 0 ? v/bv : 0)}</div>`;
         
         tfoot.innerHTML = `
             <tr style="background:#f1f5f9; font-weight:800;">
-                <td class="sticky-col" style="background:#f1f5f9;">합계</td>
-                <td class="txt-num">${fmt(sums.total_c)}</td><td class="txt-num">${fmt(sums.total_v)}</td>
-                <td class="txt-num">${pct(1)}</td><td class="txt-num">${pct(1)}</td>
-                <td class="txt-num">${fmt(sums.def_c)}</td><td class="txt-num">${fmt(sums.def_v)}</td>
-                <td class="txt-num">${pct(sums.def_c/sums.total_c)}</td><td class="txt-num">${pct(sums.def_v/sums.total_v)}</td>
-                <td class="txt-num">${fmt(sums.etc_c)}</td><td class="txt-num">${fmt(sums.etc_v)}</td>
-                <td class="txt-num">${pct(sums.etc_c/sums.total_c)}</td><td class="txt-num">${pct(sums.etc_v/sums.total_v)}</td>
-                <td class="txt-num">${fmt(sums.pay_c)}</td><td class="txt-num">${fmt(sums.pay_v)}</td>
-                <td class="txt-num">${fmt(sums.gen_c)}</td><td class="txt-num">${fmt(sums.gen_v)}</td>
-                <td class="txt-num">${fmt(total_s_sum_c)}</td><td class="txt-num">${fmt(total_s_sum_v)}</td>
-                <td class="txt-num">${pct0(sums.pay_c/total_s_sum_c)}</td><td class="txt-num">${pct0(sums.pay_v/total_s_sum_v)}</td>
+                <td class="sticky-col sep-r" style="background:#f1f5f9;">합계</td>
+                <td>${sums.total_c.toLocaleString()}<br><small>${sums.total_v.toLocaleString()}</small></td><td class="sep-r">${footRT(sums.total_c, sums.total_v, sums.base_c, sums.base_v)}</td>
+                <td>${sums.def_c.toLocaleString()}<br><small>${sums.def_v.toLocaleString()}</small></td><td class="sep-r">${footRT(sums.def_c, sums.def_v, sums.base_c, sums.base_v)}</td>
+                <td>${sums.etc_c.toLocaleString()}<br><small>${sums.etc_v.toLocaleString()}</small></td><td class="sep-r">${footRT(sums.etc_c, sums.etc_v, sums.base_c, sums.base_v)}</td>
+                <td>${sums.pay_c.toLocaleString()}<br><small>${sums.pay_v.toLocaleString()}</small></td><td class="sep-r">${footRT(sums.pay_c, sums.pay_v, sums.base_c, sums.base_v)}</td>
+                <td>${sums.gen_c.toLocaleString()}<br><small>${sums.gen_v.toLocaleString()}</small></td><td class="sep-r">${footRT(sums.gen_c, sums.gen_v, sums.base_c, sums.base_v)}</td>
+                <td class="bg-sub">${ts_c.toLocaleString()}<br><small>${ts_v.toLocaleString()}</small></td><td class="bg-sub sep-r">${footRT(ts_c, ts_v, sums.base_c, sums.base_v)}</td>
+                <td class="txt-num">${pct0(ts_c > 0 ? sums.pay_c/ts_c : 0)}<br>${pct0(ts_v > 0 ? sums.pay_v/ts_v : 0)}</td>
             </tr>
         `;
 
@@ -309,28 +455,146 @@
 
     function updateKPIs(sums) {
         document.getElementById('kpi-total').innerText = fmt(sums.total_c);
+        document.getElementById('kpi-total-v').innerText = fmtSmart(sums.total_v, 'value');
         document.getElementById('kpi-defect').innerText = fmt(sums.def_c);
+        document.getElementById('kpi-defect-v').innerText = fmtSmart(sums.def_v, 'value');
     }
 
     function updateChart(sums) {
         const ctx = document.getElementById('suspensionChart').getContext('2d');
         if (chartInstance) chartInstance.destroy();
 
-        chartInstance = new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-                labels: ['부실(L형)', 'L/SP/장기', '체납정지', '일반정지'],
-                datasets: [{
-                    data: [sums.def_c, sums.etc_c, sums.pay_c, sums.gen_c],
-                    backgroundColor: ['#fbbf24', '#7c3aed', '#ef4444', '#10b981'],
-                    borderWidth: 0
-                }]
+        const data = currentView === 'hq' ? HQ_DATA : BRANCH_DATA;
+        const labels = data.map(item => item.name);
+        
+        // Dynamic Height based on data density
+        const container = document.getElementById('chart-container');
+        container.style.height = currentView === 'hq' ? '250px' : '450px';
+
+        let datasets = [];
+        let options = {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            // Adjust spacing
+            categoryPercentage: 0.8,
+            barPercentage: 0.9,
+            plugins: {
+                legend: {
+                    position: 'top',
+                    labels: { boxWidth: 10, font: { size: 11, weight: 'bold' } }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: (ctx) => ` ${ctx.dataset.label}: ${chartMode === 'rate' ? pct(ctx.raw) : fmtSmart(ctx.raw, chartMode)}`
+                    }
+                }
             },
-            options: {
-                responsive: true, maintainAspectRatio: false,
-                plugins: { legend: { position: 'right', labels: { boxWidth: 12, font: { weight: 'bold' } } } },
-                cutout: '70%'
+            scales: {
+                x: {
+                    stacked: chartMode !== 'rate',
+                    beginAtZero: true,
+                    ticks: {
+                        font: { size: 10, weight: '600' },
+                        callback: function(value) {
+                            if (chartMode === 'count') return value;
+                            if (chartMode === 'rate') return (value * 100).toFixed(1) + '%';
+                            // Use Millions for Value mode
+                            const val = value * 1000;
+                            if (val >= 1000000) return (val / 1000000).toFixed(1) + 'M(백만)';
+                            if (val >= 1000) return (val / 1000).toFixed(1) + 'k';
+                            return val;
+                        }
+                    }
+                },
+                y: {
+                    stacked: chartMode !== 'rate',
+                    ticks: { font: { size: 11, weight: '800' } }
+                }
             }
+        };
+
+        if (chartMode === 'rate') {
+            const cat = document.getElementById('rate-category-selector').value;
+            const key_c = cat + '_c';
+            const rates = data.map(item => item[key_c] / item.base_c);
+            const avgRate = sums[key_c] / sums.base_c;
+            
+            datasets = [
+                {
+                    label: `${cat === 'total' ? '총정지' : cat === 'def' ? '부실' : cat === 'etc' ? 'L/SP' : cat === 'pay' ? '체납' : '일반'} 정지율 (%)`,
+                    data: rates,
+                    backgroundColor: rates.map(r => r > avgRate ? '#ef4444' : '#6366f1'),
+                    borderRadius: 6,
+                    barThickness: 24
+                },
+                {
+                    label: `선택유형 평균 (${(avgRate * 100).toFixed(2)}%)`,
+                    data: new Array(labels.length).fill(avgRate),
+                    type: 'line',
+                    borderColor: '#1e293b',
+                    borderWidth: 2,
+                    borderDash: [4, 4],
+                    pointRadius: 0,
+                    fill: false,
+                    order: -1
+                }
+            ];
+            
+            options.plugins.datalabels = {
+                display: true,
+                anchor: 'end',
+                align: 'right',
+                offset: 4,
+                color: '#1e293b',
+                font: { weight: 'bold', size: 10 },
+                formatter: (val, ctx) => ctx.dataset.type === 'line' ? '' : (val * 100).toFixed(2) + '%'
+            };
+        } else {
+            const isCount = chartMode === 'count';
+            datasets = [
+                {
+                    label: '부실(L형)',
+                    data: data.map(item => isCount ? item.def_c : item.def_v),
+                    backgroundColor: '#f59e0b',
+                    borderRadius: 4
+                },
+                {
+                    label: 'L/SP/장기',
+                    data: data.map(item => isCount ? item.etc_c : item.etc_v),
+                    backgroundColor: '#6d28d9',
+                    borderRadius: 4
+                },
+                {
+                    label: '체납정지',
+                    data: data.map(item => isCount ? item.pay_c : item.pay_v),
+                    backgroundColor: '#dc2626',
+                    borderRadius: 4
+                },
+                {
+                    label: '일반정지',
+                    data: data.map(item => isCount ? item.gen_c : item.gen_v),
+                    backgroundColor: '#10b981',
+                    borderRadius: 4
+                }
+            ];
+
+            options.plugins.datalabels = {
+                display: (context) => context.dataset.data[context.dataIndex] > 0,
+                color: '#fff',
+                font: { weight: 'bold', size: 10 },
+                formatter: (value) => {
+                    if (isCount) return value >= 10 ? value : '';
+                    return '';
+                }
+            };
+        }
+
+        chartInstance = new Chart(ctx, {
+            type: 'bar',
+            data: { labels, datasets },
+            plugins: [ChartDataLabels],
+            options: options
         });
     }
 
@@ -346,8 +610,18 @@
         html2pdf().from(element).set(opt).save();
     }
 
+    window.logout = function() {
+        if (confirm('로그아웃 하시겠습니까?')) {
+            localStorage.removeItem('sales_dashboard_session');
+            location.href = 'login.html';
+        }
+    };
+
     function init() { render(); }
 </script>
 
+    <div style="position: fixed; bottom: 15px; right: 20px; font-size: 11px; color: #94a3b8; font-weight: 500; font-family: 'Segoe UI', sans-serif; opacity: 0.8; z-index: 9999; pointer-events: none;">
+        Developed by SE-EUN Daddy
+    </div>
 </body>
 </html>

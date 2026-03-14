@@ -5,6 +5,7 @@
     <title>2026년 관리고객 재계약 / 리텐션P값 / 정지·부실 현황 보드 (리텐션P값)</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
             /* 고급화 컬러 팔레트 */
@@ -97,7 +98,7 @@
         .title-group { border-left: 6px solid var(--primary-blue); padding-left: 18px; }
         .title-group h1 { margin: 0 0 8px 0; font-size: 24px; color: var(--primary-dark); font-weight: 800; letter-spacing: -0.5px; }
         .title-group p { margin: 0; font-size: 14px; color: var(--text-muted); font-weight: 500; }
-        
+
         .controls-wrapper { display: flex; gap: 40px; flex-wrap: wrap; width: 100%; align-items: flex-end; }
         .filter-section { display: flex; flex-direction: column; gap: 10px; }
         .filter-label { font-size: 13px; font-weight: 800; color: var(--text-muted); padding-left: 4px; }
@@ -212,10 +213,33 @@
 </div>
 
 <div class="dashboard-wrapper" id="main-dashboard">
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-        <div class="title-group">
-            <h1>2026년 관리고객 재계약 / 리텐션P값 / 정지·부실 현황 보드 (리텐션P값)</h1>
-            <p>월별/분기별 목표 대비 실적 실시간 트래킹</p>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; padding: 15px 25px; background: white; border-radius: 12px; box-shadow: var(--shadow-md);">
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <div style="background: var(--primary-dark); color: white; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px;">
+                <i class="fas fa-chart-pie"></i>
+            </div>
+            <h1 style="font-size: 22px; font-weight: 800; color: var(--primary-dark); margin: 0;">2026 Management Hub <span style="font-size: 14px; font-weight: 400; color: var(--text-muted); margin-left:10px;">| 리텐션P값 실적 분석</span></h1>
+        </div>
+        <div class="nav-buttons" style="display: flex; gap: 8px;">
+            <button class="nav-hub-btn" onclick="location.href='map_dashboard.html'" title="지도/방문관리">
+                <i class="fas fa-map-marked-alt"></i><span>지도/방문</span>
+            </button>
+            <button class="nav-hub-btn" onclick="location.href='index.html'" title="재계약/사전리텐션">
+                <i class="fas fa-sync-alt"></i><span>재계약/리텐션</span>
+            </button>
+            <button class="nav-hub-btn" onclick="location.href='정지부실_실적현황.html'" title="정지/부실">
+                <i class="fas fa-exclamation-triangle"></i><span>정지/부실</span>
+            </button>
+            <button class="nav-hub-btn active" onclick="location.href='리텐션P값 실적현황.html'" title="리텐션P값">
+                <i class="fas fa-coins"></i><span>리텐션P값</span>
+            </button>
+            <button class="nav-hub-btn disabled" title="해지율 (오픈예정)">
+                <i class="fas fa-user-slash"></i><span>해지율(예정)</span>
+            </button>
+            <div style="width: 1px; height: 24px; background: var(--border-light); margin: 0 10px;"></div>
+            <button class="logout-btn" onclick="logout()" style="background: #fee2e2; color: #ef4444; border: 1px solid #fecaca; padding: 8px 15px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: all 0.2s;">
+                <i class="fas fa-sign-out-alt"></i> 로그아웃
+            </button>
         </div>
     </div>
     
@@ -688,6 +712,13 @@
             });
         }, 500); 
     }
+
+    window.logout = function() {
+        if (confirm('로그아웃 하시겠습니까?')) {
+            localStorage.removeItem('sales_dashboard_session');
+            location.href = 'login.html';
+        }
+    };
 </script>
 
 </body>
