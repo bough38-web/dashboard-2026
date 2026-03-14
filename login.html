@@ -220,11 +220,6 @@
                 <i data-lucide="eye" class="pw-toggle" onclick="togglePassword('manager-pw')"></i>
             </div>
         </div>
-        <div class="form-group" style="margin-bottom: 15px;">
-            <label class="form-label" style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
-                <input type="checkbox" id="manager-expert" style="width: auto;"> 전문가 기법/옵션 적용 (Expert Mode)
-            </label>
-        </div>
         <button class="login-btn" onclick="handleLogin('manager')">시스템 접속</button>
     </div>
 
@@ -243,11 +238,6 @@
                 <i data-lucide="eye" class="pw-toggle" onclick="togglePassword('branch-pw')"></i>
             </div>
         </div>
-        <div class="form-group" style="margin-bottom: 15px;">
-            <label class="form-label" style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
-                <input type="checkbox" id="branch-expert" style="width: auto;"> 전문가 기법/옵션 적용 (Expert Mode)
-            </label>
-        </div>
         <button class="login-btn" onclick="handleLogin('branch')">지사 대시보드 접속</button>
     </div>
 
@@ -263,11 +253,6 @@
                 <input type="password" id="admin-pw" placeholder="••••••••">
                 <i data-lucide="eye" class="pw-toggle" onclick="togglePassword('admin-pw')"></i>
             </div>
-        </div>
-        <div class="form-group" style="margin-bottom: 15px;">
-            <label class="form-label" style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
-                <input type="checkbox" id="admin-expert" checked style="width: auto;"> 전문가 기법/옵션 적용 (Expert Mode)
-            </label>
         </div>
         <button class="login-btn" onclick="handleLogin('admin')">관리자 모드 접속</button>
     </div>
@@ -353,8 +338,6 @@
     function handleLogin(role) {
         const errorDisplay = document.getElementById('error-display');
         errorDisplay.style.display = 'none';
-        
-        const isExpert = document.getElementById(`${role}-expert`).checked;
 
         if (role === 'manager') {
             const id = document.getElementById('manager-select').value;
@@ -362,7 +345,7 @@
             const manager = AUTH_CONFIG.managers.find(m => m.id === id);
             
             if (manager && manager.pw === pw) {
-                saveSession(role, manager, isExpert);
+                saveSession(role, manager);
             } else {
                 showError('비밀번호가 틀렸거나 담당자를 선택하지 않았습니다.');
             }
@@ -372,36 +355,28 @@
             const correctPw = AUTH_CONFIG.branch_passwords[branch];
             
             if (branch && correctPw === pw) {
-                saveSession(role, { branch }, isExpert);
+                saveSession(role, { branch });
             } else {
                 showError('지사 비밀번호가 일치하지 않습니다.');
             }
         } else if (role === 'admin') {
             const pw = document.getElementById('admin-pw').value;
             if (pw === AUTH_CONFIG.admin_pw) {
-                saveSession(role, { name: 'Admin' }, isExpert);
+                saveSession(role, { name: 'Admin' });
             } else {
                 showError('관리자 비밀번호가 일치하지 않습니다.');
             }
         }
     }
 
-    function saveSession(role, data, isExpert) {
+    function saveSession(role, data) {
         const session = {
             role,
             data,
-            isExpert,
             timestamp: new Date().getTime()
         };
         localStorage.setItem('sales_dashboard_session', JSON.stringify(session));
         
-        // Also update DashboardState if loaded (or just save to its key)
-        const stateKey = 'dashboard_2026_state';
-        const currentField = localStorage.getItem(stateKey);
-        const state = currentField ? JSON.parse(currentField) : {};
-        state.expertMode = isExpert;
-        localStorage.setItem(stateKey, JSON.stringify(state));
-
         // Redirect to main index
         location.href = 'index.html';
     }

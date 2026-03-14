@@ -570,7 +570,152 @@
             letter-spacing: -0.01em;
         }
 
+        /* 잠금 화면 스타일 - 프리미엄 글래스모피즘 디자인 */
+        #lock-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(15, 23, 42, 0.9) 0%, rgba(2, 6, 23, 0.98) 100%);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            color: white;
+        }
 
+        .lock-box {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 50px 40px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+            animation: lockAppear 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes lockAppear {
+            from { opacity: 0; transform: scale(0.95) translateY(20px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        .lock-icon {
+            font-size: 48px;
+            margin-bottom: 24px;
+            filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.5));
+        }
+
+        .lock-box h2 {
+            margin-top: 0;
+            font-size: 28px;
+            font-weight: 800;
+            background: linear-gradient(to bottom right, #f8fafc, #94a3b8);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 12px;
+        }
+
+        .lock-box p {
+            color: #94a3b8;
+            margin-bottom: 30px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .lock-input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .lock-input {
+            width: 100%;
+            padding: 14px 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(15, 23, 42, 0.6);
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            outline: none;
+            transition: all 0.2s;
+            box-sizing: border-box;
+            letter-spacing: 4px;
+        }
+
+        .lock-input:focus {
+            border-color: #3b82f6;
+            background: rgba(15, 23, 42, 0.8);
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+        }
+
+        .lock-btn {
+            width: 100%;
+            padding: 14px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .lock-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+        }
+
+        .lock-btn:active {
+            transform: translateY(0);
+        }
+
+        .request-link {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .request-btn {
+            background: transparent;
+            color: #94a3b8;
+            border: 1px solid rgba(148, 163, 184, 0.3);
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .request-btn:hover {
+            color: white;
+            border-color: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .contact-info {
+            display: none;
+            background: rgba(15, 23, 42, 0.4);
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 13px;
+            color: #3b82f6;
+            margin-top: 10px;
+        }
 
         /* 내비게이션 허브 버튼 스타일 */
         .nav-hub-btn {
@@ -606,7 +751,28 @@
 
 <body>
 
+    <div id="lock-screen">
+        <div class="lock-box">
+            <div class="lock-icon">🔒</div>
+            <h2>대시보드 열람 제한</h2>
+            <p>이 대시보드는 보안 및 라이센스 정책에 따라<br>일정 기간이 경과하여 관리자 승인이 필요합니다.</p>
+            
+            <div class="lock-input-group">
+                <input type="password" id="accessCode" class="lock-input" placeholder="ACCESS CODE" onkeyup="if(window.event.keyCode==13){verifyAccess()}">
+            </div>
+            
+            <button class="lock-btn" onclick="verifyAccess()">승인 및 대시보드 보기</button>
+            <p id="error-msg" style="color: #ef4444; margin-top: 15px; font-size: 13px; font-weight: 600; display: none;">잘못된 코드입니다. 다시 시도해주세요.</p>
 
+            <div class="request-link">
+                <button class="request-btn" onclick="requestLicense()">라이센스 연장/신규 요청</button>
+                <div id="contact-info" class="contact-info">
+                    관리자에게 문의해주세요.<br>
+                    <strong>문의처: 재계약 관리 담당자</strong>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="dashboard-wrapper">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; padding: 15px 25px; background: white; border-radius: 12px; box-shadow: var(--shadow-soft);">
@@ -616,8 +782,8 @@
                 </div>
                 <h1 style="font-size: 22px; font-weight: 800; color: var(--primary-dark); margin: 0;">2026 Management Hub <span style="font-size: 14px; font-weight: 400; color: var(--text-muted); margin-left:10px;">| 강북/강원 통합 관제</span></h1>
             </div>
-            <div class="nav-buttons" style="display: flex; gap: 10px;">
-                <button class="nav-hub-btn nav-map" onclick="location.href='map_dashboard.html'" title="지도/방문관리">
+            <div class="nav-buttons" style="display: flex; gap: 8px;">
+                <button class="nav-hub-btn" onclick="location.href='map_dashboard.html'" title="지도/방문관리">
                     <i class="fas fa-map-marked-alt"></i><span>지도/방문</span>
                 </button>
                 <button class="nav-hub-btn active" onclick="location.href='index.html'" title="재계약/사전리텐션">
@@ -633,7 +799,7 @@
                     <i class="fas fa-user-slash"></i><span>해지율(예정)</span>
                 </button>
                 <div style="width: 1px; height: 24px; background: var(--border-color); margin: 0 10px;"></div>
-                <button class="logout-btn" onclick="logout()">
+                <button class="logout-btn" onclick="logout()" style="background: #fee2e2; color: #ef4444; border: 1px solid #fecaca; padding: 8px 15px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: all 0.2s;">
                     <i class="fas fa-sign-out-alt"></i> 로그아웃
                 </button>
             </div>
@@ -1094,9 +1260,71 @@
             }
         }
 
+        // 액세스 관리 설정
+        const CONFIG = {
+            LIMIT_DATE: "2026-03-31", // Updated limit date
+            ADMIN_CODE: "0303",      // Master Admin Code added
+            CODE_PREFIX: "0303",     // Prefix for dynamic month code
+            STORAGE_KEY: 'dashboard_access_approved_2026',
+            KAKAO_LINK: "https://invite.kakao.com/tc/GfDLhXls01"
+        };
 
+        function checkExpiration() {
+            const isApproved = localStorage.getItem(CONFIG.STORAGE_KEY) === 'true';
+            const today = new Date().toISOString().split('T')[0];
+
+            if (today > CONFIG.LIMIT_DATE && !isApproved) {
+                document.getElementById('lock-screen').style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function verifyAccess() {
+            const input = document.getElementById('accessCode').value;
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const dynamicCode = CONFIG.CODE_PREFIX + year + month;
+
+            // Allow Master 0303 or dynamic monthly code
+            if (input === CONFIG.ADMIN_CODE || input === dynamicCode) {
+                localStorage.setItem(CONFIG.STORAGE_KEY, 'true');
+                document.getElementById('lock-screen').style.opacity = '0';
+                setTimeout(() => {
+                    document.getElementById('lock-screen').style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }, 300);
+            } else {
+                const errorMsg = document.getElementById('error-msg');
+                errorMsg.style.display = 'block';
+                const lockBox = document.querySelector('.lock-box');
+                lockBox.classList.add('shake');
+                setTimeout(() => lockBox.classList.remove('shake'), 500);
+            }
+        }
+
+        function requestLicense() {
+            if (CONFIG.KAKAO_LINK && CONFIG.KAKAO_LINK !== "" && !CONFIG.KAKAO_LINK.includes("YOUR_LINK")) {
+                window.open(CONFIG.KAKAO_LINK, '_blank');
+            } else {
+                toggleContact();
+            }
+        }
+
+        function toggleContact() {
+            const info = document.getElementById('contact-info');
+            info.style.display = info.style.display === 'block' ? 'none' : 'block';
+        }
+
+        window.logout = function() {
+            if (confirm('로그아웃 하시겠습니까?')) {
+                localStorage.removeItem('sales_dashboard_session');
+                location.href = 'login.html';
+            }
+        };
 
         window.onload = () => {
+            checkExpiration();
             changeTab('1Q 합계');
         };
     </script>
