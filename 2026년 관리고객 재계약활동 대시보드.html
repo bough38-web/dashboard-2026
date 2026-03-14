@@ -361,41 +361,20 @@ tfoot .bg-total-col { background-color: #1e3a8a !important; border-color: #1e40a
 </head>
 <body>
 
-<div id="lock-screen">
-    <div class="lock-box">
-        <div class="lock-icon">🔒</div>
-        <h2>대시보드 열람 제한</h2>
-        <p>이 대시보드는 보안 및 라이센스 정책에 따라<br>일정 기간이 경과하여 관리자 승인이 필요합니다.</p>
-        
-        <div class="lock-input-group">
-            <input type="password" id="accessCode" class="lock-input" placeholder="ACCESS CODE" onkeyup="if(window.event.keyCode==13){verifyAccess()}">
-        </div>
-        
-        <button class="lock-btn" onclick="verifyAccess()">승인 및 대시보드 보기</button>
-        <p id="error-msg" style="color: #ef4444; margin-top: 15px; font-size: 13px; font-weight: 600; display: none;">잘못된 코드입니다. 다시 시도해주세요.</p>
-
-        <div class="request-link">
-            <button class="request-btn" onclick="requestLicense()">라이센스 연장/신규 요청</button>
-            <div id="contact-info" class="contact-info">
-                관리자에게 문의해주세요.<br>
-                <strong>문의처: 재계약 관리 담당자</strong>
+    <!-- Main Dashboard -->
+    <div class="dashboard-wrapper">
+        <header style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; padding: 20px 30px; background: white; border-radius: 24px; box-shadow: var(--shadow-md);">
+            <div style="display: flex; align-items: center; gap: 18px;">
+                <div style="background: var(--primary); color: white; width: 45px; height: 45px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; box-shadow: var(--shadow-md);">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <div>
+                    <h1 style="font-size: 22px; font-weight: 800; color: var(--primary-dark); margin: 0; letter-spacing: -0.5px;">2026 Management Hub</h1>
+                    <p style="font-size: 13px; color: var(--text-muted); margin: 3px 0 0 0;">강북강원본부 재계약/리텐션 통합 관리</p>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
-
-<div class="dashboard-wrapper">
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-        <h1 class="main-title" style="margin: 0;">2026년 관리고객 재계약 / 리텐션P값 / 정지·부실 현황 보드</h1>
-        <div class="nav-buttons" style="display: flex; gap: 10px;">
-            <button class="map-nav-btn" onclick="window.open('map_dashboard.html', '_blank')" style="background: #4f46e5; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
-                <i class="fas fa-map-marked-alt"></i> 지도/방문관리 (추천동선)
-            </button>
-            <button class="perf-nav-btn" onclick="window.open('%EB%A6%AC%ED%85%90%EC%85%98P%EA%B0%92%20%EC%8B%A4%EC%A0%81%ED%98%84%ED%99%A9.html', '_blank')" style="background: #db2777; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
-                <i class="fas fa-chart-line"></i> 실적현황 (P값 집행)
-            </button>
-        </div>
-    </div>
+            <div class="nav-buttons"></div>
+        </header>
 
 <div class="kpi-section">
 <div class="kpi-box">
@@ -618,64 +597,7 @@ tfoot.style.opacity = 1;
 }, 200);
 }
 
-// 액세스 관리 설정
-const CONFIG = {
-    LIMIT_DATE: "2026-03-31", // Updated limit date
-    ADMIN_CODE: "0303",      // Master Admin Code added
-    CODE_PREFIX: "0303",     // Prefix for dynamic month code
-    STORAGE_KEY: 'dashboard_access_approved_2026',
-    KAKAO_LINK: "https://invite.kakao.com/tc/GfDLhXls01"
-};
-
-function checkExpiration() {
-    const isApproved = localStorage.getItem(CONFIG.STORAGE_KEY) === 'true';
-    const today = new Date().toISOString().split('T')[0];
-
-    if (today > CONFIG.LIMIT_DATE && !isApproved) {
-        document.getElementById('lock-screen').style.display = 'flex';
-        document.body.style.overflow = 'hidden';
-    }
-}
-
-function verifyAccess() {
-    const input = document.getElementById('accessCode').value;
-    const now = new Date();
-    const year = now.getFullYear();
-    const month = String(now.getMonth() + 1).padStart(2, '0');
-    const dynamicCode = CONFIG.CODE_PREFIX + year + month;
-
-    // Allow Master 0303 or dynamic monthly code
-    if (input === CONFIG.ADMIN_CODE || input === dynamicCode) {
-        localStorage.setItem(CONFIG.STORAGE_KEY, 'true');
-        document.getElementById('lock-screen').style.opacity = '0';
-        setTimeout(() => {
-            document.getElementById('lock-screen').style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }, 300);
-    } else {
-        const errorMsg = document.getElementById('error-msg');
-        errorMsg.style.display = 'block';
-        const lockBox = document.querySelector('.lock-box');
-        lockBox.classList.add('shake');
-        setTimeout(() => lockBox.classList.remove('shake'), 500);
-    }
-}
-
-function requestLicense() {
-    if (CONFIG.KAKAO_LINK && CONFIG.KAKAO_LINK !== "" && !CONFIG.KAKAO_LINK.includes("YOUR_LINK")) {
-        window.open(CONFIG.KAKAO_LINK, '_blank');
-    } else {
-        toggleContact();
-    }
-}
-
-function toggleContact() {
-    const info = document.getElementById('contact-info');
-    info.style.display = info.style.display === 'block' ? 'none' : 'block';
-}
-
 window.onload = () => {
-    checkExpiration();
     renderTable('1Q 합계');
 };
 </script>
