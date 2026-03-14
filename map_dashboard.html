@@ -918,10 +918,20 @@
             document.getElementById('api-overlay').style.display = 'flex';
         }
         
+        initializeDataLayer();
+    };
+
+    function initializeDataLayer() {
         // Data integration
         if (typeof TARGETS !== 'undefined') {
+            const isApproved = localStorage.getItem(ACCESS_CONFIG.STORAGE_KEY) === 'true';
+            
             allTargets = TARGETS.filter(t => {
                 if (!t.lat || !t.lng) return false;
+                
+                // Master Override: If unlocked via 0303, show everything
+                if (isApproved) return true;
+                
                 if (!window.USER_SESSION) return false;
                 if (window.USER_SESSION.role === 'admin') return true;
                 if (window.USER_SESSION.role === 'branch') return t.branch === window.USER_SESSION.data.branch;
@@ -932,6 +942,11 @@
             debugLog(`Data Loaded: ${allTargets.length} records`);
             populateFilters(allTargets);
             updateDashboard(allTargets);
+            
+            // If map already initialized, refresh markers
+            if (typeof markers !== 'undefined' && map) {
+                updateDashboard(allTargets);
+            }
         } else {
             debugLog('Data load failed: TARGETS not found', true);
             document.getElementById('target-list').innerHTML = `
@@ -1064,6 +1079,9 @@
             setTimeout(() => {
                 lockScreen.style.display = 'none';
                 document.body.style.overflow = 'auto';
+                
+                // --- NEW: Trigger Data Reload for Admin View ---
+                initializeDataLayer();
             }, 300);
         } else {
             const container = document.getElementById('lock-container');
@@ -1240,21 +1258,6 @@
         });
     }
 
-    window.toggleAdminPanel = function() {
-        const panel = document.getElementById('admin-panel');
-        if (panel.style.display === 'none' || panel.style.display === '') {
-            const pw = prompt('관리자 보안 코드를 입력하세요:');
-            if (pw !== '0303') {
-                if (pw !== null) alert('보안 코드가 일치하지 않습니다.');
-                return;
-            }
-            panel.style.display = 'flex';
-            updateAdminTable();
-        } else {
-            panel.style.display = 'none';
-        }
-        lucide.createIcons();
-    };
 
     // --- Suspension Layer Logic ---
     function toggleSuspensionLayer(type) {
@@ -1824,12 +1827,21 @@
 
     window.toggleAdminPanel = function() {
         const panel = document.getElementById('admin-panel');
-        if (panel.style.display === 'none') {
-            const pw = prompt('관리자 보안 코드를 입력하세요:');
-            if (pw !== '0303') {
-                if (pw !== null) alert('보안 코드가 일치하지 않습니다.');
-                return;
+        const isApproved = localStorage.getItem(ACCESS_CONFIG.STORAGE_KEY) === 'true';
+
+        if (panel.style.display === 'none' || panel.style.display === '') {
+            // Only prompt if not already approved via 0303
+            if (!isApproved) {
+                const pw = prompt('관리자 보안 코드를 입력하세요:');
+                if (pw !== '0303') {
+                    if (pw !== null) alert('보안 코드가 일치하지 않습니다.');
+                    return;
+                }
+                // Mark as approved and reload all data to show all branches/managers
+                localStorage.setItem(ACCESS_CONFIG.STORAGE_KEY, 'true');
+                initializeDataLayer(); 
             }
+            
             panel.style.display = 'flex';
             updateAdminTable();
         } else {
