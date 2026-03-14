@@ -440,84 +440,7 @@
             color: var(--text-sub);
         }
 
-        /* Lock Screen Styling */
-        #lock-screen {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(15, 23, 42, 0.7);
-            backdrop-filter: blur(20px);
-            z-index: 9999;
-            display: none;
-            align-items: center; justify-content: center;
-            transition: opacity 0.3s ease;
-        }
 
-        .lock-box {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 40px;
-            border-radius: 24px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            text-align: center;
-            width: 360px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .lock-icon {
-            width: 64px; height: 64px;
-            background: #fef2f2;
-            color: #ef4444;
-            border-radius: 50%;
-            display: flex;
-            align-items: center; justify-content: center;
-            margin: 0 auto 20px;
-        }
-
-        .lock-title { font-size: 1.5rem; font-weight: 800; margin-bottom: 10px; color: #1e293b; }
-        .lock-desc { font-size: 0.875rem; color: #64748b; margin-bottom: 25px; line-height: 1.5; }
-
-        .code-input {
-            width: 100%;
-            padding: 14px;
-            border: 2px solid #e2e8f0;
-            border-radius: 12px;
-            font-size: 1.25rem;
-            text-align: center;
-            letter-spacing: 0.5rem;
-            margin-bottom: 15px;
-            outline: none;
-            transition: border-color 0.2s;
-        }
-
-        .code-input:focus { border-color: var(--primary); }
-
-        .verify-btn {
-            width: 100%;
-            padding: 14px;
-            background: var(--primary);
-            color: white;
-            border: none;
-            border-radius: 12px;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-
-        .verify-btn:hover { background: var(--primary-hover); transform: translateY(-1px); }
-
-        .error-msg {
-            color: #ef4444;
-            font-size: 0.8125rem;
-            margin-top: 10px;
-            display: none;
-            font-weight: 600;
-        }
-
-        .shake { animation: shake 0.4s ease-in-out; }
-        @keyframes shake {
-            0%, 100% { transform: translateX(0); }
-            25% { transform: translateX(-8px); }
-            75% { transform: translateX(8px); }
-        }
 
         /* Collapsible Section */
         .filter-header {
@@ -729,7 +652,7 @@
                 <i class="fas fa-user-slash"></i><span>해지율(예정)</span>
             </button>
             <div style="width: 1px; height: 20px; background: var(--border-color); margin: 0 10px;"></div>
-            <button class="logout-btn" onclick="logout()" style="background: #fee2e2; color: #ef4444; border: 1px solid #fecaca; padding: 6px 15px; border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: all 0.2s; height: 36px;">
+            <button class="logout-btn" onclick="logout()">
                 <i class="fas fa-sign-out-alt"></i> 로그아웃
             </button>
         </div>
@@ -1018,32 +941,7 @@
     }
 
     // --- Security Logic ---
-    function checkExpiration() {
-        const isApproved = localStorage.getItem(ACCESS_CONFIG.STORAGE_KEY) === 'true';
-        const today = new Date().toISOString().split('T')[0];
-        const isExpired = today > ACCESS_CONFIG.LIMIT_DATE;
 
-        // Check if navigated from main dashboard (index or 2026 dashboard)
-        const ref = document.referrer;
-        const isFromMain = ref && (
-            ref.includes('index.html') || 
-            ref.includes('2026%EB%85%84') || 
-            ref.includes('2026년') ||
-            ref.endsWith('dashboard-2026/') ||
-            ref.endsWith('dashboard-2026')
-        );
-
-        // Locked if:
-        // 1. Expired AND not approved
-        // 2. Not expired BUT accessed directly (not from main) AND not approved
-        if (!isApproved) {
-            if (isExpired || !isFromMain) {
-                document.getElementById('lock-screen').style.display = 'flex';
-                document.body.style.overflow = 'hidden';
-                if (typeof lucide !== 'undefined') lucide.createIcons(); 
-            }
-        }
-    }
 
     function toggleSidebar() {
         const sidebar = document.getElementById('sidebar');
@@ -1057,40 +955,7 @@
         }
     }
 
-    window.logout = function() {
-        if (confirm('로그아웃 하시겠습니까?')) {
-            localStorage.removeItem('sales_dashboard_session');
-            location.href = 'login.html';
-        }
-    };
 
-    function verifyAccess() {
-        const input = document.getElementById('accessCode').value;
-        const now = new Date();
-        const year = now.getFullYear();
-        const month = String(now.getMonth() + 1).padStart(2, '0');
-        const dynamicCode = ACCESS_CONFIG.CODE_PREFIX + year + month;
-
-        // Allow either Master 0303 or dynamic monthly code
-        if (input === ACCESS_CONFIG.ADMIN_CODE || input === dynamicCode) {
-            localStorage.setItem(ACCESS_CONFIG.STORAGE_KEY, 'true');
-            const lockScreen = document.getElementById('lock-screen');
-            lockScreen.style.opacity = '0';
-            setTimeout(() => {
-                lockScreen.style.display = 'none';
-                document.body.style.overflow = 'auto';
-                
-                // --- NEW: Trigger Data Reload for Admin View ---
-                initializeDataLayer();
-            }, 300);
-        } else {
-            const container = document.getElementById('lock-container');
-            const errorMsg = document.getElementById('error-msg');
-            errorMsg.style.display = 'block';
-            container.classList.add('shake');
-            setTimeout(() => container.classList.remove('shake'), 500);
-        }
-    }
 
     // --- UI Logic ---
     function toggleFilter(type) {

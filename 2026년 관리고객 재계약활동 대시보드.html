@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>2026년 관리고객 재계약 / 리텐션P값 / 정지·부실 현황 보드</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="themes.css">
 <style>
 :root {
 /* 컬러 팔레트 */
@@ -199,208 +201,55 @@ tfoot .val-target, tfoot .val-cnt { color: #cbd5e1; background-color: transparen
 tfoot .val-amt { color: white; }
 tfoot .bg-total-col { background-color: #1e3a8a !important; border-color: #1e40af; }
 
-/* 잠금 화면 스타일 - 프리미엄 글래스모피즘 디자인 */
-#lock-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at center, rgba(15, 23, 42, 0.9) 0%, rgba(2, 6, 23, 0.98) 100%);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    color: white;
-}
-
-.lock-box {
-    background: rgba(30, 41, 59, 0.7);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    padding: 50px 40px;
-    border-radius: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.1);
-    text-align: center;
-    max-width: 450px;
-    width: 90%;
-    animation: lockAppear 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-@keyframes lockAppear {
-    from { opacity: 0; transform: scale(0.95) translateY(20px); }
-    to { opacity: 1; transform: scale(1) translateY(0); }
-}
-
-.lock-icon {
-    font-size: 48px;
-    margin-bottom: 24px;
-    filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.5));
-}
-
-.lock-box h2 {
-    margin-top: 0;
-    font-size: 28px;
-    font-weight: 800;
-    background: linear-gradient(to bottom right, #f8fafc, #94a3b8);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 12px;
-}
-
-.lock-box p {
-    color: #94a3b8;
-    margin-bottom: 30px;
-    font-size: 15px;
-    line-height: 1.6;
-}
-
-.lock-input-group {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.lock-input {
-    width: 100%;
-    padding: 14px 20px;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(15, 23, 42, 0.6);
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    outline: none;
-    transition: all 0.2s;
-    box-sizing: border-box;
-    letter-spacing: 4px;
-}
-
-.lock-input:focus {
-    border-color: #3b82f6;
-    background: rgba(15, 23, 42, 0.8);
-    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
-}
-
-.lock-btn {
-    width: 100%;
-    padding: 14px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-    color: white;
-    font-weight: 700;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s;
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
-}
-
-.lock-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
-}
-
-.lock-btn:active {
-    transform: translateY(0);
-}
-
-.request-link {
-    margin-top: 25px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.request-btn {
-    background: transparent;
-    color: #94a3b8;
-    border: 1px solid rgba(148, 163, 184, 0.3);
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.request-btn:hover {
-    color: white;
-    border-color: rgba(255, 255, 255, 0.5);
-    background: rgba(255, 255, 255, 0.05);
-}
-
-.contact-info {
-    display: none;
-    background: rgba(15, 23, 42, 0.4);
-    padding: 12px;
-    border-radius: 8px;
-    font-size: 13px;
-    color: #3b82f6;
-    margin-top: 10px;
-}
-
-/* 에러 흔들기 효과 */
-.shake {
-    animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both;
-}
-
-@keyframes shake {
-    10%, 90% { transform: translate3d(-1px, 0, 0); }
-    20%, 80% { transform: translate3d(2px, 0, 0); }
-    30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
-    40%, 60% { transform: translate3d(4px, 0, 0); }
-}
 </style>
+
 </head>
 <body>
 
-<div id="lock-screen">
-    <div class="lock-box">
-        <div class="lock-icon">🔒</div>
-        <h2>대시보드 열람 제한</h2>
-        <p>이 대시보드는 보안 및 라이센스 정책에 따라<br>일정 기간이 경과하여 관리자 승인이 필요합니다.</p>
-        
-        <div class="lock-input-group">
-            <input type="password" id="accessCode" class="lock-input" placeholder="ACCESS CODE" onkeyup="if(window.event.keyCode==13){verifyAccess()}">
-        </div>
-        
-        <button class="lock-btn" onclick="verifyAccess()">승인 및 대시보드 보기</button>
-        <p id="error-msg" style="color: #ef4444; margin-top: 15px; font-size: 13px; font-weight: 600; display: none;">잘못된 코드입니다. 다시 시도해주세요.</p>
 
-        <div class="request-link">
-            <button class="request-btn" onclick="requestLicense()">라이센스 연장/신규 요청</button>
-            <div id="contact-info" class="contact-info">
-                관리자에게 문의해주세요.<br>
-                <strong>문의처: 재계약 관리 담당자</strong>
-            </div>
-        </div>
-    </div>
-</div>
 
 <div class="dashboard-wrapper">
+    <!-- Notice & Social Header -->
+    <div style="background: var(--primary-dark); color: white; padding: 10px 20px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+        <div style="display: flex; align-items: center; gap: 15px; flex: 1;">
+            <span style="background: #ef4444; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 800;">NOTICE</span>
+            <marquee behavior="scroll" direction="left" style="font-size: 13px; font-weight: 500;">[공지] 2026년 상반기 재계약 목표 달성을 위한 지침이 하달되었습니다. 상세 내용은 공지사항 게시판을 확인해 주세요. | 실시간 소통 채널(디스코드, 카카오톡)이 개설되었습니다.</marquee>
+        </div>
+        <div style="display: flex; gap: 15px; align-items: center; margin-left: 20px;">
+            <a href="https://discord.gg/yourlink" target="_blank" style="color: white; font-size: 18px;" title="디스코드"><i class="fab fa-discord"></i></a>
+            <a href="https://open.kakao.com/o/yourlink" target="_blank" style="color: white; font-size: 18px;" title="카카오톡"><i class="fas fa-comment"></i></a>
+            <div style="width: 1px; height: 16px; background: rgba(255,255,255,0.2);"></div>
+            <select id="theme-selector" onchange="DashboardState.applyTheme(this.value)" style="background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.2); border-radius: 4px; padding: 2px 5px; font-size: 12px; cursor: pointer; outline: none;">
+                <option value="default">기본 테마</option>
+                <option value="dark">다크 모드</option>
+                <option value="emerald">에메랄드</option>
+                <option value="premium">프리미엄 골드</option>
+            </select>
+        </div>
+    </div>
+
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
         <h1 class="main-title" style="margin: 0;">2026년 관리고객 재계약 / 리텐션P값 / 정지·부실 현황 보드</h1>
         <div class="nav-buttons" style="display: flex; gap: 10px;">
-            <button class="map-nav-btn" onclick="window.open('map_dashboard.html', '_blank')" style="background: #4f46e5; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
-                <i class="fas fa-map-marked-alt"></i> 지도/방문관리 (추천동선)
+            <button class="nav-hub-btn nav-map" onclick="location.href='map_dashboard.html'" title="지도/방문관리">
+                <i class="fas fa-map-marked-alt"></i><span>지도/방문</span>
             </button>
-            <button class="perf-nav-btn" onclick="window.open('%EB%A6%AC%ED%85%90%EC%85%98P%EA%B0%92%20%EC%8B%A4%EC%A0%81%ED%98%84%ED%99%A9.html', '_blank')" style="background: #db2777; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
-                <i class="fas fa-chart-line"></i> 실적현황 (P값 집행)
+            <button class="nav-hub-btn active" onclick="location.href='index.html'" title="재계약/사전리텐션">
+                <i class="fas fa-sync-alt"></i><span>재계약/리텐션</span>
+            </button>
+            <button class="nav-hub-btn" onclick="location.href='정지부실_실적현황.html'" title="정지/부실">
+                <i class="fas fa-exclamation-triangle"></i><span>정지/부실</span>
+            </button>
+            <button class="nav-hub-btn" onclick="location.href='리텐션P값 실적현황.html'" title="리텐션P값">
+                <i class="fas fa-coins"></i><span>리텐션P값</span>
             </button>
         </div>
     </div>
 
 <div class="kpi-section">
-<div class="kpi-box">
+<div class="kpi-box" style="grid-column: span 2;">
 <div class="kpi-header bg-navy">① 관리고객 재계약 활동 (목표/실적 관리)</div>
-<div class="target-cards">
+<div class="target-cards" style="grid-template-columns: repeat(3, 1fr);">
 <div class="t-card highlight">
 <div class="t-head">① 만기도래_신규(1st)<br><span>※ '26년 만기도래 (1월~12월)</span></div>
 <div class="t-body">월 목표<br><strong>4,003천원</strong><span class="percent">(58%)</span></div>
@@ -416,25 +265,6 @@ tfoot .bg-total-col { background-color: #1e3a8a !important; border-color: #1e40a
 </div>
 <div class="total-row">재계약활동 월 목표 합계 : <span>6,849천원</span></div>
 <div class="note-text">매월 실적집계 : 당월 전산 수동재계약 적용분만 당월 실적 인정</div>
-</div>
-
-<div class="kpi-box">
-<div class="kpi-header bg-green">② 사전리텐션 활동 (방문율 관리)</div>
-<div class="steps-wrapper">
-<div class="step">
-<div class="hexagon hex-1">1월</div>
-<div class="data-card"><span class="val">304건/301건</span><span class="pct">(99.3%)</span></div>
-</div>
-<div class="step">
-<div class="hexagon hex-2">2월</div>
-<div class="data-card"><span class="val">200건/148건</span><span class="pct">(74.0%)</span></div>
-</div>
-<div class="step">
-<div class="hexagon hex-3">3월</div>
-<div class="data-card highlight"><span class="val">231건/49건</span><span class="pct">(25.0%)</span></div>
-</div>
-</div>
-<div class="arrow-box">~12월 매월 대상 선정 및 VOC지령(담당SP)</div>
 </div>
 </div>
 
@@ -480,7 +310,77 @@ tfoot .bg-total-col { background-color: #1e3a8a !important; border-color: #1e40a
 
 </div>
 
+<!-- 사전리텐션 활동 섹션 (분리됨) -->
+<div class="table-section" style="margin-top: 25px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <h2 class="table-title">② 사전리텐션 활동 (방문율 관리) <span style="font-size: 14px; font-weight: 400; color: var(--text-muted); margin-left:10px;">| 자사별 상세 표 및 시각화</span></h2>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 25px;">
+        <div class="kpi-box" style="background: white; border: 1px solid var(--border-color); box-shadow: none;">
+            <div class="steps-wrapper" style="flex-direction: column; gap: 40px; margin: 0;">
+                <div class="step" style="flex-direction: row; width: 100%; justify-content: space-between;">
+                    <div class="hexagon hex-1">1월</div>
+                    <div class="data-card" style="flex: 1; margin-left: 20px;"><span class="val">304건/301건</span><span class="pct">(99.3%)</span></div>
+                </div>
+                <div class="step" style="flex-direction: row; width: 100%; justify-content: space-between;">
+                    <div class="hexagon hex-2">2월</div>
+                    <div class="data-card" style="flex: 1; margin-left: 20px;"><span class="val">200건/148건</span><span class="pct">(74.0%)</span></div>
+                </div>
+                <div class="step" style="flex-direction: row; width: 100%; justify-content: space-between;">
+                    <div class="hexagon hex-3">3월</div>
+                    <div class="data-card highlight" style="flex: 1; margin-left: 20px;"><span class="val">231건/49건</span><span class="pct">(25.0%)</span></div>
+                </div>
+            </div>
+            <div class="arrow-box" style="margin-top: 25px;">~12월 매월 대상 선정 및 VOC지령(담당SP)</div>
+        </div>
+        
+        <div class="table-scroll">
+            <table>
+                <thead>
+                    <tr>
+                        <th>지사명</th>
+                        <th>대상(건)</th>
+                        <th>수행(건)</th>
+                        <th>방문율(%)</th>
+                        <th>상태</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>중앙</td><td>45</td><td>42</td><td>93.3%</td><td><span class="badge" style="background:#dcfce7; color:#166534;">우수</span></td></tr>
+                    <tr><td>강북</td><td>32</td><td>28</td><td>87.5%</td><td><span class="badge" style="background:#fef9c3; color:#854d0e;">보통</span></td></tr>
+                    <tr><td>서대문</td><td>38</td><td>30</td><td>78.9%</td><td><span class="badge" style="background:#fef9c3; color:#854d0e;">보통</span></td></tr>
+                    <tr><td>고양</td><td>52</td><td>45</td><td>86.5%</td><td><span class="badge" style="background:#fef9c3; color:#854d0e;">보통</span></td></tr>
+                    <tr><td>의정부</td><td>29</td><td>20</td><td>69.0%</td><td><span class="badge" style="background:#fee2e2; color:#991b1b;">미흡</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script src="dashboard_state.js"></script>
 <script>
+// State Synchronization
+function syncDashboardState() {
+    const state = DashboardState.load();
+    if (state.currentMonth) {
+        changeTab(state.currentMonth);
+    }
+    if (state.currentTheme) {
+        document.getElementById('theme-selector').value = state.currentTheme;
+    }
+}
+
+// Wrap existing changeTab to save state
+const originalChangeTab = changeTab;
+changeTab = function(month) {
+    originalChangeTab(month);
+    DashboardState.set('currentMonth', month);
+};
+
+// ... existing script content ...
 // 데이터셋: 중앙과 강북 값 정상 매핑 완벽 반영
 const tableData = {
 "1월": {
@@ -618,65 +518,10 @@ tfoot.style.opacity = 1;
 }, 200);
 }
 
-// 액세스 관리 설정
-const CONFIG = {
-    LIMIT_DATE: "2026-03-31", // Updated limit date
-    ADMIN_CODE: "0303",      // Master Admin Code added
-    CODE_PREFIX: "0303",     // Prefix for dynamic month code
-    STORAGE_KEY: 'dashboard_access_approved_2026',
-    KAKAO_LINK: "https://invite.kakao.com/tc/GfDLhXls01"
-};
 
-function checkExpiration() {
-    const isApproved = localStorage.getItem(CONFIG.STORAGE_KEY) === 'true';
-    const today = new Date().toISOString().split('T')[0];
-
-    if (today > CONFIG.LIMIT_DATE && !isApproved) {
-        document.getElementById('lock-screen').style.display = 'flex';
-        document.body.style.overflow = 'hidden';
-    }
-}
-
-function verifyAccess() {
-    const input = document.getElementById('accessCode').value;
-    const now = new Date();
-    const year = now.getFullYear();
-    const month = String(now.getMonth() + 1).padStart(2, '0');
-    const dynamicCode = CONFIG.CODE_PREFIX + year + month;
-
-    // Allow Master 0303 or dynamic monthly code
-    if (input === CONFIG.ADMIN_CODE || input === dynamicCode) {
-        localStorage.setItem(CONFIG.STORAGE_KEY, 'true');
-        document.getElementById('lock-screen').style.opacity = '0';
-        setTimeout(() => {
-            document.getElementById('lock-screen').style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }, 300);
-    } else {
-        const errorMsg = document.getElementById('error-msg');
-        errorMsg.style.display = 'block';
-        const lockBox = document.querySelector('.lock-box');
-        lockBox.classList.add('shake');
-        setTimeout(() => lockBox.classList.remove('shake'), 500);
-    }
-}
-
-function requestLicense() {
-    if (CONFIG.KAKAO_LINK && CONFIG.KAKAO_LINK !== "" && !CONFIG.KAKAO_LINK.includes("YOUR_LINK")) {
-        window.open(CONFIG.KAKAO_LINK, '_blank');
-    } else {
-        toggleContact();
-    }
-}
-
-function toggleContact() {
-    const info = document.getElementById('contact-info');
-    info.style.display = info.style.display === 'block' ? 'none' : 'block';
-}
 
 window.onload = () => {
-    checkExpiration();
-    renderTable('1Q 합계');
+    syncDashboardState();
 };
 </script>
 
