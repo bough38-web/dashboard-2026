@@ -1523,6 +1523,15 @@
         if (marker) {
             google.maps.event.trigger(marker, 'click');
         }
+
+        // Tracking
+        if (typeof TrackingManager !== 'undefined') {
+            TrackingManager.log('MAP_SELECT', { 
+                name: item.name, 
+                contractNo: item.contractNo,
+                branch: item.branch
+            });
+        }
     }
 
     // Controls Logic
@@ -1815,6 +1824,16 @@
         };
         
         localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(allProgress));
+        
+        // Tracking
+        if (typeof TrackingManager !== 'undefined') {
+            TrackingManager.log('VISIT_REG', { 
+                name: target ? target.name : 'Unknown',
+                contractNo: currentEditingId,
+                summary: summary
+            });
+        }
+
         alert('진행사항이 저장되었습니다.');
         closeProgressModal();
         if (document.getElementById('admin-panel').style.display === 'flex') {

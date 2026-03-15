@@ -1,3 +1,34 @@
+// Tracking Manager for Centralized Logging
+const TrackingManager = {
+    LOG_KEY: 'admin_activity_logs_2026',
+    MAX_LOGS: 1000,
+
+    log(event, details = {}) {
+        const session = JSON.parse(localStorage.getItem('sales_dashboard_session') || '{}');
+        const user = session.data ? (session.data.name || session.data.id || 'Unknown') : 'Guest';
+        const role = session.role || 'none';
+        
+        const newLog = {
+            id: Date.now() + Math.random().toString(36).substr(2, 5),
+            timestamp: new Date().toLocaleString('ko-KR'),
+            event,
+            user,
+            role,
+            details,
+            page: window.location.pathname.split('/').pop() || 'index.html'
+        };
+
+        const logs = JSON.parse(localStorage.getItem(this.LOG_KEY) || '[]');
+        logs.unshift(newLog); // Newest first
+        
+        // Keep logs clean
+        if (logs.length > this.MAX_LOGS) logs.pop();
+        
+        localStorage.setItem(this.LOG_KEY, JSON.stringify(logs));
+        console.log(`[Tracking] ${event} recorded for ${user}`);
+    }
+};
+
 // Theme Manager for 2026 Management Hub - Premium Robust Edition
 const ThemeManager = {
     themes: {
@@ -74,6 +105,9 @@ const ThemeManager = {
         this.injectGlobalStyles();
         this.standardizeNavigation();
         this.createThemeSelector();
+        
+        // Log page view
+        TrackingManager.log('PAGE_VIEW', { title: document.title });
     },
 
     injectGlobalStyles() {
@@ -99,6 +133,7 @@ const ThemeManager = {
                 width: fit-content !important;
                 margin-left: auto !important;
                 border: 1px solid var(--border-color) !important;
+                position: relative;
             }
             .premium-nav-btn {
                 display: flex !important;
@@ -126,11 +161,16 @@ const ThemeManager = {
                 color: var(--primary) !important;
                 box-shadow: var(--shadow-sm) !important;
             }
+            .premium-nav-btn.gear-btn {
+                padding: 10px !important;
+                font-size: 18px !important;
+            }
             .premium-nav-btn.logout {
                 background: #fee2e2 !important;
                 color: #ef4444 !important;
                 border: 1px solid #fecaca !important;
                 margin-left: 8px !important;
+                padding: 10px 16px !important;
             }
             .premium-nav-btn.logout:hover {
                 background: #fecaca !important;
@@ -141,6 +181,46 @@ const ThemeManager = {
                 cursor: not-allowed !important;
                 filter: grayscale(1) !important;
             }
+            
+            /* Admin Dropdown Styles */
+            .admin-menu-dropdown {
+                position: absolute;
+                top: calc(100% + 10px);
+                right: 0;
+                background: var(--surface-bg);
+                border: 1px solid var(--border-color);
+                border-radius: 16px;
+                box-shadow: var(--shadow-md);
+                padding: 8px;
+                display: none;
+                flex-direction: column;
+                min-width: 180px;
+                z-index: 10000;
+                animation: slideDown 0.2s ease-out;
+            }
+            @keyframes slideDown {
+                from { opacity: 0; transform: translateY(-10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .admin-menu-dropdown.show { display: flex; }
+            .admin-menu-item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 10px 16px;
+                border-radius: 10px;
+                color: var(--text-main);
+                text-decoration: none;
+                font-size: 13px;
+                font-weight: 600;
+                transition: all 0.2s;
+            }
+            .admin-menu-item:hover {
+                background: var(--nav-bg);
+                color: var(--primary);
+            }
+            .admin-menu-item i { width: 16px; text-align: center; font-size: 14px; opacity: 0.7; }
+
             .nav-divider {
                 width: 1px !important;
                 height: 20px !important;
@@ -187,9 +267,13 @@ const ThemeManager = {
             { icon: 'fa-map-marked-alt', text: '지도/방문', href: 'map_dashboard.html' },
             { icon: 'fa-sync-alt', text: '재계약/리텐션', href: 'index.html' },
             { icon: 'fa-exclamation-triangle', text: '정지/부실', href: '정지부실_실적현황.html' },
-            { icon: 'fa-coins', text: '리텐션P값', href: '리텐션P값 실적현황.html' },
-            { icon: 'fa-book', text: '매뉴얼', href: 'https://bough38-web.github.io/dashboard-2026/USER_MANUAL.html', target: '_blank', doc: true },
-            { icon: 'fa-file-alt', text: '보고서', href: 'https://bough38-web.github.io/dashboard-2026/PROJECT_REPORT.html', target: '_blank', doc: true }
+            { icon: 'fa-coins', text: '리텐션P값', href: '리텐션P값 실적현황.html' }
+        ];
+
+        const adminItems = [
+            { icon: 'fa-history', text: '활동 모니터링', href: 'ADMIN_LOGS.html' },
+            { icon: 'fa-file-alt', text: '개발 보고서', href: 'https://bough38-web.github.io/dashboard-2026/PROJECT_REPORT.html', target: '_blank' },
+            { icon: 'fa-book', text: '사용 매뉴얼', href: 'https://bough38-web.github.io/dashboard-2026/USER_MANUAL.html', target: '_blank' }
         ];
 
         const currentPath = window.location.pathname.split('/').pop() || 'index.html';
@@ -200,12 +284,9 @@ const ThemeManager = {
             container.className = 'premium-nav-hub';
             
             navItems.forEach(item => {
-                const btn = document.createElement(item.disabled ? 'button' : 'a');
-                if (!item.disabled) {
-                    btn.href = item.href;
-                    if (item.target) btn.target = item.target;
-                }
-                btn.className = `premium-nav-btn ${item.disabled ? 'disabled' : ''} ${item.doc ? 'doc-link' : ''}`;
+                const btn = document.createElement('a');
+                btn.href = item.href;
+                btn.className = `premium-nav-btn`;
                 
                 const isPageMatch = (item.href === currentPath) || 
                                    (item.href === 'index.html' && (currentPath === '' || currentPath.includes('2026년')));
@@ -213,11 +294,41 @@ const ThemeManager = {
                 if (isPageMatch) btn.classList.add('active');
                 
                 btn.innerHTML = `<i class="fas ${item.icon}"></i><span>${item.text}</span>`;
-                if (item.doc) {
-                    btn.style.color = 'var(--secondary)';
-                }
                 container.appendChild(btn);
             });
+
+            // Gear Icon with Dropdown
+            const gearWrapper = document.createElement('div');
+            gearWrapper.style.position = 'relative';
+            
+            const gearBtn = document.createElement('button');
+            gearBtn.className = 'premium-nav-btn gear-btn';
+            gearBtn.innerHTML = `<i class="fas fa-cog"></i>`;
+            gearBtn.title = '설정 및 관리자 도구';
+            
+            const dropdown = document.createElement('div');
+            dropdown.className = 'admin-menu-dropdown';
+            
+            adminItems.forEach(admin => {
+                const link = document.createElement('a');
+                link.href = admin.href;
+                link.className = 'admin-menu-item';
+                if (admin.target) link.target = admin.target;
+                link.innerHTML = `<i class="fas ${admin.icon}"></i><span>${admin.text}</span>`;
+                dropdown.appendChild(link);
+            });
+
+            gearBtn.onclick = (e) => {
+                e.stopPropagation();
+                dropdown.classList.toggle('show');
+            };
+
+            document.addEventListener('click', () => dropdown.classList.remove('show'));
+            dropdown.onclick = (e) => e.stopPropagation();
+
+            gearWrapper.appendChild(gearBtn);
+            gearWrapper.appendChild(dropdown);
+            container.appendChild(gearWrapper);
 
             // Add Divider
             const divider = document.createElement('div');
@@ -230,6 +341,7 @@ const ThemeManager = {
             logoutBtn.innerHTML = `<i class="fas fa-sign-out-alt"></i><span>로그아웃</span>`;
             logoutBtn.onclick = () => {
                 if (confirm('로그아웃 하시겠습니까?')) {
+                    TrackingManager.log('LOGOUT');
                     localStorage.removeItem('sales_dashboard_session');
                     location.href = 'login.html';
                 }
@@ -258,8 +370,8 @@ const ThemeManager = {
             btn.style.borderRadius = '50%';
             btn.style.cursor = 'pointer';
             btn.style.background = this.themes[t]['--primary'];
-            btn.style.border = '2px solid white';
-            btn.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
+            btn.style.border = '2px solid rgba(255,255,255,0.8)';
+            btn.style.boxShadow = '0 0 0 1px rgba(0,0,0,0.1)';
             btn.title = t.charAt(0).toUpperCase() + t.slice(1);
             btn.onclick = () => this.applyTheme(t);
             selector.appendChild(btn);

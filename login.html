@@ -378,6 +378,11 @@
         };
         localStorage.setItem('sales_dashboard_session', JSON.stringify(session));
         
+        // Log Login
+        if (typeof TrackingManager !== 'undefined') {
+            TrackingManager.log('LOGIN', { role });
+        }
+        
         // Redirect to main index
         location.href = 'index.html';
     }
