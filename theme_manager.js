@@ -188,7 +188,8 @@ const ThemeManager = {
             { icon: 'fa-sync-alt', text: '재계약/리텐션', href: 'index.html' },
             { icon: 'fa-exclamation-triangle', text: '정지/부실', href: '정지부실_실적현황.html' },
             { icon: 'fa-coins', text: '리텐션P값', href: '리텐션P값 실적현황.html' },
-            { icon: 'fa-user-slash', text: '해지율(예정)', href: '#', disabled: true }
+            { icon: 'fa-book', text: '매뉴얼', href: 'https://bough38-web.github.io/dashboard-2026/USER_MANUAL.html', target: '_blank', doc: true },
+            { icon: 'fa-file-alt', text: '보고서', href: 'https://bough38-web.github.io/dashboard-2026/PROJECT_REPORT.html', target: '_blank', doc: true }
         ];
 
         const currentPath = window.location.pathname.split('/').pop() || 'index.html';
@@ -200,8 +201,11 @@ const ThemeManager = {
             
             navItems.forEach(item => {
                 const btn = document.createElement(item.disabled ? 'button' : 'a');
-                if (!item.disabled) btn.href = item.href;
-                btn.className = `premium-nav-btn ${item.disabled ? 'disabled' : ''}`;
+                if (!item.disabled) {
+                    btn.href = item.href;
+                    if (item.target) btn.target = item.target;
+                }
+                btn.className = `premium-nav-btn ${item.disabled ? 'disabled' : ''} ${item.doc ? 'doc-link' : ''}`;
                 
                 const isPageMatch = (item.href === currentPath) || 
                                    (item.href === 'index.html' && (currentPath === '' || currentPath.includes('2026년')));
@@ -209,6 +213,9 @@ const ThemeManager = {
                 if (isPageMatch) btn.classList.add('active');
                 
                 btn.innerHTML = `<i class="fas ${item.icon}"></i><span>${item.text}</span>`;
+                if (item.doc) {
+                    btn.style.color = 'var(--secondary)';
+                }
                 container.appendChild(btn);
             });
 
