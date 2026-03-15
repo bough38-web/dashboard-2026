@@ -165,7 +165,7 @@ const ThemeManager = {
                 background: var(--nav-bg) !important;
                 padding: 4px !important;
                 border: 1px solid var(--border-color) !important;
-                display: flex !important;
+                display: flex;
                 width: fit-content !important;
             }
         `;

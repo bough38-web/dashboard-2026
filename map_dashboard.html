@@ -532,7 +532,7 @@
         .filter-header:hover .filter-label { color: var(--primary); }
         .toggle-icon { transition: transform 0.2s; }
         .collapsed .toggle-icon { transform: rotate(-90deg); }
-        .collapsed .filter-group { display: none; }
+        .collapsed + .filter-group { display: none !important; }
 
         @media (max-width: 768px) {
             #sidebar {
@@ -1097,12 +1097,7 @@
     function toggleFilter(type) {
         const container = document.getElementById(`${type}-filters`);
         const header = container.previousElementSibling;
-        const isCollapsed = container.style.display === 'none';
-        
-        container.style.display = isCollapsed ? 'flex' : 'none';
-        header.classList.toggle('collapsed', !isCollapsed);
-        
-        // Refresh icons if needed
+        header.classList.toggle('collapsed');
         lucide.createIcons();
     }
 
