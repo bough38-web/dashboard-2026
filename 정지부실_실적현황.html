@@ -105,6 +105,57 @@
 
         .highlight-row { background-color: #f1f5f9; font-weight: 800; }
         .txt-num { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+        /* Nav Buttons Styling */
+        .nav-hub-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: white;
+            border: 1px solid var(--border-light);
+            border-radius: 10px;
+            color: var(--text-muted);
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            text-decoration: none;
+        }
+        .nav-hub-btn i { font-size: 16px; opacity: 0.7; }
+        .nav-hub-btn:hover {
+            color: var(--primary-dark);
+            background: #f8fafc;
+            border-color: var(--border-medium);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-sm);
+        }
+        .nav-hub-btn.active {
+            background: var(--primary-blue);
+            color: white;
+            border-color: var(--primary-blue);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+        }
+        .nav-hub-btn.active i { opacity: 1; }
+        .nav-hub-btn.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background: #f1f5f9;
+        }
+        .logout-btn {
+            background: #fee2e2;
+            color: #ef4444;
+            border: 1px solid #fecaca;
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+        }
+        .logout-btn:hover { background: #fecaca; }
     </style>
 </head>
 <body>
@@ -120,6 +171,27 @@
                     <h1 style="font-size: 18px; font-weight: 800; color: var(--primary-dark); margin: 0; letter-spacing: -0.5px;">2026 Management Hub</h1>
                     <p style="font-size: 12px; color: var(--text-muted); margin: 2px 0 0 0;">강북강원본부 정지/부실 통합 분석</p>
                 </div>
+            </div>
+            <div class="nav-buttons" style="display: flex; gap: 8px; align-items: center;">
+                <button class="nav-hub-btn" onclick="location.href='map_dashboard.html'" title="지도/방문관리">
+                    <i class="fas fa-map-marked-alt"></i><span>지도/방문</span>
+                </button>
+                <button class="nav-hub-btn" onclick="location.href='index.html'" title="재계약/사전리텐션">
+                    <i class="fas fa-sync-alt"></i><span>재계약/리텐션</span>
+                </button>
+                <button class="nav-hub-btn active" onclick="location.href='정지부실_실적현황.html'" title="정지/부실">
+                    <i class="fas fa-exclamation-triangle"></i><span>정지/부실</span>
+                </button>
+                <button class="nav-hub-btn" onclick="location.href='리텐션P값 실적현황.html'" title="리텐션P값">
+                    <i class="fas fa-coins"></i><span>리텐션P값</span>
+                </button>
+                <button class="nav-hub-btn disabled" title="해지율 (오픈예정)">
+                    <i class="fas fa-user-slash"></i><span>해지율(예정)</span>
+                </button>
+                <div style="width: 1px; height: 24px; background: var(--border-light); margin: 0 10px;"></div>
+                <button class="logout-btn" onclick="logout()">
+                    <i class="fas fa-sign-out-alt"></i> 로그아웃
+                </button>
             </div>
         </header>
 
@@ -223,33 +295,34 @@
                 </div>
                 <table id="main-table">
                     <thead>
-                        <tr style="height: 30px;">
-                            <th rowspan="3" class="sticky-col sep-r">구분</th>
-                            <th colspan="4" class="bg-total sep-r">총정지</th>
-                            <th colspan="4" class="bg-defect sep-r">부실(L형)</th>
-                            <th colspan="4" class="bg-etc sep-r">L형, SP, 장기정지</th>
+                        <tr>
+                            <th rowspan="2" class="sticky-col sep-r">구분</th>
+                            <th colspan="2" class="bg-total sep-r">총정지</th>
+                            <th colspan="2" class="bg-defect sep-r">부실(L형)</th>
+                            <th colspan="2" class="bg-etc sep-r">L형, SP, 장기</th>
                             <th colspan="2" class="bg-pay sep-r">체납정지</th>
                             <th colspan="2" class="bg-orange sep-r">일반정지</th>
-                            <th colspan="2" class="bg-gen sep-r">계</th>
-                            <th colspan="2" class="bg-pay">체납정지</th>
+                            <th colspan="2" class="bg-gen sep-r">계(일반+체납)</th>
+                            <th class="bg-pay">체납비중</th>
                         </tr>
-                        <tr style="height: 25px;">
-                            <th colspan="2" class="bg-blue-l">실적</th><th colspan="2" class="bg-purple-l sep-r">점유율</th>
-                            <th colspan="2" class="bg-blue-l">실적</th><th colspan="2" class="bg-purple-l sep-r">점유율</th>
-                            <th colspan="2" class="bg-blue-l">실적</th><th colspan="2" class="bg-purple-l sep-r">점유율</th>
-                            <th colspan="2" class="bg-blue-l sep-r">실적</th>
-                            <th colspan="2" class="bg-blue-l sep-r">합계(L+i)</th>
-                            <th colspan="2" class="bg-blue-l sep-r">실적</th>
-                            <th colspan="2" class="bg-purple-l">점유율</th>
+                        <tr>
+                            <th class="bg-blue-l">실적</th><th class="bg-purple-l sep-r">정지율</th>
+                            <th class="bg-blue-l">실적</th><th class="bg-purple-l sep-r">정지율</th>
+                            <th class="bg-blue-l">실적</th><th class="bg-purple-l sep-r">정지율</th>
+                            <th class="bg-blue-l">실적</th><th class="bg-purple-l sep-r">정지율</th>
+                            <th class="bg-blue-l">실적</th><th class="bg-purple-l sep-r">정지율</th>
+                            <th class="bg-blue-l">실적</th><th class="bg-purple-l sep-r">정지율</th>
+                            <th class="bg-purple-l">비율(C/V)</th>
                         </tr>
-                        <tr class="sub-header-row" style="height: 25px;">
-                            <th>건수</th><th style="border-right:1px solid #444;">월정료</th><th>건수</th><th class="sep-r">월정료</th>
-                            <th>건</th><th style="border-right:1px solid #444;">월정료</th><th>건수</th><th class="sep-r">월정료</th>
-                            <th>건수</th><th style="border-right:1px solid #444;">월정료</th><th>건수</th><th class="sep-r">월정료</th>
-                            <th>건수</th><th class="sep-r">월정료</th>
-                            <th>건수</th><th class="sep-r">월정료</th>
-                            <th>건수</th><th class="sep-r">월정료</th>
-                            <th>건</th><th>월정료</th>
+                        <tr class="sub-header-row">
+                            <th class="sticky-col sep-r"></th>
+                            <th>건수<br>월정료</th><th class="sep-r">건수<br>월정료</th>
+                            <th>건수<br>월정료</th><th class="sep-r">건수<br>월정료</th>
+                            <th>건수<br>월정료</th><th class="sep-r">건수<br>월정료</th>
+                            <th>건수<br>월정료</th><th class="sep-r">건수<br>월정료</th>
+                            <th>건수<br>월정료</th><th class="sep-r">건수<br>월정료</th>
+                            <th>건수<br>월정료</th><th class="sep-r">건수<br>월정료</th>
+                            <th>건/금액</th>
                         </tr>
                     </thead>
                     <tbody id="table-body"></tbody>
@@ -339,72 +412,71 @@
         tbody.innerHTML = '';
 
         let sums = { total_c: 0, total_v: 0, def_c: 0, def_v: 0, etc_c: 0, etc_v: 0, pay_c: 0, pay_v: 0, gen_c: 0, gen_v: 0, base_c: 0, base_v: 0 };
-        
         data.forEach(item => {
             if (currentFilter !== 'all' && item.name !== currentFilter) return;
+            for (let key in sums) sums[key] += item[key];
+        });
+        lastSums = sums;
 
+        const filteredData = currentFilter === 'all' ? data : data.filter(item => item.name === currentFilter);
+
+        filteredData.forEach(item => {
             const tr = document.createElement('tr');
             if (item.name === '강북/강원') tr.className = 'highlight-row';
             
-            for (let key in sums) sums[key] += item[key];
-            
+            // Helper for 2-line performance cells
+            const cellPF = (c, v) => `<div class="txt-num">${fmt(c)}</div><div class="txt-num" style="font-size:10px; opacity:0.7;">${fmt(v)}</div>`;
+            // Helper for 2-line rate cells
+            const cellRT = (c_rate, v_rate) => `<div class="txt-num ${getHeatColor(c_rate)}">${pct(c_rate)}</div><div class="txt-num ${getHeatColor(v_rate)}" style="font-size:10px; opacity:0.7;">${pct(v_rate)}</div>`;
+
             const tc_s = item.base_c > 0 ? item.total_c / item.base_c : 0;
             const tv_s = item.base_v > 0 ? item.total_v / item.base_v : 0;
             const dc_s = item.base_c > 0 ? item.def_c / item.base_c : 0;
             const dv_s = item.base_v > 0 ? item.def_v / item.base_v : 0;
             const ec_s = item.base_c > 0 ? item.etc_c / item.base_c : 0;
             const ev_s = item.base_v > 0 ? item.etc_v / item.base_v : 0;
+            const pc_s = item.base_c > 0 ? item.pay_c / item.base_c : 0;
+            const pv_s = item.base_v > 0 ? item.pay_v / item.base_v : 0;
+            const gc_s = item.base_c > 0 ? item.gen_c / item.base_c : 0;
+            const gv_s = item.base_v > 0 ? item.gen_v / item.base_v : 0;
             
             const total_sum_c = item.pay_c + item.gen_c;
             const total_sum_v = item.pay_v + item.gen_v;
             const pay_ratio_c = total_sum_c > 0 ? item.pay_c / total_sum_c : 0;
             const pay_ratio_v = total_sum_v > 0 ? item.pay_v / total_sum_v : 0;
+            const acc_sc = item.base_c > 0 ? total_sum_c / item.base_c : 0;
+            const acc_sv = item.base_v > 0 ? total_sum_v / item.base_v : 0;
 
             tr.innerHTML = `
                 <td class="sticky-col sep-r">${item.name}</td>
-                <td class="txt-num">${fmt(item.total_c)}</td><td class="txt-num">${fmt(item.total_v)}</td>
-                <td class="txt-num ${getHeatColor(tc_s)}">${pct(tc_s)}</td><td class="txt-num ${getHeatColor(tv_s)} sep-r">${pct(tv_s)}</td>
-                
-                <td class="txt-num">${fmt(item.def_c)}</td><td class="txt-num">${fmt(item.def_v)}</td>
-                <td class="txt-num ${getHeatColor(dc_s)}">${pct(dc_s)}</td><td class="txt-num ${getHeatColor(dv_s)} sep-r">${pct(dv_s)}</td>
-                
-                <td class="txt-num">${fmt(item.etc_c)}</td><td class="txt-num">${fmt(item.etc_v)}</td>
-                <td class="txt-num ${getHeatColor(ec_s)}">${pct(ec_s)}</td><td class="txt-num ${getHeatColor(ev_s)} sep-r">${pct(ev_s)}</td>
-                
-                <td class="txt-num">${fmt(item.pay_c)}</td><td class="txt-num sep-r">${fmt(item.pay_v)}</td>
-                <td class="txt-num">${fmt(item.gen_c)}</td><td class="txt-num sep-r">${fmt(item.gen_v)}</td>
-                <td class="txt-num">${fmt(total_sum_c)}</td><td class="txt-num sep-r">${fmt(total_sum_v)}</td>
-                <td class="txt-num">${pct0(pay_ratio_c)}</td><td class="txt-num">${pct0(pay_ratio_v)}</td>
+                <td>${cellPF(item.total_c, item.total_v)}</td><td class="sep-r">${cellRT(tc_s, tv_s)}</td>
+                <td class="bg-sub">${cellPF(item.def_c, item.def_v)}</td><td class="bg-sub sep-r">${cellRT(dc_s, dv_s)}</td>
+                <td class="bg-sub">${cellPF(item.etc_c, item.etc_v)}</td><td class="bg-sub sep-r">${cellRT(ec_s, ev_s)}</td>
+                <td>${cellPF(item.pay_c, item.pay_v)}</td><td class="sep-r">${cellRT(pc_s, pv_s)}</td>
+                <td>${cellPF(item.gen_c, item.gen_v)}</td><td class="sep-r">${cellRT(gc_s, gv_s)}</td>
+                <td class="bg-sub">${cellPF(total_sum_c, total_sum_v)}</td><td class="bg-sub sep-r">${cellRT(acc_sc, acc_sv)}</td>
+                <td class="txt-num">C: ${pct0(pay_ratio_c)}<br>V: ${pct0(pay_ratio_v)}</td>
             `;
             tbody.appendChild(tr);
         });
 
-        lastSums = sums;
-
         const tfoot = document.getElementById('table-foot');
         if (currentFilter === 'all') {
-            tfoot.style.display = 'table-footer-group';
+            tfoot.style.display = 'table-row-group';
             const ts_c = sums.pay_c + sums.gen_c;
             const ts_v = sums.pay_v + sums.gen_v;
-            const pr_c = ts_c > 0 ? sums.pay_c / ts_c : 0;
-            const pr_v = ts_v > 0 ? sums.pay_v / ts_v : 0;
+            const footRT = (c, v, bc, bv) => `<div class="txt-num">${pct(bc > 0 ? c/bc : 0)}</div><div class="txt-num" style="font-size:10px; opacity:0.7;">${pct(bv > 0 ? v/bv : 0)}</div>`;
             
             tfoot.innerHTML = `
-                <tr style="background:#f1f5f9; font-weight:800; font-size:10px;">
+                <tr style="background:#f1f5f9; font-weight:800;">
                     <td class="sticky-col sep-r" style="background:#f1f5f9;">합계</td>
-                    <td class="txt-num">${fmt(sums.total_c)}</td><td class="txt-num">${fmt(sums.total_v)}</td>
-                    <td class="txt-num">${pct(sums.base_c > 0 ? sums.total_c/sums.base_c : 0)}</td><td class="txt-num sep-r">${pct(sums.base_v > 0 ? sums.total_v/sums.base_v : 0)}</td>
-                    
-                    <td class="txt-num">${fmt(sums.def_c)}</td><td class="txt-num">${fmt(sums.def_v)}</td>
-                    <td class="txt-num">${pct(sums.base_c > 0 ? sums.def_c/sums.base_c : 0)}</td><td class="txt-num sep-r">${pct(sums.base_v > 0 ? sums.def_v/sums.base_v : 0)}</td>
-                    
-                    <td class="txt-num">${fmt(sums.etc_c)}</td><td class="txt-num">${fmt(sums.etc_v)}</td>
-                    <td class="txt-num">${pct(sums.base_c > 0 ? sums.etc_c/sums.base_c : 0)}</td><td class="txt-num sep-r">${pct(sums.base_v > 0 ? sums.etc_v/sums.base_v : 0)}</td>
-                    
-                    <td class="txt-num">${fmt(sums.pay_c)}</td><td class="txt-num sep-r">${fmt(sums.pay_v)}</td>
-                    <td class="txt-num">${fmt(sums.gen_c)}</td><td class="txt-num sep-r">${fmt(sums.gen_v)}</td>
-                    <td class="txt-num">${fmt(ts_c)}</td><td class="txt-num sep-r">${fmt(ts_v)}</td>
-                    <td class="txt-num">${pct0(pr_c)}</td><td class="txt-num">${pct0(pr_v)}</td>
+                    <td>${fmt(sums.total_c)}<br><small>${fmt(sums.total_v)}</small></td><td class="sep-r">${footRT(sums.total_c, sums.total_v, sums.base_c, sums.base_v)}</td>
+                    <td class="bg-sub">${fmt(sums.def_c)}<br><small>${fmt(sums.def_v)}</small></td><td class="bg-sub sep-r">${footRT(sums.def_c, sums.def_v, sums.base_c, sums.base_v)}</td>
+                    <td class="bg-sub">${fmt(sums.etc_c)}<br><small>${fmt(sums.etc_v)}</small></td><td class="bg-sub sep-r">${footRT(sums.etc_c, sums.etc_v, sums.base_c, sums.base_v)}</td>
+                    <td>${fmt(sums.pay_c)}<br><small>${fmt(sums.pay_v)}</small></td><td class="sep-r">${footRT(sums.pay_c, sums.pay_v, sums.base_c, sums.base_v)}</td>
+                    <td>${fmt(sums.gen_c)}<br><small>${fmt(sums.gen_v)}</small></td><td class="sep-r">${footRT(sums.gen_c, sums.gen_v, sums.base_c, sums.base_v)}</td>
+                    <td class="bg-sub">${fmt(ts_c)}<br><small>${fmt(ts_v)}</small></td><td class="bg-sub sep-r">${footRT(ts_c, ts_v, sums.base_c, sums.base_v)}</td>
+                    <td class="txt-num">${pct0(ts_c > 0 ? sums.pay_c/ts_c : 0)}<br>${pct0(ts_v > 0 ? sums.pay_v/ts_v : 0)}</td>
                 </tr>
             `;
         } else {
@@ -420,10 +492,16 @@
         document.getElementById('kpi-total-v').innerText = fmtSmart(sums.total_v, 'value');
         document.getElementById('kpi-defect').innerText = fmt(sums.def_c);
         document.getElementById('kpi-defect-v').innerText = fmtSmart(sums.def_v, 'value');
-        document.getElementById('kpi-etc').innerText = fmt(sums.etc_c);
-        document.getElementById('kpi-etc-v').innerText = fmtSmart(sums.etc_v, 'value');
-        document.getElementById('kpi-pay').innerText = fmt(sums.pay_c);
-        document.getElementById('kpi-pay-v').innerText = fmtSmart(sums.pay_v, 'value');
+        
+        // Ensure these IDs exist or add them to the HTML if we want to show all 4
+        if (document.getElementById('kpi-etc')) {
+            document.getElementById('kpi-etc').innerText = fmt(sums.etc_c);
+            document.getElementById('kpi-etc-v').innerText = fmtSmart(sums.etc_v, 'value');
+        }
+        if (document.getElementById('kpi-pay')) {
+            document.getElementById('kpi-pay').innerText = fmt(sums.pay_c);
+            document.getElementById('kpi-pay-v').innerText = fmtSmart(sums.pay_v, 'value');
+        }
     }
 
     function updateChart(sums) {
@@ -602,6 +680,13 @@
         };
         html2pdf().from(element).set(opt).save();
     }
+
+    window.logout = function() {
+        if (confirm('로그아웃 하시겠습니까?')) {
+            localStorage.removeItem('sales_dashboard_session');
+            location.href = 'login.html';
+        }
+    };
 
     function changeFilterButtons() {
         const filterGroup = document.getElementById('filterBtnGroup');
