@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시스템 사용 매뉴얼 - 2026 Management Hub</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --secondary: #10b981;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+        body { font-family: 'Pretendard', sans-serif; background-color: var(--bg); color: var(--text-main); line-height: 1.6; margin: 0; padding: 0; }
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        
+        .manual-header { border-bottom: 2px solid var(--primary); padding-bottom: 20px; margin-bottom: 40px; }
+        .manual-header h1 { font-size: 2.2rem; font-weight: 800; margin: 0; color: #1e293b; }
+        .manual-header p { color: var(--text-muted); font-size: 1.1rem; margin-top: 5px; }
+
+        .step-section { margin-bottom: 40px; }
+        .step-num { display: inline-block; background: var(--primary); color: white; width: 32px; height: 32px; border-radius: 50%; text-align: center; line-height: 32px; font-weight: 800; margin-right: 10px; }
+        h2 { font-size: 1.4rem; font-weight: 800; margin-bottom: 20px; color: #1e293b; display: flex; align-items: center; }
+        
+        .content-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 25px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        .content-card i { color: var(--primary); margin-right: 8px; }
+        
+        ol { padding-left: 20px; }
+        li { margin-bottom: 15px; }
+        
+        strong { color: var(--primary); }
+        
+        .tip-box { background: #fffbeb; border-left: 4px solid #f59e0b; padding: 15px; border-radius: 4px; margin-top: 15px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="manual-header">
+            <h1>시스템 사용 매뉴얼</h1>
+            <p>2026년 관리고객 재계약 관리 시스템 (v1.0)</p>
+        </div>
+
+        <div class="step-section">
+            <h2><span class="step-num">1</span> 시스템 접속 및 로그인</h2>
+            <div class="content-card">
+                <ol>
+                    <li>브라우저에서 시스템 주소 접속 시 <strong>로그인 페이지</strong>로 이동합니다.</li>
+                    <li>관리자 코드 <strong>[0303]</strong>을 입력하여 시스템에 접속합니다.</li>
+                    <li>세션은 24시간 동안 유지되며, 이후 재로그인이 필요합니다.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="step-section">
+            <h2><span class="step-num">2</span> 대시보드 활용 방법</h2>
+            <div class="content-card">
+                <p><i class="fas fa-chart-line"></i> **핵심 KPI 확인**</p>
+                <ul>
+                    <li>상단 요약 박스에서 만기신규, 재계약, 약정만료 목표액 및 달성 현황을 확인합니다.</li>
+                    <li>사전 리텐션 현황에서 월별 방문율 추이를 파악합니다.</li>
+                </ul>
+                <p><i class="fas fa-table"></i> **상세 실적 분석**</p>
+                <ul>
+                    <li>하단 테이블에서 지사별 상세 실적을 조회합니다.</li>
+                    <li>분기 합계 및 월별 탭을 전환하여 기간별 성과를 비교 분석합니다.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-section">
+            <h2><span class="step-num">3</span> 지도 관제 (Map Dashboard)</h2>
+            <div class="content-card">
+                <ol>
+                    <li>상단 네비게이션에서 <strong>[지도]</strong> 버튼을 클릭합니다.</li>
+                    <li>좌측 사이드바 필터를 통해 특정 지사나 담당자의 고객 분포를 지도에 표시합니다.</li>
+                    <li>지도상의 마커를 클릭하여 해당 고객의 상세 정보 및 재계약 상태를 확인합니다.</li>
+                    <li><strong>[효율적 방문 루트 추천]</strong> 버튼을 통해 동선을 최적화할 수 있습니다.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="step-section">
+            <h2><span class="step-num">4</span> 테마 설정</h2>
+            <div class="content-card">
+                <p>시스템 상단 우측의 <strong>컬러 도트</strong>를 클릭하여 테마를 변경할 수 있습니다.</p>
+                <ul>
+                    <li><strong>Blue (Default)</strong>: 표준 고대비 환경</li>
+                    <li><strong>Dark</strong>: 야간 또는 장시간 사용 시 피로도 감소</li>
+                    <li><strong>Emerald / Sunset</strong>: 친근하고 세련된 브랜드 컬러 적용</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tip-box">
+            <strong><i class="fas fa-lightbulb"></i> Tip!</strong><br>
+            본 시스템은 모바일에서도 최적화되어 있습니다. 현장에서 태블릿이나 스마트폰으로 접속하여 실시간으로 고객 위치를 확인하며 활동해 보세요.
+        </div>
+
+        <div style="text-align: center; margin-top: 60px; color: var(--text-muted);">
+            <p>기술 지원 및 문의: 시스템 관리팀</p>
+        </div>
+    </div>
+</body>
+</html>

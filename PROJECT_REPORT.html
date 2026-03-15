@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 관리고객 재계약 관리 - 개발 프로젝트 보고서</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --secondary: #10b981;
+            --accent: #f59e0b;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+        body { font-family: 'Pretendard', sans-serif; background-color: var(--bg); color: var(--text-main); line-height: 1.6; margin: 0; padding: 0; }
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        .hero { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: white; padding: 60px 40px; border-radius: 24px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); margin-bottom: 40px; text-align: center; }
+        .hero h1 { font-size: 2.5rem; margin: 0; font-weight: 800; letter-spacing: -0.02em; }
+        .hero p { opacity: 0.8; font-size: 1.1rem; margin-top: 10px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 40px; }
+        .stat-card { background: var(--card); padding: 24px; border-radius: 20px; border: 1px solid var(--border); text-align: center; transition: transform 0.3s ease; }
+        .stat-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
+        .stat-card i { font-size: 2rem; color: var(--primary); margin-bottom: 15px; }
+        .stat-card h3 { margin: 0; font-size: 0.9rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+        .stat-card .value { font-size: 1.8rem; font-weight: 800; color: var(--text-main); margin-top: 5px; }
+
+        section { background: var(--card); padding: 40px; border-radius: 24px; border: 1px solid var(--border); margin-bottom: 30px; }
+        h2 { font-size: 1.5rem; font-weight: 800; margin-top: 0; display: flex; align-items: center; gap: 10px; color: var(--primary); }
+        h2 i { font-size: 1.2rem; }
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid var(--border); }
+        th { background: #f1f5f9; font-weight: 700; color: var(--text-muted); font-size: 0.85rem; }
+        
+        .badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; background: #eef2ff; color: var(--primary); }
+        
+        .footer { text-align: center; padding: 40px 0; color: var(--text-muted); font-size: 0.9rem; }
+        
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>프로젝트 기술 평가 및 보고서</h1>
+            <p>2026년 관리고객 재계약 관리 시스템 (Enterprise Solution)</p>
+        </div>
+
+        <div class="grid">
+            <div class="stat-card">
+                <i class="fas fa-code"></i>
+                <h3>코드 규모</h3>
+                <div class="value">8,800+ Lines</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-clock"></i>
+                <h3>예상 개발 기간</h3>
+                <div class="value">2.5 Months</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-won-sign"></i>
+                <h3>추정 자산 가치</h3>
+                <div class="value">5,000만+</div>
+            </div>
+        </div>
+
+        <section>
+            <h2><i class="fas fa-bullseye"></i> 1. 시스템 핵심 가치 (Core Value)</h2>
+            <p>본 시스템은 파편화된 고객 데이터를 실시간 시각화 자산으로 변환하여 경영 효율을 극대화하는 것을 목표로 합니다.</p>
+            <ul>
+                <li><strong>재계약 방어율 향상</strong>: 월간 목표 대비 달성률을 실시간으로 추적하여 이탈 위험 고객 선제적 관리</li>
+                <li><strong>GIS 기반 현장 통제</strong>: 구글 맵 연동을 통한 지사/담당자별 활동 지역 최적화 및 이동 경로 효율화</li>
+                <li><strong>관리 비용 30% 절감</strong>: 수동 보고 체계를 대시보드로 일원화하여 행정 소요 시간 단축</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-tools"></i> 2. 기술 스택 및 구현 범위</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>적용 기술</th>
+                        <th>상세 내용</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Frontend</strong></td>
+                        <td>HTML5, CSS3, JS (Vanilla)</td>
+                        <td>테마 엔진(ThemeManager), Glassmorphism UI</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Visualization</strong></td>
+                        <td>Chart.js, Google Maps API</td>
+                        <td>실적 추이 차트, GIS 기반 고객 마커 클러스터링</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Data Logic</strong></td>
+                        <td>Python (Data Tools)</td>
+                        <td>Excel Parser, DB Migration, Auth Generator</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Interaction</strong></td>
+                        <td>Responsive Web</td>
+                        <td>모바일 앱 및 웹 환경 최적화 (Cross-platform)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-chart-line"></i> 3. 개발비 및 투자 대비 효과 (ROI)</h2>
+            <p>시니어 개발자 1인 투입 기준, 약 <strong>5,000만 원 ~ 8,000만 원</strong>의 가치를 지닌 커스텀 솔루션입니다.</p>
+            <ul>
+                <li><strong>단기 효과</strong>: 정보 탐색 시간 단축 및 보고 일치성 확보</li>
+                <li><strong>중장기 효과</strong>: 관리 재계약 금액 상승(ARPU 관리)을 통한 매출 증대</li>
+                <li><strong>유지보수 가치</strong>: 모듈화된 테마 시스템으로 향후 브랜딩 변경 시 즉시 대응 가능</li>
+            </ul>
+        </section>
+
+        <div class="footer">
+            <p>&copy; 2026. 2026 Management Hub Project Team. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
