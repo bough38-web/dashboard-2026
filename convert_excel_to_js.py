@@ -2,6 +2,7 @@
 import pandas as pd
 import json
 import os
+import re
 
 def mask_name(name):
     if not name or pd.isna(name):
@@ -10,6 +11,21 @@ def mask_name(name):
     if len(name) <= 2:
         return name[0] + "*"
     return name[:2] + "*" * (len(name) - 2)
+
+def mask_address(address):
+    if not address or pd.isna(address):
+        return ""
+    address = str(address).strip()
+    # Match Dong, Eup, Myeon, Ri, Ga followed by space or end
+    match = re.search(r'([가-힣0-9]+(?:동|읍|면|리|가))(?:\s|$)', address)
+    if match:
+        end_idx = match.end(1)
+        prefix = address[:end_idx]
+        suffix = address[end_idx:]
+        # Mask non-space characters in the suffix
+        masked_suffix = "".join(['*' if not c.isspace() else c for c in suffix])
+        return prefix + masked_suffix
+    return address
 
 def convert_excel_to_js():
     excel_path = 'data/1st최초만기도래, 재계약만기도래, 약정만료 대상 목표.xlsx'
@@ -98,7 +114,7 @@ def convert_excel_to_js():
             "name": mask_name(row['관리고객명']),
             "manager": area_code, # Use Area Number instead of name
             "branch": branch,
-            "address": address,
+            "address": mask_address(address),
             "status": status,
             "quarter": quarter,
             "progress": progress,

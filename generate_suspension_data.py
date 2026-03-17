@@ -1,5 +1,6 @@
 import pandas as pd
 import json
+import re
 
 # Paths
 SUSPENSION_EXCEL = '/Users/heebonpark/Downloads/내프로젝트모음/2026년 관리고객 재계약 관리/data/정지,부실.xlsx'
@@ -13,6 +14,19 @@ def mask_name(name):
     if len(name) <= 2:
         return name[0] + "*"
     return name[:2] + "*" * (len(name) - 2)
+
+def mask_address(address):
+    if not address or pd.isna(address):
+        return ""
+    address = str(address).strip()
+    match = re.search(r'([가-힣0-9]+(?:동|읍|면|리|가))(?:\s|$)', address)
+    if match:
+        end_idx = match.end(1)
+        prefix = address[:end_idx]
+        suffix = address[end_idx:]
+        masked_suffix = "".join(['*' if not c.isspace() else c for c in suffix])
+        return prefix + masked_suffix
+    return address
 
 def process_data():
     # Load suspension data
@@ -29,8 +43,9 @@ def process_data():
     df_final = df_susp[['계약번호', '상호', '설치주소', '위도', '경도', '지사', 'manager_code', '부실여부(체납제외)', '조회구분']].copy()
     df_final.columns = ['id', 'name', 'address', 'lat', 'lng', 'branch', 'manager', 'is_defect', 'type']
     
-    # Apply Name Masking
+    # Apply Name and Address Masking
     df_final['name'] = df_final['name'].apply(mask_name)
+    df_final['address'] = df_final['address'].apply(mask_address)
     
     # Clean up branch names (Remove '지사' suffix if inconsistent, but targets.js uses '중앙지사' style often)
     # Let's see what index.html/auth_config.js uses. It uses '중앙지사'.

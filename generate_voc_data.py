@@ -1,6 +1,7 @@
 import pandas as pd
 import json
 import os
+import re
 
 def mask_name(name):
     if not name or pd.isna(name):
@@ -9,6 +10,19 @@ def mask_name(name):
     if len(name) <= 2:
         return name[0] + "*"
     return name[:2] + "*" * (len(name) - 2)
+
+def mask_address(address):
+    if not address or pd.isna(address):
+        return ""
+    address = str(address).strip()
+    match = re.search(r'([가-힣0-9]+(?:동|읍|면|리|가))(?:\s|$)', address)
+    if match:
+        end_idx = match.end(1)
+        prefix = address[:end_idx]
+        suffix = address[end_idx:]
+        masked_suffix = "".join(['*' if not c.isspace() else c for c in suffix])
+        return prefix + masked_suffix
+    return address
 
 def generate_voc_data():
     voc_file = 'data/VOC정보조회.xlsx'
@@ -70,7 +84,7 @@ def generate_voc_data():
                 'name': mask_name(row['상호']),
                 'branch': row['branch'],
                 'manager': str(row['영업구역']).strip(), # Use Area Number directly
-                'address': str(row['설치주소']),
+                'address': mask_address(row['설치주소']),
                 'lat': float(lat),
                 'lng': float(lng),
                 'arpu': int(float(arpu_val)) if not pd.isna(arpu_val) else 0,
