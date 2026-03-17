@@ -1306,6 +1306,16 @@
             const matchBranch = branchFilter === 'all' || t.branch === branchFilter;
             const matchManager = managerFilter === 'all' || t.manager === managerFilter;
             
+            // --- Strict Role Check ---
+            const session = window.USER_SESSION;
+            let rolePass = true;
+            if (session && session.role !== 'admin' && localStorage.getItem(ACCESS_CONFIG.STORAGE_KEY) !== 'true') {
+                if (session.role === 'branch') rolePass = (t.branch === session.data.branch);
+                else if (session.role === 'manager') rolePass = (t.manager === session.data.name);
+            }
+
+            if (!rolePass) return false;
+
             if (activeSuspensionType === 'defect') {
                 return matchBranch && matchManager && (t.is_defect === 'Y' || t.is_defect === '예' || t.is_defect === '대상');
             } else {
@@ -1903,7 +1913,19 @@
         tbody.innerHTML = '';
         
         const allProgress = JSON.parse(localStorage.getItem(PROGRESS_STORAGE_KEY) || '{}');
-        const records = Object.values(allProgress).sort((a, b) => b.date.localeCompare(a.date));
+        let records = Object.values(allProgress);
+        
+        // --- Strict Role Filter for Admin Table ---
+        const session = window.USER_SESSION;
+        if (session && session.role !== 'admin' && localStorage.getItem(ACCESS_CONFIG.STORAGE_KEY) !== 'true') {
+            if (session.role === 'branch') {
+                records = records.filter(rev => rev.branch === session.data.branch);
+            } else if (session.role === 'manager') {
+                records = records.filter(rev => rev.manager === session.data.name);
+            }
+        }
+
+        records.sort((a, b) => b.date.localeCompare(a.date));
         
         if (records.length === 0) {
             tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:40px; color:#94a3b8;">등록된 진행내역이 없습니다.</td></tr>';
@@ -1960,7 +1982,18 @@
         }
 
         const allProgress = JSON.parse(localStorage.getItem(PROGRESS_STORAGE_KEY) || '{}');
-        const records = Object.values(allProgress);
+        let records = Object.values(allProgress);
+        
+        // --- Strict Role Filter for CSV Export ---
+        if (role !== 'admin' && localStorage.getItem(ACCESS_CONFIG.STORAGE_KEY) !== 'true') {
+            if (role === 'branch') {
+                const branchName = session.data.branch;
+                records = records.filter(rev => rev.branch === branchName);
+            } else if (role === 'manager') {
+                const managerName = session.data.name;
+                records = records.filter(rev => rev.manager === managerName);
+            }
+        }
         
         if (records.length === 0) {
             alert('내보낼 데이터가 없습니다.');
