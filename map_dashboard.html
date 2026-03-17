@@ -767,12 +767,15 @@
                     <!-- Managers will be injected here -->
                 </div>
 
-                <label class="filter-label">정지/부실/사전리텐션 통합 조회</label>
-                <div id="suspension-filters" class="filter-group" style="margin-bottom: 8px;">
+                <label class="filter-label">지표별 마커 선택</label>
+                <div id="status-filters-row1" class="filter-group" style="margin-bottom: 4px;">
+                    <button class="filter-btn active" id="btn-show-renewal" onclick="toggleSuspensionLayer('renewal')" style="border-color: #4f46e5; color: #4f46e5;">🔵 재계약</button>
+                    <button class="filter-btn" id="btn-show-voc" onclick="toggleSuspensionLayer('voc')" style="border-color: #10b981; color: #10b981;">🟢 사전리텐션</button>
+                </div>
+                <div id="status-filters-row2" class="filter-group" style="margin-bottom: 8px;">
                     <button class="filter-btn" id="btn-show-suspension" onclick="toggleSuspensionLayer('suspension')" style="border-color: #ef4444; color: #ef4444;">🔴 정지</button>
                     <button class="filter-btn" id="btn-show-defect" onclick="toggleSuspensionLayer('defect')" style="border-color: #f59e0b; color: #f59e0b;">🟠 부실</button>
                     <button class="filter-btn" id="btn-show-arrears" onclick="toggleSuspensionLayer('arrears')" style="border-color: #92400e; color: #92400e;">🟤 체납직권(정지)</button>
-                    <button class="filter-btn" id="btn-show-voc" onclick="toggleSuspensionLayer('voc')" style="border-color: #10b981; color: #10b981;">🟢 사전리텐션</button>
                 </div>
 
                 <div id="date-filters" class="filter-group" style="margin-bottom: 20px; display: none; gap: 4px; padding-left: 5px;">
@@ -899,7 +902,7 @@
     let map;
     let markers = [];
     let suspensionMarkers = [];
-    let activeSuspensionTypes = []; // ['suspension', 'defect', 'arrears', 'voc']
+    let activeSuspensionTypes = ['renewal']; // ['renewal', 'suspension', 'defect', 'arrears', 'voc']
     let clusterer;
     let allTargets = [];
     let currentRouteLine = null;
@@ -1340,7 +1343,7 @@
         const dateFiltersVisible = activeSuspensionTypes.some(t => ['suspension', 'defect'].includes(t));
         document.getElementById('date-filters').style.display = dateFiltersVisible ? 'flex' : 'none';
 
-        updateSuspensionMarkers();
+        applyFilters(); // Unified refresh
     }
 
     function updateSuspensionMarkers() {
@@ -1584,6 +1587,11 @@
         // Clear existing
         markers.forEach(m => m.setMap(null));
         markers = [];
+        
+        if (!activeSuspensionTypes.includes('renewal')) {
+            if (clusterer) clusterer.clearMarkers();
+            return;
+        }
         
         const bounds = new google.maps.LatLngBounds();
 
