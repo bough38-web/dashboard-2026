@@ -1349,7 +1349,7 @@
                 position: { lat: parseFloat(target.lat), lng: parseFloat(target.lng) },
                 map: map,
                 icon: iconUrl,
-                title: target.name
+                title: maskName(target.name)
             });
 
             const category = activeSuspensionType === 'voc' ? '사전리텐션' : (activeSuspensionType === 'defect' ? '부실' : '정지');
@@ -1361,7 +1361,7 @@
                             ${titlePrefix}
                         </h4>
                         <div style="background:#f8fafc; padding:10px; border-radius:8px; border:1px solid #e2e8f0; margin-bottom:10px;">
-                            <p style="margin:4px 0; font-size:12px;"><strong>상호:</strong> ${target.name}</p>
+                            <p style="margin:4px 0; font-size:12px;"><strong>상호:</strong> ${maskName(target.name)}</p>
                             <p style="margin:4px 0; font-size:12px;"><strong>지사:</strong> ${target.branch}</p>
                             <p style="margin:4px 0; font-size:12px;"><strong>영업구역:</strong> ${target.manager}</p>
                             <p style="margin:4px 0; font-size:11px; color:#64748b; line-height:1.4;">${target.address}</p>
@@ -1456,7 +1456,7 @@
             }
 
             card.innerHTML = `
-                <span class="target-name">${item.name} ${item.isHighArpu ? '<span class="arpu-badge">고ARPU</span>' : ''}</span>
+                <span class="target-name">${maskName(item.name)} ${item.isHighArpu ? '<span class="arpu-badge">고ARPU</span>' : ''}</span>
                 <div class="target-info">
                     <p style="margin:2px 0;"><i data-lucide="building" style="width:12px; height:12px; display:inline-block; vertical-align:middle; margin-right:4px;"></i> ${item.branch}</p>
                     <p style="margin:2px 0;"><i data-lucide="user" style="width:12px; height:12px; display:inline-block; vertical-align:middle; margin-right:4px;"></i> ${item.manager} | 계약번호: ${item.contractNo}</p>
@@ -1508,13 +1508,13 @@
             const pos = { lat: item.lat, lng: item.lng };
             const marker = new google.maps.Marker({
                 position: pos,
-                title: item.name,
+                title: maskName(item.name),
                 map: map
             });
 
             const content = `
                 <div style="padding:15px; width:250px; font-family: Pretendard, sans-serif;">
-                    <h4 style="margin:0 0 5px 0; color:#1e293b;">${item.name} ${item.isHighArpu ? '<span class="arpu-badge">고ARPU</span>' : ''}</h4>
+                    <h4 style="margin:0 0 5px 0; color:#1e293b;">${maskName(item.name)} ${item.isHighArpu ? '<span class="arpu-badge">고ARPU</span>' : ''}</h4>
                     <p style="font-size:12px; color:#64748b; margin:5px 0;">지사: ${item.branch}</p>
                     <p style="font-size:12px; color:#64748b; margin:5px 0;">영업구역: ${item.manager} (${item.contractNo})</p>
                     <p style="font-size:12px; color:#64748b; margin:5px 0;">주소: ${maskAddress(item.address)}</p>
@@ -1701,11 +1701,15 @@
 
     function maskAddress(addr) {
         if (!addr) return "";
-        // Keep Si/Gun/Gu parts, mask the rest
-        // Approx: "Seoul Gangnam-gu Yeoksam-dong 123-45" -> "Seoul Gangnam-gu Yeoksam-dong ***"
         const parts = addr.split(' ');
         if (parts.length <= 3) return addr;
         return parts.slice(0, 3).join(' ') + " " + "*".repeat(5);
+    }
+
+    function maskName(name) {
+        if (!name) return "";
+        if (name.length <= 2) return name[0] + "*";
+        return name.substring(0, 2) + "*".repeat(name.length - 2);
     }
 
     function getDist(lat1, lon1, lat2, lon2) {
@@ -1942,7 +1946,7 @@
                 <td>${rec.manager}</td>
                 <td style="font-weight:600; color:#475569;">${rec.category || '-'}</td>
                 <td>${rec.contractNo || '-'}</td>
-                <td style="font-weight:700;">${rec.name}</td>
+                <td style="font-weight:700;">${maskName(rec.name)}</td>
                 <td><span class="status-tag ${statusClass}">${rec.summary}</span></td>
                 <td style="white-space:pre-wrap;">${rec.detail || '-'}</td>
             `;
@@ -2004,7 +2008,7 @@
         let csvContent = "\ufeff등록일,지사,영업구역,구분,계약번호,고객명,진행요약,상세내역\n";
         records.forEach(rec => {
             const detailCsv = (rec.detail || '').replace(/"/g, '""').replace(/\n/g, ' ');
-            csvContent += `"${rec.date}","${rec.branch}","${rec.manager}","${rec.category || ''}","${rec.contractNo || ''}","${rec.name}","${rec.summary}","${detailCsv}"\n`;
+            csvContent += `"${rec.date}","${rec.branch}","${rec.manager}","${rec.category || ''}","${rec.contractNo || ''}","${maskName(rec.name)}","${rec.summary}","${detailCsv}"\n`;
         });
         
         const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });

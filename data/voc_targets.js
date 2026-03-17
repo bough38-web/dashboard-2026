@@ -1,7 +1,7 @@
 const VOC_TARGETS = [
     {
         "contractNo": "51476396.0",
-        "name": "평화당인쇄",
+        "name": "평화***",
         "branch": "중앙지사",
         "manager": "G000407",
         "address": "서울 종로구 견지동 60-2번지",
@@ -12,7 +12,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51816538.0",
-        "name": "이병협가정집(OCT)",
+        "name": "이병*********",
         "branch": "서대문지사",
         "manager": "G000203",
         "address": "서울 서대문구 연희동 87-10",
@@ -23,7 +23,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51640305.0",
-        "name": "브리끄(GiGAeyes guard)",
+        "name": "브리*****************",
         "branch": "남양주지사",
         "manager": "G000601",
         "address": "경기 남양주시 화도읍 구암리 26-4",
@@ -34,7 +34,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51988189.0",
-        "name": "노블레스",
+        "name": "노블**",
         "branch": "중앙지사",
         "manager": "G000407",
         "address": "서울 종로구 와룡동 172-2번지 4층",
@@ -45,7 +45,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "3164607.0",
-        "name": "라이트컴",
+        "name": "라이**",
         "branch": "서대문지사",
         "manager": "G000204",
         "address": "서울 용산구 원효로3가 29-1번지",
@@ -56,7 +56,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51653031.0",
-        "name": "에듀퐁(쁘띠몽드)",
+        "name": "에듀*******",
         "branch": "중앙지사",
         "manager": "G000405",
         "address": "서울 동대문구 장안동 111-1번지  3층",
@@ -67,7 +67,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51652123.0",
-        "name": "디지털프라임치과의원(GiGAeyes guard)",
+        "name": "디지************************",
         "branch": "남양주지사",
         "manager": "G000601",
         "address": "경기 남양주시 호평동 638-1 늘봄타워403호",
@@ -78,7 +78,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51843180.0",
-        "name": "플러스이레실버요양원(GiGAeyes guard)",
+        "name": "플러************************",
         "branch": "남양주지사",
         "manager": "G000601",
         "address": "경기 남양주시 호평동 638 성보빌딩7층",
@@ -89,7 +89,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51471540.0",
-        "name": "하이드앤시크(GiGAeyes guard)",
+        "name": "하이********************",
         "branch": "서대문지사",
         "manager": "G000203",
         "address": "서울 마포구 동교동 203-57번지 SANTOH빌딩 지하1층",
@@ -100,7 +100,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51424066.0",
-        "name": "황금농장(giga-뷰)",
+        "name": "황금**********",
         "branch": "의정부지사",
         "manager": "G000504",
         "address": "경기 연천군 백학면전동리 장백로683번길 256",
@@ -111,7 +111,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "477129.0",
-        "name": "대원에프앤드씨3층",
+        "name": "대원*******",
         "branch": "강북지사",
         "manager": "G000106",
         "address": "서울 성동구 송정동 18-1번지 대원빌딩3층",
@@ -122,7 +122,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51841368.0",
-        "name": "(주)와이에스개발-상수리",
+        "name": "(주***********",
         "branch": "의정부지사",
         "manager": "G000502",
         "address": "경기 양주시 남면 상수리 상수리 412-17",
@@ -133,7 +133,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51770753.0",
-        "name": "라커디움파크 일산점",
+        "name": "라커********",
         "branch": "고양지사",
         "manager": "G000303",
         "address": "경기 고양시 일산동구 풍동 150-6 101호",
@@ -144,7 +144,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51096963.0",
-        "name": "선동보리밥(OCT)",
+        "name": "선동********",
         "branch": "중앙지사",
         "manager": "G000407",
         "address": "서울 성북구 성북동 88",
@@ -155,7 +155,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52007515.0",
-        "name": "신내동성당CCTV",
+        "name": "신내*******",
         "branch": "강북지사",
         "manager": "G000104",
         "address": "서울 중랑구 신내동 530-1 신내동천주교회 1층",
@@ -166,7 +166,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52057021.0",
-        "name": "(재)천주교서울대교구유지재단 (세종로묘원)",
+        "name": "(재*********************",
         "branch": "남양주지사",
         "manager": "G000602",
         "address": "경기 남양주시 별내동 1483-4번지 관리소",
@@ -177,7 +177,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51765638.0",
-        "name": "파고다아카데미(GiGAeyes guard)",
+        "name": "파고*********************",
         "branch": "서대문지사",
         "manager": "G000203",
         "address": "서울 서대문구 창천동 20-41 아남오피스텔 본관 3층 4층 5층",
@@ -188,7 +188,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51356101.0",
-        "name": "올웨이(성수골목점)",
+        "name": "올웨********",
         "branch": "강북지사",
         "manager": "G000106",
         "address": "서울 성동구 성수동2가 320-1 1층",
@@ -199,7 +199,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51968543.0",
-        "name": "키친42지행역점(GiGAeyes guard)",
+        "name": "키친**********************",
         "branch": "의정부지사",
         "manager": "G000504",
         "address": "경기 동두천시 지행동 721-4 송내메가타운 4층 (키친42지행역점)",
@@ -210,7 +210,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52303476.0",
-        "name": "임천조씨일봉공파종증",
+        "name": "임천********",
         "branch": "의정부지사",
         "manager": "G000504",
         "address": "경기 연천군 군남면 왕림리 580-1 진은로 272-27",
@@ -221,7 +221,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51060047.0",
-        "name": "(주)제이레퍼토리",
+        "name": "(주*******",
         "branch": "서대문지사",
         "manager": "G000203",
         "address": "서울 마포구 동교동 179-9번지 45층",
@@ -232,7 +232,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50826449.0",
-        "name": "사조산업1층(OCT)",
+        "name": "사조*********",
         "branch": "서대문지사",
         "manager": "G000204",
         "address": "서울 서대문구 충정로2가 157번지",
@@ -243,7 +243,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51260041.0",
-        "name": "휴비즈(B101호)",
+        "name": "휴비********",
         "branch": "강북지사",
         "manager": "G000106",
         "address": "서울 성동구 성수동2가 280-9 생각공장 101",
@@ -254,7 +254,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50851527.0",
-        "name": "금강우레탄 제1공장(OCT)",
+        "name": "금강*************",
         "branch": "남양주지사",
         "manager": "G000601",
         "address": "경기 남양주시 화도읍 차산리 218",
@@ -265,7 +265,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52012098.0",
-        "name": "원전종합건설상봉동현장",
+        "name": "원전*********",
         "branch": "강북지사",
         "manager": "G000104",
         "address": "서울 중랑구 상봉동 110-38 공사현장",
@@ -276,7 +276,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51672238.0",
-        "name": "덕유(GiGAeyes guard)",
+        "name": "덕유****************",
         "branch": "의정부지사",
         "manager": "G000502",
         "address": "경기 양주시 상수리 상수리 632-4번지",
@@ -287,7 +287,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51834625.0",
-        "name": "프레야",
+        "name": "프레*",
         "branch": "중앙지사",
         "manager": "G000407",
         "address": "서울 종로구 인의동 89-11 2층",
@@ -298,7 +298,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50866085.0",
-        "name": "킹크로치(OCT)",
+        "name": "킹크*******",
         "branch": "서대문지사",
         "manager": "G000203",
         "address": "서울 마포구 창전동 6-1번지 지하1층",
@@ -309,7 +309,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52146114.0",
-        "name": "강현석",
+        "name": "강현*",
         "branch": "의정부지사",
         "manager": "G000506",
         "address": "강원 철원군 철원읍 율이리 260-1 (율이리257-6단독주택)",
@@ -320,7 +320,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52295361.0",
-        "name": "텅",
+        "name": "텅*",
         "branch": "중앙지사",
         "manager": "G000407",
         "address": "서울 종로구 운니동 98-20 8층",
@@ -331,7 +331,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50915549.0",
-        "name": "에이치와이몰드(OCT)",
+        "name": "에이**********",
         "branch": "의정부지사",
         "manager": "G000502",
         "address": "경기 양주시 남면 화합로387번길 51-98(매곡리)",
@@ -342,7 +342,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51288485.0",
-        "name": "대흥건설(GiGAeyes guard)",
+        "name": "대흥******************",
         "branch": "남양주지사",
         "manager": "G000601",
         "address": "경기 남양주시 화도읍 녹촌리 414-3번지 야적장",
@@ -353,7 +353,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51806653.0",
-        "name": "라센트라(연남)(GiGAeyes guard)",
+        "name": "라센**********************",
         "branch": "서대문지사",
         "manager": "G000202",
         "address": "서울 마포구 연남동 서울 마포구 연남로 76 라센트라 연남관리실",
@@ -364,7 +364,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51587027.0",
-        "name": "춘천도시공사-환경자원부(소각동1)",
+        "name": "춘천****************",
         "branch": "서대문지사",
         "manager": "P000207",
         "address": "강원 춘천시 신동면 혈동리 산 235-1 환경사업소 소각동3층",
@@ -375,7 +375,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52183971.0",
-        "name": "(주)글로벌금융판매",
+        "name": "(주********",
         "branch": "고양지사",
         "manager": "G000307",
         "address": "경기 고양시 일산동구 백석동 1323 동문타워 1차 615호",
@@ -386,7 +386,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51563892.0",
-        "name": "케이티스카이라이프(화재-출입통제)",
+        "name": "케이****************",
         "branch": "서대문지사",
         "manager": "G000202",
         "address": "서울 마포구 상암동 1610번지 8층",
@@ -397,7 +397,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51731098.0",
-        "name": "룸페커(GiGAeyes guard)",
+        "name": "룸페*****************",
         "branch": "남양주지사",
         "manager": "G000602",
         "address": "경기 남양주시 오남읍 양지리 239-1 룸페커",
@@ -408,7 +408,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51834726.0",
-        "name": "(주)휴시스-소방출동(GiGAeyes guard)",
+        "name": "(주*************************",
         "branch": "서대문지사",
         "manager": "G000203",
         "address": "서울 서대문구 대현동 150 이대역마에스트로 전층",
@@ -419,7 +419,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51458899.0",
-        "name": "남시약국(GiGAeyes guard)",
+        "name": "남시******************",
         "branch": "중앙지사",
         "manager": "G000401",
         "address": "서울 중구 남대문로3가 30-15번지",
@@ -430,7 +430,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51684707.0",
-        "name": "퀸즈코퍼레이션장항지점(GiGAeyes guard)",
+        "name": "퀸즈*************************",
         "branch": "고양지사",
         "manager": "G000307",
         "address": "경기 고양시 일산동구 장항동 863-1번지 드림월드빌딩 301호",
@@ -441,7 +441,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52284083.0",
-        "name": "애드윈(GiGAeyes guard)",
+        "name": "애드*****************",
         "branch": "강북지사",
         "manager": "G000106",
         "address": "서울 성동구 성수동2가 277-43 201호",
@@ -452,7 +452,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51691004.0",
-        "name": "한국환경공단(GiGAeyes guard)",
+        "name": "한국********************",
         "branch": "고양지사",
         "manager": "G000309",
         "address": "경기 파주시 광탄면 분수리 분수리 479-1",
@@ -463,7 +463,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51648078.0",
-        "name": "팔마미트(GiGAeyes guard)",
+        "name": "팔마******************",
         "branch": "남양주지사",
         "manager": "G000602",
         "address": "경기 남양주시 진벌리 619-2번지",
@@ -474,7 +474,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51177183.0",
-        "name": "쥬미에르(501호)",
+        "name": "쥬미********",
         "branch": "중앙지사",
         "manager": "G000407",
         "address": "서울 종로구 봉익동 29-2 제일빌딩5층",
@@ -485,7 +485,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51294226.0",
-        "name": "썸타임",
+        "name": "썸타*",
         "branch": "서대문지사",
         "manager": "G000203",
         "address": "서울 서대문구 연희동 85-3",
@@ -496,7 +496,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51453395.0",
-        "name": "범천마을(GiGAeyes guard)",
+        "name": "범천******************",
         "branch": "강북지사",
         "manager": "G000105",
         "address": "서울 광진구 능동 222-3 범천타워",
@@ -507,7 +507,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51001910.0",
-        "name": "국민건강보험공단동두천연천지사",
+        "name": "국민*************",
         "branch": "의정부지사",
         "manager": "G000504",
         "address": "경기 연천군 전곡읍 전곡로81 kt2층",
@@ -518,7 +518,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51624415.0",
-        "name": "도반한방병원",
+        "name": "도반****",
         "branch": "중앙지사",
         "manager": "G000401",
         "address": "서울 종로구 내자동 219 포레스트빌딩 2층~15층",
@@ -529,7 +529,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51735618.0",
-        "name": "만리지화광화문점(GiGAeyes guard)",
+        "name": "만리**********************",
         "branch": "중앙지사",
         "manager": "G000401",
         "address": "서울 종로구 청진동 246번지 D타워4층",
@@ -540,7 +540,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51478198.0",
-        "name": "(주)보성아키테리어(OCT)",
+        "name": "(주*************",
         "branch": "강북지사",
         "manager": "G000106",
         "address": "서울 성동구 성수동2가 277-43 성수동아크벨리 14층",
@@ -551,7 +551,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "20217553.0",
-        "name": "서울누리새마을금고_송산아파트점외CD",
+        "name": "서울*****************",
         "branch": "중앙지사",
         "manager": "G000406",
         "address": "서울 성북구 동소문동4가 279번지 송산아파트 101동 경비실옆",
@@ -562,7 +562,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52296179.0",
-        "name": "한국보험금융(신설동)",
+        "name": "한국*********",
         "branch": "중앙지사",
         "manager": "G000406",
         "address": "서울 동대문구 신설동 76-31번지 4층",
@@ -573,7 +573,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51207038.0",
-        "name": "한국환경보전원",
+        "name": "한국*****",
         "branch": "강북지사",
         "manager": "G000105",
         "address": "서울 광진구 능동 18-11번지 어린이회관 2층",
@@ -584,7 +584,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51850903.0",
-        "name": "멍우리협곡관광농원(캠핑장)",
+        "name": "멍우************",
         "branch": "의정부지사",
         "manager": "G000506",
         "address": "경기 포천시 영북면 소회산리 372-3번지",
@@ -595,7 +595,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51569908.0",
-        "name": "커피스미스 세라 별내점",
+        "name": "커피**********",
         "branch": "남양주지사",
         "manager": "G000602",
         "address": "경기 남양주시 별내동 933번지",
@@ -606,7 +606,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51189407.0",
-        "name": "제이엔케이글로벌(주)",
+        "name": "제이*********",
         "branch": "서대문지사",
         "manager": "G000202",
         "address": "서울 마포구 상암동 481-6 (상암스테이션 충전소)",
@@ -617,7 +617,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51695732.0",
-        "name": "제이엔케이글로벌(주)",
+        "name": "제이*********",
         "branch": "중앙지사",
         "manager": "G000401",
         "address": "서울 중구 서소문동 37번지 서울시청서소문별관 수소충전소",
@@ -628,7 +628,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51286725.0",
-        "name": "성수동대림창고갤러리(OCT)",
+        "name": "성수*************",
         "branch": "강북지사",
         "manager": "G000106",
         "address": "서울 성동구 성수동2가 성수이로 78 1층좌측",
@@ -639,7 +639,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51832731.0",
-        "name": "나래산업",
+        "name": "나래**",
         "branch": "의정부지사",
         "manager": "G000506",
         "address": "경기 포천시 영중면 988",
@@ -650,7 +650,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51653450.0",
-        "name": "엠디클러스터(OCT)",
+        "name": "엠디*********",
         "branch": "의정부지사",
         "manager": "G000505",
         "address": "경기 포천시 가산면 가산리 171-1",
@@ -661,7 +661,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51840001.0",
-        "name": "서울건우정형외과의원(GiGAeyes guard)",
+        "name": "서울************************",
         "branch": "강북지사",
         "manager": "G000101",
         "address": "서울 노원구 공릉동 420-2번지 공릉동평화타운 301호",
@@ -672,7 +672,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51848548.0",
-        "name": "에이치짐회기점",
+        "name": "에이*****",
         "branch": "중앙지사",
         "manager": "G000405",
         "address": "서울 동대문구 회기동 77-40번지 한성베스트빌 지하 1층~3층",
@@ -683,7 +683,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51853902.0",
-        "name": "사랑채데이케어센터(OCT)",
+        "name": "사랑************",
         "branch": "고양지사",
         "manager": "G000308",
         "address": "경기 고양시 일산동구 중산동 1568번지 일산프라자 4층",
@@ -694,7 +694,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51833197.0",
-        "name": "강남호랑이마취통증의학과의원4층(GiGAeyes guard)",
+        "name": "강남******************************",
         "branch": "중앙지사",
         "manager": "G000408",
         "address": "서울 성동구 금호동4가 559 34층",
@@ -705,7 +705,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50245363.0",
-        "name": "노원프라자약국(OCT)",
+        "name": "노원**********",
         "branch": "강북지사",
         "manager": "G000101",
         "address": "서울 노원구 상계동 763-6 1층 약국",
@@ -716,7 +716,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "20561021.0",
-        "name": "진성푸드(OCT)",
+        "name": "진성*******",
         "branch": "의정부지사",
         "manager": "G000501",
         "address": "경기 의정부시 산곡동 621-6번지",
@@ -727,7 +727,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51659423.0",
-        "name": "명문모터스(GiGAeyes guard)",
+        "name": "명문*******************",
         "branch": "고양지사",
         "manager": "G000301",
         "address": "경기 고양시 덕양구 벽제동 314-5",
@@ -738,7 +738,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50817757.0",
-        "name": "영민케미칼(OCT)",
+        "name": "영민********",
         "branch": "의정부지사",
         "manager": "G000502",
         "address": "경기 양주시 장흥면 가마골로100번길14",
@@ -749,7 +749,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51656083.0",
-        "name": "고구마텍스타일(OCT)",
+        "name": "고구**********",
         "branch": "의정부지사",
         "manager": "G000505",
         "address": "경기 포천시 동교동 156-1",
@@ -760,7 +760,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51643955.0",
-        "name": "케이케이씨통상(OCT)",
+        "name": "케이**********",
         "branch": "의정부지사",
         "manager": "G000502",
         "address": "경기 양주시 광적면 가납리 245 가납리",
@@ -771,7 +771,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51655836.0",
-        "name": "별별장어상계점(GiGAeyes guard)",
+        "name": "별별*********************",
         "branch": "강북지사",
         "manager": "G000101",
         "address": "서울 노원구 상계동 176-21번지 주식회사 천조 수산",
@@ -782,7 +782,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51666806.0",
-        "name": "대한예수교장로회영광교회(GiGAeyes guard)",
+        "name": "대한**************************",
         "branch": "강북지사",
         "manager": "G000107",
         "address": "서울 성북구 하월곡동 222-7",
@@ -793,7 +793,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "20495310.0",
-        "name": "의양종합주류(OCT)",
+        "name": "의양*********",
         "branch": "의정부지사",
         "manager": "G000502",
         "address": "경기 양주시 장흥면 부곡리 564",
@@ -804,7 +804,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51833784.0",
-        "name": "케이마켓(GiGAeyes guard)",
+        "name": "케이******************",
         "branch": "중앙지사",
         "manager": "G000402",
         "address": "서울 중구 명동2가 50-14 유네스코회관 104호",
@@ -815,7 +815,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51645637.0",
-        "name": "중계넘버원정형외과의원(GiGAeyes i-guard)",
+        "name": "중계***************************",
         "branch": "강북지사",
         "manager": "G000101",
         "address": "서울 노원구 중계동 359-11번지 성모빌딩 201호",
@@ -826,7 +826,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50873186.0",
-        "name": "서진섬유(OCT)",
+        "name": "서진*******",
         "branch": "강북지사",
         "manager": "G000107",
         "address": "서울 성북구 상월곡동 23-27",
@@ -837,7 +837,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51651226.0",
-        "name": "피앤씨2",
+        "name": "피앤**",
         "branch": "중앙지사",
         "manager": "G000403",
         "address": "서울 중구 필동2가 16-6번지 풍산빌딩 풍산빌딩",
@@ -848,7 +848,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51279513.0",
-        "name": "행복골프훈련소(일산덕이)(GiGAeyes guard)",
+        "name": "행복***************************",
         "branch": "고양지사",
         "manager": "G000308",
         "address": "경기 고양시 일산서구 덕이동 309-88 2층",
@@ -859,7 +859,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50814182.0",
-        "name": "대명씨푸드(OCT)",
+        "name": "대명********",
         "branch": "의정부지사",
         "manager": "G000505",
         "address": "경기 포천시 군내면 용정리 486-8",
@@ -870,7 +870,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51666592.0",
-        "name": "정일섬유(GiGAeyes guard)",
+        "name": "정일******************",
         "branch": "의정부지사",
         "manager": "G000505",
         "address": "경기 포천시 선단동 815-4",
@@ -881,7 +881,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52134851.0",
-        "name": "연세부자제상가",
+        "name": "연세*****",
         "branch": "중앙지사",
         "manager": "G000401",
         "address": "서울 중구 남창동  64-1",
@@ -892,7 +892,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51465989.0",
-        "name": "대현에벤에셀(3창고)(OCT)",
+        "name": "대현**************",
         "branch": "의정부지사",
         "manager": "G000505",
         "address": "경기 포천시 송우리 298-4",
@@ -903,7 +903,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51985296.0",
-        "name": "주식회사 엘라부티크",
+        "name": "주식********",
         "branch": "서대문지사",
         "manager": "G000205",
         "address": "서울 마포구 서교동 343-1 3층 서문빌딩",
@@ -914,7 +914,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "10735091.0",
-        "name": "금호4가동주민센터-34층 대강당대",
+        "name": "금호****************",
         "branch": "중앙지사",
         "manager": "G000408",
         "address": "서울 성동구 금호동4가 803번지2층",
@@ -925,7 +925,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51834667.0",
-        "name": "제이에스스토어(GiGAeyes guard)",
+        "name": "제이*********************",
         "branch": "서대문지사",
         "manager": "G000205",
         "address": "서울 마포구 서교동 329-1",
@@ -936,7 +936,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51430083.0",
-        "name": "구리시여성행복센터-4층드림센터(GiGAeyes guard)",
+        "name": "구리******************************",
         "branch": "남양주지사",
         "manager": "G000603",
         "address": "경기 구리시 교문동 390-1",
@@ -947,7 +947,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51177346.0",
-        "name": "아티젠(GiGAeyes guard)",
+        "name": "아티*****************",
         "branch": "중앙지사",
         "manager": "G000403",
         "address": "서울 용산구 한강로2가 98-3번지",
@@ -958,7 +958,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51054266.0",
-        "name": "절두산순교성지",
+        "name": "절두*****",
         "branch": "서대문지사",
         "manager": "G000205",
         "address": "서울 마포구 합정동 96-1번지",
@@ -969,7 +969,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52305966.0",
-        "name": "천주교우이성당(GiGAeyes guard)",
+        "name": "천주*********************",
         "branch": "강북지사",
         "manager": "G000102",
         "address": "서울 도봉구 쌍문동 485-3 천주교 우이성당",
@@ -980,7 +980,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52048735.0",
-        "name": "가회동성당묘원관리사무소",
+        "name": "가회**********",
         "branch": "고양지사",
         "manager": "G000301",
         "address": "경기 고양시 덕양구 대자동 산15-49",
@@ -991,7 +991,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50607449.0",
-        "name": "호정아트빌-DVR뷰",
+        "name": "호정********",
         "branch": "남양주지사",
         "manager": "G000603",
         "address": "경기 구리시 토평동 976-7번지 호정아트빌 빌라",
@@ -1002,7 +1002,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51671487.0",
-        "name": "지아이서플러스",
+        "name": "지아*****",
         "branch": "의정부지사",
         "manager": "G000501",
         "address": "경기 의정부시 의정부동 236-34번지 하나빌딩 (의정부동하나빌딩)234층",
@@ -1013,7 +1013,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51642473.0",
-        "name": "맘스터치-종암점(OCT)",
+        "name": "맘스***********",
         "branch": "강북지사",
         "manager": "G000107",
         "address": "서울 성북구 종암동 14-2번지 맘스터치",
@@ -1024,7 +1024,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51039221.0",
-        "name": "올웨이상왕십리점(GiGAeyes guard)",
+        "name": "올웨**********************",
         "branch": "중앙지사",
         "manager": "G000404",
         "address": "서울 성동구 하왕십리동 1070 센트라스 L동B07호(상왕십리역1-1번출구옆)",
@@ -1035,7 +1035,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51436699.0",
-        "name": "키친42왕십리점(지하2층)(GiGAeyes guard)",
+        "name": "키친****************************",
         "branch": "중앙지사",
         "manager": "G000404",
         "address": "서울 성동구 하왕십리동 966-22 (무학봉28길 4-1)",
@@ -1046,7 +1046,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51622621.0",
-        "name": "창창족발(GiGAeyes guard)",
+        "name": "창창******************",
         "branch": "중앙지사",
         "manager": "G000408",
         "address": "서울 종로구 창신동 23-446번지 123층",
@@ -1057,7 +1057,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51610066.0",
-        "name": "한올제과",
+        "name": "한올**",
         "branch": "의정부지사",
         "manager": "G000505",
         "address": "경기 포천시 가산면 정교리 412",
@@ -1068,7 +1068,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51669087.0",
-        "name": "(재)환경기술정책연구원(GiGAeyes guard)",
+        "name": "(재**************************",
         "branch": "중앙지사",
         "manager": "G000408",
         "address": "서울 동대문구 용두동 118-126",
@@ -1079,7 +1079,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52147446.0",
-        "name": "에버리치",
+        "name": "에버**",
         "branch": "의정부지사",
         "manager": "G000501",
         "address": "경기 의정부시 의정부동  20-12 관리사무소 (의정부동 에버리치)",
@@ -1090,7 +1090,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51278666.0",
-        "name": "서울미르한방병원(GiGAeyes guard)",
+        "name": "서울**********************",
         "branch": "강북지사",
         "manager": "G000101",
         "address": "서울 노원구 공릉동 323-2번지 공삼빌딩 2층",
@@ -1101,7 +1101,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "11125541.0",
-        "name": "엄웅가정집(OCT)",
+        "name": "엄웅********",
         "branch": "서대문지사",
         "manager": "G000201",
         "address": "서울 은평구 갈현2동 476-6",
@@ -1112,7 +1112,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51461186.0",
-        "name": "형제상가(GiGAeyes i-guard premium)",
+        "name": "형제****************************",
         "branch": "의정부지사",
         "manager": "G000501",
         "address": "경기 의정부시 호원동 312-11",
@@ -1123,7 +1123,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51852274.0",
-        "name": "대박나소(GiGAeyes guard)",
+        "name": "대박******************",
         "branch": "고양지사",
         "manager": "G000308",
         "address": "경기 고양시 일산서구 덕이동 278-1",
@@ -1134,7 +1134,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51439456.0",
-        "name": "극단산울림",
+        "name": "극단***",
         "branch": "서대문지사",
         "manager": "G000205",
         "address": "서울 마포구 서교동 327-19번지 1층",
@@ -1145,7 +1145,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51507758.0",
-        "name": "JS성의종합관리(주)-으뜸웰타워",
+        "name": "JS***************",
         "branch": "남양주지사",
         "manager": "G000605",
         "address": "경기 남양주시 다산동 6052-2 으뜸웰타워 지하1층 관리사무실",
@@ -1156,7 +1156,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50087785.0",
-        "name": "한양자동차정비(OCT)",
+        "name": "한양**********",
         "branch": "강북지사",
         "manager": "G000102",
         "address": "서울 도봉구 창동 748-1",
@@ -1167,7 +1167,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50659212.0",
-        "name": "국립암센터(의공학연구과)(OCT)",
+        "name": "국립****************",
         "branch": "고양지사",
         "manager": "G000307",
         "address": "경기 고양시 일산구 마두동 857-2번지 서오능상가4층",
@@ -1178,7 +1178,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "10473600.0",
-        "name": "혜성지업1층(OCT)",
+        "name": "혜성*********",
         "branch": "중앙지사",
         "manager": "G000402",
         "address": "서울 중구 인현동1가 132-2  1층",
@@ -1189,7 +1189,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50264555.0",
-        "name": "가구톡세상 ",
+        "name": "가구***",
         "branch": "고양지사",
         "manager": "G000308",
         "address": "경기 고양시 일산구 구산동 송산로23번지",
@@ -1200,7 +1200,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50032190.0",
-        "name": "한텍-포천지사(OCT뷰)",
+        "name": "한텍***********",
         "branch": "의정부지사",
         "manager": "G000505",
         "address": "경기 포천시 신북면 가채리295-1",
@@ -1211,7 +1211,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51663772.0",
-        "name": "글로벌금융판매(GiGAeyes guard)",
+        "name": "글로*********************",
         "branch": "남양주지사",
         "manager": "G000605",
         "address": "경기 남양주시 다산동 4336-56  10층 1001호 1002호",
@@ -1222,7 +1222,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52270177.0",
-        "name": "케이지에이에셋 주식회사",
+        "name": "케이**********",
         "branch": "의정부지사",
         "manager": "G000501",
         "address": "경기 의정부시 민락동 744-4 번지 5층",
@@ -1233,7 +1233,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51424555.0",
-        "name": "(주)케어맥스코리아(1~3동)(OCT)",
+        "name": "(주*******************",
         "branch": "고양지사",
         "manager": "G000304",
         "address": "경기 파주시 야동동 244-9 야동동 244",
@@ -1244,7 +1244,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50896305.0",
-        "name": "무적컴퍼니(OCT)",
+        "name": "무적********",
         "branch": "고양지사",
         "manager": "G000302",
         "address": "경기 고양시 덕양구 행신동 761-1번지",
@@ -1255,7 +1255,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51905747.0",
-        "name": "도다텔-역촌점(GiGAeyes guard)",
+        "name": "도다*********************",
         "branch": "서대문지사",
         "manager": "G000201",
         "address": "서울 은평구 역촌동 16-7 1층",
@@ -1266,7 +1266,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50936441.0",
-        "name": "한화",
+        "name": "한*",
         "branch": "중앙지사",
         "manager": "G000402",
         "address": "서울 중구 장교동  1 16층",
@@ -1277,7 +1277,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51045729.0",
-        "name": "명진엠알오(OCT)",
+        "name": "명진********",
         "branch": "의정부지사",
         "manager": "G000505",
         "address": "경기 포천시 설운동 95-9",
@@ -1288,7 +1288,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52013071.0",
-        "name": "예지플러스",
+        "name": "예지***",
         "branch": "의정부지사",
         "manager": "G000501",
         "address": "경기 의정부시 민락동 821-1",
@@ -1299,7 +1299,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51284755.0",
-        "name": "시스템벤트-2공장(OCT)",
+        "name": "시스************",
         "branch": "의정부지사",
         "manager": "G000502",
         "address": "경기 양주시 광적면 가납리 416-1 (2공장)",
@@ -1310,7 +1310,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51068865.0",
-        "name": "시스템벤트주식회사",
+        "name": "시스*******",
         "branch": "강북지사",
         "manager": "G000101",
         "address": "서울 노원구 하계동 250-3 하계테크노타운 A동801호",
@@ -1321,7 +1321,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52214050.0",
-        "name": "사단법인 대한불교조계종 석운사",
+        "name": "사단**************",
         "branch": "고양지사",
         "manager": "G000308",
         "address": "경기 고양시 일산구 일산동 산현로78번길23 선명프라자 5층 일산자비선언",
@@ -1332,7 +1332,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50500015.0",
-        "name": "컴스마트-창고1",
+        "name": "컴스******",
         "branch": "고양지사",
         "manager": "G000308",
         "address": "경기 고양시 일산구 구산동 624-2번지 창고",
@@ -1343,7 +1343,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52177669.0",
-        "name": "케이티서비스남부-강북그린센터(OCT)",
+        "name": "케이******************",
         "branch": "고양지사",
         "manager": "G000307",
         "address": "경기 고양시 일산동구 백석동 1141 본관1층",
@@ -1354,7 +1354,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51846191.0",
-        "name": "한우타운 숯불구이 정육식당",
+        "name": "한우************",
         "branch": "중앙지사",
         "manager": "G000404",
         "address": "서울 성동구 마장동 761-3 전층",
@@ -1365,7 +1365,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51027119.0",
-        "name": "마루CC",
+        "name": "마루**",
         "branch": "강북지사",
         "manager": "G000101",
         "address": "서울 노원구 상계동 659번지",
@@ -1376,7 +1376,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "20485854.0",
-        "name": "파주컨트리클럽",
+        "name": "파주*****",
         "branch": "고양지사",
         "manager": "G000309",
         "address": "경기 파주시 법원읍 갈곡리 358-1",
@@ -1387,7 +1387,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51131122.0",
-        "name": "주식회사 제이디블루",
+        "name": "주식********",
         "branch": "의정부지사",
         "manager": "G000503",
         "address": "경기 의정부시 녹양동 407-9번지 2층",
@@ -1398,7 +1398,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52122463.0",
-        "name": "케이그랜드호스텔",
+        "name": "케이******",
         "branch": "중앙지사",
         "manager": "G000404",
         "address": "서울 성동구 하왕십리동 966-68 (하왕십리동 설악빌딩)",
@@ -1409,7 +1409,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50754900.0",
-        "name": "자유로마트덕이점(OCT)",
+        "name": "자유***********",
         "branch": "고양지사",
         "manager": "G000308",
         "address": "경기 고양시 일산서구 덕이동 373-16번지",
@@ -1420,7 +1420,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51831146.0",
-        "name": "엠케이씨(GiGAeyes guard)",
+        "name": "엠케******************",
         "branch": "고양지사",
         "manager": "G000309",
         "address": "경기 파주시 조리읍 장곡리 17-48 보성산업",
@@ -1431,7 +1431,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "20258566.0",
-        "name": "국민건강보험공단은평지사3층",
+        "name": "국민************",
         "branch": "서대문지사",
         "manager": "G000201",
         "address": "서울 은평구 대조동 84-1 KT은평지사 3층 금고실",
@@ -1442,7 +1442,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51665123.0",
-        "name": "황소정형외과(OCT)",
+        "name": "황소*********",
         "branch": "강북지사",
         "manager": "G000103",
         "address": "서울 강북구 미아동  62-28",
@@ -1453,7 +1453,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50824796.0",
-        "name": "동산빌딩",
+        "name": "동산**",
         "branch": "중앙지사",
         "manager": "G000408",
         "address": "서울 동대문구 청량리동 235-2번지 지하",
@@ -1464,7 +1464,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52172743.0",
-        "name": "(주)보성아키테리어",
+        "name": "(주********",
         "branch": "남양주지사",
         "manager": "G000605",
         "address": "경기 남양주시 수석동 12-2번지 단독주택",
@@ -1475,7 +1475,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51853135.0",
-        "name": "(주)언희당교육그룹(GiGAeyes guard)",
+        "name": "(주************************",
         "branch": "강북지사",
         "manager": "G000101",
         "address": "서울 노원구 중계동 366-14 5층",
@@ -1486,7 +1486,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51886358.0",
-        "name": "전원농장2",
+        "name": "전원***",
         "branch": "의정부지사",
         "manager": "G000506",
         "address": "경기 포천시 영북면 자일리 494-2 농장",
@@ -1497,7 +1497,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52176570.0",
-        "name": "노야-용산아이파크",
+        "name": "노야*******",
         "branch": "중앙지사",
         "manager": "G000402",
         "address": "서울 중구 을지로4가 323 을지트윈타워 지하1층 103호",
@@ -1508,7 +1508,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51471848.0",
-        "name": "촌놈_신창점",
+        "name": "촌놈****",
         "branch": "강북지사",
         "manager": "G000102",
         "address": "서울 도봉구 창동 578-160",
@@ -1519,7 +1519,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51672299.0",
-        "name": "플러스오피스텔(GiGAeyes guard)",
+        "name": "플러*********************",
         "branch": "강북지사",
         "manager": "G000102",
         "address": "서울 도봉구 창동 181-46 플러스오피스텔",
@@ -1530,7 +1530,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51438951.0",
-        "name": "카페베어데이(GiGAeyes guard)",
+        "name": "카페********************",
         "branch": "서대문지사",
         "manager": "G000205",
         "address": "서울 마포구 상수동 314-9 건물전층",
@@ -1541,7 +1541,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51193559.0",
-        "name": "올랜드아울렛물류센터_1동(OCT)",
+        "name": "올랜****************",
         "branch": "고양지사",
         "manager": "G000309",
         "address": "경기 파주시 조리읍 뇌조리 459-1번지 (현 자산유리부지)",
@@ -1552,7 +1552,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52193970.0",
-        "name": "경기교통공사-CS콜센타",
+        "name": "경기**********",
         "branch": "의정부지사",
         "manager": "G000503",
         "address": "경기 양주시 옥정동 967-4 (비타민프라자 3층)",
@@ -1563,7 +1563,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51675329.0",
-        "name": "보장산목장",
+        "name": "보장***",
         "branch": "의정부지사",
         "manager": "G000506",
         "address": "경기 포천시 창수면 오가리 253번지",
@@ -1574,7 +1574,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51855435.0",
-        "name": "보띠에(GiGAeyes guard)",
+        "name": "보띠*****************",
         "branch": "서대문지사",
         "manager": "G000205",
         "address": "서울 마포구 서교동 463-3번지 3층",
@@ -1585,7 +1585,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50807729.0",
-        "name": "교현알뜰주유소",
+        "name": "교현*****",
         "branch": "의정부지사",
         "manager": "G000502",
         "address": "경기 양주시 장흥면 교현리 333-3번지",
@@ -1596,7 +1596,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51598249.0",
-        "name": "레이지파머스(A동)(GiGAeyes guard)",
+        "name": "레이************************",
         "branch": "중앙지사",
         "manager": "G000403",
         "address": "서울 용산구 이태원동 228-4 A동 지하1층12층",
@@ -1607,7 +1607,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50105155.0",
-        "name": "혜성지업창고(OCT)",
+        "name": "혜성*********",
         "branch": "서대문지사",
         "manager": "G000204",
         "address": "서울 용산구 청파동2가 28-4  1층 창고",
@@ -1618,7 +1618,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51128573.0",
-        "name": "양평가락식자재(OCT)",
+        "name": "양평**********",
         "branch": "남양주지사",
         "manager": "G000604",
         "address": "경기 양평군 옥천면아신리 437-4번지",
@@ -1629,7 +1629,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51570752.0",
-        "name": "양동농장(버덩농장)gigaeyes뷰(DVR)",
+        "name": "양동**********************",
         "branch": "남양주지사",
         "manager": "G000604",
         "address": "경기 양평군 양동면 쌍학리 880-6번지  양동목장",
@@ -1640,7 +1640,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51829133.0",
-        "name": "비비베이커리(GiGAeyes guard)",
+        "name": "비비********************",
         "branch": "남양주지사",
         "manager": "G000604",
         "address": "경기 양평군 양평읍공흥리 290-5",
@@ -1651,7 +1651,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51666508.0",
-        "name": "용연네이처힐링팜",
+        "name": "용연******",
         "branch": "남양주지사",
         "manager": "G000604",
         "address": "경기 양평군 용문면 화전리  476-3번지",
@@ -1662,7 +1662,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51484314.0",
-        "name": "팔복농산제2공장(GiGAeyes guard)",
+        "name": "팔복**********************",
         "branch": "남양주지사",
         "manager": "G000604",
         "address": "경기 양평군 강상면 신화리 678-2번지",
@@ -1673,7 +1673,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51536451.0",
-        "name": "양평요양원(GiGAeyes guard)",
+        "name": "양평*******************",
         "branch": "남양주지사",
         "manager": "G000604",
         "address": "경기 양평군 강상면 병산리 796-5번지  드림요양원",
@@ -1684,7 +1684,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51530628.0",
-        "name": "(주)아리바이오연수원gigaeyes뷰(NVR)",
+        "name": "(주***********************",
         "branch": "남양주지사",
         "manager": "G000604",
         "address": "경기 양평군 청운면신론리 556-1번지",
@@ -1695,7 +1695,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51817770.0",
-        "name": "파고다아카데미양평점(GiGAeyes guard)",
+        "name": "파고************************",
         "branch": "남양주지사",
         "manager": "G000604",
         "address": "경기 양평군 옥천면 신복리 381번지  (주)파고다아카데미양평지점",
@@ -1706,7 +1706,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51440893.0",
-        "name": "위비앙병원(GiGAeyes i-guard premium)",
+        "name": "위비*****************************",
         "branch": "서대문지사",
         "manager": "G000204",
         "address": "서울 마포구 아현동 346-5번지",
@@ -1717,7 +1717,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51088477.0",
-        "name": "365식자재할인마트(OCT)",
+        "name": "36*************",
         "branch": "의정부지사",
         "manager": "G000501",
         "address": "경기 의정부시 의정부동 414-24번지",
@@ -1728,7 +1728,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51564989.0",
-        "name": "지역먹거리매장-로컬푸드매장(GiGAeyes guard)",
+        "name": "지역****************************",
         "branch": "서대문지사",
         "manager": "P000207",
         "address": "강원 춘천시 삼천동 22-15",
@@ -1739,7 +1739,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51894010.0",
-        "name": "동연디자인파주3공장(OCT)",
+        "name": "동연*************",
         "branch": "고양지사",
         "manager": "G000305",
         "address": "경기 파주시 탄현면 축현리 943",
@@ -1750,7 +1750,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50873606.0",
-        "name": "한남G.M.U(지엠유)(OCT)",
+        "name": "한남***************",
         "branch": "중앙지사",
         "manager": "G000403",
         "address": "서울 용산구 한남동 한남대로20길 21-13",
@@ -1761,7 +1761,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51835386.0",
-        "name": "옥경이네 건생선(GiGAeyes guard)",
+        "name": "옥경**********************",
         "branch": "중앙지사",
         "manager": "G000404",
         "address": "서울 중구 황학동 723-2번지 1층 12층",
@@ -1772,7 +1772,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51034205.0",
-        "name": "지엘제이(OCT)",
+        "name": "지엘*******",
         "branch": "의정부지사",
         "manager": "G000505",
         "address": "경기 포천시 가산면 가산리 489-1",
@@ -1783,7 +1783,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51456909.0",
-        "name": "홍제삼성본정형외과의원(GiGAeyes i-guard premium)",
+        "name": "홍제***********************************",
         "branch": "서대문지사",
         "manager": "G000201",
         "address": "서울 서대문구 홍제동 158-2번지 1층~3층",
@@ -1794,7 +1794,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51440074.0",
-        "name": "금강파크빌라",
+        "name": "금강****",
         "branch": "서대문지사",
         "manager": "G000201",
         "address": "서울 종로구 평창동 170번지 금강주택 전체",
@@ -1805,7 +1805,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50986706.0",
-        "name": "예길식품(OCT)",
+        "name": "예길*******",
         "branch": "서대문지사",
         "manager": "P000202",
         "address": "강원 횡성군 우천면 상하가리 553",
@@ -1816,7 +1816,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50862941.0",
-        "name": "서울함공원지점",
+        "name": "서울*****",
         "branch": "서대문지사",
         "manager": "G000202",
         "address": "서울 마포구 망원동 205-5번지 한강함상공원",
@@ -1827,7 +1827,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51024099.0",
-        "name": "서림관광개발 유한회사",
+        "name": "서림*********",
         "branch": "서대문지사",
         "manager": "P000202",
         "address": "강원 평창군 진부면 하진부리 100-23",
@@ -1838,7 +1838,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50679546.0",
-        "name": "대관령한우가공장",
+        "name": "대관******",
         "branch": "서대문지사",
         "manager": "P000202",
         "address": "강원 평창군 용평면 평창대로 1948-25",
@@ -1849,7 +1849,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50298736.0",
-        "name": "에스피엠(SPM)(OCT)",
+        "name": "에스************",
         "branch": "서대문지사",
         "manager": "P000207",
         "address": "강원 춘천시 남산면 창촌리 636",
@@ -1860,7 +1860,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50692154.0",
-        "name": "글로벌금융판매(OCT)",
+        "name": "글로**********",
         "branch": "서대문지사",
         "manager": "P000201",
         "address": "강원 원주시 무실동 능라동길 63 법조타워 504호 (무실동)",
@@ -1871,7 +1871,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51755513.0",
-        "name": "광명테크(GiGAeyes guard)",
+        "name": "광명******************",
         "branch": "서대문지사",
         "manager": "P000208",
         "address": "강원 인제군 인제읍 가아리 495",
@@ -1882,7 +1882,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51443931.0",
-        "name": "케이티스카이라이프(GiGAeyes guard)",
+        "name": "케이***********************",
         "branch": "서대문지사",
         "manager": "P000201",
         "address": "강원 원주시 무실동 1857-10 시네시티타워 4층",
@@ -1893,7 +1893,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52097467.0",
-        "name": "컴스마트",
+        "name": "컴스**",
         "branch": "중앙지사",
         "manager": "G000403",
         "address": "서울 용산구 한강로2가 15-14 선인상가 21동 지하2호",
@@ -1904,7 +1904,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52301385.0",
-        "name": "KT프라자-제천점",
+        "name": "KT*******",
         "branch": "서대문지사",
         "manager": "P000203",
         "address": "충북 제천시 의림동 49-1 1층 KT프라자",
@@ -1915,7 +1915,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "20458529.0",
-        "name": "세인블루노림리(OCT)",
+        "name": "세인**********",
         "branch": "서대문지사",
         "manager": "P000201",
         "address": "강원 원주시 부론면 노림리 881-2",
@@ -1926,7 +1926,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50589717.0",
-        "name": "에이치디피(OCT)",
+        "name": "에이********",
         "branch": "서대문지사",
         "manager": "P000202",
         "address": "강원 원주시 중앙동 108-1(중앙로 109)",
@@ -1937,7 +1937,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "11055154.0",
-        "name": "전인고등학교",
+        "name": "전인****",
         "branch": "서대문지사",
         "manager": "P000207",
         "address": "강원 춘천시 동산면 원창리 923-1",
@@ -1948,7 +1948,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52150774.0",
-        "name": "원주중앙성결교회.",
+        "name": "원주*******",
         "branch": "서대문지사",
         "manager": "P000202",
         "address": "강원 원주시 행구동 1683-1",
@@ -1959,7 +1959,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50370250.0",
-        "name": "토이랜드",
+        "name": "토이**",
         "branch": "서대문지사",
         "manager": "P000201",
         "address": "강원 원주시 관설동 1761-2 1층",
@@ -1970,7 +1970,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51830667.0",
-        "name": "아이리츠 춘천(GiGAeyes guard)",
+        "name": "아이*********************",
         "branch": "서대문지사",
         "manager": "P000207",
         "address": "강원 춘천시 온의동 65-44 1층~5층",
@@ -1981,7 +1981,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51141928.0",
-        "name": "강원철강산업(OCT)",
+        "name": "강원*********",
         "branch": "서대문지사",
         "manager": "P000202",
         "address": "강원 횡성군 우천면 법주리 714 (주)효명 중원철강",
@@ -1992,7 +1992,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51440575.0",
-        "name": "미래빌딩",
+        "name": "미래**",
         "branch": "서대문지사",
         "manager": "P000207",
         "address": "강원 춘천시 효자동 17-9번지 미래빌딩 미래빌딩",
@@ -2003,7 +2003,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50481201.0",
-        "name": "연세메디컬의원(OCT)",
+        "name": "연세**********",
         "branch": "서대문지사",
         "manager": "P000201",
         "address": "강원 원주시 무실동 시청로70 2층",
@@ -2014,7 +2014,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52149360.0",
-        "name": "(주)민토평창리조트",
+        "name": "(주********",
         "branch": "서대문지사",
         "manager": "P000202",
         "address": "강원 평창군 봉평면 무이리 738-1 1층",
@@ -2025,7 +2025,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52118391.0",
-        "name": "인제고려병원",
+        "name": "인제****",
         "branch": "서대문지사",
         "manager": "P000208",
         "address": "강원 인제군 인제읍 상동리 256-4 인제고려병원 신축건물 고려병원 별관 (인제상동 인제고려병원신축건물)",
@@ -2036,7 +2036,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51844475.0",
-        "name": "육키즈(GiGAeyes guard)",
+        "name": "육키*****************",
         "branch": "서대문지사",
         "manager": "P000201",
         "address": "강원 원주시 흥업면 251-13",
@@ -2047,7 +2047,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51833296.0",
-        "name": "속초덕장-대포(OCT)",
+        "name": "속초**********",
         "branch": "강북지사",
         "manager": "P000103",
         "address": "강원 속초시 대포동 976-2 속초덕장",
@@ -2058,7 +2058,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51155426.0",
-        "name": "칼봉산자연휴양림(사무실)",
+        "name": "칼봉***********",
         "branch": "서대문지사",
         "manager": "P000209",
         "address": "경기 가평군 가평읍 경반리 산 137",
@@ -2069,7 +2069,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50277444.0",
-        "name": "삼팔횟집-OCT뷰",
+        "name": "삼팔*******",
         "branch": "강북지사",
         "manager": "P000103",
         "address": "강원 양양군 현북면 기사문리98",
@@ -2080,7 +2080,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50842417.0",
-        "name": "김경희가정집",
+        "name": "김경****",
         "branch": "서대문지사",
         "manager": "P000209",
         "address": "경기 가평군 가평읍 읍내리 462-4",
@@ -2091,7 +2091,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50117672.0",
-        "name": "(주)한텍-춘천지사(Nvr-view)",
+        "name": "(주******************",
         "branch": "서대문지사",
         "manager": "P000206",
         "address": "강원 춘천시 동면 만천양지길 147",
@@ -2102,7 +2102,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51465951.0",
-        "name": "글로벌금융-삼척점(GiGAeyes guard)",
+        "name": "글로***********************",
         "branch": "강북지사",
         "manager": "P000104",
         "address": "강원 삼척시 교동 740-7 2층  - 교동닭갈비2층",
@@ -2113,7 +2113,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52013349.0",
-        "name": "유한회사 광명테크-왕산NVR",
+        "name": "유한*************",
         "branch": "강북지사",
         "manager": "P000101",
         "address": "강원 강릉시 왕산면 고단리 828-1 태양광",
@@ -2124,7 +2124,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51759576.0",
-        "name": "한화오션(주)",
+        "name": "한화*****",
         "branch": "강북지사",
         "manager": "P000103",
         "address": "강원 양양군 서면내현리 320",
@@ -2135,7 +2135,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52344740.0",
-        "name": "지에스건설-해저5구역",
+        "name": "지에*********",
         "branch": "강북지사",
         "manager": "P000104",
         "address": "강원 동해시 송정동 1702 GS건설 현장사무실",
@@ -2146,7 +2146,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50824864.0",
-        "name": "일송학원",
+        "name": "일송**",
         "branch": "서대문지사",
         "manager": "P000206",
         "address": "강원 춘천시 서면 덕두원리 144-1번지",
@@ -2157,7 +2157,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51492669.0",
-        "name": "교촌에프앤비(주)고성공장-본동2(GiGAeyes guard)",
+        "name": "교촌*******************************",
         "branch": "강북지사",
         "manager": "P000103",
         "address": "강원 고성군 토성면 성천리 113 .",
@@ -2168,7 +2168,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51472515.0",
-        "name": "자유PC방(무인PC방)",
+        "name": "자유**********",
         "branch": "강북지사",
         "manager": "P000101",
         "address": "강원 강릉시 내곡동 615-6 1층",
@@ -2179,7 +2179,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51472608.0",
-        "name": "드림넷(무인PC방)",
+        "name": "드림********",
         "branch": "강북지사",
         "manager": "P000101",
         "address": "강원 강릉시 내곡동 284-1 지하",
@@ -2190,7 +2190,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51002492.0",
-        "name": "삼대양레저-지하1층카트(OCT)",
+        "name": "삼대***************",
         "branch": "서대문지사",
         "manager": "P000202",
         "address": "강원 횡성군 우천면 한우로1295",
@@ -2201,7 +2201,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "10227598.0",
-        "name": "부광",
+        "name": "부*",
         "branch": "강북지사",
         "manager": "P000101",
         "address": "강원 강릉시 옥천동 326-1",
@@ -2212,7 +2212,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50247789.0",
-        "name": "원조속초게찜(OCT)",
+        "name": "원조*********",
         "branch": "강북지사",
         "manager": "P000103",
         "address": "강원 속초시 노학동 관광로 250",
@@ -2223,7 +2223,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51461311.0",
-        "name": "더맑은신경과의원(GiGAeyes guard)",
+        "name": "더맑**********************",
         "branch": "강북지사",
         "manager": "P000104",
         "address": "강원 동해시 효가동 162-34 3층 더맑은 신경과의원",
@@ -2234,7 +2234,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51822557.0",
-        "name": "주식회사 글로벌포트",
+        "name": "주식********",
         "branch": "강북지사",
         "manager": "P000104",
         "address": "강원 동해시 송정동 606-43  4번게이트",
@@ -2245,7 +2245,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51035597.0",
-        "name": "쿠우쿠우원주혁신점",
+        "name": "쿠우*******",
         "branch": "서대문지사",
         "manager": "P000202",
         "address": "강원 원주시 반곡동 황금로 34 3층(반곡동)",
@@ -2256,7 +2256,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51445174.0",
-        "name": "옵티마북삼약국(OCT)",
+        "name": "옵티**********",
         "branch": "강북지사",
         "manager": "P000104",
         "address": "강원 동해시 효가동 162-34 초이스빌딩",
@@ -2267,7 +2267,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51645479.0",
-        "name": "IC-가평듀크하우스키즈펜션(GiGAeyes i-care)",
+        "name": "IC*****************************",
         "branch": "서대문지사",
         "manager": "P000209",
         "address": "경기 가평군 대성리 대성리 362-2번지 듀크하우스펜션",
@@ -2278,7 +2278,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51445218.0",
-        "name": "동해튼튼마취통증의학과의원(OCT)",
+        "name": "동해****************",
         "branch": "강북지사",
         "manager": "P000104",
         "address": "강원 동해시 천곡동 863 202호 203호",
@@ -2289,7 +2289,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51355678.0",
-        "name": "유천뚝배기(OCT)",
+        "name": "유천********",
         "branch": "강북지사",
         "manager": "P000102",
         "address": "강원 강릉시 유천동 418-7 .",
@@ -2300,7 +2300,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51033501.0",
-        "name": "피스하우징(평화주택)",
+        "name": "피스*********",
         "branch": "강북지사",
         "manager": "P000104",
         "address": "강원 삼척시 오분동 삼척로 4246-62",
@@ -2311,7 +2311,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51834934.0",
-        "name": "형진아파트입주자대표회의(GiGAeyes guard)",
+        "name": "형진**************************",
         "branch": "서대문지사",
         "manager": "P000209",
         "address": "경기 가평군 가평읍 읍내리 681-3 형진아파트 관리실",
@@ -2322,7 +2322,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50604531.0",
-        "name": "팜파스리조트-속초 (kt view)",
+        "name": "팜파*****************",
         "branch": "강북지사",
         "manager": "P000103",
         "address": "강원 속초시 조양동 1401",
@@ -2333,7 +2333,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51320993.0",
-        "name": "라퓨타리조트",
+        "name": "라퓨****",
         "branch": "서대문지사",
         "manager": "P000209",
         "address": "경기 가평군 가평읍 금대리 309-12",
@@ -2344,7 +2344,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "52210066.0",
-        "name": "소담요양병원",
+        "name": "소담****",
         "branch": "강북지사",
         "manager": "P000104",
         "address": "강원 동해시 천곡동 460-3 소담요양병원",
@@ -2355,7 +2355,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51436552.0",
-        "name": "장호스노쿨비치",
+        "name": "장호*****",
         "branch": "강북지사",
         "manager": "P000104",
         "address": "강원 삼척시 근덕면 장호리 6-1 장원횟집 장호스노쿨비치",
@@ -2366,7 +2366,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50022459.0",
-        "name": "사단법인한국수산물건조가공협의회강릉시지회(OCT)",
+        "name": "사단************************",
         "branch": "강북지사",
         "manager": "P000102",
         "address": "강원 강릉시 주문진읍 농공단지길 40",
@@ -2377,7 +2377,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "51321357.0",
-        "name": "샛별어린이집(OCT)",
+        "name": "샛별*********",
         "branch": "서대문지사",
         "manager": "P000206",
         "address": "강원 춘천시 동면 장학리 220-34",
@@ -2388,7 +2388,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50129663.0",
-        "name": "룸페커의정부지점(OCT)",
+        "name": "룸페***********",
         "branch": "의정부지사",
         "manager": "G000501",
         "address": "경기 의정부시 의정부1동 179-7 1층",
@@ -2399,7 +2399,7 @@ const VOC_TARGETS = [
     },
     {
         "contractNo": "50852299.0",
-        "name": "춘천남부노인복지관(OCT)",
+        "name": "춘천************",
         "branch": "서대문지사",
         "manager": "P000207",
         "address": "강원 춘천시 온의동 6-33",

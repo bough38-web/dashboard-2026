@@ -2,6 +2,14 @@ import pandas as pd
 import json
 import os
 
+def mask_name(name):
+    if not name or pd.isna(name):
+        return ""
+    name = str(name).strip()
+    if len(name) <= 2:
+        return name[0] + "*"
+    return name[:2] + "*" * (len(name) - 2)
+
 def generate_voc_data():
     voc_file = 'data/VOC정보조회.xlsx'
     mapping_file = 'data/영업구역별_주소현행화_최종_20260304.xlsx'
@@ -59,7 +67,7 @@ def generate_voc_data():
             
             item = {
                 'contractNo': str(row['계약번호']),
-                'name': str(row['상호']),
+                'name': mask_name(row['상호']),
                 'branch': row['branch'],
                 'manager': str(row['영업구역']).strip(), # Use Area Number directly
                 'address': str(row['설치주소']),

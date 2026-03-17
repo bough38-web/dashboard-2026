@@ -3,6 +3,14 @@ import pandas as pd
 import json
 import os
 
+def mask_name(name):
+    if not name or pd.isna(name):
+        return ""
+    name = str(name).strip()
+    if len(name) <= 2:
+        return name[0] + "*"
+    return name[:2] + "*" * (len(name) - 2)
+
 def convert_excel_to_js():
     excel_path = 'data/1st최초만기도래, 재계약만기도래, 약정만료 대상 목표.xlsx'
     mapping_path = 'data/영업구역별_주소현행화_최종_20260304.xlsx'
@@ -87,7 +95,7 @@ def convert_excel_to_js():
         is_high_arpu = arpu >= 100000
         
         targets.append({
-            "name": str(row['관리고객명']),
+            "name": mask_name(row['관리고객명']),
             "manager": area_code, # Use Area Number instead of name
             "branch": branch,
             "address": address,
