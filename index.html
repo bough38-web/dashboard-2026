@@ -421,17 +421,17 @@
 
         /* 헤더 마감선 */
         thead tr:last-child th {
-            border-bottom: 2px solid var(--border-divider) !important;
+            border-bottom: 3px solid #64748b !important;
             border-right: 1px solid #cbd5e1 !important;
             background-color: #f8fafc !important;
-            color: #475569 !important;
-            font-weight: 600;
+            color: #1e293b !important;
+            font-weight: 800;
             font-size: 13px;
         }
 
         /* 그룹 분리선 (Divider) */
         .sep-left { border-left: 3px solid #0f172a !important; }
-        .divider-right { border-right: 2px solid var(--border-divider) !important; }
+        .divider-right { border-right: 2px solid #64748b !important; }
         .border-thin { border-right: 1px solid #cbd5e1 !important; }
 
         .bg-total-col {
@@ -506,12 +506,12 @@
         }
 
         tfoot td {
-            border-bottom: 4px solid var(--primary-dark) !important;
-            border-top: 3px solid var(--primary-dark) !important;
-            border-color: var(--primary-dark);
+            border-bottom: 3px solid #0f172a !important;
+            border-top: 3px solid #0f172a !important;
             background-color: #1e293b !important;
-            color: white !important;
-            font-weight: 800;
+            color: #ffffff !important;
+            font-weight: 900;
+            font-size: 14px;
         }
 
         tfoot td * {
@@ -542,14 +542,15 @@
         
         /* 배지 디자인 고도화 (Modern Pill Design) */
         .badge {
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-weight: 800;
-            font-size: 11px;
+            padding: 5px 10px;
+            border-radius: 6px;
+            font-weight: 900;
+            font-size: 12px;
             letter-spacing: -0.02em;
-            box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
             display: inline-block;
-            min-width: 45px;
+            min-width: 50px;
+            border: 1px solid rgba(0,0,0,0.05);
         }
 
         .badge.excellent { background: var(--badge-green-bg); color: var(--badge-green-text); }
@@ -1255,7 +1256,7 @@
 
         // 액세스 관리 설정
         const CONFIG = {
-            LIMIT_DATE: "2026-03-31", // Updated limit date
+            LIMIT_DATE: "2026-12-31", // Updated limit date to end of year
             ADMIN_CODE: "0303",      // Master Admin Code added
             CODE_PREFIX: "0303",     // Prefix for dynamic month code
             STORAGE_KEY: 'dashboard_access_approved_2026',

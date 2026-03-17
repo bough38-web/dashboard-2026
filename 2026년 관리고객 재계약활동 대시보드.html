@@ -3,6 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <title>2026년 관리고객 재계약 / 리텐션P값 / 정지·부실 현황 보드</title>
+<!-- Auth Guard -->
+<script>
+    (function() {
+        const session = localStorage.getItem('sales_dashboard_session');
+        if (!session) {
+            location.href = 'login.html';
+            return;
+        }
+        const sessionData = JSON.parse(session);
+        const now = new Date().getTime();
+        if (now - sessionData.timestamp > 24 * 60 * 60 * 1000) {
+            localStorage.removeItem('sales_dashboard_session');
+            location.href = 'login.html';
+            return;
+        }
+        window.USER_SESSION = sessionData;
+    })();
+</script>
 <style>
 :root {
 /* 컬러 팔레트 */

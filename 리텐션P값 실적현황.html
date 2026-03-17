@@ -3,6 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>2026년 관리고객 재계약 / 리텐션P값 / 정지·부실 현황 보드 (리텐션P값)</title>
+    <!-- Auth Guard -->
+    <script>
+        (function() {
+            const session = localStorage.getItem('sales_dashboard_session');
+            if (!session) {
+                location.href = 'login.html';
+                return;
+            }
+            const sessionData = JSON.parse(session);
+            const now = new Date().getTime();
+            if (now - sessionData.timestamp > 24 * 60 * 60 * 1000) {
+                localStorage.removeItem('sales_dashboard_session');
+                location.href = 'login.html';
+                return;
+            }
+            window.USER_SESSION = sessionData;
+        })();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="theme_manager.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
@@ -103,15 +121,15 @@
            ======================================================= */
         .table-card { background-color: var(--surface-bg); border-radius: 16px; box-shadow: var(--shadow-md); overflow-x: auto; padding: 20px; border: 1px solid var(--border-light); }
         #mainTable { border-left: 1px solid var(--border-light); border-right: 1px solid var(--border-light); }
-        table { width: 100%; border-collapse: collapse; font-size: 12px; text-align: center; white-space: nowrap; min-width: 1200px; }
+        table { width: 100%; border-collapse: collapse; font-size: 11.5px; text-align: center; white-space: nowrap; table-layout: fixed; }
         
-        thead tr:first-child th { border-top: 2px solid var(--primary-dark); }
-        th, td { padding: 10px 6px; vertical-align: middle; border: 1px solid var(--border-light); }
-        th:last-child, td:last-child { border-right: 1px solid var(--border-light); }
-        th:first-child, td:first-child { border-left: 1px solid var(--border-heavy) !important; }
+        thead tr:first-child th { border-top: 2px solid var(--primary-dark); background-color: #f8fafc; }
+        th, td { padding: 10px 4px; vertical-align: middle; border: 1px solid #cbd5e1; overflow: hidden; text-overflow: ellipsis; }
+        th:last-child, td:last-child { border-right: 1px solid #94a3b8; }
+        th:first-child, td:first-child { border-left: 1px solid #94a3b8 !important; }
         
-        thead tr:last-child th, thead tr:first-child th[rowspan="2"] { border-bottom: 4px double var(--primary-dark) !important; }
-        .group-end { border-right: 2px solid var(--border-heavy) !important; }
+        thead tr:last-child th, thead tr:first-child th[rowspan="2"] { border-bottom: 2px solid var(--primary-dark) !important; }
+        .group-end { border-right: 2px solid #64748b !important; }
 
         /* 파스텔 헤더 */
         .bg-budget { background-color: #f8fafc; color: var(--primary-dark); font-weight: 800;}
@@ -156,11 +174,11 @@
         tfoot .val-num { color: var(--primary-dark); }
         tfoot .val-highlight { color: var(--primary-blue); }
 
-        .badge { padding: 4px 8px; border-radius: 6px; font-weight: 800; font-size: 11.5px; display: inline-block; min-width: 40px; text-align: center; }
-        .badge.danger { background-color: var(--badge-danger-bg); color: var(--badge-danger-text); }
-        .badge.warn { background-color: var(--badge-warn-bg); color: var(--badge-warn-text); }
-        .badge.safe { background-color: var(--badge-safe-bg); color: var(--badge-safe-text); }
-        .badge.zero { background-color: var(--chart-muted); color: var(--text-muted); }
+        .badge { padding: 4px 8px; border-radius: 6px; font-weight: 800; font-size: 12px; display: inline-block; min-width: 45px; text-align: center; box-shadow: 0 1px 2px rgba(0,0,0,0.1); }
+        .badge.danger { background-color: #fee2e2; color: #991b1b; border: 1px solid #fecaca; }
+        .badge.warn { background-color: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+        .badge.safe { background-color: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+        .badge.zero { background-color: #f1f5f9; color: #64748b; border: 1px solid #e2e8f0; }
         
         /* Ensure the last column header doesn't get cut off */
         thead th:last-child { min-width: 100px; }
