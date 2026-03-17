@@ -5,14 +5,25 @@ import os
 
 def convert_excel_to_js():
     excel_path = 'data/1st최초만기도래, 재계약만기도래, 약정만료 대상 목표.xlsx'
+    mapping_path = 'data/영업구역별_주소현행화_최종_20260304.xlsx'
     output_path = 'data/targets.js'
     
+    # Load Mapping
+    print(f"Loading mapping: {mapping_path}")
+    map_df = pd.read_excel(mapping_path)
+    # Create a mapping dictionary: (SP담당, 관리지사, 주소동) -> 영업구역 수정
+    # This is a heuristic since we don't have perfect keys, but Area mapping usually links by manager/branch at least.
+    area_map = {}
+    for _, mproc in map_df.iterrows():
+        key = (str(mproc['SP담당']).strip(), str(mproc['관리지사']).strip())
+        area_map[key] = str(mproc['영업구역 수정']).strip()
+
     print(f"Reading Excel file: {excel_path}")
-    # Load specific columns to save memory
+    # Load specific columns
     cols = [
         '관리고객명', '담당자명', '담당지사/팀', '설치주소', '계약상태', 
         '계약종료일', '위도', '경도', '시', '합산월정료(KTT+KT)', '정리2',
-        '계약번호', '만기도래 월'
+        '계약번호', '만기도래 월', '읍면동'
     ]
     df = pd.read_excel(excel_path, usecols=cols)
     
@@ -29,41 +40,39 @@ def convert_excel_to_js():
     
     targets = []
     for _, row in df.iterrows():
-        # Handle nan values for other fields
-        manager = str(row['담당자명']) if pd.notna(row['담당자명']) else "미지정"
-        branch = str(row['담당지사/팀']) if pd.notna(row['담당지사/팀']) else "기타"
+        mgr_name = str(row['담당자명']).strip() if pd.notna(row['담당자명']) else ""
+        branch = str(row['담당지사/팀']).strip() if pd.notna(row['담당지사/팀']) else ""
+        
+        # Map to Area Number
+        area_code = area_map.get((mgr_name, branch), "미지정")
+        
         address = str(row['설치주소']) if pd.notna(row['설치주소']) else ""
         
-        # Status renaming: '만기도래_신규' -> '만기도래_신규(1st)'
+        # Status renaming
         status = str(row['계약상태']) if pd.notna(row['계약상태']) else "정보없음"
         if status == '만기도래_신규':
             status = '만기도래_신규(1st)'
             
-        # Expiry Date: Remove time part
         expiry_date = str(row['계약종료일']) if pd.notna(row['계약종료일']) else ""
         if ' ' in expiry_date:
             expiry_date = expiry_date.split(' ')[0]
             
-        # Quarter mapping: "'26.1Q" -> "1Q", etc.
         month_val = str(row['만기도래 월']).strip() if pd.notna(row['만기도래 월']) else ""
         if month_val and '.' in month_val:
             quarter = month_val.split('.')[-1]
         else:
             quarter = "미지정"
         
-        # Progress mapping: empty or nan -> '진행대상', keep others (like '진행중')
         prog_val = str(row['정리2']).strip() if pd.notna(row['정리2']) else ""
         if prog_val in ["", "nan"]:
             progress = "진행대상"
         else:
             progress = prog_val
         
-        # Contract Number: Remove '.0' if present
         contract_no = str(row['계약번호']) if pd.notna(row['계약번호']) else ""
         if contract_no.endswith('.0'):
             contract_no = contract_no[:-2]
         
-        # ARPU calculation (Handle string with commas like '100,000')
         arpu_val = row['합산월정료(KTT+KT)']
         if pd.isna(arpu_val):
             arpu = 0
@@ -79,7 +88,7 @@ def convert_excel_to_js():
         
         targets.append({
             "name": str(row['관리고객명']),
-            "manager": manager,
+            "manager": area_code, # Use Area Number instead of name
             "branch": branch,
             "address": address,
             "status": status,

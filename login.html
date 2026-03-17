@@ -195,7 +195,7 @@
     </div>
 
     <div class="tabs">
-        <div class="tab active" data-role="manager"><i data-lucide="user"></i> 담당자</div>
+        <div class="tab active" data-role="manager"><i data-lucide="user"></i> 영업구역</div>
         <div class="tab" data-role="branch"><i data-lucide="building-2"></i> 지사</div>
         <div class="tab" data-role="admin"><i data-lucide="shield-check"></i> 관리자</div>
     </div>
@@ -209,15 +209,15 @@
             </select>
         </div>
         <div class="form-group">
-            <label class="form-label">담당자</label>
+            <label class="form-label">영업구역번호</label>
             <select id="manager-select" disabled>
                 <option value="">지사를 먼저 선택하세요</option>
             </select>
         </div>
         <div class="form-group">
-            <label class="form-label">비밀번호</label>
+            <label class="form-label">비밀번호(영문 소문자)</label>
             <div class="input-wrapper">
-                <input type="password" id="manager-pw" placeholder="••••••••">
+                <input type="password" id="manager-pw" placeholder="영업구역번호 입력">
                 <i data-lucide="eye" class="pw-toggle" onclick="togglePassword('manager-pw')"></i>
             </div>
         </div>
@@ -304,27 +304,20 @@
     document.getElementById('branch-select').onchange = (e) => {
         const branch = e.target.value;
         const managerSelect = document.getElementById('manager-select');
-        managerSelect.innerHTML = '<option value="">담당자를 선택하세요</option>';
+        managerSelect.innerHTML = '<option value="">영업구역번호를 선택하세요</option>';
         
         if (!branch) {
             managerSelect.disabled = true;
             return;
         }
 
-        // Deduplicate by name to prevent multiple entries for the same person
-        const seenNames = new Set();
-        const filtered = AUTH_CONFIG.managers.filter(m => {
-            if (m.branch === branch && !seenNames.has(m.name)) {
-                seenNames.add(m.name);
-                return true;
-            }
-            return false;
-        });
+        // Unique area numbers (already unique in auth_config.js)
+        const filtered = AUTH_CONFIG.managers.filter(m => m.branch === branch);
 
         filtered.forEach(m => {
             const opt = document.createElement('option');
             opt.value = m.id;
-            opt.textContent = maskName(m.name);
+            opt.textContent = m.name; // Area Number
             managerSelect.appendChild(opt);
         });
         managerSelect.disabled = false;

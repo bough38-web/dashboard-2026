@@ -23,16 +23,26 @@ branch_passwords = {
     '남양주지사': 'namyang890'
 }
 
+# Updated generation logic: Use Sales Area Number as both name and ID
 refined_managers = []
+# Group by area to avoid duplicates
+seen_areas = set()
+
+# Process data from raw mapping (assumed to be loaded into raw_data['managers'])
 for m in raw_data['managers']:
-    name = m['SP담당']
-    surname = name[0]
-    eng_surname = surname_map.get(surname, 'user')
+    area_code = str(m['영업구역 수정']).strip()
+    if not area_code or area_code == 'nan':
+        continue
+    
+    if area_code in seen_areas:
+        continue
+    
+    seen_areas.add(area_code)
     refined_managers.append({
-        'name': name,
+        'name': area_code,
         'branch': m['관리지사'],
-        'id': m['SP사번'],
-        'pw': eng_surname + '1234'
+        'id': area_code,
+        'pw': area_code.lower()
     })
 
 auth_config = {

@@ -760,7 +760,7 @@
                 </div>
                 
                 <div class="filter-header" onclick="toggleFilter('manager')">
-                    <label class="filter-label" style="margin-bottom:0">담당자 선택</label>
+                    <label class="filter-label" style="margin-bottom:0">영업구역번호 선택</label>
                     <i data-lucide="chevron-down" class="toggle-icon" id="manager-toggle"></i>
                 </div>
                 <div id="manager-filters" class="filter-group">
@@ -1362,7 +1362,7 @@
                         <div style="background:#f8fafc; padding:10px; border-radius:8px; border:1px solid #e2e8f0; margin-bottom:10px;">
                             <p style="margin:4px 0; font-size:12px;"><strong>상호:</strong> ${target.name}</p>
                             <p style="margin:4px 0; font-size:12px;"><strong>지사:</strong> ${target.branch}</p>
-                            <p style="margin:4px 0; font-size:12px;"><strong>담당:</strong> ${target.manager}</p>
+                            <p style="margin:4px 0; font-size:12px;"><strong>영업구역:</strong> ${target.manager}</p>
                             <p style="margin:4px 0; font-size:11px; color:#64748b; line-height:1.4;">${target.address}</p>
                         </div>
                         <div style="margin-top:10px; display:flex; gap:5px;">
@@ -1515,7 +1515,7 @@
                 <div style="padding:15px; width:250px; font-family: Pretendard, sans-serif;">
                     <h4 style="margin:0 0 5px 0; color:#1e293b;">${item.name} ${item.isHighArpu ? '<span class="arpu-badge">고ARPU</span>' : ''}</h4>
                     <p style="font-size:12px; color:#64748b; margin:5px 0;">지사: ${item.branch}</p>
-                    <p style="font-size:12px; color:#64748b; margin:5px 0;">담당: ${item.manager} (${item.contractNo})</p>
+                    <p style="font-size:12px; color:#64748b; margin:5px 0;">영업구역: ${item.manager} (${item.contractNo})</p>
                     <p style="font-size:12px; color:#64748b; margin:5px 0;">주소: ${maskAddress(item.address)}</p>
                     <div style="margin:10px 0; padding:10px; background:#f8fafc; border-radius:8px; border:1px solid #e2e8f0;">
                         <p style="font-size:11px; color:#475569; margin:3px 0;"><b>상태:</b> <span class="status-tag ${getStatusClass(item.progress)}" style="display:inline; padding:1px 6px;">${item.progress || '진행대상'}</span></p>
@@ -2067,7 +2067,7 @@
                     <tr>
                         <th>등록일</th>
                         <th>지사</th>
-                        <th>담당자</th>
+                        <th>영업구역</th>
                         <th>구분</th>
                         <th>계약번호</th>
                         <th>고객명</th>

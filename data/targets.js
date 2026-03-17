@@ -1,7 +1,7 @@
 const TARGETS = [
     {
         "name": "(SG)(주)한화",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 서소문동 34번지 11층",
         "status": "약정만료",
@@ -16,7 +16,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)(주)한화",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 서소문동 34번지 12층",
         "status": "약정만료",
@@ -31,7 +31,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)(주)한화",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 장교동  1 16층",
         "status": "약정만료",
@@ -46,7 +46,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)골드피쉬",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 연지동 59번지 준성빌딩 7층(구.케이에스쥬얼리)",
         "status": "약정만료",
@@ -61,7 +61,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)광은사",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 원남동 72-2 5층",
         "status": "약정만료",
@@ -76,7 +76,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)명가메뉴팩처링",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 원남동 72-2 (명진빌딩) 72-2 명진빌딩 2층",
         "status": "약정만료",
@@ -91,7 +91,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)명가메뉴팩처링",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 원남동 72-2 (명진빌딩) 2층",
         "status": "약정만료",
@@ -106,7 +106,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)성훈조명",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 원남동 220",
         "status": "약정만료",
@@ -121,7 +121,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)성훈조명",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 청운동 1 지하1층(동원공인중개사 지하)",
         "status": "약정만료",
@@ -136,7 +136,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)에프엠갤러리(영상포함)",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 재동 111-5번지 2층",
         "status": "약정만료",
@@ -151,7 +151,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)엠디빌딩301호",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 후암동 43-5",
         "status": "약정만료",
@@ -166,7 +166,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)육의전빌딩",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 종로2가 40번지 육의전빌딩",
         "status": "약정만료",
@@ -181,7 +181,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)육의전빌딩",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 종로2가 40번지 육의전빌딩 후면계단",
         "status": "약정만료",
@@ -196,7 +196,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)육의전빌딩",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 돈의동 84-2번지",
         "status": "약정만료",
@@ -211,7 +211,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)자연의벗",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 적선동 93-2번지",
         "status": "약정만료",
@@ -226,7 +226,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)자연의벗",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 원흥동 704번지 고양아크비즈 지하1층 122호",
         "status": "약정만료",
@@ -241,7 +241,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)장일남컬렉션",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 중구 남산동2가 40-1번지 2층",
         "status": "약정만료",
@@ -256,7 +256,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)장일남컬렉션",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 중구 남산동2가 40-1번지",
         "status": "약정만료",
@@ -271,7 +271,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)장일남컬렉션",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 중구 남산동2가 40-1번지 1층",
         "status": "약정만료",
@@ -286,7 +286,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)좋은느낌",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 원남동 273번지 세용빌딩 3층",
         "status": "약정만료",
@@ -301,7 +301,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)좋은느낌",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 원남동 273 세용빌딩3층",
         "status": "약정만료",
@@ -316,7 +316,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)주식회사 헤라몬드",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 종로3가 119번지 동영빌딩10층",
         "status": "약정만료",
@@ -331,7 +331,7 @@ const TARGETS = [
     },
     {
         "name": "(SG)프레야",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 인의동 89-11 2층",
         "status": "만기도래_신규(1st)",
@@ -346,7 +346,7 @@ const TARGETS = [
     },
     {
         "name": "(사)경기장애인부모연대의정부시지부",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 민락동 732-3 306호",
         "status": "만기도래_신규(1st)",
@@ -361,7 +361,7 @@ const TARGETS = [
     },
     {
         "name": "LG다산점",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 다산동 6147-2 19번길15",
         "status": "만기도래_신규(1st)",
@@ -376,7 +376,7 @@ const TARGETS = [
     },
     {
         "name": "(사)차범근축구교실",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 이촌동 302-2번지 차범근축구교실",
         "status": "만기도래_신규(1st)",
@@ -391,7 +391,7 @@ const TARGETS = [
     },
     {
         "name": "(사)춘천스포츠클럽",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 삼천동 67-10번지 지하",
         "status": "만기도래_신규(1st)",
@@ -406,7 +406,7 @@ const TARGETS = [
     },
     {
         "name": "(사)춘천스포츠클럽",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 송암동 290 춘천스포츠클럽",
         "status": "약정만료",
@@ -421,7 +421,7 @@ const TARGETS = [
     },
     {
         "name": "(사)한국근로장애인진흥회",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 장항동 580-7",
         "status": "약정만료",
@@ -436,7 +436,7 @@ const TARGETS = [
     },
     {
         "name": "(사)한국근로장애인진흥회",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 장항동 592-3번지 1층",
         "status": "약정만료",
@@ -451,7 +451,7 @@ const TARGETS = [
     },
     {
         "name": "(사)한국능률협회",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한강로2가 410-1 용산푸르지오써밋 5층",
         "status": "약정만료",
@@ -466,7 +466,7 @@ const TARGETS = [
     },
     {
         "name": "(사)한국능률협회",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한강로2가 410-1번지 용산푸르지오써밋5층",
         "status": "약정만료",
@@ -481,7 +481,7 @@ const TARGETS = [
     },
     {
         "name": "(사)한국음악저작권협회",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 진관동 100-1",
         "status": "약정만료",
@@ -496,7 +496,7 @@ const TARGETS = [
     },
     {
         "name": "(사)한국음악저작권협회",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 무실동 1721-5 로얄타워 504호",
         "status": "약정만료",
@@ -511,7 +511,7 @@ const TARGETS = [
     },
     {
         "name": "(사)행복한아침독서",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 대화동 2058-2번지 1층",
         "status": "약정만료",
@@ -526,7 +526,7 @@ const TARGETS = [
     },
     {
         "name": "(사)행복한아침독서",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 와동동 1628-5",
         "status": "약정만료",
@@ -541,7 +541,7 @@ const TARGETS = [
     },
     {
         "name": "(사)황순원기념사업회",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 서종면 수능리 산74",
         "status": "약정만료",
@@ -556,7 +556,7 @@ const TARGETS = [
     },
     {
         "name": "(사)황순원기념사업회",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 서종면 수능리 산 74번지  황순원소나기마을",
         "status": "약정만료",
@@ -571,7 +571,7 @@ const TARGETS = [
     },
     {
         "name": "(유)그랑핸드",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 통의동 35-106",
         "status": "약정만료",
@@ -586,7 +586,7 @@ const TARGETS = [
     },
     {
         "name": "(유)그랑핸드",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 청진동 1번지",
         "status": "만기도래_신규(1st)",
@@ -601,7 +601,7 @@ const TARGETS = [
     },
     {
         "name": "(유)그랑핸드",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 서소문동 47-2번지 한산빌딩 1층 104호",
         "status": "만기도래_신규(1st)",
@@ -616,7 +616,7 @@ const TARGETS = [
     },
     {
         "name": "(유)그랑핸드",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 안국동 90번지 1층",
         "status": "약정만료",
@@ -631,7 +631,7 @@ const TARGETS = [
     },
     {
         "name": "(유)그랑핸드",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 후암동 358-17번지 신관빌딩 4층",
         "status": "약정만료",
@@ -646,7 +646,7 @@ const TARGETS = [
     },
     {
         "name": "(유)그랑핸드",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 동교동 189-6",
         "status": "약정만료",
@@ -661,7 +661,7 @@ const TARGETS = [
     },
     {
         "name": "(유)그랑핸드",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 후암동 358-17번지 신관빌딩3층",
         "status": "약정만료",
@@ -676,7 +676,7 @@ const TARGETS = [
     },
     {
         "name": "(유)그랑핸드",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 삼청동 서울 종로구 율곡로3길 69",
         "status": "약정만료",
@@ -691,7 +691,7 @@ const TARGETS = [
     },
     {
         "name": "(유)그랑핸드",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 가회동 40-3번지",
         "status": "약정만료",
@@ -706,7 +706,7 @@ const TARGETS = [
     },
     {
         "name": "(유)그랑핸드",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 청진동 70번지 그랑서울1층",
         "status": "약정만료",
@@ -721,7 +721,7 @@ const TARGETS = [
     },
     {
         "name": "(유)보문특수칼라",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진건읍 송능리 113-6",
         "status": "약정만료",
@@ -736,7 +736,7 @@ const TARGETS = [
     },
     {
         "name": "(유)보문특수칼라",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진건읍송능리 58-2",
         "status": "만기도래_신규(1st)",
@@ -751,7 +751,7 @@ const TARGETS = [
     },
     {
         "name": "(유)보문특수칼라",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진건읍 송능리 58-2번지 공장동",
         "status": "약정만료",
@@ -766,7 +766,7 @@ const TARGETS = [
     },
     {
         "name": "(유)우리종합관리",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 면목동 102-13번지 2층",
         "status": "만기도래_신규(1st)",
@@ -781,7 +781,7 @@ const TARGETS = [
     },
     {
         "name": "(재)노사발전재단",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단구동 1516-6번지 KT링커스빌딩 2층",
         "status": "약정만료",
@@ -796,7 +796,7 @@ const TARGETS = [
     },
     {
         "name": "(재)사랑의씨튼수녀회",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 성북구 성북동1가 120-6번지 마더씨튼집",
         "status": "만기도래_신규(1st)",
@@ -811,7 +811,7 @@ const TARGETS = [
     },
     {
         "name": "(재)성바오로수도회",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 103-119",
         "status": "만기도래_신규(1st)",
@@ -826,7 +826,7 @@ const TARGETS = [
     },
     {
         "name": "(재)성바오로수도회",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 연곡면 홍질목길 22-1",
         "status": "만기도래_신규(1st)",
@@ -841,7 +841,7 @@ const TARGETS = [
     },
     {
         "name": "(재)안국선원",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 안국동 9번지(한옥)",
         "status": "약정만료",
@@ -856,7 +856,7 @@ const TARGETS = [
     },
     {
         "name": "(재)안국선원",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 가회동 10-3 안국선원",
         "status": "약정만료",
@@ -871,7 +871,7 @@ const TARGETS = [
     },
     {
         "name": "(재)안국선원",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 가회동 10-3 안국선원 4층 법당",
         "status": "약정만료",
@@ -886,7 +886,7 @@ const TARGETS = [
     },
     {
         "name": "(재)운경공원",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 장흥면 울대리 181-1번지",
         "status": "만기도래_신규(1st)",
@@ -901,7 +901,7 @@ const TARGETS = [
     },
     {
         "name": "(재)천주교마리아사업회",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 414-3번지 지하11층2층",
         "status": "약정만료",
@@ -916,7 +916,7 @@ const TARGETS = [
     },
     {
         "name": "(재)천주교원주교구유지재단",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 인동 원일로 28",
         "status": "약정만료",
@@ -931,7 +931,7 @@ const TARGETS = [
     },
     {
         "name": "(재)천주교원주교구유지재단",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 문막읍 문막리 문막리 432-2번지 문막성당",
         "status": "약정만료",
@@ -946,7 +946,7 @@ const TARGETS = [
     },
     {
         "name": "(재)환경기술정책연구원",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 용두동 118-126",
         "status": "약정만료",
@@ -961,7 +961,7 @@ const TARGETS = [
     },
     {
         "name": "(재)환경기술정책연구원",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 용두동 118-126번지",
         "status": "약정만료",
@@ -976,7 +976,7 @@ const TARGETS = [
     },
     {
         "name": "(주) 고암에이스",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 원흥동 631번지",
         "status": "약정만료",
@@ -991,7 +991,7 @@ const TARGETS = [
     },
     {
         "name": "(주) 고암에이스",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 도내동 도래울로103(도내동)",
         "status": "만기도래_재계약",
@@ -1006,7 +1006,7 @@ const TARGETS = [
     },
     {
         "name": "(주) 고암에이스",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 도내동 964번지",
         "status": "만기도래_재계약",
@@ -1021,7 +1021,7 @@ const TARGETS = [
     },
     {
         "name": "(주) 세이브존아이앤씨",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 하계동 284  지하식품매장",
         "status": "약정만료",
@@ -1036,7 +1036,7 @@ const TARGETS = [
     },
     {
         "name": "(주) 아리바이오",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 청운면신론리 556-1번지",
         "status": "약정만료",
@@ -1051,7 +1051,7 @@ const TARGETS = [
     },
     {
         "name": "(주)GS포천그린에너지",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 신북면 신평리 661 (1층운용부)",
         "status": "약정만료",
@@ -1066,7 +1066,7 @@ const TARGETS = [
     },
     {
         "name": "(주)GS포천그린에너지",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 신북면 신평리 661 (GS그린에너지)",
         "status": "약정만료",
@@ -1081,7 +1081,7 @@ const TARGETS = [
     },
     {
         "name": "(주)GS포천그린에너지",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 신북면 신평리 661(장자경제로78)",
         "status": "약정만료",
@@ -1096,7 +1096,7 @@ const TARGETS = [
     },
     {
         "name": "(주)GS포천그린에너지",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 신북면 신평리 661 (GS포천그린에너지내)",
         "status": "약정만료",
@@ -1111,7 +1111,7 @@ const TARGETS = [
     },
     {
         "name": "(주)HJY(제일빌딩)",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 불광동 274-12 태영빌딩 1층",
         "status": "약정만료",
@@ -1126,7 +1126,7 @@ const TARGETS = [
     },
     {
         "name": "(주)HJY(제일빌딩)",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 공덕동 256-13 제일빌딩 1410호",
         "status": "약정만료",
@@ -1141,7 +1141,7 @@ const TARGETS = [
     },
     {
         "name": "(주)HJY(제일빌딩)",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 갈현동 456-2 1층",
         "status": "만기도래_신규(1st)",
@@ -1156,7 +1156,7 @@ const TARGETS = [
     },
     {
         "name": "(주)HJY(제일빌딩)",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 성사동 510-5 원당타운 106호",
         "status": "약정만료",
@@ -1171,7 +1171,7 @@ const TARGETS = [
     },
     {
         "name": "(주)HJY(제일빌딩)",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 안암동5가 104-116 1층",
         "status": "약정만료",
@@ -1186,7 +1186,7 @@ const TARGETS = [
     },
     {
         "name": "(주)HJY(제일빌딩)",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 서대문구 홍제동 253-4번지 1층",
         "status": "약정만료",
@@ -1201,7 +1201,7 @@ const TARGETS = [
     },
     {
         "name": "(주)HJY(제일빌딩)",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 대현동 56-74",
         "status": "만기도래_신규(1st)",
@@ -1216,7 +1216,7 @@ const TARGETS = [
     },
     {
         "name": "(주)HJY(제일빌딩)",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 도화동 555 마포한화오벨리스크 1동 115호",
         "status": "약정만료",
@@ -1231,7 +1231,7 @@ const TARGETS = [
     },
     {
         "name": "(주)HJY(제일빌딩)",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 대조동 185-22",
         "status": "약정만료",
@@ -1246,7 +1246,7 @@ const TARGETS = [
     },
     {
         "name": "(주)STX",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 수표동 99번지 시그니쳐타워 서관1314층",
         "status": "약정만료",
@@ -1261,7 +1261,7 @@ const TARGETS = [
     },
     {
         "name": "(주)STX",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 수표동 99번지 시그니쳐타워 서관13층",
         "status": "약정만료",
@@ -1276,7 +1276,7 @@ const TARGETS = [
     },
     {
         "name": "(주)가빈정",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 응암동 124-17",
         "status": "약정만료",
@@ -1291,7 +1291,7 @@ const TARGETS = [
     },
     {
         "name": "(주)가빈정",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 역촌동 1-1",
         "status": "약정만료",
@@ -1306,7 +1306,7 @@ const TARGETS = [
     },
     {
         "name": "(주)가빈정",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 망원동 483-13번지",
         "status": "약정만료",
@@ -1321,7 +1321,7 @@ const TARGETS = [
     },
     {
         "name": "(주)티디에이치컴퍼니",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 청량리동 30-1",
         "status": "만기도래_신규(1st)",
@@ -1336,7 +1336,7 @@ const TARGETS = [
     },
     {
         "name": "(주)건설투자",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 공릉2동 408-4",
         "status": "만기도래_재계약",
@@ -1351,7 +1351,7 @@ const TARGETS = [
     },
     {
         "name": "(주)건설투자",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 공릉2동 408-4  6층",
         "status": "만기도래_재계약",
@@ -1366,7 +1366,7 @@ const TARGETS = [
     },
     {
         "name": "(주)경성교역",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 이동교리 92-1",
         "status": "약정만료",
@@ -1381,7 +1381,7 @@ const TARGETS = [
     },
     {
         "name": "(주)경수제철건설",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 북아현동 신촌로37길10",
         "status": "만기도래_신규(1st)",
@@ -1396,7 +1396,7 @@ const TARGETS = [
     },
     {
         "name": "(주)경수제철건설",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 북아현동 126-22번지",
         "status": "만기도래_신규(1st)",
@@ -1411,7 +1411,7 @@ const TARGETS = [
     },
     {
         "name": "(주)경신상사",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 구산동 455-4",
         "status": "약정만료",
@@ -1426,7 +1426,7 @@ const TARGETS = [
     },
     {
         "name": "(주)경신상사",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 가좌동 28-14번지",
         "status": "약정만료",
@@ -1441,7 +1441,7 @@ const TARGETS = [
     },
     {
         "name": "(주)고구마텍스타일",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 동교동 156-1",
         "status": "만기도래_신규(1st)",
@@ -1456,7 +1456,7 @@ const TARGETS = [
     },
     {
         "name": "(주)고려공구백화점",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 금현리 279-6",
         "status": "약정만료",
@@ -1471,7 +1471,7 @@ const TARGETS = [
     },
     {
         "name": "(주)골드게이트씨앤씨",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 775 제일평화상가 5층(5-3)",
         "status": "약정만료",
@@ -1486,7 +1486,7 @@ const TARGETS = [
     },
     {
         "name": "(주)골드게이트씨앤씨",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 775 제일평화상가 4층",
         "status": "약정만료",
@@ -1501,7 +1501,7 @@ const TARGETS = [
     },
     {
         "name": "(주)골드게이트씨앤씨",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 775 제일평화상가 4층",
         "status": "약정만료",
@@ -1516,7 +1516,7 @@ const TARGETS = [
     },
     {
         "name": "(주)골드게이트씨앤씨",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 775 제일평화상가 5층(5-2)",
         "status": "약정만료",
@@ -1531,7 +1531,7 @@ const TARGETS = [
     },
     {
         "name": "(주)골드게이트씨앤씨",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 775 제일평화상가 5층(5-1)",
         "status": "약정만료",
@@ -1546,7 +1546,7 @@ const TARGETS = [
     },
     {
         "name": "(주)골드게이트씨앤씨",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 775 제일평화상가 4층 (4-1)",
         "status": "약정만료",
@@ -1561,7 +1561,7 @@ const TARGETS = [
     },
     {
         "name": "(주)골드게이트씨앤씨",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 775제일평화상가4층",
         "status": "약정만료",
@@ -1576,7 +1576,7 @@ const TARGETS = [
     },
     {
         "name": "(주)골든쌔들 용문휴게소지점",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 다문리 408-11",
         "status": "만기도래_신규(1st)",
@@ -1591,7 +1591,7 @@ const TARGETS = [
     },
     {
         "name": "(주)골든쌔들 용문휴게소지점",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 용문면 다문리 408-17 (용문다문 골든쌔들)",
         "status": "약정만료",
@@ -1606,7 +1606,7 @@ const TARGETS = [
     },
     {
         "name": "(주)광진",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 이동교리 743-1",
         "status": "약정만료",
@@ -1621,7 +1621,7 @@ const TARGETS = [
     },
     {
         "name": "(주)광진",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 이동교리743-1",
         "status": "약정만료",
@@ -1636,7 +1636,7 @@ const TARGETS = [
     },
     {
         "name": "(주)광진",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 이동교리 743-1",
         "status": "약정만료",
@@ -1651,7 +1651,7 @@ const TARGETS = [
     },
     {
         "name": "(주)그린코리아",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 장흥면 권율로  83-19",
         "status": "만기도래_신규(1st)",
@@ -1666,7 +1666,7 @@ const TARGETS = [
     },
     {
         "name": "(주)그린코리아",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 적성면 마지리 46-7번지 1층",
         "status": "약정만료",
@@ -1681,7 +1681,7 @@ const TARGETS = [
     },
     {
         "name": "(주)글로벌심층수",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 대포동 986-2 글로벌심층수 제2공장",
         "status": "약정만료",
@@ -1696,7 +1696,7 @@ const TARGETS = [
     },
     {
         "name": "(주)글로벌심층수",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 대포동 535-2 글로벌심층수",
         "status": "약정만료",
@@ -1711,7 +1711,7 @@ const TARGETS = [
     },
     {
         "name": "(주)글로벌심층수",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 대포동 991-2 (주)글로벌심층수-보세창고",
         "status": "약정만료",
@@ -1726,7 +1726,7 @@ const TARGETS = [
     },
     {
         "name": "(주)글로벌심층수",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 대포동 535-2 글로벌심층수 보세창고",
         "status": "만기도래_신규(1st)",
@@ -1741,7 +1741,7 @@ const TARGETS = [
     },
     {
         "name": "(주)글로벌심층수",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 봉래동1가 4-2번지 우남빌딩3층",
         "status": "만기도래_재계약",
@@ -1756,7 +1756,7 @@ const TARGETS = [
     },
     {
         "name": "(주)글로벌심층수",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 대포동 537-7",
         "status": "만기도래_재계약",
@@ -1771,7 +1771,7 @@ const TARGETS = [
     },
     {
         "name": "(주)글로벌심층수",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 대포동 535-2",
         "status": "만기도래_재계약",
@@ -1786,7 +1786,7 @@ const TARGETS = [
     },
     {
         "name": "(주)금강우레탄",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 차산리 218",
         "status": "만기도래_재계약",
@@ -1801,7 +1801,7 @@ const TARGETS = [
     },
     {
         "name": "(주)금강우레탄",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 차산리 522-3",
         "status": "만기도래_신규(1st)",
@@ -1816,7 +1816,7 @@ const TARGETS = [
     },
     {
         "name": "(주)나인원투",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 북아현동 신촌로241 지하1층",
         "status": "약정만료",
@@ -1831,7 +1831,7 @@ const TARGETS = [
     },
     {
         "name": "(주)나인원투",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 북아현동 220-36번지 3층",
         "status": "약정만료",
@@ -1846,7 +1846,7 @@ const TARGETS = [
     },
     {
         "name": "(주)나인컴퍼니",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 217-91번지 청평화상가 지하1층 바  11~12호",
         "status": "약정만료",
@@ -1861,7 +1861,7 @@ const TARGETS = [
     },
     {
         "name": "(주)나인컴퍼니",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 217-91번지 청평화상가4층가1213호",
         "status": "약정만료",
@@ -1876,7 +1876,7 @@ const TARGETS = [
     },
     {
         "name": "(주)나인컴퍼니",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동  217-91 지하1층 바2호",
         "status": "약정만료",
@@ -1891,7 +1891,7 @@ const TARGETS = [
     },
     {
         "name": "(주)나인컴퍼니",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동  217-91 5층 라 23.24호 (신당동 청평화상가)",
         "status": "약정만료",
@@ -1906,7 +1906,7 @@ const TARGETS = [
     },
     {
         "name": "(주)나인컴퍼니",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 217-91번지 청평화 다 2122호",
         "status": "약정만료",
@@ -1921,7 +1921,7 @@ const TARGETS = [
     },
     {
         "name": "(주)남건이앤에스",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 광적면 비암리 52-6",
         "status": "약정만료",
@@ -1936,7 +1936,7 @@ const TARGETS = [
     },
     {
         "name": "(주)남건이앤에스",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 일패동 50-4",
         "status": "만기도래_신규(1st)",
@@ -1951,7 +1951,7 @@ const TARGETS = [
     },
     {
         "name": "(주)내일도 바다",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 양양군 현남면 인구리 241-11 내일도 바다",
         "status": "만기도래_신규(1st)",
@@ -1966,7 +1966,7 @@ const TARGETS = [
     },
     {
         "name": "(주)내일도 바다",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 양양군 현남면 인구리 241-11 내일도 바다",
         "status": "만기도래_신규(1st)",
@@ -1981,7 +1981,7 @@ const TARGETS = [
     },
     {
         "name": "(주)네모에스엔에스",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 937-23번지",
         "status": "약정만료",
@@ -1996,7 +1996,7 @@ const TARGETS = [
     },
     {
         "name": "(주)네모에스엔에스",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 대화동 2209번지 지하 1층",
         "status": "약정만료",
@@ -2011,7 +2011,7 @@ const TARGETS = [
     },
     {
         "name": "(주)네모에스엔에스",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 장항동 902번지 대우로얄마트 동관 지하1층",
         "status": "약정만료",
@@ -2026,7 +2026,7 @@ const TARGETS = [
     },
     {
         "name": "(주)네모에스엔에스",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 백석동 1351번지 흰돌마을2단지아파트청구 상가 206호",
         "status": "약정만료",
@@ -2041,7 +2041,7 @@ const TARGETS = [
     },
     {
         "name": "(주)녹색산업",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 동산면 조양리 815 (동산조양)",
         "status": "약정만료",
@@ -2056,7 +2056,7 @@ const TARGETS = [
     },
     {
         "name": "(주)녹십자랩셀",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 회산동 1층",
         "status": "약정만료",
@@ -2071,7 +2071,7 @@ const TARGETS = [
     },
     {
         "name": "(주)늘푸른비엠씨",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 민락동 천보로14 201동 헬스장",
         "status": "약정만료",
@@ -2086,7 +2086,7 @@ const TARGETS = [
     },
     {
         "name": "(주)다리온",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 문산읍 운천리 82-22",
         "status": "약정만료",
@@ -2101,7 +2101,7 @@ const TARGETS = [
     },
     {
         "name": "(주)다리온",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 문산읍 선유리 1374-3",
         "status": "약정만료",
@@ -2116,7 +2116,7 @@ const TARGETS = [
     },
     {
         "name": "(주)다리온",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 문산읍 선유리 1374-3",
         "status": "약정만료",
@@ -2131,7 +2131,7 @@ const TARGETS = [
     },
     {
         "name": "(주)다리온",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 문산읍 운천리 82-22",
         "status": "약정만료",
@@ -2146,7 +2146,7 @@ const TARGETS = [
     },
     {
         "name": "(주)대성도어몰딩",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 쇄운동 7-5 스타당구클럽",
         "status": "약정만료",
@@ -2161,7 +2161,7 @@ const TARGETS = [
     },
     {
         "name": "(주)대신산업사",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 광탄면 97-6",
         "status": "약정만료",
@@ -2176,7 +2176,7 @@ const TARGETS = [
     },
     {
         "name": "(주)대진바이오워터",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 지경리 지경리 273-1번지 가나안농장",
         "status": "만기도래_신규(1st)",
@@ -2191,7 +2191,7 @@ const TARGETS = [
     },
     {
         "name": "(주)대진바이오워터",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 장흥리 1736번지 한세종축영농조합",
         "status": "약정만료",
@@ -2206,7 +2206,7 @@ const TARGETS = [
     },
     {
         "name": "(주)대진바이오워터",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 가양리 가양리 37-1번지 협동농장",
         "status": "약정만료",
@@ -2221,7 +2221,7 @@ const TARGETS = [
     },
     {
         "name": "(주)대진바이오워터",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 자등리 자등리 산819-1번지 에이스종돈",
         "status": "약정만료",
@@ -2236,7 +2236,7 @@ const TARGETS = [
     },
     {
         "name": "(주)대진바이오워터",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 영중면 거사리 거사리 412번지 동경농장 분료처리장",
         "status": "약정만료",
@@ -2251,7 +2251,7 @@ const TARGETS = [
     },
     {
         "name": "(주)대하",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 양동면고송리 16번지",
         "status": "약정만료",
@@ -2266,7 +2266,7 @@ const TARGETS = [
     },
     {
         "name": "(주)대한물산",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 송우리 729-4",
         "status": "약정만료",
@@ -2281,7 +2281,7 @@ const TARGETS = [
     },
     {
         "name": "(주)대한물산",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 송우리 729-4번지",
         "status": "만기도래_신규(1st)",
@@ -2296,7 +2296,7 @@ const TARGETS = [
     },
     {
         "name": "(주)대한물산",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 탄현동 1574-5 1층",
         "status": "약정만료",
@@ -2311,7 +2311,7 @@ const TARGETS = [
     },
     {
         "name": "(주)대흥쿨러",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 내촌면 음현리 467번지",
         "status": "약정만료",
@@ -2326,7 +2326,7 @@ const TARGETS = [
     },
     {
         "name": "(주)대흥쿨러",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 내촌면 음현리 467번지",
         "status": "약정만료",
@@ -2341,7 +2341,7 @@ const TARGETS = [
     },
     {
         "name": "(주)대흥쿨러",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 내촌면 음현리 467",
         "status": "약정만료",
@@ -2356,7 +2356,7 @@ const TARGETS = [
     },
     {
         "name": "(주)대흥쿨러",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 내촌면 음현리 467번지",
         "status": "약정만료",
@@ -2371,7 +2371,7 @@ const TARGETS = [
     },
     {
         "name": "(주)대흥쿨러",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 내촌면 음현리 467번지",
         "status": "약정만료",
@@ -2386,7 +2386,7 @@ const TARGETS = [
     },
     {
         "name": "(주)더건강한패밀리",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 창천동 31-39번지 2층",
         "status": "약정만료",
@@ -2401,7 +2401,7 @@ const TARGETS = [
     },
     {
         "name": "(주)더담플러스",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 평내동 578-1",
         "status": "약정만료",
@@ -2416,7 +2416,7 @@ const TARGETS = [
     },
     {
         "name": "(주)더숲",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 727-1(조광빌딩 지하1층)",
         "status": "약정만료",
@@ -2431,7 +2431,7 @@ const TARGETS = [
     },
     {
         "name": "(주)더숲",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 옥인동 산3-1번지 더숲초소책방",
         "status": "약정만료",
@@ -2446,7 +2446,7 @@ const TARGETS = [
     },
     {
         "name": "(주)더조은메디컬",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 반곡동 양지로 4 더조은메디컬",
         "status": "약정만료",
@@ -2461,7 +2461,7 @@ const TARGETS = [
     },
     {
         "name": "(주)더테이스터블",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 태평로1가 25 한국프레스센터 181920층",
         "status": "약정만료",
@@ -2476,7 +2476,7 @@ const TARGETS = [
     },
     {
         "name": "(주)더테이스터블",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 중구 봉래동2가 122-11번지 4층",
         "status": "약정만료",
@@ -2491,7 +2491,7 @@ const TARGETS = [
     },
     {
         "name": "(주)더테이스터블",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 신촌동 ) 134번지 동문회관 2층",
         "status": "약정만료",
@@ -2506,7 +2506,7 @@ const TARGETS = [
     },
     {
         "name": "(주)더테이스터블",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 신촌동 ) 백양누리 지하1층",
         "status": "약정만료",
@@ -2521,7 +2521,7 @@ const TARGETS = [
     },
     {
         "name": "(주)도원이엔씨",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 화천군 상서면 파포리 847-2",
         "status": "약정만료",
@@ -2536,7 +2536,7 @@ const TARGETS = [
     },
     {
         "name": "(주)동방어패럴",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 일패동 767-6번지",
         "status": "약정만료",
@@ -2551,7 +2551,7 @@ const TARGETS = [
     },
     {
         "name": "(주)동방어패럴",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 일패동 767-6번지",
         "status": "약정만료",
@@ -2566,7 +2566,7 @@ const TARGETS = [
     },
     {
         "name": "(주)동부캐리어",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 성석동 733-1",
         "status": "약정만료",
@@ -2581,7 +2581,7 @@ const TARGETS = [
     },
     {
         "name": "(주)동부캐리어",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 279-13 클라쎄오토(주) 성수서비스센터 279-13",
         "status": "약정만료",
@@ -2596,7 +2596,7 @@ const TARGETS = [
     },
     {
         "name": "(주)동신사",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 772번지 남평화시장 2층67호",
         "status": "약정만료",
@@ -2611,7 +2611,7 @@ const TARGETS = [
     },
     {
         "name": "(주)동양건설산업",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 월롱면 영태리1000번지",
         "status": "약정만료",
@@ -2626,7 +2626,7 @@ const TARGETS = [
     },
     {
         "name": "(주)동연디자인",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 탄현면 낙하리 62-1번지",
         "status": "만기도래_재계약",
@@ -2641,7 +2641,7 @@ const TARGETS = [
     },
     {
         "name": "(주)동연디자인",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 탄현면 낙하리 62-1 낙하리 62-1",
         "status": "약정만료",
@@ -2656,7 +2656,7 @@ const TARGETS = [
     },
     {
         "name": "(주)두현이엔씨",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 전곡읍간파리 간파리 388-1",
         "status": "만기도래_신규(1st)",
@@ -2671,7 +2671,7 @@ const TARGETS = [
     },
     {
         "name": "(주)드림스튜디오",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 광탄면 마장리 78-2 유일레져타운 5개동",
         "status": "만기도래_신규(1st)",
@@ -2686,7 +2686,7 @@ const TARGETS = [
     },
     {
         "name": "(주)디엔비소프트",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 지정면가곡리 1348-2 퀸즈파크 7층",
         "status": "약정만료",
@@ -2701,7 +2701,7 @@ const TARGETS = [
     },
     {
         "name": "(주)똑순이",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 가곡리 279-72",
         "status": "약정만료",
@@ -2716,7 +2716,7 @@ const TARGETS = [
     },
     {
         "name": "(주)라온서피리조트",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 현북면 중광정리 508 서피비치 1층",
         "status": "약정만료",
@@ -2731,7 +2731,7 @@ const TARGETS = [
     },
     {
         "name": "(주)랜드햇",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 을지로6가 평화시장 1층 가열 212~214호",
         "status": "약정만료",
@@ -2746,7 +2746,7 @@ const TARGETS = [
     },
     {
         "name": "(주)랜드햇",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 신내동 260-4 신내데시앙 지식산업센타  지하B314~5호",
         "status": "약정만료",
@@ -2761,7 +2761,7 @@ const TARGETS = [
     },
     {
         "name": "(주)랜드햇",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 종로5가 321-27 GLO STAR 동욱빌딩 5층",
         "status": "약정만료",
@@ -2776,7 +2776,7 @@ const TARGETS = [
     },
     {
         "name": "(주)랜드햇",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 종로5가 321-27 GLO STAR 동욱빌딩 4층",
         "status": "약정만료",
@@ -2791,7 +2791,7 @@ const TARGETS = [
     },
     {
         "name": "(주)랜드햇",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 을지로6가 평화시장 1층 나열 214호",
         "status": "약정만료",
@@ -2806,7 +2806,7 @@ const TARGETS = [
     },
     {
         "name": "(주)로보큐브테크",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 강상면 화양리 725-7번지 단독주택",
         "status": "만기도래_신규(1st)",
@@ -2821,7 +2821,7 @@ const TARGETS = [
     },
     {
         "name": "(주)로보큐브테크",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 강상면 송학리 864-4 단독주택",
         "status": "약정만료",
@@ -2836,7 +2836,7 @@ const TARGETS = [
     },
     {
         "name": "(주)리빙아이콘용인지점",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 308-4번지 서울숲코오롱디지털타워1차905호",
         "status": "약정만료",
@@ -2851,7 +2851,7 @@ const TARGETS = [
     },
     {
         "name": "(주)마젠타어패럴그룹",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 772번지 남평화상가3층15호",
         "status": "약정만료",
@@ -2866,7 +2866,7 @@ const TARGETS = [
     },
     {
         "name": "(주)메가텔레콤",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 369-22 덕영빌딩 1층",
         "status": "약정만료",
@@ -2881,7 +2881,7 @@ const TARGETS = [
     },
     {
         "name": "(주)메가텔레콤",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 이태원동 123-31",
         "status": "약정만료",
@@ -2896,7 +2896,7 @@ const TARGETS = [
     },
     {
         "name": "(주)메가텔레콤",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 이촌제1동 서울 용산구 이촌로 248 한강맨션 21동 상가 1층105-2호",
         "status": "약정만료",
@@ -2911,7 +2911,7 @@ const TARGETS = [
     },
     {
         "name": "(주)메가텔레콤",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 292-72 1층",
         "status": "만기도래_신규(1st)",
@@ -2926,7 +2926,7 @@ const TARGETS = [
     },
     {
         "name": "(주)메가텔레콤",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 중구 황학동 712번지 1층",
         "status": "약정만료",
@@ -2941,7 +2941,7 @@ const TARGETS = [
     },
     {
         "name": "(주)메가텔레콤",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 종로구 창신동 326-6번지",
         "status": "약정만료",
@@ -2956,7 +2956,7 @@ const TARGETS = [
     },
     {
         "name": "(주)메디칼케이",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 성산동 279-9 ",
         "status": "약정만료",
@@ -2971,7 +2971,7 @@ const TARGETS = [
     },
     {
         "name": "(주)메디칼케이",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 성산동 278-9번지 메디칼케이빌딩6층",
         "status": "약정만료",
@@ -2986,7 +2986,7 @@ const TARGETS = [
     },
     {
         "name": "(주)메디칼케이",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 성산동 278-9  2층",
         "status": "약정만료",
@@ -3001,7 +3001,7 @@ const TARGETS = [
     },
     {
         "name": "(주)메디칼케이",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 성산동 278-9",
         "status": "약정만료",
@@ -3016,7 +3016,7 @@ const TARGETS = [
     },
     {
         "name": "(주)메디칼케이",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 성산동 279-9번지6층",
         "status": "약정만료",
@@ -3031,7 +3031,7 @@ const TARGETS = [
     },
     {
         "name": "(주)명비엠씨",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 대현동 110-22번지 전층",
         "status": "만기도래_신규(1st)",
@@ -3046,7 +3046,7 @@ const TARGETS = [
     },
     {
         "name": "(주)명비엠씨",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 대현동 40-38",
         "status": "만기도래_신규(1st)",
@@ -3061,7 +3061,7 @@ const TARGETS = [
     },
     {
         "name": "(주)명비엠씨",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 대현동 90-22번지 한빛슈테리움1차 전층",
         "status": "만기도래_신규(1st)",
@@ -3076,7 +3076,7 @@ const TARGETS = [
     },
     {
         "name": "(주)명은커리어경기지사",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 금촌동 329-158번지 MH타워 3층.106호",
         "status": "약정만료",
@@ -3091,7 +3091,7 @@ const TARGETS = [
     },
     {
         "name": "(주)명은커리어경기지사",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 장항동 846 905호906호",
         "status": "약정만료",
@@ -3106,7 +3106,7 @@ const TARGETS = [
     },
     {
         "name": "(주)명은커리어경기지사",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 광사동 651-4",
         "status": "약정만료",
@@ -3121,7 +3121,7 @@ const TARGETS = [
     },
     {
         "name": "(주)모디엠",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 308-4번지 1204호",
         "status": "약정만료",
@@ -3136,7 +3136,7 @@ const TARGETS = [
     },
     {
         "name": "(주)모디엠",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 308-4번지 서울숲코오롱디지털타워 302호",
         "status": "약정만료",
@@ -3151,7 +3151,7 @@ const TARGETS = [
     },
     {
         "name": "(주)모디엠",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 다산동 6250 한강dimc테라타워a동9층39호",
         "status": "약정만료",
@@ -3166,7 +3166,7 @@ const TARGETS = [
     },
     {
         "name": "(주)모디엠",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 다산동 6143번지 E동 9층 31호",
         "status": "약정만료",
@@ -3181,7 +3181,7 @@ const TARGETS = [
     },
     {
         "name": "(주)모디엠",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 다산동 6250번지 a동 37호 A동9층 37호 (다산동)",
         "status": "약정만료",
@@ -3196,7 +3196,7 @@ const TARGETS = [
     },
     {
         "name": "(주)모디엠",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 308-4번지 코오롱1차 1203-1204호",
         "status": "약정만료",
@@ -3211,7 +3211,7 @@ const TARGETS = [
     },
     {
         "name": "(주)모디엠",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 308-4 1202호",
         "status": "약정만료",
@@ -3226,7 +3226,7 @@ const TARGETS = [
     },
     {
         "name": "(주)민토평창리조트",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 봉평면 무이리 738-1 1층",
         "status": "약정만료",
@@ -3241,7 +3241,7 @@ const TARGETS = [
     },
     {
         "name": "(주)바디채널 은평신사점",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 혜화동 111-7번지 23층",
         "status": "만기도래_신규(1st)",
@@ -3256,7 +3256,7 @@ const TARGETS = [
     },
     {
         "name": "(주)바디채널 은평신사점",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 은평구 신사동 8-18 23층",
         "status": "만기도래_신규(1st)",
@@ -3271,7 +3271,7 @@ const TARGETS = [
     },
     {
         "name": "(주)배관제일",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 탄현면 낙하리244-1",
         "status": "약정만료",
@@ -3286,7 +3286,7 @@ const TARGETS = [
     },
     {
         "name": "(주)범천마을(GiGAeyes guard)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 능동 222-3 범천타워",
         "status": "만기도래_신규(1st)",
@@ -3301,7 +3301,7 @@ const TARGETS = [
     },
     {
         "name": "(주)베러웨이시스템즈(OCT)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 278-32",
         "status": "약정만료",
@@ -3316,7 +3316,7 @@ const TARGETS = [
     },
     {
         "name": "(주)베러웨이시스템즈(OCT)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 278-32 4층",
         "status": "약정만료",
@@ -3331,7 +3331,7 @@ const TARGETS = [
     },
     {
         "name": "(주)베러웨이시스템즈(OCT)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 278-32 삼성아파트형공장 5층",
         "status": "약정만료",
@@ -3346,7 +3346,7 @@ const TARGETS = [
     },
     {
         "name": "(주)베러웨이시스템즈(OCT)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 278-32번지",
         "status": "약정만료",
@@ -3361,7 +3361,7 @@ const TARGETS = [
     },
     {
         "name": "(주)베이크 모굴",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수1가2동 1층",
         "status": "만기도래_신규(1st)",
@@ -3376,7 +3376,7 @@ const TARGETS = [
     },
     {
         "name": "(주)벽천레미콘산업",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 고성군 죽왕면 향목서길30",
         "status": "약정만료",
@@ -3391,7 +3391,7 @@ const TARGETS = [
     },
     {
         "name": "(주)벽천레미콘산업",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 고성군 죽왕면 향목리 235-10 (주)벽천레미콘 .",
         "status": "만기도래_신규(1st)",
@@ -3406,7 +3406,7 @@ const TARGETS = [
     },
     {
         "name": "(주)보끄레머천다이징",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 280-9 (성수동2가)  19층",
         "status": "약정만료",
@@ -3421,7 +3421,7 @@ const TARGETS = [
     },
     {
         "name": "(주)보끄레머천다이징",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 280-9번지 2001호",
         "status": "만기도래_신규(1st)",
@@ -3436,7 +3436,7 @@ const TARGETS = [
     },
     {
         "name": "(주)보끄레머천다이징",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 280-9번지 1707호",
         "status": "만기도래_신규(1st)",
@@ -3451,7 +3451,7 @@ const TARGETS = [
     },
     {
         "name": "(주)보끄레머천다이징",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 280-9번지 데시앙플렉스 20층",
         "status": "만기도래_신규(1st)",
@@ -3466,7 +3466,7 @@ const TARGETS = [
     },
     {
         "name": "(주)보람에프에스",
-        "manager": "박민준",
+        "manager": "G000306",
         "branch": "고양지사",
         "address": "경기 파주시 오도동 136-2",
         "status": "만기도래_신규(1st)",
@@ -3481,7 +3481,7 @@ const TARGETS = [
     },
     {
         "name": "(주)보성공업",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 하봉암동 평화로3106",
         "status": "약정만료",
@@ -3496,7 +3496,7 @@ const TARGETS = [
     },
     {
         "name": "(주)보성공업",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 은현면 운하로434번길 81-11",
         "status": "약정만료",
@@ -3511,7 +3511,7 @@ const TARGETS = [
     },
     {
         "name": "(주)보성녹돈",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 성동구 마장동 470-2번지 5층",
         "status": "약정만료",
@@ -3526,7 +3526,7 @@ const TARGETS = [
     },
     {
         "name": "(주)봉봉레저북한강지점",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 금남리 758 (카페동)",
         "status": "약정만료",
@@ -3541,7 +3541,7 @@ const TARGETS = [
     },
     {
         "name": "(주)봉봉레저북한강지점",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 금남리 758 (주택)",
         "status": "약정만료",
@@ -3556,7 +3556,7 @@ const TARGETS = [
     },
     {
         "name": "(주)봉봉레저북한강지점",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 금남리 758 (키즈존)",
         "status": "약정만료",
@@ -3571,7 +3571,7 @@ const TARGETS = [
     },
     {
         "name": "(주)봉봉레저북한강지점",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 금남리 758 (포토존)",
         "status": "약정만료",
@@ -3586,7 +3586,7 @@ const TARGETS = [
     },
     {
         "name": "(주)브이엘코리아",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 내면 자운리 575-3",
         "status": "만기도래_재계약",
@@ -3601,7 +3601,7 @@ const TARGETS = [
     },
     {
         "name": "(주)브이엘코리아",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 내면 자운리 1048-2",
         "status": "약정만료",
@@ -3616,7 +3616,7 @@ const TARGETS = [
     },
     {
         "name": "(주)브이엠씨이",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 상수동 334-13 2층",
         "status": "만기도래_신규(1st)",
@@ -3631,7 +3631,7 @@ const TARGETS = [
     },
     {
         "name": "(주)브이엠씨이",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 343-1 서문빌딩 302호",
         "status": "약정만료",
@@ -3646,7 +3646,7 @@ const TARGETS = [
     },
     {
         "name": "(주)브이엠씨이",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 364-23 3층",
         "status": "약정만료",
@@ -3661,7 +3661,7 @@ const TARGETS = [
     },
     {
         "name": "(주)브이엠씨이",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 364-23  2층  지하",
         "status": "약정만료",
@@ -3676,7 +3676,7 @@ const TARGETS = [
     },
     {
         "name": "(주)브이엠씨이",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 364-23 지층",
         "status": "약정만료",
@@ -3691,7 +3691,7 @@ const TARGETS = [
     },
     {
         "name": "(주)브이엠씨이",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 서교동347-19 지층",
         "status": "약정만료",
@@ -3706,7 +3706,7 @@ const TARGETS = [
     },
     {
         "name": "(주)브이엠씨이",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 서교동 346-52 지층",
         "status": "약정만료",
@@ -3721,7 +3721,7 @@ const TARGETS = [
     },
     {
         "name": "(주)비블루아이앤",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 1025-31",
         "status": "약정만료",
@@ -3736,7 +3736,7 @@ const TARGETS = [
     },
     {
         "name": "(주)비엠인터내셔널",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 지영동 208번지 18동.19동",
         "status": "약정만료",
@@ -3751,7 +3751,7 @@ const TARGETS = [
     },
     {
         "name": "(주)비오비퍼니처",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 탄현면 법흥리 1652-149",
         "status": "약정만료",
@@ -3766,7 +3766,7 @@ const TARGETS = [
     },
     {
         "name": "(주)비와별",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 904-2 우영빌딩 5층",
         "status": "만기도래_신규(1st)",
@@ -3781,7 +3781,7 @@ const TARGETS = [
     },
     {
         "name": "(주)비와별",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 진관동 63 롯데몰 은평점 4층 27호",
         "status": "약정만료",
@@ -3796,7 +3796,7 @@ const TARGETS = [
     },
     {
         "name": "(주)비치노",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 1584번지",
         "status": "약정만료",
@@ -3811,7 +3811,7 @@ const TARGETS = [
     },
     {
         "name": "(주)비치노",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 1599 하이빌 난동 102호",
         "status": "만기도래_신규(1st)",
@@ -3826,7 +3826,7 @@ const TARGETS = [
     },
     {
         "name": "(주)사조시스템즈",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로2가 157 4층 전산실",
         "status": "약정만료",
@@ -3841,7 +3841,7 @@ const TARGETS = [
     },
     {
         "name": "(주)사조시스템즈",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로2가 157번지 사조산업빌딩 4층 410호 서버실",
         "status": "약정만료",
@@ -3856,7 +3856,7 @@ const TARGETS = [
     },
     {
         "name": "(주)사조시스템즈",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로2가 157 사조산업빌딩 4층 전산실",
         "status": "만기도래_재계약",
@@ -3871,7 +3871,7 @@ const TARGETS = [
     },
     {
         "name": "(주)산돌(OCT)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 280-5 6층",
         "status": "만기도래_재계약",
@@ -3886,7 +3886,7 @@ const TARGETS = [
     },
     {
         "name": "(주)산돌(OCT)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 280-6번지 생각공장데시앙플렉스 산돌",
         "status": "약정만료",
@@ -3901,7 +3901,7 @@ const TARGETS = [
     },
     {
         "name": "(주)삼신기전",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 남산면 창촌리 636",
         "status": "약정만료",
@@ -3916,7 +3916,7 @@ const TARGETS = [
     },
     {
         "name": "(주)삼원환경",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 신평리 188-4번지",
         "status": "만기도래_신규(1st)",
@@ -3931,7 +3931,7 @@ const TARGETS = [
     },
     {
         "name": "(주)삼원환경",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 신평리 188-4 세방섬유 맞은편 컨테이너",
         "status": "약정만료",
@@ -3946,7 +3946,7 @@ const TARGETS = [
     },
     {
         "name": "(주)삼원환경",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 고모리 고모리 404-1번지",
         "status": "약정만료",
@@ -3961,7 +3961,7 @@ const TARGETS = [
     },
     {
         "name": "(주)삼일강업",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 파주읍 봉암리 63-35 삼일강업",
         "status": "만기도래_재계약",
@@ -3976,7 +3976,7 @@ const TARGETS = [
     },
     {
         "name": "(주)삼창산업",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 부론면 손곡리 산 182",
         "status": "약정만료",
@@ -3991,7 +3991,7 @@ const TARGETS = [
     },
     {
         "name": "(주)삼창산업",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 부론면 손곡리 산 182",
         "status": "약정만료",
@@ -4006,7 +4006,7 @@ const TARGETS = [
     },
     {
         "name": "(주)삼호태양광발전소",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 원덕읍 노곡리 산158-1",
         "status": "약정만료",
@@ -4021,7 +4021,7 @@ const TARGETS = [
     },
     {
         "name": "(주)새시대체인",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 동면 만천리 821-2",
         "status": "만기도래_재계약",
@@ -4036,7 +4036,7 @@ const TARGETS = [
     },
     {
         "name": "(주)새한비료",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 광적면 화합로179-52",
         "status": "만기도래_재계약",
@@ -4051,7 +4051,7 @@ const TARGETS = [
     },
     {
         "name": "(주)새한비료",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 광적면 화합로179-52",
         "status": "약정만료",
@@ -4066,7 +4066,7 @@ const TARGETS = [
     },
     {
         "name": "(주)새한비료",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 광적면 809  새한비료",
         "status": "약정만료",
@@ -4081,7 +4081,7 @@ const TARGETS = [
     },
     {
         "name": "(주)샘물정보통신",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 전진리 57-1 해우당 .",
         "status": "약정만료",
@@ -4096,7 +4096,7 @@ const TARGETS = [
     },
     {
         "name": "(주)서강대에스엘피마포어학원",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 신수동 34-20번지 주하빌딩 지층",
         "status": "만기도래_신규(1st)",
@@ -4111,7 +4111,7 @@ const TARGETS = [
     },
     {
         "name": "(주)서울쿠키컴퍼니",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 장흥면 호국로73번길 197",
         "status": "만기도래_재계약",
@@ -4126,7 +4126,7 @@ const TARGETS = [
     },
     {
         "name": "(주)성도텔레콤",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 임당동 126-11",
         "status": "약정만료",
@@ -4141,7 +4141,7 @@ const TARGETS = [
     },
     {
         "name": "(주)성도텔레콤",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 임당동 2층",
         "status": "약정만료",
@@ -4156,7 +4156,7 @@ const TARGETS = [
     },
     {
         "name": "(주)성원기업",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 답십리동 766번지1층",
         "status": "약정만료",
@@ -4171,7 +4171,7 @@ const TARGETS = [
     },
     {
         "name": "(주)성진앤뉴",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 중구 황학동 2484번지",
         "status": "약정만료",
@@ -4186,7 +4186,7 @@ const TARGETS = [
     },
     {
         "name": "(주)성진앤뉴",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 중구 황학동 808 올리브원 오피스텔",
         "status": "약정만료",
@@ -4201,7 +4201,7 @@ const TARGETS = [
     },
     {
         "name": "(주)성진앤뉴",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 중구 황학동 805번지 중앙시티빌",
         "status": "약정만료",
@@ -4216,7 +4216,7 @@ const TARGETS = [
     },
     {
         "name": "(주)성호라인",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 3동 277-43 아크리빌빌딩 1303호",
         "status": "약정만료",
@@ -4231,7 +4231,7 @@ const TARGETS = [
     },
     {
         "name": "(주)성호라인",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 금곡동 433-3번지 삼익빌딩 3층",
         "status": "약정만료",
@@ -4246,7 +4246,7 @@ const TARGETS = [
     },
     {
         "name": "(주)성화스포츠",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 백석동 1176-1 성화빌딩3층",
         "status": "약정만료",
@@ -4261,7 +4261,7 @@ const TARGETS = [
     },
     {
         "name": "(주)성화스포츠",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 백석동 1176-1 성화빌딩",
         "status": "약정만료",
@@ -4276,7 +4276,7 @@ const TARGETS = [
     },
     {
         "name": "(주)성화스포츠",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 백석동 1176-1 백석동1176-1번지 성화빌딩1층",
         "status": "약정만료",
@@ -4291,7 +4291,7 @@ const TARGETS = [
     },
     {
         "name": "(주)성화스포츠",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 백석동 1176-1 성화빌딩2층",
         "status": "약정만료",
@@ -4306,7 +4306,7 @@ const TARGETS = [
     },
     {
         "name": "(주)성화스포츠",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 백석동 1176-1 성화빌딩 (백석동성화빌딩)1층",
         "status": "약정만료",
@@ -4321,7 +4321,7 @@ const TARGETS = [
     },
     {
         "name": "(주)세도스틸",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 원덕읍 노곡리 547-2 세도스틸",
         "status": "만기도래_재계약",
@@ -4336,7 +4336,7 @@ const TARGETS = [
     },
     {
         "name": "(주)세븐업",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 금오동 470-5 금강프라자1층",
         "status": "약정만료",
@@ -4351,7 +4351,7 @@ const TARGETS = [
     },
     {
         "name": "(주)세븐업",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 광사동 656-7 미들프라자106.107호",
         "status": "약정만료",
@@ -4366,7 +4366,7 @@ const TARGETS = [
     },
     {
         "name": "(주)세븐업",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "서울 노원구 공릉동 383-7번지 스테이션빌빌딩 1층 102호",
         "status": "약정만료",
@@ -4381,7 +4381,7 @@ const TARGETS = [
     },
     {
         "name": "(주)세븐업",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 670-7  112호",
         "status": "약정만료",
@@ -4396,7 +4396,7 @@ const TARGETS = [
     },
     {
         "name": "(주)세븐업",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "서울 중랑구 망우동 470-10 삼부빌딩1층",
         "status": "약정만료",
@@ -4411,7 +4411,7 @@ const TARGETS = [
     },
     {
         "name": "(주)세븐업",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 호평동 640번지 117호 118호",
         "status": "약정만료",
@@ -4426,7 +4426,7 @@ const TARGETS = [
     },
     {
         "name": "(주)세븐업",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 마석우리 383-1 성훈프라자1층",
         "status": "약정만료",
@@ -4441,7 +4441,7 @@ const TARGETS = [
     },
     {
         "name": "(주)세븐업",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "서울 중랑구 신내동 559-2",
         "status": "약정만료",
@@ -4456,7 +4456,7 @@ const TARGETS = [
     },
     {
         "name": "(주)세븐업",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 와부읍 덕소리 112-2덕소중앙프라자",
         "status": "약정만료",
@@ -4471,7 +4471,7 @@ const TARGETS = [
     },
     {
         "name": "(주)세븐업",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 수택동 873-1",
         "status": "약정만료",
@@ -4486,7 +4486,7 @@ const TARGETS = [
     },
     {
         "name": "(주)세븐업",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 다산동 4001-10부영아파트중앙상가113호",
         "status": "약정만료",
@@ -4501,7 +4501,7 @@ const TARGETS = [
     },
     {
         "name": "(주)세븐업",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 지행동 지행동 695-3",
         "status": "약정만료",
@@ -4516,7 +4516,7 @@ const TARGETS = [
     },
     {
         "name": "(주)세븐업",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 행복로12 .",
         "status": "만기도래_신규(1st)",
@@ -4531,7 +4531,7 @@ const TARGETS = [
     },
     {
         "name": "(주)세븐업",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 494 센트럴타워 1층",
         "status": "약정만료",
@@ -4546,7 +4546,7 @@ const TARGETS = [
     },
     {
         "name": "(주)세븐업",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 호원동 427-1 1층",
         "status": "약정만료",
@@ -4561,7 +4561,7 @@ const TARGETS = [
     },
     {
         "name": "(주)세븐업",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "서울 중랑구 상봉동 81-5번지 한일서너스빌 11호",
         "status": "약정만료",
@@ -4576,7 +4576,7 @@ const TARGETS = [
     },
     {
         "name": "(주)세븐업",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 별내면 청학리 438-4  ",
         "status": "약정만료",
@@ -4591,7 +4591,7 @@ const TARGETS = [
     },
     {
         "name": "(주)세븐업",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 호평동 640-2 대림리베로빌딩104호",
         "status": "약정만료",
@@ -4606,7 +4606,7 @@ const TARGETS = [
     },
     {
         "name": "(주)센미디어",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 용강동 149-32 1층",
         "status": "만기도래_재계약",
@@ -4621,7 +4621,7 @@ const TARGETS = [
     },
     {
         "name": "(주)셀플렉스코리아 사택",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 금남리 570번지",
         "status": "약정만료",
@@ -4636,7 +4636,7 @@ const TARGETS = [
     },
     {
         "name": "(주)셀플렉스코리아 사택",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 금남리 570 셀플렉스코리아 사택",
         "status": "약정만료",
@@ -4651,7 +4651,7 @@ const TARGETS = [
     },
     {
         "name": "(주)수수",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 진관동 63 롯데몰 은평점 2층",
         "status": "약정만료",
@@ -4666,7 +4666,7 @@ const TARGETS = [
     },
     {
         "name": "(주)숲소리",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 동산동 358-5 1층",
         "status": "약정만료",
@@ -4681,7 +4681,7 @@ const TARGETS = [
     },
     {
         "name": "(주)스마트라이프",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 840번지",
         "status": "약정만료",
@@ -4696,7 +4696,7 @@ const TARGETS = [
     },
     {
         "name": "(주)스마트라이프",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 840번지",
         "status": "약정만료",
@@ -4711,7 +4711,7 @@ const TARGETS = [
     },
     {
         "name": "(주)스마트라이프",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 840번지 대명루첸",
         "status": "약정만료",
@@ -4726,7 +4726,7 @@ const TARGETS = [
     },
     {
         "name": "(주)신우이엔씨",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 문산읍 문산리 6-2",
         "status": "만기도래_신규(1st)",
@@ -4741,7 +4741,7 @@ const TARGETS = [
     },
     {
         "name": "(주)신우이엔씨",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 목동동 933",
         "status": "약정만료",
@@ -4756,7 +4756,7 @@ const TARGETS = [
     },
     {
         "name": "(주)신우이엔씨",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 문산읍 문산리 7-5 문산터미널타워 지하 방제실",
         "status": "약정만료",
@@ -4771,7 +4771,7 @@ const TARGETS = [
     },
     {
         "name": "(주)신한종합건축사",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 화천군 화천읍 아리245-4",
         "status": "만기도래_신규(1st)",
@@ -4786,7 +4786,7 @@ const TARGETS = [
     },
     {
         "name": "(주)신한화구",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 상지석동 453 본관별관 영상",
         "status": "약정만료",
@@ -4801,7 +4801,7 @@ const TARGETS = [
     },
     {
         "name": "(주)신한화구",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 식사동 220-2",
         "status": "약정만료",
@@ -4816,7 +4816,7 @@ const TARGETS = [
     },
     {
         "name": "(주)신한화구",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 교하읍 상지석리 452",
         "status": "약정만료",
@@ -4831,7 +4831,7 @@ const TARGETS = [
     },
     {
         "name": "(주)신한화구",
-        "manager": "박민준",
+        "manager": "G000306",
         "branch": "고양지사",
         "address": "경기 파주시 교하읍 상지석리 452",
         "status": "약정만료",
@@ -4846,7 +4846,7 @@ const TARGETS = [
     },
     {
         "name": "(주)신한화구",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 불광동 16-24 신한빌딩",
         "status": "약정만료",
@@ -4861,7 +4861,7 @@ const TARGETS = [
     },
     {
         "name": "(주)신한화구",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 식사동 220-4 (주)신한화구 2창고",
         "status": "약정만료",
@@ -4876,7 +4876,7 @@ const TARGETS = [
     },
     {
         "name": "(주)신한화구",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 지축동  412-1 (지축동)",
         "status": "약정만료",
@@ -4891,7 +4891,7 @@ const TARGETS = [
     },
     {
         "name": "(주)신한화구",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 불광동 16-24 신한화구 1층",
         "status": "만기도래_신규(1st)",
@@ -4906,7 +4906,7 @@ const TARGETS = [
     },
     {
         "name": "(주)신한화구",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 상지석동 452",
         "status": "약정만료",
@@ -4921,7 +4921,7 @@ const TARGETS = [
     },
     {
         "name": "(주)신현공조씨스템",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 쌍문동 138-67 신현B/D",
         "status": "약정만료",
@@ -4936,7 +4936,7 @@ const TARGETS = [
     },
     {
         "name": "(주)신호등장작구이",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 용두동 432-100",
         "status": "만기도래_신규(1st)",
@@ -4951,7 +4951,7 @@ const TARGETS = [
     },
     {
         "name": "(주)신흥",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 포남동 하평6길61 1층",
         "status": "약정만료",
@@ -4966,7 +4966,7 @@ const TARGETS = [
     },
     {
         "name": "(주)썬앳푸드",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 청진동 246번지 D타워4층",
         "status": "만기도래_신규(1st)",
@@ -4981,7 +4981,7 @@ const TARGETS = [
     },
     {
         "name": "(주)쎄니트 수유지점",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 번동 449-1 11층~14층",
         "status": "만기도래_신규(1st)",
@@ -4996,7 +4996,7 @@ const TARGETS = [
     },
     {
         "name": "(주)쎄니트 수유지점",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 번동 449-1 북한산스카이빌딩 10층 롯데시네마 사무실",
         "status": "만기도래_신규(1st)",
@@ -5011,7 +5011,7 @@ const TARGETS = [
     },
     {
         "name": "(주)씨넥스존",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한강로2가 15-14 선인상가 3층 260~268호",
         "status": "약정만료",
@@ -5026,7 +5026,7 @@ const TARGETS = [
     },
     {
         "name": "(주)씨넥스존",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 용산구 용문동 서울 용산구 효창원로55길 20  4층",
         "status": "약정만료",
@@ -5041,7 +5041,7 @@ const TARGETS = [
     },
     {
         "name": "(주)씨엔피트러스트",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 망원동 205-5번지 한강함상공원",
         "status": "약정만료",
@@ -5056,7 +5056,7 @@ const TARGETS = [
     },
     {
         "name": "(주)씨엔피트러스트",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 망원동 205-5번지 함상공원내",
         "status": "약정만료",
@@ -5071,7 +5071,7 @@ const TARGETS = [
     },
     {
         "name": "(주)씨엔피트러스트",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 망원동 205-5번지 함상공원내",
         "status": "약정만료",
@@ -5086,7 +5086,7 @@ const TARGETS = [
     },
     {
         "name": "(주)씨엔피트러스트",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 495-81 난지캠핑장 사무실",
         "status": "약정만료",
@@ -5101,7 +5101,7 @@ const TARGETS = [
     },
     {
         "name": "(주)씨제이와치",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 묘동 184 중앙빌딩 5층",
         "status": "약정만료",
@@ -5116,7 +5116,7 @@ const TARGETS = [
     },
     {
         "name": "(주)씨제이와치",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 묘동 184 4층",
         "status": "약정만료",
@@ -5131,7 +5131,7 @@ const TARGETS = [
     },
     {
         "name": "(주)씨티에너지",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 현천동 517번지 야적장",
         "status": "만기도래_신규(1st)",
@@ -5146,7 +5146,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아그라홀딩스",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 을지로4가 323 을지트윈타워 지하1층 103호",
         "status": "약정만료",
@@ -5161,7 +5161,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아리랑건설환경",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 면목동 1342-8호 2층",
         "status": "약정만료",
@@ -5176,7 +5176,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아영",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 어룡동 호국로 1379",
         "status": "약정만료",
@@ -5191,7 +5191,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아이스픽",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 풍동 665-14번지",
         "status": "약정만료",
@@ -5206,7 +5206,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아이알엔디벨로퍼",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 중구 흥인동 154 리더스빌딩",
         "status": "만기도래_신규(1st)",
@@ -5221,7 +5221,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아이콘스",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 482-9번지 2345층",
         "status": "약정만료",
@@ -5236,7 +5236,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아이콘스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 연남동 571-2 카스빌딩 2층",
         "status": "만기도래_신규(1st)",
@@ -5251,7 +5251,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아이콘스",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 478-24번지 1층",
         "status": "만기도래_신규(1st)",
@@ -5266,7 +5266,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아이콘스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 망원동 376-25  3층",
         "status": "만기도래_신규(1st)",
@@ -5281,7 +5281,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아이콘스",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 466-9 라움빌딩 2층",
         "status": "만기도래_신규(1st)",
@@ -5296,7 +5296,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아이콘스",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 470-24 2층",
         "status": "약정만료",
@@ -5311,7 +5311,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아이콘스",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 478-24 3층",
         "status": "약정만료",
@@ -5326,7 +5326,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아이콘스",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 459-13 원광빌딩 3층",
         "status": "약정만료",
@@ -5341,7 +5341,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아이투맥스",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 공덕동 473번지 KPX빌딩 7층",
         "status": "약정만료",
@@ -5356,7 +5356,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아이피에스",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 382-8우진빌딩 3층",
         "status": "약정만료",
@@ -5371,7 +5371,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아주산업",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 가납리 가납리 271-3번지",
         "status": "약정만료",
@@ -5386,7 +5386,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아카데미과학",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 용현동 521-1",
         "status": "약정만료",
@@ -5401,7 +5401,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아카데미과학",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 용현동 521-1",
         "status": "약정만료",
@@ -5416,7 +5416,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아카데미과학",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 용현동 521-1",
         "status": "약정만료",
@@ -5431,7 +5431,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아카데미과학",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 용현동 521-1",
         "status": "약정만료",
@@ -5446,7 +5446,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아카데미과학",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 용현동 521-1",
         "status": "약정만료",
@@ -5461,7 +5461,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아트애비뉴",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 신문로2가 1-222번지 마리빌딩",
         "status": "약정만료",
@@ -5476,7 +5476,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아트애비뉴",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 신문로2가 1-222번지 마리빌딩2층",
         "status": "약정만료",
@@ -5491,7 +5491,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아트애비뉴",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 신문로2가 1-222번지 마리빌딩 3층",
         "status": "약정만료",
@@ -5506,7 +5506,7 @@ const TARGETS = [
     },
     {
         "name": "(주)아프리콧스튜디오",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동1가 668-106",
         "status": "약정만료",
@@ -5521,7 +5521,7 @@ const TARGETS = [
     },
     {
         "name": "(주)야마야푸즈서비스",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 청진동 246번지 D타워4층",
         "status": "약정만료",
@@ -5536,7 +5536,7 @@ const TARGETS = [
     },
     {
         "name": "(주)야마야푸즈서비스",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 이촌동 301-53 이촌종합상가 내제1층 301-31301-30호",
         "status": "만기도래_신규(1st)",
@@ -5551,7 +5551,7 @@ const TARGETS = [
     },
     {
         "name": "(주)어번그룹바토스이태원점",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 이태원동 181-8번지 2층",
         "status": "약정만료",
@@ -5566,7 +5566,7 @@ const TARGETS = [
     },
     {
         "name": "(주)어번그룹바토스이태원점",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 이태원동 181-8 2층",
         "status": "약정만료",
@@ -5581,7 +5581,7 @@ const TARGETS = [
     },
     {
         "name": "(주)어번그룹바토스이태원점",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 이태원동 181-8 2층",
         "status": "약정만료",
@@ -5596,7 +5596,7 @@ const TARGETS = [
     },
     {
         "name": "(주)에스루프",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 광탄면 창만리 580번지",
         "status": "만기도래_신규(1st)",
@@ -5611,7 +5611,7 @@ const TARGETS = [
     },
     {
         "name": "(주)에스루프",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 탄현면 축현리 390-15번지",
         "status": "만기도래_신규(1st)",
@@ -5626,7 +5626,7 @@ const TARGETS = [
     },
     {
         "name": "(주)에이치앤케어",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 문막읍 반계리 101 (주) 에이치앤케어",
         "status": "약정만료",
@@ -5641,7 +5641,7 @@ const TARGETS = [
     },
     {
         "name": "(주)에이치앤케어",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 지정면 안창리 822 .",
         "status": "약정만료",
@@ -5656,7 +5656,7 @@ const TARGETS = [
     },
     {
         "name": "(주)에이치케이건축사사무소",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 관철동 11-19",
         "status": "만기도래_신규(1st)",
@@ -5671,7 +5671,7 @@ const TARGETS = [
     },
     {
         "name": "(주)에이치케이건축사사무소",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 관철동 11-19 2층",
         "status": "약정만료",
@@ -5686,7 +5686,7 @@ const TARGETS = [
     },
     {
         "name": "(주)에이치케이건축사사무소",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 관철동 11-19  지하",
         "status": "약정만료",
@@ -5701,7 +5701,7 @@ const TARGETS = [
     },
     {
         "name": "(주)에이투그룹주식회사(순찰)",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 광희동2가 180번지 청송빌딩 1236층",
         "status": "약정만료",
@@ -5716,7 +5716,7 @@ const TARGETS = [
     },
     {
         "name": "(주)에이투그룹주식회사(순찰)",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 광희동2가 180 청송빌딩 45층",
         "status": "약정만료",
@@ -5731,7 +5731,7 @@ const TARGETS = [
     },
     {
         "name": "(주)에이투그룹주식회사(순찰)",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 광희동2가 180 12층 층간",
         "status": "약정만료",
@@ -5746,7 +5746,7 @@ const TARGETS = [
     },
     {
         "name": "(주)에일당",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 익선동 166-34 1층",
         "status": "약정만료",
@@ -5761,7 +5761,7 @@ const TARGETS = [
     },
     {
         "name": "(주)에일당",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 을지로3가 322-7번지 12층",
         "status": "약정만료",
@@ -5776,7 +5776,7 @@ const TARGETS = [
     },
     {
         "name": "(주)엑스씨아이엑스",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 호원동 455-5",
         "status": "약정만료",
@@ -5791,7 +5791,7 @@ const TARGETS = [
     },
     {
         "name": "(주)엑스씨아이엑스",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 340-6 화용빌딩1층",
         "status": "약정만료",
@@ -5806,7 +5806,7 @@ const TARGETS = [
     },
     {
         "name": "(주)엑스씨아이엑스",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 중계동 366-6 1층",
         "status": "약정만료",
@@ -5821,7 +5821,7 @@ const TARGETS = [
     },
     {
         "name": "(주)엑스씨아이엑스",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 월계동 55-11 케이티 석계 2호점",
         "status": "약정만료",
@@ -5836,7 +5836,7 @@ const TARGETS = [
     },
     {
         "name": "(주)엑스씨아이엑스",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 175-4번지 용빌딩1층",
         "status": "약정만료",
@@ -5851,7 +5851,7 @@ const TARGETS = [
     },
     {
         "name": "(주)엘엔알피",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 서대문구 홍제동 279-7 전층",
         "status": "약정만료",
@@ -5866,7 +5866,7 @@ const TARGETS = [
     },
     {
         "name": "(주)엘케이스톤",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 귀래면 귀래리 176-1",
         "status": "만기도래_재계약",
@@ -5881,7 +5881,7 @@ const TARGETS = [
     },
     {
         "name": "(주)엘케이스톤",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 귀래면 귀래리 318 .",
         "status": "만기도래_재계약",
@@ -5896,7 +5896,7 @@ const TARGETS = [
     },
     {
         "name": "(주)엠83",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 동교동 166-14 동교동 스타피카소 와이즈파크 빌딩 4층",
         "status": "약정만료",
@@ -5911,7 +5911,7 @@ const TARGETS = [
     },
     {
         "name": "(주)엠오에스-강북",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 127-7 KT강북지사 3층",
         "status": "약정만료",
@@ -5926,7 +5926,7 @@ const TARGETS = [
     },
     {
         "name": "(주)엠오에스-강북",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 포남동 1294 kt강릉지사 4층",
         "status": "약정만료",
@@ -5941,7 +5941,7 @@ const TARGETS = [
     },
     {
         "name": "(주)엠오에스-강북",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 114-4 4층 (주)엠오에스강북",
         "status": "약정만료",
@@ -5956,7 +5956,7 @@ const TARGETS = [
     },
     {
         "name": "(주)엠오에스-강북",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 청학동 483번지 KT속초지사 3층",
         "status": "약정만료",
@@ -5971,7 +5971,7 @@ const TARGETS = [
     },
     {
         "name": "(주)엠오에스-강북",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로3가 35-1 KT아현지사 2층",
         "status": "약정만료",
@@ -5986,7 +5986,7 @@ const TARGETS = [
     },
     {
         "name": "(주)엠이에스티",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 공덕동 456번지 한국사회복지회관르네상스타워 708호",
         "status": "약정만료",
@@ -6001,7 +6001,7 @@ const TARGETS = [
     },
     {
         "name": "(주)엠투소프트(GiGAeyes i-guard)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 333-140  서울숲서울숲디지탈타워2차  7층",
         "status": "약정만료",
@@ -6016,7 +6016,7 @@ const TARGETS = [
     },
     {
         "name": "(주)연신개발",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 불광동 484-10",
         "status": "약정만료",
@@ -6031,7 +6031,7 @@ const TARGETS = [
     },
     {
         "name": "(주)연신개발",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 장흥면 석현리 352-2",
         "status": "약정만료",
@@ -6046,7 +6046,7 @@ const TARGETS = [
     },
     {
         "name": "(주)예인미술",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 교하동 신촌리(신촌동 731)",
         "status": "만기도래_재계약",
@@ -6061,7 +6061,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오동",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시일산구 중산동 72번지 자유로마트",
         "status": "약정만료",
@@ -6076,7 +6076,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오동",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 성석동 877-10",
         "status": "약정만료",
@@ -6091,7 +6091,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 성남시 중원구 상대원동 333-3번지",
         "status": "약정만료",
@@ -6106,7 +6106,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서초구 반포동 32-2번지 동화반포프라자 지하1층1호",
         "status": "약정만료",
@@ -6121,7 +6121,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 성남시 수정구 창곡동 557-7번지",
         "status": "만기도래_신규(1st)",
@@ -6136,7 +6136,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 성북구 동소문동1가 10번지",
         "status": "약정만료",
@@ -6151,7 +6151,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 양천구 목동 917-6번지 행복한백화점1층",
         "status": "약정만료",
@@ -6166,7 +6166,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 강서구 염창동 274-18번지 한울에이치밸리움 1층",
         "status": "약정만료",
@@ -6181,7 +6181,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 광주시 목현동 406번지",
         "status": "약정만료",
@@ -6196,7 +6196,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 용인시 수지구 성복동 726 엘지빌리지3차 상가동1층112~114호",
         "status": "약정만료",
@@ -6211,7 +6211,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 용인시 수지구 상현동 251-3번지 (롯데리아옆)",
         "status": "약정만료",
@@ -6226,7 +6226,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 용인시 기흥구 구갈동 401-3번지",
         "status": "약정만료",
@@ -6241,7 +6241,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 고양시 일산서구 주엽동 18-2번지 서현프라자1층",
         "status": "약정만료",
@@ -6256,7 +6256,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 강남구 역삼동 779-3번지 광진빌딩1층",
         "status": "약정만료",
@@ -6271,7 +6271,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 화성시 반송동 220-5번지 인창프라자1층104105호",
         "status": "약정만료",
@@ -6286,7 +6286,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 광명시 철산동 637번지 철산푸르지오하늘채 종합상가110~111호",
         "status": "약정만료",
@@ -6301,7 +6301,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 강남구 도곡동 924-5번지 백광빌딩1층",
         "status": "약정만료",
@@ -6316,7 +6316,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 강남구 청담동 73번지 진흥아파트상가1층4호",
         "status": "약정만료",
@@ -6331,7 +6331,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 강동구 상일동 514번지 고덕롯데캐슬베네루치상가 1층102호",
         "status": "약정만료",
@@ -6346,7 +6346,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 강남구 삼성동 16번지 힐스테이트상가105호",
         "status": "약정만료",
@@ -6361,7 +6361,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 도봉구 방학동 707번지 이안테라디움상가109호",
         "status": "약정만료",
@@ -6376,7 +6376,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 강남구 대치동 507-2번지 대치퍼스트1층104호",
         "status": "약정만료",
@@ -6391,7 +6391,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 강남구 역삼동 765-28번지 1층102호",
         "status": "약정만료",
@@ -6406,7 +6406,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 강동구 고덕동 693번지  그라시움상가115116호",
         "status": "약정만료",
@@ -6421,7 +6421,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 강남구 청담동 47-5번지 정한빌딩101호",
         "status": "약정만료",
@@ -6436,7 +6436,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 강남구 신사동 617-2번지 1층",
         "status": "약정만료",
@@ -6451,7 +6451,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 구리시 수택동 448-6번지 구리신성미소지움상가동 제1층4호",
         "status": "약정만료",
@@ -6466,7 +6466,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 노원구 상계동 728-1번지",
         "status": "약정만료",
@@ -6481,7 +6481,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 노원구 중계동 366-9번지",
         "status": "약정만료",
@@ -6496,7 +6496,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 송파구 삼전동 111-1번지 썬프라자1층",
         "status": "약정만료",
@@ -6511,7 +6511,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 성남시 분당구 서현동 304번지 효자촌상가동 101호",
         "status": "약정만료",
@@ -6526,7 +6526,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 성남시 분당구 금곡동 202번지 1층",
         "status": "약정만료",
@@ -6541,7 +6541,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 남양주시 별내동 1097-6번지 별내마들프라자106107호",
         "status": "약정만료",
@@ -6556,7 +6556,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 성북구 길음동 1286-10번지 길음뉴타운 1층1-10호",
         "status": "약정만료",
@@ -6571,7 +6571,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 공덕동 478번지 공덕더샵아파트 1층 102동 3호",
         "status": "약정만료",
@@ -6586,7 +6586,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서초구 서초동 1331-2번지",
         "status": "약정만료",
@@ -6601,7 +6601,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 연희동 137-6번지 연희프라자1층",
         "status": "약정만료",
@@ -6616,7 +6616,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 송파구 문정동 42-4번지",
         "status": "약정만료",
@@ -6631,7 +6631,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 성남시 수정구 창곡동 513번지 에이플타워103호",
         "status": "약정만료",
@@ -6646,7 +6646,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 수원시 영통구 영통동 961-6번지 1층 101호",
         "status": "약정만료",
@@ -6661,7 +6661,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 강동구 암사동 501-1번지 501타워1층",
         "status": "약정만료",
@@ -6676,7 +6676,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 수원시 영통구 매탄동 매탄동 1156-4번지",
         "status": "약정만료",
@@ -6691,7 +6691,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 용인시 수지구 동천동 948번지 송란아트프라자 1층",
         "status": "약정만료",
@@ -6706,7 +6706,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 성남시 중원구 상대원동 307-6번지",
         "status": "약정만료",
@@ -6721,7 +6721,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 성남시 중원구 상대원동 333-3번지",
         "status": "약정만료",
@@ -6736,7 +6736,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 성남시 중원구 상대원동 333-3번지",
         "status": "약정만료",
@@ -6751,7 +6751,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 강동구 암사동 414-18번지 강동롯데캐슬퍼스트상가1층132133호",
         "status": "약정만료",
@@ -6766,7 +6766,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 광진구 광장동 463-3  1층",
         "status": "약정만료",
@@ -6781,7 +6781,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "경기 성남시 분당구 야탑동 357-1번지 NC백화점야탑점지하1층(농산물코너)",
         "status": "만기도래_신규(1st)",
@@ -6796,7 +6796,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오아시스",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서초구 잠원동 70번지 뉴코아백화점지하1층(농산물코너)",
         "status": "약정만료",
@@ -6811,7 +6811,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오퍼스아시아",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 대흥동 서울 마포구 광성로6길 64",
         "status": "만기도래_신규(1st)",
@@ -6826,7 +6826,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오페라웨딩컨벤션",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 판부면 서곡리 444-2",
         "status": "약정만료",
@@ -6841,7 +6841,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오핌디지털",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 37-25 2층 안쪽 사무실",
         "status": "만기도래_신규(1st)",
@@ -6856,7 +6856,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오핌디지털",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 37-25 2층",
         "status": "약정만료",
@@ -6871,7 +6871,7 @@ const TARGETS = [
     },
     {
         "name": "(주)오핌디지털",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 37-25 2층",
         "status": "만기도래_신규(1st)",
@@ -6886,7 +6886,7 @@ const TARGETS = [
     },
     {
         "name": "(주)올포랜드",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1622 DMC센터 502호",
         "status": "약정만료",
@@ -6901,7 +6901,7 @@ const TARGETS = [
     },
     {
         "name": "(주)와이그린 덕도빌딩",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 지축동 734-38번지 주택",
         "status": "만기도래_신규(1st)",
@@ -6916,7 +6916,7 @@ const TARGETS = [
     },
     {
         "name": "(주)와이알",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 남면 154-1",
         "status": "약정만료",
@@ -6931,7 +6931,7 @@ const TARGETS = [
     },
     {
         "name": "(주)와이에스개발",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 남면 상수리 상수리 412-17",
         "status": "만기도래_재계약",
@@ -6946,7 +6946,7 @@ const TARGETS = [
     },
     {
         "name": "(주)와이에스개발",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 광적면 석우리 석우리 492",
         "status": "만기도래_신규(1st)",
@@ -6961,7 +6961,7 @@ const TARGETS = [
     },
     {
         "name": "(주)와이지시네마",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 반곡동 1903-3 센트럴파크 7~8층",
         "status": "약정만료",
@@ -6976,7 +6976,7 @@ const TARGETS = [
     },
     {
         "name": "(주)우리끼리",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 회산동 226-22번지 우리끼리키즈카페스포츠마을 강릉회산점",
         "status": "만기도래_신규(1st)",
@@ -6991,7 +6991,7 @@ const TARGETS = [
     },
     {
         "name": "(주)우리팜마트",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 벽제동 509-7 1층 임가네한우마을",
         "status": "만기도래_신규(1st)",
@@ -7006,7 +7006,7 @@ const TARGETS = [
     },
     {
         "name": "(주)우솔",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 양서면 816번지 (한강물연구소옆)",
         "status": "약정만료",
@@ -7021,7 +7021,7 @@ const TARGETS = [
     },
     {
         "name": "(주)우솔",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리 351-4",
         "status": "약정만료",
@@ -7036,7 +7036,7 @@ const TARGETS = [
     },
     {
         "name": "(주)우솔",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 양서면 양수리 819 한강물환경연구소 옆",
         "status": "약정만료",
@@ -7051,7 +7051,7 @@ const TARGETS = [
     },
     {
         "name": "(주)우솔",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리 351-4 1층",
         "status": "약정만료",
@@ -7066,7 +7066,7 @@ const TARGETS = [
     },
     {
         "name": "(주)우주텔레콤",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 무실동 715 2동",
         "status": "약정만료",
@@ -7081,7 +7081,7 @@ const TARGETS = [
     },
     {
         "name": "(주)우주텔레콤",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 무실동 715 .",
         "status": "약정만료",
@@ -7096,7 +7096,7 @@ const TARGETS = [
     },
     {
         "name": "(주)우주환경산업",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 고성군 토성면 아야진리 589-1",
         "status": "약정만료",
@@ -7111,7 +7111,7 @@ const TARGETS = [
     },
     {
         "name": "(주)우주환경산업",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 고성군 토성면 진등길158",
         "status": "약정만료",
@@ -7126,7 +7126,7 @@ const TARGETS = [
     },
     {
         "name": "(주)우진이엔지",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 행신동 무원로6번길61GL프라자503-7호",
         "status": "약정만료",
@@ -7141,7 +7141,7 @@ const TARGETS = [
     },
     {
         "name": "(주)우창개발(예일클리닉빌딩)",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 행신동 725번지 예일클리닉빌딩 우창개발 (행신동예일클리닉빌딩)",
         "status": "만기도래_신규(1st)",
@@ -7156,7 +7156,7 @@ const TARGETS = [
     },
     {
         "name": "(주)우천식품",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 이동면 151-17",
         "status": "약정만료",
@@ -7171,7 +7171,7 @@ const TARGETS = [
     },
     {
         "name": "(주)우천식품",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 이동면 장암리 151-17",
         "status": "만기도래_신규(1st)",
@@ -7186,7 +7186,7 @@ const TARGETS = [
     },
     {
         "name": "(주)원마트",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 일산동 591-6 1동",
         "status": "약정만료",
@@ -7201,7 +7201,7 @@ const TARGETS = [
     },
     {
         "name": "(주)원마트",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 일산동 598-1 2동",
         "status": "약정만료",
@@ -7216,7 +7216,7 @@ const TARGETS = [
     },
     {
         "name": "(주)원마트",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 일산동 598-1 3동",
         "status": "약정만료",
@@ -7231,7 +7231,7 @@ const TARGETS = [
     },
     {
         "name": "(주)원봉서울본부",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 토평동 377-2번지",
         "status": "약정만료",
@@ -7246,7 +7246,7 @@ const TARGETS = [
     },
     {
         "name": "(주)원에스엔터프라이즈",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 중구 황학동 737번지 kt매장",
         "status": "약정만료",
@@ -7261,7 +7261,7 @@ const TARGETS = [
     },
     {
         "name": "(주)원에스엔터프라이즈",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 종로구 창신동 293-2",
         "status": "약정만료",
@@ -7276,7 +7276,7 @@ const TARGETS = [
     },
     {
         "name": "(주)원에스엔터프라이즈",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 종로구 숭인동 298-1",
         "status": "약정만료",
@@ -7291,7 +7291,7 @@ const TARGETS = [
     },
     {
         "name": "(주)원에스엔터프라이즈",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 남영동 61-4",
         "status": "약정만료",
@@ -7306,7 +7306,7 @@ const TARGETS = [
     },
     {
         "name": "(주)원일산업",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 수동면 송천리 595-7 원일산업창고",
         "status": "약정만료",
@@ -7321,7 +7321,7 @@ const TARGETS = [
     },
     {
         "name": "(주)원일산업",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 수동면 송천리 595-11",
         "status": "만기도래_신규(1st)",
@@ -7336,7 +7336,7 @@ const TARGETS = [
     },
     {
         "name": "(주)웰지스",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 수동면 입석리 37-12",
         "status": "약정만료",
@@ -7351,7 +7351,7 @@ const TARGETS = [
     },
     {
         "name": "(주)윌비모터스",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 280-4번지 2층",
         "status": "약정만료",
@@ -7366,7 +7366,7 @@ const TARGETS = [
     },
     {
         "name": "(주)유니골프앤리조트",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 북방면 원소리 754-11 1층",
         "status": "만기도래_신규(1st)",
@@ -7381,7 +7381,7 @@ const TARGETS = [
     },
     {
         "name": "(주)유니골프앤리조트",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 북방면 원소리 754-11 1층",
         "status": "만기도래_신규(1st)",
@@ -7396,7 +7396,7 @@ const TARGETS = [
     },
     {
         "name": "(주)유니골프앤리조트",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 북방면 원소리 754-11 2층",
         "status": "만기도래_신규(1st)",
@@ -7411,7 +7411,7 @@ const TARGETS = [
     },
     {
         "name": "(주)유니룩스",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 산남동 35-8 1층",
         "status": "약정만료",
@@ -7426,7 +7426,7 @@ const TARGETS = [
     },
     {
         "name": "(주)유니룩스",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 행신동 785-1 소만월빌딩 2층",
         "status": "약정만료",
@@ -7441,7 +7441,7 @@ const TARGETS = [
     },
     {
         "name": "(주)유니룩스",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 행신동 785-1번지 소만빌딩 4층",
         "status": "약정만료",
@@ -7456,7 +7456,7 @@ const TARGETS = [
     },
     {
         "name": "(주)이건산전",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 진벌리 480번지 이건산전2공장",
         "status": "만기도래_신규(1st)",
@@ -7471,7 +7471,7 @@ const TARGETS = [
     },
     {
         "name": "(주)이건산전",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진벌리 480",
         "status": "약정만료",
@@ -7486,7 +7486,7 @@ const TARGETS = [
     },
     {
         "name": "(주)이오스하이텍",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 문막읍 반계리 101 이오스하이텍",
         "status": "약정만료",
@@ -7501,7 +7501,7 @@ const TARGETS = [
     },
     {
         "name": "(주)이패스JNP아카데미",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 서린동 88번지 6층",
         "status": "약정만료",
@@ -7516,7 +7516,7 @@ const TARGETS = [
     },
     {
         "name": "(주)인스밸리",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 도화동 173 삼창프라자빌딩 10층",
         "status": "약정만료",
@@ -7531,7 +7531,7 @@ const TARGETS = [
     },
     {
         "name": "(주)인터내셔널사이언티픽스탠다드",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 198-53 벤처타운 3동",
         "status": "만기도래_신규(1st)",
@@ -7546,7 +7546,7 @@ const TARGETS = [
     },
     {
         "name": "(주)일도",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 관산동 609-26 12동",
         "status": "약정만료",
@@ -7561,7 +7561,7 @@ const TARGETS = [
     },
     {
         "name": "(주)일도",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 관산동 609-26 4동",
         "status": "만기도래_신규(1st)",
@@ -7576,7 +7576,7 @@ const TARGETS = [
     },
     {
         "name": "(주)일상의친구",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 안암동4가 41-37",
         "status": "약정만료",
@@ -7591,7 +7591,7 @@ const TARGETS = [
     },
     {
         "name": "(주)일흥(피앤피)",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 초동 10-8  동산빌딩2층",
         "status": "약정만료",
@@ -7606,7 +7606,7 @@ const TARGETS = [
     },
     {
         "name": "(주)자우미디어",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 558-1 7층 719호",
         "status": "만기도래_신규(1st)",
@@ -7621,7 +7621,7 @@ const TARGETS = [
     },
     {
         "name": "(주)정수",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 영중면 거사리 거사리 996-3번지",
         "status": "약정만료",
@@ -7636,7 +7636,7 @@ const TARGETS = [
     },
     {
         "name": "(주)정수",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 영중면 거사리  562-3",
         "status": "약정만료",
@@ -7651,7 +7651,7 @@ const TARGETS = [
     },
     {
         "name": "(주)정수",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 영중면거사리 996-3",
         "status": "약정만료",
@@ -7666,7 +7666,7 @@ const TARGETS = [
     },
     {
         "name": "(주)정수글로벌",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 묵동 189-5번지 먹골역내",
         "status": "약정만료",
@@ -7681,7 +7681,7 @@ const TARGETS = [
     },
     {
         "name": "(주)정수글로벌",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 면목동 495번지 사가정역내(역사내부)",
         "status": "약정만료",
@@ -7696,7 +7696,7 @@ const TARGETS = [
     },
     {
         "name": "(주)정수글로벌",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 상봉동 100-46번지 상봉역 내",
         "status": "약정만료",
@@ -7711,7 +7711,7 @@ const TARGETS = [
     },
     {
         "name": "(주)정수글로벌",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 문산읍 문산리 17-550번지 문산역내",
         "status": "약정만료",
@@ -7726,7 +7726,7 @@ const TARGETS = [
     },
     {
         "name": "(주)정수글로벌",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 연희동 168-6번지 서대문구청 1층 로비",
         "status": "약정만료",
@@ -7741,7 +7741,7 @@ const TARGETS = [
     },
     {
         "name": "(주)정수글로벌",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 야당동 1088번지 야당역사(3번출구쪽)",
         "status": "약정만료",
@@ -7756,7 +7756,7 @@ const TARGETS = [
     },
     {
         "name": "(주)정수글로벌",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 횡성읍 읍하리 40 횡성보훈공원내",
         "status": "약정만료",
@@ -7771,7 +7771,7 @@ const TARGETS = [
     },
     {
         "name": "(주)정우화학",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 원당동 778-19",
         "status": "약정만료",
@@ -7786,7 +7786,7 @@ const TARGETS = [
     },
     {
         "name": "(주)정우화학",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 장항동 556-5",
         "status": "약정만료",
@@ -7801,7 +7801,7 @@ const TARGETS = [
     },
     {
         "name": "(주)정우화학",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 원당동 778-19번지",
         "status": "약정만료",
@@ -7816,7 +7816,7 @@ const TARGETS = [
     },
     {
         "name": "(주)정우화학",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 주문진읍 주문리 주문리 440",
         "status": "만기도래_재계약",
@@ -7831,7 +7831,7 @@ const TARGETS = [
     },
     {
         "name": "(주)정우화학",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 장항동 566-8번지 3층",
         "status": "약정만료",
@@ -7846,7 +7846,7 @@ const TARGETS = [
     },
     {
         "name": "(주)정이푸드빌",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 대포동 947-3 .",
         "status": "약정만료",
@@ -7861,7 +7861,7 @@ const TARGETS = [
     },
     {
         "name": "(주)정중한에프앤비",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 아천동 90-5",
         "status": "약정만료",
@@ -7876,7 +7876,7 @@ const TARGETS = [
     },
     {
         "name": "(주)정중한에프앤비",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 교문동 624-4",
         "status": "약정만료",
@@ -7891,7 +7891,7 @@ const TARGETS = [
     },
     {
         "name": "(주)정중한에프앤비",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 아천동 90-5",
         "status": "만기도래_신규(1st)",
@@ -7906,7 +7906,7 @@ const TARGETS = [
     },
     {
         "name": "(주)정중한에프앤비",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 교문동 624",
         "status": "약정만료",
@@ -7921,7 +7921,7 @@ const TARGETS = [
     },
     {
         "name": "(주)제이레퍼토리",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 동교동 179-9번지 45층",
         "status": "약정만료",
@@ -7936,7 +7936,7 @@ const TARGETS = [
     },
     {
         "name": "(주)제이레퍼토리",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 동교동 179-9번지 3층",
         "status": "약정만료",
@@ -7951,7 +7951,7 @@ const TARGETS = [
     },
     {
         "name": "(주)제이레퍼토리",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 창천동 506-10 4층(신촌로3길 15)",
         "status": "약정만료",
@@ -7966,7 +7966,7 @@ const TARGETS = [
     },
     {
         "name": "(주)제이에스이엠씨",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 신북면 신평리 192-1 신평염색공장집단화단지사업협동조합 2층",
         "status": "약정만료",
@@ -7981,7 +7981,7 @@ const TARGETS = [
     },
     {
         "name": "(주)제이에스이엠씨",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 봉양동 봉양동 362-7",
         "status": "약정만료",
@@ -7996,7 +7996,7 @@ const TARGETS = [
     },
     {
         "name": "(주)제이에스이엠씨",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 남면 상수리 상수리 350-1",
         "status": "만기도래_신규(1st)",
@@ -8011,7 +8011,7 @@ const TARGETS = [
     },
     {
         "name": "(주)제이에스이엠씨",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 신북면 신평리 10-10번지",
         "status": "약정만료",
@@ -8026,7 +8026,7 @@ const TARGETS = [
     },
     {
         "name": "(주)제이엔케이히터",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 481-6 (상암스테이션 충전소)",
         "status": "약정만료",
@@ -8041,7 +8041,7 @@ const TARGETS = [
     },
     {
         "name": "(주)제이엔케이히터",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 서소문동 37번지 서울시청서소문별관 수소충전소",
         "status": "약정만료",
@@ -8056,7 +8056,7 @@ const TARGETS = [
     },
     {
         "name": "(주)제이푸드원",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 무봉리 359-8",
         "status": "만기도래_신규(1st)",
@@ -8071,7 +8071,7 @@ const TARGETS = [
     },
     {
         "name": "(주)조선비즈",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 태평로1가 61-1번지 코리아나호텔5층",
         "status": "약정만료",
@@ -8086,7 +8086,7 @@ const TARGETS = [
     },
     {
         "name": "(주)조선비즈",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 태평로1가 61-1번지 코리아나호텔5층",
         "status": "약정만료",
@@ -8101,7 +8101,7 @@ const TARGETS = [
     },
     {
         "name": "(주)조이웍스",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 선단동 840-12",
         "status": "약정만료",
@@ -8116,7 +8116,7 @@ const TARGETS = [
     },
     {
         "name": "(주)중앙백신연구소",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 교문동 754-7",
         "status": "약정만료",
@@ -8131,7 +8131,7 @@ const TARGETS = [
     },
     {
         "name": "(주)지랩스",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 424-7(동호로14길19)오피스",
         "status": "약정만료",
@@ -8146,7 +8146,7 @@ const TARGETS = [
     },
     {
         "name": "(주)지랩스",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 수택동 526-4 4층",
         "status": "약정만료",
@@ -8161,7 +8161,7 @@ const TARGETS = [
     },
     {
         "name": "(주)지앤브이",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 우산동 660 전통산업진흥센터 보육동",
         "status": "약정만료",
@@ -8176,7 +8176,7 @@ const TARGETS = [
     },
     {
         "name": "(주)지에프컴퍼니",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 보문동6가 458번지 보문파크자이 자이안센터",
         "status": "약정만료",
@@ -8191,7 +8191,7 @@ const TARGETS = [
     },
     {
         "name": "(주)지우이엔지",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 백석읍 복지리 279-1",
         "status": "만기도래_신규(1st)",
@@ -8206,7 +8206,7 @@ const TARGETS = [
     },
     {
         "name": "(주)지텍코리아",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 민락동 821-1",
         "status": "약정만료",
@@ -8221,7 +8221,7 @@ const TARGETS = [
     },
     {
         "name": "(주)지텍코리아",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 민락동 821-1번지 예지플러스 1층",
         "status": "만기도래_신규(1st)",
@@ -8236,7 +8236,7 @@ const TARGETS = [
     },
     {
         "name": "(주)지텍코리아",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 민락동 오목로233 예지플러스 4층",
         "status": "약정만료",
@@ -8251,7 +8251,7 @@ const TARGETS = [
     },
     {
         "name": "(주)진원",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 서원면 옥계리 산 247",
         "status": "약정만료",
@@ -8266,7 +8266,7 @@ const TARGETS = [
     },
     {
         "name": "(주)진원",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 서원면 옥계리 산 247",
         "status": "약정만료",
@@ -8281,7 +8281,7 @@ const TARGETS = [
     },
     {
         "name": "(주)진원",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 서원면 옥계리 산247",
         "status": "약정만료",
@@ -8296,7 +8296,7 @@ const TARGETS = [
     },
     {
         "name": "(주)진원",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 서원면 옥계리 산247",
         "status": "약정만료",
@@ -8311,7 +8311,7 @@ const TARGETS = [
     },
     {
         "name": "(주)차마을유통",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 정교리 306-12",
         "status": "약정만료",
@@ -8326,7 +8326,7 @@ const TARGETS = [
     },
     {
         "name": "(주)천일",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 325-2 601호",
         "status": "만기도래_신규(1st)",
@@ -8341,7 +8341,7 @@ const TARGETS = [
     },
     {
         "name": "(주)청담이엠텍",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부2동 542-7",
         "status": "약정만료",
@@ -8356,7 +8356,7 @@ const TARGETS = [
     },
     {
         "name": "(주)청담이엠텍",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부2동 542-7",
         "status": "약정만료",
@@ -8371,7 +8371,7 @@ const TARGETS = [
     },
     {
         "name": "(주)컴스마트",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 구산동 624-2번지 창고",
         "status": "약정만료",
@@ -8386,7 +8386,7 @@ const TARGETS = [
     },
     {
         "name": "(주)컴스마트",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 용산구 원효로3가 29-1번지",
         "status": "약정만료",
@@ -8401,7 +8401,7 @@ const TARGETS = [
     },
     {
         "name": "(주)컴스마트",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 구산동 624-2번지",
         "status": "약정만료",
@@ -8416,7 +8416,7 @@ const TARGETS = [
     },
     {
         "name": "(주)컴스마트",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 구산동 624-2번지 건너편",
         "status": "약정만료",
@@ -8431,7 +8431,7 @@ const TARGETS = [
     },
     {
         "name": "(주)케이비아이",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 1347",
         "status": "약정만료",
@@ -8446,7 +8446,7 @@ const TARGETS = [
     },
     {
         "name": "(주)케이에이치에스",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 대관령면 송천2길 21",
         "status": "약정만료",
@@ -8461,7 +8461,7 @@ const TARGETS = [
     },
     {
         "name": "(주)케이엠나인",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 다산동 6060-2번지 다산역중앙하이츠파크",
         "status": "약정만료",
@@ -8476,7 +8476,7 @@ const TARGETS = [
     },
     {
         "name": "(주)케이티서비스",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 127-7 kt강북지사 3층",
         "status": "약정만료",
@@ -8491,7 +8491,7 @@ const TARGETS = [
     },
     {
         "name": "(주)케이티서비스",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 127-7",
         "status": "약정만료",
@@ -8506,7 +8506,7 @@ const TARGETS = [
     },
     {
         "name": "(주)케이티서비스",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 127-7",
         "status": "약정만료",
@@ -8521,7 +8521,7 @@ const TARGETS = [
     },
     {
         "name": "(주)케이티서비스",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 향동동 509 2층",
         "status": "약정만료",
@@ -8536,7 +8536,7 @@ const TARGETS = [
     },
     {
         "name": "(주)케이티서비스",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 신내동 641번지 KT신내빌딩 1층 모뎀실",
         "status": "약정만료",
@@ -8551,7 +8551,7 @@ const TARGETS = [
     },
     {
         "name": "(주)케이티서비스",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 향동동 509번지 2층 모뎀실",
         "status": "약정만료",
@@ -8566,7 +8566,7 @@ const TARGETS = [
     },
     {
         "name": "(주)케이티씨",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 광탄면 보광로 870번지",
         "status": "만기도래_재계약",
@@ -8581,7 +8581,7 @@ const TARGETS = [
     },
     {
         "name": "(주)케이티씨",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 광탄면 마장리 47 (보광로 856)",
         "status": "약정만료",
@@ -8596,7 +8596,7 @@ const TARGETS = [
     },
     {
         "name": "(주)코나",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 신내동 315-3 지하 관리실",
         "status": "만기도래_신규(1st)",
@@ -8611,7 +8611,7 @@ const TARGETS = [
     },
     {
         "name": "(주)코리아나호텔",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 태평로1가 조선일보사건물",
         "status": "약정만료",
@@ -8626,7 +8626,7 @@ const TARGETS = [
     },
     {
         "name": "(주)코리아나호텔",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 태평로1가 조선일보사건물",
         "status": "약정만료",
@@ -8641,7 +8641,7 @@ const TARGETS = [
     },
     {
         "name": "(주)코리아나호텔",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 태평로1가 조선일보사건물",
         "status": "약정만료",
@@ -8656,7 +8656,7 @@ const TARGETS = [
     },
     {
         "name": "(주)코리아나호텔",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 태평로1가 조선일보사건물",
         "status": "약정만료",
@@ -8671,7 +8671,7 @@ const TARGETS = [
     },
     {
         "name": "(주)코리아나호텔",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 태평로1가 조선일보사건물",
         "status": "약정만료",
@@ -8686,7 +8686,7 @@ const TARGETS = [
     },
     {
         "name": "(주)코리아나호텔",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 태평로1가 조선일보사건물",
         "status": "약정만료",
@@ -8701,7 +8701,7 @@ const TARGETS = [
     },
     {
         "name": "(주)코리아나호텔",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 태평로1가 조선일보사건물",
         "status": "약정만료",
@@ -8716,7 +8716,7 @@ const TARGETS = [
     },
     {
         "name": "(주)코리아나호텔",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 태평로1가 조선일보사건물",
         "status": "약정만료",
@@ -8731,7 +8731,7 @@ const TARGETS = [
     },
     {
         "name": "(주)코리아나호텔",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 태평로1가 조선일보사건물",
         "status": "약정만료",
@@ -8746,7 +8746,7 @@ const TARGETS = [
     },
     {
         "name": "(주)코일마스터",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시일산구 중산동 하늘마을로 158 대방트리프라운 b동 13층",
         "status": "약정만료",
@@ -8761,7 +8761,7 @@ const TARGETS = [
     },
     {
         "name": "(주)콜라겐랩",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 군내면직두리 759-2",
         "status": "약정만료",
@@ -8776,7 +8776,7 @@ const TARGETS = [
     },
     {
         "name": "(주)퀸즈코퍼레이션",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 장항동 863-1번지 드림월드빌딩 301호",
         "status": "약정만료",
@@ -8791,7 +8791,7 @@ const TARGETS = [
     },
     {
         "name": "(주)타이거알유(계동지점)",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 계동  140-2 스포츠센터 (계동 현대빌딩계동)",
         "status": "약정만료",
@@ -8806,7 +8806,7 @@ const TARGETS = [
     },
     {
         "name": "(주)탑밴",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 지축동 1007-8번지 대경스퀘어 706707호",
         "status": "만기도래_신규(1st)",
@@ -8821,7 +8821,7 @@ const TARGETS = [
     },
     {
         "name": "(주)탑밴",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 지축동 1007-8번지 대경스퀘어 708709호",
         "status": "만기도래_신규(1st)",
@@ -8836,7 +8836,7 @@ const TARGETS = [
     },
     {
         "name": "(주)태강산업",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 파주읍 연풍리 416-11 (그린힐 빌라단지)",
         "status": "만기도래_신규(1st)",
@@ -8851,7 +8851,7 @@ const TARGETS = [
     },
     {
         "name": "(주)태림에프웰",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 파평면 금파리 533번지",
         "status": "약정만료",
@@ -8866,7 +8866,7 @@ const TARGETS = [
     },
     {
         "name": "(주)태림에프웰",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 파평면 금파리 533번지",
         "status": "약정만료",
@@ -8881,7 +8881,7 @@ const TARGETS = [
     },
     {
         "name": "(주)태림에프웰",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 파평면 금파리 533 (주)태림Food 태림 2공장 앞 신설공장",
         "status": "약정만료",
@@ -8896,7 +8896,7 @@ const TARGETS = [
     },
     {
         "name": "(주)태양경보시스템",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 백석동 1141-2 유니테크빌 910호",
         "status": "약정만료",
@@ -8911,7 +8911,7 @@ const TARGETS = [
     },
     {
         "name": "(주)태왕이앤씨",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 주청리 2-9 .",
         "status": "약정만료",
@@ -8926,7 +8926,7 @@ const TARGETS = [
     },
     {
         "name": "(주)토네버인터내셔널",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 소공동 1번지 롯데호텔본점1층",
         "status": "약정만료",
@@ -8941,7 +8941,7 @@ const TARGETS = [
     },
     {
         "name": "(주)토리든",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 321-48번지 건물",
         "status": "만기도래_신규(1st)",
@@ -8956,7 +8956,7 @@ const TARGETS = [
     },
     {
         "name": "(주)티디에이치컴퍼니",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 성동구 도선동  352",
         "status": "만기도래_신규(1st)",
@@ -8971,7 +8971,7 @@ const TARGETS = [
     },
     {
         "name": "(주)티디에이치컴퍼니",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 청량리1동 51-2번지5층",
         "status": "약정만료",
@@ -8986,7 +8986,7 @@ const TARGETS = [
     },
     {
         "name": "(주)티디에이치컴퍼니",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 청량리동 51-2 4층",
         "status": "약정만료",
@@ -9001,7 +9001,7 @@ const TARGETS = [
     },
     {
         "name": "(주)티디엠그룹",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 용현동 528-11 (주)티다엠그룹",
         "status": "만기도래_신규(1st)",
@@ -9016,7 +9016,7 @@ const TARGETS = [
     },
     {
         "name": "(주)티디엠그룹",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 강북구 수유동 192-61번지",
         "status": "약정만료",
@@ -9031,7 +9031,7 @@ const TARGETS = [
     },
     {
         "name": "(주)티디엠그룹",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 석우리 543",
         "status": "약정만료",
@@ -9046,7 +9046,7 @@ const TARGETS = [
     },
     {
         "name": "(주)티에스케이워터",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 별내동 802 별내크린센터 3층 사무실",
         "status": "약정만료",
@@ -9061,7 +9061,7 @@ const TARGETS = [
     },
     {
         "name": "(주)티피와이",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 조양동 1466-1 보사노바카페",
         "status": "약정만료",
@@ -9076,7 +9076,7 @@ const TARGETS = [
     },
     {
         "name": "(주)티피와이",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 교동 새천년도로 517",
         "status": "약정만료",
@@ -9091,7 +9091,7 @@ const TARGETS = [
     },
     {
         "name": "(주)티피와이",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 조양동 1465-2",
         "status": "약정만료",
@@ -9106,7 +9106,7 @@ const TARGETS = [
     },
     {
         "name": "(주)파고다아카데미",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 창천동 20-41 아남오피스텔 본관 3층 4층 5층",
         "status": "만기도래_신규(1st)",
@@ -9121,7 +9121,7 @@ const TARGETS = [
     },
     {
         "name": "(주)파고다아카데미",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 아현동 굴레방로17  6층",
         "status": "만기도래_신규(1st)",
@@ -9136,7 +9136,7 @@ const TARGETS = [
     },
     {
         "name": "(주)파고다아카데미",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 아현동 굴레방로 17 3층",
         "status": "만기도래_신규(1st)",
@@ -9151,7 +9151,7 @@ const TARGETS = [
     },
     {
         "name": "(주)파고다아카데미",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 관철동 5-13번지 2층사무실",
         "status": "약정만료",
@@ -9166,7 +9166,7 @@ const TARGETS = [
     },
     {
         "name": "(주)평일양주공장",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 회천1동 경기 양주시 칠봉산로254번길 79",
         "status": "만기도래_신규(1st)",
@@ -9181,7 +9181,7 @@ const TARGETS = [
     },
     {
         "name": "(주)포근해",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 457번지 소라빌딩 301호",
         "status": "약정만료",
@@ -9196,7 +9196,7 @@ const TARGETS = [
     },
     {
         "name": "(주)프롬더레드",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 북아현동 189-1번지 아주빌딩 302402호",
         "status": "약정만료",
@@ -9211,7 +9211,7 @@ const TARGETS = [
     },
     {
         "name": "(주)프리다츠",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 284-62  세종하우스디 207호",
         "status": "만기도래_신규(1st)",
@@ -9226,7 +9226,7 @@ const TARGETS = [
     },
     {
         "name": "(주)프리미엄에셋",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 주엽동 106-3 동영빌딩 중앙로 1413 동영빌딩 7층",
         "status": "약정만료",
@@ -9241,7 +9241,7 @@ const TARGETS = [
     },
     {
         "name": "(주)프리미엄에셋",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 원흥동 706번지 광양프러티어밸리6차지식산업센터 1404호 메타본부",
         "status": "약정만료",
@@ -9256,7 +9256,7 @@ const TARGETS = [
     },
     {
         "name": "(주)피앤에쓰",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 초동 72-10 나인트리 바이 파르나스 서울Ⅱ",
         "status": "만기도래_신규(1st)",
@@ -9271,7 +9271,7 @@ const TARGETS = [
     },
     {
         "name": "(주)피앤에쓰",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 을지로5가 92-2 나인트리호텔 동대문",
         "status": "만기도래_신규(1st)",
@@ -9286,7 +9286,7 @@ const TARGETS = [
     },
     {
         "name": "(주)피앤에쓰",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 충무로2가 63-2 나인트리 호텔 명동",
         "status": "만기도래_신규(1st)",
@@ -9301,7 +9301,7 @@ const TARGETS = [
     },
     {
         "name": "(주)피앤에쓰",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 관훈동 155-2 나인트리 프리미어 호텔 인사동",
         "status": "만기도래_신규(1st)",
@@ -9316,7 +9316,7 @@ const TARGETS = [
     },
     {
         "name": "(주)피앤에쓰",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 관훈동 155-2 (나인트리 프리미어호텔)",
         "status": "만기도래_신규(1st)",
@@ -9331,7 +9331,7 @@ const TARGETS = [
     },
     {
         "name": "(주)피앤월드노원역2호점",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 쌍문동 723번지(신원프라자116호)",
         "status": "약정만료",
@@ -9346,7 +9346,7 @@ const TARGETS = [
     },
     {
         "name": "(주)피앤월드노원역2호점",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 864-30번지 1층",
         "status": "약정만료",
@@ -9361,7 +9361,7 @@ const TARGETS = [
     },
     {
         "name": "(주)피앤월드노원역2호점",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 쌍문동 20-5 피앤월드 쌍문2호점",
         "status": "약정만료",
@@ -9376,7 +9376,7 @@ const TARGETS = [
     },
     {
         "name": "(주)피앤월드노원역2호점",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 중화동 303-1 1층",
         "status": "약정만료",
@@ -9391,7 +9391,7 @@ const TARGETS = [
     },
     {
         "name": "(주)피앤월드노원역2호점",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 7171층106호",
         "status": "약정만료",
@@ -9406,7 +9406,7 @@ const TARGETS = [
     },
     {
         "name": "(주)피앤월드노원역2호점",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "서울 노원구 상계동 593-14  1층",
         "status": "약정만료",
@@ -9421,7 +9421,7 @@ const TARGETS = [
     },
     {
         "name": "(주)피앤월드노원역2호점",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 717  105호",
         "status": "약정만료",
@@ -9436,7 +9436,7 @@ const TARGETS = [
     },
     {
         "name": "(주)피앤월드노원역2호점",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "서울 노원구 상계동 593-14  1층",
         "status": "약정만료",
@@ -9451,7 +9451,7 @@ const TARGETS = [
     },
     {
         "name": "(주)피치매니지먼트",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 657-128번지 1층",
         "status": "약정만료",
@@ -9466,7 +9466,7 @@ const TARGETS = [
     },
     {
         "name": "(주)피치매니지먼트",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 657-128번지 1층",
         "status": "약정만료",
@@ -9481,7 +9481,7 @@ const TARGETS = [
     },
     {
         "name": "(주)피치매니지먼트",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 657-128번지 5층",
         "status": "약정만료",
@@ -9496,7 +9496,7 @@ const TARGETS = [
     },
     {
         "name": "(주)피치매니지먼트",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 657-128번지 지하1층",
         "status": "약정만료",
@@ -9511,7 +9511,7 @@ const TARGETS = [
     },
     {
         "name": "(주)피치매니지먼트",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 소공동 1번지 롯데백화점13층",
         "status": "만기도래_신규(1st)",
@@ -9526,7 +9526,7 @@ const TARGETS = [
     },
     {
         "name": "(주)하우리",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 종로구 충신동 60번지  2층212호",
         "status": "약정만료",
@@ -9541,7 +9541,7 @@ const TARGETS = [
     },
     {
         "name": "(주)하이드어웨이",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 탄현면 금산리 299-5",
         "status": "만기도래_재계약",
@@ -9556,7 +9556,7 @@ const TARGETS = [
     },
     {
         "name": "(주)하이드어웨이",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 탄현면 금산리 299-5 3층",
         "status": "만기도래_재계약",
@@ -9571,7 +9571,7 @@ const TARGETS = [
     },
     {
         "name": "(주)하이드어웨이",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 탄현면 금산리 299-5",
         "status": "만기도래_재계약",
@@ -9586,7 +9586,7 @@ const TARGETS = [
     },
     {
         "name": "(주)하이드어웨이",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 서종면 397-9번지",
         "status": "만기도래_신규(1st)",
@@ -9601,7 +9601,7 @@ const TARGETS = [
     },
     {
         "name": "(주)하이원추추파크",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 도계읍 심포리 231-3 큐브하우스 하이원추추파크",
         "status": "약정만료",
@@ -9616,7 +9616,7 @@ const TARGETS = [
     },
     {
         "name": "(주)하이원추추파크",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 도계읍 심포리 231-3 추추파크입구 저수지 CCTV용",
         "status": "약정만료",
@@ -9631,7 +9631,7 @@ const TARGETS = [
     },
     {
         "name": "(주)하이팀",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 불광동  308-1 1층 KT매장 (불광동 범서빌딩)",
         "status": "약정만료",
@@ -9646,7 +9646,7 @@ const TARGETS = [
     },
     {
         "name": "(주)하이팀",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 불광동 308-1번지 KT매장",
         "status": "약정만료",
@@ -9661,7 +9661,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한결건물관리",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 용현동 39-31번지 하얏트빌리지A동 7층",
         "status": "약정만료",
@@ -9676,7 +9676,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한국가스기술공사평택",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 횡계리 횡계리 14-297번지 수소충전소",
         "status": "약정만료",
@@ -9691,7 +9691,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한국가스산업",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 광적면 비암리 693",
         "status": "약정만료",
@@ -9706,7 +9706,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한국가스산업",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 광적면 비암리 693",
         "status": "약정만료",
@@ -9721,7 +9721,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한국가스산업",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 광적면 비암리 693-14",
         "status": "약정만료",
@@ -9736,7 +9736,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한국가스산업",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 광적면 비암리 693-14",
         "status": "약정만료",
@@ -9751,7 +9751,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한국생활건강",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 233-3 한국생활건강 3층",
         "status": "만기도래_신규(1st)",
@@ -9766,7 +9766,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한국생활건강",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 233-3 한국생활건강 1층",
         "status": "만기도래_신규(1st)",
@@ -9781,7 +9781,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한국생활건강",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 233-3 한국생활건강 4층",
         "status": "만기도래_신규(1st)",
@@ -9796,7 +9796,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한국야쿠르트",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 766-15",
         "status": "만기도래_신규(1st)",
@@ -9811,7 +9811,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한국오지케이",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 문막읍 동화리 1665-3",
         "status": "약정만료",
@@ -9826,7 +9826,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한국오지케이",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 문막읍 동화리 1665-3 주식회사 스포컴",
         "status": "약정만료",
@@ -9841,7 +9841,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한국전자정보시스템",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 주교동 1020번지",
         "status": "약정만료",
@@ -9856,7 +9856,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한국젬스",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 백석동 1141-2 유니테크빌 614호",
         "status": "약정만료",
@@ -9871,7 +9871,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한국지엠강릉서비스센터",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 입암동 10-16 .",
         "status": "만기도래_신규(1st)",
@@ -9886,7 +9886,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한국카본",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 용강동 50-11번지 카본빌딩 8층",
         "status": "약정만료",
@@ -9901,7 +9901,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한국카본",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 용강동 50-11번지 카본빌딩",
         "status": "약정만료",
@@ -9916,7 +9916,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한라에프에스디",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 우천면 수남로 166 한라에프에스디",
         "status": "만기도래_신규(1st)",
@@ -9931,7 +9931,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한백티엘에스",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 소공동 1번지 롯데백화점지하2층 택배물류집하장",
         "status": "약정만료",
@@ -9946,7 +9946,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한식품(OCT뷰N)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 신북면 심곡리 90",
         "status": "약정만료",
@@ -9961,7 +9961,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한올파이낸스에너지(OCT)",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 양서면 양수리 621-11 (주)한올파이낸스에너지",
         "status": "약정만료",
@@ -9976,7 +9976,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한올파이낸스에너지(OCT)",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 양서면 양수리 621-11번지 (주)한올파이낸스에너지",
         "status": "만기도래_신규(1st)",
@@ -9991,7 +9991,7 @@ const TARGETS = [
     },
     {
         "name": "대한다업 (주) 성남공장",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 필동3가 54번지 2층",
         "status": "만기도래_신규(1st)",
@@ -10006,7 +10006,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한텍",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 동면 만천양지길 147",
         "status": "만기도래_재계약",
@@ -10021,7 +10021,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한텍",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 신북면 가채리295-1",
         "status": "약정만료",
@@ -10036,7 +10036,7 @@ const TARGETS = [
     },
     {
         "name": "(주)합성자동차",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 330-17 현대자동차블루헨즈",
         "status": "약정만료",
@@ -10051,7 +10051,7 @@ const TARGETS = [
     },
     {
         "name": "(주)해주디앤씨",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동 9-15번지 금오빌딩2층",
         "status": "약정만료",
@@ -10066,7 +10066,7 @@ const TARGETS = [
     },
     {
         "name": "(주)해주디앤씨",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동 9-15번지 금오빌딩2층",
         "status": "약정만료",
@@ -10081,7 +10081,7 @@ const TARGETS = [
     },
     {
         "name": "(주)헤리트",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 종로구 연건동 128-9번지(KT혜화지사4층-지능망서비스팀)",
         "status": "약정만료",
@@ -10096,7 +10096,7 @@ const TARGETS = [
     },
     {
         "name": "(주)현대메디텍",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 지정면 청정로 80",
         "status": "만기도래_재계약",
@@ -10111,7 +10111,7 @@ const TARGETS = [
     },
     {
         "name": "(주)화영약품",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 토당동 342-7번지 지하1층",
         "status": "약정만료",
@@ -10126,7 +10126,7 @@ const TARGETS = [
     },
     {
         "name": "(주)황원레미콘아스콘",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 고성군 토성면 용원로547-14",
         "status": "약정만료",
@@ -10141,7 +10141,7 @@ const TARGETS = [
     },
     {
         "name": "(주)황원레미콘아스콘",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 고성군 토성면 원암리 64-4 황원레미콘",
         "status": "만기도래_신규(1st)",
@@ -10156,7 +10156,7 @@ const TARGETS = [
     },
     {
         "name": "(주)휴비즈",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 280-9 생각공장 101",
         "status": "약정만료",
@@ -10171,7 +10171,7 @@ const TARGETS = [
     },
     {
         "name": "(주)휴비즈",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 280-9번지",
         "status": "만기도래_신규(1st)",
@@ -10186,7 +10186,7 @@ const TARGETS = [
     },
     {
         "name": "(주)휴비즈",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 280-9 생각공장 B101호내(대표실)",
         "status": "약정만료",
@@ -10201,7 +10201,7 @@ const TARGETS = [
     },
     {
         "name": "(주)휴시스",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 대현동 150 이대역마에스트로 전층",
         "status": "만기도래_신규(1st)",
@@ -10216,7 +10216,7 @@ const TARGETS = [
     },
     {
         "name": "(주)휴시스",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 대조동 186-25 마에스트로 지하1층 관리실",
         "status": "약정만료",
@@ -10231,7 +10231,7 @@ const TARGETS = [
     },
     {
         "name": "(학)건국대학교건국유업.건국햄",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 2-3 더라움펜트하우스 3층 건국대캠퍼스타운",
         "status": "약정만료",
@@ -10246,7 +10246,7 @@ const TARGETS = [
     },
     {
         "name": "(학)건국대학교건국유업.건국햄",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 227-7 시타시티 지하",
         "status": "만기도래_신규(1st)",
@@ -10261,7 +10261,7 @@ const TARGETS = [
     },
     {
         "name": "(학)건국대학교건국유업.건국햄",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 화양동 1번지 건국대학교 동물생명과학대학 1층",
         "status": "약정만료",
@@ -10276,7 +10276,7 @@ const TARGETS = [
     },
     {
         "name": "(학)건국대학교건국유업.건국햄",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 화양동 1 건국대학교 생명과학관 1층",
         "status": "만기도래_신규(1st)",
@@ -10291,7 +10291,7 @@ const TARGETS = [
     },
     {
         "name": "(학)건국대학교건국유업.건국햄",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 화양동 508-4 2층",
         "status": "약정만료",
@@ -10306,7 +10306,7 @@ const TARGETS = [
     },
     {
         "name": "(학)건국대학교건국유업.건국햄",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 227-7 지하1층(푸드코너 끝)",
         "status": "만기도래_신규(1st)",
@@ -10321,7 +10321,7 @@ const TARGETS = [
     },
     {
         "name": "(학)건국대학교건국유업.건국햄",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 화양동 1 건국대학교 중장비동 303호",
         "status": "만기도래_신규(1st)",
@@ -10336,7 +10336,7 @@ const TARGETS = [
     },
     {
         "name": "(학)서강대학교",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 신수동 1-3번지 서강빌딩 전층",
         "status": "만기도래_신규(1st)",
@@ -10351,7 +10351,7 @@ const TARGETS = [
     },
     {
         "name": "(학)서강대학교",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 신수동 81-136번지",
         "status": "약정만료",
@@ -10366,7 +10366,7 @@ const TARGETS = [
     },
     {
         "name": "(학)서강대학교",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 신수동 81-136 제2서강빌딩 층간 CCTV",
         "status": "약정만료",
@@ -10381,7 +10381,7 @@ const TARGETS = [
     },
     {
         "name": "(학)서강대학교",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 신수동 1-3번지 서강빌딩",
         "status": "약정만료",
@@ -10396,7 +10396,7 @@ const TARGETS = [
     },
     {
         "name": "(학)서강대학교",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 신수동 81-136 제2서강빌딩",
         "status": "약정만료",
@@ -10411,7 +10411,7 @@ const TARGETS = [
     },
     {
         "name": "(학)서강대학교",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 신수동 1-3번지 서강빌딩 서강빌딩",
         "status": "약정만료",
@@ -10426,7 +10426,7 @@ const TARGETS = [
     },
     {
         "name": "(학)성암학원",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 동대문구 신설동 76-31 남서울빌딩",
         "status": "약정만료",
@@ -10441,7 +10441,7 @@ const TARGETS = [
     },
     {
         "name": "(학)성암학원",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 동대문구 신설동 76-31번지 남서울빌딩",
         "status": "만기도래_신규(1st)",
@@ -10456,7 +10456,7 @@ const TARGETS = [
     },
     {
         "name": "(학)연세대학교 연세봉래빌딩",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 봉래동1가 5-41번지 연세봉래빌딩",
         "status": "약정만료",
@@ -10471,7 +10471,7 @@ const TARGETS = [
     },
     {
         "name": "(학)인제학원",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 저동2가 85 백병원 본관하연관",
         "status": "약정만료",
@@ -10486,7 +10486,7 @@ const TARGETS = [
     },
     {
         "name": "(합자)영월교통",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 영월군 영월읍 하송리 436-2",
         "status": "약정만료",
@@ -10501,7 +10501,7 @@ const TARGETS = [
     },
     {
         "name": "1288부대(하늘정원91011동)view",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 화천군 사내면 사창리783  하늘정원@",
         "status": "약정만료",
@@ -10516,7 +10516,7 @@ const TARGETS = [
     },
     {
         "name": "1288부대(하늘정원91011동)view",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 화천군 사내면 솔대길 하늘정원 8동",
         "status": "약정만료",
@@ -10531,7 +10531,7 @@ const TARGETS = [
     },
     {
         "name": "2136부대",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 청산면 백의리 822-12",
         "status": "약정만료",
@@ -10546,7 +10546,7 @@ const TARGETS = [
     },
     {
         "name": "2136부대",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 신서면 도신리190-1 다동102호",
         "status": "약정만료",
@@ -10561,7 +10561,7 @@ const TARGETS = [
     },
     {
         "name": "2136부대",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 전곡읍 은대리649-9",
         "status": "약정만료",
@@ -10576,7 +10576,7 @@ const TARGETS = [
     },
     {
         "name": "2136부대",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 전곡읍 전곡리 440-7 전곡군인아파트 전은길 43-39",
         "status": "만기도래_신규(1st)",
@@ -10591,7 +10591,7 @@ const TARGETS = [
     },
     {
         "name": "2136부대",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 창수면 고소성리 표범아파트",
         "status": "약정만료",
@@ -10606,7 +10606,7 @@ const TARGETS = [
     },
     {
         "name": "2136부대",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 신서면 도신리 도신리 234-6",
         "status": "약정만료",
@@ -10621,7 +10621,7 @@ const TARGETS = [
     },
     {
         "name": "2136부대",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 전곡읍 전곡리 440-7 전곡군인아파트 전은길 43-39",
         "status": "약정만료",
@@ -10636,7 +10636,7 @@ const TARGETS = [
     },
     {
         "name": "24시빨래방",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 종로구 창신동 534번지 씽씽노래연습장",
         "status": "약정만료",
@@ -10651,7 +10651,7 @@ const TARGETS = [
     },
     {
         "name": "24시빨래방",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 종로구 창신동 302-5번지 3층",
         "status": "약정만료",
@@ -10666,7 +10666,7 @@ const TARGETS = [
     },
     {
         "name": "365매일한방병원(GiGAeyes guard)",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 동대문구 신설동 101-5번지 동경회관 지하1층1층2층",
         "status": "만기도래_신규(1st)",
@@ -10681,7 +10681,7 @@ const TARGETS = [
     },
     {
         "name": "365식자재할인마트(OCT)",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 414-24번지",
         "status": "약정만료",
@@ -10696,7 +10696,7 @@ const TARGETS = [
     },
     {
         "name": "5708부대",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 퇴계원읍 123번길 7-1번지 퇴계원군숙소",
         "status": "약정만료",
@@ -10711,7 +10711,7 @@ const TARGETS = [
     },
     {
         "name": "9988병원",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 성동구 행당동 130-115",
         "status": "약정만료",
@@ -10726,7 +10726,7 @@ const TARGETS = [
     },
     {
         "name": "AT컴퍼니",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단계동 북원로 2235-4 1층",
         "status": "약정만료",
@@ -10741,7 +10741,7 @@ const TARGETS = [
     },
     {
         "name": "AT컴퍼니",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 동산동 370번지 스타필드3층",
         "status": "약정만료",
@@ -10756,7 +10756,7 @@ const TARGETS = [
     },
     {
         "name": "AVENUE123",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 이태원동 이태원동 123-1 애비뉴123",
         "status": "약정만료",
@@ -10771,7 +10771,7 @@ const TARGETS = [
     },
     {
         "name": "AVENUE123",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 동대문구 신설동 102-8",
         "status": "약정만료",
@@ -10786,7 +10786,7 @@ const TARGETS = [
     },
     {
         "name": "AVENUE123",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 이태원동 이태원동 123-1 애비뉴123",
         "status": "약정만료",
@@ -10801,7 +10801,7 @@ const TARGETS = [
     },
     {
         "name": "H&H바이오패트롤",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 전진리 57-1 대한본교 조계종-낙산사(지농협)",
         "status": "약정만료",
@@ -10816,7 +10816,7 @@ const TARGETS = [
     },
     {
         "name": "HDC 현대산업개발",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서대문구 남가좌동 270-9번지 203호",
         "status": "약정만료",
@@ -10831,7 +10831,7 @@ const TARGETS = [
     },
     {
         "name": "HDC 현대산업개발",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서대문구 남가좌동 270-9번지 208호",
         "status": "약정만료",
@@ -10846,7 +10846,7 @@ const TARGETS = [
     },
     {
         "name": "IC-가평듀크하우스키즈펜션(GiGAeyes i-care)",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 대성리 대성리 362-2번지 듀크하우스펜션",
         "status": "약정만료",
@@ -10861,7 +10861,7 @@ const TARGETS = [
     },
     {
         "name": "IC-가평랜드오토캠핑장(무인캠핑장)",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 마일리 마일리 4-3번지 가평랜드",
         "status": "약정만료",
@@ -10876,7 +10876,7 @@ const TARGETS = [
     },
     {
         "name": "JW타워2",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 응암동 110-21전층",
         "status": "만기도래_신규(1st)",
@@ -10891,7 +10891,7 @@ const TARGETS = [
     },
     {
         "name": "KICPA",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로2가 185-10 1층",
         "status": "약정만료",
@@ -10906,7 +10906,7 @@ const TARGETS = [
     },
     {
         "name": "KICPA",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로2가 185-10   1층",
         "status": "약정만료",
@@ -10921,7 +10921,7 @@ const TARGETS = [
     },
     {
         "name": "KIS정보통신(주)",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 성산면 보광리 103 강릉상휴게소 강릉휴게소 상행선",
         "status": "만기도래_신규(1st)",
@@ -10936,7 +10936,7 @@ const TARGETS = [
     },
     {
         "name": "KIS정보통신(주)",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 성산면 보광리 151 강릉휴게소 하행선",
         "status": "만기도래_신규(1st)",
@@ -10951,7 +10951,7 @@ const TARGETS = [
     },
     {
         "name": "대한예수교장로회 화도교회",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 창현리 472-1",
         "status": "만기도래_신규(1st)",
@@ -10966,7 +10966,7 @@ const TARGETS = [
     },
     {
         "name": "M.S(엠에스)쥬얼리",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 와룡동 80-1 번지",
         "status": "약정만료",
@@ -10981,7 +10981,7 @@ const TARGETS = [
     },
     {
         "name": "sky어린이집",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1610번지 DDMC빌딩3층",
         "status": "약정만료",
@@ -10996,7 +10996,7 @@ const TARGETS = [
     },
     {
         "name": "sky어린이집",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1610번지ddmc빌딩3층",
         "status": "약정만료",
@@ -11011,7 +11011,7 @@ const TARGETS = [
     },
     {
         "name": "SK매직서비스",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 사노동 246-1",
         "status": "약정만료",
@@ -11026,7 +11026,7 @@ const TARGETS = [
     },
     {
         "name": "Soonok포슬린아트아카데미",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 양평읍 신애리 514-12",
         "status": "약정만료",
@@ -11041,7 +11041,7 @@ const TARGETS = [
     },
     {
         "name": "STX마린서비스",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 순화동 66번지 SK순화빌딩 15층",
         "status": "약정만료",
@@ -11056,7 +11056,7 @@ const TARGETS = [
     },
     {
         "name": "가람어린이집",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 돈암동 산85-127(흥천사길 49-23)",
         "status": "약정만료",
@@ -11071,7 +11071,7 @@ const TARGETS = [
     },
     {
         "name": "가없이좋은곳 해맑은집",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 법원읍 술이홀로 1333번길 63번지",
         "status": "약정만료",
@@ -11086,7 +11086,7 @@ const TARGETS = [
     },
     {
         "name": "가없이좋은곳 해맑은집",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 법원읍 술이홀로 1333번길 63번지",
         "status": "약정만료",
@@ -11101,7 +11101,7 @@ const TARGETS = [
     },
     {
         "name": "가없이좋은곳 해맑은집",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 법원읍 금곡리 428-3 파주시장애인종합복지관 술이홀로1333번길 63",
         "status": "약정만료",
@@ -11116,7 +11116,7 @@ const TARGETS = [
     },
     {
         "name": "가없이좋은곳 해맑은집",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 법원읍 금곡리 428-3 파주시장애인종합복지관 술이홀로1333번길 63",
         "status": "약정만료",
@@ -11131,7 +11131,7 @@ const TARGETS = [
     },
     {
         "name": "가없이좋은곳 해맑은집",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 법원읍 금곡리 428-3 파주시장애인종합복지관 술이홀로 1333번길 63",
         "status": "약정만료",
@@ -11146,7 +11146,7 @@ const TARGETS = [
     },
     {
         "name": "가없이좋은곳 해맑은집",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 법원읍 술이홀로 1333번길 63번지",
         "status": "약정만료",
@@ -11161,7 +11161,7 @@ const TARGETS = [
     },
     {
         "name": "가평군청",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 가평읍 대곡리 168-9 가평시외버스터미널 1층",
         "status": "만기도래_신규(1st)",
@@ -11176,7 +11176,7 @@ const TARGETS = [
     },
     {
         "name": "가평군청",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 안암동5가 134-68번지",
         "status": "약정만료",
@@ -11191,7 +11191,7 @@ const TARGETS = [
     },
     {
         "name": "가평군청",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 가평읍 승안리 100 농업기술센터 유기동물보호소",
         "status": "만기도래_신규(1st)",
@@ -11206,7 +11206,7 @@ const TARGETS = [
     },
     {
         "name": "가평군청",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 안암동5가 134-68 가평장학관고대기숙사",
         "status": "약정만료",
@@ -11221,7 +11221,7 @@ const TARGETS = [
     },
     {
         "name": "가평군청",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 안암동5가 134-68",
         "status": "약정만료",
@@ -11236,7 +11236,7 @@ const TARGETS = [
     },
     {
         "name": "갈매사회복지관",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 갈매동 67  LH1단지 101동 1층",
         "status": "약정만료",
@@ -11251,7 +11251,7 @@ const TARGETS = [
     },
     {
         "name": "강경불고기 포천송우점",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 송우리 575-13번지 1층",
         "status": "만기도래_신규(1st)",
@@ -11266,7 +11266,7 @@ const TARGETS = [
     },
     {
         "name": "강남리본정형외과의원",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동  803 강남리본 정형외과 (석사동 해윤빌딩)",
         "status": "약정만료",
@@ -11281,7 +11281,7 @@ const TARGETS = [
     },
     {
         "name": "강남리본정형외과의원",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 803 1층",
         "status": "약정만료",
@@ -11296,7 +11296,7 @@ const TARGETS = [
     },
     {
         "name": "강남리본정형외과의원",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동  803 (석사동)",
         "status": "약정만료",
@@ -11311,7 +11311,7 @@ const TARGETS = [
     },
     {
         "name": "강남리본정형외과의원",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 803",
         "status": "약정만료",
@@ -11326,7 +11326,7 @@ const TARGETS = [
     },
     {
         "name": "강남제비스코(주)부산",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 반곡동 1903-6 319호",
         "status": "약정만료",
@@ -11341,7 +11341,7 @@ const TARGETS = [
     },
     {
         "name": "강남제비스코(주)부산",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 별내동 1006-1 로데오몰 706-1호",
         "status": "약정만료",
@@ -11356,7 +11356,7 @@ const TARGETS = [
     },
     {
         "name": "강남호랑이마취통증의학과의원4층",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 성동구 금호동4가 559 34층",
         "status": "만기도래_신규(1st)",
@@ -11371,7 +11371,7 @@ const TARGETS = [
     },
     {
         "name": "강릉농협",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 구정면 163-1",
         "status": "약정만료",
@@ -11386,7 +11386,7 @@ const TARGETS = [
     },
     {
         "name": "강릉농협",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 구정면 163-1",
         "status": "약정만료",
@@ -11401,7 +11401,7 @@ const TARGETS = [
     },
     {
         "name": "강릉마암",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 연곡면 신왕리 541-2 산왕길 443",
         "status": "약정만료",
@@ -11416,7 +11416,7 @@ const TARGETS = [
     },
     {
         "name": "강릉마암",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 연곡면 신왕리 555 강릉마암-입구동",
         "status": "약정만료",
@@ -11431,7 +11431,7 @@ const TARGETS = [
     },
     {
         "name": "강릉맥린리빙타운",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 입암동  508-5 (입암동)",
         "status": "약정만료",
@@ -11446,7 +11446,7 @@ const TARGETS = [
     },
     {
         "name": "강릉시수산업협동조합",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 주문진읍 해안로1758-14",
         "status": "약정만료",
@@ -11461,7 +11461,7 @@ const TARGETS = [
     },
     {
         "name": "강릉시수산업협동조합",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 주문진읍 교항리 184-92 강릉시수협 어판장 뒤 CCTV(컨테이너)",
         "status": "만기도래_신규(1st)",
@@ -11476,7 +11476,7 @@ const TARGETS = [
     },
     {
         "name": "강릉시수산업협동조합",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 주문진읍 해안로1768",
         "status": "약정만료",
@@ -11491,7 +11491,7 @@ const TARGETS = [
     },
     {
         "name": "강릉시청",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 사천면 사천진리 86-141번지",
         "status": "만기도래_재계약",
@@ -11506,7 +11506,7 @@ const TARGETS = [
     },
     {
         "name": "강릉시청",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 교동 2-21",
         "status": "약정만료",
@@ -11521,7 +11521,7 @@ const TARGETS = [
     },
     {
         "name": "강릉시청",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 주문진읍 교항리 184-92 주문진관광안내소",
         "status": "약정만료",
@@ -11536,7 +11536,7 @@ const TARGETS = [
     },
     {
         "name": "강릉시청",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 홍제동 992-2 고속버스터미널 .",
         "status": "약정만료",
@@ -11551,7 +11551,7 @@ const TARGETS = [
     },
     {
         "name": "강릉시학교밖청소년지원센터",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 용강동 43-2 번지",
         "status": "만기도래_신규(1st)",
@@ -11566,7 +11566,7 @@ const TARGETS = [
     },
     {
         "name": "강릉영동대학교",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 홍제동 강원 강릉시 공제로 357 강릉영동대학",
         "status": "만기도래_신규(1st)",
@@ -11581,7 +11581,7 @@ const TARGETS = [
     },
     {
         "name": "강릉영동대학교",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 홍제동 1009 강릉영동대학 강릉영동대학교",
         "status": "만기도래_신규(1st)",
@@ -11596,7 +11596,7 @@ const TARGETS = [
     },
     {
         "name": "강릉영동대학교",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 홍제동 1009 강릉영동대학 강릉영동대학교",
         "status": "만기도래_신규(1st)",
@@ -11611,7 +11611,7 @@ const TARGETS = [
     },
     {
         "name": "강릉영동대학교",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 홍제동 1009 강릉영동대학 강릉영동대학교",
         "status": "만기도래_신규(1st)",
@@ -11626,7 +11626,7 @@ const TARGETS = [
     },
     {
         "name": "강릉영동대학교",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 홍제동 1009 강릉영동대학 강릉영동대학교",
         "status": "만기도래_신규(1st)",
@@ -11641,7 +11641,7 @@ const TARGETS = [
     },
     {
         "name": "강릉영동대학교",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 홍제동 1009 강릉영동대학 강릉영동대학교",
         "status": "만기도래_신규(1st)",
@@ -11656,7 +11656,7 @@ const TARGETS = [
     },
     {
         "name": "강릉영동대학교",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 홍제동 1009 강릉영동대학 강릉영동대학교",
         "status": "만기도래_신규(1st)",
@@ -11671,7 +11671,7 @@ const TARGETS = [
     },
     {
         "name": "강릉영동대학교",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 홍제동 1009 강릉영동대학 강릉영동대학교",
         "status": "만기도래_신규(1st)",
@@ -11686,7 +11686,7 @@ const TARGETS = [
     },
     {
         "name": "강릉영동대학교",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 홍제동 1009 강릉영동대학 강릉영동대학교",
         "status": "만기도래_신규(1st)",
@@ -11701,7 +11701,7 @@ const TARGETS = [
     },
     {
         "name": "강릉영동대학교",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 홍제동 1009 강릉영동대학 강릉영동대학교",
         "status": "만기도래_신규(1st)",
@@ -11716,7 +11716,7 @@ const TARGETS = [
     },
     {
         "name": "강릉영동대학교",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 홍제동 1009 강릉영동대학 강릉영동대학교",
         "status": "만기도래_신규(1st)",
@@ -11731,7 +11731,7 @@ const TARGETS = [
     },
     {
         "name": "강릉영동대학교",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 홍제동 1009 강릉영동대학 강릉영동대학교",
         "status": "만기도래_신규(1st)",
@@ -11746,7 +11746,7 @@ const TARGETS = [
     },
     {
         "name": "강릉지역자활센터",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 강동면 윗장작골길 105-43",
         "status": "만기도래_신규(1st)",
@@ -11761,7 +11761,7 @@ const TARGETS = [
     },
     {
         "name": "강릉초당두부창고(OCT)",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 삼패동 295-11",
         "status": "약정만료",
@@ -11776,7 +11776,7 @@ const TARGETS = [
     },
     {
         "name": "강북구청",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 강북구 수유동 279-29 신성빌딩 새마을회관",
         "status": "약정만료",
@@ -11791,7 +11791,7 @@ const TARGETS = [
     },
     {
         "name": "강북구청",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 강북구 수유동 270-67 1층 바르게살기운동본부빌딩",
         "status": "약정만료",
@@ -11806,7 +11806,7 @@ const TARGETS = [
     },
     {
         "name": "강원도청",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 영월군 영월읍 거운리 863(도착후 네비찍고 거운리914-1 위성지도 / 산길따라 10분주행 산 정상)",
         "status": "약정만료",
@@ -11821,7 +11821,7 @@ const TARGETS = [
     },
     {
         "name": "강원도청",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 횡성읍 읍하리 86-83층",
         "status": "약정만료",
@@ -11836,7 +11836,7 @@ const TARGETS = [
     },
     {
         "name": "강원도청",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 동내면 신촌리 220-2 .",
         "status": "약정만료",
@@ -11851,7 +11851,7 @@ const TARGETS = [
     },
     {
         "name": "강원도청소년수련원",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 사농동 277-1번지",
         "status": "약정만료",
@@ -11866,7 +11866,7 @@ const TARGETS = [
     },
     {
         "name": "강원도청소년수련원",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 사농동 277-1 강원도청소년수련원 강원도청소년수련원",
         "status": "약정만료",
@@ -11881,7 +11881,7 @@ const TARGETS = [
     },
     {
         "name": "강원도청소년수련원",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 사농동 ",
         "status": "약정만료",
@@ -11896,7 +11896,7 @@ const TARGETS = [
     },
     {
         "name": "강원여객자동차(주)",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 양양읍 거마리 383",
         "status": "약정만료",
@@ -11911,7 +11911,7 @@ const TARGETS = [
     },
     {
         "name": "강원여객자동차(주)",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 용평면 장평리 344번지",
         "status": "약정만료",
@@ -11926,7 +11926,7 @@ const TARGETS = [
     },
     {
         "name": "강원여객자동차(주)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 구의3동  593-7",
         "status": "만기도래_신규(1st)",
@@ -11941,7 +11941,7 @@ const TARGETS = [
     },
     {
         "name": "강원여객자동차(주)",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 남양동 340번지",
         "status": "약정만료",
@@ -11956,7 +11956,7 @@ const TARGETS = [
     },
     {
         "name": "강원여객자동차(주)",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 평창읍 하리 58-5번지",
         "status": "약정만료",
@@ -11971,7 +11971,7 @@ const TARGETS = [
     },
     {
         "name": "강원여객자동차(주)",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 진부면 하진부리 119-1번지",
         "status": "약정만료",
@@ -11986,7 +11986,7 @@ const TARGETS = [
     },
     {
         "name": "강원여객자동차(주)",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 홍제동 992-1 강릉시외버스터미널 2층",
         "status": "약정만료",
@@ -12001,7 +12001,7 @@ const TARGETS = [
     },
     {
         "name": "강원여객자동차(주)",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 홍제동 992-1 강릉시외버스터미널 2층",
         "status": "약정만료",
@@ -12016,7 +12016,7 @@ const TARGETS = [
     },
     {
         "name": "강원재활원",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 신북읍 산천리 345-4 ",
         "status": "약정만료",
@@ -12031,7 +12031,7 @@ const TARGETS = [
     },
     {
         "name": "강원철강산업",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 우천면 법주리 714 (주)효명 중원철강",
         "status": "약정만료",
@@ -12046,7 +12046,7 @@ const TARGETS = [
     },
     {
         "name": "강원체육고등학교",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 송암동 산1-1 강원체육중고등학교 1층",
         "status": "약정만료",
@@ -12061,7 +12061,7 @@ const TARGETS = [
     },
     {
         "name": "강원체육고등학교",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 송암동 산1-1 강원체육중고등학교 1층",
         "status": "약정만료",
@@ -12076,7 +12076,7 @@ const TARGETS = [
     },
     {
         "name": "강원체육고등학교",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 송암동 산1-1 강원체육중고등학교 국궁장",
         "status": "약정만료",
@@ -12091,7 +12091,7 @@ const TARGETS = [
     },
     {
         "name": "강원혁신도시발전지원센터",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 반곡동 1913-12 강원혁신지식산업센터 9층 공용오피스",
         "status": "약정만료",
@@ -12106,7 +12106,7 @@ const TARGETS = [
     },
     {
         "name": "데이민지층(GiGAeyes guard)",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 395-31층",
         "status": "만기도래_신규(1st)",
@@ -12121,7 +12121,7 @@ const TARGETS = [
     },
     {
         "name": "강촌칼론골프클럽(주)",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 남산면 수동리 산30",
         "status": "약정만료",
@@ -12136,7 +12136,7 @@ const TARGETS = [
     },
     {
         "name": "강촌칼론골프클럽(주)",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 남산면 수동리 산30",
         "status": "약정만료",
@@ -12151,7 +12151,7 @@ const TARGETS = [
     },
     {
         "name": "강촌칼론골프클럽(주)",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 남산면 수동리 산 30",
         "status": "약정만료",
@@ -12166,7 +12166,7 @@ const TARGETS = [
     },
     {
         "name": "강촌칼론골프클럽(주)",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 남산면 수동리 산30",
         "status": "약정만료",
@@ -12181,7 +12181,7 @@ const TARGETS = [
     },
     {
         "name": "강촌칼론골프클럽(주)",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 남산면 수동리 산30",
         "status": "약정만료",
@@ -12196,7 +12196,7 @@ const TARGETS = [
     },
     {
         "name": "강촌칼론골프클럽(주)",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 남산면 수동리 산30 강촌칼론골프클럽",
         "status": "약정만료",
@@ -12211,7 +12211,7 @@ const TARGETS = [
     },
     {
         "name": "강촌칼론골프클럽(주)",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 남산면 수동리 산30 강촌칼론골프클럽",
         "status": "약정만료",
@@ -12226,7 +12226,7 @@ const TARGETS = [
     },
     {
         "name": "강현석",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 철원읍 율이리 260-1 (율이리257-6단독주택)",
         "status": "약정만료",
@@ -12241,7 +12241,7 @@ const TARGETS = [
     },
     {
         "name": "개성설렁탕",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 587번지",
         "status": "만기도래_신규(1st)",
@@ -12256,7 +12256,7 @@ const TARGETS = [
     },
     {
         "name": "거룩한빛운정교회",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 목동동 920",
         "status": "약정만료",
@@ -12271,7 +12271,7 @@ const TARGETS = [
     },
     {
         "name": "거룩한빛운정교회",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 목동동 920번지",
         "status": "약정만료",
@@ -12286,7 +12286,7 @@ const TARGETS = [
     },
     {
         "name": "거성크루",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 회기동 16-61번지 1층",
         "status": "약정만료",
@@ -12301,7 +12301,7 @@ const TARGETS = [
     },
     {
         "name": "거성크루",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 9-31 1층",
         "status": "약정만료",
@@ -12316,7 +12316,7 @@ const TARGETS = [
     },
     {
         "name": "거성크루",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 79-3 1층",
         "status": "약정만료",
@@ -12331,7 +12331,7 @@ const TARGETS = [
     },
     {
         "name": "거성크루",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 광진구 중곡동 115-9",
         "status": "만기도래_재계약",
@@ -12346,7 +12346,7 @@ const TARGETS = [
     },
     {
         "name": "건설근로자공제회",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 다동 111번지 국제빌딩 9층",
         "status": "약정만료",
@@ -12361,7 +12361,7 @@ const TARGETS = [
     },
     {
         "name": "건설근로자공제회",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 시민로62 삼성생명빌딩 5층",
         "status": "약정만료",
@@ -12376,7 +12376,7 @@ const TARGETS = [
     },
     {
         "name": "건설근로자공제회",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 무실동 1720-2 한국국토정보공사 원주지사빌딩 2층",
         "status": "약정만료",
@@ -12391,7 +12391,7 @@ const TARGETS = [
     },
     {
         "name": "견우섬유",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면금현리 48-1번지",
         "status": "약정만료",
@@ -12406,7 +12406,7 @@ const TARGETS = [
     },
     {
         "name": "경기교통공사",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 옥정동 963-1 한길프라자2(3층 301호-306호)",
         "status": "약정만료",
@@ -12421,7 +12421,7 @@ const TARGETS = [
     },
     {
         "name": "경기교통공사",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 옥정동 963-1(한길프라자2 / 4층)",
         "status": "약정만료",
@@ -12436,7 +12436,7 @@ const TARGETS = [
     },
     {
         "name": "경기교통공사",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 옥정동 963-1(한길프라자2 / 3층)",
         "status": "약정만료",
@@ -12451,7 +12451,7 @@ const TARGETS = [
     },
     {
         "name": "경기교통공사",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 옥정동 963-1(한길프라자2 / 6층)",
         "status": "만기도래_신규(1st)",
@@ -12466,7 +12466,7 @@ const TARGETS = [
     },
     {
         "name": "경기교통공사",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 옥정동 963-1 한길프라자2 2 (옥정동한길프라자2차)4층",
         "status": "약정만료",
@@ -12481,7 +12481,7 @@ const TARGETS = [
     },
     {
         "name": "경기교통공사",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 옥정동 963-1 (한길프라자2 / 4층 209호)",
         "status": "약정만료",
@@ -12496,7 +12496,7 @@ const TARGETS = [
     },
     {
         "name": "경기대학교",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로2가 67-13번지 2층 1202호",
         "status": "약정만료",
@@ -12511,7 +12511,7 @@ const TARGETS = [
     },
     {
         "name": "경기대학교",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로3가 3-87",
         "status": "약정만료",
@@ -12526,7 +12526,7 @@ const TARGETS = [
     },
     {
         "name": "경기대학교",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로3가 3-87",
         "status": "약정만료",
@@ -12541,7 +12541,7 @@ const TARGETS = [
     },
     {
         "name": "경기대학교",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로3가 3-87",
         "status": "약정만료",
@@ -12556,7 +12556,7 @@ const TARGETS = [
     },
     {
         "name": "경기대학교",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로2가 190-15번지 13201호 애니메이션랩실",
         "status": "약정만료",
@@ -12571,7 +12571,7 @@ const TARGETS = [
     },
     {
         "name": "경기대학교",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로2가 67-13번지 2층 1205호",
         "status": "약정만료",
@@ -12586,7 +12586,7 @@ const TARGETS = [
     },
     {
         "name": "경기대학교",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로2가 190-15번지 5층 13502호 MIDL LAB실",
         "status": "약정만료",
@@ -12601,7 +12601,7 @@ const TARGETS = [
     },
     {
         "name": "경기대학교",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로2가 67-13번지 6층 1605호",
         "status": "약정만료",
@@ -12616,7 +12616,7 @@ const TARGETS = [
     },
     {
         "name": "경기대학교",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로2가 67-13번지 2층 1024호",
         "status": "약정만료",
@@ -12631,7 +12631,7 @@ const TARGETS = [
     },
     {
         "name": "경기대학교",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로2가 경기대로9길24  경기대학교",
         "status": "약정만료",
@@ -12646,7 +12646,7 @@ const TARGETS = [
     },
     {
         "name": "경기동북부수퍼마켓협동조합",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 가곡리 316-5번지 창고",
         "status": "약정만료",
@@ -12661,7 +12661,7 @@ const TARGETS = [
     },
     {
         "name": "경동대학교산학협력단",
-        "manager": "김성래",
+        "manager": "미지정",
         "branch": "원주지사",
         "address": "강원 고성군 간성읍 신안리 427-1 율곡타운 205동 3-4라인 1층",
         "status": "만기도래_신규(1st)",
@@ -12676,7 +12676,7 @@ const TARGETS = [
     },
     {
         "name": "경동대학교산학협력단",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 봉산동 920 .",
         "status": "약정만료",
@@ -12691,7 +12691,7 @@ const TARGETS = [
     },
     {
         "name": "경성산업관리(주)",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 214-76번지 혜성루첸리오피스텔",
         "status": "만기도래_신규(1st)",
@@ -12706,7 +12706,7 @@ const TARGETS = [
     },
     {
         "name": "경성산업관리(주)",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 면목동 126-1  킴스아파트 1층",
         "status": "약정만료",
@@ -12721,7 +12721,7 @@ const TARGETS = [
     },
     {
         "name": "경성산업관리(주)",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 136-1",
         "status": "약정만료",
@@ -12736,7 +12736,7 @@ const TARGETS = [
     },
     {
         "name": "경성콘크리트공업(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 일동면 사직리 288-5",
         "status": "약정만료",
@@ -12751,7 +12751,7 @@ const TARGETS = [
     },
     {
         "name": "경성콘크리트공업(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 일동면 화동로1544-48",
         "status": "약정만료",
@@ -12766,7 +12766,7 @@ const TARGETS = [
     },
     {
         "name": "경우전기-불로동현장",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 식사동 1110",
         "status": "만기도래_신규(1st)",
@@ -12781,7 +12781,7 @@ const TARGETS = [
     },
     {
         "name": "경제정의연구소",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 종로구 동숭동 50-2 경실련 2~4층",
         "status": "약정만료",
@@ -12796,7 +12796,7 @@ const TARGETS = [
     },
     {
         "name": "경제정의연구소",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 종로구 동숭동 50-2 경실련 1층 커피",
         "status": "약정만료",
@@ -12811,7 +12811,7 @@ const TARGETS = [
     },
     {
         "name": "경포수호텔",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 경포동 강원 강릉시 창해로 439 ",
         "status": "약정만료",
@@ -12826,7 +12826,7 @@ const TARGETS = [
     },
     {
         "name": "고려공업검사(주)",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 용산구 서계동 224-21 5층",
         "status": "약정만료",
@@ -12841,7 +12841,7 @@ const TARGETS = [
     },
     {
         "name": "고려공업검사(주)",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 용산구 서계동 224-21 5층",
         "status": "약정만료",
@@ -12856,7 +12856,7 @@ const TARGETS = [
     },
     {
         "name": "고려공업검사(주)",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 용산구 서계동 224-21  5층 연구실",
         "status": "약정만료",
@@ -12871,7 +12871,7 @@ const TARGETS = [
     },
     {
         "name": "고려공업검사(주)",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 용산구 서계동 224-21번지 홍익회공상회빌딩 3층사장실",
         "status": "약정만료",
@@ -12886,7 +12886,7 @@ const TARGETS = [
     },
     {
         "name": "고려신용정보(주)",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 127-7 KT강북지사 4층 kt미납관리센터",
         "status": "약정만료",
@@ -12901,7 +12901,7 @@ const TARGETS = [
     },
     {
         "name": "고려호간단(주)",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 465-10번지",
         "status": "약정만료",
@@ -12916,7 +12916,7 @@ const TARGETS = [
     },
     {
         "name": "고려호간단(주)",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 서교동 465-10",
         "status": "만기도래_신규(1st)",
@@ -12931,7 +12931,7 @@ const TARGETS = [
     },
     {
         "name": "고미술 인",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 경운동 63-7번지 4층",
         "status": "약정만료",
@@ -12946,7 +12946,7 @@ const TARGETS = [
     },
     {
         "name": "고미술 인",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 경운동 63-7번지 4층",
         "status": "약정만료",
@@ -12961,7 +12961,7 @@ const TARGETS = [
     },
     {
         "name": "고양도시관리공사",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 행신동 728번지 행신공영주차장(1~6주차장 9주차장)",
         "status": "약정만료",
@@ -12976,7 +12976,7 @@ const TARGETS = [
     },
     {
         "name": "고양도시관리공사",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 주교동 206-1번지",
         "status": "약정만료",
@@ -12991,7 +12991,7 @@ const TARGETS = [
     },
     {
         "name": "고양도시관리공사",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 대화동 2320번지",
         "status": "약정만료",
@@ -13006,7 +13006,7 @@ const TARGETS = [
     },
     {
         "name": "고양도시관리공사",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 주교동 313-16번지",
         "status": "약정만료",
@@ -13021,7 +13021,7 @@ const TARGETS = [
     },
     {
         "name": "고양도시관리공사",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 주교동 600번지 고양시청별관 문예회관 2층",
         "status": "약정만료",
@@ -13036,7 +13036,7 @@ const TARGETS = [
     },
     {
         "name": "고양동부새마을금고",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 원흥동 631-2번지",
         "status": "만기도래_재계약",
@@ -13051,7 +13051,7 @@ const TARGETS = [
     },
     {
         "name": "고양동부새마을금고",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 원흥동 631-2번지",
         "status": "만기도래_재계약",
@@ -13066,7 +13066,7 @@ const TARGETS = [
     },
     {
         "name": "고양동부새마을금고",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 원흥동 631-2번지 3층",
         "status": "약정만료",
@@ -13081,7 +13081,7 @@ const TARGETS = [
     },
     {
         "name": "고양동부새마을금고",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 원흥동 631-2번지 6층",
         "status": "약정만료",
@@ -13096,7 +13096,7 @@ const TARGETS = [
     },
     {
         "name": "고양동부새마을금고",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 원흥동 631-2번지 7층",
         "status": "약정만료",
@@ -13111,7 +13111,7 @@ const TARGETS = [
     },
     {
         "name": "고양벽제현대서비스(주)",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 벽제동 441-1번지",
         "status": "만기도래_신규(1st)",
@@ -13126,7 +13126,7 @@ const TARGETS = [
     },
     {
         "name": "고양시립대화소망어린이집",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 대화동 2237번지시립노인복지관 1층",
         "status": "약정만료",
@@ -13141,7 +13141,7 @@ const TARGETS = [
     },
     {
         "name": "고양시립대화소망어린이집",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 대화동 2237번지 시립노인복지관1층",
         "status": "약정만료",
@@ -13156,7 +13156,7 @@ const TARGETS = [
     },
     {
         "name": "고양시립화정어린이집",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 화정동 1006 시립화정어린이집",
         "status": "만기도래_신규(1st)",
@@ -13171,7 +13171,7 @@ const TARGETS = [
     },
     {
         "name": "고양시배드민턴협회",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 백석동  1233 백석공원배드민턴경기장 일산로136백석배드민턴장",
         "status": "만기도래_신규(1st)",
@@ -13186,7 +13186,7 @@ const TARGETS = [
     },
     {
         "name": "고양시배드민턴협회",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 풍동 1257번지 식골 배드민턴장",
         "status": "약정만료",
@@ -13201,7 +13201,7 @@ const TARGETS = [
     },
     {
         "name": "고양시배드민턴협회",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 성사동 337-16번지 자비정사 옆 성라배드민턴클럽 체육관",
         "status": "약정만료",
@@ -13216,7 +13216,7 @@ const TARGETS = [
     },
     {
         "name": "고양시일산서구청",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 대화동 2035 대화동주민센터 대화동행정복지센터 무인민원발급기",
         "status": "약정만료",
@@ -13231,7 +13231,7 @@ const TARGETS = [
     },
     {
         "name": "고양시일산서구청",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 446-9 송산동행정복지센터내",
         "status": "약정만료",
@@ -13246,7 +13246,7 @@ const TARGETS = [
     },
     {
         "name": "고양시일산서구청",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 대화동 2703",
         "status": "약정만료",
@@ -13261,7 +13261,7 @@ const TARGETS = [
     },
     {
         "name": "고양시일산서구청",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 대화동 주화로170 일산백병원1층",
         "status": "약정만료",
@@ -13276,7 +13276,7 @@ const TARGETS = [
     },
     {
         "name": "고양시일산서구청",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 일산동 1100 일산3동주민센터 일산3동 행정복지센타",
         "status": "약정만료",
@@ -13291,7 +13291,7 @@ const TARGETS = [
     },
     {
         "name": "고양시지축종합사회복지관",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 효자동 경기 고양시 덕양구 지축로 163 고양지축엘에이치802동1층",
         "status": "약정만료",
@@ -13306,7 +13306,7 @@ const TARGETS = [
     },
     {
         "name": "고양시청 문화유산관광과",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 장항동 772",
         "status": "만기도래_신규(1st)",
@@ -13321,7 +13321,7 @@ const TARGETS = [
     },
     {
         "name": "고양시청 문화유산관광과",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 관산동 226-2번지",
         "status": "만기도래_신규(1st)",
@@ -13336,7 +13336,7 @@ const TARGETS = [
     },
     {
         "name": "고양시청 문화유산관광과",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 화정동 화중로26",
         "status": "약정만료",
@@ -13351,7 +13351,7 @@ const TARGETS = [
     },
     {
         "name": "고양시청 문화유산관광과",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 대화동 1050-176번지(한류월드로280)",
         "status": "약정만료",
@@ -13366,7 +13366,7 @@ const TARGETS = [
     },
     {
         "name": "고양시청 문화유산관광과",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 대화동 1050-176번지(한류월드로280)",
         "status": "약정만료",
@@ -13381,7 +13381,7 @@ const TARGETS = [
     },
     {
         "name": "고양시청 문화유산관광과",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 화정동 화중로26",
         "status": "약정만료",
@@ -13396,7 +13396,7 @@ const TARGETS = [
     },
     {
         "name": "고양시청 문화유산관광과",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 화정동 화중로26",
         "status": "약정만료",
@@ -13411,7 +13411,7 @@ const TARGETS = [
     },
     {
         "name": "곤트란쉐리에황학점",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 중구 황학동 1257 지하1층",
         "status": "만기도래_신규(1st)",
@@ -13426,7 +13426,7 @@ const TARGETS = [
     },
     {
         "name": "곤트란쉐리에황학점",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 중구 황학동 1257 (황학동) 지층1층",
         "status": "만기도래_신규(1st)",
@@ -13441,7 +13441,7 @@ const TARGETS = [
     },
     {
         "name": "골드샵(최경자)",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 연지동 123번지 56층",
         "status": "약정만료",
@@ -13456,7 +13456,7 @@ const TARGETS = [
     },
     {
         "name": "골드샵(최경자)",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 연지동 123번지56층",
         "status": "약정만료",
@@ -13471,7 +13471,7 @@ const TARGETS = [
     },
     {
         "name": "골드샵(최경자)",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 연지동 123번지 56층",
         "status": "약정만료",
@@ -13486,7 +13486,7 @@ const TARGETS = [
     },
     {
         "name": "골든타운관리소",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동  204-1 1동골든타운관리실 11층 옥상 (신당동)",
         "status": "약정만료",
@@ -13501,7 +13501,7 @@ const TARGETS = [
     },
     {
         "name": "골프맥스",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 가좌동 344-13",
         "status": "약정만료",
@@ -13516,7 +13516,7 @@ const TARGETS = [
     },
     {
         "name": "골프맥스",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 1233-1",
         "status": "약정만료",
@@ -13531,7 +13531,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 우두동 742-1번지 두미르마트",
         "status": "약정만료",
@@ -13546,7 +13546,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 화천군 사내면 명월리 21-1",
         "status": "약정만료",
@@ -13561,7 +13561,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 화천군 상서면 다목리 다목마트",
         "status": "약정만료",
@@ -13576,7 +13576,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 화천군 상서면 봉오리 594 승리회관내  승리마트",
         "status": "약정만료",
@@ -13591,7 +13591,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 가현동 북원로 2740",
         "status": "약정만료",
@@ -13606,7 +13606,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 화천군 사내면 사창리 사서함 93-2호",
         "status": "약정만료",
@@ -13621,7 +13621,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 신북읍 산천리754사서함114-26",
         "status": "약정만료",
@@ -13636,7 +13636,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 화천군 사내면 명월리 사서함 93-14호",
         "status": "약정만료",
@@ -13651,7 +13651,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 화천군 사내면 삼일리 사서함 93-1호",
         "status": "약정만료",
@@ -13666,7 +13666,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 동내면 학곡리 사서함 114-20호",
         "status": "약정만료",
@@ -13681,7 +13681,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 화촌면 구성포리 488",
         "status": "약정만료",
@@ -13696,7 +13696,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 남면 신대리 1026-5",
         "status": "약정만료",
@@ -13711,7 +13711,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 북방면 화동리 128 (강재구대대)",
         "status": "약정만료",
@@ -13726,7 +13726,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 북방면 능평리 28-2",
         "status": "약정만료",
@@ -13741,7 +13741,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 남면 유목정리 산42-4",
         "status": "약정만료",
@@ -13756,7 +13756,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 화촌면 송정리 21-4 (송정리마트건너편)",
         "status": "약정만료",
@@ -13771,7 +13771,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 남면 유치리 252-1",
         "status": "약정만료",
@@ -13786,7 +13786,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 남면 화전리 163-2",
         "status": "약정만료",
@@ -13801,7 +13801,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 화촌면 구성포리 3",
         "status": "약정만료",
@@ -13816,7 +13816,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 화촌면 주음치리 553-2 (동원훈련장)",
         "status": "약정만료",
@@ -13831,7 +13831,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 남면 시동리 892",
         "status": "약정만료",
@@ -13846,7 +13846,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 동면 노천리 936-2",
         "status": "약정만료",
@@ -13861,7 +13861,7 @@ const TARGETS = [
     },
     {
         "name": "공군복지관",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 남면 시동리 130-1",
         "status": "약정만료",
@@ -13876,7 +13876,7 @@ const TARGETS = [
     },
     {
         "name": "공릉2동어린이집",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 공릉동 233-1 공릉2동어린이집 1층 공릉2동어린이집",
         "status": "약정만료",
@@ -13891,7 +13891,7 @@ const TARGETS = [
     },
     {
         "name": "공릉2동어린이집",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 공릉동 233-1",
         "status": "약정만료",
@@ -13906,7 +13906,7 @@ const TARGETS = [
     },
     {
         "name": "관건축사사무소",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 481번지",
         "status": "약정만료",
@@ -13921,7 +13921,7 @@ const TARGETS = [
     },
     {
         "name": "산내들어린이집",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 영북면 운천리 353-1 산내들아이파크 단지내 어린이집",
         "status": "만기도래_재계약",
@@ -13936,7 +13936,7 @@ const TARGETS = [
     },
     {
         "name": "광문정보통신",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 묵동  121-257  1층",
         "status": "약정만료",
@@ -13951,7 +13951,7 @@ const TARGETS = [
     },
     {
         "name": "광문정보통신",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 묵동 121-257번지",
         "status": "약정만료",
@@ -13966,7 +13966,7 @@ const TARGETS = [
     },
     {
         "name": "광문정보통신",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 이패동 591-1번지",
         "status": "약정만료",
@@ -13981,7 +13981,7 @@ const TARGETS = [
     },
     {
         "name": "광정초등학교",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 현북면 하조대1길 38",
         "status": "약정만료",
@@ -13996,7 +13996,7 @@ const TARGETS = [
     },
     {
         "name": "광정초등학교",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 현북면 하조대1길 38",
         "status": "약정만료",
@@ -14011,7 +14011,7 @@ const TARGETS = [
     },
     {
         "name": "광주안디옥교회",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 적선동 94 다자연빌딩 지하1층",
         "status": "약정만료",
@@ -14026,7 +14026,7 @@ const TARGETS = [
     },
     {
         "name": "광진구청",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 광장동 370-2(미스니톱 뒤 숲 어린이집 맞은편)",
         "status": "약정만료",
@@ -14041,7 +14041,7 @@ const TARGETS = [
     },
     {
         "name": "광진구청",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 광장동 370-2",
         "status": "약정만료",
@@ -14056,7 +14056,7 @@ const TARGETS = [
     },
     {
         "name": "광진구청",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 구의동 38번지",
         "status": "약정만료",
@@ -14071,7 +14071,7 @@ const TARGETS = [
     },
     {
         "name": "광진구청",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 광진구 중곡동 143-146",
         "status": "약정만료",
@@ -14086,7 +14086,7 @@ const TARGETS = [
     },
     {
         "name": "광진구청",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 구의동 245-24번지 2호선 구의역 4번출구 방향 개찰구",
         "status": "만기도래_신규(1st)",
@@ -14101,7 +14101,7 @@ const TARGETS = [
     },
     {
         "name": "광화문정형외과의원",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 당주동 100 세종빌딩세종아파트 1동 107~109호",
         "status": "약정만료",
@@ -14116,7 +14116,7 @@ const TARGETS = [
     },
     {
         "name": "광희약국",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 광희동2가 323-2 1층",
         "status": "약정만료",
@@ -14131,7 +14131,7 @@ const TARGETS = [
     },
     {
         "name": "광희약국",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 광희동2가 288 1층(철문안 101호104호)",
         "status": "약정만료",
@@ -14146,7 +14146,7 @@ const TARGETS = [
     },
     {
         "name": "광희약국",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 광희동2가 323-2 2층",
         "status": "약정만료",
@@ -14161,7 +14161,7 @@ const TARGETS = [
     },
     {
         "name": "광희약국",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 광희동2가 288 1층 은색철문",
         "status": "약정만료",
@@ -14176,7 +14176,7 @@ const TARGETS = [
     },
     {
         "name": "교보정보통신(주)",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 성북구 성북동 330-223번지",
         "status": "약정만료",
@@ -14191,7 +14191,7 @@ const TARGETS = [
     },
     {
         "name": "교보정보통신(주)",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 내수동 73번지 경희궁의아침4단치 지하1층",
         "status": "약정만료",
@@ -14206,7 +14206,7 @@ const TARGETS = [
     },
     {
         "name": "교보정보통신(주)",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 성북구 성북동 330-223번지",
         "status": "약정만료",
@@ -14221,7 +14221,7 @@ const TARGETS = [
     },
     {
         "name": "교촌에프앤비(주)고성공장",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 고성군 토성면 성천리 113 .",
         "status": "약정만료",
@@ -14236,7 +14236,7 @@ const TARGETS = [
     },
     {
         "name": "교촌에프앤비(주)고성공장",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 고성군 토성면 용원로 266",
         "status": "약정만료",
@@ -14251,7 +14251,7 @@ const TARGETS = [
     },
     {
         "name": "교촌에프앤비(주)고성공장",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 고성군 토성면 용원로 266",
         "status": "약정만료",
@@ -14266,7 +14266,7 @@ const TARGETS = [
     },
     {
         "name": "교촌에프앤비(주)고성공장",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 고성군 토성면 성천리 113 인덜지(주)",
         "status": "약정만료",
@@ -14281,7 +14281,7 @@ const TARGETS = [
     },
     {
         "name": "교학사",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 공덕동 105-67 345층",
         "status": "약정만료",
@@ -14296,7 +14296,7 @@ const TARGETS = [
     },
     {
         "name": "교현",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 장흥면 교현리 333-3번지",
         "status": "약정만료",
@@ -14311,7 +14311,7 @@ const TARGETS = [
     },
     {
         "name": "구다이글로벌",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 삼청동 35-116",
         "status": "만기도래_신규(1st)",
@@ -14326,7 +14326,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 교문동 390-1",
         "status": "약정만료",
@@ -14341,7 +14341,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 430 축산동2층",
         "status": "약정만료",
@@ -14356,7 +14356,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 아천동 316-41",
         "status": "약정만료",
@@ -14371,7 +14371,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 527-37 인창문화센터",
         "status": "약정만료",
@@ -14386,7 +14386,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 토평동 480-3",
         "status": "약정만료",
@@ -14401,7 +14401,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 토평동 431-5번지 or 431-3",
         "status": "약정만료",
@@ -14416,7 +14416,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 430번지 축산동 2층",
         "status": "약정만료",
@@ -14431,7 +14431,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 419-7번지 2층 안쪽",
         "status": "약정만료",
@@ -14446,7 +14446,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 430번지 동구동행정복지센타2층",
         "status": "약정만료",
@@ -14461,7 +14461,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 교문동 536-1 체험관 2층",
         "status": "약정만료",
@@ -14476,7 +14476,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 아천동 390-4",
         "status": "약정만료",
@@ -14491,7 +14491,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 토평동 776-3",
         "status": "약정만료",
@@ -14506,7 +14506,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 수택동 852번지 5층",
         "status": "약정만료",
@@ -14521,7 +14521,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 수택동 878",
         "status": "약정만료",
@@ -14536,7 +14536,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 토평동 883-2",
         "status": "약정만료",
@@ -14551,7 +14551,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 수택동 316-1번지 자전거대여소 옆 지붕빨강 관리사무소",
         "status": "약정만료",
@@ -14566,7 +14566,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 208-39번지 구리역 앞 공원 관리사무소",
         "status": "약정만료",
@@ -14581,7 +14581,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 갈매동 661번지 도당굿 나무문 건물",
         "status": "약정만료",
@@ -14596,7 +14596,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 309-43 관리사무소",
         "status": "약정만료",
@@ -14611,7 +14611,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 갈매동 578번지 관리사무소",
         "status": "약정만료",
@@ -14626,7 +14626,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 교문동 747",
         "status": "약정만료",
@@ -14641,7 +14641,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 650-8",
         "status": "약정만료",
@@ -14656,7 +14656,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 토평동 990",
         "status": "약정만료",
@@ -14671,7 +14671,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 253-1",
         "status": "약정만료",
@@ -14686,7 +14686,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 253-1B동",
         "status": "약정만료",
@@ -14701,7 +14701,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 아천동 172",
         "status": "약정만료",
@@ -14716,7 +14716,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 성북구 성북동 88",
         "status": "약정만료",
@@ -14731,7 +14731,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 32-5번지",
         "status": "약정만료",
@@ -14746,7 +14746,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 수택동 852행복주택5층",
         "status": "약정만료",
@@ -14761,7 +14761,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 수택동 852번지구리시행복주택 5층",
         "status": "약정만료",
@@ -14776,7 +14776,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 수택동 357-1",
         "status": "약정만료",
@@ -14791,7 +14791,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 갈매동 555(새성동교회뒤 적색창고)",
         "status": "약정만료",
@@ -14806,7 +14806,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 117-18번지 고가도로 아래 조금한 나무창고",
         "status": "약정만료",
@@ -14821,7 +14821,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 교문동 390-1",
         "status": "약정만료",
@@ -14836,7 +14836,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 아천동 172",
         "status": "약정만료",
@@ -14851,7 +14851,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 교문동 390번지 구리아트홀",
         "status": "만기도래_신규(1st)",
@@ -14866,7 +14866,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 430번지 축산동2층",
         "status": "약정만료",
@@ -14881,7 +14881,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 교문동 736-3",
         "status": "약정만료",
@@ -14896,7 +14896,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 갈매동 645번지1층",
         "status": "만기도래_신규(1st)",
@@ -14911,7 +14911,7 @@ const TARGETS = [
     },
     {
         "name": "구리도시공사",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 갈매동 645번지1층",
         "status": "만기도래_신규(1st)",
@@ -14926,7 +14926,7 @@ const TARGETS = [
     },
     {
         "name": "구리시청",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 수택동 445-28",
         "status": "약정만료",
@@ -14941,7 +14941,7 @@ const TARGETS = [
     },
     {
         "name": "구리시청",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 수택동 258",
         "status": "약정만료",
@@ -14956,7 +14956,7 @@ const TARGETS = [
     },
     {
         "name": "구리시청",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 갈매동 8-10번지 창고",
         "status": "약정만료",
@@ -14971,7 +14971,7 @@ const TARGETS = [
     },
     {
         "name": "구립서대문노인요양센터",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 서대문구 홍은동 4번지 전층",
         "status": "약정만료",
@@ -14986,7 +14986,7 @@ const TARGETS = [
     },
     {
         "name": "구립신내노인종합복지관",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 신내2동 771-1",
         "status": "약정만료",
@@ -15001,7 +15001,7 @@ const TARGETS = [
     },
     {
         "name": "구립신내노인종합복지관",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 신내동 771-1번지 신내노인종합복지관",
         "status": "약정만료",
@@ -15016,7 +15016,7 @@ const TARGETS = [
     },
     {
         "name": "구립왕십리자이어린이집",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 성동구 하왕십리동 1071 왕십리자이 104동 단지내 어린이집",
         "status": "만기도래_신규(1st)",
@@ -15031,7 +15031,7 @@ const TARGETS = [
     },
     {
         "name": "구립중곡하나어린이집",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 광진구 중곡동 692-3",
         "status": "약정만료",
@@ -15046,7 +15046,7 @@ const TARGETS = [
     },
     {
         "name": "구산탑정형외과의원",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 역촌동 1-1번지 501호",
         "status": "약정만료",
@@ -15061,7 +15061,7 @@ const TARGETS = [
     },
     {
         "name": "구윤희골프아카데미",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 길음동 25-2 이마트건물 5층",
         "status": "약정만료",
@@ -15076,7 +15076,7 @@ const TARGETS = [
     },
     {
         "name": "국가임상시험지원재단",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 공덕동 473번지 KPX빌딩 (공덕동KPX빌딩) 6층 우측",
         "status": "약정만료",
@@ -15091,7 +15091,7 @@ const TARGETS = [
     },
     {
         "name": "국가임상시험지원재단",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 공덕동 473 KPX빌딩 6층",
         "status": "약정만료",
@@ -15106,7 +15106,7 @@ const TARGETS = [
     },
     {
         "name": "국립고궁박물관",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 세종로 1-57번지",
         "status": "약정만료",
@@ -15121,7 +15121,7 @@ const TARGETS = [
     },
     {
         "name": "국립고궁박물관",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 세종로 1-57번지",
         "status": "약정만료",
@@ -15136,7 +15136,7 @@ const TARGETS = [
     },
     {
         "name": "국립암센터",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 마두동 857-2번지 서오능상가4층",
         "status": "약정만료",
@@ -15151,7 +15151,7 @@ const TARGETS = [
     },
     {
         "name": "국민건강보험공단",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 전곡읍 전곡로81 kt2층",
         "status": "약정만료",
@@ -15166,7 +15166,7 @@ const TARGETS = [
     },
     {
         "name": "국민건강보험공단",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 대조동 84-1 KT은평지사 3층 금고실",
         "status": "약정만료",
@@ -15181,7 +15181,7 @@ const TARGETS = [
     },
     {
         "name": "국민건강보험공단",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 대조동 84-1 1층 국민건강보험",
         "status": "약정만료",
@@ -15196,7 +15196,7 @@ const TARGETS = [
     },
     {
         "name": "국민건강보험공단",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 대조동 84-1 KT은평지사 2층 문서실",
         "status": "약정만료",
@@ -15211,7 +15211,7 @@ const TARGETS = [
     },
     {
         "name": "국민건강보험공단-강북지사",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아9동 127-7 KT강북지사 5층",
         "status": "만기도래_재계약",
@@ -15226,7 +15226,7 @@ const TARGETS = [
     },
     {
         "name": "국민건강보험공단-강북지사",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 127-7 KT5층",
         "status": "약정만료",
@@ -15241,7 +15241,7 @@ const TARGETS = [
     },
     {
         "name": "세창빌딩(강북)",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 종암동 85-5",
         "status": "만기도래_신규(1st)",
@@ -15256,7 +15256,7 @@ const TARGETS = [
     },
     {
         "name": "에이스병원2층(GiGAeyes guard)",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 다산동 6063-3   8층",
         "status": "만기도래_신규(1st)",
@@ -15271,7 +15271,7 @@ const TARGETS = [
     },
     {
         "name": "국민건강보험공단고양일산지사",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 마두동 1010번지 kt고양지사 9층",
         "status": "약정만료",
@@ -15286,7 +15286,7 @@ const TARGETS = [
     },
     {
         "name": "국민건강보험공단도봉지사",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 창동 651-3 KT도봉지사 4층",
         "status": "약정만료",
@@ -15301,7 +15301,7 @@ const TARGETS = [
     },
     {
         "name": "국민건강보험공단-성북지사",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 하월곡동 67-47 3층",
         "status": "약정만료",
@@ -15316,7 +15316,7 @@ const TARGETS = [
     },
     {
         "name": "국민건강보험공단-성북지사",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 하월곡동 67-47 3층",
         "status": "약정만료",
@@ -15331,7 +15331,7 @@ const TARGETS = [
     },
     {
         "name": "국민경제자문회의지원단",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 종로1가 1번지 교보생명빌딩20층",
         "status": "약정만료",
@@ -15346,7 +15346,7 @@ const TARGETS = [
     },
     {
         "name": "국제텍스타일",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진건읍 진관리 336 1창고",
         "status": "약정만료",
@@ -15361,7 +15361,7 @@ const TARGETS = [
     },
     {
         "name": "국제텍스타일",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진건읍 진관리 297-3",
         "status": "약정만료",
@@ -15376,7 +15376,7 @@ const TARGETS = [
     },
     {
         "name": "국제텍스타일",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 종로6가 270-3 2층 동대문종합시장 D동 2층 2640호",
         "status": "약정만료",
@@ -15391,7 +15391,7 @@ const TARGETS = [
     },
     {
         "name": "국제텍스타일",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 종로6가 270-3 2층 동대문종합시장 D동 2층 2027호",
         "status": "약정만료",
@@ -15406,7 +15406,7 @@ const TARGETS = [
     },
     {
         "name": "국제텍스타일",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 종로6가 270-3 동대문종합시장 D동 2층 2554호",
         "status": "약정만료",
@@ -15421,7 +15421,7 @@ const TARGETS = [
     },
     {
         "name": "국화향기",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 성북구 성북동 264번지",
         "status": "약정만료",
@@ -15436,7 +15436,7 @@ const TARGETS = [
     },
     {
         "name": "굿모닝시티쇼핑몰관리단",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 을지로6가 18-21번지",
         "status": "약정만료",
@@ -15451,7 +15451,7 @@ const TARGETS = [
     },
     {
         "name": "굿모닝파크텔(주)",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 오장동 90-24 모닝스카이호텔",
         "status": "약정만료",
@@ -15466,7 +15466,7 @@ const TARGETS = [
     },
     {
         "name": "굿모닝파크텔(주)",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 오장동 90-24",
         "status": "약정만료",
@@ -15481,7 +15481,7 @@ const TARGETS = [
     },
     {
         "name": "굿센치과의원",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 중산동 1667-4번지 일산프라자 5층",
         "status": "약정만료",
@@ -15496,7 +15496,7 @@ const TARGETS = [
     },
     {
         "name": "굿윌스토어밀알전주점",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 식사동 839번지",
         "status": "만기도래_신규(1st)",
@@ -15511,7 +15511,7 @@ const TARGETS = [
     },
     {
         "name": "굿윌스토어밀알전주점",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 273-1번지",
         "status": "약정만료",
@@ -15526,7 +15526,7 @@ const TARGETS = [
     },
     {
         "name": "굿윌스토어밀알전주점",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 식사동 839",
         "status": "약정만료",
@@ -15541,7 +15541,7 @@ const TARGETS = [
     },
     {
         "name": "굿윌스토어밀알전주점",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 273-1번지",
         "status": "약정만료",
@@ -15556,7 +15556,7 @@ const TARGETS = [
     },
     {
         "name": "굿윌아이앤씨(주)",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 31-3",
         "status": "약정만료",
@@ -15571,7 +15571,7 @@ const TARGETS = [
     },
     {
         "name": "굿윌아이앤씨(주)",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 식사동 2-8번지",
         "status": "약정만료",
@@ -15586,7 +15586,7 @@ const TARGETS = [
     },
     {
         "name": "굿윌아이앤씨(주)",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 원흥동 701번지 고양로지스틱스파크1층 헬퍼휴게실",
         "status": "약정만료",
@@ -15601,7 +15601,7 @@ const TARGETS = [
     },
     {
         "name": "권오진",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 상면 상동리 237번지",
         "status": "만기도래_신규(1st)",
@@ -15616,7 +15616,7 @@ const TARGETS = [
     },
     {
         "name": "그랜드플라자청주호텔",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단구동 1554-1 301호",
         "status": "만기도래_재계약",
@@ -15631,7 +15631,7 @@ const TARGETS = [
     },
     {
         "name": "그랜드플라자청주호텔",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 558-1 춘천하이테크타워 909호",
         "status": "만기도래_신규(1st)",
@@ -15646,7 +15646,7 @@ const TARGETS = [
     },
     {
         "name": "그린섬 미술학원",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 338-59번지 1층",
         "status": "약정만료",
@@ -15661,7 +15661,7 @@ const TARGETS = [
     },
     {
         "name": "그린한국에너지-사무실",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 호저면 칠봉로 368-14",
         "status": "약정만료",
@@ -15676,7 +15676,7 @@ const TARGETS = [
     },
     {
         "name": "그린한국에너지-사무실",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 호저면 칠봉로 368-14",
         "status": "약정만료",
@@ -15691,7 +15691,7 @@ const TARGETS = [
     },
     {
         "name": "그린한국에너지-사무실",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 호저면 칠봉로368-14",
         "status": "약정만료",
@@ -15706,7 +15706,7 @@ const TARGETS = [
     },
     {
         "name": "그린한국에너지-사무실",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 호저면 산현리 141 .",
         "status": "약정만료",
@@ -15721,7 +15721,7 @@ const TARGETS = [
     },
     {
         "name": "근로복지공단",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 마두동 1010 kt고양타워 사무동 4층",
         "status": "만기도래_신규(1st)",
@@ -15736,7 +15736,7 @@ const TARGETS = [
     },
     {
         "name": "근로복지공단 마포어린이집",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 연남 369-4",
         "status": "만기도래_신규(1st)",
@@ -15751,7 +15751,7 @@ const TARGETS = [
     },
     {
         "name": "근로복지공단 마포어린이집",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 연남동 연남로49",
         "status": "만기도래_신규(1st)",
@@ -15766,7 +15766,7 @@ const TARGETS = [
     },
     {
         "name": "글로벌금융판매",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 무실동 능라동길 63 법조타워 504호 (무실동)",
         "status": "약정만료",
@@ -15781,7 +15781,7 @@ const TARGETS = [
     },
     {
         "name": "글로벌금융판매",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 다산동 4336-56  10층 1001호 1002호",
         "status": "약정만료",
@@ -15796,7 +15796,7 @@ const TARGETS = [
     },
     {
         "name": "글로벌금융판매",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 교동 740-7 2층  - 교동닭갈비2층",
         "status": "약정만료",
@@ -15811,7 +15811,7 @@ const TARGETS = [
     },
     {
         "name": "글로벌소프트웨어캠퍼스 주식회사",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1590번지 상암ITTower 6층",
         "status": "만기도래_신규(1st)",
@@ -15826,7 +15826,7 @@ const TARGETS = [
     },
     {
         "name": "글로우업리즈 주식회사",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 395-180번지 서주빌딩 1층",
         "status": "약정만료",
@@ -15841,7 +15841,7 @@ const TARGETS = [
     },
     {
         "name": "글의힘국어학원",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 중계동 359-8번지 8층",
         "status": "약정만료",
@@ -15856,7 +15856,7 @@ const TARGETS = [
     },
     {
         "name": "금강파크빌라(GiGAeyes guard)",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 종로구 평창동 170번지 금강주택 전체",
         "status": "만기도래_신규(1st)",
@@ -15871,7 +15871,7 @@ const TARGETS = [
     },
     {
         "name": "금천구장애인보호작업장",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 도봉동 556-22번지(월튼하우스401호)",
         "status": "약정만료",
@@ -15886,7 +15886,7 @@ const TARGETS = [
     },
     {
         "name": "금호4가동주민센터",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 성동구 금호동4가 803번지2층",
         "status": "약정만료",
@@ -15901,7 +15901,7 @@ const TARGETS = [
     },
     {
         "name": "금호4가동주민센터",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 성동구 금호동4가 금호4가동주민센타2층",
         "status": "약정만료",
@@ -15916,7 +15916,7 @@ const TARGETS = [
     },
     {
         "name": "기상청",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 송월동 1-1번지 기상청국립기상박물관(서울기상관측소)",
         "status": "약정만료",
@@ -15931,7 +15931,7 @@ const TARGETS = [
     },
     {
         "name": "기상청",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 송월동 1-1번지 기상청국립기상박물관(서울기상관측소)",
         "status": "약정만료",
@@ -15946,7 +15946,7 @@ const TARGETS = [
     },
     {
         "name": "기상청",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 송월동 1-1번지 기상청국립기상박물관",
         "status": "만기도래_신규(1st)",
@@ -15961,7 +15961,7 @@ const TARGETS = [
     },
     {
         "name": "기상청",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 송월동 1-1번지 기상청국립기상박물관",
         "status": "만기도래_신규(1st)",
@@ -15976,7 +15976,7 @@ const TARGETS = [
     },
     {
         "name": "기상청",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 송월동 1-1번지 기상청국립기상박물관",
         "status": "만기도래_신규(1st)",
@@ -15991,7 +15991,7 @@ const TARGETS = [
     },
     {
         "name": "기체",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 화동 90-1번지",
         "status": "약정만료",
@@ -16006,7 +16006,7 @@ const TARGETS = [
     },
     {
         "name": "길목정육점",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 유천동 418-7 .",
         "status": "만기도래_신규(1st)",
@@ -16021,7 +16021,7 @@ const TARGETS = [
     },
     {
         "name": "김성수주택",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 덕정동 덕정주공1단지 105동103호",
         "status": "만기도래_신규(1st)",
@@ -16036,7 +16036,7 @@ const TARGETS = [
     },
     {
         "name": "김성식사업장(guard)",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 중앙동 184-1  2층",
         "status": "약정만료",
@@ -16051,7 +16051,7 @@ const TARGETS = [
     },
     {
         "name": "김성중농장",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 오금동 381-3번지",
         "status": "만기도래_재계약",
@@ -16066,7 +16066,7 @@ const TARGETS = [
     },
     {
         "name": "김소영",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 온의동 6-33",
         "status": "만기도래_재계약",
@@ -16081,7 +16081,7 @@ const TARGETS = [
     },
     {
         "name": "김소영",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 온의동 6-33",
         "status": "만기도래_재계약",
@@ -16096,7 +16096,7 @@ const TARGETS = [
     },
     {
         "name": "김영훈주택",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 강북구 우이동 94-15번지",
         "status": "약정만료",
@@ -16111,7 +16111,7 @@ const TARGETS = [
     },
     {
         "name": "김정은사무실",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 효자동 자하문로24길 44 (효자동)",
         "status": "약정만료",
@@ -16126,7 +16126,7 @@ const TARGETS = [
     },
     {
         "name": "김정은식당",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 용두동 432-94 113호",
         "status": "약정만료",
@@ -16141,7 +16141,7 @@ const TARGETS = [
     },
     {
         "name": "김지은주택",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 연희동 119-6번지",
         "status": "약정만료",
@@ -16156,7 +16156,7 @@ const TARGETS = [
     },
     {
         "name": "김지은주택",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 상수동 353-7 1층",
         "status": "약정만료",
@@ -16171,7 +16171,7 @@ const TARGETS = [
     },
     {
         "name": "김창섭축사",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 금왕리 금왕리 1081-1번지 축사",
         "status": "만기도래_신규(1st)",
@@ -16186,7 +16186,7 @@ const TARGETS = [
     },
     {
         "name": "김혜경가정집",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 수동면 수산리 7번지",
         "status": "만기도래_신규(1st)",
@@ -16201,7 +16201,7 @@ const TARGETS = [
     },
     {
         "name": "우리들요양원",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 차산리 67-7번지 요양원건물",
         "status": "만기도래_신규(1st)",
@@ -16216,7 +16216,7 @@ const TARGETS = [
     },
     {
         "name": "나너주식회사",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 서면 3-60",
         "status": "약정만료",
@@ -16231,7 +16231,7 @@ const TARGETS = [
     },
     {
         "name": "나드에프앤비(주)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 280 성수낙낙1층",
         "status": "만기도래_신규(1st)",
@@ -16246,7 +16246,7 @@ const TARGETS = [
     },
     {
         "name": "나드에프앤비(주)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 280 성수낙낙1층 제2매장(후면)",
         "status": "만기도래_신규(1st)",
@@ -16261,7 +16261,7 @@ const TARGETS = [
     },
     {
         "name": "나드에프앤비(주)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 280 성수낙낙 지하",
         "status": "만기도래_신규(1st)",
@@ -16276,7 +16276,7 @@ const TARGETS = [
     },
     {
         "name": "나라물산",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 전농동 123-1 6층",
         "status": "만기도래_재계약",
@@ -16291,7 +16291,7 @@ const TARGETS = [
     },
     {
         "name": "나라물산",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 전농동 123-1 정우빌딩 3층",
         "status": "약정만료",
@@ -16306,7 +16306,7 @@ const TARGETS = [
     },
     {
         "name": "나래산업",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 영중면 988",
         "status": "만기도래_신규(1st)",
@@ -16321,7 +16321,7 @@ const TARGETS = [
     },
     {
         "name": "나무오리어린이집",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 이태원동 228-4 A동 지하1층12층",
         "status": "약정만료",
@@ -16336,7 +16336,7 @@ const TARGETS = [
     },
     {
         "name": "나일관리(OCT)",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 평화로443/승윤노블리안시티",
         "status": "약정만료",
@@ -16351,7 +16351,7 @@ const TARGETS = [
     },
     {
         "name": "나주시청",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 토평동 976-7번지 호정아트빌 빌라",
         "status": "약정만료",
@@ -16366,7 +16366,7 @@ const TARGETS = [
     },
     {
         "name": "남경막국수",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 주문진읍 주문리 160 임수호남경막국수",
         "status": "약정만료",
@@ -16381,7 +16381,7 @@ const TARGETS = [
     },
     {
         "name": "남대문충무로새마을금고",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동 47-12 (2층)",
         "status": "약정만료",
@@ -16396,7 +16396,7 @@ const TARGETS = [
     },
     {
         "name": "남대문충무로새마을금고",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동 31-10호 234층",
         "status": "약정만료",
@@ -16411,7 +16411,7 @@ const TARGETS = [
     },
     {
         "name": "남대문충무로새마을금고",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동 47-12 (1층)",
         "status": "약정만료",
@@ -16426,7 +16426,7 @@ const TARGETS = [
     },
     {
         "name": "남대문충무로새마을금고",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 충무로4가 36-51",
         "status": "약정만료",
@@ -16441,7 +16441,7 @@ const TARGETS = [
     },
     {
         "name": "남대문충무로새마을금고",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동 30  대도상가 D동 지하",
         "status": "약정만료",
@@ -16456,7 +16456,7 @@ const TARGETS = [
     },
     {
         "name": "남대문충무로새마을금고",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동 31-10 1층매장(부르뎅아동복)",
         "status": "약정만료",
@@ -16471,7 +16471,7 @@ const TARGETS = [
     },
     {
         "name": "남대문충무로새마을금고",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동  47-12 4층 관리사무실 (남창동)",
         "status": "약정만료",
@@ -16486,7 +16486,7 @@ const TARGETS = [
     },
     {
         "name": "남대문충무로새마을금고",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동 31-10 2층 365코너 ATM",
         "status": "약정만료",
@@ -16501,7 +16501,7 @@ const TARGETS = [
     },
     {
         "name": "남대문충무로새마을금고",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동 31-10 2층 365코너 CD기",
         "status": "약정만료",
@@ -16516,7 +16516,7 @@ const TARGETS = [
     },
     {
         "name": "남선금속",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 호원동 199-3",
         "status": "약정만료",
@@ -16531,7 +16531,7 @@ const TARGETS = [
     },
     {
         "name": "남시약국",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 남대문로3가 30-15번지",
         "status": "만기도래_신규(1st)",
@@ -16546,7 +16546,7 @@ const TARGETS = [
     },
     {
         "name": "남양약품",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 745-27 1층",
         "status": "약정만료",
@@ -16561,7 +16561,7 @@ const TARGETS = [
     },
     {
         "name": "남양주도시공사",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 부평리 808",
         "status": "만기도래_신규(1st)",
@@ -16576,7 +16576,7 @@ const TARGETS = [
     },
     {
         "name": "남양주도시공사",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 별내동 802 별내크린센터 2층 사무실",
         "status": "만기도래_신규(1st)",
@@ -16591,7 +16591,7 @@ const TARGETS = [
     },
     {
         "name": "남양주도시공사",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 별내동 별내동 938번지",
         "status": "약정만료",
@@ -16606,7 +16606,7 @@ const TARGETS = [
     },
     {
         "name": "남이섬 제4주차장",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 남산면 방하리 197",
         "status": "약정만료",
@@ -16621,7 +16621,7 @@ const TARGETS = [
     },
     {
         "name": "남춘천초등학교",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 온의동 550 남춘천초교 남춘천초등학교",
         "status": "약정만료",
@@ -16636,7 +16636,7 @@ const TARGETS = [
     },
     {
         "name": "남한강에스파크컨트리클럽",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 부론면 법천리 75-1 장뜰길 154",
         "status": "만기도래_신규(1st)",
@@ -16651,7 +16651,7 @@ const TARGETS = [
     },
     {
         "name": "남한강에스파크컨트리클럽",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 법천리 75-1",
         "status": "만기도래_신규(1st)",
@@ -16666,7 +16666,7 @@ const TARGETS = [
     },
     {
         "name": "내촌낚시터",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 내촌면 내리 521",
         "status": "약정만료",
@@ -16681,7 +16681,7 @@ const TARGETS = [
     },
     {
         "name": "내촌낚시터",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 내촌면 내리521(내촌낚시터)",
         "status": "약정만료",
@@ -16696,7 +16696,7 @@ const TARGETS = [
     },
     {
         "name": "네오메디칼",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 성석 534",
         "status": "약정만료",
@@ -16711,7 +16711,7 @@ const TARGETS = [
     },
     {
         "name": "네오플램",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 지정면 기업도시로1 (신평리1085 )",
         "status": "약정만료",
@@ -16726,7 +16726,7 @@ const TARGETS = [
     },
     {
         "name": "네이처가든",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 가산리 489-1",
         "status": "약정만료",
@@ -16741,7 +16741,7 @@ const TARGETS = [
     },
     {
         "name": "네이처프라임",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 가산리 489-1",
         "status": "약정만료",
@@ -16756,7 +16756,7 @@ const TARGETS = [
     },
     {
         "name": "넥스트맘 현대가산점(oct-뷰)",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 중앙동 중앙로 91-2",
         "status": "약정만료",
@@ -16771,7 +16771,7 @@ const TARGETS = [
     },
     {
         "name": "넷케이티아이",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 학성동 902-2번지 KT원주지사 3층",
         "status": "약정만료",
@@ -16786,7 +16786,7 @@ const TARGETS = [
     },
     {
         "name": "녁",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 관철동 260 4층5층",
         "status": "만기도래_신규(1st)",
@@ -16801,7 +16801,7 @@ const TARGETS = [
     },
     {
         "name": "노블레스",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 와룡동 172-2번지 4층",
         "status": "약정만료",
@@ -16816,7 +16816,7 @@ const TARGETS = [
     },
     {
         "name": "노블레스힐",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 653-86번지 관리실",
         "status": "만기도래_신규(1st)",
@@ -16831,7 +16831,7 @@ const TARGETS = [
     },
     {
         "name": "노원구보건소",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 월계동 321-4번지 월계보건지소 1층",
         "status": "약정만료",
@@ -16846,7 +16846,7 @@ const TARGETS = [
     },
     {
         "name": "노원구청",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 중계동 산101-37",
         "status": "약정만료",
@@ -16861,7 +16861,7 @@ const TARGETS = [
     },
     {
         "name": "노원구청",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 수락산로258 노원구청 내",
         "status": "약정만료",
@@ -16876,7 +16876,7 @@ const TARGETS = [
     },
     {
         "name": "노원구청",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 709 인산빌딩 4층",
         "status": "약정만료",
@@ -16891,7 +16891,7 @@ const TARGETS = [
     },
     {
         "name": "노원문고-본점",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 728-3번지 (602동상가 지하1층)",
         "status": "약정만료",
@@ -16906,7 +16906,7 @@ const TARGETS = [
     },
     {
         "name": "노원문고-본점",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 방학동 662-30번지",
         "status": "약정만료",
@@ -16921,7 +16921,7 @@ const TARGETS = [
     },
     {
         "name": "노원프라자약국",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 763-6 1층 약국",
         "status": "약정만료",
@@ -16936,7 +16936,7 @@ const TARGETS = [
     },
     {
         "name": "녹색병원",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 면목3동 568-1 녹색병원 출입통제",
         "status": "약정만료",
@@ -16951,7 +16951,7 @@ const TARGETS = [
     },
     {
         "name": "녹색병원",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 면목동 568-1",
         "status": "약정만료",
@@ -16966,7 +16966,7 @@ const TARGETS = [
     },
     {
         "name": "녹색병원",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 면목동 568-1번지 녹색병원",
         "status": "약정만료",
@@ -16981,7 +16981,7 @@ const TARGETS = [
     },
     {
         "name": "녹색병원",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 면목동 568-1번지",
         "status": "약정만료",
@@ -16996,7 +16996,7 @@ const TARGETS = [
     },
     {
         "name": "녹색친구들",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 역촌동 44-22 오피스텔 관리실",
         "status": "만기도래_신규(1st)",
@@ -17011,7 +17011,7 @@ const TARGETS = [
     },
     {
         "name": "놀면뭐해 주식회사",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 홍제동 995-7번지 2층",
         "status": "약정만료",
@@ -17026,7 +17026,7 @@ const TARGETS = [
     },
     {
         "name": "놀면뭐해 주식회사",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단구동 1599-4번지 원주프리미엄아울렛 310호",
         "status": "약정만료",
@@ -17041,7 +17041,7 @@ const TARGETS = [
     },
     {
         "name": "놀면뭐해 주식회사",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 교동 774-23번지 3층",
         "status": "만기도래_신규(1st)",
@@ -17056,7 +17056,7 @@ const TARGETS = [
     },
     {
         "name": "놀면뭐해 주식회사",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 태백시 문곡동 27-42번지 2층",
         "status": "만기도래_신규(1st)",
@@ -17071,7 +17071,7 @@ const TARGETS = [
     },
     {
         "name": "농업회사법인 동화(주)",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 파평면 두포리 121 동화힐링캠프 안내센터",
         "status": "약정만료",
@@ -17086,7 +17086,7 @@ const TARGETS = [
     },
     {
         "name": "농업회사법인 아람농가",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 동두천동  118 (동두천동)",
         "status": "약정만료",
@@ -17101,7 +17101,7 @@ const TARGETS = [
     },
     {
         "name": "농업회사법인 아람농가",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 동두천동  118 (동두천동 동두천동118-0단독주택)",
         "status": "약정만료",
@@ -17116,7 +17116,7 @@ const TARGETS = [
     },
     {
         "name": "농업회사법인(주) 신바트팜",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 청일면 속실리 582 국사랑 신바트팜",
         "status": "만기도래_재계약",
@@ -17131,7 +17131,7 @@ const TARGETS = [
     },
     {
         "name": "농업회사법인(주)사조원",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 동내면 거두리 958-9번지 1층",
         "status": "만기도래_신규(1st)",
@@ -17146,7 +17146,7 @@ const TARGETS = [
     },
     {
         "name": "농업회사법인(주)설악산그린푸드",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 양양읍 포월리 293 (주)설악산그린푸드-창고동",
         "status": "약정만료",
@@ -17161,7 +17161,7 @@ const TARGETS = [
     },
     {
         "name": "농업회사법인웰팜넷patrol",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 지제면수곡리 수곡로 174",
         "status": "만기도래_재계약",
@@ -17176,7 +17176,7 @@ const TARGETS = [
     },
     {
         "name": "농업회사법인정스팜주식회사",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 백석읍 홍죽리953-9",
         "status": "약정만료",
@@ -17191,7 +17191,7 @@ const TARGETS = [
     },
     {
         "name": "농업회사법인정스팜주식회사",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 백석읍 홍죽리 953-9",
         "status": "약정만료",
@@ -17206,7 +17206,7 @@ const TARGETS = [
     },
     {
         "name": "농업회사법인정스팜주식회사",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 백석읍 홍죽리 권율로 1203번길 8-35",
         "status": "약정만료",
@@ -17221,7 +17221,7 @@ const TARGETS = [
     },
     {
         "name": "농업회사법인주식회사동산농장",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 전곡읍 양원리 105",
         "status": "약정만료",
@@ -17236,7 +17236,7 @@ const TARGETS = [
     },
     {
         "name": "농협생명",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 무실동 1857-7 6층",
         "status": "약정만료",
@@ -17251,7 +17251,7 @@ const TARGETS = [
     },
     {
         "name": "누가이비인후과",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 천곡동 863 현진빌딩 3층",
         "status": "만기도래_신규(1st)",
@@ -17266,7 +17266,7 @@ const TARGETS = [
     },
     {
         "name": "누제몽",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 종로3가 20 영흥빌딩1층(대로변)",
         "status": "약정만료",
@@ -17281,7 +17281,7 @@ const TARGETS = [
     },
     {
         "name": "뉴밀레니엄타워계단",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 화정동 977번지 밀레니엄빌딩 관리사무소",
         "status": "약정만료",
@@ -17296,7 +17296,7 @@ const TARGETS = [
     },
     {
         "name": "뉴밀레니엄타워계단",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 화정동 977  (주)밀레니엄빌딩 관리사무소",
         "status": "만기도래_재계약",
@@ -17311,7 +17311,7 @@ const TARGETS = [
     },
     {
         "name": "뉴코스코마트",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 장안동 331-12번지 1층",
         "status": "약정만료",
@@ -17326,7 +17326,7 @@ const TARGETS = [
     },
     {
         "name": "늘푸른나무어린이집",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 금곡리 580-2 (진접읍 금곡리) 늘푸른나무어린이집",
         "status": "만기도래_신규(1st)",
@@ -17341,7 +17341,7 @@ const TARGETS = [
     },
     {
         "name": "능동주차장",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 군자동 477-17",
         "status": "만기도래_신규(1st)",
@@ -17356,7 +17356,7 @@ const TARGETS = [
     },
     {
         "name": "능동주차장",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 군자동 477-18",
         "status": "만기도래_신규(1st)",
@@ -17371,7 +17371,7 @@ const TARGETS = [
     },
     {
         "name": "니즈",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 별내동 1097-6 마들프라자 1층 KT매장",
         "status": "약정만료",
@@ -17386,7 +17386,7 @@ const TARGETS = [
     },
     {
         "name": "니즈",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 별내동 826-3 1층 위즈텔레콤",
         "status": "약정만료",
@@ -17401,7 +17401,7 @@ const TARGETS = [
     },
     {
         "name": "니즈",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 오남읍 오남리 530-2 1층 위즈텔레콤",
         "status": "약정만료",
@@ -17416,7 +17416,7 @@ const TARGETS = [
     },
     {
         "name": "니콤텍스타일(GiGAeyes i-guard)",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 장안동  460-4번지 2층 왼편",
         "status": "약정만료",
@@ -17431,7 +17431,7 @@ const TARGETS = [
     },
     {
         "name": "다나암요양병원",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 강하면 전수리 1016-6번지",
         "status": "약정만료",
@@ -17446,7 +17446,7 @@ const TARGETS = [
     },
     {
         "name": "다나암요양병원",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 강하면 전수리 1016-6번지",
         "status": "약정만료",
@@ -17461,7 +17461,7 @@ const TARGETS = [
     },
     {
         "name": "다림바이오텍",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 지정면 신평리 1066 (주)다림바이오텍_A동",
         "status": "만기도래_신규(1st)",
@@ -17476,7 +17476,7 @@ const TARGETS = [
     },
     {
         "name": "다림바이오텍",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 지정면 신평리 1066 (주)다림바이오텍_B동",
         "status": "만기도래_신규(1st)",
@@ -17491,7 +17491,7 @@ const TARGETS = [
     },
     {
         "name": "다림바이오텍",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 서면 동막리 507-1",
         "status": "약정만료",
@@ -17506,7 +17506,7 @@ const TARGETS = [
     },
     {
         "name": "다미아",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 서종면 문호리 592-2호",
         "status": "만기도래_재계약",
@@ -17521,7 +17521,7 @@ const TARGETS = [
     },
     {
         "name": "다미아",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 서종면 문호리 592-6호",
         "status": "약정만료",
@@ -17536,7 +17536,7 @@ const TARGETS = [
     },
     {
         "name": "다산하나한방병원",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 다산동 6063-1번지 신해센트럴타워II 3층",
         "status": "약정만료",
@@ -17551,7 +17551,7 @@ const TARGETS = [
     },
     {
         "name": "다송",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 오남읍 오남리 2-1",
         "status": "약정만료",
@@ -17566,7 +17566,7 @@ const TARGETS = [
     },
     {
         "name": "다시봄의원(GiGAeyes i-guard)",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 휘경동 71-1번지 5층",
         "status": "약정만료",
@@ -17581,7 +17581,7 @@ const TARGETS = [
     },
     {
         "name": "다오르",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 수동면 운수리54-2",
         "status": "약정만료",
@@ -17596,7 +17596,7 @@ const TARGETS = [
     },
     {
         "name": "다오르",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 수동면 운수리 57-1 운수리54-2(좌측창고)",
         "status": "약정만료",
@@ -17611,7 +17611,7 @@ const TARGETS = [
     },
     {
         "name": "다온IT-덕계점",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 광사동 651 (1층)",
         "status": "약정만료",
@@ -17626,7 +17626,7 @@ const TARGETS = [
     },
     {
         "name": "다온IT-덕계점",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 생연동 중앙로 220 1층",
         "status": "약정만료",
@@ -17641,7 +17641,7 @@ const TARGETS = [
     },
     {
         "name": "다올건물관리㈜",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 민락동 821-3번지 예스프라자",
         "status": "약정만료",
@@ -17656,7 +17656,7 @@ const TARGETS = [
     },
     {
         "name": "다올건물관리㈜",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 민락동 821-2번지",
         "status": "약정만료",
@@ -17671,7 +17671,7 @@ const TARGETS = [
     },
     {
         "name": "다올건물관리㈜",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 민락동 844-2번지 정원빌딩",
         "status": "약정만료",
@@ -17686,7 +17686,7 @@ const TARGETS = [
     },
     {
         "name": "다와농원",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 적성면 어유지리 320",
         "status": "만기도래_신규(1st)",
@@ -17701,7 +17701,7 @@ const TARGETS = [
     },
     {
         "name": "다이소광적점",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 가납리 가납리 842-3번지 1층",
         "status": "만기도래_신규(1st)",
@@ -17716,7 +17716,7 @@ const TARGETS = [
     },
     {
         "name": "다쯔미스시",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 경기 구리시 경춘로 261 롯데백화점 구리점 8층",
         "status": "약정만료",
@@ -17731,7 +17731,7 @@ const TARGETS = [
     },
     {
         "name": "다쯔미스시",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 713 롯데백화점 9층",
         "status": "만기도래_신규(1st)",
@@ -17746,7 +17746,7 @@ const TARGETS = [
     },
     {
         "name": "다쯔미스시",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계2동 서울 노원구 동일로 1414 롯데백화점 9층",
         "status": "만기도래_신규(1st)",
@@ -17761,7 +17761,7 @@ const TARGETS = [
     },
     {
         "name": "다팜MALL",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 우산동 231-6 다팜 MALL",
         "status": "약정만료",
@@ -17776,7 +17776,7 @@ const TARGETS = [
     },
     {
         "name": "다팜MALL",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 우산동 231-6 다팜 창고",
         "status": "약정만료",
@@ -17791,7 +17791,7 @@ const TARGETS = [
     },
     {
         "name": "다한울축산(OCT)",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 소초면 수암리1362-1",
         "status": "약정만료",
@@ -17806,7 +17806,7 @@ const TARGETS = [
     },
     {
         "name": "닥터써클정형외과의원구파발점",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 지축동 지축로56 성산타워 405~413호",
         "status": "약정만료",
@@ -17821,7 +17821,7 @@ const TARGETS = [
     },
     {
         "name": "대건어린이집",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 신내동 신내로7길6 1층",
         "status": "만기도래_신규(1st)",
@@ -17836,7 +17836,7 @@ const TARGETS = [
     },
     {
         "name": "대건어린이집",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 신내동 522-1 대건어린이집",
         "status": "만기도래_신규(1st)",
@@ -17851,7 +17851,7 @@ const TARGETS = [
     },
     {
         "name": "대건자산관리(주)",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 토당동 878-8번지",
         "status": "만기도래_신규(1st)",
@@ -17866,7 +17866,7 @@ const TARGETS = [
     },
     {
         "name": "대건자산관리(주)",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 도화동 544번지 고려빌딩 2층 78호",
         "status": "약정만료",
@@ -17881,7 +17881,7 @@ const TARGETS = [
     },
     {
         "name": "대관령한우가공장",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 용평면 평창대로 1948-25",
         "status": "약정만료",
@@ -17896,7 +17896,7 @@ const TARGETS = [
     },
     {
         "name": "대관령한우가공장",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 용평면 평창대로1948-25",
         "status": "약정만료",
@@ -17911,7 +17911,7 @@ const TARGETS = [
     },
     {
         "name": "대광콘크리트(GiGAeyes guard)",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 하패리 하패리 959번지",
         "status": "약정만료",
@@ -17926,7 +17926,7 @@ const TARGETS = [
     },
     {
         "name": "대길통상(OCT)",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 설악면 사룡리777",
         "status": "약정만료",
@@ -17941,7 +17941,7 @@ const TARGETS = [
     },
     {
         "name": "대도매마트",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 신읍동 38-1 1층",
         "status": "약정만료",
@@ -17956,7 +17956,7 @@ const TARGETS = [
     },
     {
         "name": "대도매마트",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 어룡동 591-7",
         "status": "약정만료",
@@ -17971,7 +17971,7 @@ const TARGETS = [
     },
     {
         "name": "대동빌딩",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 400-6번지 지하1층",
         "status": "약정만료",
@@ -17986,7 +17986,7 @@ const TARGETS = [
     },
     {
         "name": "대동빌딩",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 400-6번지 지하1층",
         "status": "약정만료",
@@ -18001,7 +18001,7 @@ const TARGETS = [
     },
     {
         "name": "대동여자중학교",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 횡성읍 읍하리 371",
         "status": "약정만료",
@@ -18016,7 +18016,7 @@ const TARGETS = [
     },
     {
         "name": "대동여자중학교",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 횡성읍 읍하리 371",
         "status": "약정만료",
@@ -18031,7 +18031,7 @@ const TARGETS = [
     },
     {
         "name": "대동여자중학교",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 횡성읍 읍하리 371",
         "status": "약정만료",
@@ -18046,7 +18046,7 @@ const TARGETS = [
     },
     {
         "name": "대룡산에프앤비",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 동내면 신촌리 338 1층",
         "status": "만기도래_신규(1st)",
@@ -18061,7 +18061,7 @@ const TARGETS = [
     },
     {
         "name": "대륙식자재마트",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 개운동 서원대로411",
         "status": "만기도래_재계약",
@@ -18076,7 +18076,7 @@ const TARGETS = [
     },
     {
         "name": "대륙식자재마트",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 개운동 서원대로411",
         "status": "만기도래_재계약",
@@ -18091,7 +18091,7 @@ const TARGETS = [
     },
     {
         "name": "이규동코인노래방",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단계동 855-2 C2타워 4층",
         "status": "만기도래_신규(1st)",
@@ -18106,7 +18106,7 @@ const TARGETS = [
     },
     {
         "name": "대명실업(주)",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 용산구 청파동2가 75-5 2층",
         "status": "만기도래_신규(1st)",
@@ -18121,7 +18121,7 @@ const TARGETS = [
     },
     {
         "name": "대명실업(주)",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 용산구 청파동2가 72-5번지 2층",
         "status": "만기도래_신규(1st)",
@@ -18136,7 +18136,7 @@ const TARGETS = [
     },
     {
         "name": "대명씨푸드(OCT)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 군내면 용정리 486-8",
         "status": "약정만료",
@@ -18151,7 +18151,7 @@ const TARGETS = [
     },
     {
         "name": "대명원",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 장흥면 교현리 312-16",
         "status": "만기도래_신규(1st)",
@@ -18166,7 +18166,7 @@ const TARGETS = [
     },
     {
         "name": "대박주유소",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 삼패동 337-4 대궐주유소 번지",
         "status": "약정만료",
@@ -18181,7 +18181,7 @@ const TARGETS = [
     },
     {
         "name": "대선이엔씨(주)",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 월롱면 덕은리 557-5",
         "status": "약정만료",
@@ -18196,7 +18196,7 @@ const TARGETS = [
     },
     {
         "name": "대성메디케어",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 오남읍 오남리 474-3 창고",
         "status": "약정만료",
@@ -18211,7 +18211,7 @@ const TARGETS = [
     },
     {
         "name": "대성메디케어",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 오남읍 오남리 474-3번지 본창고 아랫층",
         "status": "만기도래_신규(1st)",
@@ -18226,7 +18226,7 @@ const TARGETS = [
     },
     {
         "name": "대성메디케어",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 오남읍 오남리 474-3번지",
         "status": "약정만료",
@@ -18241,7 +18241,7 @@ const TARGETS = [
     },
     {
         "name": "대성체인",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍월산리 281",
         "status": "약정만료",
@@ -18256,7 +18256,7 @@ const TARGETS = [
     },
     {
         "name": "대성타운",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 화천군 상서면 산양리 738-73 대성타운 1층",
         "status": "약정만료",
@@ -18271,7 +18271,7 @@ const TARGETS = [
     },
     {
         "name": "대성파워텍",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 휘경동 43-230",
         "status": "약정만료",
@@ -18286,7 +18286,7 @@ const TARGETS = [
     },
     {
         "name": "대성파워텍",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 망우동 351-1",
         "status": "약정만료",
@@ -18301,7 +18301,7 @@ const TARGETS = [
     },
     {
         "name": "대신공사",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 영월군 북면 715",
         "status": "약정만료",
@@ -18316,7 +18316,7 @@ const TARGETS = [
     },
     {
         "name": "대신통신기술(주)",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 수동면 내방리 6-30(전원주택 연수원)",
         "status": "약정만료",
@@ -18331,7 +18331,7 @@ const TARGETS = [
     },
     {
         "name": "대아이앤씨(주)",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 관설동 1685-10 1층",
         "status": "만기도래_신규(1st)",
@@ -18346,7 +18346,7 @@ const TARGETS = [
     },
     {
         "name": "대아이앤씨(주)",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 대화동 2603번지 GIFC오피스상가 1007호1008호",
         "status": "약정만료",
@@ -18361,7 +18361,7 @@ const TARGETS = [
     },
     {
         "name": "대아이앤씨(주)",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 송우리 송우리 159-3번지 501호",
         "status": "약정만료",
@@ -18376,7 +18376,7 @@ const TARGETS = [
     },
     {
         "name": "주내교회",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 마전동 163-1번지 주내교회",
         "status": "만기도래_신규(1st)",
@@ -18391,7 +18391,7 @@ const TARGETS = [
     },
     {
         "name": "대양수산냉장고-확장기1",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 대포동 947-6",
         "status": "약정만료",
@@ -18406,7 +18406,7 @@ const TARGETS = [
     },
     {
         "name": "대영스크린(OCT)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 278-47번지 대영빌딩",
         "status": "만기도래_재계약",
@@ -18421,7 +18421,7 @@ const TARGETS = [
     },
     {
         "name": "대영지에프",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 금현리 602-2",
         "status": "약정만료",
@@ -18436,7 +18436,7 @@ const TARGETS = [
     },
     {
         "name": "대원건설(주)",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 정하동 187-15 2층",
         "status": "약정만료",
@@ -18451,7 +18451,7 @@ const TARGETS = [
     },
     {
         "name": "대원건설(주)",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 정하동 100 컨테이너",
         "status": "약정만료",
@@ -18466,7 +18466,7 @@ const TARGETS = [
     },
     {
         "name": "대원에프앤드씨㈜",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 송정동 18-1번지",
         "status": "약정만료",
@@ -18481,7 +18481,7 @@ const TARGETS = [
     },
     {
         "name": "대원에프앤드씨㈜",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 송정동 18-1번지 대원빌딩3층",
         "status": "약정만료",
@@ -18496,7 +18496,7 @@ const TARGETS = [
     },
     {
         "name": "대원에프앤드씨㈜",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 송정동 18-1번지 대원빌딩 지하",
         "status": "약정만료",
@@ -18511,7 +18511,7 @@ const TARGETS = [
     },
     {
         "name": "대원에프앤드씨㈜",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 송정동 18-1  2층",
         "status": "약정만료",
@@ -18526,7 +18526,7 @@ const TARGETS = [
     },
     {
         "name": "대원종합관리㈜",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 동산동 352-1",
         "status": "만기도래_신규(1st)",
@@ -18541,7 +18541,7 @@ const TARGETS = [
     },
     {
         "name": "대원종합관리㈜",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 일산동 955",
         "status": "만기도래_신규(1st)",
@@ -18556,7 +18556,7 @@ const TARGETS = [
     },
     {
         "name": "대원종합관리㈜",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 도내동 1088 원흥프라자",
         "status": "만기도래_신규(1st)",
@@ -18571,7 +18571,7 @@ const TARGETS = [
     },
     {
         "name": "대원종합관리㈜",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 동산동 353 명주프라자",
         "status": "약정만료",
@@ -18586,7 +18586,7 @@ const TARGETS = [
     },
     {
         "name": "대원종합관리㈜",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 동산동 352-1 아카메디",
         "status": "약정만료",
@@ -18601,7 +18601,7 @@ const TARGETS = [
     },
     {
         "name": "대윤건업",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동 46-16 대윤건업4층",
         "status": "약정만료",
@@ -18616,7 +18616,7 @@ const TARGETS = [
     },
     {
         "name": "대일안전",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 광진구 중곡동 237-10번지",
         "status": "약정만료",
@@ -18631,7 +18631,7 @@ const TARGETS = [
     },
     {
         "name": "대한노인회 포천시지회",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 일동면 기산리 215-2번지 기산8리경로당",
         "status": "만기도래_신규(1st)",
@@ -18646,7 +18646,7 @@ const TARGETS = [
     },
     {
         "name": "대한노인회 포천시지회",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 관인면 초과리 1-44번지 초과1리경로당CCTV",
         "status": "만기도래_신규(1st)",
@@ -18661,7 +18661,7 @@ const TARGETS = [
     },
     {
         "name": "대한노인회 포천시지회",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 신북면 가채리 335-7 가채2리 경로당",
         "status": "약정만료",
@@ -18676,7 +18676,7 @@ const TARGETS = [
     },
     {
         "name": "대한노인회 포천시지회",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 마전리 549-3",
         "status": "약정만료",
@@ -18691,7 +18691,7 @@ const TARGETS = [
     },
     {
         "name": "대한노인회 포천시지회",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 이동면 연곡리 872-12",
         "status": "약정만료",
@@ -18706,7 +18706,7 @@ const TARGETS = [
     },
     {
         "name": "대한노인회 포천시지회",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 금현리 277-3 금현5리 경로당",
         "status": "약정만료",
@@ -18721,7 +18721,7 @@ const TARGETS = [
     },
     {
         "name": "대한노인회 포천시지회",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 화현면 지현리 676-1 지현1리 경로당",
         "status": "약정만료",
@@ -18736,7 +18736,7 @@ const TARGETS = [
     },
     {
         "name": "대한노인회 포천시지회",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 화현면 지현리 692-1 지현4리 경로당",
         "status": "약정만료",
@@ -18751,7 +18751,7 @@ const TARGETS = [
     },
     {
         "name": "대한노인회 포천시지회",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 신읍동 190-7 신읍7 경로당",
         "status": "약정만료",
@@ -18766,7 +18766,7 @@ const TARGETS = [
     },
     {
         "name": "대한노인회 포천시지회",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 일동면 사직리 519-4 사직3리 경로당",
         "status": "약정만료",
@@ -18781,7 +18781,7 @@ const TARGETS = [
     },
     {
         "name": "대한노인회 포천시지회",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 화현면 지현리 209 지현3리 경로당",
         "status": "약정만료",
@@ -18796,7 +18796,7 @@ const TARGETS = [
     },
     {
         "name": "대한노인회 포천시지회",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 영중면 성동리 241-3 성동 3리 경로당",
         "status": "약정만료",
@@ -18811,7 +18811,7 @@ const TARGETS = [
     },
     {
         "name": "대한노인회 포천시지회",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 우금리 544",
         "status": "약정만료",
@@ -18826,7 +18826,7 @@ const TARGETS = [
     },
     {
         "name": "대한노인회 포천시지회",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 관인면 냉정리 524-3 냉정2리 경로당",
         "status": "약정만료",
@@ -18841,7 +18841,7 @@ const TARGETS = [
     },
     {
         "name": "대한노인회 포천시지회",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 관인면 탄동리 647-6 탄동 1리 경로당",
         "status": "약정만료",
@@ -18856,7 +18856,7 @@ const TARGETS = [
     },
     {
         "name": "대한노인회 포천시지회",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 창수면 주원리 690-1",
         "status": "약정만료",
@@ -18871,7 +18871,7 @@ const TARGETS = [
     },
     {
         "name": "대한녹용수출입법인",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 제기동 892-23(약령서길60)",
         "status": "약정만료",
@@ -18886,7 +18886,7 @@ const TARGETS = [
     },
     {
         "name": "대한녹용수출입법인",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 군내면 용정리486-6",
         "status": "약정만료",
@@ -18901,7 +18901,7 @@ const TARGETS = [
     },
     {
         "name": "대한녹용수출입법인",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 군내면 용정리  477번지 나동 108호",
         "status": "약정만료",
@@ -18916,7 +18916,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 스낵월드",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 민락동 809 폴리프라자3  110호",
         "status": "만기도래_신규(1st)",
@@ -18931,7 +18931,7 @@ const TARGETS = [
     },
     {
         "name": "대한문1공장",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 금현리 525-8",
         "status": "약정만료",
@@ -18946,7 +18946,7 @@ const TARGETS = [
     },
     {
         "name": "대한문1공장",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 금현리 525-8",
         "status": "약정만료",
@@ -18961,7 +18961,7 @@ const TARGETS = [
     },
     {
         "name": "대한불교조계종-낙산사",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 전진리 산8-5 대한불교조계종 낙산사",
         "status": "만기도래_신규(1st)",
@@ -18976,7 +18976,7 @@ const TARGETS = [
     },
     {
         "name": "대한불교조계종-낙산사",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 전진리 57-1 해우당 대한불교조계종-낙산사 (종무소)",
         "status": "만기도래_신규(1st)",
@@ -18991,7 +18991,7 @@ const TARGETS = [
     },
     {
         "name": "대한불교조계종-낙산사",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 전진리 57-1 해우당 .",
         "status": "만기도래_신규(1st)",
@@ -19006,7 +19006,7 @@ const TARGETS = [
     },
     {
         "name": "대한불교조계종-낙산사",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 전진리 57-1 해수관음전 낙산사",
         "status": "약정만료",
@@ -19021,7 +19021,7 @@ const TARGETS = [
     },
     {
         "name": "대한불교조계종-낙산사",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 전진리55",
         "status": "약정만료",
@@ -19036,7 +19036,7 @@ const TARGETS = [
     },
     {
         "name": "대한불교조계종-낙산사",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 전진리 57-1 해수관음전 대한불교조계종 낙산사 (안내소)",
         "status": "약정만료",
@@ -19051,7 +19051,7 @@ const TARGETS = [
     },
     {
         "name": "대한불교조계종-낙산사",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 전진리 57-1 해우당 .",
         "status": "만기도래_신규(1st)",
@@ -19066,7 +19066,7 @@ const TARGETS = [
     },
     {
         "name": "대한불교조계종-낙산사",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 전진리 55번지 낙산사",
         "status": "약정만료",
@@ -19081,7 +19081,7 @@ const TARGETS = [
     },
     {
         "name": "대한불교조계종-낙산사",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 전진리 57-1 해수관음전 낙산사",
         "status": "약정만료",
@@ -19096,7 +19096,7 @@ const TARGETS = [
     },
     {
         "name": "대한불교조계종-낙산사",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 전진리 57-1 해수관음전 낙산사-홍예문뒤",
         "status": "약정만료",
@@ -19111,7 +19111,7 @@ const TARGETS = [
     },
     {
         "name": "대한불교천토불국종운선암",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 정릉동 산 87-1 (정릉로8나길 30)",
         "status": "약정만료",
@@ -19126,7 +19126,7 @@ const TARGETS = [
     },
     {
         "name": "대한예수교자양교회",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 794-2번지 자양교회 1",
         "status": "약정만료",
@@ -19141,7 +19141,7 @@ const TARGETS = [
     },
     {
         "name": "대한예수교장로회 성석교회",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 성동구 마장동 565 성석교회 지하1층12층",
         "status": "만기도래_신규(1st)",
@@ -19156,7 +19156,7 @@ const TARGETS = [
     },
     {
         "name": "대한예수교장로회 화도교회",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 창현리 창현리 472-1번지 화도교회 화도교회",
         "status": "약정만료",
@@ -19171,7 +19171,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 의정부교구",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 마산리 712-2번지",
         "status": "만기도래_신규(1st)",
@@ -19186,7 +19186,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 의정부교구",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 마산리 712-2",
         "status": "만기도래_신규(1st)",
@@ -19201,7 +19201,7 @@ const TARGETS = [
     },
     {
         "name": "대한예수교장로회방주교회",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 법원읍 삼방리 148 번지",
         "status": "약정만료",
@@ -19216,7 +19216,7 @@ const TARGETS = [
     },
     {
         "name": "대한예수교장로회방주교회",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 법원읍 삼방리 148 방주수양관",
         "status": "약정만료",
@@ -19231,7 +19231,7 @@ const TARGETS = [
     },
     {
         "name": "대한예수교장로회영광교회",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 하월곡동 222-7",
         "status": "약정만료",
@@ -19246,7 +19246,7 @@ const TARGETS = [
     },
     {
         "name": "대한예수교장로회온누리교회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 동면 만천리 530-2",
         "status": "약정만료",
@@ -19261,7 +19261,7 @@ const TARGETS = [
     },
     {
         "name": "대한예수교장로회온누리교회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 동면 만천리 530-2 (교육관)",
         "status": "약정만료",
@@ -19276,7 +19276,7 @@ const TARGETS = [
     },
     {
         "name": "대한예수교장로회온누리교회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 동면 만천리 530-2 (교육관)",
         "status": "약정만료",
@@ -19291,7 +19291,7 @@ const TARGETS = [
     },
     {
         "name": "대한푸드(GiGAeyes i-guard)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 능동 서울 광진구 천호대로 606 두성빌딩 4층",
         "status": "만기도래_신규(1st)",
@@ -19306,7 +19306,7 @@ const TARGETS = [
     },
     {
         "name": "대한환경산업",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 호저면 주산리 100",
         "status": "약정만료",
@@ -19321,7 +19321,7 @@ const TARGETS = [
     },
     {
         "name": "대한환경산업",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 호저면 무장리 607-1 .",
         "status": "약정만료",
@@ -19336,7 +19336,7 @@ const TARGETS = [
     },
     {
         "name": "대한환경산업",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 호저면 주산리 100",
         "status": "약정만료",
@@ -19351,7 +19351,7 @@ const TARGETS = [
     },
     {
         "name": "대현에벤에셀",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 송우리 298-4",
         "status": "만기도래_신규(1st)",
@@ -19366,7 +19366,7 @@ const TARGETS = [
     },
     {
         "name": "대현에벤에셀",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 송우리 298-4",
         "status": "약정만료",
@@ -19381,7 +19381,7 @@ const TARGETS = [
     },
     {
         "name": "대현에벤에셀",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 송우리  298-4",
         "status": "약정만료",
@@ -19396,7 +19396,7 @@ const TARGETS = [
     },
     {
         "name": "대화라벨엔텍스",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수2가1동 329-3 12층",
         "status": "약정만료",
@@ -19411,7 +19411,7 @@ const TARGETS = [
     },
     {
         "name": "대화라벨엔텍스",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 329-3번지3층옥상",
         "status": "약정만료",
@@ -19426,7 +19426,7 @@ const TARGETS = [
     },
     {
         "name": "대화라벨엔텍스",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 다산동 3304-2A동",
         "status": "약정만료",
@@ -19441,7 +19441,7 @@ const TARGETS = [
     },
     {
         "name": "대화라벨엔텍스",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 329-3 1층",
         "status": "약정만료",
@@ -19456,7 +19456,7 @@ const TARGETS = [
     },
     {
         "name": "대화라벨엔텍스",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 329-3번지",
         "status": "약정만료",
@@ -19471,7 +19471,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 의정부교구",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면마산리 712-2",
         "status": "만기도래_신규(1st)",
@@ -19486,7 +19486,7 @@ const TARGETS = [
     },
     {
         "name": "대흥건설(주)",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 녹촌리 414-3번지 야적장",
         "status": "약정만료",
@@ -19501,7 +19501,7 @@ const TARGETS = [
     },
     {
         "name": "대흥지엠㈜",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 녹양동 412-5",
         "status": "만기도래_신규(1st)",
@@ -19516,7 +19516,7 @@ const TARGETS = [
     },
     {
         "name": "대흥지엠㈜",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 녹양동 412-6",
         "status": "만기도래_신규(1st)",
@@ -19531,7 +19531,7 @@ const TARGETS = [
     },
     {
         "name": "댄디",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 백석동 1141-2번지 유니테크빌벤처타운 1층 1층 (백석동유니테크빌벤처타운)103호",
         "status": "약정만료",
@@ -19546,7 +19546,7 @@ const TARGETS = [
     },
     {
         "name": "더골드",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 연지동 59번지 6층",
         "status": "약정만료",
@@ -19561,7 +19561,7 @@ const TARGETS = [
     },
     {
         "name": "더골드",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 연지동 59번지 6층",
         "status": "약정만료",
@@ -19576,7 +19576,7 @@ const TARGETS = [
     },
     {
         "name": "더맑은신경과의원",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 효가동 162-34 3층 더맑은 신경과의원",
         "status": "약정만료",
@@ -19591,7 +19591,7 @@ const TARGETS = [
     },
     {
         "name": "더블에이치원 주식회사",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 설악면 사룡리 587-5 (설악사룡 더블에이치원)",
         "status": "약정만료",
@@ -19606,7 +19606,7 @@ const TARGETS = [
     },
     {
         "name": "더비앤피-적선점",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 마두동 723 1층",
         "status": "약정만료",
@@ -19621,7 +19621,7 @@ const TARGETS = [
     },
     {
         "name": "더샵-속초(GiGAeyes guard)",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 영랑동 강원 속초시 장사항해안길 21",
         "status": "만기도래_신규(1st)",
@@ -19636,7 +19636,7 @@ const TARGETS = [
     },
     {
         "name": "더옥션",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 금촌동 801-3",
         "status": "약정만료",
@@ -19651,7 +19651,7 @@ const TARGETS = [
     },
     {
         "name": "더원",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 연지동 59 준성빌딩3층",
         "status": "약정만료",
@@ -19666,7 +19666,7 @@ const TARGETS = [
     },
     {
         "name": "더원프린팅1층",
-        "manager": "박민준",
+        "manager": "G000306",
         "branch": "고양지사",
         "address": "경기 파주시 문발동 470번지 1층",
         "status": "약정만료",
@@ -19681,7 +19681,7 @@ const TARGETS = [
     },
     {
         "name": "더팜코리아(OCT)",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 삼천동 101-8번지(야적장)",
         "status": "약정만료",
@@ -19696,7 +19696,7 @@ const TARGETS = [
     },
     {
         "name": "더필립",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동  217-106",
         "status": "만기도래_신규(1st)",
@@ -19711,7 +19711,7 @@ const TARGETS = [
     },
     {
         "name": "더하우스1932",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 중구 만리동1가  62-16 (만리동1가)",
         "status": "약정만료",
@@ -19726,7 +19726,7 @@ const TARGETS = [
     },
     {
         "name": "더하우스1932",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 중구 만리동1가 62-16",
         "status": "약정만료",
@@ -19741,7 +19741,7 @@ const TARGETS = [
     },
     {
         "name": "더하우스1932",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 중구 만리동1가 62-16 1층",
         "status": "약정만료",
@@ -19756,7 +19756,7 @@ const TARGETS = [
     },
     {
         "name": "더하우스1932",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 중구 만리동1가  62-16 (만리동1가)",
         "status": "약정만료",
@@ -19771,7 +19771,7 @@ const TARGETS = [
     },
     {
         "name": "더화이트뷰",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 봉평면 무이리 704-1",
         "status": "약정만료",
@@ -19786,7 +19786,7 @@ const TARGETS = [
     },
     {
         "name": "덕계동주택",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 덕계동 648-7",
         "status": "약정만료",
@@ -19801,7 +19801,7 @@ const TARGETS = [
     },
     {
         "name": "덕계동주택",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 덕계동 648-7(어울림)",
         "status": "약정만료",
@@ -19816,7 +19816,7 @@ const TARGETS = [
     },
     {
         "name": "덕계동주택",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 덕계동 648-7",
         "status": "약정만료",
@@ -19831,7 +19831,7 @@ const TARGETS = [
     },
     {
         "name": "덕성농장주식회사(GiGAeyes i-guard)",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 발랑리 발랑리 258-8번지 덕성농장",
         "status": "만기도래_신규(1st)",
@@ -19846,7 +19846,7 @@ const TARGETS = [
     },
     {
         "name": "덕우케미칼2공장사무동(OCT)",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 이가팔리 27-12",
         "status": "만기도래_신규(1st)",
@@ -19861,7 +19861,7 @@ const TARGETS = [
     },
     {
         "name": "덕우케미칼2공장사무동(OCT)",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 이가팔리 27-3",
         "status": "약정만료",
@@ -19876,7 +19876,7 @@ const TARGETS = [
     },
     {
         "name": "덕유",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 상수리 상수리 632-4번지",
         "status": "약정만료",
@@ -19891,7 +19891,7 @@ const TARGETS = [
     },
     {
         "name": "태열당한의원",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 서종면 문호리 699-2번지 12층",
         "status": "만기도래_신규(1st)",
@@ -19906,7 +19906,7 @@ const TARGETS = [
     },
     {
         "name": "도다텔",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 행신동 761-1번지",
         "status": "약정만료",
@@ -19921,7 +19921,7 @@ const TARGETS = [
     },
     {
         "name": "도다텔",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 주엽동 109번지 화성프라자 1층 kt공식대리점",
         "status": "약정만료",
@@ -19936,7 +19936,7 @@ const TARGETS = [
     },
     {
         "name": "도다텔",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 대화동 2205-1 월드프라자1층",
         "status": "약정만료",
@@ -19951,7 +19951,7 @@ const TARGETS = [
     },
     {
         "name": "도다텔",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 금촌1동 경기 파주시 문화로 113 1층 KT",
         "status": "만기도래_신규(1st)",
@@ -19966,7 +19966,7 @@ const TARGETS = [
     },
     {
         "name": "도다텔",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 행신동 950번지 희성프라자 1층",
         "status": "만기도래_신규(1st)",
@@ -19981,7 +19981,7 @@ const TARGETS = [
     },
     {
         "name": "도다텔",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 주엽동 66-1 일송노블레스 주엽동 661 노블레스 109호",
         "status": "약정만료",
@@ -19996,7 +19996,7 @@ const TARGETS = [
     },
     {
         "name": "도다텔",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 역촌동 16-7 1층",
         "status": "약정만료",
@@ -20011,7 +20011,7 @@ const TARGETS = [
     },
     {
         "name": "도다텔",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 은평구 신사동 335-2 1층 1호",
         "status": "약정만료",
@@ -20026,7 +20026,7 @@ const TARGETS = [
     },
     {
         "name": "도다텔",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 진관동 65 은평엘크루 101동 116호",
         "status": "약정만료",
@@ -20041,7 +20041,7 @@ const TARGETS = [
     },
     {
         "name": "도담농장(연천oct-뷰)",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 백학면 노곡리 165",
         "status": "약정만료",
@@ -20056,7 +20056,7 @@ const TARGETS = [
     },
     {
         "name": "도담농장(연천oct-뷰)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 동송읍 상노리",
         "status": "약정만료",
@@ -20071,7 +20071,7 @@ const TARGETS = [
     },
     {
         "name": "도담요양원",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 부평리 338-8",
         "status": "만기도래_신규(1st)",
@@ -20086,7 +20086,7 @@ const TARGETS = [
     },
     {
         "name": "도담피그몰",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 인제군 북면월학리 1454",
         "status": "만기도래_신규(1st)",
@@ -20101,7 +20101,7 @@ const TARGETS = [
     },
     {
         "name": "도래울센트럴더힐아파트입주자대표회의",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 도내동 도래울로86 주민커뮤니티센터-헬스장",
         "status": "약정만료",
@@ -20116,7 +20116,7 @@ const TARGETS = [
     },
     {
         "name": "도로교통공단 한국교통방송강원본부",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 반곡동 동부순환로 183 (반곡동)도로교통안전관리공단TBN강원교통방송",
         "status": "약정만료",
@@ -20131,7 +20131,7 @@ const TARGETS = [
     },
     {
         "name": "도반한방병원",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 내자동 219 포레스트빌딩 2층~15층",
         "status": "약정만료",
@@ -20146,7 +20146,7 @@ const TARGETS = [
     },
     {
         "name": "도반한방병원",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 내자동 219번지 도반빌딩",
         "status": "만기도래_신규(1st)",
@@ -20161,7 +20161,7 @@ const TARGETS = [
     },
     {
         "name": "도봉구육아종합지원센터",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 창동 502-33",
         "status": "약정만료",
@@ -20176,7 +20176,7 @@ const TARGETS = [
     },
     {
         "name": "도봉지역자활센터",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 도봉동  639 도봉역하부상가 13호14호 (도봉동 도봉역)",
         "status": "약정만료",
@@ -20191,7 +20191,7 @@ const TARGETS = [
     },
     {
         "name": "도봉지역자활센터",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 도봉동  639 도봉역 하부 상가 7번 8번 상가 (도봉동 도봉역)",
         "status": "약정만료",
@@ -20206,7 +20206,7 @@ const TARGETS = [
     },
     {
         "name": "도봉지역자활센터",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 쌍문동 315-422 1층",
         "status": "약정만료",
@@ -20221,7 +20221,7 @@ const TARGETS = [
     },
     {
         "name": "도봉지역자활센터",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 도봉동 639번지 도봉역하부 1층 상가 10번매장",
         "status": "만기도래_신규(1st)",
@@ -20236,7 +20236,7 @@ const TARGETS = [
     },
     {
         "name": "도봉지역자활센터",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 방학동 386-12번지",
         "status": "약정만료",
@@ -20251,7 +20251,7 @@ const TARGETS = [
     },
     {
         "name": "도봉지역자활센터",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 도봉동 623-103번지 1층 함께밥상",
         "status": "약정만료",
@@ -20266,7 +20266,7 @@ const TARGETS = [
     },
     {
         "name": "도시바글러벌컬머스솔루션",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 을지로2가 198 을지한국빌딩 14층",
         "status": "약정만료",
@@ -20281,7 +20281,7 @@ const TARGETS = [
     },
     {
         "name": "도우패브릭",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 광적면 덕도리 754-4",
         "status": "약정만료",
@@ -20296,7 +20296,7 @@ const TARGETS = [
     },
     {
         "name": "동광초등학교",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 고성군 토성면 교암리86번지",
         "status": "약정만료",
@@ -20311,7 +20311,7 @@ const TARGETS = [
     },
     {
         "name": "동광초등학교",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 고성군 토성면 교암리 86 동광초등학교 .",
         "status": "만기도래_신규(1st)",
@@ -20326,7 +20326,7 @@ const TARGETS = [
     },
     {
         "name": "동구동행정복지센터",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 430 구리유통종합상가 별관1층(인창동)",
         "status": "약정만료",
@@ -20341,7 +20341,7 @@ const TARGETS = [
     },
     {
         "name": "동남전기통신(OCT)",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 구호동 243-47",
         "status": "약정만료",
@@ -20356,7 +20356,7 @@ const TARGETS = [
     },
     {
         "name": "동남전기통신(OCT)",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 정선군 정선읍 북실리 738",
         "status": "약정만료",
@@ -20371,7 +20371,7 @@ const TARGETS = [
     },
     {
         "name": "동내초등학교",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 동내면 신촌리 3리 491",
         "status": "약정만료",
@@ -20386,7 +20386,7 @@ const TARGETS = [
     },
     {
         "name": "동덕여자대학교",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 종로구 평창동 471-1 전시동 B1층~1층",
         "status": "약정만료",
@@ -20401,7 +20401,7 @@ const TARGETS = [
     },
     {
         "name": "동덕여자대학교",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 종로구 평창동 471-11 (숙소동)",
         "status": "약정만료",
@@ -20416,7 +20416,7 @@ const TARGETS = [
     },
     {
         "name": "동두천고용복지센터",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 생연동 369-8번지 3층",
         "status": "약정만료",
@@ -20431,7 +20431,7 @@ const TARGETS = [
     },
     {
         "name": "동두천고용복지센터",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 생연동 369-8번지 3층",
         "status": "약정만료",
@@ -20446,7 +20446,7 @@ const TARGETS = [
     },
     {
         "name": "동두천고용복지센터",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 생연동 생연동 369-8",
         "status": "약정만료",
@@ -20461,7 +20461,7 @@ const TARGETS = [
     },
     {
         "name": "동두천농협 지행역지점",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 지행동 721-1 씨티타원010호(지행로 64)",
         "status": "약정만료",
@@ -20476,7 +20476,7 @@ const TARGETS = [
     },
     {
         "name": "동두천농협 지행역지점",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 지행동 721-1 씨티타워101호(지행로 64)",
         "status": "약정만료",
@@ -20491,7 +20491,7 @@ const TARGETS = [
     },
     {
         "name": "동두천농협 지행역지점",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 지행동 721-1 씨티타원010호(지행로 64)",
         "status": "약정만료",
@@ -20506,7 +20506,7 @@ const TARGETS = [
     },
     {
         "name": "동두천부영9단지 입주자대표회의",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 지행동 동두천로 137(지행동)",
         "status": "만기도래_재계약",
@@ -20521,7 +20521,7 @@ const TARGETS = [
     },
     {
         "name": "동두천부영9단지 입주자대표회의",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 지행동 동두천로 137(지행동)",
         "status": "만기도래_재계약",
@@ -20536,7 +20536,7 @@ const TARGETS = [
     },
     {
         "name": "동두천시청보훈회관",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 보산동 429-19 야외무대 전광판",
         "status": "약정만료",
@@ -20551,7 +20551,7 @@ const TARGETS = [
     },
     {
         "name": "동묘더튼튼의원",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 종로구 창신동 292번지 원풍빌딩 2층 201호 3층302호",
         "status": "약정만료",
@@ -20566,7 +20566,7 @@ const TARGETS = [
     },
     {
         "name": "동산제3농장(N-뷰)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 갈말읍 문혜리 780 동산농장",
         "status": "약정만료",
@@ -20581,7 +20581,7 @@ const TARGETS = [
     },
     {
         "name": "동성빌딩",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 구의동 73-1",
         "status": "약정만료",
@@ -20596,7 +20596,7 @@ const TARGETS = [
     },
     {
         "name": "동소문새마을금고",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 동소문동4가 279번지 송산아파트 101동 경비실옆",
         "status": "약정만료",
@@ -20611,7 +20611,7 @@ const TARGETS = [
     },
     {
         "name": "동소문새마을금고",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 동소문동2가 245",
         "status": "약정만료",
@@ -20626,7 +20626,7 @@ const TARGETS = [
     },
     {
         "name": "동소문새마을금고",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 동소문동2가 245",
         "status": "약정만료",
@@ -20641,7 +20641,7 @@ const TARGETS = [
     },
     {
         "name": "동양특장(차동민)",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 내촌면 소학리 211-16",
         "status": "약정만료",
@@ -20656,7 +20656,7 @@ const TARGETS = [
     },
     {
         "name": "동양특장(차동민)",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 내촌면 소학리 211-22",
         "status": "약정만료",
@@ -20671,7 +20671,7 @@ const TARGETS = [
     },
     {
         "name": "동원요양병원",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 정발산동 1204-1",
         "status": "약정만료",
@@ -20686,7 +20686,7 @@ const TARGETS = [
     },
     {
         "name": "동원요양병원",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 정발산동 1204-1",
         "status": "약정만료",
@@ -20701,7 +20701,7 @@ const TARGETS = [
     },
     {
         "name": "동일로교회",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 940",
         "status": "약정만료",
@@ -20716,7 +20716,7 @@ const TARGETS = [
     },
     {
         "name": "동일석유",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "경기 안양시 동안구 비산동 540-9 동일석유 제일주유소",
         "status": "약정만료",
@@ -20731,7 +20731,7 @@ const TARGETS = [
     },
     {
         "name": "동일석유",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "경기 평택시 장당동 52-7",
         "status": "약정만료",
@@ -20746,7 +20746,7 @@ const TARGETS = [
     },
     {
         "name": "동일석유",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "경기 평택시 장당동 52-7",
         "status": "약정만료",
@@ -20761,7 +20761,7 @@ const TARGETS = [
     },
     {
         "name": "동일석유",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "경기 이천시 관고동 125-1",
         "status": "약정만료",
@@ -20776,7 +20776,7 @@ const TARGETS = [
     },
     {
         "name": "동일석유",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 송파구 가락동 79-3 501호",
         "status": "약정만료",
@@ -20791,7 +20791,7 @@ const TARGETS = [
     },
     {
         "name": "동일석유",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "경기 김포시 통진읍 도사리 890-4 주유소",
         "status": "약정만료",
@@ -20806,7 +20806,7 @@ const TARGETS = [
     },
     {
         "name": "동일석유",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "경기 구리시 수택동 370-3번지 (5층)",
         "status": "약정만료",
@@ -20821,7 +20821,7 @@ const TARGETS = [
     },
     {
         "name": "동일석유",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "경기 수원시 장안구 조원1동 경기 수원시 장안구 경수대로 852  SK금호주유소",
         "status": "약정만료",
@@ -20836,7 +20836,7 @@ const TARGETS = [
     },
     {
         "name": "동일석유",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "경기 양주시 회정동 17-8 주유소",
         "status": "약정만료",
@@ -20851,7 +20851,7 @@ const TARGETS = [
     },
     {
         "name": "동일석유",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "경기 구리시 수택1동 경기 구리시 경춘로 196 양주주유소",
         "status": "약정만료",
@@ -20866,7 +20866,7 @@ const TARGETS = [
     },
     {
         "name": "동일석유",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "경기 남양주시 오남읍 경기 남양주시 양지로 121 SK에너지",
         "status": "약정만료",
@@ -20881,7 +20881,7 @@ const TARGETS = [
     },
     {
         "name": "동일석유",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "경기 군포시 당정동 13 sk주유소",
         "status": "약정만료",
@@ -20896,7 +20896,7 @@ const TARGETS = [
     },
     {
         "name": "동일석유",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "경기 남양주시 화도읍 묵현리 358-5",
         "status": "약정만료",
@@ -20911,7 +20911,7 @@ const TARGETS = [
     },
     {
         "name": "동일석유",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "경기 남양주시 화도읍 묵현리358-5",
         "status": "약정만료",
@@ -20926,7 +20926,7 @@ const TARGETS = [
     },
     {
         "name": "동일이앤티",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 이동교리 이동교리 96-2번지",
         "status": "만기도래_신규(1st)",
@@ -20941,7 +20941,7 @@ const TARGETS = [
     },
     {
         "name": "동진금속",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 부평리 26-1번지",
         "status": "약정만료",
@@ -20956,7 +20956,7 @@ const TARGETS = [
     },
     {
         "name": "동진임포츠(GiGAeyes i-guard)",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 용현동 529-3 창고",
         "status": "약정만료",
@@ -20971,7 +20971,7 @@ const TARGETS = [
     },
     {
         "name": "동진임포츠(GiGAeyes i-guard)",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 방학동 560-5",
         "status": "약정만료",
@@ -20986,7 +20986,7 @@ const TARGETS = [
     },
     {
         "name": "동진임포츠(GiGAeyes i-guard)",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 방학동 558-1",
         "status": "약정만료",
@@ -21001,7 +21001,7 @@ const TARGETS = [
     },
     {
         "name": "동천재활채육센타",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 하계1동 288-1번지 동천재활체육센터",
         "status": "약정만료",
@@ -21016,7 +21016,7 @@ const TARGETS = [
     },
     {
         "name": "동천재활채육센타",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 하계동 288-1 동천 체육문화센타",
         "status": "약정만료",
@@ -21031,7 +21031,7 @@ const TARGETS = [
     },
     {
         "name": "동천재활채육센타",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 하계동 288-1번지 동천재활체육센타",
         "status": "약정만료",
@@ -21046,7 +21046,7 @@ const TARGETS = [
     },
     {
         "name": "동천재활채육센타",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 하계동 288-1 지하1층 다목적체육실",
         "status": "약정만료",
@@ -21061,7 +21061,7 @@ const TARGETS = [
     },
     {
         "name": "동해경찰서",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 삼화동 효자로 251",
         "status": "만기도래_재계약",
@@ -21076,7 +21076,7 @@ const TARGETS = [
     },
     {
         "name": "동해경찰서",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 송정동 852-36",
         "status": "만기도래_재계약",
@@ -21091,7 +21091,7 @@ const TARGETS = [
     },
     {
         "name": "동해경찰서",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 부곡동 68-4",
         "status": "약정만료",
@@ -21106,7 +21106,7 @@ const TARGETS = [
     },
     {
         "name": "동해경찰서",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 망상동 산1번지",
         "status": "약정만료",
@@ -21121,7 +21121,7 @@ const TARGETS = [
     },
     {
         "name": "동해시청",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 송정동 849-62 열린문화공간그루터기 .",
         "status": "만기도래_신규(1st)",
@@ -21136,7 +21136,7 @@ const TARGETS = [
     },
     {
         "name": "동해시청",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 지흥동 산119 도서관건물",
         "status": "약정만료",
@@ -21151,7 +21151,7 @@ const TARGETS = [
     },
     {
         "name": "동해이레복지센터",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 발한동 발한천길 43",
         "status": "만기도래_재계약",
@@ -21166,7 +21166,7 @@ const TARGETS = [
     },
     {
         "name": "동해이레복지센터",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 만우동 300 노인전문요양원이레마을 증층",
         "status": "약정만료",
@@ -21181,7 +21181,7 @@ const TARGETS = [
     },
     {
         "name": "동해튼튼마취통증의학과의원",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 천곡동 863 202호 203호",
         "status": "만기도래_신규(1st)",
@@ -21196,7 +21196,7 @@ const TARGETS = [
     },
     {
         "name": "동호초등학교",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 발한동 565-2",
         "status": "약정만료",
@@ -21211,7 +21211,7 @@ const TARGETS = [
     },
     {
         "name": "동호초등학교",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 발한동 572-2 동호초등학교 행정실근태",
         "status": "약정만료",
@@ -21226,7 +21226,7 @@ const TARGETS = [
     },
     {
         "name": "동호초등학교",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 발한동 565-2",
         "status": "약정만료",
@@ -21241,7 +21241,7 @@ const TARGETS = [
     },
     {
         "name": "동황토산주식회사",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 덕은동 59-1번지",
         "status": "약정만료",
@@ -21256,7 +21256,7 @@ const TARGETS = [
     },
     {
         "name": "동황토산주식회사",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 덕은동 59-1",
         "status": "약정만료",
@@ -21271,7 +21271,7 @@ const TARGETS = [
     },
     {
         "name": "동황토산주식회사",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 덕은동 59-1번지",
         "status": "약정만료",
@@ -21286,7 +21286,7 @@ const TARGETS = [
     },
     {
         "name": "두둥굴1층",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 서종면 도장리 124-29번지 단독주택",
         "status": "만기도래_신규(1st)",
@@ -21301,7 +21301,7 @@ const TARGETS = [
     },
     {
         "name": "두호텔&게스트하우스",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 교동 1020-5",
         "status": "약정만료",
@@ -21316,7 +21316,7 @@ const TARGETS = [
     },
     {
         "name": "드림넷(무인PC방)",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 내곡동 284-1 지하",
         "status": "약정만료",
@@ -21331,7 +21331,7 @@ const TARGETS = [
     },
     {
         "name": "드림무인텔-뷰N",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 이곡리36-2",
         "status": "약정만료",
@@ -21346,7 +21346,7 @@ const TARGETS = [
     },
     {
         "name": "든든한병원",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 1551번지 든든한병원",
         "status": "약정만료",
@@ -21361,7 +21361,7 @@ const TARGETS = [
     },
     {
         "name": "든든한병원",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 1551번지",
         "status": "약정만료",
@@ -21376,7 +21376,7 @@ const TARGETS = [
     },
     {
         "name": "든든한병원",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 1551번지",
         "status": "약정만료",
@@ -21391,7 +21391,7 @@ const TARGETS = [
     },
     {
         "name": "든든한병원",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 1551번지",
         "status": "약정만료",
@@ -21406,7 +21406,7 @@ const TARGETS = [
     },
     {
         "name": "든든한병원",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 1551번지",
         "status": "약정만료",
@@ -21421,7 +21421,7 @@ const TARGETS = [
     },
     {
         "name": "든든한병원",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 1551번지",
         "status": "약정만료",
@@ -21436,7 +21436,7 @@ const TARGETS = [
     },
     {
         "name": "든든한병원",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 1551번지",
         "status": "약정만료",
@@ -21451,7 +21451,7 @@ const TARGETS = [
     },
     {
         "name": "든든한병원",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 1551번지",
         "status": "약정만료",
@@ -21466,7 +21466,7 @@ const TARGETS = [
     },
     {
         "name": "디더블유피(DWP)",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 213 DWP 1층",
         "status": "약정만료",
@@ -21481,7 +21481,7 @@ const TARGETS = [
     },
     {
         "name": "디더블유피(DWP)",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 213-0 동원프라자 8층9층",
         "status": "약정만료",
@@ -21496,7 +21496,7 @@ const TARGETS = [
     },
     {
         "name": "디더블유피(DWP)",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 213-0 동원프라자 8층",
         "status": "약정만료",
@@ -21511,7 +21511,7 @@ const TARGETS = [
     },
     {
         "name": "디더블유피(DWP)",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 213-0 동원프라자 9층",
         "status": "약정만료",
@@ -21526,7 +21526,7 @@ const TARGETS = [
     },
     {
         "name": "디더블유피(DWP)",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 213 동원프라자",
         "status": "약정만료",
@@ -21541,7 +21541,7 @@ const TARGETS = [
     },
     {
         "name": "디디팜",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 도신리 도신리 954번지",
         "status": "약정만료",
@@ -21556,7 +21556,7 @@ const TARGETS = [
     },
     {
         "name": "디앤에프",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 초가팔리 135",
         "status": "만기도래_재계약",
@@ -21571,7 +21571,7 @@ const TARGETS = [
     },
     {
         "name": "디앤에프",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 초가팔리 135번지",
         "status": "만기도래_재계약",
@@ -21586,7 +21586,7 @@ const TARGETS = [
     },
     {
         "name": "디엘이앤씨",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 266-8번지 15층",
         "status": "약정만료",
@@ -21601,7 +21601,7 @@ const TARGETS = [
     },
     {
         "name": "디자인허브",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 백석동  1129-3 (백석동)",
         "status": "약정만료",
@@ -21616,7 +21616,7 @@ const TARGETS = [
     },
     {
         "name": "디자인휀스(GiGAeyes i-guard)",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 파주읍봉암리 봉서산로225번길 21",
         "status": "만기도래_신규(1st)",
@@ -21631,7 +21631,7 @@ const TARGETS = [
     },
     {
         "name": "디지털프라임치과의원(GiGAeyes guard)",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 호평동 638-1 늘봄타워403호",
         "status": "약정만료",
@@ -21646,7 +21646,7 @@ const TARGETS = [
     },
     {
         "name": "디클라우드",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 탑동 829번지",
         "status": "만기도래_재계약",
@@ -21661,7 +21661,7 @@ const TARGETS = [
     },
     {
         "name": "딸기커뮤니케이션",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 560",
         "status": "약정만료",
@@ -21676,7 +21676,7 @@ const TARGETS = [
     },
     {
         "name": "딸기커뮤니케이션",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 560",
         "status": "약정만료",
@@ -21691,7 +21691,7 @@ const TARGETS = [
     },
     {
         "name": "딸기커뮤니케이션",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 560 1층",
         "status": "약정만료",
@@ -21706,7 +21706,7 @@ const TARGETS = [
     },
     {
         "name": "라디오엠",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 소격동 127번지 1층지하1",
         "status": "약정만료",
@@ -21721,7 +21721,7 @@ const TARGETS = [
     },
     {
         "name": "라라쥬얼리",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 권농동 184-1 율곡로10길(권농동3층)",
         "status": "약정만료",
@@ -21736,7 +21736,7 @@ const TARGETS = [
     },
     {
         "name": "라라코스트",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 지정면 가곡리 1345-6  2층",
         "status": "약정만료",
@@ -21751,7 +21751,7 @@ const TARGETS = [
     },
     {
         "name": "라라코스트",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 반곡동 1822-19 2층",
         "status": "약정만료",
@@ -21766,7 +21766,7 @@ const TARGETS = [
     },
     {
         "name": "라라코스트",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 광사동 653-1(필립프라자3층)",
         "status": "약정만료",
@@ -21781,7 +21781,7 @@ const TARGETS = [
     },
     {
         "name": "라라코스트",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 무실동 1850-7 센트럴프라자 2층",
         "status": "약정만료",
@@ -21796,7 +21796,7 @@ const TARGETS = [
     },
     {
         "name": "라센트라(연남)",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 연남동 서울 마포구 연남로 76 라센트라 연남관리실",
         "status": "만기도래_신규(1st)",
@@ -21811,7 +21811,7 @@ const TARGETS = [
     },
     {
         "name": "라싸디벨로프먼트(기숙사)(GiGAeyes i-guard)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 이동면 연곡리산142-1",
         "status": "약정만료",
@@ -21826,7 +21826,7 @@ const TARGETS = [
     },
     {
         "name": "라싸디벨로프먼트(기숙사)(GiGAeyes i-guard)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 이동면 연곡리 산142-1",
         "status": "약정만료",
@@ -21841,7 +21841,7 @@ const TARGETS = [
     },
     {
         "name": "라싸디벨로프먼트(기숙사)(GiGAeyes i-guard)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 이동면 연곡리 산 142-1",
         "status": "약정만료",
@@ -21856,7 +21856,7 @@ const TARGETS = [
     },
     {
         "name": "라오니아식당",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 둔내면 고원로398번길6",
         "status": "약정만료",
@@ -21871,7 +21871,7 @@ const TARGETS = [
     },
     {
         "name": "라움호텔",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 남대문로5가  17-8 안전장",
         "status": "약정만료",
@@ -21886,7 +21886,7 @@ const TARGETS = [
     },
     {
         "name": "라이트버드(1층)",
-        "manager": "박민준",
+        "manager": "G000306",
         "branch": "고양지사",
         "address": "경기 파주시 신촌동 109-3번지 3층",
         "status": "만기도래_재계약",
@@ -21901,7 +21901,7 @@ const TARGETS = [
     },
     {
         "name": "라이트버드(1층)",
-        "manager": "박민준",
+        "manager": "G000306",
         "branch": "고양지사",
         "address": "경기 파주시 신촌동 109-3번지 2층",
         "status": "만기도래_재계약",
@@ -21916,7 +21916,7 @@ const TARGETS = [
     },
     {
         "name": "라임북",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 파주읍 288 파주읍 파주리 288",
         "status": "만기도래_신규(1st)",
@@ -21931,7 +21931,7 @@ const TARGETS = [
     },
     {
         "name": "라임북",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 파주읍 288 파주읍 파주리 288",
         "status": "만기도래_신규(1st)",
@@ -21946,7 +21946,7 @@ const TARGETS = [
     },
     {
         "name": "라테라플라워",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 합정동 413-13 3층",
         "status": "만기도래_신규(1st)",
@@ -21961,7 +21961,7 @@ const TARGETS = [
     },
     {
         "name": "라테라플라워",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 합정동 413-13 좌측 지하1층",
         "status": "만기도래_신규(1st)",
@@ -21976,7 +21976,7 @@ const TARGETS = [
     },
     {
         "name": "라테라플라워",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 합정동 413-13 1층 출입통제",
         "status": "만기도래_신규(1st)",
@@ -21991,7 +21991,7 @@ const TARGETS = [
     },
     {
         "name": "라퓨타리조트",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 가평읍 금대리 309-12",
         "status": "만기도래_신규(1st)",
@@ -22006,7 +22006,7 @@ const TARGETS = [
     },
     {
         "name": "러스크병원",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 망우동 207-2",
         "status": "약정만료",
@@ -22021,7 +22021,7 @@ const TARGETS = [
     },
     {
         "name": "럭키주류",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 신내동 287-29",
         "status": "약정만료",
@@ -22036,7 +22036,7 @@ const TARGETS = [
     },
     {
         "name": "파주시 청소년재단",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 와동동 1358 운정행정복지센터 2층 프론트 앞",
         "status": "만기도래_신규(1st)",
@@ -22051,7 +22051,7 @@ const TARGETS = [
     },
     {
         "name": "레시피그룹(세터)(GiGAeyes guard)",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 739-18번지 2층",
         "status": "만기도래_신규(1st)",
@@ -22066,7 +22066,7 @@ const TARGETS = [
     },
     {
         "name": "레시피그룹(세터)(GiGAeyes guard)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 275-75번지 내추럴센스 3층",
         "status": "약정만료",
@@ -22081,7 +22081,7 @@ const TARGETS = [
     },
     {
         "name": "레시피그룹(세터)(GiGAeyes guard)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 275-75번지 내츄럴센스 2층",
         "status": "약정만료",
@@ -22096,7 +22096,7 @@ const TARGETS = [
     },
     {
         "name": "레시피그룹(세터)(GiGAeyes guard)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 275-75",
         "status": "만기도래_신규(1st)",
@@ -22111,7 +22111,7 @@ const TARGETS = [
     },
     {
         "name": "레이크호텔",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 오남읍 오남리 33-5 (오남오남 호텔레이크)",
         "status": "약정만료",
@@ -22126,7 +22126,7 @@ const TARGETS = [
     },
     {
         "name": "레이크홈",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 225-51번지",
         "status": "약정만료",
@@ -22141,7 +22141,7 @@ const TARGETS = [
     },
     {
         "name": "레인보우",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 하지석동 201",
         "status": "만기도래_재계약",
@@ -22156,7 +22156,7 @@ const TARGETS = [
     },
     {
         "name": "레인보우주식회사",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 흥업면 삼성길 6 푸름나라",
         "status": "약정만료",
@@ -22171,7 +22171,7 @@ const TARGETS = [
     },
     {
         "name": "렝땅악세사리운영회",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동  49-1 2층 WIFI",
         "status": "약정만료",
@@ -22186,7 +22186,7 @@ const TARGETS = [
     },
     {
         "name": "렝땅악세사리운영회",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동 49-1 렝땅악세사리운영회 (남창동 대도E상가)",
         "status": "약정만료",
@@ -22201,7 +22201,7 @@ const TARGETS = [
     },
     {
         "name": "로그먼트컨템포러리",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동1가 656-1238번지",
         "status": "만기도래_신규(1st)",
@@ -22216,7 +22216,7 @@ const TARGETS = [
     },
     {
         "name": "로데오로(GiGAeyes guard)",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 무실동 1724-14",
         "status": "약정만료",
@@ -22231,7 +22231,7 @@ const TARGETS = [
     },
     {
         "name": "로뎀글로리",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 종로구 평창동 ",
         "status": "약정만료",
@@ -22246,7 +22246,7 @@ const TARGETS = [
     },
     {
         "name": "로드3521",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 정암리 450-11 (주)언더쉴드-양양점",
         "status": "약정만료",
@@ -22261,7 +22261,7 @@ const TARGETS = [
     },
     {
         "name": "로얄개발",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 만송동 496-11",
         "status": "만기도래_재계약",
@@ -22276,7 +22276,7 @@ const TARGETS = [
     },
     {
         "name": "로얄개발",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 만송동 496-11",
         "status": "만기도래_재계약",
@@ -22291,7 +22291,7 @@ const TARGETS = [
     },
     {
         "name": "로얄개발",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 만송동 496-11 ",
         "status": "약정만료",
@@ -22306,7 +22306,7 @@ const TARGETS = [
     },
     {
         "name": "로얄개발",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 만송동 496-11",
         "status": "만기도래_신규(1st)",
@@ -22321,7 +22321,7 @@ const TARGETS = [
     },
     {
         "name": "로얄개발",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 만송동  496-11",
         "status": "약정만료",
@@ -22336,7 +22336,7 @@ const TARGETS = [
     },
     {
         "name": "로얄개발",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 만송동 496-11",
         "status": "만기도래_신규(1st)",
@@ -22351,7 +22351,7 @@ const TARGETS = [
     },
     {
         "name": "로얄개발",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 만송동 496-1",
         "status": "약정만료",
@@ -22366,7 +22366,7 @@ const TARGETS = [
     },
     {
         "name": "로얄개발",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 만송동 496-11",
         "status": "만기도래_신규(1st)",
@@ -22381,7 +22381,7 @@ const TARGETS = [
     },
     {
         "name": "로얄개발",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 만송동 496-1",
         "status": "약정만료",
@@ -22396,7 +22396,7 @@ const TARGETS = [
     },
     {
         "name": "로얄개발",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 만송동 496-11번지 (만송로244)",
         "status": "만기도래_재계약",
@@ -22411,7 +22411,7 @@ const TARGETS = [
     },
     {
         "name": "로얄개발",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 만송동 496-1",
         "status": "약정만료",
@@ -22426,7 +22426,7 @@ const TARGETS = [
     },
     {
         "name": "로얄개발",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 만송동 496-11",
         "status": "약정만료",
@@ -22441,7 +22441,7 @@ const TARGETS = [
     },
     {
         "name": "로얄개발",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 만송동 496-11번지 (만송로244)",
         "status": "만기도래_재계약",
@@ -22456,7 +22456,7 @@ const TARGETS = [
     },
     {
         "name": "로얄개발",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 만송동 496-11",
         "status": "만기도래_재계약",
@@ -22471,7 +22471,7 @@ const TARGETS = [
     },
     {
         "name": "로얄개발",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 만송동 496-11번지 (만송로244)",
         "status": "만기도래_재계약",
@@ -22486,7 +22486,7 @@ const TARGETS = [
     },
     {
         "name": "로얄개발",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 만송동 496-11번지 (만송로244)",
         "status": "만기도래_재계약",
@@ -22501,7 +22501,7 @@ const TARGETS = [
     },
     {
         "name": "로얄개발",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 만송동 496-11번지 (만송로244)",
         "status": "만기도래_재계약",
@@ -22516,7 +22516,7 @@ const TARGETS = [
     },
     {
         "name": "로이드-속초점",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 금호동 482-236",
         "status": "약정만료",
@@ -22531,7 +22531,7 @@ const TARGETS = [
     },
     {
         "name": "롯데슈퍼 한남점",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동  631-5 1층 롯데슈퍼 (한남동 덕수빌딩)",
         "status": "약정만료",
@@ -22546,7 +22546,7 @@ const TARGETS = [
     },
     {
         "name": "롯데스카이힐김해CC",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 소공동 1번지 롯데백화점 19층",
         "status": "만기도래_재계약",
@@ -22561,7 +22561,7 @@ const TARGETS = [
     },
     {
         "name": "롯데캐슬더퍼스트1차",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 지정면 가곡로 50",
         "status": "약정만료",
@@ -22576,7 +22576,7 @@ const TARGETS = [
     },
     {
         "name": "롱라이프그린케어",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 도봉동 635-5번지(2층)",
         "status": "약정만료",
@@ -22591,7 +22591,7 @@ const TARGETS = [
     },
     {
         "name": "루시아",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 원남동 66-1 반석빌딩3층",
         "status": "약정만료",
@@ -22606,7 +22606,7 @@ const TARGETS = [
     },
     {
         "name": "루이",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 돈의동 68 동의빌딩4층",
         "status": "약정만료",
@@ -22621,7 +22621,7 @@ const TARGETS = [
     },
     {
         "name": "루케테80",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 쌍문동 20번지(벽산프라자401호)",
         "status": "약정만료",
@@ -22636,7 +22636,7 @@ const TARGETS = [
     },
     {
         "name": "룸페커대전지점",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부1동 179-7 1층",
         "status": "약정만료",
@@ -22651,7 +22651,7 @@ const TARGETS = [
     },
     {
         "name": "르미엘성형외과",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 종로3가 119 동영타워 3층",
         "status": "약정만료",
@@ -22666,7 +22666,7 @@ const TARGETS = [
     },
     {
         "name": "리더스타워관리단(GiGAeyes patrol)",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단구동 1512-1 .",
         "status": "약정만료",
@@ -22681,7 +22681,7 @@ const TARGETS = [
     },
     {
         "name": "리더스타워관리단(GiGAeyes patrol)",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단구동 1512-1 .",
         "status": "약정만료",
@@ -22696,7 +22696,7 @@ const TARGETS = [
     },
     {
         "name": "리더에이피엠",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 을지로7가 105번지 apm플레이스 지하5층시설부",
         "status": "약정만료",
@@ -22711,7 +22711,7 @@ const TARGETS = [
     },
     {
         "name": "리베르떼빌",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 연희동 37-1",
         "status": "약정만료",
@@ -22726,7 +22726,7 @@ const TARGETS = [
     },
     {
         "name": "리빙아울렛",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 금곡리 1082-3 스타프라자 4층",
         "status": "약정만료",
@@ -22741,7 +22741,7 @@ const TARGETS = [
     },
     {
         "name": "리오주얼갤러리",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 방학동 720-33",
         "status": "약정만료",
@@ -22756,7 +22756,7 @@ const TARGETS = [
     },
     {
         "name": "리체",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 장항동 867번지 웨스턴돔2차903호",
         "status": "약정만료",
@@ -22771,7 +22771,7 @@ const TARGETS = [
     },
     {
         "name": "린나이보일러",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 장안동 535-2 2층",
         "status": "약정만료",
@@ -22786,7 +22786,7 @@ const TARGETS = [
     },
     {
         "name": "마들마취통증의학과의원(GiGAeyes i-guard)",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 649-3번지 세일빌딩 2층",
         "status": "만기도래_신규(1st)",
@@ -22801,7 +22801,7 @@ const TARGETS = [
     },
     {
         "name": "마디척척정형외과마취통증의학과의원",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 마석우리 마석우리 383-1번지 정길프라자국민은행건물 3층",
         "status": "만기도래_신규(1st)",
@@ -22816,7 +22816,7 @@ const TARGETS = [
     },
     {
         "name": "마복림할머니집",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 292-112",
         "status": "약정만료",
@@ -22831,7 +22831,7 @@ const TARGETS = [
     },
     {
         "name": "마복림할머니집",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 300-23",
         "status": "약정만료",
@@ -22846,7 +22846,7 @@ const TARGETS = [
     },
     {
         "name": "마이보성",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 덕은동 9-153",
         "status": "약정만료",
@@ -22861,7 +22861,7 @@ const TARGETS = [
     },
     {
         "name": "마이크로알지에스크어스-패트롤셀프",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 경포동 사임당로 641-22 창업보육동",
         "status": "약정만료",
@@ -22876,7 +22876,7 @@ const TARGETS = [
     },
     {
         "name": "마이플레이컴퍼니",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 별내동 970-1 옥탑(풋살장)",
         "status": "만기도래_신규(1st)",
@@ -22891,7 +22891,7 @@ const TARGETS = [
     },
     {
         "name": "마이플레이컴퍼니",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 395-15 제우피스빌딩 2층",
         "status": "약정만료",
@@ -22906,7 +22906,7 @@ const TARGETS = [
     },
     {
         "name": "마케팅앤컴퍼니",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 서소문동 58-7 현장사무실",
         "status": "만기도래_신규(1st)",
@@ -22921,7 +22921,7 @@ const TARGETS = [
     },
     {
         "name": "마포공덕바로본정형외과의원",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 도화동 572 서울마포우체국 포스트타워 3층",
         "status": "약정만료",
@@ -22936,7 +22936,7 @@ const TARGETS = [
     },
     {
         "name": "마포공덕튼튼본의원",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 도화동 25-13번지 효성해링턴타워 b동 2층",
         "status": "만기도래_신규(1st)",
@@ -22951,7 +22951,7 @@ const TARGETS = [
     },
     {
         "name": "마포공덕튼튼본의원",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 도화동 25-13번지 효성해링턴타워 B동 3층",
         "status": "만기도래_재계약",
@@ -22966,7 +22966,7 @@ const TARGETS = [
     },
     {
         "name": "마포구보훈회관",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 신수동 371-18 마포구보훈회관 1층 사무실",
         "status": "약정만료",
@@ -22981,7 +22981,7 @@ const TARGETS = [
     },
     {
         "name": "마포구청",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 노고산동 1-50 우리마포복지관",
         "status": "약정만료",
@@ -22996,7 +22996,7 @@ const TARGETS = [
     },
     {
         "name": "마포구청",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 노고산동 1-50 우리마포복지관",
         "status": "약정만료",
@@ -23011,7 +23011,7 @@ const TARGETS = [
     },
     {
         "name": "마포구청",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 합정동 131-1 양화진공영주차장",
         "status": "약정만료",
@@ -23026,7 +23026,7 @@ const TARGETS = [
     },
     {
         "name": "마포한강아이파크어린이집",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 망원동 521번지 마포한강아이파크 102동 1층",
         "status": "약정만료",
@@ -23041,7 +23041,7 @@ const TARGETS = [
     },
     {
         "name": "만물스텐금속",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 은현면용암리 632-4번지",
         "status": "약정만료",
@@ -23056,7 +23056,7 @@ const TARGETS = [
     },
     {
         "name": "맛찬들백미식품",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 동교동 73-9",
         "status": "약정만료",
@@ -23071,7 +23071,7 @@ const TARGETS = [
     },
     {
         "name": "먹골바른신경외과",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 묵동 176-15 401호 405호",
         "status": "약정만료",
@@ -23086,7 +23086,7 @@ const TARGETS = [
     },
     {
         "name": "멍우리협곡관광농원(캠핑장)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 영북면 소회산리 372-3번지",
         "status": "만기도래_신규(1st)",
@@ -23101,7 +23101,7 @@ const TARGETS = [
     },
     {
         "name": "메디앤비지점(OCT)",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 와부읍 덕소리 483번지 2층 213호",
         "status": "약정만료",
@@ -23116,7 +23116,7 @@ const TARGETS = [
     },
     {
         "name": "메리골드요양원",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 대현동 110-20번지 현대캠퍼빌 2층 207호",
         "status": "약정만료",
@@ -23131,7 +23131,7 @@ const TARGETS = [
     },
     {
         "name": "메이드인북촌",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 가회동 62-1",
         "status": "약정만료",
@@ -23146,7 +23146,7 @@ const TARGETS = [
     },
     {
         "name": "메이드인북촌",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 가회동 61",
         "status": "약정만료",
@@ -23161,7 +23161,7 @@ const TARGETS = [
     },
     {
         "name": "메이플-수영장",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 강동면 하시동리 202 메이폴비치 골프장 본관2층",
         "status": "약정만료",
@@ -23176,7 +23176,7 @@ const TARGETS = [
     },
     {
         "name": "메이플-수영장",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 강동면 하시동리 산131-6 메이플비치",
         "status": "약정만료",
@@ -23191,7 +23191,7 @@ const TARGETS = [
     },
     {
         "name": "메이플-수영장",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 강동면 새목이길110",
         "status": "만기도래_재계약",
@@ -23206,7 +23206,7 @@ const TARGETS = [
     },
     {
         "name": "메이플-수영장",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 강동면 하시동리 산131-6 그늘집",
         "status": "약정만료",
@@ -23221,7 +23221,7 @@ const TARGETS = [
     },
     {
         "name": "멜팅",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 탑동동 844",
         "status": "약정만료",
@@ -23236,7 +23236,7 @@ const TARGETS = [
     },
     {
         "name": "명금당(서대문)",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 노고산동 49-46",
         "status": "약정만료",
@@ -23251,7 +23251,7 @@ const TARGETS = [
     },
     {
         "name": "명동연세이비인후과의원",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 을지로2가 199-77 메트로호텔별관34층",
         "status": "약정만료",
@@ -23266,7 +23266,7 @@ const TARGETS = [
     },
     {
         "name": "명동연세이비인후과의원",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 을지로2가 199-77번지 2층",
         "status": "만기도래_신규(1st)",
@@ -23281,7 +23281,7 @@ const TARGETS = [
     },
     {
         "name": "명문모터스",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 벽제동 314-5",
         "status": "약정만료",
@@ -23296,7 +23296,7 @@ const TARGETS = [
     },
     {
         "name": "명부정사",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 원창리 원창리 213-23번지 사찰 전 부지",
         "status": "만기도래_신규(1st)",
@@ -23311,7 +23311,7 @@ const TARGETS = [
     },
     {
         "name": "명성수출포장(Combo)",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 설운동 14-7",
         "status": "약정만료",
@@ -23326,7 +23326,7 @@ const TARGETS = [
     },
     {
         "name": "명정게임랜드",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 125-5 미즘빌딩2층",
         "status": "약정만료",
@@ -23341,7 +23341,7 @@ const TARGETS = [
     },
     {
         "name": "명진비앤에스",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 화정동 964-4 화정동문디이스트 지하2층 관리사무실",
         "status": "만기도래_신규(1st)",
@@ -23356,7 +23356,7 @@ const TARGETS = [
     },
     {
         "name": "명진엠알오",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 설운동 95-9",
         "status": "약정만료",
@@ -23371,7 +23371,7 @@ const TARGETS = [
     },
     {
         "name": "모아쇼핑",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 안암동4가 28-2 1층",
         "status": "만기도래_신규(1st)",
@@ -23386,7 +23386,7 @@ const TARGETS = [
     },
     {
         "name": "목동신협",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 중화동 284-1번지 1층",
         "status": "약정만료",
@@ -23401,7 +23401,7 @@ const TARGETS = [
     },
     {
         "name": "목동신협",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 중화동 284-1번지 1층",
         "status": "약정만료",
@@ -23416,7 +23416,7 @@ const TARGETS = [
     },
     {
         "name": "목동신협",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 묵동 239-127(묵동천주교회내 출장소)",
         "status": "약정만료",
@@ -23431,7 +23431,7 @@ const TARGETS = [
     },
     {
         "name": "몬스터개러지",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 풍동 562-33",
         "status": "만기도래_신규(1st)",
@@ -23446,7 +23446,7 @@ const TARGETS = [
     },
     {
         "name": "몸튼튼바른의원(GiGAeyes i-guard)",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 강북구 우이동 서울 강북구 삼양로 603 301호 401호",
         "status": "약정만료",
@@ -23461,7 +23461,7 @@ const TARGETS = [
     },
     {
         "name": "묵호농협",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 평릉동 동해대로 5472",
         "status": "약정만료",
@@ -23476,7 +23476,7 @@ const TARGETS = [
     },
     {
         "name": "묵호농협",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 평릉동 동해대로 5472",
         "status": "약정만료",
@@ -23491,7 +23491,7 @@ const TARGETS = [
     },
     {
         "name": "묵호농협 하나로마트평릉점",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 평릉동 동해대로5472",
         "status": "약정만료",
@@ -23506,7 +23506,7 @@ const TARGETS = [
     },
     {
         "name": "문혜장애인요양원",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 갈말읍 문혜리 275-1(텃골1길13)",
         "status": "만기도래_재계약",
@@ -23521,7 +23521,7 @@ const TARGETS = [
     },
     {
         "name": "문혜장애인요양원",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 갈말읍 문혜리 275-1(텃골1길13)",
         "status": "만기도래_재계약",
@@ -23536,7 +23536,7 @@ const TARGETS = [
     },
     {
         "name": "문화체육시설사무소",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 281-27",
         "status": "약정만료",
@@ -23551,7 +23551,7 @@ const TARGETS = [
     },
     {
         "name": "문화체육시설사무소",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 277-157번지",
         "status": "약정만료",
@@ -23566,7 +23566,7 @@ const TARGETS = [
     },
     {
         "name": "뮤지션스클럽(GiGAeyes i-guard)",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 408-26 지하1층",
         "status": "약정만료",
@@ -23581,7 +23581,7 @@ const TARGETS = [
     },
     {
         "name": "미광디자인도어-컨테이너",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 광탄면 분수리 8-2",
         "status": "약정만료",
@@ -23596,7 +23596,7 @@ const TARGETS = [
     },
     {
         "name": "미디어빌리지테크",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 469-5",
         "status": "약정만료",
@@ -23611,7 +23611,7 @@ const TARGETS = [
     },
     {
         "name": "미디어빌리지테크",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 469-5번지",
         "status": "약정만료",
@@ -23626,7 +23626,7 @@ const TARGETS = [
     },
     {
         "name": "미띠에르",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 별내동 970-2",
         "status": "만기도래_신규(1st)",
@@ -23641,7 +23641,7 @@ const TARGETS = [
     },
     {
         "name": "미래빌딩",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 효자동 17-9번지 미래빌딩 미래빌딩",
         "status": "만기도래_신규(1st)",
@@ -23656,7 +23656,7 @@ const TARGETS = [
     },
     {
         "name": "미르관광호텔-속초",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 조양동 1553-5 미르관광호텔",
         "status": "만기도래_신규(1st)",
@@ -23671,7 +23671,7 @@ const TARGETS = [
     },
     {
         "name": "미르주얼리",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 원남동 70 영빌딩4층",
         "status": "만기도래_신규(1st)",
@@ -23686,7 +23686,7 @@ const TARGETS = [
     },
     {
         "name": "미림아파트4ch",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 봉일천리 봉일천리 237-2번지 미림아파트 ㅇ (봉일천리미림아파트)",
         "status": "만기도래_신규(1st)",
@@ -23701,7 +23701,7 @@ const TARGETS = [
     },
     {
         "name": "미보치과의원",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 석관동 349-1 장위뉴타워 6층 (돌곶이역 8번출구)",
         "status": "약정만료",
@@ -23716,7 +23716,7 @@ const TARGETS = [
     },
     {
         "name": "미진5차강변아파트",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 홍천읍 갈마곡리 424-3",
         "status": "약정만료",
@@ -23731,7 +23731,7 @@ const TARGETS = [
     },
     {
         "name": "미진무역(주)(NVR뷰)",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 성동구 행당동 12-5번지",
         "status": "약정만료",
@@ -23746,7 +23746,7 @@ const TARGETS = [
     },
     {
         "name": "미트볼라운지삼청동",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 팔판동 27-5번지",
         "status": "약정만료",
@@ -23761,7 +23761,7 @@ const TARGETS = [
     },
     {
         "name": "밀레니엄빌라",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 종로1가 24 르메이에르 B104-2-1",
         "status": "약정만료",
@@ -23776,7 +23776,7 @@ const TARGETS = [
     },
     {
         "name": "밀레토스학원",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍창현리 731-2 소정빌딩 23층",
         "status": "약정만료",
@@ -23791,7 +23791,7 @@ const TARGETS = [
     },
     {
         "name": "밀레토스학원",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 창현리 737-1  대인빌딩3층",
         "status": "약정만료",
@@ -23806,7 +23806,7 @@ const TARGETS = [
     },
     {
         "name": "밀레토스학원",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 창현리 731-2번지 2층",
         "status": "약정만료",
@@ -23821,7 +23821,7 @@ const TARGETS = [
     },
     {
         "name": "바디채널",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 대현동 101-17 해암빌딩 3층 4층 바디채널",
         "status": "만기도래_신규(1st)",
@@ -23836,7 +23836,7 @@ const TARGETS = [
     },
     {
         "name": "바디채널",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 연희동 446-153 1층",
         "status": "만기도래_신규(1st)",
@@ -23851,7 +23851,7 @@ const TARGETS = [
     },
     {
         "name": "바이오다인",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 289-283",
         "status": "약정만료",
@@ -23866,7 +23866,7 @@ const TARGETS = [
     },
     {
         "name": "바이오다인",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 289-283",
         "status": "약정만료",
@@ -23881,7 +23881,7 @@ const TARGETS = [
     },
     {
         "name": "바이오다인",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 289-283번지",
         "status": "약정만료",
@@ -23896,7 +23896,7 @@ const TARGETS = [
     },
     {
         "name": "바이오다인",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 289-283",
         "status": "약정만료",
@@ -23911,7 +23911,7 @@ const TARGETS = [
     },
     {
         "name": "바이오세움",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수2가3동 273-15번지/우영테크노센터 206호",
         "status": "약정만료",
@@ -23926,7 +23926,7 @@ const TARGETS = [
     },
     {
         "name": "바텍",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 장흥면부곡리 516-1번지 1층",
         "status": "약정만료",
@@ -23941,7 +23941,7 @@ const TARGETS = [
     },
     {
         "name": "박동기부동산(view-dvr)",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 조양동 동해대로 4135",
         "status": "약정만료",
@@ -23956,7 +23956,7 @@ const TARGETS = [
     },
     {
         "name": "박순례손말이고기 산정집",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 일산동 192-1 .",
         "status": "만기도래_재계약",
@@ -23971,7 +23971,7 @@ const TARGETS = [
     },
     {
         "name": "박윤주",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 사노동 141-2번지",
         "status": "약정만료",
@@ -23986,7 +23986,7 @@ const TARGETS = [
     },
     {
         "name": "박형균가정집",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당4동 333-57번지",
         "status": "약정만료",
@@ -24001,7 +24001,7 @@ const TARGETS = [
     },
     {
         "name": "반야노인요양원",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 노학동 455-16 반야요양원",
         "status": "만기도래_재계약",
@@ -24016,7 +24016,7 @@ const TARGETS = [
     },
     {
         "name": "발명문화빌딩(임대)",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 응암동 104-7",
         "status": "만기도래_신규(1st)",
@@ -24031,7 +24031,7 @@ const TARGETS = [
     },
     {
         "name": "발명문화빌딩(임대)",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 구산동 316-7 (서오릉로 23길14)",
         "status": "약정만료",
@@ -24046,7 +24046,7 @@ const TARGETS = [
     },
     {
         "name": "발명문화빌딩(임대)",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 응암1동 104-4번지",
         "status": "약정만료",
@@ -24061,7 +24061,7 @@ const TARGETS = [
     },
     {
         "name": "발명문화빌딩(임대)",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 응암동 104-4번지",
         "status": "약정만료",
@@ -24076,7 +24076,7 @@ const TARGETS = [
     },
     {
         "name": "백년튼튼 정형외과 재활의학과의원(GiGAeyes i-guard)",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 중화동 287-9번지 신한은행 2층",
         "status": "약정만료",
@@ -24091,7 +24091,7 @@ const TARGETS = [
     },
     {
         "name": "백정기주택",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 북아현동 1-47 (선교회 건물)",
         "status": "약정만료",
@@ -24106,7 +24106,7 @@ const TARGETS = [
     },
     {
         "name": "백학지낚시터",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 백학면 두일리 산27-1 저수지길 21",
         "status": "약정만료",
@@ -24121,7 +24121,7 @@ const TARGETS = [
     },
     {
         "name": "백학지낚시터",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 두일리 두일리 산27-1번지 백학지낚시터 백학지낚시터",
         "status": "약정만료",
@@ -24136,7 +24136,7 @@ const TARGETS = [
     },
     {
         "name": "백학지낚시터",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 백학면 두일리 산27-1 저수지길 21",
         "status": "약정만료",
@@ -24151,7 +24151,7 @@ const TARGETS = [
     },
     {
         "name": "버락",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 봉익동 11-12 1층",
         "status": "약정만료",
@@ -24166,7 +24166,7 @@ const TARGETS = [
     },
     {
         "name": "베프스터디카페-구의점(GiGAeyes guard)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 구의동 68-25 2층 3층",
         "status": "만기도래_신규(1st)",
@@ -24181,7 +24181,7 @@ const TARGETS = [
     },
     {
         "name": "변리사스쿨(GiGAeyes i-guard)",
-        "manager": "박민준",
+        "manager": "G000306",
         "branch": "고양지사",
         "address": "경기 파주시 다율동 1044-8 상상매디컬프라자 608호",
         "status": "만기도래_신규(1st)",
@@ -24196,7 +24196,7 @@ const TARGETS = [
     },
     {
         "name": "별별장어상계점",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 176-21번지 주식회사 천조 수산",
         "status": "만기도래_신규(1st)",
@@ -24211,7 +24211,7 @@ const TARGETS = [
     },
     {
         "name": "별빛슈퍼",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 화정동 953번지상가동111호~112호",
         "status": "만기도래_신규(1st)",
@@ -24226,7 +24226,7 @@ const TARGETS = [
     },
     {
         "name": "보띠에",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 463-3번지 3층",
         "status": "만기도래_신규(1st)",
@@ -24241,7 +24241,7 @@ const TARGETS = [
     },
     {
         "name": "보보호텔",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동  373-1 번지",
         "status": "약정만료",
@@ -24256,7 +24256,7 @@ const TARGETS = [
     },
     {
         "name": "보성농장1호태양광발전소gigaeyes",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 개군면 계전리  159-10번지",
         "status": "만기도래_재계약",
@@ -24271,7 +24271,7 @@ const TARGETS = [
     },
     {
         "name": "보성아키테리어",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 277-43 성수동아크벨리 14층",
         "status": "약정만료",
@@ -24286,7 +24286,7 @@ const TARGETS = [
     },
     {
         "name": "보성아키테리어",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 277-43번지 한신아크밸리14층",
         "status": "약정만료",
@@ -24301,7 +24301,7 @@ const TARGETS = [
     },
     {
         "name": "보인모바일",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 종로5가 90",
         "status": "약정만료",
@@ -24316,7 +24316,7 @@ const TARGETS = [
     },
     {
         "name": "보인모바일",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 종로2가 84-4번지 1층",
         "status": "약정만료",
@@ -24331,7 +24331,7 @@ const TARGETS = [
     },
     {
         "name": "보인모바일",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 체부동 45-2번지 1층",
         "status": "약정만료",
@@ -24346,7 +24346,7 @@ const TARGETS = [
     },
     {
         "name": "보인모바일",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 종로구 숭인동 228-6",
         "status": "약정만료",
@@ -24361,7 +24361,7 @@ const TARGETS = [
     },
     {
         "name": "보인모바일",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 327-20 504호",
         "status": "약정만료",
@@ -24376,7 +24376,7 @@ const TARGETS = [
     },
     {
         "name": "보장산목장",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 창수면 오가리 253번지",
         "status": "약정만료",
@@ -24391,7 +24391,7 @@ const TARGETS = [
     },
     {
         "name": "복성빌딩",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 용두동 232-18번지",
         "status": "약정만료",
@@ -24406,7 +24406,7 @@ const TARGETS = [
     },
     {
         "name": "봉화건축자재백화점",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 은현면 하패리 434-3번지",
         "status": "약정만료",
@@ -24421,7 +24421,7 @@ const TARGETS = [
     },
     {
         "name": "부(BOO)",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 을지로3가 95-5 지하",
         "status": "약정만료",
@@ -24436,7 +24436,7 @@ const TARGETS = [
     },
     {
         "name": "부광",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 옥천동 326-1",
         "status": "약정만료",
@@ -24451,7 +24451,7 @@ const TARGETS = [
     },
     {
         "name": "부르뎅아동복상가운영회",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동 31-11 3층",
         "status": "약정만료",
@@ -24466,7 +24466,7 @@ const TARGETS = [
     },
     {
         "name": "부르뎅아동복상가운영회",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동 9-18번지 2층",
         "status": "약정만료",
@@ -24481,7 +24481,7 @@ const TARGETS = [
     },
     {
         "name": "부르뎅아동복상가운영회",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동  31-11 3층 (남창동)",
         "status": "약정만료",
@@ -24496,7 +24496,7 @@ const TARGETS = [
     },
     {
         "name": "부르스타짐 공릉점",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 공릉동 581-1",
         "status": "약정만료",
@@ -24511,7 +24511,7 @@ const TARGETS = [
     },
     {
         "name": "부르스타짐 월계점",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 월계동 화랑로 325 우현빌딩 5층",
         "status": "약정만료",
@@ -24526,7 +24526,7 @@ const TARGETS = [
     },
     {
         "name": "북원신협",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 태장2동 1367 (금융창구)",
         "status": "약정만료",
@@ -24541,7 +24541,7 @@ const TARGETS = [
     },
     {
         "name": "북원신협",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 태장2동 1367",
         "status": "약정만료",
@@ -24556,7 +24556,7 @@ const TARGETS = [
     },
     {
         "name": "북원신협",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 우산동 101-2",
         "status": "약정만료",
@@ -24571,7 +24571,7 @@ const TARGETS = [
     },
     {
         "name": "북원신협",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 우산동 101-2",
         "status": "약정만료",
@@ -24586,7 +24586,7 @@ const TARGETS = [
     },
     {
         "name": "북원신협",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단계동 1105-9",
         "status": "약정만료",
@@ -24601,7 +24601,7 @@ const TARGETS = [
     },
     {
         "name": "북원신협",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 태장2동 1367",
         "status": "약정만료",
@@ -24616,7 +24616,7 @@ const TARGETS = [
     },
     {
         "name": "북원신협",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 태장2동 1367",
         "status": "약정만료",
@@ -24631,7 +24631,7 @@ const TARGETS = [
     },
     {
         "name": "북원신협",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 태장2동 1367",
         "status": "약정만료",
@@ -24646,7 +24646,7 @@ const TARGETS = [
     },
     {
         "name": "북원신협",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 우산동 101-2",
         "status": "약정만료",
@@ -24661,7 +24661,7 @@ const TARGETS = [
     },
     {
         "name": "북원신협",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 태장2동 1367",
         "status": "약정만료",
@@ -24676,7 +24676,7 @@ const TARGETS = [
     },
     {
         "name": "북원신협",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단계동 봉화로 14",
         "status": "약정만료",
@@ -24691,7 +24691,7 @@ const TARGETS = [
     },
     {
         "name": "북원신협",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 우산동 101-2",
         "status": "약정만료",
@@ -24706,7 +24706,7 @@ const TARGETS = [
     },
     {
         "name": "브라보마취통증의학과의원",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 389-641 3층 브라보정형외과",
         "status": "약정만료",
@@ -24721,7 +24721,7 @@ const TARGETS = [
     },
     {
         "name": "브라운",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 394-20 지하1층",
         "status": "만기도래_재계약",
@@ -24736,7 +24736,7 @@ const TARGETS = [
     },
     {
         "name": "브레드쏭",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 와부읍 팔당리 798 브레드쏭",
         "status": "약정만료",
@@ -24751,7 +24751,7 @@ const TARGETS = [
     },
     {
         "name": "브리끄",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 구암리 26-4",
         "status": "만기도래_신규(1st)",
@@ -24766,7 +24766,7 @@ const TARGETS = [
     },
     {
         "name": "브릭샌드삼청점(GiGAeyes guard)",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 동자동 43-205 서울역(철도역) 1층 M02호",
         "status": "약정만료",
@@ -24781,7 +24781,7 @@ const TARGETS = [
     },
     {
         "name": "브이아이피참치(주)",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로2가 40번지 1층",
         "status": "만기도래_신규(1st)",
@@ -24796,7 +24796,7 @@ const TARGETS = [
     },
     {
         "name": "브이아이피참치(주)",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 의주로1가 25-10 바비엥-2(1층 105-2호)",
         "status": "약정만료",
@@ -24811,7 +24811,7 @@ const TARGETS = [
     },
     {
         "name": "브이아이피참치(주)",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 태평로1가 61-1 코리아나호텔3층 대상해",
         "status": "약정만료",
@@ -24826,7 +24826,7 @@ const TARGETS = [
     },
     {
         "name": "브이아이피참치(주)",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 태평로1가 61-1",
         "status": "약정만료",
@@ -24841,7 +24841,7 @@ const TARGETS = [
     },
     {
         "name": "블랑제리 춘천",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 퇴계동 107-14 1층",
         "status": "만기도래_신규(1st)",
@@ -24856,7 +24856,7 @@ const TARGETS = [
     },
     {
         "name": "블루엘리펀트",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 성동구 성수동1가 668-102번지 1층",
         "status": "만기도래_신규(1st)",
@@ -24871,7 +24871,7 @@ const TARGETS = [
     },
     {
         "name": "블루엘리펀트",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한강로2가 248-1 12층",
         "status": "만기도래_신규(1st)",
@@ -24886,7 +24886,7 @@ const TARGETS = [
     },
     {
         "name": "블루엘리펀트",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 익선동 173 1층",
         "status": "만기도래_신규(1st)",
@@ -24901,7 +24901,7 @@ const TARGETS = [
     },
     {
         "name": "블루엘리펀트",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 683-47 3층",
         "status": "만기도래_신규(1st)",
@@ -24916,7 +24916,7 @@ const TARGETS = [
     },
     {
         "name": "블루워시",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 연평리 217-10",
         "status": "약정만료",
@@ -24931,7 +24931,7 @@ const TARGETS = [
     },
     {
         "name": "블루워시",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 오남읍 오남리 546-3번지",
         "status": "만기도래_신규(1st)",
@@ -24946,7 +24946,7 @@ const TARGETS = [
     },
     {
         "name": "블루워시",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 오남읍 오남리 425번지 신일해피트리아파트 내",
         "status": "만기도래_신규(1st)",
@@ -24961,7 +24961,7 @@ const TARGETS = [
     },
     {
         "name": "블리스에버뉴",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 교문동 733-2 1층 (교문동 성신빌딩)",
         "status": "약정만료",
@@ -24976,7 +24976,7 @@ const TARGETS = [
     },
     {
         "name": "블리스에버뉴",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 교문동  733-2 성신빌딩 (교문동)",
         "status": "약정만료",
@@ -24991,7 +24991,7 @@ const TARGETS = [
     },
     {
         "name": "비둘기어린이집",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 송내동 664-1 행복주택 내",
         "status": "만기도래_신규(1st)",
@@ -25006,7 +25006,7 @@ const TARGETS = [
     },
     {
         "name": "비루개(남양주허브식물원)",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 별내면 용암리 227",
         "status": "만기도래_신규(1st)",
@@ -25021,7 +25021,7 @@ const TARGETS = [
     },
     {
         "name": "비비베이커리",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 양평읍공흥리 290-5",
         "status": "만기도래_신규(1st)",
@@ -25036,7 +25036,7 @@ const TARGETS = [
     },
     {
         "name": "비엔티",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 길명리 길명리 804-4번지 (주)비엔티",
         "status": "약정만료",
@@ -25051,7 +25051,7 @@ const TARGETS = [
     },
     {
         "name": "비엘브이디",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 양서면 양수리 511-1",
         "status": "약정만료",
@@ -25066,7 +25066,7 @@ const TARGETS = [
     },
     {
         "name": "비엘코리아1층(OCT)",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 동내면 사암리 582-2",
         "status": "약정만료",
@@ -25081,7 +25081,7 @@ const TARGETS = [
     },
     {
         "name": "비와별닭갈비",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 904-2",
         "status": "약정만료",
@@ -25096,7 +25096,7 @@ const TARGETS = [
     },
     {
         "name": "비즈웍스",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 우두동 1094 지하1층 관리사무실",
         "status": "약정만료",
@@ -25111,7 +25111,7 @@ const TARGETS = [
     },
     {
         "name": "비트엠지하3층",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한강로2가 2-185 용산아이피아 지하3층 10호11호",
         "status": "약정만료",
@@ -25126,7 +25126,7 @@ const TARGETS = [
     },
     {
         "name": "비트엠지하3층",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한강로2가 용산아이피아 지하1층",
         "status": "약정만료",
@@ -25141,7 +25141,7 @@ const TARGETS = [
     },
     {
         "name": "비트엠지하3층",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한강로2가 2-185 아이피아 지하2층",
         "status": "약정만료",
@@ -25156,7 +25156,7 @@ const TARGETS = [
     },
     {
         "name": "비트엠지하3층",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한강로2가 2-185번지 49호",
         "status": "약정만료",
@@ -25171,7 +25171,7 @@ const TARGETS = [
     },
     {
         "name": "빅토비즈(OCT)",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 394-73번지",
         "status": "약정만료",
@@ -25186,7 +25186,7 @@ const TARGETS = [
     },
     {
         "name": "빅히트-본관동",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진벌리 628",
         "status": "만기도래_신규(1st)",
@@ -25201,7 +25201,7 @@ const TARGETS = [
     },
     {
         "name": "빌리지크리스찬아카데미",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 중산동 1668-2번지 하이마트 1~3층",
         "status": "만기도래_신규(1st)",
@@ -25216,7 +25216,7 @@ const TARGETS = [
     },
     {
         "name": "빛사랑안과(OCT)",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계7동 724-2 프린스빌딩 6층",
         "status": "약정만료",
@@ -25231,7 +25231,7 @@ const TARGETS = [
     },
     {
         "name": "사계절",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 식사동 549-1",
         "status": "만기도래_신규(1st)",
@@ -25246,7 +25246,7 @@ const TARGETS = [
     },
     {
         "name": "사계절",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 식사동  549-1",
         "status": "약정만료",
@@ -25261,7 +25261,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인 대한축구협회",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 신문로2가 1-131",
         "status": "약정만료",
@@ -25276,7 +25276,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인 두란노서원",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 탄현면 법흥리 292-3",
         "status": "약정만료",
@@ -25291,7 +25291,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인 두란노서원",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 용산동6가 69-165 온누리교회 지하1층",
         "status": "약정만료",
@@ -25306,7 +25306,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인 두란노서원",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 탄현면 법흥리 292-3",
         "status": "약정만료",
@@ -25321,7 +25321,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인 한국안전기술협회",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 신내동 641번지 KT 신내사옥 4층",
         "status": "약정만료",
@@ -25336,7 +25336,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 신동면 혈동리 산 235-1 환경사업소 소각동3층",
         "status": "약정만료",
@@ -25351,7 +25351,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 교동 36 춘천시청별관 춘천도시공사 본관1층",
         "status": "만기도래_신규(1st)",
@@ -25366,7 +25366,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 신동면 혈동리 산235-1 환경사업소 소각동",
         "status": "약정만료",
@@ -25381,7 +25381,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 교동 36",
         "status": "약정만료",
@@ -25396,7 +25396,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 근화동 8-1 소양강스카이워크 소양강스카이워크",
         "status": "만기도래_신규(1st)",
@@ -25411,7 +25411,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 남산면 강촌리 432 구곡폭포매표소",
         "status": "약정만료",
@@ -25426,7 +25426,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 신동면 혈동리 산235-1 환경사업소 재활용처리시설",
         "status": "약정만료",
@@ -25441,7 +25441,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 257-30",
         "status": "약정만료",
@@ -25456,7 +25456,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 신동면 증리868-1 김유정문학촌",
         "status": "약정만료",
@@ -25471,7 +25471,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 신동면 증리914-1",
         "status": "약정만료",
@@ -25486,7 +25486,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 257-30번지",
         "status": "만기도래_재계약",
@@ -25501,7 +25501,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 사농동 388 고구마섬야구장",
         "status": "약정만료",
@@ -25516,7 +25516,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 송암동 762-5",
         "status": "약정만료",
@@ -25531,7 +25531,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 송암동 290",
         "status": "약정만료",
@@ -25546,7 +25546,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 신동면 증리914-1",
         "status": "약정만료",
@@ -25561,7 +25561,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 신동면 증리 914-1 사무실",
         "status": "약정만료",
@@ -25576,7 +25576,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 남산면 강촌리 432",
         "status": "약정만료",
@@ -25591,7 +25591,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 서면 덕두원리 118-16",
         "status": "만기도래_재계약",
@@ -25606,7 +25606,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 서면 덕두원리 산 186-3",
         "status": "만기도래_재계약",
@@ -25621,7 +25621,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 북산면 청평리 산 182-131",
         "status": "약정만료",
@@ -25636,7 +25636,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 북산면 청평리 산 182-131",
         "status": "만기도래_재계약",
@@ -25651,7 +25651,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 신동면 혈동리 산235-1 환경사업소 관리동",
         "status": "약정만료",
@@ -25666,7 +25666,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 동면 장학리 459-11 소양강파크골프장 사무실창고",
         "status": "약정만료",
@@ -25681,7 +25681,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 서면 현암리 342-1 파크골프장",
         "status": "약정만료",
@@ -25696,7 +25696,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 삼천동 83-7 하키장",
         "status": "약정만료",
@@ -25711,7 +25711,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 북산면 청평리 산 182-131 주차부스",
         "status": "약정만료",
@@ -25726,7 +25726,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 근화동 8-1",
         "status": "약정만료",
@@ -25741,7 +25741,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 소양로3가 128-1",
         "status": "약정만료",
@@ -25756,7 +25756,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 근화동 203",
         "status": "약정만료",
@@ -25771,7 +25771,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 송암동 644-1",
         "status": "약정만료",
@@ -25786,7 +25786,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 서면 덕두원리 118-6",
         "status": "약정만료",
@@ -25801,7 +25801,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 남산면 강촌리 432",
         "status": "약정만료",
@@ -25816,7 +25816,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 온의동 587-4",
         "status": "약정만료",
@@ -25831,7 +25831,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 죽림동 93",
         "status": "약정만료",
@@ -25846,7 +25846,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 운교동 182-12",
         "status": "약정만료",
@@ -25861,7 +25861,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 서면 덕두원리 산 186-3",
         "status": "약정만료",
@@ -25876,7 +25876,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인김유정기념사업회",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 옥천동 시청길7",
         "status": "약정만료",
@@ -25891,7 +25891,7 @@ const TARGETS = [
     },
     {
         "name": "사단법인한국검인정교과서협회",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 현북면 중광정리 75-1 사)한국검인정교과서협회-양양연수원",
         "status": "약정만료",
@@ -25906,7 +25906,7 @@ const TARGETS = [
     },
     {
         "name": "사랑채데이케어센터",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 중산동 1568번지 일산프라자 4층",
         "status": "만기도래_신규(1st)",
@@ -25921,7 +25921,7 @@ const TARGETS = [
     },
     {
         "name": "사무람",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 합정동 370-11 전층",
         "status": "만기도래_신규(1st)",
@@ -25936,7 +25936,7 @@ const TARGETS = [
     },
     {
         "name": "사조산업(주)",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로2가 157번지",
         "status": "약정만료",
@@ -25951,7 +25951,7 @@ const TARGETS = [
     },
     {
         "name": "사조산업(주)",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로2가 157번지",
         "status": "약정만료",
@@ -25966,7 +25966,7 @@ const TARGETS = [
     },
     {
         "name": "사조산업(주)",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로2가 157 사조산업빌딩",
         "status": "약정만료",
@@ -25981,7 +25981,7 @@ const TARGETS = [
     },
     {
         "name": "사조산업(주)",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 종암동 14-2번지 맘스터치",
         "status": "약정만료",
@@ -25996,7 +25996,7 @@ const TARGETS = [
     },
     {
         "name": "사조산업(주)",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로2가 157 사조산업빌딩 5층",
         "status": "약정만료",
@@ -26011,7 +26011,7 @@ const TARGETS = [
     },
     {
         "name": "대훈아파트",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 갈현2동 136-6 공동현관",
         "status": "만기도래_신규(1st)",
@@ -26026,7 +26026,7 @@ const TARGETS = [
     },
     {
         "name": "산울림(GiGAeyes i-guard premium)",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 327-19번지 1층",
         "status": "약정만료",
@@ -26041,7 +26041,7 @@ const TARGETS = [
     },
     {
         "name": "삼광섬유주식회사-뷰N",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 마산리 280-1",
         "status": "약정만료",
@@ -26056,7 +26056,7 @@ const TARGETS = [
     },
     {
         "name": "삼보사유지재단gigaeyes가드(NVR)",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 양평읍 공흥리 45-9 삼보사그린생활시설 5층",
         "status": "약정만료",
@@ -26071,7 +26071,7 @@ const TARGETS = [
     },
     {
         "name": "삼성건기영서총판",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 소초면 바우실길82",
         "status": "만기도래_재계약",
@@ -26086,7 +26086,7 @@ const TARGETS = [
     },
     {
         "name": "삼성본정형외과의원",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 동소문동6가 143-5 해피엔딩오피스텔 4층",
         "status": "약정만료",
@@ -26101,7 +26101,7 @@ const TARGETS = [
     },
     {
         "name": "삼성솔라이엔에스주식회사",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 강동면 산성우리 산156",
         "status": "약정만료",
@@ -26116,7 +26116,7 @@ const TARGETS = [
     },
     {
         "name": "삼성솔라파워(주)",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 양양군 현남면 정자리 산 45",
         "status": "약정만료",
@@ -26131,7 +26131,7 @@ const TARGETS = [
     },
     {
         "name": "삼성솔라파워(주)",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 강동면 언별리667-1",
         "status": "약정만료",
@@ -26146,7 +26146,7 @@ const TARGETS = [
     },
     {
         "name": "삼성튼튼마취통증의학과의원",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 행신동 762번지 202호",
         "status": "약정만료",
@@ -26161,7 +26161,7 @@ const TARGETS = [
     },
     {
         "name": "삼성프라자",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 마두동 752번지",
         "status": "약정만료",
@@ -26176,7 +26176,7 @@ const TARGETS = [
     },
     {
         "name": "삼우공간건축사사무소",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 조안면 진중리 43-3번지",
         "status": "약정만료",
@@ -26191,7 +26191,7 @@ const TARGETS = [
     },
     {
         "name": "삼원농산식자재마트",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 도곡리 1067-14",
         "status": "약정만료",
@@ -26206,7 +26206,7 @@ const TARGETS = [
     },
     {
         "name": "삼원농산식자재마트",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 와부읍 석실로7 가락공판장",
         "status": "약정만료",
@@ -26221,7 +26221,7 @@ const TARGETS = [
     },
     {
         "name": "삼육대에이엠씨스튜디오4층(OCT)",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 공릉2동 삼육대학교내 스튜디오",
         "status": "만기도래_재계약",
@@ -26236,7 +26236,7 @@ const TARGETS = [
     },
     {
         "name": "삼익비치맨션",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 송정동 해안로107",
         "status": "약정만료",
@@ -26251,7 +26251,7 @@ const TARGETS = [
     },
     {
         "name": "삼익비치맨션",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 송정동 39-10 삼익비치맨션 .",
         "status": "약정만료",
@@ -26266,7 +26266,7 @@ const TARGETS = [
     },
     {
         "name": "삼익쇼핑자치관리회",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 창동 581-28 3층",
         "status": "약정만료",
@@ -26281,7 +26281,7 @@ const TARGETS = [
     },
     {
         "name": "삼익쇼핑자치관리회",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 창동 581-28번지 (1층)",
         "status": "약정만료",
@@ -26296,7 +26296,7 @@ const TARGETS = [
     },
     {
         "name": "삼익쇼핑자치관리회",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 창동 581-28 지하1층",
         "status": "약정만료",
@@ -26311,7 +26311,7 @@ const TARGETS = [
     },
     {
         "name": "삼익쇼핑자치관리회",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 창동 581-28 4층",
         "status": "약정만료",
@@ -26326,7 +26326,7 @@ const TARGETS = [
     },
     {
         "name": "삼익쇼핑자치관리회",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 창동 581-28 1층",
         "status": "약정만료",
@@ -26341,7 +26341,7 @@ const TARGETS = [
     },
     {
         "name": "삼일팩",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 양양읍 포월리 264",
         "status": "약정만료",
@@ -26356,7 +26356,7 @@ const TARGETS = [
     },
     {
         "name": "삼주국민마트",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 신곡동 719-2 백상프라자지하",
         "status": "만기도래_재계약",
@@ -26371,7 +26371,7 @@ const TARGETS = [
     },
     {
         "name": "삼주국민마트",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 무림리 208-5번지",
         "status": "약정만료",
@@ -26386,7 +26386,7 @@ const TARGETS = [
     },
     {
         "name": "삼주국민마트",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 무림리208-5",
         "status": "약정만료",
@@ -26401,7 +26401,7 @@ const TARGETS = [
     },
     {
         "name": "삼주국민마트",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 신곡동 719-2 백상프라자지하",
         "status": "약정만료",
@@ -26416,7 +26416,7 @@ const TARGETS = [
     },
     {
         "name": "삼주국민마트",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 무림리208-5",
         "status": "약정만료",
@@ -26431,7 +26431,7 @@ const TARGETS = [
     },
     {
         "name": "삼척시청",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 미로면 사둔리 사둔리 115",
         "status": "약정만료",
@@ -26446,7 +26446,7 @@ const TARGETS = [
     },
     {
         "name": "삼척시청",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 근덕면 장호리",
         "status": "약정만료",
@@ -26461,7 +26461,7 @@ const TARGETS = [
     },
     {
         "name": "삼척시청",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 근덕면 용화리",
         "status": "약정만료",
@@ -26476,7 +26476,7 @@ const TARGETS = [
     },
     {
         "name": "삼척시청",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 근덕면 용화리 14-5",
         "status": "약정만료",
@@ -26491,7 +26491,7 @@ const TARGETS = [
     },
     {
         "name": "삼척시청",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 근덕면 궁촌리 146-1",
         "status": "약정만료",
@@ -26506,7 +26506,7 @@ const TARGETS = [
     },
     {
         "name": "삼척시청",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 근덕면 궁촌리 146-1 (공양왕길 2)",
         "status": "약정만료",
@@ -26521,7 +26521,7 @@ const TARGETS = [
     },
     {
         "name": "삼척시청",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 남양동 중앙시장1길 18",
         "status": "약정만료",
@@ -26536,7 +26536,7 @@ const TARGETS = [
     },
     {
         "name": "삼천리수락산프라자",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계1동 1132-144",
         "status": "약정만료",
@@ -26551,7 +26551,7 @@ const TARGETS = [
     },
     {
         "name": "삼팔횟집",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 현북면 기사문리98",
         "status": "약정만료",
@@ -26566,7 +26566,7 @@ const TARGETS = [
     },
     {
         "name": "삼호물산",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 남면 상수리 664-7",
         "status": "약정만료",
@@ -26581,7 +26581,7 @@ const TARGETS = [
     },
     {
         "name": "삼흥피엠테크(OCT)",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 광적면 석우리 265-1",
         "status": "약정만료",
@@ -26596,7 +26596,7 @@ const TARGETS = [
     },
     {
         "name": "상봉베스트원아파트",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 상봉동 101-10번지",
         "status": "약정만료",
@@ -26611,7 +26611,7 @@ const TARGETS = [
     },
     {
         "name": "상영교회",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 중계동 360-17",
         "status": "약정만료",
@@ -26626,7 +26626,7 @@ const TARGETS = [
     },
     {
         "name": "상장회사진흥원",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 대흥동 독막로 279 지하1층",
         "status": "약정만료",
@@ -26641,7 +26641,7 @@ const TARGETS = [
     },
     {
         "name": "상장회사진흥원",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 대흥동 독막로 279 (3층상장회사회관)",
         "status": "약정만료",
@@ -26656,7 +26656,7 @@ const TARGETS = [
     },
     {
         "name": "상하이문",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 식사동 1537-4",
         "status": "약정만료",
@@ -26671,7 +26671,7 @@ const TARGETS = [
     },
     {
         "name": "새마을구판장",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 622-40  123층",
         "status": "약정만료",
@@ -26686,7 +26686,7 @@ const TARGETS = [
     },
     {
         "name": "새마을구판장",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 640",
         "status": "약정만료",
@@ -26701,7 +26701,7 @@ const TARGETS = [
     },
     {
         "name": "새마을구판장",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 640",
         "status": "약정만료",
@@ -26716,7 +26716,7 @@ const TARGETS = [
     },
     {
         "name": "새마을구판장",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 622-40",
         "status": "약정만료",
@@ -26731,7 +26731,7 @@ const TARGETS = [
     },
     {
         "name": "새마을구판장",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 640",
         "status": "약정만료",
@@ -26746,7 +26746,7 @@ const TARGETS = [
     },
     {
         "name": "새마을구판장",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 640",
         "status": "약정만료",
@@ -26761,7 +26761,7 @@ const TARGETS = [
     },
     {
         "name": "새비지가든",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 이태원동 258-63번지 지하1층12층",
         "status": "만기도래_신규(1st)",
@@ -26776,7 +26776,7 @@ const TARGETS = [
     },
     {
         "name": "새비지가든",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 이태원동 258-69번지",
         "status": "만기도래_신규(1st)",
@@ -26791,7 +26791,7 @@ const TARGETS = [
     },
     {
         "name": "새비지가든",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 연남동 390-72 1층복층",
         "status": "만기도래_신규(1st)",
@@ -26806,7 +26806,7 @@ const TARGETS = [
     },
     {
         "name": "새튼재활의학과의원",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 창동 75-13  235층",
         "status": "만기도래_신규(1st)",
@@ -26821,7 +26821,7 @@ const TARGETS = [
     },
     {
         "name": "새한신용정보(주)",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단구동 늘품로 110",
         "status": "약정만료",
@@ -26836,7 +26836,7 @@ const TARGETS = [
     },
     {
         "name": "새희망둥지",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 설문동 701-3",
         "status": "약정만료",
@@ -26851,7 +26851,7 @@ const TARGETS = [
     },
     {
         "name": "샛별어린이집",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 동면 장학리 220-34",
         "status": "약정만료",
@@ -26866,7 +26866,7 @@ const TARGETS = [
     },
     {
         "name": "샛별어린이집",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 동면 장학리 220-34 1층",
         "status": "만기도래_신규(1st)",
@@ -26881,7 +26881,7 @@ const TARGETS = [
     },
     {
         "name": "생수의집",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 군내면 직두리 직두리 155-5번지",
         "status": "약정만료",
@@ -26896,7 +26896,7 @@ const TARGETS = [
     },
     {
         "name": "생협학생회관",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 신촌동 연세대학교",
         "status": "약정만료",
@@ -26911,7 +26911,7 @@ const TARGETS = [
     },
     {
         "name": "생협학생회관",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 신촌동 연세대학교",
         "status": "약정만료",
@@ -26926,7 +26926,7 @@ const TARGETS = [
     },
     {
         "name": "생협학생회관",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 신촌동 연세대학교",
         "status": "약정만료",
@@ -26941,7 +26941,7 @@ const TARGETS = [
     },
     {
         "name": "생협학생회관",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 신촌동 연세대학교",
         "status": "약정만료",
@@ -26956,7 +26956,7 @@ const TARGETS = [
     },
     {
         "name": "서교이레",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 476-46",
         "status": "약정만료",
@@ -26971,7 +26971,7 @@ const TARGETS = [
     },
     {
         "name": "서대문구가족센터",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 연희동 740 관리사무소 2층",
         "status": "약정만료",
@@ -26986,7 +26986,7 @@ const TARGETS = [
     },
     {
         "name": "서대문구가족센터",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서대문구 북가좌동 증가로 244 2층",
         "status": "약정만료",
@@ -27001,7 +27001,7 @@ const TARGETS = [
     },
     {
         "name": "서대문구가족센터",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 서대문구 홍제1동 85-1 자치회관2층",
         "status": "약정만료",
@@ -27016,7 +27016,7 @@ const TARGETS = [
     },
     {
         "name": "서대문구가족센터",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서대문구 북가좌동 333-5번지 3층",
         "status": "약정만료",
@@ -27031,7 +27031,7 @@ const TARGETS = [
     },
     {
         "name": "서대문구도시관리공단",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 현저동 101 서대문형무소역사관",
         "status": "약정만료",
@@ -27046,7 +27046,7 @@ const TARGETS = [
     },
     {
         "name": "서대문구도시관리공단",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 현저동 101 서대문형무소역사관",
         "status": "약정만료",
@@ -27061,7 +27061,7 @@ const TARGETS = [
     },
     {
         "name": "서대문구도시관리공단",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 현저동 101 서대문형무소역사관",
         "status": "약정만료",
@@ -27076,7 +27076,7 @@ const TARGETS = [
     },
     {
         "name": "서대문구도시관리공단",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 현저동 101 서대문형무소역사관",
         "status": "약정만료",
@@ -27091,7 +27091,7 @@ const TARGETS = [
     },
     {
         "name": "서대문구도시관리공단",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 현저동 101 독립공원 서대문형무소역사관",
         "status": "약정만료",
@@ -27106,7 +27106,7 @@ const TARGETS = [
     },
     {
         "name": "서대문구도시관리공단",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 현저동 101 독립공원 서대문형무소역사관",
         "status": "약정만료",
@@ -27121,7 +27121,7 @@ const TARGETS = [
     },
     {
         "name": "서대문구도시관리공단",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 현저동 101 독립공원 서대문형무소역사관",
         "status": "약정만료",
@@ -27136,7 +27136,7 @@ const TARGETS = [
     },
     {
         "name": "서대문구도시관리공단",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 현저동 101 독립공원 서대문형무소역사관",
         "status": "약정만료",
@@ -27151,7 +27151,7 @@ const TARGETS = [
     },
     {
         "name": "서대문구도시관리공단",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 현저동 101 독립공원 서대문형무소역사관",
         "status": "약정만료",
@@ -27166,7 +27166,7 @@ const TARGETS = [
     },
     {
         "name": "서대문구도시관리공단",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 현저동 101 독립공원 서대문형무소역사관",
         "status": "약정만료",
@@ -27181,7 +27181,7 @@ const TARGETS = [
     },
     {
         "name": "서대문구도시관리공단",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 현저동 101 독립공원 서대문형무소역사관",
         "status": "약정만료",
@@ -27196,7 +27196,7 @@ const TARGETS = [
     },
     {
         "name": "서대문구도시관리공단",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 현저동 101 독립공원 서대문형무소역사관",
         "status": "약정만료",
@@ -27211,7 +27211,7 @@ const TARGETS = [
     },
     {
         "name": "서대문구도시관리공단",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 현저동 101 독립공원 서대문형무소역사관",
         "status": "약정만료",
@@ -27226,7 +27226,7 @@ const TARGETS = [
     },
     {
         "name": "서림관광개발 유한회사(구:서림호텔)",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 진부면 하진부리 100-23",
         "status": "약정만료",
@@ -27241,7 +27241,7 @@ const TARGETS = [
     },
     {
         "name": "서부약국",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 651-2 (삼전빌딩101호)",
         "status": "약정만료",
@@ -27256,7 +27256,7 @@ const TARGETS = [
     },
     {
         "name": "서스테인어블 해빗",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동1가 685-484번지 지하1층~지상4층",
         "status": "만기도래_신규(1st)",
@@ -27271,7 +27271,7 @@ const TARGETS = [
     },
     {
         "name": "서연종합모터스리사이클",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 남면 입암리 390-1",
         "status": "약정만료",
@@ -27286,7 +27286,7 @@ const TARGETS = [
     },
     {
         "name": "서우물류창고",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 조리읍 대원리 대원리 814-11",
         "status": "약정만료",
@@ -27301,7 +27301,7 @@ const TARGETS = [
     },
     {
         "name": "서울N비뇨의학과의원",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 728-5번지 6층",
         "status": "만기도래_신규(1st)",
@@ -27316,7 +27316,7 @@ const TARGETS = [
     },
     {
         "name": "서울건우정형외과의원",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 공릉동 420-2번지 공릉동평화타운 301호",
         "status": "만기도래_신규(1st)",
@@ -27331,7 +27331,7 @@ const TARGETS = [
     },
     {
         "name": "서울노보스병원",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 방학동 705-4 별관",
         "status": "만기도래_신규(1st)",
@@ -27346,7 +27346,7 @@ const TARGETS = [
     },
     {
         "name": "서울노보스병원",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 방학동 705-4 서울노보스병원 본관",
         "status": "만기도래_신규(1st)",
@@ -27361,7 +27361,7 @@ const TARGETS = [
     },
     {
         "name": "서울니어치과",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 지정면 가곡리 1348-7 센트럴타워3층  원주니어치과",
         "status": "약정만료",
@@ -27376,7 +27376,7 @@ const TARGETS = [
     },
     {
         "name": "서울대",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 종로구 이화동 149번지",
         "status": "약정만료",
@@ -27391,7 +27391,7 @@ const TARGETS = [
     },
     {
         "name": "서울대",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 토평동 997-1번지 401호",
         "status": "만기도래_신규(1st)",
@@ -27406,7 +27406,7 @@ const TARGETS = [
     },
     {
         "name": "서울대",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리 634-4번지 장현프라자 318호",
         "status": "약정만료",
@@ -27421,7 +27421,7 @@ const TARGETS = [
     },
     {
         "name": "서울동천학교",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 하계동 288-1 서울동천학교",
         "status": "약정만료",
@@ -27436,7 +27436,7 @@ const TARGETS = [
     },
     {
         "name": "서울동천학교",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 하계동 288-1 서울동천학교",
         "status": "만기도래_신규(1st)",
@@ -27451,7 +27451,7 @@ const TARGETS = [
     },
     {
         "name": "서울라이즈요양병원",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 수택동 515-63번지 5층 출입통제",
         "status": "약정만료",
@@ -27466,7 +27466,7 @@ const TARGETS = [
     },
     {
         "name": "서울리온치과의원",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 호평동 638-1번지 늘봄타워12층",
         "status": "약정만료",
@@ -27481,7 +27481,7 @@ const TARGETS = [
     },
     {
         "name": "서울문화고등학교",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 방학동 723번지(서울문화고등학교)",
         "status": "약정만료",
@@ -27496,7 +27496,7 @@ const TARGETS = [
     },
     {
         "name": "서울문화고등학교",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 방학1동 723 문화고등학교내 골프연습장",
         "status": "약정만료",
@@ -27511,7 +27511,7 @@ const TARGETS = [
     },
     {
         "name": "서울미르한방병원(가드)",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 공릉동 323-2번지 공삼빌딩 2층",
         "status": "약정만료",
@@ -27526,7 +27526,7 @@ const TARGETS = [
     },
     {
         "name": "서울상천초등학교-식당(확장2)",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 768번지",
         "status": "약정만료",
@@ -27541,7 +27541,7 @@ const TARGETS = [
     },
     {
         "name": "서울시선거관리위원회",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 동소문동4가 260번지 7층",
         "status": "약정만료",
@@ -27556,7 +27556,7 @@ const TARGETS = [
     },
     {
         "name": "서울시선거관리위원회",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 용산구 서계동 청파로 89길 31번지 코레일유통 서울지사 2층",
         "status": "약정만료",
@@ -27571,7 +27571,7 @@ const TARGETS = [
     },
     {
         "name": "서울시선거관리위원회",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 연희동 87-9번지",
         "status": "약정만료",
@@ -27586,7 +27586,7 @@ const TARGETS = [
     },
     {
         "name": "서울시청",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 성동구 마장동 527 서울시 청운복지관 전층",
         "status": "약정만료",
@@ -27601,7 +27601,7 @@ const TARGETS = [
     },
     {
         "name": "서울시청",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 성동구 마장동 610-4",
         "status": "약정만료",
@@ -27616,7 +27616,7 @@ const TARGETS = [
     },
     {
         "name": "서울시청",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 성동구 마장동 802-2 청계천 생태교실 청계천생태학교",
         "status": "약정만료",
@@ -27631,7 +27631,7 @@ const TARGETS = [
     },
     {
         "name": "서울시청",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동  1535-3 3층",
         "status": "약정만료",
@@ -27646,7 +27646,7 @@ const TARGETS = [
     },
     {
         "name": "서울시청",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 삼각동 66-3번지 광료 다리(신한은행건너길)",
         "status": "약정만료",
@@ -27661,7 +27661,7 @@ const TARGETS = [
     },
     {
         "name": "서울신당초등학교",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 161 신당초등학교",
         "status": "약정만료",
@@ -27676,7 +27676,7 @@ const TARGETS = [
     },
     {
         "name": "서울신세계안과의원",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 175-10",
         "status": "약정만료",
@@ -27691,7 +27691,7 @@ const TARGETS = [
     },
     {
         "name": "서울신세계안과의원",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 175-10 나이키빌딩 5층11층",
         "status": "약정만료",
@@ -27706,7 +27706,7 @@ const TARGETS = [
     },
     {
         "name": "서울신세계안과의원",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 175-10번지 나이키빌딩4층",
         "status": "약정만료",
@@ -27721,7 +27721,7 @@ const TARGETS = [
     },
     {
         "name": "서울안심치과의원",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서대문구 남가좌동 295-10번지 3층",
         "status": "약정만료",
@@ -27736,7 +27736,7 @@ const TARGETS = [
     },
     {
         "name": "서울양주요양원(뷰N)",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 회암동 천보산로71번길123(회암동)",
         "status": "만기도래_재계약",
@@ -27751,7 +27751,7 @@ const TARGETS = [
     },
     {
         "name": "서울역쪽방상담소",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 동자동 9-3번지 1층2호",
         "status": "만기도래_신규(1st)",
@@ -27766,7 +27766,7 @@ const TARGETS = [
     },
     {
         "name": "서울역쪽방상담소",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 동자동 9-7번지",
         "status": "약정만료",
@@ -27781,7 +27781,7 @@ const TARGETS = [
     },
     {
         "name": "서울옥 주식회사",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 북창동 13-2번지 르서울호텔 3층",
         "status": "만기도래_신규(1st)",
@@ -27796,7 +27796,7 @@ const TARGETS = [
     },
     {
         "name": "서울원플러스의원(GiGAeyes i-guard)",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 703-5 2층3층",
         "status": "만기도래_신규(1st)",
@@ -27811,7 +27811,7 @@ const TARGETS = [
     },
     {
         "name": "서울의약",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 장위동 75-429 웅진출판 4층지하1층",
         "status": "약정만료",
@@ -27826,7 +27826,7 @@ const TARGETS = [
     },
     {
         "name": "서울주니어스치과",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 목동동 933-1 신우빌딩2층",
         "status": "약정만료",
@@ -27841,7 +27841,7 @@ const TARGETS = [
     },
     {
         "name": "서울주택도시공사",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 면목동 193-49 1층",
         "status": "약정만료",
@@ -27856,7 +27856,7 @@ const TARGETS = [
     },
     {
         "name": "서울중부치과의원",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 을지로4가 323번지 을지트윈타워 3층 301호",
         "status": "약정만료",
@@ -27871,7 +27871,7 @@ const TARGETS = [
     },
     {
         "name": "서울지방노동청",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 남문동 175-3",
         "status": "약정만료",
@@ -27886,7 +27886,7 @@ const TARGETS = [
     },
     {
         "name": "서울지방노동청",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 남문동 175-3",
         "status": "약정만료",
@@ -27901,7 +27901,7 @@ const TARGETS = [
     },
     {
         "name": "서울탁주서부연합제조장(NVR뷰)",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 은평구 증산동 164-9",
         "status": "약정만료",
@@ -27916,7 +27916,7 @@ const TARGETS = [
     },
     {
         "name": "서울특별시 동부여성발전센터",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 9-13 서울특별시동부여성발전센타 1층",
         "status": "약정만료",
@@ -27931,7 +27931,7 @@ const TARGETS = [
     },
     {
         "name": "서울특별시 동부여성발전센터",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 9-13 번지 1층 지하1층",
         "status": "약정만료",
@@ -27946,7 +27946,7 @@ const TARGETS = [
     },
     {
         "name": "서울특별시 동부여성발전센터",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 9-13",
         "status": "약정만료",
@@ -27961,7 +27961,7 @@ const TARGETS = [
     },
     {
         "name": "서울특별시 동부여성발전센터",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 9-13번지2층",
         "status": "약정만료",
@@ -27976,7 +27976,7 @@ const TARGETS = [
     },
     {
         "name": "서울특별시경계선지능인평생교육지원센터",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 태평로1가 60-17번지 태성빌딩 403호",
         "status": "약정만료",
@@ -27991,7 +27991,7 @@ const TARGETS = [
     },
     {
         "name": "서울특별시동부공원녹지사업소",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진건읍 사능리 산5-1 (315-5)",
         "status": "만기도래_재계약",
@@ -28006,7 +28006,7 @@ const TARGETS = [
     },
     {
         "name": "서울특별시동부공원녹지사업소",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 연평리 564",
         "status": "만기도래_재계약",
@@ -28021,7 +28021,7 @@ const TARGETS = [
     },
     {
         "name": "서울특별시동부공원녹지사업소",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 갈매동 387-15",
         "status": "만기도래_재계약",
@@ -28036,7 +28036,7 @@ const TARGETS = [
     },
     {
         "name": "서울특별시중부푸른도시사업소",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 종로구 창신3동 9-471",
         "status": "약정만료",
@@ -28051,7 +28051,7 @@ const TARGETS = [
     },
     {
         "name": "서울특별시중부푸른도시사업소",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 종로구 동숭동 산2-10",
         "status": "약정만료",
@@ -28066,7 +28066,7 @@ const TARGETS = [
     },
     {
         "name": "서울특별시중부푸른도시사업소",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 용산동6가 68-90 용산가족공원 관리사무실",
         "status": "약정만료",
@@ -28081,7 +28081,7 @@ const TARGETS = [
     },
     {
         "name": "서정대학교",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 은현면 용암리681-1",
         "status": "약정만료",
@@ -28096,7 +28096,7 @@ const TARGETS = [
     },
     {
         "name": "서정대학교",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 은현면 용암리681-1",
         "status": "약정만료",
@@ -28111,7 +28111,7 @@ const TARGETS = [
     },
     {
         "name": "서정대학교",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 은현면 용암리681-1",
         "status": "약정만료",
@@ -28126,7 +28126,7 @@ const TARGETS = [
     },
     {
         "name": "서정대학교",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 은현면 용암리 681-1번지",
         "status": "약정만료",
@@ -28141,7 +28141,7 @@ const TARGETS = [
     },
     {
         "name": "서정대학교",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 은현면용암리 681-1번지",
         "status": "약정만료",
@@ -28156,7 +28156,7 @@ const TARGETS = [
     },
     {
         "name": "서정대학교",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 은현면 용암리681-1",
         "status": "약정만료",
@@ -28171,7 +28171,7 @@ const TARGETS = [
     },
     {
         "name": "서종메탈하우스",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 서종면 문호리 790-11번지",
         "status": "약정만료",
@@ -28186,7 +28186,7 @@ const TARGETS = [
     },
     {
         "name": "서진섬유",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 상월곡동 23-27",
         "status": "약정만료",
@@ -28201,7 +28201,7 @@ const TARGETS = [
     },
     {
         "name": "서쪽하늘",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 문산읍내포리 821-5",
         "status": "만기도래_신규(1st)",
@@ -28216,7 +28216,7 @@ const TARGETS = [
     },
     {
         "name": "서평화상가",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 214-1 서평화상가 6층 관리사무실",
         "status": "약정만료",
@@ -28231,7 +28231,7 @@ const TARGETS = [
     },
     {
         "name": "서화파프리카영농조합법인",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 인제군 서화면 서화리 709 1층",
         "status": "약정만료",
@@ -28246,7 +28246,7 @@ const TARGETS = [
     },
     {
         "name": "서희스타힐스 아파트 패트롤 셀프",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 연곡면 동덕리 492-8 연주로 281",
         "status": "약정만료",
@@ -28261,7 +28261,7 @@ const TARGETS = [
     },
     {
         "name": "선명푸드",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 산곡동 621-6번지",
         "status": "약정만료",
@@ -28276,7 +28276,7 @@ const TARGETS = [
     },
     {
         "name": "선미한과",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 사천면 한과마을길 22-39",
         "status": "약정만료",
@@ -28291,7 +28291,7 @@ const TARGETS = [
     },
     {
         "name": "선미한과",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 사천면 노동리 87-4",
         "status": "약정만료",
@@ -28306,7 +28306,7 @@ const TARGETS = [
     },
     {
         "name": "선일이엠씨",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 일동면 유동리 480-3",
         "status": "만기도래_신규(1st)",
@@ -28321,7 +28321,7 @@ const TARGETS = [
     },
     {
         "name": "선해식품",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 고성군 죽왕면 송지호로15-35",
         "status": "약정만료",
@@ -28336,7 +28336,7 @@ const TARGETS = [
     },
     {
         "name": "설성푸드㈜",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 지정면 가곡리 1283-1 .",
         "status": "약정만료",
@@ -28351,7 +28351,7 @@ const TARGETS = [
     },
     {
         "name": "설성푸드㈜",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 지정면 가곡리 1283-1 (설성식품)",
         "status": "약정만료",
@@ -28366,7 +28366,7 @@ const TARGETS = [
     },
     {
         "name": "성대자동차해체재활용산업",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 북방면 상화계리 227",
         "status": "약정만료",
@@ -28381,7 +28381,7 @@ const TARGETS = [
     },
     {
         "name": "성동구청",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 성동구 응봉동 3-10번지",
         "status": "약정만료",
@@ -28396,7 +28396,7 @@ const TARGETS = [
     },
     {
         "name": "성동구청",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 성동구 옥수동 168-1번지1층",
         "status": "약정만료",
@@ -28411,7 +28411,7 @@ const TARGETS = [
     },
     {
         "name": "성락침례교회",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 가평읍 읍내리 634",
         "status": "약정만료",
@@ -28426,7 +28426,7 @@ const TARGETS = [
     },
     {
         "name": "성락침례교회",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 효자동 757",
         "status": "약정만료",
@@ -28441,7 +28441,7 @@ const TARGETS = [
     },
     {
         "name": "성바오로딸수도회",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 103 2층",
         "status": "약정만료",
@@ -28456,7 +28456,7 @@ const TARGETS = [
     },
     {
         "name": "성바오로딸수도회",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 103 45층",
         "status": "약정만료",
@@ -28471,7 +28471,7 @@ const TARGETS = [
     },
     {
         "name": "성바오로딸수도회",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 103 지하",
         "status": "약정만료",
@@ -28486,7 +28486,7 @@ const TARGETS = [
     },
     {
         "name": "성바오로딸수도회",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 103 3층",
         "status": "약정만료",
@@ -28501,7 +28501,7 @@ const TARGETS = [
     },
     {
         "name": "성바오로딸수도회",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 103 1층",
         "status": "약정만료",
@@ -28516,7 +28516,7 @@ const TARGETS = [
     },
     {
         "name": "성북구청",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 동선동4가 190 번지",
         "status": "약정만료",
@@ -28531,7 +28531,7 @@ const TARGETS = [
     },
     {
         "name": "성북구청",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 성북구 성북동1가  35-29번지 4층",
         "status": "약정만료",
@@ -28546,7 +28546,7 @@ const TARGETS = [
     },
     {
         "name": "성북구청",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 동선동4가 190번지",
         "status": "약정만료",
@@ -28561,7 +28561,7 @@ const TARGETS = [
     },
     {
         "name": "성수동대림창고갤러리",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 성수이로 78 1층좌측",
         "status": "약정만료",
@@ -28576,7 +28576,7 @@ const TARGETS = [
     },
     {
         "name": "성이바이오(주)",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 지정면 가곡리 1048번지 성이바이오",
         "status": "약정만료",
@@ -28591,7 +28591,7 @@ const TARGETS = [
     },
     {
         "name": "성이바이오(주)",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 지정면 신평리 1048 성이바이오(주) 1층",
         "status": "약정만료",
@@ -28606,7 +28606,7 @@ const TARGETS = [
     },
     {
         "name": "세광음악출판사",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 장곡리 294-2",
         "status": "약정만료",
@@ -28621,7 +28621,7 @@ const TARGETS = [
     },
     {
         "name": "세라블라썸코리아(주)",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 별내동 933번지",
         "status": "약정만료",
@@ -28636,7 +28636,7 @@ const TARGETS = [
     },
     {
         "name": "세라블라썸코리아(주)",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 가곡리 279-26",
         "status": "약정만료",
@@ -28651,7 +28651,7 @@ const TARGETS = [
     },
     {
         "name": "세라블라썸코리아(주)",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 가곡리 158-53",
         "status": "만기도래_신규(1st)",
@@ -28666,7 +28666,7 @@ const TARGETS = [
     },
     {
         "name": "세라블라썸코리아(주)",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 가곡리 158-53(비룡로360번길22-27)",
         "status": "만기도래_신규(1st)",
@@ -28681,7 +28681,7 @@ const TARGETS = [
     },
     {
         "name": "세라블라썸코리아(주)",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 가곡리 279-26 구(동양산업건물)",
         "status": "약정만료",
@@ -28696,7 +28696,7 @@ const TARGETS = [
     },
     {
         "name": "세라블라썸코리아(주)",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 별내동  932-2 1층 (별내동)",
         "status": "약정만료",
@@ -28711,7 +28711,7 @@ const TARGETS = [
     },
     {
         "name": "세라블라썸코리아(주)",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 별내동 932-2 2층 (별내동 하얀)",
         "status": "만기도래_신규(1st)",
@@ -28726,7 +28726,7 @@ const TARGETS = [
     },
     {
         "name": "세방산업",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 토평동  283-7 . (토평동)",
         "status": "약정만료",
@@ -28741,7 +28741,7 @@ const TARGETS = [
     },
     {
         "name": "세방산업",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 토평동 283-7",
         "status": "약정만료",
@@ -28756,7 +28756,7 @@ const TARGETS = [
     },
     {
         "name": "세브란스병원",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 대신동 115번지",
         "status": "약정만료",
@@ -28771,7 +28771,7 @@ const TARGETS = [
     },
     {
         "name": "세븐업",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 방학동 703-56",
         "status": "약정만료",
@@ -28786,7 +28786,7 @@ const TARGETS = [
     },
     {
         "name": "세븐업",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 묵동 묵동 176-39 칼튼테라스 주식회사플랜",
         "status": "약정만료",
@@ -28801,7 +28801,7 @@ const TARGETS = [
     },
     {
         "name": "세븐업",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 724 근호빌딩 1층",
         "status": "만기도래_신규(1st)",
@@ -28816,7 +28816,7 @@ const TARGETS = [
     },
     {
         "name": "세븐업",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 창동 3-4(1층)",
         "status": "약정만료",
@@ -28831,7 +28831,7 @@ const TARGETS = [
     },
     {
         "name": "세븐업",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 176-10",
         "status": "약정만료",
@@ -28846,7 +28846,7 @@ const TARGETS = [
     },
     {
         "name": "세븐업",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 민락동 812-1진산프라자27층",
         "status": "약정만료",
@@ -28861,7 +28861,7 @@ const TARGETS = [
     },
     {
         "name": "세븐업",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 민락동 813-3번지 112호",
         "status": "만기도래_신규(1st)",
@@ -28876,7 +28876,7 @@ const TARGETS = [
     },
     {
         "name": "세븐업",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 창동 74-25번지",
         "status": "약정만료",
@@ -28891,7 +28891,7 @@ const TARGETS = [
     },
     {
         "name": "세영식품(주)",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 효자동 산 25",
         "status": "약정만료",
@@ -28906,7 +28906,7 @@ const TARGETS = [
     },
     {
         "name": "세원박스",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산리 295-1",
         "status": "약정만료",
@@ -28921,7 +28921,7 @@ const TARGETS = [
     },
     {
         "name": "세인블루",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 부론면 노림리 881-2",
         "status": "만기도래_재계약",
@@ -28936,7 +28936,7 @@ const TARGETS = [
     },
     {
         "name": "세인블루",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 부론면 법천리 1473-3",
         "status": "만기도래_재계약",
@@ -28951,7 +28951,7 @@ const TARGETS = [
     },
     {
         "name": "세정상사(주)",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 용강동 토정로259 세정빌딩",
         "status": "약정만료",
@@ -28966,7 +28966,7 @@ const TARGETS = [
     },
     {
         "name": "세정상사(주)",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 용강동 494-38 세정빌딩 1층",
         "status": "약정만료",
@@ -28981,7 +28981,7 @@ const TARGETS = [
     },
     {
         "name": "한국통상물류(주)",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 구산동 251-26",
         "status": "만기도래_신규(1st)",
@@ -28996,7 +28996,7 @@ const TARGETS = [
     },
     {
         "name": "소금산막국수",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 지정면 월송리 992번지 (1동 1층)",
         "status": "약정만료",
@@ -29011,7 +29011,7 @@ const TARGETS = [
     },
     {
         "name": "소방동료상담소",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 금곡동 681-19",
         "status": "약정만료",
@@ -29026,7 +29026,7 @@ const TARGETS = [
     },
     {
         "name": "소양강가든",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 상면 연하리 217-1",
         "status": "약정만료",
@@ -29041,7 +29041,7 @@ const TARGETS = [
     },
     {
         "name": "속진수산유통협동조합",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 장사동 577 .",
         "status": "만기도래_신규(1st)",
@@ -29056,7 +29056,7 @@ const TARGETS = [
     },
     {
         "name": "속초교육청속초유치원",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 영랑동 영랑초교(내)",
         "status": "약정만료",
@@ -29071,7 +29071,7 @@ const TARGETS = [
     },
     {
         "name": "속초교육청속초유치원",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 영랑동 163-1 영랑초등학교(내)",
         "status": "약정만료",
@@ -29086,7 +29086,7 @@ const TARGETS = [
     },
     {
         "name": "속초덕장-대포",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 대포동 976-2 속초덕장",
         "status": "만기도래_신규(1st)",
@@ -29101,7 +29101,7 @@ const TARGETS = [
     },
     {
         "name": "속초반야지역자활센터",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 동명동 450-224 희망나르미",
         "status": "약정만료",
@@ -29116,7 +29116,7 @@ const TARGETS = [
     },
     {
         "name": "속초반야지역자활센터",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 교동 781-60 속초스파랜드 203호",
         "status": "만기도래_재계약",
@@ -29131,7 +29131,7 @@ const TARGETS = [
     },
     {
         "name": "속초반야지역자활센터",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 교동 800-8 .",
         "status": "만기도래_재계약",
@@ -29146,7 +29146,7 @@ const TARGETS = [
     },
     {
         "name": "속초반야지역자활센터",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 교동 970-7 속초반야지역자활센터-엄마손도시락",
         "status": "만기도래_재계약",
@@ -29161,7 +29161,7 @@ const TARGETS = [
     },
     {
         "name": "속초반야지역자활센터",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 교동 800-8 .",
         "status": "만기도래_재계약",
@@ -29176,7 +29176,7 @@ const TARGETS = [
     },
     {
         "name": "속초반야지역자활센터",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 대포동 158-11 속초반야지역자활센터-햇살영농",
         "status": "만기도래_재계약",
@@ -29191,7 +29191,7 @@ const TARGETS = [
     },
     {
         "name": "속초반야지역자활센터",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 장사동 632-53 .",
         "status": "만기도래_재계약",
@@ -29206,7 +29206,7 @@ const TARGETS = [
     },
     {
         "name": "속초스테이온담",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 청학동 482-69번지 1층",
         "status": "만기도래_신규(1st)",
@@ -29221,7 +29221,7 @@ const TARGETS = [
     },
     {
         "name": "속초시청",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 대포동 942 동해안젓갈컴플렉스센터",
         "status": "약정만료",
@@ -29236,7 +29236,7 @@ const TARGETS = [
     },
     {
         "name": "속초신협협동조합",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 조양동 1515-3 속초신협신",
         "status": "약정만료",
@@ -29251,7 +29251,7 @@ const TARGETS = [
     },
     {
         "name": "속초신협협동조합",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 조양동 1515-3 속초신협사옥",
         "status": "약정만료",
@@ -29266,7 +29266,7 @@ const TARGETS = [
     },
     {
         "name": "속초정요양병원",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 조양동 1013-1",
         "status": "약정만료",
@@ -29281,7 +29281,7 @@ const TARGETS = [
     },
     {
         "name": "속초청호아이파크-속초(view-nvr)",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 청호동 청호로22",
         "status": "약정만료",
@@ -29296,7 +29296,7 @@ const TARGETS = [
     },
     {
         "name": "손기현",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 금촌동 469-3번지",
         "status": "약정만료",
@@ -29311,7 +29311,7 @@ const TARGETS = [
     },
     {
         "name": "솔푸드",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 횡성읍 내지리 105-1 (주)다우시스템 .",
         "status": "약정만료",
@@ -29326,7 +29326,7 @@ const TARGETS = [
     },
     {
         "name": "송곡대학교(카페승마장)",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 남산면 창촌리 1 송곡대학교 카페 승마장",
         "status": "만기도래_신규(1st)",
@@ -29341,7 +29341,7 @@ const TARGETS = [
     },
     {
         "name": "송월관",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 생연2동 683-24",
         "status": "약정만료",
@@ -29356,7 +29356,7 @@ const TARGETS = [
     },
     {
         "name": "송월관",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 생연2동 683-24",
         "status": "약정만료",
@@ -29371,7 +29371,7 @@ const TARGETS = [
     },
     {
         "name": "송포프라자관리단",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 가좌동 일산서구 송산로 434 (송포프라자)",
         "status": "만기도래_신규(1st)",
@@ -29386,7 +29386,7 @@ const TARGETS = [
     },
     {
         "name": "수산물건조가공협의회",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 주문진읍 농공단지길 40",
         "status": "약정만료",
@@ -29401,7 +29401,7 @@ const TARGETS = [
     },
     {
         "name": "수정전자산업",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 서대문구 홍제동 35-1번지",
         "status": "만기도래_재계약",
@@ -29416,7 +29416,7 @@ const TARGETS = [
     },
     {
         "name": "수정전자산업",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 서대문구 홍제동 35-1번지",
         "status": "만기도래_재계약",
@@ -29431,7 +29431,7 @@ const TARGETS = [
     },
     {
         "name": "수정전자산업",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 서대문구 홍제동 35-1번지",
         "status": "만기도래_신규(1st)",
@@ -29446,7 +29446,7 @@ const TARGETS = [
     },
     {
         "name": "수택1동행정복지센터 4층(GiGAeyes guard)",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 수택동 526-4",
         "status": "약정만료",
@@ -29461,7 +29461,7 @@ const TARGETS = [
     },
     {
         "name": "수피젠",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 236-34번지 하나빌딩 (의정부동하나빌딩)234층",
         "status": "약정만료",
@@ -29476,7 +29476,7 @@ const TARGETS = [
     },
     {
         "name": "숨(OCT)",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 고모리 735-1",
         "status": "약정만료",
@@ -29491,7 +29491,7 @@ const TARGETS = [
     },
     {
         "name": "숨쉬는한의원(GiGAeyes guard)",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 민락동 804-5 파스텔시티3층",
         "status": "약정만료",
@@ -29506,7 +29506,7 @@ const TARGETS = [
     },
     {
         "name": "쉘모텔",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 동송읍 852-20  쉘모텔",
         "status": "만기도래_신규(1st)",
@@ -29521,7 +29521,7 @@ const TARGETS = [
     },
     {
         "name": "쉘모텔",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 이평리 852-20",
         "status": "약정만료",
@@ -29536,7 +29536,7 @@ const TARGETS = [
     },
     {
         "name": "쉘톤인터내셔날",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 종로구 창신1동 서울 종로구 종로44길 21 쉘톤빌딩",
         "status": "만기도래_신규(1st)",
@@ -29551,7 +29551,7 @@ const TARGETS = [
     },
     {
         "name": "스마일플란트치과",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 서강동 서울 마포구 서강로 105 화일빌딩  5층",
         "status": "만기도래_신규(1st)",
@@ -29566,7 +29566,7 @@ const TARGETS = [
     },
     {
         "name": "스카이라이프TV",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1596 상암DMC푸르지오시티 S-City 5층",
         "status": "약정만료",
@@ -29581,7 +29581,7 @@ const TARGETS = [
     },
     {
         "name": "스카이라이프TV",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1596 상암DMC푸르지오시티 S-City 45층",
         "status": "약정만료",
@@ -29596,7 +29596,7 @@ const TARGETS = [
     },
     {
         "name": "스타빌딩",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 관훈동 192-14",
         "status": "약정만료",
@@ -29611,7 +29611,7 @@ const TARGETS = [
     },
     {
         "name": "스타빌딩",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 광희동1가 115 1층",
         "status": "약정만료",
@@ -29626,7 +29626,7 @@ const TARGETS = [
     },
     {
         "name": "스타빌딩",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 광희동1가 2-1번지 1층",
         "status": "약정만료",
@@ -29641,7 +29641,7 @@ const TARGETS = [
     },
     {
         "name": "스타빌딩",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 관훈동 192-14 지하층 및 1층",
         "status": "만기도래_신규(1st)",
@@ -29656,7 +29656,7 @@ const TARGETS = [
     },
     {
         "name": "스타일앤코",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 연남동 259-15 지층~2층",
         "status": "약정만료",
@@ -29671,7 +29671,7 @@ const TARGETS = [
     },
     {
         "name": "스타주유소",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 화정동 907번지",
         "status": "약정만료",
@@ -29686,7 +29686,7 @@ const TARGETS = [
     },
     {
         "name": "스튜디오드래곤 DDMC",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 매봉산로75 동아디지털 미디어센터14층",
         "status": "약정만료",
@@ -29701,7 +29701,7 @@ const TARGETS = [
     },
     {
         "name": "스튜디오드래곤 DDMC",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 매봉산로75  1701호",
         "status": "약정만료",
@@ -29716,7 +29716,7 @@ const TARGETS = [
     },
     {
         "name": "스튜디오드래곤 DDMC",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1610 17층 1701호",
         "status": "약정만료",
@@ -29731,7 +29731,7 @@ const TARGETS = [
     },
     {
         "name": "스틸어라이브 ",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단계동 849-1 2층~3층",
         "status": "약정만료",
@@ -29746,7 +29746,7 @@ const TARGETS = [
     },
     {
         "name": "스페셜유",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 삼패동 593-2번지",
         "status": "약정만료",
@@ -29761,7 +29761,7 @@ const TARGETS = [
     },
     {
         "name": "스페이스독",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 연희동 194-25번지",
         "status": "약정만료",
@@ -29776,7 +29776,7 @@ const TARGETS = [
     },
     {
         "name": "스포애니",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 번동 418-1 코스타타워12층",
         "status": "약정만료",
@@ -29791,7 +29791,7 @@ const TARGETS = [
     },
     {
         "name": "스포츠메카",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 문봉동 232-1 가운데 창고",
         "status": "만기도래_신규(1st)",
@@ -29806,7 +29806,7 @@ const TARGETS = [
     },
     {
         "name": "승리공예",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 묘동 140 은조빌딩4층",
         "status": "약정만료",
@@ -29821,7 +29821,7 @@ const TARGETS = [
     },
     {
         "name": "시립다산사랑어린이집",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 다산1동 경기 남양주시 다산중앙로123번길 47  (메트로아파트 3단지내)",
         "status": "약정만료",
@@ -29836,7 +29836,7 @@ const TARGETS = [
     },
     {
         "name": "시립다산자이어린이집",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 다산동 6028 (다산중앙로153)",
         "status": "약정만료",
@@ -29851,7 +29851,7 @@ const TARGETS = [
     },
     {
         "name": "시립중랑청소년센터",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 면목동 1382-10번지",
         "status": "약정만료",
@@ -29866,7 +29866,7 @@ const TARGETS = [
     },
     {
         "name": "(사)차범근축구교실",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 청운동 38-1 1층",
         "status": "약정만료",
@@ -29881,7 +29881,7 @@ const TARGETS = [
     },
     {
         "name": "(주)강동시스템",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 풍동 1127-11 2층",
         "status": "약정만료",
@@ -29896,7 +29896,7 @@ const TARGETS = [
     },
     {
         "name": "시스템벤트주식회사",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 광적면 가납리 416-1 (2공장)",
         "status": "약정만료",
@@ -29911,7 +29911,7 @@ const TARGETS = [
     },
     {
         "name": "시스템벤트주식회사",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 광적면 가납리 416-1 (3공장)",
         "status": "약정만료",
@@ -29926,7 +29926,7 @@ const TARGETS = [
     },
     {
         "name": "시스템벤트주식회사",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 광적면 가납리 416-1 (1공장)",
         "status": "약정만료",
@@ -29941,7 +29941,7 @@ const TARGETS = [
     },
     {
         "name": "시스템벤트주식회사",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 하계동 250-3 하계테크노타운 A동801호",
         "status": "약정만료",
@@ -29956,7 +29956,7 @@ const TARGETS = [
     },
     {
         "name": "시스펜",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 묵정동 25-17번지 건물",
         "status": "만기도래_신규(1st)",
@@ -29971,7 +29971,7 @@ const TARGETS = [
     },
     {
         "name": "시온의집_oct뷰D",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 용현동 390-13",
         "status": "약정만료",
@@ -29986,7 +29986,7 @@ const TARGETS = [
     },
     {
         "name": "시티타워관리사무소(OCT뷰N뷰)",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 지행동 721-1",
         "status": "약정만료",
@@ -30001,7 +30001,7 @@ const TARGETS = [
     },
     {
         "name": "식탁하늬솔점(OCT)",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 대신동 85-1번지 하늬솔빌딩A동 1층",
         "status": "약정만료",
@@ -30016,7 +30016,7 @@ const TARGETS = [
     },
     {
         "name": "신당중앙정형외과",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 중구 황학동 730번지 1층",
         "status": "약정만료",
@@ -30031,7 +30031,7 @@ const TARGETS = [
     },
     {
         "name": "신도빌딩",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 충무로4가 62-7",
         "status": "약정만료",
@@ -30046,7 +30046,7 @@ const TARGETS = [
     },
     {
         "name": "신림농협",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 신림면 신림황둔로 1221",
         "status": "약정만료",
@@ -30061,7 +30061,7 @@ const TARGETS = [
     },
     {
         "name": "신림농협",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 신림면 제원로 1432",
         "status": "약정만료",
@@ -30076,7 +30076,7 @@ const TARGETS = [
     },
     {
         "name": "신방학초등학교",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 방학동 310번지",
         "status": "약정만료",
@@ -30091,7 +30091,7 @@ const TARGETS = [
     },
     {
         "name": "신방학초등학교",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 방학동 310",
         "status": "약정만료",
@@ -30106,7 +30106,7 @@ const TARGETS = [
     },
     {
         "name": "신방학초등학교",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 방학동 310번지",
         "status": "약정만료",
@@ -30121,7 +30121,7 @@ const TARGETS = [
     },
     {
         "name": "신방학초등학교",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 방학동 310번지",
         "status": "약정만료",
@@ -30136,7 +30136,7 @@ const TARGETS = [
     },
     {
         "name": "신방학초등학교",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 방학동 310번지",
         "status": "약정만료",
@@ -30151,7 +30151,7 @@ const TARGETS = [
     },
     {
         "name": "신방학초등학교",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 방학동 310",
         "status": "약정만료",
@@ -30166,7 +30166,7 @@ const TARGETS = [
     },
     {
         "name": "신방학초등학교",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 방학동 310번지",
         "status": "약정만료",
@@ -30181,7 +30181,7 @@ const TARGETS = [
     },
     {
         "name": "신북농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 신북읍 율문리551-1",
         "status": "약정만료",
@@ -30196,7 +30196,7 @@ const TARGETS = [
     },
     {
         "name": "신북농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 북산면 오항리391-3",
         "status": "약정만료",
@@ -30211,7 +30211,7 @@ const TARGETS = [
     },
     {
         "name": "신북농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 사북면 고탄리132-1",
         "status": "약정만료",
@@ -30226,7 +30226,7 @@ const TARGETS = [
     },
     {
         "name": "신북농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 신북읍 산천리 1080-1",
         "status": "약정만료",
@@ -30241,7 +30241,7 @@ const TARGETS = [
     },
     {
         "name": "신북농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 동면 장학리 450",
         "status": "약정만료",
@@ -30256,7 +30256,7 @@ const TARGETS = [
     },
     {
         "name": "신북농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 신북읍 발산리35-18",
         "status": "약정만료",
@@ -30271,7 +30271,7 @@ const TARGETS = [
     },
     {
         "name": "신북농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 신북읍 발산리 35-15",
         "status": "약정만료",
@@ -30286,7 +30286,7 @@ const TARGETS = [
     },
     {
         "name": "신북농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 신북읍 발산리35-15",
         "status": "약정만료",
@@ -30301,7 +30301,7 @@ const TARGETS = [
     },
     {
         "name": "신북농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 신북읍 율문리551-1",
         "status": "약정만료",
@@ -30316,7 +30316,7 @@ const TARGETS = [
     },
     {
         "name": "신북농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 신북읍 산천리1080-1",
         "status": "약정만료",
@@ -30331,7 +30331,7 @@ const TARGETS = [
     },
     {
         "name": "신북농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 신북읍 율문리",
         "status": "약정만료",
@@ -30346,7 +30346,7 @@ const TARGETS = [
     },
     {
         "name": "신북농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 신북읍 율문리551-1",
         "status": "약정만료",
@@ -30361,7 +30361,7 @@ const TARGETS = [
     },
     {
         "name": "신북농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 신북읍 율문리551-1",
         "status": "약정만료",
@@ -30376,7 +30376,7 @@ const TARGETS = [
     },
     {
         "name": "신북농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 신북읍 율문리 551-1번지",
         "status": "약정만료",
@@ -30391,7 +30391,7 @@ const TARGETS = [
     },
     {
         "name": "신북농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 신북읍 율문리 551-1번지",
         "status": "약정만료",
@@ -30406,7 +30406,7 @@ const TARGETS = [
     },
     {
         "name": "신북농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 신북읍 율문리 551-1번지",
         "status": "약정만료",
@@ -30421,7 +30421,7 @@ const TARGETS = [
     },
     {
         "name": "신영종합개발(주)",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 동산면 군자리 산245",
         "status": "약정만료",
@@ -30436,7 +30436,7 @@ const TARGETS = [
     },
     {
         "name": "신영종합개발(주)",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 동산면 군자리 산245",
         "status": "약정만료",
@@ -30451,7 +30451,7 @@ const TARGETS = [
     },
     {
         "name": "신영종합개발(주)",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 동산면 군자리 산245",
         "status": "약정만료",
@@ -30466,7 +30466,7 @@ const TARGETS = [
     },
     {
         "name": "신영종합개발(주)",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 동산면 군자리 산245",
         "status": "약정만료",
@@ -30481,7 +30481,7 @@ const TARGETS = [
     },
     {
         "name": "신우에너지(주)",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 성석동 1305-5",
         "status": "약정만료",
@@ -30496,7 +30496,7 @@ const TARGETS = [
     },
     {
         "name": "신우에너지(주)",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 백석동 1184번지",
         "status": "만기도래_신규(1st)",
@@ -30511,7 +30511,7 @@ const TARGETS = [
     },
     {
         "name": "신우에너지(주)",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 식사동 861-1번지",
         "status": "만기도래_재계약",
@@ -30526,7 +30526,7 @@ const TARGETS = [
     },
     {
         "name": "신일엘리시움상가",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 호원동 평화로196 신일엘리시움상가1층",
         "status": "약정만료",
@@ -30541,7 +30541,7 @@ const TARGETS = [
     },
     {
         "name": "신일엘리시움상가",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 호원동 459",
         "status": "약정만료",
@@ -30556,7 +30556,7 @@ const TARGETS = [
     },
     {
         "name": "신정문화사 345층",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 을지로5가 8-5번지 345층",
         "status": "약정만료",
@@ -30571,7 +30571,7 @@ const TARGETS = [
     },
     {
         "name": "신창동물류",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 백석읍 방성리 527",
         "status": "만기도래_신규(1st)",
@@ -30586,7 +30586,7 @@ const TARGETS = [
     },
     {
         "name": "신창동물류",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 백석읍 방성리 527",
         "status": "만기도래_신규(1st)",
@@ -30601,7 +30601,7 @@ const TARGETS = [
     },
     {
         "name": "신촌감리교회",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 염리동 518 신촌교회",
         "status": "약정만료",
@@ -30616,7 +30616,7 @@ const TARGETS = [
     },
     {
         "name": "신한대학교",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 호원동 호암로95 믿음관3층진리관4층",
         "status": "만기도래_신규(1st)",
@@ -30631,7 +30631,7 @@ const TARGETS = [
     },
     {
         "name": "신한대학교",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 상패동 233-1 신한대학교 벌마들로40번길 30 정보화센터서버실1층",
         "status": "만기도래_신규(1st)",
@@ -30646,7 +30646,7 @@ const TARGETS = [
     },
     {
         "name": "신향빌라",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 광진구 중곡동 18-24",
         "status": "만기도래_신규(1st)",
@@ -30661,7 +30661,7 @@ const TARGETS = [
     },
     {
         "name": "실버만세요양원",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 답내리550-11",
         "status": "약정만료",
@@ -30676,7 +30676,7 @@ const TARGETS = [
     },
     {
         "name": "실버만세요양원",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 답내리 550-17 답내리550-11",
         "status": "약정만료",
@@ -30691,7 +30691,7 @@ const TARGETS = [
     },
     {
         "name": "심로악기(주)",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 문막읍 궁촌리 1512-1",
         "status": "약정만료",
@@ -30706,7 +30706,7 @@ const TARGETS = [
     },
     {
         "name": "심로악기(주)",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 문막읍 궁촌리 1512-1",
         "status": "약정만료",
@@ -30721,7 +30721,7 @@ const TARGETS = [
     },
     {
         "name": "심스토리(주)",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 2-89",
         "status": "약정만료",
@@ -30736,7 +30736,7 @@ const TARGETS = [
     },
     {
         "name": "심스토리(주)",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 2-90번지 1층 지하1층 식당 (상암동)",
         "status": "만기도래_신규(1st)",
@@ -30751,7 +30751,7 @@ const TARGETS = [
     },
     {
         "name": "심스토리(주)",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 2-89번지 1층",
         "status": "만기도래_신규(1st)",
@@ -30766,7 +30766,7 @@ const TARGETS = [
     },
     {
         "name": "심스토리(주)",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 2-89 2층",
         "status": "약정만료",
@@ -30781,7 +30781,7 @@ const TARGETS = [
     },
     {
         "name": "심스토리(주)",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 2-90번지 5층 심스토리 6층 심스토리",
         "status": "만기도래_신규(1st)",
@@ -30796,7 +30796,7 @@ const TARGETS = [
     },
     {
         "name": "심정주가정집",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 392-31",
         "status": "약정만료",
@@ -30811,7 +30811,7 @@ const TARGETS = [
     },
     {
         "name": "심정주가정집",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 392-31",
         "status": "약정만료",
@@ -30826,7 +30826,7 @@ const TARGETS = [
     },
     {
         "name": "쌍문마디튼튼의원",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 쌍문동 20-4",
         "status": "만기도래_신규(1st)",
@@ -30841,7 +30841,7 @@ const TARGETS = [
     },
     {
         "name": "썬데이팬션",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 봉평면 무이리 무이리 1145-5",
         "status": "약정만료",
@@ -30856,7 +30856,7 @@ const TARGETS = [
     },
     {
         "name": "쏘비트타워",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 310-63",
         "status": "약정만료",
@@ -30871,7 +30871,7 @@ const TARGETS = [
     },
     {
         "name": "쏘비트타워",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 677번지 롯데백화점구리점",
         "status": "약정만료",
@@ -30886,7 +30886,7 @@ const TARGETS = [
     },
     {
         "name": "쏘비트타워",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 정교리 217-11",
         "status": "약정만료",
@@ -30901,7 +30901,7 @@ const TARGETS = [
     },
     {
         "name": "쏘비트타워",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수2가 310-63",
         "status": "약정만료",
@@ -30916,7 +30916,7 @@ const TARGETS = [
     },
     {
         "name": "쏘비트타워",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 정교리 217-11",
         "status": "약정만료",
@@ -30931,7 +30931,7 @@ const TARGETS = [
     },
     {
         "name": "쓰리타임",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 연희동 188-55 2층",
         "status": "약정만료",
@@ -30946,7 +30946,7 @@ const TARGETS = [
     },
     {
         "name": "씨앤아이정보통신-페트롤",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 용산구 원효로2가 61-2 간판상호 드봉미용실",
         "status": "약정만료",
@@ -30961,7 +30961,7 @@ const TARGETS = [
     },
     {
         "name": "씨엔에스자산관리",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 진관동 8 진관초등학교 전층",
         "status": "약정만료",
@@ -30976,7 +30976,7 @@ const TARGETS = [
     },
     {
         "name": "씨엠",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 822-1",
         "status": "약정만료",
@@ -30991,7 +30991,7 @@ const TARGETS = [
     },
     {
         "name": "씨엠",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 862-14 번지",
         "status": "약정만료",
@@ -31006,7 +31006,7 @@ const TARGETS = [
     },
     {
         "name": "씨젠의료재단",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 송파구 거여동 603 유원플러스 11층 1111~1114호",
         "status": "약정만료",
@@ -31021,7 +31021,7 @@ const TARGETS = [
     },
     {
         "name": "씨젠의료재단",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 마포구 동교동 165-8 LG팰리스빌딩 606호",
         "status": "약정만료",
@@ -31036,7 +31036,7 @@ const TARGETS = [
     },
     {
         "name": "씨젠의료재단",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "강원 원주시 무실동 423번지 2층",
         "status": "약정만료",
@@ -31051,7 +31051,7 @@ const TARGETS = [
     },
     {
         "name": "씨젠의료재단",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "경기 구리시 교문동 754-9 메디피아빌딩 402호",
         "status": "약정만료",
@@ -31066,7 +31066,7 @@ const TARGETS = [
     },
     {
         "name": "씨젠의료재단",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 영등포구 문래동3가 82-29 우리벤처타운2 201호",
         "status": "약정만료",
@@ -31081,7 +31081,7 @@ const TARGETS = [
     },
     {
         "name": "씨젠의료재단",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "강원 강릉시 교동 1882-4 4층 2호",
         "status": "약정만료",
@@ -31096,7 +31096,7 @@ const TARGETS = [
     },
     {
         "name": "씨젠의료재단",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "경기 수원시 권선구 오목천동 1182-5번지 4층",
         "status": "약정만료",
@@ -31111,7 +31111,7 @@ const TARGETS = [
     },
     {
         "name": "씨젠의료재단",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "경기 구리시 교문동 754-9번지4층402호",
         "status": "약정만료",
@@ -31126,7 +31126,7 @@ const TARGETS = [
     },
     {
         "name": "씨젠의료재단",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "경기 평택시 지산동 590-1번지 2층",
         "status": "약정만료",
@@ -31141,7 +31141,7 @@ const TARGETS = [
     },
     {
         "name": "씨젠의료재단",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "경기 군포시 부곡동 1195 해피시티 303호",
         "status": "약정만료",
@@ -31156,7 +31156,7 @@ const TARGETS = [
     },
     {
         "name": "씨젠의료재단",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "경기 고양시 일산동구 장항2동 경기 고양시 일산동구 백마로 195 엠시티타워&엠시티오피스텔/오피스일반9층",
         "status": "약정만료",
@@ -31171,7 +31171,7 @@ const TARGETS = [
     },
     {
         "name": "씨젠의료재단",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "경기 의정부시 금오동 439 을지타워 3층",
         "status": "약정만료",
@@ -31186,7 +31186,7 @@ const TARGETS = [
     },
     {
         "name": "씨피케이",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 쌍문동 88-143",
         "status": "약정만료",
@@ -31201,7 +31201,7 @@ const TARGETS = [
     },
     {
         "name": "씨피케이",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 월계동 46-13번지 (화랑로 335)",
         "status": "약정만료",
@@ -31216,7 +31216,7 @@ const TARGETS = [
     },
     {
         "name": "씨피케이",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 덕계동 465-9",
         "status": "약정만료",
@@ -31231,7 +31231,7 @@ const TARGETS = [
     },
     {
         "name": "씨피케이",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 방학동 651-11번지",
         "status": "약정만료",
@@ -31246,7 +31246,7 @@ const TARGETS = [
     },
     {
         "name": "씨피케이",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 금오동 473-2 삼성프라자108호",
         "status": "약정만료",
@@ -31261,7 +31261,7 @@ const TARGETS = [
     },
     {
         "name": "씨피케이",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 강북구 수유1동 54-11",
         "status": "만기도래_재계약",
@@ -31276,7 +31276,7 @@ const TARGETS = [
     },
     {
         "name": "씨피케이",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 월계동 379-46 1층",
         "status": "만기도래_재계약",
@@ -31291,7 +31291,7 @@ const TARGETS = [
     },
     {
         "name": "씨피케이",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 성동구 금호동1가 511 백상빌딩 1층",
         "status": "약정만료",
@@ -31306,7 +31306,7 @@ const TARGETS = [
     },
     {
         "name": "씨피케이",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 강북구 수유동 191-18  kt휴대폰",
         "status": "약정만료",
@@ -31321,7 +31321,7 @@ const TARGETS = [
     },
     {
         "name": "씨피케이",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 수유동 230-7",
         "status": "만기도래_신규(1st)",
@@ -31336,7 +31336,7 @@ const TARGETS = [
     },
     {
         "name": "씨피케이",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 쌍문동 88-105 1층",
         "status": "만기도래_신규(1st)",
@@ -31351,7 +31351,7 @@ const TARGETS = [
     },
     {
         "name": "씨피케이",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 61-81 1층",
         "status": "약정만료",
@@ -31366,7 +31366,7 @@ const TARGETS = [
     },
     {
         "name": "씨피케이",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 61-81 1층",
         "status": "약정만료",
@@ -31381,7 +31381,7 @@ const TARGETS = [
     },
     {
         "name": "아뜰리에어린이집",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 보문동6가 198-45보문파크뷰자이",
         "status": "만기도래_재계약",
@@ -31396,7 +31396,7 @@ const TARGETS = [
     },
     {
         "name": "아라코 주식회사",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 714 일신빌딩4층",
         "status": "만기도래_신규(1st)",
@@ -31411,7 +31411,7 @@ const TARGETS = [
     },
     {
         "name": "아람기술이앤지㈜",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 칠전동 603-7",
         "status": "약정만료",
@@ -31426,7 +31426,7 @@ const TARGETS = [
     },
     {
         "name": "아람기술이앤지㈜",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 칠전동 601-3 1층 센터점",
         "status": "만기도래_신규(1st)",
@@ -31441,7 +31441,7 @@ const TARGETS = [
     },
     {
         "name": "아람기술이앤지㈜",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 칠전동 590-1 1층",
         "status": "만기도래_신규(1st)",
@@ -31456,7 +31456,7 @@ const TARGETS = [
     },
     {
         "name": "아람기술이앤지㈜",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 칠전동 칠전대우2차아파트 209동 1103호",
         "status": "약정만료",
@@ -31471,7 +31471,7 @@ const TARGETS = [
     },
     {
         "name": "아람기술이앤지㈜",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 퇴계동 1052 퇴계이안아파트",
         "status": "약정만료",
@@ -31486,7 +31486,7 @@ const TARGETS = [
     },
     {
         "name": "아람종축",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 옥천면 아신리 아신리 49",
         "status": "약정만료",
@@ -31501,7 +31501,7 @@ const TARGETS = [
     },
     {
         "name": "아세아화재특종손해사정(주)",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 판부면 서곡리 1996-18 1층",
         "status": "약정만료",
@@ -31516,7 +31516,7 @@ const TARGETS = [
     },
     {
         "name": "아웃렛쇼핑(의정부점)",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 170-13",
         "status": "약정만료",
@@ -31531,7 +31531,7 @@ const TARGETS = [
     },
     {
         "name": "아이리츠 춘천",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 온의동 65-44 1층~5층",
         "status": "만기도래_신규(1st)",
@@ -31546,7 +31546,7 @@ const TARGETS = [
     },
     {
         "name": "아이스칸",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 행주내동 454-8번지 3층 신축건물(행주로99번길 46-48)",
         "status": "약정만료",
@@ -31561,7 +31561,7 @@ const TARGETS = [
     },
     {
         "name": "아이씨엠 주식회사",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 신촌동 연세로 50 연세대학교 공학원 (102동)4층",
         "status": "약정만료",
@@ -31576,7 +31576,7 @@ const TARGETS = [
     },
     {
         "name": "아이씨엠 주식회사",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 신촌동 연세로50 공학관323동 426호",
         "status": "약정만료",
@@ -31591,7 +31591,7 @@ const TARGETS = [
     },
     {
         "name": "아이씨엠 주식회사",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 신촌동 연세로50 연세대학교 공학원102동 450호(사장님실)",
         "status": "약정만료",
@@ -31606,7 +31606,7 @@ const TARGETS = [
     },
     {
         "name": "아이코나츠(주)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동1가 685-419",
         "status": "약정만료",
@@ -31621,7 +31621,7 @@ const TARGETS = [
     },
     {
         "name": "아트페이퍼",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 문산읍 당동리 677-7번지 전원마을단지",
         "status": "만기도래_신규(1st)",
@@ -31636,7 +31636,7 @@ const TARGETS = [
     },
     {
         "name": "아티젠",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한강로2가 98-3번지",
         "status": "약정만료",
@@ -31651,7 +31651,7 @@ const TARGETS = [
     },
     {
         "name": "안들컴퍼니",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 종로구 숭인동 56-20",
         "status": "만기도래_신규(1st)",
@@ -31666,7 +31666,7 @@ const TARGETS = [
     },
     {
         "name": "안들컴퍼니",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 보문동2가 3-2번지 1층",
         "status": "만기도래_신규(1st)",
@@ -31681,7 +31681,7 @@ const TARGETS = [
     },
     {
         "name": "알디파트너스투자3호유한회사",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동1가 685-271  2층3층",
         "status": "약정만료",
@@ -31696,7 +31696,7 @@ const TARGETS = [
     },
     {
         "name": "알리다그룹주식회사",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 대현동 40-6 2층",
         "status": "약정만료",
@@ -31711,7 +31711,7 @@ const TARGETS = [
     },
     {
         "name": "알엔티주식회사",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한강로3가 40-611번지 1층옥상출입통제",
         "status": "만기도래_재계약",
@@ -31726,7 +31726,7 @@ const TARGETS = [
     },
     {
         "name": "알엔티주식회사",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한강로3가 40-611번지 옥상(DVR)",
         "status": "약정만료",
@@ -31741,7 +31741,7 @@ const TARGETS = [
     },
     {
         "name": "알파컴퍼니",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 연지동 59 준성빌딩 2층 202호",
         "status": "만기도래_신규(1st)",
@@ -31756,7 +31756,7 @@ const TARGETS = [
     },
     {
         "name": "알프스대영-지하1층(카트)",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 우천면 한우로1295",
         "status": "약정만료",
@@ -31771,7 +31771,7 @@ const TARGETS = [
     },
     {
         "name": "알프스대영-지하1층(카트)",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 우천면 하대리 300",
         "status": "약정만료",
@@ -31786,7 +31786,7 @@ const TARGETS = [
     },
     {
         "name": "알프스대영-지하1층(카트)",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 우천면 하대리 300",
         "status": "약정만료",
@@ -31801,7 +31801,7 @@ const TARGETS = [
     },
     {
         "name": "앙상떼",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 풍동 708 123층",
         "status": "약정만료",
@@ -31816,7 +31816,7 @@ const TARGETS = [
     },
     {
         "name": "앙상떼",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 풍동 708 3층",
         "status": "만기도래_신규(1st)",
@@ -31831,7 +31831,7 @@ const TARGETS = [
     },
     {
         "name": "약수바른정형외과의원",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 369-101번지 3층4층",
         "status": "약정만료",
@@ -31846,7 +31846,7 @@ const TARGETS = [
     },
     {
         "name": "양동농장",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 양동면 쌍학리 880-6번지  양동목장",
         "status": "약정만료",
@@ -31861,7 +31861,7 @@ const TARGETS = [
     },
     {
         "name": "양동농장",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 양동면 쌍학리 880-6번지 양동농장(버덩농장2)",
         "status": "약정만료",
@@ -31876,7 +31876,7 @@ const TARGETS = [
     },
     {
         "name": "양동농장",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 양동면 쌍학리 76번지  단독주택",
         "status": "약정만료",
@@ -31891,7 +31891,7 @@ const TARGETS = [
     },
     {
         "name": "양수리송어횟집gigaeyes뷰(NVR)",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 양서면 양수리 617-4",
         "status": "약정만료",
@@ -31906,7 +31906,7 @@ const TARGETS = [
     },
     {
         "name": "양수삼성요양병원",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 양수리 651-7",
         "status": "약정만료",
@@ -31921,7 +31921,7 @@ const TARGETS = [
     },
     {
         "name": "양양고등학교",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 양양읍 복개길 23-12",
         "status": "약정만료",
@@ -31936,7 +31936,7 @@ const TARGETS = [
     },
     {
         "name": "양양고등학교",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 양양읍 복개길 23-12",
         "status": "약정만료",
@@ -31951,7 +31951,7 @@ const TARGETS = [
     },
     {
         "name": "양양고등학교",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 양양읍 복개길 23-12",
         "status": "약정만료",
@@ -31966,7 +31966,7 @@ const TARGETS = [
     },
     {
         "name": "양양고등학교",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 양양읍 복개길 23-12",
         "status": "약정만료",
@@ -31981,7 +31981,7 @@ const TARGETS = [
     },
     {
         "name": "양양고등학교",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 양양읍 복개길 23-12",
         "status": "약정만료",
@@ -31996,7 +31996,7 @@ const TARGETS = [
     },
     {
         "name": "양양고등학교",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 양양읍 복개길 23-12",
         "status": "약정만료",
@@ -32011,7 +32011,7 @@ const TARGETS = [
     },
     {
         "name": "양양국유림관리소",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 양양읍 연창리107-2",
         "status": "약정만료",
@@ -32026,7 +32026,7 @@ const TARGETS = [
     },
     {
         "name": "양양국유림관리소",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 양양읍 연창리 연창리 107-2",
         "status": "약정만료",
@@ -32041,7 +32041,7 @@ const TARGETS = [
     },
     {
         "name": "양양국유림관리소",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 현북면 어성전리 산-2",
         "status": "약정만료",
@@ -32056,7 +32056,7 @@ const TARGETS = [
     },
     {
         "name": "양양국유림관리소",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 현북면 중광정리37-3",
         "status": "약정만료",
@@ -32071,7 +32071,7 @@ const TARGETS = [
     },
     {
         "name": "양양군농업기술센터",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 손양면 송현리 278 양양군농업기술센터 내",
         "status": "만기도래_신규(1st)",
@@ -32086,7 +32086,7 @@ const TARGETS = [
     },
     {
         "name": "양양군농업기술센터",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 손양면 송현리 278 양양군농업기술센터 내",
         "status": "만기도래_신규(1st)",
@@ -32101,7 +32101,7 @@ const TARGETS = [
     },
     {
         "name": "양양군청",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 양양읍 강원 양양군 한고개길 10  양양종합운동장",
         "status": "약정만료",
@@ -32116,7 +32116,7 @@ const TARGETS = [
     },
     {
         "name": "양양군청",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 양양읍 조산리 낙산대교",
         "status": "약정만료",
@@ -32131,7 +32131,7 @@ const TARGETS = [
     },
     {
         "name": "양양군청",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 양양읍 남문리 278 양양교",
         "status": "약정만료",
@@ -32146,7 +32146,7 @@ const TARGETS = [
     },
     {
         "name": "양양군청",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 서면 상평리11",
         "status": "약정만료",
@@ -32161,7 +32161,7 @@ const TARGETS = [
     },
     {
         "name": "양양군청",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 손양면 학포리 337 양양종합스포츠타운-MTB경기장",
         "status": "약정만료",
@@ -32176,7 +32176,7 @@ const TARGETS = [
     },
     {
         "name": "양양군청",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 서면 상평리11",
         "status": "약정만료",
@@ -32191,7 +32191,7 @@ const TARGETS = [
     },
     {
         "name": "양양군청",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 서면 상평리11",
         "status": "약정만료",
@@ -32206,7 +32206,7 @@ const TARGETS = [
     },
     {
         "name": "양양군청",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 양양읍 포월새말길 23-11",
         "status": "약정만료",
@@ -32221,7 +32221,7 @@ const TARGETS = [
     },
     {
         "name": "양양군청",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 손양면 상왕도리 송이밸리자연휴양림",
         "status": "약정만료",
@@ -32236,7 +32236,7 @@ const TARGETS = [
     },
     {
         "name": "양양군청",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 양양군 현남면 북분리 현남면 북분리 391",
         "status": "약정만료",
@@ -32251,7 +32251,7 @@ const TARGETS = [
     },
     {
         "name": "양양군청",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 전진리55 낙산사",
         "status": "약정만료",
@@ -32266,7 +32266,7 @@ const TARGETS = [
     },
     {
         "name": "양양군청",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 전진리55 낙산사",
         "status": "약정만료",
@@ -32281,7 +32281,7 @@ const TARGETS = [
     },
     {
         "name": "양양군청",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 전진리 100",
         "status": "약정만료",
@@ -32296,7 +32296,7 @@ const TARGETS = [
     },
     {
         "name": "양양군청",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 전진리",
         "status": "약정만료",
@@ -32311,7 +32311,7 @@ const TARGETS = [
     },
     {
         "name": "양양군청",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 전진리 55 낙산사",
         "status": "약정만료",
@@ -32326,7 +32326,7 @@ const TARGETS = [
     },
     {
         "name": "양양군청",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 전진리 57-1 낙산사 매표소 입구옆",
         "status": "약정만료",
@@ -32341,7 +32341,7 @@ const TARGETS = [
     },
     {
         "name": "양양신용협동조합",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 전진리 7-23",
         "status": "약정만료",
@@ -32356,7 +32356,7 @@ const TARGETS = [
     },
     {
         "name": "양양신용협동조합",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 전진리 7-23",
         "status": "약정만료",
@@ -32371,7 +32371,7 @@ const TARGETS = [
     },
     {
         "name": "양양신용협동조합",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 양양읍 남문리 84-2",
         "status": "약정만료",
@@ -32386,7 +32386,7 @@ const TARGETS = [
     },
     {
         "name": "양양신용협동조합",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 양양읍 남문리 84-2 (양양로 76)",
         "status": "약정만료",
@@ -32401,7 +32401,7 @@ const TARGETS = [
     },
     {
         "name": "양양자원개발합자회사",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 서면 장승리 484 양양자원개발(합) 들돌길 436",
         "status": "약정만료",
@@ -32416,7 +32416,7 @@ const TARGETS = [
     },
     {
         "name": "양양자원개발합자회사",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 서면 강원 양양군 들돌길 436 양양자원개발(합)",
         "status": "약정만료",
@@ -32431,7 +32431,7 @@ const TARGETS = [
     },
     {
         "name": "양양자원개발합자회사",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 서면 장승리 484 양양자원개발(합) 들돌길 436",
         "status": "약정만료",
@@ -32446,7 +32446,7 @@ const TARGETS = [
     },
     {
         "name": "양양축산양돈영농조합법인",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 손양면 삽존리 13",
         "status": "약정만료",
@@ -32461,7 +32461,7 @@ const TARGETS = [
     },
     {
         "name": "양양축산양돈영농조합법인",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 손양면 삽존리 13",
         "status": "약정만료",
@@ -32476,7 +32476,7 @@ const TARGETS = [
     },
     {
         "name": "양양축산양돈영농조합법인",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 손양면 삽존리 13",
         "status": "약정만료",
@@ -32491,7 +32491,7 @@ const TARGETS = [
     },
     {
         "name": "양양축산양돈영농조합법인",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 손양면 삽존리 44 양양축산양돈영농조합 양양축산양돈영농조합-소독장",
         "status": "약정만료",
@@ -32506,7 +32506,7 @@ const TARGETS = [
     },
     {
         "name": "양양하다",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 강현면 강원 양양군 정암2길 5-19",
         "status": "약정만료",
@@ -32521,7 +32521,7 @@ const TARGETS = [
     },
     {
         "name": "양지맨숀관리실",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 주성동 1-7번지 정문 경비실",
         "status": "만기도래_신규(1st)",
@@ -32536,7 +32536,7 @@ const TARGETS = [
     },
     {
         "name": "양지산업(근태)",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 광탄면 마장리 231-2",
         "status": "약정만료",
@@ -32551,7 +32551,7 @@ const TARGETS = [
     },
     {
         "name": "양평가락식자재",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 옥천면아신리 437-4번지",
         "status": "만기도래_재계약",
@@ -32566,7 +32566,7 @@ const TARGETS = [
     },
     {
         "name": "양평군교통약자이동지원센터",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 용문면 다문리 1055번지  용문터미널",
         "status": "약정만료",
@@ -32581,7 +32581,7 @@ const TARGETS = [
     },
     {
         "name": "양평군교통약자이동지원센터",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 용문면 다문리 1055 용문터미널 용문터미널  사무실",
         "status": "약정만료",
@@ -32596,7 +32596,7 @@ const TARGETS = [
     },
     {
         "name": "양평대명낚시터gigaeyes뷰(DVR)",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 단월면 부안리 379-1",
         "status": "만기도래_재계약",
@@ -32611,7 +32611,7 @@ const TARGETS = [
     },
     {
         "name": "양평물맑은시장상인회",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 양평읍 양근리 352-1번지 양평물맑은쉼터",
         "status": "만기도래_신규(1st)",
@@ -32626,7 +32626,7 @@ const TARGETS = [
     },
     {
         "name": "양평요양원",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 강상면 병산리 796-5번지  드림요양원",
         "status": "약정만료",
@@ -32641,7 +32641,7 @@ const TARGETS = [
     },
     {
         "name": "양평요양원",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 강상면 병산리 796-5번지",
         "status": "만기도래_재계약",
@@ -32656,7 +32656,7 @@ const TARGETS = [
     },
     {
         "name": "양평주유소gigaeyes뷰(DVR)",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 양평읍 양근리 502-5번지",
         "status": "약정만료",
@@ -32671,7 +32671,7 @@ const TARGETS = [
     },
     {
         "name": "어드밴스힐관리단",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 진관동 100-4 ",
         "status": "약정만료",
@@ -32686,7 +32686,7 @@ const TARGETS = [
     },
     {
         "name": "어스얼라이언스 주식회사",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 395-163",
         "status": "약정만료",
@@ -32701,7 +32701,7 @@ const TARGETS = [
     },
     {
         "name": "언더독스㈜",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 와룡동 109-1",
         "status": "약정만료",
@@ -32716,7 +32716,7 @@ const TARGETS = [
     },
     {
         "name": "언희당-본관",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 중계동 366-14 2층 전체",
         "status": "만기도래_신규(1st)",
@@ -32731,7 +32731,7 @@ const TARGETS = [
     },
     {
         "name": "엄웅가정집",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 갈현2동 476-6",
         "status": "약정만료",
@@ -32746,7 +32746,7 @@ const TARGETS = [
     },
     {
         "name": "업짐역촌동점",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 역촌동 진흥로 77 2층3층",
         "status": "만기도래_신규(1st)",
@@ -32761,7 +32761,7 @@ const TARGETS = [
     },
     {
         "name": "업타운엔큐베이팅 주식회사",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 제기동 147-53 (전층) 대표실 5층",
         "status": "약정만료",
@@ -32776,7 +32776,7 @@ const TARGETS = [
     },
     {
         "name": "업타운엔큐베이팅 주식회사",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 제기동 147-53",
         "status": "약정만료",
@@ -32791,7 +32791,7 @@ const TARGETS = [
     },
     {
         "name": "업타운엔큐베이팅 주식회사",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 제기동 147-53번지 지하",
         "status": "약정만료",
@@ -32806,7 +32806,7 @@ const TARGETS = [
     },
     {
         "name": "업타운엔큐베이팅 주식회사",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 제기동 147-53 (3층4층)",
         "status": "약정만료",
@@ -32821,7 +32821,7 @@ const TARGETS = [
     },
     {
         "name": "업타운필라테스-돌곶이점(GiGAeyes guard)",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 석관동 242-1번지4층",
         "status": "약정만료",
@@ -32836,7 +32836,7 @@ const TARGETS = [
     },
     {
         "name": "에듀퐁(쁘띠몽드)",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 장안동 111-1번지  3층",
         "status": "약정만료",
@@ -32851,7 +32851,7 @@ const TARGETS = [
     },
     {
         "name": "에바속초점",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 금호동 482-6",
         "status": "만기도래_재계약",
@@ -32866,7 +32866,7 @@ const TARGETS = [
     },
     {
         "name": "에버리치",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동  20-12 관리사무소 (의정부동 에버리치)",
         "status": "약정만료",
@@ -32881,7 +32881,7 @@ const TARGETS = [
     },
     {
         "name": "에스비글로벌헬스케어",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 봉양동 570-7 칠봉산로286번길 4",
         "status": "약정만료",
@@ -32896,7 +32896,7 @@ const TARGETS = [
     },
     {
         "name": "에스비글로벌헬스케어",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 봉양동 봉양동 435-5",
         "status": "약정만료",
@@ -32911,7 +32911,7 @@ const TARGETS = [
     },
     {
         "name": "에스빌딩(GiGAeyes i-guard)",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 강북구 수유3동 서울 강북구 노해로 20 에스빌딩",
         "status": "약정만료",
@@ -32926,7 +32926,7 @@ const TARGETS = [
     },
     {
         "name": "에스씨모터스",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 내유동 476-6",
         "status": "약정만료",
@@ -32941,7 +32941,7 @@ const TARGETS = [
     },
     {
         "name": "에스씨지그리드(주)",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 식사동 165-5 1층",
         "status": "만기도래_신규(1st)",
@@ -32956,7 +32956,7 @@ const TARGETS = [
     },
     {
         "name": "에스앤아이코퍼레이션",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 남대문로5가 84-11번지 17층18층",
         "status": "약정만료",
@@ -32971,7 +32971,7 @@ const TARGETS = [
     },
     {
         "name": "에스앤아이코퍼레이션",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 남대문로5가 84-11번지 18층",
         "status": "약정만료",
@@ -32986,7 +32986,7 @@ const TARGETS = [
     },
     {
         "name": "에스앤이에너지",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 남면 상수리 248-1 에스앤이에너지 주식회사",
         "status": "약정만료",
@@ -33001,7 +33001,7 @@ const TARGETS = [
     },
     {
         "name": "에스에이커뮤니케이션렌탈창고",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 설문동 530-91  좌측 창고",
         "status": "약정만료",
@@ -33016,7 +33016,7 @@ const TARGETS = [
     },
     {
         "name": "에스에이커뮤니케이션렌탈창고",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 장항동 615-41",
         "status": "약정만료",
@@ -33031,7 +33031,7 @@ const TARGETS = [
     },
     {
         "name": "에스엔에스",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 북아현동 998",
         "status": "만기도래_신규(1st)",
@@ -33046,7 +33046,7 @@ const TARGETS = [
     },
     {
         "name": "에스엔에스",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 노고산동 1-25",
         "status": "만기도래_신규(1st)",
@@ -33061,7 +33061,7 @@ const TARGETS = [
     },
     {
         "name": "에스엔에스",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 대현동 90-35",
         "status": "만기도래_신규(1st)",
@@ -33076,7 +33076,7 @@ const TARGETS = [
     },
     {
         "name": "에스엔에스",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 대현동 90-42",
         "status": "만기도래_신규(1st)",
@@ -33091,7 +33091,7 @@ const TARGETS = [
     },
     {
         "name": "에스엔에스",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 대현동 90-58",
         "status": "만기도래_신규(1st)",
@@ -33106,7 +33106,7 @@ const TARGETS = [
     },
     {
         "name": "에스엘강릉(주)",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 주문진읍 강원 강릉시 주문로 59  507호  SL강릉호텔",
         "status": "약정만료",
@@ -33121,7 +33121,7 @@ const TARGETS = [
     },
     {
         "name": "에스엘강릉(주)",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 주문진읍 강원 강릉시 주문로 59  507호",
         "status": "약정만료",
@@ -33136,7 +33136,7 @@ const TARGETS = [
     },
     {
         "name": "에스엘알샵",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 녹양동 407-9번지 2층",
         "status": "약정만료",
@@ -33151,7 +33151,7 @@ const TARGETS = [
     },
     {
         "name": "에스엘알샵",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 녹양동 407-9",
         "status": "약정만료",
@@ -33166,7 +33166,7 @@ const TARGETS = [
     },
     {
         "name": "에스엠에이치홀딩스",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 능동 275-5 군자역 지하3층 303호",
         "status": "만기도래_신규(1st)",
@@ -33181,7 +33181,7 @@ const TARGETS = [
     },
     {
         "name": "에스제이",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 무림리 378-6",
         "status": "약정만료",
@@ -33196,7 +33196,7 @@ const TARGETS = [
     },
     {
         "name": "에스피브이(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 근남면 마현리 145 에스피브이(주)",
         "status": "약정만료",
@@ -33211,7 +33211,7 @@ const TARGETS = [
     },
     {
         "name": "에스피브이(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 근남면 마현리 145 에스피브이(주)",
         "status": "약정만료",
@@ -33226,7 +33226,7 @@ const TARGETS = [
     },
     {
         "name": "에스피브이(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 근남면 마현리 145 에스피브이(주)",
         "status": "약정만료",
@@ -33241,7 +33241,7 @@ const TARGETS = [
     },
     {
         "name": "에스피브이(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 근남면 마현리 145",
         "status": "약정만료",
@@ -33256,7 +33256,7 @@ const TARGETS = [
     },
     {
         "name": "에스피브이(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 근남면 마현리 145",
         "status": "약정만료",
@@ -33271,7 +33271,7 @@ const TARGETS = [
     },
     {
         "name": "에스피브이(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 근남면 마현리 145",
         "status": "약정만료",
@@ -33286,7 +33286,7 @@ const TARGETS = [
     },
     {
         "name": "에스피브이(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 근남면 마현리 145",
         "status": "약정만료",
@@ -33301,7 +33301,7 @@ const TARGETS = [
     },
     {
         "name": "에스피브이(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 근남면 마현리 145",
         "status": "약정만료",
@@ -33316,7 +33316,7 @@ const TARGETS = [
     },
     {
         "name": "에스피브이(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 근남면 마현리 145",
         "status": "약정만료",
@@ -33331,7 +33331,7 @@ const TARGETS = [
     },
     {
         "name": "에스피브이(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 근남면 마현리 145 에스피브이(주)",
         "status": "약정만료",
@@ -33346,7 +33346,7 @@ const TARGETS = [
     },
     {
         "name": "에스피브이(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 근남면 마현리 145 에스피브이(주)",
         "status": "약정만료",
@@ -33361,7 +33361,7 @@ const TARGETS = [
     },
     {
         "name": "에스피브이(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 근남면 마현리 145 에스피브이(주)",
         "status": "약정만료",
@@ -33376,7 +33376,7 @@ const TARGETS = [
     },
     {
         "name": "에스피브이(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 근남면 마현리 145 에스피브이(주)",
         "status": "약정만료",
@@ -33391,7 +33391,7 @@ const TARGETS = [
     },
     {
         "name": "에스피브이(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 근남면 마현리 145 에스피브이(주)",
         "status": "약정만료",
@@ -33406,7 +33406,7 @@ const TARGETS = [
     },
     {
         "name": "에스피브이(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 근남면 마현리 145 에스피브이(주)",
         "status": "약정만료",
@@ -33421,7 +33421,7 @@ const TARGETS = [
     },
     {
         "name": "에스피브이(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 근남면 마현리 145 에스피브이(주)",
         "status": "약정만료",
@@ -33436,7 +33436,7 @@ const TARGETS = [
     },
     {
         "name": "에스피브이(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 근남면 마현리 145 에스피브이(주)",
         "status": "약정만료",
@@ -33451,7 +33451,7 @@ const TARGETS = [
     },
     {
         "name": "에스피브이(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 근남면 마현리 145 에스피브이(주)",
         "status": "약정만료",
@@ -33466,7 +33466,7 @@ const TARGETS = [
     },
     {
         "name": "에스피브이(주)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 근남면 마현리 145 에스피브이(주)",
         "status": "약정만료",
@@ -33481,7 +33481,7 @@ const TARGETS = [
     },
     {
         "name": "에이덴트",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 창2동 581-29(2층)",
         "status": "약정만료",
@@ -33496,7 +33496,7 @@ const TARGETS = [
     },
     {
         "name": "에이비랩건축사사무소(GiGAeyes i-guard)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 315-27 ",
         "status": "약정만료",
@@ -33511,7 +33511,7 @@ const TARGETS = [
     },
     {
         "name": "(주)한일코리아",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 창수면 창동로 59-92",
         "status": "약정만료",
@@ -33526,7 +33526,7 @@ const TARGETS = [
     },
     {
         "name": "에이치109",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 398-2번지 4층",
         "status": "약정만료",
@@ -33541,7 +33541,7 @@ const TARGETS = [
     },
     {
         "name": "에이치디랩스",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 월계동 85-7 서울원아이파크 현장",
         "status": "약정만료",
@@ -33556,7 +33556,7 @@ const TARGETS = [
     },
     {
         "name": "에이치디랩스",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 월계동 85-7 서울원아이파크 현장",
         "status": "약정만료",
@@ -33571,7 +33571,7 @@ const TARGETS = [
     },
     {
         "name": "에이치디랩스",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 동대문구 이문동 136-2 5번게이트",
         "status": "약정만료",
@@ -33586,7 +33586,7 @@ const TARGETS = [
     },
     {
         "name": "에이치디엠코리아",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 하성북리 261-14",
         "status": "약정만료",
@@ -33601,7 +33601,7 @@ const TARGETS = [
     },
     {
         "name": "에이치디티주식회사",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 반곡동 1860-5번지 반곡_H타워 410호 (반곡동)",
         "status": "약정만료",
@@ -33616,7 +33616,7 @@ const TARGETS = [
     },
     {
         "name": "에이치디피(OCT)",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 중앙동 108-1(중앙로 109)",
         "status": "약정만료",
@@ -33631,7 +33631,7 @@ const TARGETS = [
     },
     {
         "name": "에이치디피(OCT)",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 태장동 1374-1 1층",
         "status": "약정만료",
@@ -33646,7 +33646,7 @@ const TARGETS = [
     },
     {
         "name": "에이치디피(OCT)",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 횡성읍 읍하리 540 KT횡성빌딩 1층 KT프라자",
         "status": "약정만료",
@@ -33661,7 +33661,7 @@ const TARGETS = [
     },
     {
         "name": "에이치라인해운",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 수송동 146-1 리마빌딩8층",
         "status": "약정만료",
@@ -33676,7 +33676,7 @@ const TARGETS = [
     },
     {
         "name": "에이치라인해운",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 수송동 146-1번지 이마빌딩12층",
         "status": "만기도래_신규(1st)",
@@ -33691,7 +33691,7 @@ const TARGETS = [
     },
     {
         "name": "에이치라인해운",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 수송동 146-1 이마빌딩 8층",
         "status": "약정만료",
@@ -33706,7 +33706,7 @@ const TARGETS = [
     },
     {
         "name": "에이치씨케이 주식회사",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 성산2동 590-1 두산위브센티움1층",
         "status": "약정만료",
@@ -33721,7 +33721,7 @@ const TARGETS = [
     },
     {
         "name": "에이치엔씨",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 동교동 168-3번지 5층",
         "status": "만기도래_신규(1st)",
@@ -33736,7 +33736,7 @@ const TARGETS = [
     },
     {
         "name": "에이치엔씨",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 동교동 168-3번지 4층",
         "status": "약정만료",
@@ -33751,7 +33751,7 @@ const TARGETS = [
     },
     {
         "name": "에이치엔씨",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 동교동 168-3번지 4층",
         "status": "약정만료",
@@ -33766,7 +33766,7 @@ const TARGETS = [
     },
     {
         "name": "에이치엠플러스(주)",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 풍동 1237번지",
         "status": "약정만료",
@@ -33781,7 +33781,7 @@ const TARGETS = [
     },
     {
         "name": "에이치와이몰드",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 남면 화합로387번길 51-98(매곡리)",
         "status": "약정만료",
@@ -33796,7 +33796,7 @@ const TARGETS = [
     },
     {
         "name": "에이치와이몰드",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 남면 매곡리 매곡리 243-7",
         "status": "약정만료",
@@ -33811,7 +33811,7 @@ const TARGETS = [
     },
     {
         "name": "에이치짐회기점",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 회기동 77-40번지 한성베스트빌 지하 1층~3층",
         "status": "만기도래_신규(1st)",
@@ -33826,7 +33826,7 @@ const TARGETS = [
     },
     {
         "name": "에이티바이오",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 내촌면 진목리 482-5",
         "status": "약정만료",
@@ -33841,7 +33841,7 @@ const TARGETS = [
     },
     {
         "name": "에이티바이오",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 내촌면 진목리 40번지",
         "status": "약정만료",
@@ -33856,7 +33856,7 @@ const TARGETS = [
     },
     {
         "name": "에이티씨",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 백석동 1121번지",
         "status": "약정만료",
@@ -33871,7 +33871,7 @@ const TARGETS = [
     },
     {
         "name": "에이티씨",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 동산동 376번지",
         "status": "만기도래_신규(1st)",
@@ -33886,7 +33886,7 @@ const TARGETS = [
     },
     {
         "name": "에이티씨",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 동산동 376번지 삼송 테크노밸리 A동 422호",
         "status": "약정만료",
@@ -33901,7 +33901,7 @@ const TARGETS = [
     },
     {
         "name": "에이티씨",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 동산동 376번지 삼송테크노밸리 A동 413호 근태전용",
         "status": "만기도래_신규(1st)",
@@ -33916,7 +33916,7 @@ const TARGETS = [
     },
     {
         "name": "에이티씨",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 동산동 376 삼송테크노밸리 A동 4층 413414호",
         "status": "약정만료",
@@ -33931,7 +33931,7 @@ const TARGETS = [
     },
     {
         "name": "에일리언쿠퍼(GiGAeyes guard)",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 사리현동 262-16",
         "status": "약정만료",
@@ -33946,7 +33946,7 @@ const TARGETS = [
     },
     {
         "name": "에일리언쿠퍼(GiGAeyes guard)",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 사리현동 262-3번지",
         "status": "만기도래_신규(1st)",
@@ -33961,7 +33961,7 @@ const TARGETS = [
     },
     {
         "name": "에코디자인",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 초동 42번지 아시아미디어타워 4층 402호 누보",
         "status": "약정만료",
@@ -33976,7 +33976,7 @@ const TARGETS = [
     },
     {
         "name": "에코비젼",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 동내면 거두리 1143-3",
         "status": "약정만료",
@@ -33991,7 +33991,7 @@ const TARGETS = [
     },
     {
         "name": "에코승리건물관리",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 호평동 444-4 오즈빌 501동",
         "status": "약정만료",
@@ -34006,7 +34006,7 @@ const TARGETS = [
     },
     {
         "name": "에코승리건물관리",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 호평동 444-4 오즈빌 602동",
         "status": "약정만료",
@@ -34021,7 +34021,7 @@ const TARGETS = [
     },
     {
         "name": "에코승리건물관리",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 묵현리119-2 골든캐슬101동",
         "status": "약정만료",
@@ -34036,7 +34036,7 @@ const TARGETS = [
     },
     {
         "name": "에코승리건물관리",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍묵현리 산156-3번지 남양주두산위브트레지움@상가 관리실(지하 전기실)",
         "status": "약정만료",
@@ -34051,7 +34051,7 @@ const TARGETS = [
     },
     {
         "name": "에코승리건물관리",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 묵현리 74-58 씨엘타운c동 씨엘타운c동 (묵현리)",
         "status": "약정만료",
@@ -34066,7 +34066,7 @@ const TARGETS = [
     },
     {
         "name": "에코승리건물관리",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 연평리 51-20 송원빌라C동",
         "status": "만기도래_신규(1st)",
@@ -34081,7 +34081,7 @@ const TARGETS = [
     },
     {
         "name": "에코승리건물관리",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 묵현리 388-50 천마로얄타운101동",
         "status": "만기도래_신규(1st)",
@@ -34096,7 +34096,7 @@ const TARGETS = [
     },
     {
         "name": "에프엠제이인터내셔날",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 창현리 1-2번지",
         "status": "약정만료",
@@ -34111,7 +34111,7 @@ const TARGETS = [
     },
     {
         "name": "에프엠제이인터내셔날",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 창현리 1-2",
         "status": "약정만료",
@@ -34126,7 +34126,7 @@ const TARGETS = [
     },
     {
         "name": "에프엠제이인터내셔날",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 장안동 92-2",
         "status": "약정만료",
@@ -34141,7 +34141,7 @@ const TARGETS = [
     },
     {
         "name": "에프엠제이인터내셔날",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 장안동 92-2 3층",
         "status": "약정만료",
@@ -34156,7 +34156,7 @@ const TARGETS = [
     },
     {
         "name": "에프엠제이인터내셔날",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 창현리 1-2(포장대 400만 화소)",
         "status": "만기도래_신규(1st)",
@@ -34171,7 +34171,7 @@ const TARGETS = [
     },
     {
         "name": "에프엠제이인터내셔날",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 장안동 92-2번지1층",
         "status": "약정만료",
@@ -34186,7 +34186,7 @@ const TARGETS = [
     },
     {
         "name": "에프엠제이인터내셔날",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 장안동 92-2 영신빌딩 3층",
         "status": "만기도래_신규(1st)",
@@ -34201,7 +34201,7 @@ const TARGETS = [
     },
     {
         "name": "에프엠제이인터내셔날",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 창현리 1-2(E동 창고)",
         "status": "만기도래_신규(1st)",
@@ -34216,7 +34216,7 @@ const TARGETS = [
     },
     {
         "name": "에프엠제이인터내셔날",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 장안동 92-2번지 뒤건물",
         "status": "약정만료",
@@ -34231,7 +34231,7 @@ const TARGETS = [
     },
     {
         "name": "에프엠제이인터내셔날",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 창현리 1-2번지 안쪽",
         "status": "약정만료",
@@ -34246,7 +34246,7 @@ const TARGETS = [
     },
     {
         "name": "엔불",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 원남동 66-1반석빌딩4층",
         "status": "약정만료",
@@ -34261,7 +34261,7 @@ const TARGETS = [
     },
     {
         "name": "엔산마운트",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 탄현면 한록산길 116",
         "status": "약정만료",
@@ -34276,7 +34276,7 @@ const TARGETS = [
     },
     {
         "name": "엔와이",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 중구 만리동1가 62-14 만리재로35길6 1/2층",
         "status": "만기도래_신규(1st)",
@@ -34291,7 +34291,7 @@ const TARGETS = [
     },
     {
         "name": "엔젤리너스미아삼거리점",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 55-58",
         "status": "약정만료",
@@ -34306,7 +34306,7 @@ const TARGETS = [
     },
     {
         "name": "엘(L)7플로팅 명동점",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 도내동 1003 이케아 고양점 롯데아울렛원흥점 1층 본우리반상 원흥롯데점",
         "status": "약정만료",
@@ -34321,7 +34321,7 @@ const TARGETS = [
     },
     {
         "name": "엘라부티크",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 창전동 6-139번지 3층 정일빌딩",
         "status": "만기도래_신규(1st)",
@@ -34336,7 +34336,7 @@ const TARGETS = [
     },
     {
         "name": "엘림솔트앤빈(GiGAeyes i-guard)",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 효자동 139-1",
         "status": "만기도래_신규(1st)",
@@ -34351,7 +34351,7 @@ const TARGETS = [
     },
     {
         "name": "엘아이지넥스원(주)",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평1동 753-5",
         "status": "약정만료",
@@ -34366,7 +34366,7 @@ const TARGETS = [
     },
     {
         "name": "엘아이지넥스원(주)",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 금오동 463-7번지 4층",
         "status": "약정만료",
@@ -34381,7 +34381,7 @@ const TARGETS = [
     },
     {
         "name": "엠케이씨",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 조리읍 장곡리 17-48 보성산업",
         "status": "만기도래_신규(1st)",
@@ -34396,7 +34396,7 @@ const TARGETS = [
     },
     {
         "name": "엠텍하우스",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 강동면 하시동리 112-4 엠텍하우스 B동 B1호~B8호",
         "status": "약정만료",
@@ -34411,7 +34411,7 @@ const TARGETS = [
     },
     {
         "name": "여기한방병원",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 지축동 0 3층~6층 여기한의원",
         "status": "약정만료",
@@ -34426,7 +34426,7 @@ const TARGETS = [
     },
     {
         "name": "여기한방병원",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 지축동 0번지 여기한방병원",
         "status": "만기도래_신규(1st)",
@@ -34441,7 +34441,7 @@ const TARGETS = [
     },
     {
         "name": "여주종합상사",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 오장동 44-10 8호",
         "status": "약정만료",
@@ -34456,7 +34456,7 @@ const TARGETS = [
     },
     {
         "name": "연몽캠핑장",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 전곡읍 660-3 미라클",
         "status": "약정만료",
@@ -34471,7 +34471,7 @@ const TARGETS = [
     },
     {
         "name": "연세 봄 재활의학과의원",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 원동  278-1 2층 (원동)",
         "status": "약정만료",
@@ -34486,7 +34486,7 @@ const TARGETS = [
     },
     {
         "name": "연세DMC재활의학과의원",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1604 (주)문화방송 2층 의원",
         "status": "약정만료",
@@ -34501,7 +34501,7 @@ const TARGETS = [
     },
     {
         "name": "연세강인병원",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 화정동 984-1 반석플라자 활기찬병원",
         "status": "약정만료",
@@ -34516,7 +34516,7 @@ const TARGETS = [
     },
     {
         "name": "연세대학교",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 신촌동 연세대학교 연세우유",
         "status": "약정만료",
@@ -34531,7 +34531,7 @@ const TARGETS = [
     },
     {
         "name": "연세대학교",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 동교동 178-9",
         "status": "만기도래_신규(1st)",
@@ -34546,7 +34546,7 @@ const TARGETS = [
     },
     {
         "name": "연세맘스키즈치과",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 금오동 470-5금강프라자4층",
         "status": "약정만료",
@@ -34561,7 +34561,7 @@ const TARGETS = [
     },
     {
         "name": "연세맘스키즈치과",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 금오동 470-5 금강프라자 4층",
         "status": "약정만료",
@@ -34576,7 +34576,7 @@ const TARGETS = [
     },
     {
         "name": "연세메디컬의원(OCT)",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 무실동 시청로70 2층",
         "status": "약정만료",
@@ -34591,7 +34591,7 @@ const TARGETS = [
     },
     {
         "name": "연세미소내과",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 화정동 970-2 홀인원프라자4층",
         "status": "약정만료",
@@ -34606,7 +34606,7 @@ const TARGETS = [
     },
     {
         "name": "연세부자제상가",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동  64-1",
         "status": "약정만료",
@@ -34621,7 +34621,7 @@ const TARGETS = [
     },
     {
         "name": "연천군청",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 미산면 아미리 산7번지",
         "status": "약정만료",
@@ -34636,7 +34636,7 @@ const TARGETS = [
     },
     {
         "name": "연천군청",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 전곡읍 전곡리 213-4",
         "status": "약정만료",
@@ -34651,7 +34651,7 @@ const TARGETS = [
     },
     {
         "name": "연천군청",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 장남면 고랑포리 산18-2번지",
         "status": "약정만료",
@@ -34666,7 +34666,7 @@ const TARGETS = [
     },
     {
         "name": "연천군청",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 장남면 고랑포리  고랑포구역사공원",
         "status": "약정만료",
@@ -34681,7 +34681,7 @@ const TARGETS = [
     },
     {
         "name": "연천군청",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 미산면 아미리 아미리 산7번지",
         "status": "약정만료",
@@ -34696,7 +34696,7 @@ const TARGETS = [
     },
     {
         "name": "연천군청",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 중면 횡산리 243",
         "status": "약정만료",
@@ -34711,7 +34711,7 @@ const TARGETS = [
     },
     {
         "name": "연천축산영농조합법인",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 연천읍 동막리 261-4",
         "status": "약정만료",
@@ -34726,7 +34726,7 @@ const TARGETS = [
     },
     {
         "name": "연합성구성의사",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 조리읍오산리 256-3",
         "status": "약정만료",
@@ -34741,7 +34741,7 @@ const TARGETS = [
     },
     {
         "name": "열린세상",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 와부읍 월문리 62-27 1층",
         "status": "만기도래_신규(1st)",
@@ -34756,7 +34756,7 @@ const TARGETS = [
     },
     {
         "name": "열방교회(뷰N)",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 신곡동 767-3",
         "status": "약정만료",
@@ -34771,7 +34771,7 @@ const TARGETS = [
     },
     {
         "name": "영민케미칼(OCT)",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 장흥면 가마골로100번길14",
         "status": "약정만료",
@@ -34786,7 +34786,7 @@ const TARGETS = [
     },
     {
         "name": "영산문화재연구소",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 구의동 250-4 번지 4층",
         "status": "만기도래_신규(1st)",
@@ -34801,7 +34801,7 @@ const TARGETS = [
     },
     {
         "name": "영신빌딩",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 묘동 201번지",
         "status": "약정만료",
@@ -34816,7 +34816,7 @@ const TARGETS = [
     },
     {
         "name": "영신빌딩",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 묘동 201번지 지하1층",
         "status": "약정만료",
@@ -34831,7 +34831,7 @@ const TARGETS = [
     },
     {
         "name": "영신빌딩",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 묘동 201 영신빌딩 지하1층",
         "status": "약정만료",
@@ -34846,7 +34846,7 @@ const TARGETS = [
     },
     {
         "name": "영양식품흥업",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 충무로1가 25-32",
         "status": "만기도래_신규(1st)",
@@ -34861,7 +34861,7 @@ const TARGETS = [
     },
     {
         "name": "영우물류센터",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진건읍 용정리 816번지",
         "status": "약정만료",
@@ -34876,7 +34876,7 @@ const TARGETS = [
     },
     {
         "name": "영우물류센터",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 을지로4가 310-68 삼풍상가5층 516호",
         "status": "약정만료",
@@ -34891,7 +34891,7 @@ const TARGETS = [
     },
     {
         "name": "영우물류센터",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 명륜3가 53-21번지 성균관대학교",
         "status": "약정만료",
@@ -34906,7 +34906,7 @@ const TARGETS = [
     },
     {
         "name": "영우물류센터",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 상수동 72-1번지 홍익대학교 와우관4층 와우관4층 (상수동홍익대학교) 4층",
         "status": "약정만료",
@@ -34921,7 +34921,7 @@ const TARGETS = [
     },
     {
         "name": "영우물류센터",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 상수동 72-1번지 홍익대학교 홍문관 3층",
         "status": "약정만료",
@@ -34936,7 +34936,7 @@ const TARGETS = [
     },
     {
         "name": "영우물류센터",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 서종면 명달리 193번지",
         "status": "약정만료",
@@ -34951,7 +34951,7 @@ const TARGETS = [
     },
     {
         "name": "영우물류센터",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 명륜동3가 53",
         "status": "약정만료",
@@ -34966,7 +34966,7 @@ const TARGETS = [
     },
     {
         "name": "영우물류센터",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 정릉동 861-1",
         "status": "만기도래_재계약",
@@ -34981,7 +34981,7 @@ const TARGETS = [
     },
     {
         "name": "영우물류센터",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 상수동 72-1 인문사회관 C동 8층 카페나무",
         "status": "약정만료",
@@ -34996,7 +34996,7 @@ const TARGETS = [
     },
     {
         "name": "영우물류센터",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 하월곡동 23-1",
         "status": "약정만료",
@@ -35011,7 +35011,7 @@ const TARGETS = [
     },
     {
         "name": "영우물류센터",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 도봉로 76가길55.성신여대운정캠퍼스지하1층",
         "status": "약정만료",
@@ -35026,7 +35026,7 @@ const TARGETS = [
     },
     {
         "name": "영우물류센터",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 남대문로2가 130 12층",
         "status": "약정만료",
@@ -35041,7 +35041,7 @@ const TARGETS = [
     },
     {
         "name": "영우물류센터",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 장항동 784 롯데백화점일산점 B3층 매점",
         "status": "약정만료",
@@ -35056,7 +35056,7 @@ const TARGETS = [
     },
     {
         "name": "영우물류센터",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 소공동 1 롯데백화점 본점 16층",
         "status": "약정만료",
@@ -35071,7 +35071,7 @@ const TARGETS = [
     },
     {
         "name": "영우물류센터",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 소공동 1 롯데백화점 본점 B2층",
         "status": "약정만료",
@@ -35086,7 +35086,7 @@ const TARGETS = [
     },
     {
         "name": "영천시장상인회",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 영천동 294 2층",
         "status": "만기도래_신규(1st)",
@@ -35101,7 +35101,7 @@ const TARGETS = [
     },
     {
         "name": "영화진흥위원회",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 명동2가 31-1번지 엠플라자 5층",
         "status": "약정만료",
@@ -35116,7 +35116,7 @@ const TARGETS = [
     },
     {
         "name": "예길식품(OCT)",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 우천면 상하가리 553",
         "status": "약정만료",
@@ -35131,7 +35131,7 @@ const TARGETS = [
     },
     {
         "name": "예스에이피엠관리단",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 신촌동 서울 서대문구 이화여대1길 10 예스에이피엠  관리단",
         "status": "만기도래_신규(1st)",
@@ -35146,7 +35146,7 @@ const TARGETS = [
     },
     {
         "name": "오늘 (구:골프외식타운 3동)",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 지정면 월송리 992 (3동 1.2층)",
         "status": "약정만료",
@@ -35161,7 +35161,7 @@ const TARGETS = [
     },
     {
         "name": "오늘손칼국수앤찜",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 43 커뮤니티센터",
         "status": "약정만료",
@@ -35176,7 +35176,7 @@ const TARGETS = [
     },
     {
         "name": "오데르",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 월산리 253-1",
         "status": "약정만료",
@@ -35191,7 +35191,7 @@ const TARGETS = [
     },
     {
         "name": "오르고",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 종로5가 동호로38길 7",
         "status": "약정만료",
@@ -35206,7 +35206,7 @@ const TARGETS = [
     },
     {
         "name": "오슬로스터디카페-patrol",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 녹번동 218번지 2층3층",
         "status": "만기도래_신규(1st)",
@@ -35221,7 +35221,7 @@ const TARGETS = [
     },
     {
         "name": "오슬로스터디카페-patrol",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서대문구 남가좌동 74-17 2층",
         "status": "약정만료",
@@ -35236,7 +35236,7 @@ const TARGETS = [
     },
     {
         "name": "오슬로스터디카페-patrol",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서대문구 남가좌동 가재울로523층",
         "status": "약정만료",
@@ -35251,7 +35251,7 @@ const TARGETS = [
     },
     {
         "name": "오원물산(주)일산프라자",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 마두동 805-1 관리실",
         "status": "약정만료",
@@ -35266,7 +35266,7 @@ const TARGETS = [
     },
     {
         "name": "오원물산(주)일산프라자",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 마두동 805-1번지",
         "status": "약정만료",
@@ -35281,7 +35281,7 @@ const TARGETS = [
     },
     {
         "name": "오원엠앤아이(주)",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 염리동 백범로123",
         "status": "약정만료",
@@ -35296,7 +35296,7 @@ const TARGETS = [
     },
     {
         "name": "오케이정형외과의원(GiGAeyes i-guard)",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 풍동 1274번지 그린메디피아 2층 201호",
         "status": "약정만료",
@@ -35311,7 +35311,7 @@ const TARGETS = [
     },
     {
         "name": "오판근사업장",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 제기동 148-19번지 2층",
         "status": "약정만료",
@@ -35326,7 +35326,7 @@ const TARGETS = [
     },
     {
         "name": "오픈원",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 계동 104-1번지 12층",
         "status": "약정만료",
@@ -35341,7 +35341,7 @@ const TARGETS = [
     },
     {
         "name": "옥경이네 건생선(GiGAeyes guard)",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 중구 황학동 723-2번지 1층 12층",
         "status": "만기도래_신규(1st)",
@@ -35356,7 +35356,7 @@ const TARGETS = [
     },
     {
         "name": "옥산미장합판(OCT)",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 설운동 566-5번지",
         "status": "약정만료",
@@ -35371,7 +35371,7 @@ const TARGETS = [
     },
     {
         "name": "올덴",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 청평면 고성리 56-1번지 올덴쿡",
         "status": "만기도래_신규(1st)",
@@ -35386,7 +35386,7 @@ const TARGETS = [
     },
     {
         "name": "올랜드아울렛",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 조리읍 뇌조리 459-1번지 (현 자산유리부지)",
         "status": "약정만료",
@@ -35401,7 +35401,7 @@ const TARGETS = [
     },
     {
         "name": "올랜드아울렛",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 금촌동 736번지 올랜드가전가구아울렛",
         "status": "약정만료",
@@ -35416,7 +35416,7 @@ const TARGETS = [
     },
     {
         "name": "올랜드아울렛",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 조리읍 뇌조리 459-1번지 (현 자산유리부지내)",
         "status": "약정만료",
@@ -35431,7 +35431,7 @@ const TARGETS = [
     },
     {
         "name": "올랜드아울렛",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 금촌동 736번지 올랜드가전가구아울렛",
         "status": "약정만료",
@@ -35446,7 +35446,7 @@ const TARGETS = [
     },
     {
         "name": "올랜드아울렛",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 조리읍 뇌조리 459-1번지 올랜드아울렛 물류창고",
         "status": "약정만료",
@@ -35461,7 +35461,7 @@ const TARGETS = [
     },
     {
         "name": "올랜드아울렛",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 조리읍 뇌조리 459-1번지 올랜드아울렛물류센터",
         "status": "약정만료",
@@ -35476,7 +35476,7 @@ const TARGETS = [
     },
     {
         "name": "올랜드아울렛",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 조리읍 뇌조리 459-1번지 올랜드아울렛물류센터",
         "status": "약정만료",
@@ -35491,7 +35491,7 @@ const TARGETS = [
     },
     {
         "name": "올랜드아울렛",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 금촌동 736번지 올랜드가전가구아울렛",
         "status": "약정만료",
@@ -35506,7 +35506,7 @@ const TARGETS = [
     },
     {
         "name": "올리브영 원마운트점",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 대화동 2606  공차 원마운트점 1200호",
         "status": "약정만료",
@@ -35521,7 +35521,7 @@ const TARGETS = [
     },
     {
         "name": "올바른정형외과",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 호평동 639번지 호평프라자 301호",
         "status": "만기도래_신규(1st)",
@@ -35536,7 +35536,7 @@ const TARGETS = [
     },
     {
         "name": "올스타마트 광장점",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 광장동 571-1번지",
         "status": "만기도래_재계약",
@@ -35551,7 +35551,7 @@ const TARGETS = [
     },
     {
         "name": "올스타마트 광장점",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 광장동 571-1 올스타마트",
         "status": "만기도래_재계약",
@@ -35566,7 +35566,7 @@ const TARGETS = [
     },
     {
         "name": "올스타마트 광장점",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 광장동 512-5 지하 1층",
         "status": "만기도래_재계약",
@@ -35581,7 +35581,7 @@ const TARGETS = [
     },
     {
         "name": "옵티마북삼약국",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 효가동 162-34 초이스빌딩",
         "status": "만기도래_신규(1st)",
@@ -35596,7 +35596,7 @@ const TARGETS = [
     },
     {
         "name": "와우빌리지",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 신촌동 1층2층3층",
         "status": "만기도래_신규(1st)",
@@ -35611,7 +35611,7 @@ const TARGETS = [
     },
     {
         "name": "와이브루어리",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 초가팔리 156-52",
         "status": "약정만료",
@@ -35626,7 +35626,7 @@ const TARGETS = [
     },
     {
         "name": "와이브루어리",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 초가팔리 156-52 1층 공장",
         "status": "약정만료",
@@ -35641,7 +35641,7 @@ const TARGETS = [
     },
     {
         "name": "와이즈만동대문센터",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 장안동 387-6번지 11층",
         "status": "만기도래_신규(1st)",
@@ -35656,7 +35656,7 @@ const TARGETS = [
     },
     {
         "name": "와이티에스창고(GiGAeyes i-guard)",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 마포동 35-1 현대빌딩 지하1층 창고",
         "status": "약정만료",
@@ -35671,7 +35671,7 @@ const TARGETS = [
     },
     {
         "name": "와이티에스창고(GiGAeyes i-guard)",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 마포동 35-1 현대빌딩 2층 201호 (주)와이티에스",
         "status": "약정만료",
@@ -35686,7 +35686,7 @@ const TARGETS = [
     },
     {
         "name": "왕십리성모마취통증의학과의원",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 성동구 하왕십리동 966-12번지 공영빌딩 2층 2층",
         "status": "약정만료",
@@ -35701,7 +35701,7 @@ const TARGETS = [
     },
     {
         "name": "왕십리장로회",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 성동구 하왕십리동 1067",
         "status": "약정만료",
@@ -35716,7 +35716,7 @@ const TARGETS = [
     },
     {
         "name": "용늪마을 영농조합법인",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 인제군 서흥리 서흥리 276-1번지",
         "status": "만기도래_신규(1st)",
@@ -35731,7 +35731,7 @@ const TARGETS = [
     },
     {
         "name": "용답초등학교메인",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 성동구 용답동 29번지 용답초등학교",
         "status": "약정만료",
@@ -35746,7 +35746,7 @@ const TARGETS = [
     },
     {
         "name": "용두동교회",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 용두동 140-2",
         "status": "약정만료",
@@ -35761,7 +35761,7 @@ const TARGETS = [
     },
     {
         "name": "용마산홈타운_큐브",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 면목동 61-8  용마산홈타운",
         "status": "약정만료",
@@ -35776,7 +35776,7 @@ const TARGETS = [
     },
     {
         "name": "용문교회",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 용문면 다문리 715-3 행정실",
         "status": "약정만료",
@@ -35791,7 +35791,7 @@ const TARGETS = [
     },
     {
         "name": "용문교회",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 용문면 다문리716-20번지",
         "status": "약정만료",
@@ -35806,7 +35806,7 @@ const TARGETS = [
     },
     {
         "name": "용문글로벌포트",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 송정동 606-43  4번게이트",
         "status": "만기도래_신규(1st)",
@@ -35821,7 +35821,7 @@ const TARGETS = [
     },
     {
         "name": "용문힐링닥터",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 용문면 화전리  476-3번지",
         "status": "만기도래_신규(1st)",
@@ -35836,7 +35836,7 @@ const TARGETS = [
     },
     {
         "name": "용산정형외과",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한강로2가 2-37 4층",
         "status": "만기도래_신규(1st)",
@@ -35851,7 +35851,7 @@ const TARGETS = [
     },
     {
         "name": "용신빌딩",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 강북구 수유동 230-10",
         "status": "만기도래_신규(1st)",
@@ -35866,7 +35866,7 @@ const TARGETS = [
     },
     {
         "name": "용원이엔씨",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 백석읍 홍죽리 926",
         "status": "약정만료",
@@ -35881,7 +35881,7 @@ const TARGETS = [
     },
     {
         "name": "우경빌딩",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 432-1639 2층",
         "status": "만기도래_신규(1st)",
@@ -35896,7 +35896,7 @@ const TARGETS = [
     },
     {
         "name": "우리동네생활용품(고양점)",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 고양동 133-1번지",
         "status": "만기도래_신규(1st)",
@@ -35911,7 +35911,7 @@ const TARGETS = [
     },
     {
         "name": "우리들요양원",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 차산리 67-7번지 4층",
         "status": "약정만료",
@@ -35926,7 +35926,7 @@ const TARGETS = [
     },
     {
         "name": "우리마포복지관",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 노고산동 1-50",
         "status": "약정만료",
@@ -35941,7 +35941,7 @@ const TARGETS = [
     },
     {
         "name": "우리마포복지관",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 노고산동 1-50  345층",
         "status": "약정만료",
@@ -35956,7 +35956,7 @@ const TARGETS = [
     },
     {
         "name": "우리마포복지관",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 노고산동 1-50 5층",
         "status": "약정만료",
@@ -35971,7 +35971,7 @@ const TARGETS = [
     },
     {
         "name": "우리마포복지관",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 노고산동 1-50 우리마포복지관(대흥동주민센터) 3층",
         "status": "약정만료",
@@ -35986,7 +35986,7 @@ const TARGETS = [
     },
     {
         "name": "우리정형외과",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평3동 703-2",
         "status": "약정만료",
@@ -36001,7 +36001,7 @@ const TARGETS = [
     },
     {
         "name": "우리쿱(구:우리생협울산옥동점)",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 오남읍 양지리235-5번지",
         "status": "약정만료",
@@ -36016,7 +36016,7 @@ const TARGETS = [
     },
     {
         "name": "우리푸드대게-신건물",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 북평동 9-4 세광철물 .",
         "status": "만기도래_신규(1st)",
@@ -36031,7 +36031,7 @@ const TARGETS = [
     },
     {
         "name": "우성썬파워주식회사",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 이로동 785",
         "status": "약정만료",
@@ -36046,7 +36046,7 @@ const TARGETS = [
     },
     {
         "name": "우영외식산업(주)",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 을지로1가 188-3번지 프레지던트호텔 1층",
         "status": "약정만료",
@@ -36061,7 +36061,7 @@ const TARGETS = [
     },
     {
         "name": "우영외식산업(주)",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 관철동 삼일대로 15길 25(관철동2층)",
         "status": "약정만료",
@@ -36076,7 +36076,7 @@ const TARGETS = [
     },
     {
         "name": "우영외식산업(주)",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 태평로1가 29-1번지 뉴서울호텔 2층 을지로점(구.대판)",
         "status": "약정만료",
@@ -36091,7 +36091,7 @@ const TARGETS = [
     },
     {
         "name": "우원개발(주)",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 번동 83-12 건설현장",
         "status": "약정만료",
@@ -36106,7 +36106,7 @@ const TARGETS = [
     },
     {
         "name": "우원개발(주)",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 용현동 554-10 4층",
         "status": "약정만료",
@@ -36121,7 +36121,7 @@ const TARGETS = [
     },
     {
         "name": "우진레미콘주식회사",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 도내동 163-4",
         "status": "약정만료",
@@ -36136,7 +36136,7 @@ const TARGETS = [
     },
     {
         "name": "우천식품",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 내촌면 음현리 328",
         "status": "약정만료",
@@ -36151,7 +36151,7 @@ const TARGETS = [
     },
     {
         "name": "우천식품",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 음현리 328",
         "status": "만기도래_신규(1st)",
@@ -36166,7 +36166,7 @@ const TARGETS = [
     },
     {
         "name": "우체국예금보험지원단",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 구의동 587번지 광진우체국 B동 1층",
         "status": "약정만료",
@@ -36181,7 +36181,7 @@ const TARGETS = [
     },
     {
         "name": "우호건설(OCT)",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 강상면 교평리 696-2번지",
         "status": "만기도래_신규(1st)",
@@ -36196,7 +36196,7 @@ const TARGETS = [
     },
     {
         "name": "운정지역주택조합2단지모델하우스",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 와동동 1423번지",
         "status": "약정만료",
@@ -36211,7 +36211,7 @@ const TARGETS = [
     },
     {
         "name": "운정지역주택조합2단지모델하우스",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 와동동 1431-1 월드12차 408호",
         "status": "약정만료",
@@ -36226,7 +36226,7 @@ const TARGETS = [
     },
     {
         "name": "원각사",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 탄현동 1477 건영상가 201호",
         "status": "약정만료",
@@ -36241,7 +36241,7 @@ const TARGETS = [
     },
     {
         "name": "원당으뜸신경외과의원",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 성사동 702번지 2층 3층",
         "status": "만기도래_신규(1st)",
@@ -36256,7 +36256,7 @@ const TARGETS = [
     },
     {
         "name": "원스탑주얼리수리센터",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 중구 황학동 2545 이마트청계천점 지하2층(일렉트로마트 맞은편 냉장고 옆)",
         "status": "만기도래_신규(1st)",
@@ -36271,7 +36271,7 @@ const TARGETS = [
     },
     {
         "name": "원용호님 빌딩",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 무실동 947-5 3층",
         "status": "약정만료",
@@ -36286,7 +36286,7 @@ const TARGETS = [
     },
     {
         "name": "원전종합건설(주)",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 상봉동 110-38 공사현장",
         "status": "만기도래_신규(1st)",
@@ -36301,7 +36301,7 @@ const TARGETS = [
     },
     {
         "name": "원전종합건설(주)",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 상봉동 110-38",
         "status": "만기도래_신규(1st)",
@@ -36316,7 +36316,7 @@ const TARGETS = [
     },
     {
         "name": "원조속초게찜",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 노학동 관광로 250",
         "status": "약정만료",
@@ -36331,7 +36331,7 @@ const TARGETS = [
     },
     {
         "name": "원주마디튼튼마취통증의학과의원",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 무실동 1857-1휴먼타워 201~205호",
         "status": "약정만료",
@@ -36346,7 +36346,7 @@ const TARGETS = [
     },
     {
         "name": "원주메가나이스락볼링",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단계동 서원대로 165-3 4층 (단계동)",
         "status": "약정만료",
@@ -36361,7 +36361,7 @@ const TARGETS = [
     },
     {
         "name": "원주보듬이나눔이어린이집",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 반곡동 입춘로 7번지",
         "status": "만기도래_신규(1st)",
@@ -36376,7 +36376,7 @@ const TARGETS = [
     },
     {
         "name": "원주시청",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 무실동 708-9 .",
         "status": "약정만료",
@@ -36391,7 +36391,7 @@ const TARGETS = [
     },
     {
         "name": "원주시청",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 반곡동 1368-3 .",
         "status": "약정만료",
@@ -36406,7 +36406,7 @@ const TARGETS = [
     },
     {
         "name": "원주시청",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 우산동 505-3 .",
         "status": "약정만료",
@@ -36421,7 +36421,7 @@ const TARGETS = [
     },
     {
         "name": "원주시청",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단구동 1699-2 .",
         "status": "약정만료",
@@ -36436,7 +36436,7 @@ const TARGETS = [
     },
     {
         "name": "원주시청",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단구동 23",
         "status": "약정만료",
@@ -36451,7 +36451,7 @@ const TARGETS = [
     },
     {
         "name": "원주중앙성결교회",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 행구동 1683-1 ",
         "status": "약정만료",
@@ -36466,7 +36466,7 @@ const TARGETS = [
     },
     {
         "name": "원주지역자활센터",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단구동 1514-5번지 102호",
         "status": "약정만료",
@@ -36481,7 +36481,7 @@ const TARGETS = [
     },
     {
         "name": "원주지역자활센터",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 개운동 255-2",
         "status": "약정만료",
@@ -36496,7 +36496,7 @@ const TARGETS = [
     },
     {
         "name": "원주한살림소비자생활협동조합",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단계동 615-17",
         "status": "약정만료",
@@ -36511,7 +36511,7 @@ const TARGETS = [
     },
     {
         "name": "원주한살림소비자생활협동조합",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 무실동 만대로 200-7 1층",
         "status": "약정만료",
@@ -36526,7 +36526,7 @@ const TARGETS = [
     },
     {
         "name": "원주한살림소비자생활협동조합",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 개운동 늘품로 187-62 (개운동)",
         "status": "약정만료",
@@ -36541,7 +36541,7 @@ const TARGETS = [
     },
     {
         "name": "원주한살림소비자생활협동조합",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 횡성읍 읍상리 374-3 한살림",
         "status": "약정만료",
@@ -36556,7 +36556,7 @@ const TARGETS = [
     },
     {
         "name": "원주한살림소비자생활협동조합",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 무실동 만대로 200-7 2층",
         "status": "약정만료",
@@ -36571,7 +36571,7 @@ const TARGETS = [
     },
     {
         "name": "원트릴리온 주식회사",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 명동2가 2-3번지",
         "status": "만기도래_신규(1st)",
@@ -36586,7 +36586,7 @@ const TARGETS = [
     },
     {
         "name": "원트릴리온 주식회사",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 명동2가 2-23 7층",
         "status": "만기도래_신규(1st)",
@@ -36601,7 +36601,7 @@ const TARGETS = [
     },
     {
         "name": "원트릴리온 주식회사",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 명동2가 2-3",
         "status": "만기도래_신규(1st)",
@@ -36616,7 +36616,7 @@ const TARGETS = [
     },
     {
         "name": "월드스포츠",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 진건읍 배양리 514-2",
         "status": "만기도래_신규(1st)",
@@ -36631,7 +36631,7 @@ const TARGETS = [
     },
     {
         "name": "월드킹(노원점)",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 공릉동 581-1",
         "status": "만기도래_신규(1st)",
@@ -36646,7 +36646,7 @@ const TARGETS = [
     },
     {
         "name": "월드타워건설주식회사",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 전곡읍 은대리 170-2번지 주택",
         "status": "약정만료",
@@ -36661,7 +36661,7 @@ const TARGETS = [
     },
     {
         "name": "월산암요양병원",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 법원읍 법원리 662-5 1층",
         "status": "만기도래_신규(1st)",
@@ -36676,7 +36676,7 @@ const TARGETS = [
     },
     {
         "name": "월산암요양병원",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 법원읍 법원리 662-5 사무동",
         "status": "만기도래_신규(1st)",
@@ -36691,7 +36691,7 @@ const TARGETS = [
     },
     {
         "name": "웰빙마트",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서대문구 북가좌동 308-2번지",
         "status": "약정만료",
@@ -36706,7 +36706,7 @@ const TARGETS = [
     },
     {
         "name": "위넌스터디-상왕십리점(텔레캅 큐브)",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 중구 황학동 1101-1  3층",
         "status": "약정만료",
@@ -36721,7 +36721,7 @@ const TARGETS = [
     },
     {
         "name": "위넌스터디카페응암역점",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 응암동 427-38번지 4층",
         "status": "약정만료",
@@ -36736,7 +36736,7 @@ const TARGETS = [
     },
     {
         "name": "위드알유한책임회사",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 서종면수입리 339-7",
         "status": "만기도래_신규(1st)",
@@ -36751,7 +36751,7 @@ const TARGETS = [
     },
     {
         "name": "위밴드 주식회사",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 광희동 서울 중구 퇴계로 217 진양상가  4층",
         "status": "약정만료",
@@ -36766,7 +36766,7 @@ const TARGETS = [
     },
     {
         "name": "위비앙병원",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 아현동 346-5번지",
         "status": "만기도래_신규(1st)",
@@ -36781,7 +36781,7 @@ const TARGETS = [
     },
     {
         "name": "위스터디카페호원점",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 720 롯데캐슬 골드파크 2단지 223동 지하1층 201~204호",
         "status": "만기도래_신규(1st)",
@@ -36796,7 +36796,7 @@ const TARGETS = [
     },
     {
         "name": "위파트주식회사",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 1355 노원센트럴푸르지오 105호옆 스포츠짐센타",
         "status": "약정만료",
@@ -36811,7 +36811,7 @@ const TARGETS = [
     },
     {
         "name": "위파트주식회사",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 경포동 동해대로3406번길 30",
         "status": "약정만료",
@@ -36826,7 +36826,7 @@ const TARGETS = [
     },
     {
         "name": "위파트주식회사",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 포남동 1313번지 일반건물",
         "status": "약정만료",
@@ -36841,7 +36841,7 @@ const TARGETS = [
     },
     {
         "name": "위파트주식회사",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 1355 노원센트럴푸르지오 105동스포츠센타옆카페",
         "status": "약정만료",
@@ -36856,7 +36856,7 @@ const TARGETS = [
     },
     {
         "name": "윈디자인인테리어",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 내촌면 379-5",
         "status": "약정만료",
@@ -36871,7 +36871,7 @@ const TARGETS = [
     },
     {
         "name": "유니넷텍(주)",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 지영동 235-4",
         "status": "약정만료",
@@ -36886,7 +36886,7 @@ const TARGETS = [
     },
     {
         "name": "유니넷텍(주)",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 진건읍 배양리 458 창고2동",
         "status": "약정만료",
@@ -36901,7 +36901,7 @@ const TARGETS = [
     },
     {
         "name": "유니언플레이스한남",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 737-23번지 초원가든",
         "status": "약정만료",
@@ -36916,7 +36916,7 @@ const TARGETS = [
     },
     {
         "name": "유니언플레이스한남",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 737-23번지 4층5층",
         "status": "약정만료",
@@ -36931,7 +36931,7 @@ const TARGETS = [
     },
     {
         "name": "유명브랜드가구아울렛",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 구산동 송산로23번지",
         "status": "만기도래_재계약",
@@ -36946,7 +36946,7 @@ const TARGETS = [
     },
     {
         "name": "유명브랜드가구아울렛",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 구산동 1479-4",
         "status": "약정만료",
@@ -36961,7 +36961,7 @@ const TARGETS = [
     },
     {
         "name": "유성씨앤에프 횡성",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 우천면 상하가리 575 유성씨앤에프(주) 공장동",
         "status": "약정만료",
@@ -36976,7 +36976,7 @@ const TARGETS = [
     },
     {
         "name": "유성아파트입주자대표(패트롤)",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 정상동 316-3 유성아파트 관리사무소",
         "status": "약정만료",
@@ -36991,7 +36991,7 @@ const TARGETS = [
     },
     {
         "name": "유신모자",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 광진구 중곡3동 서울 광진구 동일로 420 (주)유신모자",
         "status": "만기도래_신규(1st)",
@@ -37006,7 +37006,7 @@ const TARGETS = [
     },
     {
         "name": "유어즈에셋(주)",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 장항동 867번지웨스턴돔A동1001호",
         "status": "약정만료",
@@ -37021,7 +37021,7 @@ const TARGETS = [
     },
     {
         "name": "유어즈에셋(주)",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 장항동 868번지 웨스턴돔1 웨스턴타워1차 612호 웨스턴돔A동 웨스턴타워1차 612호 (장항동)",
         "status": "약정만료",
@@ -37036,7 +37036,7 @@ const TARGETS = [
     },
     {
         "name": "유에이앤코리아주식회사",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 신문로1가 163번지 광화문오피시아빌딩1321호",
         "status": "만기도래_신규(1st)",
@@ -37051,7 +37051,7 @@ const TARGETS = [
     },
     {
         "name": "유파트너코퍼레이션 주식회사",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 온의동 587-8",
         "status": "만기도래_재계약",
@@ -37066,7 +37066,7 @@ const TARGETS = [
     },
     {
         "name": "유파트너코퍼레이션 주식회사",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 온의동 587-8",
         "status": "만기도래_재계약",
@@ -37081,7 +37081,7 @@ const TARGETS = [
     },
     {
         "name": "유한회사 광명테크",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 인제군 인제읍 가아리 495",
         "status": "만기도래_신규(1st)",
@@ -37096,7 +37096,7 @@ const TARGETS = [
     },
     {
         "name": "유한회사 광명테크",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 양구군 해안면 현리 500",
         "status": "약정만료",
@@ -37111,7 +37111,7 @@ const TARGETS = [
     },
     {
         "name": "유한회사 광명테크",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 인제군 기린면 북리 923",
         "status": "약정만료",
@@ -37126,7 +37126,7 @@ const TARGETS = [
     },
     {
         "name": "유한회사 광명테크",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 양구군 방산면 현리 513",
         "status": "약정만료",
@@ -37141,7 +37141,7 @@ const TARGETS = [
     },
     {
         "name": "유한회사 광명테크",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 연천읍 상리 상리 550",
         "status": "약정만료",
@@ -37156,7 +37156,7 @@ const TARGETS = [
     },
     {
         "name": "유한회사 광명테크",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 신서면 답곡리 답곡리 847",
         "status": "약정만료",
@@ -37171,7 +37171,7 @@ const TARGETS = [
     },
     {
         "name": "유한회사 더블루2",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 주문진읍 주문리 1585",
         "status": "만기도래_신규(1st)",
@@ -37186,7 +37186,7 @@ const TARGETS = [
     },
     {
         "name": "유한회사 더블루2",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 주문진읍 주문리 1585",
         "status": "만기도래_신규(1st)",
@@ -37201,7 +37201,7 @@ const TARGETS = [
     },
     {
         "name": "유한회사오영",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 682-15",
         "status": "약정만료",
@@ -37216,7 +37216,7 @@ const TARGETS = [
     },
     {
         "name": "육군 제3007부대",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 이평리 745-1",
         "status": "약정만료",
@@ -37231,7 +37231,7 @@ const TARGETS = [
     },
     {
         "name": "육군 제3007부대",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 이평리 745-1",
         "status": "약정만료",
@@ -37246,7 +37246,7 @@ const TARGETS = [
     },
     {
         "name": "육군 제3007부대",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 동송읍 이평리 758(금학로 121번길 9)",
         "status": "약정만료",
@@ -37261,7 +37261,7 @@ const TARGETS = [
     },
     {
         "name": "육군 제3007부대",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 은대리 은대리 649-9번지 독신자숙소",
         "status": "약정만료",
@@ -37276,7 +37276,7 @@ const TARGETS = [
     },
     {
         "name": "육군 제3007부대",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 동송읍 금학로 116번길",
         "status": "약정만료",
@@ -37291,7 +37291,7 @@ const TARGETS = [
     },
     {
         "name": "육군 제3007부대",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 전곡읍 은대리 649-9",
         "status": "약정만료",
@@ -37306,7 +37306,7 @@ const TARGETS = [
     },
     {
         "name": "육군 제3007부대",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 동송읍 이평리 745-2(금학로 157길 34)",
         "status": "약정만료",
@@ -37321,7 +37321,7 @@ const TARGETS = [
     },
     {
         "name": "육군 제3007부대",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 동송읍 이평리 745-2",
         "status": "약정만료",
@@ -37336,7 +37336,7 @@ const TARGETS = [
     },
     {
         "name": "육군제1570부대",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 문산읍 선유리 444번지",
         "status": "약정만료",
@@ -37351,7 +37351,7 @@ const TARGETS = [
     },
     {
         "name": "육군제1570부대",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 문산읍 당동리 산5 (629포병찰리 C단대)",
         "status": "약정만료",
@@ -37366,7 +37366,7 @@ const TARGETS = [
     },
     {
         "name": "육군제2573부대",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 법원읍 금곡리 380-2 외길 끝지점 군부대(맹호존)",
         "status": "약정만료",
@@ -37381,7 +37381,7 @@ const TARGETS = [
     },
     {
         "name": "육군제2573부대",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 남면 휴암로392번길 229",
         "status": "약정만료",
@@ -37396,7 +37396,7 @@ const TARGETS = [
     },
     {
         "name": "육군제2573부대",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 금곡리 380-2",
         "status": "만기도래_재계약",
@@ -37411,7 +37411,7 @@ const TARGETS = [
     },
     {
         "name": "육군제2573부대",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 벽제동 (보광로56 좌측 2573부대 간부기숙사)",
         "status": "약정만료",
@@ -37426,7 +37426,7 @@ const TARGETS = [
     },
     {
         "name": "육군제6953부대",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 아동동 22",
         "status": "약정만료",
@@ -37441,7 +37441,7 @@ const TARGETS = [
     },
     {
         "name": "육군제6953부대",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 조리읍 등원리 441-4번지 숙소방향",
         "status": "약정만료",
@@ -37456,7 +37456,7 @@ const TARGETS = [
     },
     {
         "name": "육군제6953부대",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 조리읍 등원리 441-4",
         "status": "약정만료",
@@ -37471,7 +37471,7 @@ const TARGETS = [
     },
     {
         "name": "육군제7296부대장",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 적성면 159-2",
         "status": "약정만료",
@@ -37486,7 +37486,7 @@ const TARGETS = [
     },
     {
         "name": "육군제7296부대장",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 법원읍 웅담리 사서함 95-26호",
         "status": "만기도래_재계약",
@@ -37501,7 +37501,7 @@ const TARGETS = [
     },
     {
         "name": "육군제7296부대장",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 파평면 두포리 두포리290-1 (5967부대 3대대)",
         "status": "약정만료",
@@ -37516,7 +37516,7 @@ const TARGETS = [
     },
     {
         "name": "육군제7296부대장",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 남면 신산리285-172",
         "status": "약정만료",
@@ -37531,7 +37531,7 @@ const TARGETS = [
     },
     {
         "name": "육군제7296부대장",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 파평면 눌노리 135",
         "status": "약정만료",
@@ -37546,7 +37546,7 @@ const TARGETS = [
     },
     {
         "name": "육아종합지원센터",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 543 인창동",
         "status": "약정만료",
@@ -37561,7 +37561,7 @@ const TARGETS = [
     },
     {
         "name": "육아종합지원센터",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 교문동 390번지 1층 여성행복센타",
         "status": "만기도래_신규(1st)",
@@ -37576,7 +37576,7 @@ const TARGETS = [
     },
     {
         "name": "육키즈",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 흥업면 251-13",
         "status": "만기도래_신규(1st)",
@@ -37591,7 +37591,7 @@ const TARGETS = [
     },
     {
         "name": "윤남호",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 용문면 화전리 476-1",
         "status": "약정만료",
@@ -37606,7 +37606,7 @@ const TARGETS = [
     },
     {
         "name": "은평재활원",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 갈현동  327-87 뉴아름빌 402호 (갈현동)",
         "status": "약정만료",
@@ -37621,7 +37621,7 @@ const TARGETS = [
     },
     {
         "name": "은평재활원",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 구산동  224 105동 101호 (구산동 경남아너스빌)",
         "status": "약정만료",
@@ -37636,7 +37636,7 @@ const TARGETS = [
     },
     {
         "name": "은현실버스테이",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 은현면 선암리 309-2 하늘어린이집 화합로863번길 34-218",
         "status": "약정만료",
@@ -37651,7 +37651,7 @@ const TARGETS = [
     },
     {
         "name": "은혜마을부설은빛사랑채",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 전곡읍 은대리90",
         "status": "만기도래_재계약",
@@ -37666,7 +37666,7 @@ const TARGETS = [
     },
     {
         "name": "응암동고시원",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 응암동 110-13 456층",
         "status": "만기도래_신규(1st)",
@@ -37681,7 +37681,7 @@ const TARGETS = [
     },
     {
         "name": "응암샛별어린이집(GiGAeyes guard)",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 응암동 769 녹번역e편한세상캐슬 124동앞",
         "status": "만기도래_신규(1st)",
@@ -37696,7 +37696,7 @@ const TARGETS = [
     },
     {
         "name": "의료법인 청강의료재단(patrol)",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 강림면 강림리 703 (현진의료재단)",
         "status": "약정만료",
@@ -37711,7 +37711,7 @@ const TARGETS = [
     },
     {
         "name": "의료법인기호재단동해요양병원",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 천곡동 중앙로 218",
         "status": "약정만료",
@@ -37726,7 +37726,7 @@ const TARGETS = [
     },
     {
         "name": "의료법인선덕의료재단",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 횡성읍 입석리 153-10",
         "status": "약정만료",
@@ -37741,7 +37741,7 @@ const TARGETS = [
     },
     {
         "name": "의료법인하나로의료(재)",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 청진동 92번지 GS타워5층",
         "status": "약정만료",
@@ -37756,7 +37756,7 @@ const TARGETS = [
     },
     {
         "name": "의료법인하나로의료(재)",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 청진동 92번지gs타워5층",
         "status": "만기도래_신규(1st)",
@@ -37771,7 +37771,7 @@ const TARGETS = [
     },
     {
         "name": "의료법인하나로의료(재)",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 청진동  92번지 gs타워5층",
         "status": "만기도래_신규(1st)",
@@ -37786,7 +37786,7 @@ const TARGETS = [
     },
     {
         "name": "의료법인하나로의료(재)",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 청진동 70번지 GS그랑서울5층",
         "status": "약정만료",
@@ -37801,7 +37801,7 @@ const TARGETS = [
     },
     {
         "name": "의료법인하나로의료(재)",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 청진동 70 GS그랑서울5층",
         "status": "약정만료",
@@ -37816,7 +37816,7 @@ const TARGETS = [
     },
     {
         "name": "의료법인하나로의료(재)",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 수송동 80-6 석탄회관빌딩6층",
         "status": "약정만료",
@@ -37831,7 +37831,7 @@ const TARGETS = [
     },
     {
         "name": "의료법인하나로의료(재)",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 청진동 70 그랑서울5층",
         "status": "약정만료",
@@ -37846,7 +37846,7 @@ const TARGETS = [
     },
     {
         "name": "의료법인함평성심병원",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 효자동 708 춘천시다문화가족지원센터 2층",
         "status": "만기도래_신규(1st)",
@@ -37861,7 +37861,7 @@ const TARGETS = [
     },
     {
         "name": "의료법인함평성심병원",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 효자2동 공지로 305 춘천시다문화가족지원센터 2층",
         "status": "만기도래_재계약",
@@ -37876,7 +37876,7 @@ const TARGETS = [
     },
     {
         "name": "의양종합주류",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 장흥면 부곡리 564",
         "status": "약정만료",
@@ -37891,7 +37891,7 @@ const TARGETS = [
     },
     {
         "name": "의정부성모치과",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 179-4번지 34층",
         "status": "만기도래_신규(1st)",
@@ -37906,7 +37906,7 @@ const TARGETS = [
     },
     {
         "name": "의정부영아원",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 녹양동 318-5",
         "status": "약정만료",
@@ -37921,7 +37921,7 @@ const TARGETS = [
     },
     {
         "name": "의정부영아원",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 녹양동 318-5번지",
         "status": "약정만료",
@@ -37936,7 +37936,7 @@ const TARGETS = [
     },
     {
         "name": "의정부영아원",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 녹양동 400-24",
         "status": "약정만료",
@@ -37951,7 +37951,7 @@ const TARGETS = [
     },
     {
         "name": "의정부요양병원",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 녹양동 321-3",
         "status": "약정만료",
@@ -37966,7 +37966,7 @@ const TARGETS = [
     },
     {
         "name": "의정부요양병원",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 녹양동 321-3",
         "status": "약정만료",
@@ -37981,7 +37981,7 @@ const TARGETS = [
     },
     {
         "name": "이건",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 우금리 292-12",
         "status": "약정만료",
@@ -37996,7 +37996,7 @@ const TARGETS = [
     },
     {
         "name": "이광희가정집",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 정릉2동 109-25",
         "status": "약정만료",
@@ -38011,7 +38011,7 @@ const TARGETS = [
     },
     {
         "name": "관음사",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 판부면 593-3 1층",
         "status": "약정만료",
@@ -38026,7 +38026,7 @@ const TARGETS = [
     },
     {
         "name": "이드귀금속",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 금촌동 953-9번지 파워프라자104호",
         "status": "만기도래_재계약",
@@ -38041,7 +38041,7 @@ const TARGETS = [
     },
     {
         "name": "이루다 주얼리",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 연지동 155-1번지 4층",
         "status": "약정만료",
@@ -38056,7 +38056,7 @@ const TARGETS = [
     },
     {
         "name": "이룸디자인스킨(주)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 227-7 스타시티 지하107호",
         "status": "만기도래_신규(1st)",
@@ -38071,7 +38071,7 @@ const TARGETS = [
     },
     {
         "name": "이병협가정집",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 연희동 87-10",
         "status": "만기도래_신규(1st)",
@@ -38086,7 +38086,7 @@ const TARGETS = [
     },
     {
         "name": "이석원주택",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 지축동 155-3",
         "status": "약정만료",
@@ -38101,7 +38101,7 @@ const TARGETS = [
     },
     {
         "name": "이수건설현장 사무실",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 장항동 608-13 ",
         "status": "만기도래_신규(1st)",
@@ -38116,7 +38116,7 @@ const TARGETS = [
     },
     {
         "name": "이앤에이치(주)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 333-140번지 코오롱2차 701호",
         "status": "약정만료",
@@ -38131,7 +38131,7 @@ const TARGETS = [
     },
     {
         "name": "이앤에이치(주)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 333-140번지 3층",
         "status": "약정만료",
@@ -38146,7 +38146,7 @@ const TARGETS = [
     },
     {
         "name": "이에스푸드",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 정교리385",
         "status": "약정만료",
@@ -38161,7 +38161,7 @@ const TARGETS = [
     },
     {
         "name": "이에스푸드",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 정교리 384번지",
         "status": "약정만료",
@@ -38176,7 +38176,7 @@ const TARGETS = [
     },
     {
         "name": "이에스푸드",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 정교리 385",
         "status": "약정만료",
@@ -38191,7 +38191,7 @@ const TARGETS = [
     },
     {
         "name": "이에스푸드",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 정교리 385",
         "status": "약정만료",
@@ -38206,7 +38206,7 @@ const TARGETS = [
     },
     {
         "name": "이엠아이주식회사",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 근덕면 장호리 6-1 장원횟집 장호스노쿨비치",
         "status": "만기도래_신규(1st)",
@@ -38221,7 +38221,7 @@ const TARGETS = [
     },
     {
         "name": "이옥일",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 상면 봉수리 272-7번지 관음사",
         "status": "만기도래_신규(1st)",
@@ -38236,7 +38236,7 @@ const TARGETS = [
     },
     {
         "name": "이원자주택",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 성북구 성북동 177-87",
         "status": "약정만료",
@@ -38251,7 +38251,7 @@ const TARGETS = [
     },
     {
         "name": "이원자주택",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 성북구 성북동 177-87",
         "status": "약정만료",
@@ -38266,7 +38266,7 @@ const TARGETS = [
     },
     {
         "name": "이재원가정집",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 성북구 성북동 330-365번지",
         "status": "약정만료",
@@ -38281,7 +38281,7 @@ const TARGETS = [
     },
     {
         "name": "이주영가정집",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 서면 동막리 173 서면 동막리 176",
         "status": "만기도래_신규(1st)",
@@ -38296,7 +38296,7 @@ const TARGETS = [
     },
     {
         "name": "이지케어텍(주)",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 광희동1가 216번지 광희빌딩 4층",
         "status": "약정만료",
@@ -38311,7 +38311,7 @@ const TARGETS = [
     },
     {
         "name": "이지케어텍(주)",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 광희동1가 216번지 광희빌딩 5층 5층 (광희동1가광희빌딩)",
         "status": "약정만료",
@@ -38326,7 +38326,7 @@ const TARGETS = [
     },
     {
         "name": "이지케어텍(주)",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 광희동1가 216번지 광희빌딩 지하1층",
         "status": "약정만료",
@@ -38341,7 +38341,7 @@ const TARGETS = [
     },
     {
         "name": "이지케어텍(주)",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 광희동1가 216 광희빌딩 4층",
         "status": "약정만료",
@@ -38356,7 +38356,7 @@ const TARGETS = [
     },
     {
         "name": "이지케어텍(주)",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 광희동1가 216 광희빌딩 4층",
         "status": "약정만료",
@@ -38371,7 +38371,7 @@ const TARGETS = [
     },
     {
         "name": "이춘복참치사업장",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 망원동 482-10  4층",
         "status": "약정만료",
@@ -38386,7 +38386,7 @@ const TARGETS = [
     },
     {
         "name": "이춘복참치사업장",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 망원동 482-10 23층",
         "status": "약정만료",
@@ -38401,7 +38401,7 @@ const TARGETS = [
     },
     {
         "name": "이춘복참치사업장",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 459-9번지 3층",
         "status": "약정만료",
@@ -38416,7 +38416,7 @@ const TARGETS = [
     },
     {
         "name": "이크림프로젝트",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 726-354",
         "status": "약정만료",
@@ -38431,7 +38431,7 @@ const TARGETS = [
     },
     {
         "name": "이크림프로젝트",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 726-354번지 6층",
         "status": "약정만료",
@@ -38446,7 +38446,7 @@ const TARGETS = [
     },
     {
         "name": "이크림프로젝트",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 726-354번지 5층",
         "status": "약정만료",
@@ -38461,7 +38461,7 @@ const TARGETS = [
     },
     {
         "name": "이크림프로젝트",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 726-354번지 4층",
         "status": "약정만료",
@@ -38476,7 +38476,7 @@ const TARGETS = [
     },
     {
         "name": "이태원무인탄광맥주서면점",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 이태원동 119-7번지 4층",
         "status": "약정만료",
@@ -38491,7 +38491,7 @@ const TARGETS = [
     },
     {
         "name": "익선관",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한강로2가 156-2번지 전층",
         "status": "만기도래_신규(1st)",
@@ -38506,7 +38506,7 @@ const TARGETS = [
     },
     {
         "name": "인사도담",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 관훈동 118-23번지",
         "status": "만기도래_신규(1st)",
@@ -38521,7 +38521,7 @@ const TARGETS = [
     },
     {
         "name": "인사도담",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 명륜4가 48-2",
         "status": "약정만료",
@@ -38536,7 +38536,7 @@ const TARGETS = [
     },
     {
         "name": "인생한우",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 성동구 마장동 522-2",
         "status": "만기도래_신규(1st)",
@@ -38551,7 +38551,7 @@ const TARGETS = [
     },
     {
         "name": "인성병원",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 낙원동 7-7",
         "status": "약정만료",
@@ -38566,7 +38566,7 @@ const TARGETS = [
     },
     {
         "name": "인수빌(원룸)",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 정릉1동 227-41호",
         "status": "약정만료",
@@ -38581,7 +38581,7 @@ const TARGETS = [
     },
     {
         "name": "인자이프-속초리조트(텔레캅 큐브)",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 조양동 1401",
         "status": "약정만료",
@@ -38596,7 +38596,7 @@ const TARGETS = [
     },
     {
         "name": "인제고려병원",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 인제군 인제읍 상동리 256-4 인제고려병원 신축건물 고려병원 별관 (인제상동 인제고려병원신축건물)",
         "status": "약정만료",
@@ -38611,7 +38611,7 @@ const TARGETS = [
     },
     {
         "name": "인제군가족센터",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 인제군 남면 신풍리 601 진격신남아파트 3동 101호 (남면신풍)",
         "status": "약정만료",
@@ -38626,7 +38626,7 @@ const TARGETS = [
     },
     {
         "name": "인제군사회복지관",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 인제군 인제읍 남북리 388 (사회복지관)2층사무실",
         "status": "약정만료",
@@ -38641,7 +38641,7 @@ const TARGETS = [
     },
     {
         "name": "인크루트",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 중구 중림동 128-104 345층",
         "status": "약정만료",
@@ -38656,7 +38656,7 @@ const TARGETS = [
     },
     {
         "name": "인하우징",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 산황동 484-1",
         "status": "약정만료",
@@ -38671,7 +38671,7 @@ const TARGETS = [
     },
     {
         "name": "일광통신(GiGAeyes i-guard)",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리 526-5",
         "status": "만기도래_신규(1st)",
@@ -38686,7 +38686,7 @@ const TARGETS = [
     },
     {
         "name": "일구구사서울(1994SEOUL)",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 연남동  245-29 1234층",
         "status": "만기도래_신규(1st)",
@@ -38701,7 +38701,7 @@ const TARGETS = [
     },
     {
         "name": "일등통신",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1596상암DMC푸르지오시티106호",
         "status": "약정만료",
@@ -38716,7 +38716,7 @@ const TARGETS = [
     },
     {
         "name": "일등통신",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 도화동 559번지 마포트라팰리스 1층",
         "status": "만기도래_신규(1st)",
@@ -38731,7 +38731,7 @@ const TARGETS = [
     },
     {
         "name": "일등통신",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 신공덕동 171 마포케이씨씨웰츠타워 1층",
         "status": "만기도래_재계약",
@@ -38746,7 +38746,7 @@ const TARGETS = [
     },
     {
         "name": "일등통신",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 성동구 행당동 318-36 1층",
         "status": "만기도래_신규(1st)",
@@ -38761,7 +38761,7 @@ const TARGETS = [
     },
     {
         "name": "일등통신",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 향동동 394 GL메트로시티 6층633호",
         "status": "약정만료",
@@ -38776,7 +38776,7 @@ const TARGETS = [
     },
     {
         "name": "일등통신",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 향동동 394 7층705호 (GL메트로시티)",
         "status": "약정만료",
@@ -38791,7 +38791,7 @@ const TARGETS = [
     },
     {
         "name": "일등통신",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 성동구 행당동 318-12 5층",
         "status": "만기도래_신규(1st)",
@@ -38806,7 +38806,7 @@ const TARGETS = [
     },
     {
         "name": "일산서구보건소(kt-OCT뷰D)",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 일산동 1680-6 일산서구보건소",
         "status": "약정만료",
@@ -38821,7 +38821,7 @@ const TARGETS = [
     },
     {
         "name": "일성건설(주)_아파트공사현장",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 인제군 서화면 천도리 586",
         "status": "만기도래_신규(1st)",
@@ -38836,7 +38836,7 @@ const TARGETS = [
     },
     {
         "name": "일신교회주차장",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동 192 ",
         "status": "만기도래_신규(1st)",
@@ -38851,7 +38851,7 @@ const TARGETS = [
     },
     {
         "name": "일원금속",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동 37-1번지",
         "status": "약정만료",
@@ -38866,7 +38866,7 @@ const TARGETS = [
     },
     {
         "name": "임가네한우마을",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 성사동 244-2",
         "status": "만기도래_재계약",
@@ -38881,7 +38881,7 @@ const TARGETS = [
     },
     {
         "name": "임가네한우마을",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 풍동 573-9",
         "status": "약정만료",
@@ -38896,7 +38896,7 @@ const TARGETS = [
     },
     {
         "name": "임마누엘침례교회",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 삼숭동 647-1",
         "status": "약정만료",
@@ -38911,7 +38911,7 @@ const TARGETS = [
     },
     {
         "name": "임마누엘침례교회",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 삼숭동 647-1",
         "status": "약정만료",
@@ -38926,7 +38926,7 @@ const TARGETS = [
     },
     {
         "name": "임마누엘침례교회",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 양주시 삼숭동 647-1",
         "status": "약정만료",
@@ -38941,7 +38941,7 @@ const TARGETS = [
     },
     {
         "name": "임천조씨일봉공파종증",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 군남면 왕림리580-1(진은로272-27)",
         "status": "약정만료",
@@ -38956,7 +38956,7 @@ const TARGETS = [
     },
     {
         "name": "임팩트스퀘어(OCT)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동1가 685-54번지  12층",
         "status": "약정만료",
@@ -38971,7 +38971,7 @@ const TARGETS = [
     },
     {
         "name": "자반고일산점",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 풍동 1127-28 (2층)",
         "status": "만기도래_신규(1st)",
@@ -38986,7 +38986,7 @@ const TARGETS = [
     },
     {
         "name": "자연애땅애",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 군내면 상성북리 293-4",
         "status": "약정만료",
@@ -39001,7 +39001,7 @@ const TARGETS = [
     },
     {
         "name": "자연애숲",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 지영동 353-31",
         "status": "약정만료",
@@ -39016,7 +39016,7 @@ const TARGETS = [
     },
     {
         "name": "자유PC방(무인PC방)",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 내곡동 615-6 1층",
         "status": "약정만료",
@@ -39031,7 +39031,7 @@ const TARGETS = [
     },
     {
         "name": "자유로마트(덕이점)(OCT)",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 373-16번지",
         "status": "만기도래_재계약",
@@ -39046,7 +39046,7 @@ const TARGETS = [
     },
     {
         "name": "자인 장례토탈서비스",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 상면 봉수리 101-4번지 자인 장례토탈서비스",
         "status": "만기도래_신규(1st)",
@@ -39061,7 +39061,7 @@ const TARGETS = [
     },
     {
         "name": "자일일산서비스",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 경의로848",
         "status": "만기도래_재계약",
@@ -39076,7 +39076,7 @@ const TARGETS = [
     },
     {
         "name": "자일일산서비스",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 270번지 본관",
         "status": "만기도래_신규(1st)",
@@ -39091,7 +39091,7 @@ const TARGETS = [
     },
     {
         "name": "자일일산서비스",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 270번지",
         "status": "만기도래_재계약",
@@ -39106,7 +39106,7 @@ const TARGETS = [
     },
     {
         "name": "자일일산서비스",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 270번지",
         "status": "만기도래_재계약",
@@ -39121,7 +39121,7 @@ const TARGETS = [
     },
     {
         "name": "잘놀궁리",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 종로구 창신동 611-50 지하1층지상12층",
         "status": "약정만료",
@@ -39136,7 +39136,7 @@ const TARGETS = [
     },
     {
         "name": "장군횟집",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 장사동 577-36 12층",
         "status": "만기도래_신규(1st)",
@@ -39151,7 +39151,7 @@ const TARGETS = [
     },
     {
         "name": "장안악세사리상가",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동  60-12 장안상가 (남창동)",
         "status": "만기도래_재계약",
@@ -39166,7 +39166,7 @@ const TARGETS = [
     },
     {
         "name": "장안퍼펙트(OCT)",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 장안동 462",
         "status": "약정만료",
@@ -39181,7 +39181,7 @@ const TARGETS = [
     },
     {
         "name": "장애인생산품판매시설",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 유산동 421-3번지",
         "status": "약정만료",
@@ -39196,7 +39196,7 @@ const TARGETS = [
     },
     {
         "name": "장애인생산품판매시설",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 동내면 거두리 422-19",
         "status": "약정만료",
@@ -39211,7 +39211,7 @@ const TARGETS = [
     },
     {
         "name": "장애인생산품판매시설",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 서소문동 90-1 시청역 지하",
         "status": "약정만료",
@@ -39226,7 +39226,7 @@ const TARGETS = [
     },
     {
         "name": "장인가구(주)",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 흥업면 대안리389-3번지",
         "status": "약정만료",
@@ -39241,7 +39241,7 @@ const TARGETS = [
     },
     {
         "name": "장인가구(주)",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 와부읍 율석리404번지",
         "status": "약정만료",
@@ -39256,7 +39256,7 @@ const TARGETS = [
     },
     {
         "name": "재단법인 신한금융희망재단",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 충무로2가 65-4 (충무로2가) 2층",
         "status": "약정만료",
@@ -39271,7 +39271,7 @@ const TARGETS = [
     },
     {
         "name": "재단법인 신한금융희망재단",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 충무로2가 65-4번지 신한은행 명동역지점 지하1층",
         "status": "약정만료",
@@ -39286,7 +39286,7 @@ const TARGETS = [
     },
     {
         "name": "재단법인 양구군시설관리사업단",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 양구군 양구읍 하리 436-1",
         "status": "약정만료",
@@ -39301,7 +39301,7 @@ const TARGETS = [
     },
     {
         "name": "재단법인 양구군시설관리사업단",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 양구군 양구읍 하리 118 (생활체육 클럽하우스)",
         "status": "약정만료",
@@ -39316,7 +39316,7 @@ const TARGETS = [
     },
     {
         "name": "재단법인 양구군시설관리사업단",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 양구군 양구읍 하리 97-1 (종합운동장)",
         "status": "약정만료",
@@ -39331,7 +39331,7 @@ const TARGETS = [
     },
     {
         "name": "재단법인 한국자활복지개발원",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로2가 2-2충정빌딩10층",
         "status": "약정만료",
@@ -39346,7 +39346,7 @@ const TARGETS = [
     },
     {
         "name": "재단법인 한국자활복지개발원",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로2가 2-2 충정빌딩10층",
         "status": "약정만료",
@@ -39361,7 +39361,7 @@ const TARGETS = [
     },
     {
         "name": "재단법인 행복한나눔",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 화전동 227-3번지",
         "status": "만기도래_신규(1st)",
@@ -39376,7 +39376,7 @@ const TARGETS = [
     },
     {
         "name": "재단법인 행복한나눔",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 화전동  227-23 창고 B동 (화전동)",
         "status": "약정만료",
@@ -39391,7 +39391,7 @@ const TARGETS = [
     },
     {
         "name": "재단법인박정희대통령기념재단-확장",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 서울 마포구 월드컵로 386 박정희 대통령 기념도서관",
         "status": "만기도래_신규(1st)",
@@ -39406,7 +39406,7 @@ const TARGETS = [
     },
     {
         "name": "재단법인한국기후변화연구원",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 삼천동 13-1번지",
         "status": "약정만료",
@@ -39421,7 +39421,7 @@ const TARGETS = [
     },
     {
         "name": "재명실업",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 녹양동  319-5",
         "status": "약정만료",
@@ -39436,7 +39436,7 @@ const TARGETS = [
     },
     {
         "name": "저먼유로",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 가능동  717-22 지하일부 (가능동 청솔아파트)",
         "status": "약정만료",
@@ -39451,7 +39451,7 @@ const TARGETS = [
     },
     {
         "name": "전국개인택시조합연합회공제조합",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 장안동 464-5번지7층",
         "status": "약정만료",
@@ -39466,7 +39466,7 @@ const TARGETS = [
     },
     {
         "name": "전국개인택시조합연합회공제조합",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 장안동 464-5 이레 B/D 5층",
         "status": "약정만료",
@@ -39481,7 +39481,7 @@ const TARGETS = [
     },
     {
         "name": "전국개인택시조합연합회공제조합",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 서대문구 홍제동 107-6번지 창주빌딩 2층",
         "status": "약정만료",
@@ -39496,7 +39496,7 @@ const TARGETS = [
     },
     {
         "name": "전국버스운송사업조합",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 746-19",
         "status": "약정만료",
@@ -39511,7 +39511,7 @@ const TARGETS = [
     },
     {
         "name": "전국버스운송사업조합",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 746-19 2층",
         "status": "만기도래_신규(1st)",
@@ -39526,7 +39526,7 @@ const TARGETS = [
     },
     {
         "name": "전국버스운송사업조합",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 교동 949-29 4층",
         "status": "약정만료",
@@ -39541,7 +39541,7 @@ const TARGETS = [
     },
     {
         "name": "전국버스운송사업조합",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 관설동 관설안길 19",
         "status": "약정만료",
@@ -39556,7 +39556,7 @@ const TARGETS = [
     },
     {
         "name": "전국철도공상회 1층",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 용산구 서계동 청파로 89길 4-12번지",
         "status": "약정만료",
@@ -39571,7 +39571,7 @@ const TARGETS = [
     },
     {
         "name": "전국철도공상회 1층",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 용산구 서계동 224-21 4층",
         "status": "약정만료",
@@ -39586,7 +39586,7 @@ const TARGETS = [
     },
     {
         "name": "전농튼튼마취통증의학과",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 전농동 295-316번지 1층",
         "status": "약정만료",
@@ -39601,7 +39601,7 @@ const TARGETS = [
     },
     {
         "name": "전북은행",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 378-8번지 3층",
         "status": "약정만료",
@@ -39616,7 +39616,7 @@ const TARGETS = [
     },
     {
         "name": "전인고등학교",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 동산면 원창리 923-1",
         "status": "약정만료",
@@ -39631,7 +39631,7 @@ const TARGETS = [
     },
     {
         "name": "점보타운오피스텔",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 창동 10번지 점보빌딩",
         "status": "약정만료",
@@ -39646,7 +39646,7 @@ const TARGETS = [
     },
     {
         "name": "점보텍스타일",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진건읍 진관리 252번지 좌측창고",
         "status": "만기도래_신규(1st)",
@@ -39661,7 +39661,7 @@ const TARGETS = [
     },
     {
         "name": "정남제이앤에스",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 용두1동 39-166번지",
         "status": "약정만료",
@@ -39676,7 +39676,7 @@ const TARGETS = [
     },
     {
         "name": "정보통신기술진흥센터",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 남대문로4가 45번지 대한서울상공회의소 12층",
         "status": "약정만료",
@@ -39691,7 +39691,7 @@ const TARGETS = [
     },
     {
         "name": "정우산업(강북)",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 강북구 수유동 229-5 정우빌딩 9층",
         "status": "만기도래_신규(1st)",
@@ -39706,7 +39706,7 @@ const TARGETS = [
     },
     {
         "name": "정원문화사(OCT)",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 공근면매곡리 548-11",
         "status": "약정만료",
@@ -39721,7 +39721,7 @@ const TARGETS = [
     },
     {
         "name": "정원산책요양원",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 백석읍 복지리 147-2",
         "status": "약정만료",
@@ -39736,7 +39736,7 @@ const TARGETS = [
     },
     {
         "name": "정일섬유",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 선단동 815-4",
         "status": "약정만료",
@@ -39751,7 +39751,7 @@ const TARGETS = [
     },
     {
         "name": "정할인마트",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 휘경동 151-3번지",
         "status": "약정만료",
@@ -39766,7 +39766,7 @@ const TARGETS = [
     },
     {
         "name": "제2217부대",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 신동면 증리 800-3번지",
         "status": "약정만료",
@@ -39781,7 +39781,7 @@ const TARGETS = [
     },
     {
         "name": "제2217부대",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 신동면 증리 800-3번지",
         "status": "약정만료",
@@ -39796,7 +39796,7 @@ const TARGETS = [
     },
     {
         "name": "제2218부대",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 우두동 687-5 (두미르레스텔 201동)",
         "status": "약정만료",
@@ -39811,7 +39811,7 @@ const TARGETS = [
     },
     {
         "name": "제2218부대",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 신북읍 용산리 244-5  (2799부대 - 3대대)",
         "status": "약정만료",
@@ -39826,7 +39826,7 @@ const TARGETS = [
     },
     {
         "name": "제2218부대",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 신북읍 용산리 244-5 (2799-3대대)",
         "status": "약정만료",
@@ -39841,7 +39841,7 @@ const TARGETS = [
     },
     {
         "name": "제2218부대",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 우두동 659-11 두미르레스텔 두미르레스텔회관",
         "status": "약정만료",
@@ -39856,7 +39856,7 @@ const TARGETS = [
     },
     {
         "name": "제2621부대(백암회관)",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 화천군 상서면산양리 736-1",
         "status": "만기도래_신규(1st)",
@@ -39871,7 +39871,7 @@ const TARGETS = [
     },
     {
         "name": "제2621부대(백암회관)",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 화천군 화천읍 상리 9-7 칠성회관 1층2층",
         "status": "약정만료",
@@ -39886,7 +39886,7 @@ const TARGETS = [
     },
     {
         "name": "제2621부대(백암회관)",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 화천군 상서면 산양리 525-2 아름드리마을아파트 다동 110호",
         "status": "만기도래_신규(1st)",
@@ -39901,7 +39901,7 @@ const TARGETS = [
     },
     {
         "name": "제36보병사단",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단구동 487-2 신통일아파트 치악레스텔",
         "status": "약정만료",
@@ -39916,7 +39916,7 @@ const TARGETS = [
     },
     {
         "name": "제36보병사단",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단구동 487-2 신통일아파트 통일회관",
         "status": "약정만료",
@@ -39931,7 +39931,7 @@ const TARGETS = [
     },
     {
         "name": "제36보병사단",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 소초면 흥양리 1754-4 .",
         "status": "약정만료",
@@ -39946,7 +39946,7 @@ const TARGETS = [
     },
     {
         "name": "제36보병사단",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 횡성읍 읍하리 540 kt횡성빌딩 1층 예비군 기동대",
         "status": "만기도래_신규(1st)",
@@ -39961,7 +39961,7 @@ const TARGETS = [
     },
     {
         "name": "제36보병사단",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 소초면 흥양리 1673",
         "status": "약정만료",
@@ -39976,7 +39976,7 @@ const TARGETS = [
     },
     {
         "name": "제36보병사단",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단구동 487-2 신통일아파트 치악회관(2층)",
         "status": "약정만료",
@@ -39991,7 +39991,7 @@ const TARGETS = [
     },
     {
         "name": "제8기계화보병사단",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 봉양동 855-1 늘푸른마을",
         "status": "만기도래_신규(1st)",
@@ -40006,7 +40006,7 @@ const TARGETS = [
     },
     {
         "name": "제8기계화보병사단",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 봉양동 855-1 늘푸른마을",
         "status": "약정만료",
@@ -40021,7 +40021,7 @@ const TARGETS = [
     },
     {
         "name": "제8기계화보병사단",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 봉양동 봉양동 855-1",
         "status": "약정만료",
@@ -40036,7 +40036,7 @@ const TARGETS = [
     },
     {
         "name": "제이숲(가능동)",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 유양동 406-1",
         "status": "약정만료",
@@ -40051,7 +40051,7 @@ const TARGETS = [
     },
     {
         "name": "제이숲(가능동)",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 유양동 406-1",
         "status": "약정만료",
@@ -40066,7 +40066,7 @@ const TARGETS = [
     },
     {
         "name": "제이씨현시스템(주)",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 용산구 신계동 6-1 제이씨현빌딩 제이씨현빌딩",
         "status": "약정만료",
@@ -40081,7 +40081,7 @@ const TARGETS = [
     },
     {
         "name": "제이씨현시스템(주)",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 용산구 신계동 새창로 45길 74-2층",
         "status": "약정만료",
@@ -40096,7 +40096,7 @@ const TARGETS = [
     },
     {
         "name": "제이씨현시스템(주)",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 용산구 신계동 새창로45길 74",
         "status": "약정만료",
@@ -40111,7 +40111,7 @@ const TARGETS = [
     },
     {
         "name": "제이앤비",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 인의동 50-2 2층",
         "status": "약정만료",
@@ -40126,7 +40126,7 @@ const TARGETS = [
     },
     {
         "name": "제이에스스토어(GiGAeyes guard)",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 329-1",
         "status": "만기도래_신규(1st)",
@@ -40141,7 +40141,7 @@ const TARGETS = [
     },
     {
         "name": "제이에스케이",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 식사동 1201 3층 건물",
         "status": "약정만료",
@@ -40156,7 +40156,7 @@ const TARGETS = [
     },
     {
         "name": "제이엠씨엔에프",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 백석읍 홍죽리 940-4 (2층)",
         "status": "약정만료",
@@ -40171,7 +40171,7 @@ const TARGETS = [
     },
     {
         "name": "제이웍스",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동1가 13-129",
         "status": "만기도래_신규(1st)",
@@ -40186,7 +40186,7 @@ const TARGETS = [
     },
     {
         "name": "젬코쥬얼리",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 봉익동 88번지",
         "status": "약정만료",
@@ -40201,7 +40201,7 @@ const TARGETS = [
     },
     {
         "name": "젬코쥬얼리",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 번동 239 강북유니온빌딩678층",
         "status": "약정만료",
@@ -40216,7 +40216,7 @@ const TARGETS = [
     },
     {
         "name": "젬코쥬얼리",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 번동 239 8층",
         "status": "약정만료",
@@ -40231,7 +40231,7 @@ const TARGETS = [
     },
     {
         "name": "젬코쥬얼리",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 번동 239 7층",
         "status": "약정만료",
@@ -40246,7 +40246,7 @@ const TARGETS = [
     },
     {
         "name": "젬코쥬얼리",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 번동 239 6층",
         "status": "약정만료",
@@ -40261,7 +40261,7 @@ const TARGETS = [
     },
     {
         "name": "젬코쥬얼리",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 번동 239 유니온빌딩6층",
         "status": "약정만료",
@@ -40276,7 +40276,7 @@ const TARGETS = [
     },
     {
         "name": "조계사",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 수송동 1",
         "status": "약정만료",
@@ -40291,7 +40291,7 @@ const TARGETS = [
     },
     {
         "name": "조계사",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 견지동 46-1 조계사 템플스테이",
         "status": "약정만료",
@@ -40306,7 +40306,7 @@ const TARGETS = [
     },
     {
         "name": "조계사",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 수송동 1",
         "status": "약정만료",
@@ -40321,7 +40321,7 @@ const TARGETS = [
     },
     {
         "name": "조계사",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 수송동 1",
         "status": "약정만료",
@@ -40336,7 +40336,7 @@ const TARGETS = [
     },
     {
         "name": "조계사",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 수송동 45",
         "status": "약정만료",
@@ -40351,7 +40351,7 @@ const TARGETS = [
     },
     {
         "name": "조계사",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 수송동 45",
         "status": "약정만료",
@@ -40366,7 +40366,7 @@ const TARGETS = [
     },
     {
         "name": "조계사",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 수송동 1",
         "status": "약정만료",
@@ -40381,7 +40381,7 @@ const TARGETS = [
     },
     {
         "name": "조계사",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 수송동 45",
         "status": "약정만료",
@@ -40396,7 +40396,7 @@ const TARGETS = [
     },
     {
         "name": "조계사",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 수송동 44",
         "status": "약정만료",
@@ -40411,7 +40411,7 @@ const TARGETS = [
     },
     {
         "name": "조계사",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 견지동 30번지 연등공방",
         "status": "약정만료",
@@ -40426,7 +40426,7 @@ const TARGETS = [
     },
     {
         "name": "조계사",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 수송동 46-22번지 조계사교육원 회장단사무실",
         "status": "약정만료",
@@ -40441,7 +40441,7 @@ const TARGETS = [
     },
     {
         "name": "조양교회",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 청호동 강원 속초시 동해대로 3910",
         "status": "만기도래_신규(1st)",
@@ -40456,7 +40456,7 @@ const TARGETS = [
     },
     {
         "name": "조양교회",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 조양동 1289-15",
         "status": "약정만료",
@@ -40471,7 +40471,7 @@ const TARGETS = [
     },
     {
         "name": "족발야시장",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 54-192번지",
         "status": "만기도래_신규(1st)",
@@ -40486,7 +40486,7 @@ const TARGETS = [
     },
     {
         "name": "종로구청",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 명륜3가 1-1037번지 전봇대",
         "status": "약정만료",
@@ -40501,7 +40501,7 @@ const TARGETS = [
     },
     {
         "name": "종로구청",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 종로구 창신동 583-19번지 전봇대",
         "status": "약정만료",
@@ -40516,7 +40516,7 @@ const TARGETS = [
     },
     {
         "name": "종로구청",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 명륜3가 1-926번지 힐하우스 전봇대",
         "status": "약정만료",
@@ -40531,7 +40531,7 @@ const TARGETS = [
     },
     {
         "name": "종로구청",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 종로1.2.3.4가동 서울 종로구 종로1길 36 종로구청",
         "status": "약정만료",
@@ -40546,7 +40546,7 @@ const TARGETS = [
     },
     {
         "name": "종로본정형외과의원",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 종로5가 398-3 1층 2층",
         "status": "약정만료",
@@ -40561,7 +40561,7 @@ const TARGETS = [
     },
     {
         "name": "종로아동회관어린이집",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 종로구 창신동 산6-25 아동회관어린이집 전층",
         "status": "만기도래_신규(1st)",
@@ -40576,7 +40576,7 @@ const TARGETS = [
     },
     {
         "name": "종로타운관리 주식회사",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 종로1가  르메이에르종로타운",
         "status": "만기도래_신규(1st)",
@@ -40591,7 +40591,7 @@ const TARGETS = [
     },
     {
         "name": "종로타운관리 주식회사",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 종로1가 24번지 르메이에르종로타운1 지하 115호",
         "status": "만기도래_신규(1st)",
@@ -40606,7 +40606,7 @@ const TARGETS = [
     },
     {
         "name": "주)뉴드림유통",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 701-3번지(1층4층)",
         "status": "약정만료",
@@ -40621,7 +40621,7 @@ const TARGETS = [
     },
     {
         "name": "주)뉴드림유통",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 701-3번지 2층 주차장쪽 창고",
         "status": "약정만료",
@@ -40636,7 +40636,7 @@ const TARGETS = [
     },
     {
         "name": "주)소그노",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 팔판동 133-1",
         "status": "약정만료",
@@ -40651,7 +40651,7 @@ const TARGETS = [
     },
     {
         "name": "주)아셈테크",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 337-36",
         "status": "만기도래_신규(1st)",
@@ -40666,7 +40666,7 @@ const TARGETS = [
     },
     {
         "name": "주)우신보석연구원",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 묘동 61 지하1층",
         "status": "약정만료",
@@ -40681,7 +40681,7 @@ const TARGETS = [
     },
     {
         "name": "국민건강보험공단고양일산지사",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 마두동 1010번지 5층",
         "status": "약정만료",
@@ -40696,7 +40696,7 @@ const TARGETS = [
     },
     {
         "name": "주문진수산시장상인회",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 주문진읍 시장길 38",
         "status": "약정만료",
@@ -40711,7 +40711,7 @@ const TARGETS = [
     },
     {
         "name": "주문진활어횟센터",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 봉평면 면온리 227-2 .",
         "status": "약정만료",
@@ -40726,7 +40726,7 @@ const TARGETS = [
     },
     {
         "name": "㈜백련",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 양양군 현남면 입암리 367-2",
         "status": "만기도래_신규(1st)",
@@ -40741,7 +40741,7 @@ const TARGETS = [
     },
     {
         "name": "㈜브로커뮤니케이션",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 적선동 100-1번지 경복빌딩102호",
         "status": "약정만료",
@@ -40756,7 +40756,7 @@ const TARGETS = [
     },
     {
         "name": "㈜브로커뮤니케이션",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 화정동 975-2번지 비전프라자 1층",
         "status": "약정만료",
@@ -40771,7 +40771,7 @@ const TARGETS = [
     },
     {
         "name": "㈜브로커뮤니케이션",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 갈현동 서오릉로 174 상가 102호",
         "status": "만기도래_신규(1st)",
@@ -40786,7 +40786,7 @@ const TARGETS = [
     },
     {
         "name": "㈜브로커뮤니케이션",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동 47-12번지 1층",
         "status": "약정만료",
@@ -40801,7 +40801,7 @@ const TARGETS = [
     },
     {
         "name": "㈜브로커뮤니케이션",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 북아현동 1015번지e편한세상신촌4단지 상가105호",
         "status": "약정만료",
@@ -40816,7 +40816,7 @@ const TARGETS = [
     },
     {
         "name": "㈜브로커뮤니케이션",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 일산동 1084-5 예일빌딩 101호",
         "status": "약정만료",
@@ -40831,7 +40831,7 @@ const TARGETS = [
     },
     {
         "name": "㈜브로커뮤니케이션",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 일산동 1060",
         "status": "약정만료",
@@ -40846,7 +40846,7 @@ const TARGETS = [
     },
     {
         "name": "㈜브로커뮤니케이션",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 464-2 하이파크3로 84",
         "status": "약정만료",
@@ -40861,7 +40861,7 @@ const TARGETS = [
     },
     {
         "name": "㈜브로커뮤니케이션",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 장항동 856-1번지 대양빌딩1층",
         "status": "약정만료",
@@ -40876,7 +40876,7 @@ const TARGETS = [
     },
     {
         "name": "㈜브로커뮤니케이션",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 장항동 763번지 라페스타 e동 113호",
         "status": "약정만료",
@@ -40891,7 +40891,7 @@ const TARGETS = [
     },
     {
         "name": "㈜브로커뮤니케이션",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 화정동 972번지 영프라자1층",
         "status": "약정만료",
@@ -40906,7 +40906,7 @@ const TARGETS = [
     },
     {
         "name": "㈜브로커뮤니케이션",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 장항동 867번지 웨스턴돔 A 동 131호",
         "status": "약정만료",
@@ -40921,7 +40921,7 @@ const TARGETS = [
     },
     {
         "name": "㈜브로커뮤니케이션",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 화정동 975-2번지 비전프라자 5층 502호",
         "status": "약정만료",
@@ -40936,7 +40936,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 가온엠에스",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 다산동 6089-1 지하1층 관리소",
         "status": "약정만료",
@@ -40951,7 +40951,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 뉴미닝",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 구의동 243-61",
         "status": "약정만료",
@@ -40966,7 +40966,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 뉴미닝",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 동대문구 신설동 한빛로 1",
         "status": "약정만료",
@@ -40981,7 +40981,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 단결",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 면목동 497-25 1층 KT매장",
         "status": "약정만료",
@@ -40996,7 +40996,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 단미푸드",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 소초면 둔둔리 283-2",
         "status": "만기도래_신규(1st)",
@@ -41011,7 +41011,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 대박나소",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 278-1",
         "status": "만기도래_신규(1st)",
@@ -41026,7 +41026,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 더삼점영",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 백석동 1141-1 테크노타운6층 6층605호(백석동일산테크노타운)",
         "status": "만기도래_신규(1st)",
@@ -41041,7 +41041,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 도깨비시장",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 주문진읍 교항리 81-18 (주)도깨비시장-강릉",
         "status": "약정만료",
@@ -41056,7 +41056,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 동해우리마트",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 발한동 발한로 237 2층",
         "status": "약정만료",
@@ -41071,7 +41071,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 동해우리마트",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 발한동 290 3층",
         "status": "약정만료",
@@ -41086,7 +41086,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 동해우리마트",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 발한동 발한로 237(1층)",
         "status": "만기도래_재계약",
@@ -41101,7 +41101,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 동해우리마트",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 발한동 290 동해우리마트 1층",
         "status": "약정만료",
@@ -41116,7 +41116,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 동해우리마트",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 발한동 발한로 237",
         "status": "약정만료",
@@ -41131,7 +41131,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 두림",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 광적면 가납리 33-1(그루고개로258번길8)",
         "status": "약정만료",
@@ -41146,7 +41146,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 두림",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 광적면 그루고개로258번길 8",
         "status": "약정만료",
@@ -41161,7 +41161,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 두림",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 가납리 33-1",
         "status": "약정만료",
@@ -41176,7 +41176,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 디에스씨클린",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 무실동 능라동길 48-1 (무실동)",
         "status": "약정만료",
@@ -41191,7 +41191,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 디에스씨클린",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 반곡동 1900-1 관리실",
         "status": "약정만료",
@@ -41206,7 +41206,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 마운틴하이키즈풀빌라",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 청평면 경기 가평군 호명리길 58 -20",
         "status": "만기도래_신규(1st)",
@@ -41221,7 +41221,7 @@ const TARGETS = [
     },
     {
         "name": "국민건강보험공단고양일산지사",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 마두동 1010번지 kt고양지사 6층",
         "status": "약정만료",
@@ -41236,7 +41236,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 모바일최강",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 지정면 가곡리 1497-1",
         "status": "약정만료",
@@ -41251,7 +41251,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 모바일최강",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 중앙동 59-17",
         "status": "약정만료",
@@ -41266,7 +41266,7 @@ const TARGETS = [
     },
     {
         "name": "대명산업",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 광적면 덕도리 47-8",
         "status": "약정만료",
@@ -41281,7 +41281,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 모베",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 성석동 714 (성석동) 5동6동",
         "status": "약정만료",
@@ -41296,7 +41296,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 모베",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 성석동 736번지",
         "status": "약정만료",
@@ -41311,7 +41311,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 모아패키지",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 장항동 611-20번지 가동 2층",
         "status": "만기도래_신규(1st)",
@@ -41326,7 +41326,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 바른생각이테크",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 종로구 종로2가 40번지 육의전빌딩 4층",
         "status": "만기도래_신규(1st)",
@@ -41341,7 +41341,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 베네치아",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 559-2 3층",
         "status": "만기도래_신규(1st)",
@@ -41356,7 +41356,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 사뿐",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 명동2가 31-7번지 4호",
         "status": "만기도래_재계약",
@@ -41371,7 +41371,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 삼주",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 덕정동 286-40",
         "status": "만기도래_신규(1st)",
@@ -41386,7 +41386,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 삼주",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 덕정동 286-40 (삼주국민마트)",
         "status": "만기도래_신규(1st)",
@@ -41401,7 +41401,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 새로피엔엘",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 주교동  318 3층 (주교동 새로빌딩)",
         "status": "약정만료",
@@ -41416,7 +41416,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 새로피엔엘",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 주교동 318번지",
         "status": "약정만료",
@@ -41431,7 +41431,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 새암",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 하월곡동 79-107",
         "status": "약정만료",
@@ -41446,7 +41446,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 새암",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 호평동 641번지 에이스프라자109호",
         "status": "약정만료",
@@ -41461,7 +41461,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 새암",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 동선동4가 53번지 1층",
         "status": "약정만료",
@@ -41476,7 +41476,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 새암",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 석관동 349-1",
         "status": "약정만료",
@@ -41491,7 +41491,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 새암",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 하월곡동 37-6 하월곡동 37-6",
         "status": "약정만료",
@@ -41506,7 +41506,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 소연메디칼",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 문막읍 반계리 5-14 주식회사 소연메디칼",
         "status": "만기도래_재계약",
@@ -41521,7 +41521,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 송강인터내셔날",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 창전동 6-4 1층 2층",
         "status": "약정만료",
@@ -41536,7 +41536,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 송강인터내셔날",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 창전동 6-4 1층 2층",
         "status": "약정만료",
@@ -41551,7 +41551,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 스낵월드",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 남창동 47-6번지 1층",
         "status": "만기도래_신규(1st)",
@@ -41566,7 +41566,7 @@ const TARGETS = [
     },
     {
         "name": "대양산업사(OCT)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 신북면덕둔리 00",
         "status": "약정만료",
@@ -41581,7 +41581,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 스카이",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 구의동 664",
         "status": "만기도래_신규(1st)",
@@ -41596,7 +41596,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 스튜디오수파두파",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 448-29",
         "status": "약정만료",
@@ -41611,7 +41611,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 시그널",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 성동구 하왕십리동 966-22 (무학봉28길 4-1)",
         "status": "약정만료",
@@ -41626,7 +41626,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 시그널",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 성동구 하왕십리동 966-22 (무학봉28길 4-1)",
         "status": "약정만료",
@@ -41641,7 +41641,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 시그널",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 동소문동5가 15. 성신여대역솔하임",
         "status": "약정만료",
@@ -41656,7 +41656,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 시그널",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 가능동 754-11 승원하이츠빌라 1층",
         "status": "약정만료",
@@ -41671,7 +41671,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 씨네일레븐",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 묵동 234-1 롯데시네마 묵동점",
         "status": "약정만료",
@@ -41686,7 +41686,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 씨앤지",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 금릉동 중앙로 189 파워프라자 2층",
         "status": "약정만료",
@@ -41701,7 +41701,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 씨앤지",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 금릉동 중앙로189 파워프라자 301호",
         "status": "약정만료",
@@ -41716,7 +41716,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 아르본",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 연희동 85-3",
         "status": "약정만료",
@@ -41731,7 +41731,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 아르본",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 연희동 85-3번지",
         "status": "약정만료",
@@ -41746,7 +41746,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 아르본",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 연희동 85-3번지",
         "status": "약정만료",
@@ -41761,7 +41761,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 엠금융서비스",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 민락동 806-1 웅신프라자401호",
         "status": "약정만료",
@@ -41776,7 +41776,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 엠금융서비스",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 민락동 806-1 웅신프라자401호",
         "status": "약정만료",
@@ -41791,7 +41791,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 엠디클러스터",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 가산리 171-1",
         "status": "약정만료",
@@ -41806,7 +41806,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 엠코",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 내촌면 진목리 551-1",
         "status": "약정만료",
@@ -41821,7 +41821,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 예스워크",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 송정동 강원 동해시 대동로 430 -2",
         "status": "만기도래_신규(1st)",
@@ -41836,7 +41836,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 예스워크",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 용정동 25-145 희망드림독신자숙소 .",
         "status": "만기도래_신규(1st)",
@@ -41851,7 +41851,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 예스워크",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 천곡동 996 경포간부숙소",
         "status": "만기도래_신규(1st)",
@@ -41866,7 +41866,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 예스워크",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 송정동 강원 동해시 대동로 430 -2",
         "status": "만기도래_신규(1st)",
@@ -41881,7 +41881,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 예스워크",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 송정동 강원 동해시 대동로 430 -2",
         "status": "만기도래_신규(1st)",
@@ -41896,7 +41896,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 예스워크",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 평릉동 274",
         "status": "만기도래_신규(1st)",
@@ -41911,7 +41911,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 온누리정보통신",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 주문진읍 교항리 181-3",
         "status": "약정만료",
@@ -41926,7 +41926,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 온누리정보통신",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 주문진읍 주문로121",
         "status": "약정만료",
@@ -41941,7 +41941,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 온누리정보통신",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 초당동 150-1",
         "status": "약정만료",
@@ -41956,7 +41956,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 온택트헬스(펙트롤 순찰서비스)",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 대현동 144번지 파비상가5층",
         "status": "약정만료",
@@ -41971,7 +41971,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 온택트헬스(펙트롤 순찰서비스)",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 대현동 144번지 2층",
         "status": "약정만료",
@@ -41986,7 +41986,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 온택트헬스(펙트롤 순찰서비스)",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 대현동 144 럭키대현아파트2층(파비상가)",
         "status": "약정만료",
@@ -42001,7 +42001,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 올웨이",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 320-1 1층",
         "status": "약정만료",
@@ -42016,7 +42016,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 올웨이",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 광장동 580번지  상가1층kt직영대리점",
         "status": "만기도래_신규(1st)",
@@ -42031,7 +42031,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 올웨이",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 광진구 중곡동 140-1",
         "status": "약정만료",
@@ -42046,7 +42046,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 올웨이",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 성동구 하왕십리동 1070 센트라스 L동B07호(상왕십리역1-1번출구옆)",
         "status": "약정만료",
@@ -42061,7 +42061,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 올웨이",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 광진구 중곡동 78-1번지",
         "status": "약정만료",
@@ -42076,7 +42076,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 올웨이",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 성동구 행당동 12-5",
         "status": "약정만료",
@@ -42091,7 +42091,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 올히어",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 동교동 173-14 1층",
         "status": "약정만료",
@@ -42106,7 +42106,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 와우",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 진부면 상진부리 630-8 대관령한우",
         "status": "약정만료",
@@ -42121,7 +42121,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 우주상사",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 성석동 1035-83번지 2층",
         "status": "만기도래_신규(1st)",
@@ -42136,7 +42136,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 우주상사",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 성석동 1035-84(방범)",
         "status": "약정만료",
@@ -42151,7 +42151,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 월드케이팝센터",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 중구 장충동 201-6",
         "status": "만기도래_신규(1st)",
@@ -42166,7 +42166,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 웨이브엔텍",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 소초면 평장리 849",
         "status": "약정만료",
@@ -42181,7 +42181,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 유에이치에스",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 2 10층 건물",
         "status": "만기도래_신규(1st)",
@@ -42196,7 +42196,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 이야",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 낙원동 109-1 골드앤빌딩4층",
         "status": "만기도래_신규(1st)",
@@ -42211,7 +42211,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 이터널그룹",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동1가 668-97번지",
         "status": "약정만료",
@@ -42226,7 +42226,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 인텍인터내셔날",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 내촌면 음현리 488-2번지",
         "status": "만기도래_재계약",
@@ -42241,7 +42241,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 장인더",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 이동교리 521번지 1층",
         "status": "만기도래_신규(1st)",
@@ -42256,7 +42256,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 장적골",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 강동면 모전리 221-3 .",
         "status": "만기도래_신규(1st)",
@@ -42271,7 +42271,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 제이에이치씨",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 가능동 596번지",
         "status": "약정만료",
@@ -42286,7 +42286,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 제이엠쥐",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 332-3 지하1층",
         "status": "약정만료",
@@ -42301,7 +42301,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 제이엠쥐",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 332-3  6층",
         "status": "약정만료",
@@ -42316,7 +42316,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 주나",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 홍제동 선수촌로 63번길 18-15",
         "status": "약정만료",
@@ -42331,7 +42331,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 쥬미에르",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 봉익동 29-2 제일빌딩5층",
         "status": "약정만료",
@@ -42346,7 +42346,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 쥬미에르",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 봉익동 29-2 제일빌딩 6층601호",
         "status": "약정만료",
@@ -42361,7 +42361,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 쥬미에르",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 봉익동 29-2 제일빌딩 6층601호",
         "status": "약정만료",
@@ -42376,7 +42376,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 차지온",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 검산동 407번지",
         "status": "약정만료",
@@ -42391,7 +42391,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 차지온",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 검산동 407",
         "status": "만기도래_신규(1st)",
@@ -42406,7 +42406,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 캐플러",
-        "manager": "사공관",
+        "manager": "미지정",
         "branch": "강릉지사",
         "address": "서울 광진구 중곡동 246-5번지",
         "status": "약정만료",
@@ -42421,7 +42421,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 케이비제이코리아",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 견소동 190-82",
         "status": "만기도래_재계약",
@@ -42436,7 +42436,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 크림웨이브",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 277-61  5층",
         "status": "약정만료",
@@ -42451,7 +42451,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 크림웨이브",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 277-61(5층)",
         "status": "약정만료",
@@ -42466,7 +42466,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 토마토티브이",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 합정동  379-5 1층 통신실 (합정동 이토마토)",
         "status": "약정만료",
@@ -42481,7 +42481,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 티앤피디자인컴퍼니",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 62-33",
         "status": "만기도래_신규(1st)",
@@ -42496,7 +42496,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 티앤피디자인컴퍼니",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 62-33 조훈빌딩 3층",
         "status": "만기도래_신규(1st)",
@@ -42511,7 +42511,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 파릇",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 종로구 동숭동 1-61번지 1층",
         "status": "약정만료",
@@ -42526,7 +42526,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 퍼스트비앤피다산점",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 다산동  6061-1 10층 (다산동 다산MH타워)",
         "status": "약정만료",
@@ -42541,7 +42541,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 한주",
-        "manager": "박민준",
+        "manager": "G000306",
         "branch": "고양지사",
         "address": "경기도 파주시 신촌동 28번지",
         "status": "약정만료",
@@ -42556,7 +42556,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 한주",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 초동 18-12번지 1층/4층",
         "status": "약정만료",
@@ -42571,7 +42571,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 해승",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 고성군 죽왕면 오봉리 339-2 함진평가옥",
         "status": "만기도래_신규(1st)",
@@ -42586,7 +42586,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 홍반장",
-        "manager": "박민준",
+        "manager": "G000306",
         "branch": "고양지사",
         "address": "경기 파주시 문발동 76-1",
         "status": "약정만료",
@@ -42601,7 +42601,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 홍반장",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 성산동 592-6 1층",
         "status": "만기도래_재계약",
@@ -42616,7 +42616,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 화남코퍼레이션",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 구호동 247 사무",
         "status": "만기도래_신규(1st)",
@@ -42631,7 +42631,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 황소",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 교동 925-5번지",
         "status": "약정만료",
@@ -42646,7 +42646,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사글로제닉(OCT)",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 군내 484-5",
         "status": "만기도래_신규(1st)",
@@ -42661,7 +42661,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사금주나",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 청산면 대전리 684 금명 초대로 240",
         "status": "약정만료",
@@ -42676,7 +42676,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사뉴라인",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 광희동2가 171번지 전층",
         "status": "만기도래_신규(1st)",
@@ -42691,7 +42691,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사대평섬유",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 백석읍 홍죽리 212-19번지",
         "status": "약정만료",
@@ -42706,7 +42706,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사동대표",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 성산동 240-18",
         "status": "약정만료",
@@ -42721,7 +42721,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사동대표",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 생연동 644-10번지",
         "status": "약정만료",
@@ -42736,7 +42736,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사동대표",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 생연동 754-8번지",
         "status": "약정만료",
@@ -42751,7 +42751,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사동대표",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 창동 609-40번지",
         "status": "약정만료",
@@ -42766,7 +42766,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사리코코리아",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 원흥동 707번지광양프론티어벨리6차303호",
         "status": "만기도래_신규(1st)",
@@ -42781,7 +42781,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사마레몬스",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 대포동 동해대로3705",
         "status": "약정만료",
@@ -42796,7 +42796,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사마레몬스",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 대포동 동해대로 3705",
         "status": "약정만료",
@@ -42811,7 +42811,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사바비스팩토리",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 내유동 402-9",
         "status": "만기도래_신규(1st)",
@@ -42826,7 +42826,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사수연담",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 성동구 왕십리도선동 서울 성동구 왕십리로 410 센트라스 L동 107호",
         "status": "만기도래_신규(1st)",
@@ -42841,7 +42841,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사신촌형제갈비",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 창천동 31-26번지 신촌형제갈비건물1층",
         "status": "약정만료",
@@ -42856,7 +42856,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사신촌형제갈비",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 창천동 31-26번지 형제갈비건물6층독서실",
         "status": "약정만료",
@@ -42871,7 +42871,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사신촌형제갈비",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 창천동 31-26번지 1층셔터문철문 후문(꼬숑돈가스와 별당비빔밥사이문)",
         "status": "약정만료",
@@ -42886,7 +42886,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사신촌형제갈비",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 창천동 31-26 지하",
         "status": "약정만료",
@@ -42901,7 +42901,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사신촌형제갈비",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 창천동 31-26번지 1층안방마님불고기백반",
         "status": "약정만료",
@@ -42916,7 +42916,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사신촌형제갈비",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 창천동 31-26번지 1층야쏘돈코츠라멘",
         "status": "약정만료",
@@ -42931,7 +42931,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사신촌형제갈비",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 창천동 31-26번지 형제갈비건물1층꼬숑돈가스",
         "status": "약정만료",
@@ -42946,7 +42946,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사신촌형제갈비",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 창천동 31-26번지 형제갈비건물1층냉동고",
         "status": "약정만료",
@@ -42961,7 +42961,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사신촌형제갈비",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 창천동 31-26번지 1층별당비빔밥",
         "status": "약정만료",
@@ -42976,7 +42976,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사신촌형제갈비",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 창천동 31-26번지 1층 크레마커피",
         "status": "약정만료",
@@ -42991,7 +42991,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사씨오디리테일",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 동교동 166-14번지 동교동스타피카소 와이즈파크관리단",
         "status": "만기도래_신규(1st)",
@@ -43006,7 +43006,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사씨오디리테일",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 동교동 166-14와이즈파크 2층",
         "status": "약정만료",
@@ -43021,7 +43021,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사씨오디리테일",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 동교동 166-14번지 동교동스타피카소와이즈파크 1층",
         "status": "약정만료",
@@ -43036,7 +43036,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사아이비푸드",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 군자동 서울 광진구 군자로 86  1층",
         "status": "만기도래_신규(1st)",
@@ -43051,7 +43051,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사아이비푸드",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 공릉동 172번지(서울과학가술대학교/건물45번/수림학사건물지하1층)",
         "status": "약정만료",
@@ -43066,7 +43066,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사언희당교육그룹",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 중계동 366-14 5층",
         "status": "만기도래_신규(1st)",
@@ -43081,7 +43081,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사언희당교육그룹",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 중계동 366-14 5층",
         "status": "만기도래_신규(1st)",
@@ -43096,7 +43096,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사언희당교육그룹",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 중계동 366-14번지 부동산프라자 2층",
         "status": "만기도래_신규(1st)",
@@ -43111,7 +43111,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사언희당교육그룹",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 중계동 중계로 205 동진빌딩 지하 1층",
         "status": "약정만료",
@@ -43126,7 +43126,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사언희당교육그룹",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 중계동 366-14 부동산프라자 지하1층",
         "status": "약정만료",
@@ -43141,7 +43141,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사언희당교육그룹",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 중계동 364-23 동진빌딩 3층",
         "status": "만기도래_신규(1st)",
@@ -43156,7 +43156,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사언희당교육그룹",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 중계동 366-14번지 부동산프라자 지하1층",
         "status": "약정만료",
@@ -43171,7 +43171,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사언희당교육그룹",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 중계동 364-23번지",
         "status": "약정만료",
@@ -43186,7 +43186,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사영보",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 동두천동 541-2",
         "status": "약정만료",
@@ -43201,7 +43201,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사영보",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 안흥동 26-2",
         "status": "약정만료",
@@ -43216,7 +43216,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사영보",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 동두천동 동두천동 541-2",
         "status": "약정만료",
@@ -43231,7 +43231,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사오보틀",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 백석읍 오산리 456-11",
         "status": "만기도래_신규(1st)",
@@ -43246,7 +43246,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사오보틀",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 백석읍 오산리 456-11",
         "status": "약정만료",
@@ -43261,7 +43261,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사오픈놀",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 도화동 마포대로78 자람빌딩 8층11층",
         "status": "약정만료",
@@ -43276,7 +43276,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사오픈놀",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 227-17 4층",
         "status": "약정만료",
@@ -43291,7 +43291,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사오픈놀",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서대문구 북가좌동 326-17 2층",
         "status": "약정만료",
@@ -43306,7 +43306,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사오픈놀",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 은평구 증산동 177-8번지(증산로3길4)",
         "status": "약정만료",
@@ -43321,7 +43321,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사오픈놀",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 227-17번지 4층",
         "status": "약정만료",
@@ -43336,7 +43336,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사오픈놀",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 은평구 증산동 증산로251 지하",
         "status": "약정만료",
@@ -43351,7 +43351,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사오픈놀",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 은평구 증산동 177-24 3층",
         "status": "약정만료",
@@ -43366,7 +43366,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사오픈놀",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서대문구 북가좌동 326-17번지 67층",
         "status": "약정만료",
@@ -43381,7 +43381,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사오픈놀",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서대문구 북가좌동 326-17번지 3층",
         "status": "약정만료",
@@ -43396,7 +43396,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사오픈놀",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서대문구 북가좌동 326-17번지 별관1층",
         "status": "약정만료",
@@ -43411,7 +43411,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사오픈놀",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서대문구 북가좌동 326-17",
         "status": "약정만료",
@@ -43426,7 +43426,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사오픈놀",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 은평구 증산동 177-24번지 2층",
         "status": "약정만료",
@@ -43441,7 +43441,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사우알롱",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 269-25 1101호~1105호",
         "status": "약정만료",
@@ -43456,7 +43456,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사유토피아",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 퇴계원읍 퇴계원로 16 세란빌딩 108호",
         "status": "약정만료",
@@ -43471,7 +43471,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사유토피아",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 평내동 578-3번지 1층",
         "status": "약정만료",
@@ -43486,7 +43486,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사유토피아",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍금곡리 1096 으뜸프라자 104호",
         "status": "약정만료",
@@ -43501,7 +43501,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사유토피아",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 갈매동 604-3",
         "status": "약정만료",
@@ -43516,7 +43516,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사유토피아",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리 644-4 1층 KT 매장",
         "status": "약정만료",
@@ -43531,7 +43531,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사의식주컴퍼니",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 면목5동 중랑구 동일로92길40   110동 3-4옆 주차장",
         "status": "약정만료",
@@ -43546,7 +43546,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사인투스포츠",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 면목동 380",
         "status": "약정만료",
@@ -43561,7 +43561,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사자이언산업개발-뷰N",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소학리 소학리 95-6번지 음식점",
         "status": "만기도래_재계약",
@@ -43576,7 +43576,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사자이언산업개발-뷰N",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소학리 소학리 95-6번지 (주)자이언산업개발",
         "status": "만기도래_신규(1st)",
@@ -43591,7 +43591,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사제이에이치",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 도내동 1089번지 102호",
         "status": "약정만료",
@@ -43606,7 +43606,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사제이에이치",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 일산동 610-5",
         "status": "약정만료",
@@ -43621,7 +43621,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사제이에이치",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 일산동 2148 e편한세상일산어반스카이C112호",
         "status": "만기도래_신규(1st)",
@@ -43636,7 +43636,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사청사",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 월롱면 위전리581-3",
         "status": "약정만료",
@@ -43651,7 +43651,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사청사",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 법원읍 동문리376-3",
         "status": "약정만료",
@@ -43666,7 +43666,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사최선어학원운정캠퍼스",
-        "manager": "박민준",
+        "manager": "G000306",
         "branch": "고양지사",
         "address": "경기 파주시 동패동 1761-3 한울프라자 202~204호",
         "status": "약정만료",
@@ -43681,7 +43681,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사컴앤스테이",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 이태원동 650번지 2345층 (녹사평대로238)",
         "status": "약정만료",
@@ -43696,7 +43696,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사큐라움",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한강로2가 30-1 건물전체",
         "status": "만기도래_신규(1st)",
@@ -43711,7 +43711,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사클라임종합관리",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 다산동 6052-2 으뜸웰타워 지하1층 관리사무실",
         "status": "약정만료",
@@ -43726,7 +43726,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사탑클래스모바일",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 동대문구 이문동 휘경로25. 1층",
         "status": "약정만료",
@@ -43741,7 +43741,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사탑클래스모바일",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 화양동 12-41번지",
         "status": "약정만료",
@@ -43756,7 +43756,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사탑클래스모바일",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 장안동 416-5번지 1층",
         "status": "약정만료",
@@ -43771,7 +43771,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사탑클래스모바일",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 휘경동 319-1",
         "status": "약정만료",
@@ -43786,7 +43786,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사탑클래스모바일",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 성동구 용답동 57-20번지 1층",
         "status": "약정만료",
@@ -43801,7 +43801,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사탑클래스모바일",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 종로구 창신동  693-3 영화빌딩 1층KT (창신동 파리바게트창신동점)",
         "status": "약정만료",
@@ -43816,7 +43816,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사탑클래스모바일",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 성동구 용답동 227-1 화성개발빌딩 507호",
         "status": "약정만료",
@@ -43831,7 +43831,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사탑클래스모바일",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 장안동 416-5번지 승원빌딩 1층 KT",
         "status": "약정만료",
@@ -43846,7 +43846,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사탑클래스모바일",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 성동구 용답동  227-1 5층 507호 (용답동 YBS빌딩)",
         "status": "약정만료",
@@ -43861,7 +43861,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사투유",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 가좌동 103-9",
         "status": "만기도래_신규(1st)",
@@ -43876,7 +43876,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사트러스테이",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 129-33",
         "status": "만기도래_신규(1st)",
@@ -43891,7 +43891,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사트러스테이",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 광진구 중곡동 614-11",
         "status": "약정만료",
@@ -43906,7 +43906,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사파란",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 청운면 신론리 신론리 135-1번지",
         "status": "약정만료",
@@ -43921,7 +43921,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사하이엔텍",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 문막읍 동화리 1085",
         "status": "약정만료",
@@ -43936,7 +43936,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사하이엔텍",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 문막읍 후용리 6-1",
         "status": "약정만료",
@@ -43951,7 +43951,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사홍인로지스틱",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 가현동 694 .",
         "status": "만기도래_재계약",
@@ -43966,7 +43966,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사화영산업",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 관산동 17-1번지",
         "status": "약정만료",
@@ -43981,7 +43981,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사후니에프앤비",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 전농동 591-53번지 청량리역사3층307호",
         "status": "약정만료",
@@ -43996,7 +43996,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사후니에프앤비",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 공덕동 467번지 롯데캐슬 3303호",
         "status": "약정만료",
@@ -44011,7 +44011,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사후니에프앤비",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한강로3가 40-999아이파크몰 테이스트파크7층",
         "status": "약정만료",
@@ -44026,7 +44026,7 @@ const TARGETS = [
     },
     {
         "name": "㈜아우라",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 마두동 729",
         "status": "약정만료",
@@ -44041,7 +44041,7 @@ const TARGETS = [
     },
     {
         "name": "㈜아우라",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 대화동 2203-1  1층",
         "status": "약정만료",
@@ -44056,7 +44056,7 @@ const TARGETS = [
     },
     {
         "name": "㈜아우라",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 장항동 895-1 우신프라자",
         "status": "약정만료",
@@ -44071,7 +44071,7 @@ const TARGETS = [
     },
     {
         "name": "주얼리창조",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 인의동 62-1번지 34층",
         "status": "약정만료",
@@ -44086,7 +44086,7 @@ const TARGETS = [
     },
     {
         "name": "주얼리창조",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 인의동 62-1번지 4층",
         "status": "약정만료",
@@ -44101,7 +44101,7 @@ const TARGETS = [
     },
     {
         "name": "㈜오세요",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 월롱면 덕은리 226-113",
         "status": "약정만료",
@@ -44116,7 +44116,7 @@ const TARGETS = [
     },
     {
         "name": "주원통상",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 이패동 3번지",
         "status": "약정만료",
@@ -44131,7 +44131,7 @@ const TARGETS = [
     },
     {
         "name": "㈜케어맥스코리아",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 야동동 244-9 야동동 244",
         "status": "만기도래_신규(1st)",
@@ -44146,7 +44146,7 @@ const TARGETS = [
     },
     {
         "name": "㈜케어맥스코리아",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 검산동 114-9",
         "status": "만기도래_신규(1st)",
@@ -44161,7 +44161,7 @@ const TARGETS = [
     },
     {
         "name": "㈜케어맥스코리아",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 야동동 244-7번지",
         "status": "만기도래_재계약",
@@ -44176,7 +44176,7 @@ const TARGETS = [
     },
     {
         "name": "㈜케이티엠오에스",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 정발산동 1145-3번지 신대성 지하 101호",
         "status": "약정만료",
@@ -44191,7 +44191,7 @@ const TARGETS = [
     },
     {
         "name": "주하늘교회사무실(OCT)",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아1동 791-2127",
         "status": "약정만료",
@@ -44206,7 +44206,7 @@ const TARGETS = [
     },
     {
         "name": "준빌딩(OCT뷰)",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 창천동 62-1번지",
         "status": "약정만료",
@@ -44221,7 +44221,7 @@ const TARGETS = [
     },
     {
         "name": "준준",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 가산리 334-13번지",
         "status": "만기도래_신규(1st)",
@@ -44236,7 +44236,7 @@ const TARGETS = [
     },
     {
         "name": "중계넘버원정형외과의원",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 중계동 359-11번지 성모빌딩 201호",
         "status": "약정만료",
@@ -44251,7 +44251,7 @@ const TARGETS = [
     },
     {
         "name": "중랑구립 용마청소년 독서실",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 면목동 50-17 중랑구립 용마청소년 독서실 중랑구립 용마청소년 독서실 (면목동) 4층",
         "status": "약정만료",
@@ -44266,7 +44266,7 @@ const TARGETS = [
     },
     {
         "name": "중랑구보건소",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 망우동 207-6 2층 마음건강상담소(망우)",
         "status": "만기도래_신규(1st)",
@@ -44281,7 +44281,7 @@ const TARGETS = [
     },
     {
         "name": "중랑구보건소",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 신내동 665 501호 마음건강상담소(신내)",
         "status": "만기도래_신규(1st)",
@@ -44296,7 +44296,7 @@ const TARGETS = [
     },
     {
         "name": "중랑구시설관리공단",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 묵동 22 중랑구립정보도서관 중랑구민체육센터 1층",
         "status": "만기도래_신규(1st)",
@@ -44311,7 +44311,7 @@ const TARGETS = [
     },
     {
         "name": "중랑구시설관리공단",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 묵동 243-1 3층",
         "status": "만기도래_신규(1st)",
@@ -44326,7 +44326,7 @@ const TARGETS = [
     },
     {
         "name": "중랑구정신건강복지센터",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 신내동 665 5층 중랑구정신건강복지센터",
         "status": "만기도래_신규(1st)",
@@ -44341,7 +44341,7 @@ const TARGETS = [
     },
     {
         "name": "중부바이오텍",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 흥업면 사제리 1574-1",
         "status": "약정만료",
@@ -44356,7 +44356,7 @@ const TARGETS = [
     },
     {
         "name": "중심서적",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진건읍 진관리 369-2호 마을회관앞",
         "status": "만기도래_재계약",
@@ -44371,7 +44371,7 @@ const TARGETS = [
     },
     {
         "name": "중앙선재산업",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 내촌면 마명리 249-1",
         "status": "약정만료",
@@ -44386,7 +44386,7 @@ const TARGETS = [
     },
     {
         "name": "중앙에너지산업",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 사북면 고성리 275-2",
         "status": "약정만료",
@@ -44401,7 +44401,7 @@ const TARGETS = [
     },
     {
         "name": "중원텍스타일-뷰",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 동두천시 동두천동 동두천동 545",
         "status": "약정만료",
@@ -44416,7 +44416,7 @@ const TARGETS = [
     },
     {
         "name": "증가교회",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서대문구 북가좌동 거북골로162 증가교회",
         "status": "약정만료",
@@ -44431,7 +44431,7 @@ const TARGETS = [
     },
     {
         "name": "증가교회",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서대문구 북가좌동 424-41",
         "status": "약정만료",
@@ -44446,7 +44446,7 @@ const TARGETS = [
     },
     {
         "name": "증가교회",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서대문구 북가좌동 424-41번지 별관",
         "status": "만기도래_재계약",
@@ -44461,7 +44461,7 @@ const TARGETS = [
     },
     {
         "name": "증가교회",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서대문구 북가좌동 424-41번지",
         "status": "만기도래_재계약",
@@ -44476,7 +44476,7 @@ const TARGETS = [
     },
     {
         "name": "지구화학",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 310-2번지",
         "status": "만기도래_신규(1st)",
@@ -44491,7 +44491,7 @@ const TARGETS = [
     },
     {
         "name": "지구화학",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 310-9번지(신관구건물)",
         "status": "만기도래_재계약",
@@ -44506,7 +44506,7 @@ const TARGETS = [
     },
     {
         "name": "지앤씨골프삼천동스크린",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 삼천동 152-1 4층",
         "status": "만기도래_신규(1st)",
@@ -44521,7 +44521,7 @@ const TARGETS = [
     },
     {
         "name": "지에스네오텍(주)",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 장항동 604-3 고양사업소 열수송관공사현장",
         "status": "만기도래_신규(1st)",
@@ -44536,7 +44536,7 @@ const TARGETS = [
     },
     {
         "name": "지케이엘위드 주식회사",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한강로3가 40-969번지 서울드래곤시티 호텔내 세븐럭카지노 2층",
         "status": "만기도래_신규(1st)",
@@ -44551,7 +44551,7 @@ const TARGETS = [
     },
     {
         "name": "진로마트",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 광진구 중곡동 579-1번지",
         "status": "약정만료",
@@ -44566,7 +44566,7 @@ const TARGETS = [
     },
     {
         "name": "진로할인마트",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 대화동 2126번지 진로할인마트",
         "status": "약정만료",
@@ -44581,7 +44581,7 @@ const TARGETS = [
     },
     {
         "name": "진성",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 내유동 201-7번지 창고단지",
         "status": "약정만료",
@@ -44596,7 +44596,7 @@ const TARGETS = [
     },
     {
         "name": "진성한우곱창가락점",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 구의동 광나루로30나길27번지",
         "status": "약정만료",
@@ -44611,7 +44611,7 @@ const TARGETS = [
     },
     {
         "name": "진성한우곱창가락점",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 중구 무학동 2번지 성지빌딩 1층",
         "status": "약정만료",
@@ -44626,7 +44626,7 @@ const TARGETS = [
     },
     {
         "name": "진스포츠",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 상봉동 128-88번지",
         "status": "약정만료",
@@ -44641,7 +44641,7 @@ const TARGETS = [
     },
     {
         "name": "진스포츠",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 상봉동 128-88번지",
         "status": "약정만료",
@@ -44656,7 +44656,7 @@ const TARGETS = [
     },
     {
         "name": "진웅케미칼",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 광적면 가납리 201",
         "status": "약정만료",
@@ -44671,7 +44671,7 @@ const TARGETS = [
     },
     {
         "name": "진흥공업",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 답내리 229번지(얼굴인식기)",
         "status": "만기도래_신규(1st)",
@@ -44686,7 +44686,7 @@ const TARGETS = [
     },
     {
         "name": "진흥공업",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 답내리 438",
         "status": "약정만료",
@@ -44701,7 +44701,7 @@ const TARGETS = [
     },
     {
         "name": "짱",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 동선동1가 2-2번지 12층",
         "status": "약정만료",
@@ -44716,7 +44716,7 @@ const TARGETS = [
     },
     {
         "name": "차봉근이성욱",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 장암동 153 도봉차량기지내 현장",
         "status": "만기도래_신규(1st)",
@@ -44731,7 +44731,7 @@ const TARGETS = [
     },
     {
         "name": "차차밀",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 행주외동 30-2번지 자유제일주유소 뒤편 카페",
         "status": "만기도래_신규(1st)",
@@ -44746,7 +44746,7 @@ const TARGETS = [
     },
     {
         "name": "착한농장",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 영북면 자일리 494-2 농장",
         "status": "만기도래_신규(1st)",
@@ -44761,7 +44761,7 @@ const TARGETS = [
     },
     {
         "name": "참맛집",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로3가 480번지 101호",
         "status": "약정만료",
@@ -44776,7 +44776,7 @@ const TARGETS = [
     },
     {
         "name": "참맛집",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로3가 480 더스타일하우스디센트럴 105호",
         "status": "만기도래_신규(1st)",
@@ -44791,7 +44791,7 @@ const TARGETS = [
     },
     {
         "name": "참맛집",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 서대문구 충정로3가 480 더스타일하우스디센트럴 105호",
         "status": "약정만료",
@@ -44806,7 +44806,7 @@ const TARGETS = [
     },
     {
         "name": "참맛집 상암점(GiGAeyes guard)",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1592 팬엔터테인먼트사옥 지하1층",
         "status": "만기도래_신규(1st)",
@@ -44821,7 +44821,7 @@ const TARGETS = [
     },
     {
         "name": "참실버케어센터",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 부평리 338-5 4F",
         "status": "만기도래_신규(1st)",
@@ -44836,7 +44836,7 @@ const TARGETS = [
     },
     {
         "name": "참튼튼병원(조태연)",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계6.7동 서울 노원구 노해로 502 5층",
         "status": "만기도래_신규(1st)",
@@ -44851,7 +44851,7 @@ const TARGETS = [
     },
     {
         "name": "창릉에어컨자재총판(OCT)",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 용두동 335-3번지",
         "status": "만기도래_신규(1st)",
@@ -44866,7 +44866,7 @@ const TARGETS = [
     },
     {
         "name": "창신과학",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍이동교리 683-1",
         "status": "약정만료",
@@ -44881,7 +44881,7 @@ const TARGETS = [
     },
     {
         "name": "창창족발",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 종로구 창신동 23-446번지 123층",
         "status": "약정만료",
@@ -44896,7 +44896,7 @@ const TARGETS = [
     },
     {
         "name": "천사노인요양원",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 봉산동 753-1 천사들의집 (가운데 요양원)",
         "status": "약정만료",
@@ -44911,7 +44911,7 @@ const TARGETS = [
     },
     {
         "name": "천일에너지",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "경기 포천시 영중면 양문리 982-1",
         "status": "약정만료",
@@ -44926,7 +44926,7 @@ const TARGETS = [
     },
     {
         "name": "천일에너지",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 송정동 73-1112",
         "status": "약정만료",
@@ -44941,7 +44941,7 @@ const TARGETS = [
     },
     {
         "name": "천일에너지",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 송정동 73-1112",
         "status": "약정만료",
@@ -44956,7 +44956,7 @@ const TARGETS = [
     },
     {
         "name": "천일에너지",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 송정동 73-1112",
         "status": "약정만료",
@@ -44971,7 +44971,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 서울대교구",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 합정동 96-1번지",
         "status": "약정만료",
@@ -44986,7 +44986,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 서울대교구",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 657-40",
         "status": "약정만료",
@@ -45001,7 +45001,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 서울대교구",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 657-41번지",
         "status": "약정만료",
@@ -45016,7 +45016,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 서울대교구",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 와룡동 171-1 아세아빌딩 1층",
         "status": "약정만료",
@@ -45031,7 +45031,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 서울대교구",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 명동2가 1-1번지",
         "status": "약정만료",
@@ -45046,7 +45046,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 서울대교구",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 가회동 30-3번지 2층",
         "status": "약정만료",
@@ -45061,7 +45061,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 서울대교구",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 가회동 16-3번지",
         "status": "약정만료",
@@ -45076,7 +45076,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 서울대교구",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 가회동 16-3번지1층",
         "status": "약정만료",
@@ -45091,7 +45091,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 의정부교구",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 별내동 973번지",
         "status": "약정만료",
@@ -45106,7 +45106,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 의정부교구",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 퇴계원면 퇴계원로 59번길 35 - 퇴계원성당",
         "status": "약정만료",
@@ -45121,7 +45121,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 의정부교구",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 행주외동 194번지 행주동성당",
         "status": "만기도래_신규(1st)",
@@ -45136,7 +45136,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 의정부교구",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 토평동 280-1번지 토평성당",
         "status": "약정만료",
@@ -45151,7 +45151,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 의정부교구",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 교하읍 상지석리 987-6",
         "status": "약정만료",
@@ -45166,7 +45166,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 의정부교구",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 갈매동 656 갈매동성당",
         "status": "약정만료",
@@ -45181,7 +45181,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 의정부교구",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 토평동 269-1 유진스웰 벌말로 128번길40",
         "status": "약정만료",
@@ -45196,7 +45196,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 의정부교구",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 토평동 280-1사제관",
         "status": "약정만료",
@@ -45211,7 +45211,7 @@ const TARGETS = [
     },
     {
         "name": "대한예수교장로회 화도교회",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 창현리 738-2(화도교회 외부주차장)",
         "status": "약정만료",
@@ -45226,7 +45226,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 의정부교구",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 수택2동 434-1번지 별관",
         "status": "만기도래_재계약",
@@ -45241,7 +45241,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 의정부교구",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 행신2동 760-2번지",
         "status": "약정만료",
@@ -45256,7 +45256,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 의정부교구",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 행신동 763",
         "status": "약정만료",
@@ -45271,7 +45271,7 @@ const TARGETS = [
     },
     {
         "name": "럭키평창빌라",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 종로구 평창동 329-2번지 럭키평창빌라",
         "status": "약정만료",
@@ -45286,7 +45286,7 @@ const TARGETS = [
     },
     {
         "name": "시립퇴계원어린이집",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 퇴계원읍 퇴계원리 184-8 1층 시립퇴계원어린이집",
         "status": "약정만료",
@@ -45301,7 +45301,7 @@ const TARGETS = [
     },
     {
         "name": "천주교 의정부교구",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 토평동 280-1",
         "status": "만기도래_신규(1st)",
@@ -45316,7 +45316,7 @@ const TARGETS = [
     },
     {
         "name": "철원병원",
-        "manager": "김진회",
+        "manager": "G000506",
         "branch": "의정부지사",
         "address": "강원 철원군 갈말읍 군탄리 339 번지 철원병원",
         "status": "만기도래_신규(1st)",
@@ -45331,7 +45331,7 @@ const TARGETS = [
     },
     {
         "name": "청담고운선피부성형외과",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 화정동 970-2번지케이탑리츠빌딩4층403호",
         "status": "만기도래_신규(1st)",
@@ -45346,7 +45346,7 @@ const TARGETS = [
     },
     {
         "name": "청심국제중고등학교",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 설악면 송산리 산 102",
         "status": "만기도래_재계약",
@@ -45361,7 +45361,7 @@ const TARGETS = [
     },
     {
         "name": "청양모다스",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 수택동 382-23번지 청양빌딩 관리실(반지하)",
         "status": "약정만료",
@@ -45376,7 +45376,7 @@ const TARGETS = [
     },
     {
         "name": "청원빌딩(OCT)",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 이태원동 58-5 청원빌딩",
         "status": "약정만료",
@@ -45391,7 +45391,7 @@ const TARGETS = [
     },
     {
         "name": "청춘조개포차-대천점",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 강하면 전수리 329-22번지",
         "status": "약정만료",
@@ -45406,7 +45406,7 @@ const TARGETS = [
     },
     {
         "name": "청해학교장",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 장사동 405-5",
         "status": "약정만료",
@@ -45421,7 +45421,7 @@ const TARGETS = [
     },
     {
         "name": "청호마린(OCT)",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 대포동 농공단지2길 15-7",
         "status": "약정만료",
@@ -45436,7 +45436,7 @@ const TARGETS = [
     },
     {
         "name": "청호마린(OCT)",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 대포동 농공단지2길 15-7",
         "status": "약정만료",
@@ -45451,7 +45451,7 @@ const TARGETS = [
     },
     {
         "name": "청호마린(OCT)",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 대포동 농공단지2길 15-7",
         "status": "만기도래_재계약",
@@ -45466,7 +45466,7 @@ const TARGETS = [
     },
     {
         "name": "초당경포새마을금고",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 초당동 연당길 74",
         "status": "약정만료",
@@ -45481,7 +45481,7 @@ const TARGETS = [
     },
     {
         "name": "초당경포새마을금고",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 안현동 864-2",
         "status": "약정만료",
@@ -45496,7 +45496,7 @@ const TARGETS = [
     },
     {
         "name": "초당경포새마을금고",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 초당동 연당길 74",
         "status": "약정만료",
@@ -45511,7 +45511,7 @@ const TARGETS = [
     },
     {
         "name": "초당경포새마을금고",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 안현동 864-2",
         "status": "약정만료",
@@ -45526,7 +45526,7 @@ const TARGETS = [
     },
     {
         "name": "초당경포새마을금고",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 안현동 864-2",
         "status": "약정만료",
@@ -45541,7 +45541,7 @@ const TARGETS = [
     },
     {
         "name": "초당경포새마을금고",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 안현동 864-2",
         "status": "약정만료",
@@ -45556,7 +45556,7 @@ const TARGETS = [
     },
     {
         "name": "초심스터디카페 오남점",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 오남읍 오남리 496-1번지 201호",
         "status": "만기도래_신규(1st)",
@@ -45571,7 +45571,7 @@ const TARGETS = [
     },
     {
         "name": "초심스터디카페 춘천애막골점",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 729-7 6층",
         "status": "만기도래_신규(1st)",
@@ -45586,7 +45586,7 @@ const TARGETS = [
     },
     {
         "name": "초심스터디카페 춘천애막골점",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 729-7 5층",
         "status": "만기도래_신규(1st)",
@@ -45601,7 +45601,7 @@ const TARGETS = [
     },
     {
         "name": "초심스터디카페 한양대점",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 성동구 행당동 1-10번지 3층",
         "status": "약정만료",
@@ -45616,7 +45616,7 @@ const TARGETS = [
     },
     {
         "name": "초심스터디카페 한양대점",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 성동구 행당동 1-123번지 2층",
         "status": "약정만료",
@@ -45631,7 +45631,7 @@ const TARGETS = [
     },
     {
         "name": "초심스터디카페 한양대점",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 성동구 행당동 1-123 2층",
         "status": "약정만료",
@@ -45646,7 +45646,7 @@ const TARGETS = [
     },
     {
         "name": "촌놈",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 창동 578-160",
         "status": "약정만료",
@@ -45661,7 +45661,7 @@ const TARGETS = [
     },
     {
         "name": "최경혜가정집",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 명륜동3가 108-1",
         "status": "약정만료",
@@ -45676,7 +45676,7 @@ const TARGETS = [
     },
     {
         "name": "최경혜가정집",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 강하면 전수리  30-10번지",
         "status": "약정만료",
@@ -45691,7 +45691,7 @@ const TARGETS = [
     },
     {
         "name": "최민규주택",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 용두동 352-1번지 단독주택",
         "status": "약정만료",
@@ -45706,7 +45706,7 @@ const TARGETS = [
     },
     {
         "name": "축산농협",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 664 NH농협석사동지점 1층",
         "status": "약정만료",
@@ -45721,7 +45721,7 @@ const TARGETS = [
     },
     {
         "name": "축산농협",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 664 NH농협석사동지점 1층",
         "status": "만기도래_신규(1st)",
@@ -45736,7 +45736,7 @@ const TARGETS = [
     },
     {
         "name": "춘천 지역먹거리 직매장",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 삼천동 22-15",
         "status": "약정만료",
@@ -45751,7 +45751,7 @@ const TARGETS = [
     },
     {
         "name": "춘천 지역먹거리 직매장",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 삼천동 22-15",
         "status": "만기도래_재계약",
@@ -45766,7 +45766,7 @@ const TARGETS = [
     },
     {
         "name": "춘천가톨릭신협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 우두동 706-9",
         "status": "약정만료",
@@ -45781,7 +45781,7 @@ const TARGETS = [
     },
     {
         "name": "춘천가톨릭신협",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 동내면 거두리 847-17",
         "status": "약정만료",
@@ -45796,7 +45796,7 @@ const TARGETS = [
     },
     {
         "name": "춘천가톨릭신협",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 서석면 구룡령로2559",
         "status": "약정만료",
@@ -45811,7 +45811,7 @@ const TARGETS = [
     },
     {
         "name": "춘천가톨릭신협",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 33번지",
         "status": "약정만료",
@@ -45826,7 +45826,7 @@ const TARGETS = [
     },
     {
         "name": "춘천가톨릭신협",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 33",
         "status": "약정만료",
@@ -45841,7 +45841,7 @@ const TARGETS = [
     },
     {
         "name": "춘천가톨릭신협",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 홍천읍 연봉리 115-1",
         "status": "약정만료",
@@ -45856,7 +45856,7 @@ const TARGETS = [
     },
     {
         "name": "춘천가톨릭신협",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 남산면 방곡리 146 1층",
         "status": "만기도래_신규(1st)",
@@ -45871,7 +45871,7 @@ const TARGETS = [
     },
     {
         "name": "춘천가톨릭신협",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 동내면 거두리 847-17",
         "status": "약정만료",
@@ -45886,7 +45886,7 @@ const TARGETS = [
     },
     {
         "name": "춘천남부새마을금고",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 725-2번지",
         "status": "만기도래_재계약",
@@ -45901,7 +45901,7 @@ const TARGETS = [
     },
     {
         "name": "춘천남부새마을금고",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 725-2",
         "status": "약정만료",
@@ -45916,7 +45916,7 @@ const TARGETS = [
     },
     {
         "name": "춘천남부새마을금고",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 725-2",
         "status": "약정만료",
@@ -45931,7 +45931,7 @@ const TARGETS = [
     },
     {
         "name": "춘천남부새마을금고",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 725-2",
         "status": "약정만료",
@@ -45946,7 +45946,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 운교동 182-4 (금융창구매장)",
         "status": "약정만료",
@@ -45961,7 +45961,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 퇴계동 903-6",
         "status": "약정만료",
@@ -45976,7 +45976,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 555-3 1층",
         "status": "약정만료",
@@ -45991,7 +45991,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 725-4",
         "status": "약정만료",
@@ -46006,7 +46006,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 효자동 363-35번지",
         "status": "약정만료",
@@ -46021,7 +46021,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 소양로3가 110-1 춘천농협하나로마트 (소양로118) 춘천농헙협동조합 (365코너)",
         "status": "약정만료",
@@ -46036,7 +46036,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 우두동 761-18",
         "status": "약정만료",
@@ -46051,7 +46051,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 소양로3가 110-1 춘천농협하나로마트 (소양로 118) (소양로 118) 춘천농업협동조합(본점)-영업장",
         "status": "약정만료",
@@ -46066,7 +46066,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 980번지",
         "status": "약정만료",
@@ -46081,7 +46081,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 온의동 81-4",
         "status": "약정만료",
@@ -46096,7 +46096,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 온의동 81-4",
         "status": "약정만료",
@@ -46111,7 +46111,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 소양로2가 175-6 춘천농협 소양로지점",
         "status": "약정만료",
@@ -46126,7 +46126,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 소양로2가 175-6 춘천농협 춘천농협소양로지점",
         "status": "약정만료",
@@ -46141,7 +46141,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 효자동 363-35번지",
         "status": "약정만료",
@@ -46156,7 +46156,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 우두동 761-18 (춘천농협 교북지점)",
         "status": "약정만료",
@@ -46171,7 +46171,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 우두동 761-18",
         "status": "약정만료",
@@ -46186,7 +46186,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 퇴계동 903-6",
         "status": "약정만료",
@@ -46201,7 +46201,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 퇴계동 903-6",
         "status": "약정만료",
@@ -46216,7 +46216,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 퇴계동 903-6",
         "status": "약정만료",
@@ -46231,7 +46231,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 555-3",
         "status": "약정만료",
@@ -46246,7 +46246,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 725-1",
         "status": "약정만료",
@@ -46261,7 +46261,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 725-1",
         "status": "약정만료",
@@ -46276,7 +46276,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 555-3",
         "status": "약정만료",
@@ -46291,7 +46291,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 555-3",
         "status": "약정만료",
@@ -46306,7 +46306,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 555-3",
         "status": "약정만료",
@@ -46321,7 +46321,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 725-1",
         "status": "약정만료",
@@ -46336,7 +46336,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 555-3",
         "status": "약정만료",
@@ -46351,7 +46351,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 555-3",
         "status": "약정만료",
@@ -46366,7 +46366,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 555-3",
         "status": "약정만료",
@@ -46381,7 +46381,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평1동 555-4 1층",
         "status": "약정만료",
@@ -46396,7 +46396,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 725-4",
         "status": "약정만료",
@@ -46411,7 +46411,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 효자2동 363-35번지",
         "status": "약정만료",
@@ -46426,7 +46426,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 효자2동 363-35번지",
         "status": "약정만료",
@@ -46441,7 +46441,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 퇴계동 903-6",
         "status": "약정만료",
@@ -46456,7 +46456,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협 석사무릉지점",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 799-2 선타워빌딩 1층 101호~104호",
         "status": "약정만료",
@@ -46471,7 +46471,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협 석사무릉지점",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 799-2 선타워빌딩 1층 101호~104호",
         "status": "약정만료",
@@ -46486,7 +46486,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협 석사무릉지점",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 799-2",
         "status": "약정만료",
@@ -46501,7 +46501,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협 석사무릉지점",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 799-2",
         "status": "약정만료",
@@ -46516,7 +46516,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협 석사무릉지점",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 799-2",
         "status": "약정만료",
@@ -46531,7 +46531,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협 석사무릉지점",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 석사동 799-2",
         "status": "약정만료",
@@ -46546,7 +46546,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협신사우동지점",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 우두동 761-18",
         "status": "약정만료",
@@ -46561,7 +46561,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협신사우동지점",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 운교동 182-4",
         "status": "약정만료",
@@ -46576,7 +46576,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협신사우동지점",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 운교동 182-4",
         "status": "약정만료",
@@ -46591,7 +46591,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협신사우동지점",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 운교동 182-4",
         "status": "약정만료",
@@ -46606,7 +46606,7 @@ const TARGETS = [
     },
     {
         "name": "춘천농협신사우동지점",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 운교동 182-4",
         "status": "약정만료",
@@ -46621,7 +46621,7 @@ const TARGETS = [
     },
     {
         "name": "춘천동부새마을금고",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 효자3동 643-4",
         "status": "만기도래_재계약",
@@ -46636,7 +46636,7 @@ const TARGETS = [
     },
     {
         "name": "춘천동부새마을금고",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 효자3동 643-4",
         "status": "약정만료",
@@ -46651,7 +46651,7 @@ const TARGETS = [
     },
     {
         "name": "춘천동부새마을금고",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 효자3동 643-4 춘천동부새마을금고(본점)",
         "status": "약정만료",
@@ -46666,7 +46666,7 @@ const TARGETS = [
     },
     {
         "name": "춘천동부새마을금고",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 교동 136-10  춘천동부새마을금고(교동지점)",
         "status": "약정만료",
@@ -46681,7 +46681,7 @@ const TARGETS = [
     },
     {
         "name": "춘천동부새마을금고",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 효자2동 661-24 춘천동부새마을금고(효자동지점)",
         "status": "약정만료",
@@ -46696,7 +46696,7 @@ const TARGETS = [
     },
     {
         "name": "춘천동부새마을금고",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평3동 801-1 춘천동부새마을금고(후평동지점)",
         "status": "약정만료",
@@ -46711,7 +46711,7 @@ const TARGETS = [
     },
     {
         "name": "춘천동부새마을금고",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 효자3동 643-4",
         "status": "약정만료",
@@ -46726,7 +46726,7 @@ const TARGETS = [
     },
     {
         "name": "춘천동부새마을금고",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평3동 801-1 춘천동부새마을금고(후평동지점)",
         "status": "약정만료",
@@ -46741,7 +46741,7 @@ const TARGETS = [
     },
     {
         "name": "춘천동부새마을금고",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 교동 136-10 춘천동부새마을금고(교동지점)",
         "status": "약정만료",
@@ -46756,7 +46756,7 @@ const TARGETS = [
     },
     {
         "name": "춘천동부새마을금고",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 효자2동 661-24",
         "status": "약정만료",
@@ -46771,7 +46771,7 @@ const TARGETS = [
     },
     {
         "name": "춘천동부새마을금고",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 801-1",
         "status": "약정만료",
@@ -46786,7 +46786,7 @@ const TARGETS = [
     },
     {
         "name": "춘천동부새마을금고",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 801-1",
         "status": "약정만료",
@@ -46801,7 +46801,7 @@ const TARGETS = [
     },
     {
         "name": "춘천동부새마을금고",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 교동 136-10",
         "status": "약정만료",
@@ -46816,7 +46816,7 @@ const TARGETS = [
     },
     {
         "name": "춘천동부새마을금고",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 교동 136-10",
         "status": "약정만료",
@@ -46831,7 +46831,7 @@ const TARGETS = [
     },
     {
         "name": "춘천동부새마을금고",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 효자3동 643-4",
         "status": "약정만료",
@@ -46846,7 +46846,7 @@ const TARGETS = [
     },
     {
         "name": "춘천동부새마을금고",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 효자2동 661-24",
         "status": "약정만료",
@@ -46861,7 +46861,7 @@ const TARGETS = [
     },
     {
         "name": "춘천문화원",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 남면 가정리 473",
         "status": "만기도래_재계약",
@@ -46876,7 +46876,7 @@ const TARGETS = [
     },
     {
         "name": "춘천삼육초등학교",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 동면 장학리 568-1",
         "status": "약정만료",
@@ -46891,7 +46891,7 @@ const TARGETS = [
     },
     {
         "name": "춘천삼육초등학교",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 동면 장학리 568-1",
         "status": "약정만료",
@@ -46906,7 +46906,7 @@ const TARGETS = [
     },
     {
         "name": "춘천삼육초등학교",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 동면 장학리 568-1",
         "status": "약정만료",
@@ -46921,7 +46921,7 @@ const TARGETS = [
     },
     {
         "name": "춘천삼육초등학교",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 동면 장학리 568-1",
         "status": "약정만료",
@@ -46936,7 +46936,7 @@ const TARGETS = [
     },
     {
         "name": "춘천시립근화어린이집",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 소양로1가 소양로1가 90-1",
         "status": "약정만료",
@@ -46951,7 +46951,7 @@ const TARGETS = [
     },
     {
         "name": "춘천시발달장애인주간활동센터",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 우두동  5-1 충열로 62",
         "status": "만기도래_신규(1st)",
@@ -46966,7 +46966,7 @@ const TARGETS = [
     },
     {
         "name": "춘천시보건소",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 우두동 1층",
         "status": "약정만료",
@@ -46981,7 +46981,7 @@ const TARGETS = [
     },
     {
         "name": "춘천시청",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 죽림동 19-2",
         "status": "만기도래_재계약",
@@ -46996,7 +46996,7 @@ const TARGETS = [
     },
     {
         "name": "춘천시청",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 사북면 송암리 473-6",
         "status": "약정만료",
@@ -47011,7 +47011,7 @@ const TARGETS = [
     },
     {
         "name": "춘천시청소년문화의집",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 죽림동 189 6동 6303호",
         "status": "약정만료",
@@ -47026,7 +47026,7 @@ const TARGETS = [
     },
     {
         "name": "춘천중앙성결교회(OCT)",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 죽림동 86-7",
         "status": "만기도래_재계약",
@@ -47041,7 +47041,7 @@ const TARGETS = [
     },
     {
         "name": "충열6호 태양광발전소",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 양구군 방산면 장평리 308-8 충열6호 태양광발전소(조립식건물)",
         "status": "약정만료",
@@ -47056,7 +47056,7 @@ const TARGETS = [
     },
     {
         "name": "치앙마이방콕(창신)",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 종로구 창신동 23-663",
         "status": "약정만료",
@@ -47071,7 +47071,7 @@ const TARGETS = [
     },
     {
         "name": "치즈인더스트리 성수",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 익선동 144",
         "status": "만기도래_신규(1st)",
@@ -47086,7 +47086,7 @@ const TARGETS = [
     },
     {
         "name": "치즈인더스트리 성수",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 이태원동 260-99번지 1234층",
         "status": "만기도래_신규(1st)",
@@ -47101,7 +47101,7 @@ const TARGETS = [
     },
     {
         "name": "치즈인더스트리 성수",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 273-53번지",
         "status": "만기도래_신규(1st)",
@@ -47116,7 +47116,7 @@ const TARGETS = [
     },
     {
         "name": "카멜팩토리",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진벌리 진벌로257-57",
         "status": "만기도래_신규(1st)",
@@ -47131,7 +47131,7 @@ const TARGETS = [
     },
     {
         "name": "카페24창업센터의정부역점",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 567-3번지 송루빌딩 2층",
         "status": "약정만료",
@@ -47146,7 +47146,7 @@ const TARGETS = [
     },
     {
         "name": "카페베어데이",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 상수동 314-9 건물전층",
         "status": "만기도래_신규(1st)",
@@ -47161,7 +47161,7 @@ const TARGETS = [
     },
     {
         "name": "칼봉산자연휴양림",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 가평읍 경반리 산 137",
         "status": "약정만료",
@@ -47176,7 +47176,7 @@ const TARGETS = [
     },
     {
         "name": "칼봉산자연휴양림",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 가평읍 경반리 산 137",
         "status": "약정만료",
@@ -47191,7 +47191,7 @@ const TARGETS = [
     },
     {
         "name": "칼봉산자연휴양림",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 가평읍 경반리 산137",
         "status": "약정만료",
@@ -47206,7 +47206,7 @@ const TARGETS = [
     },
     {
         "name": "캐시미어갤러리",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 성북구 성북동 19번지",
         "status": "만기도래_신규(1st)",
@@ -47221,7 +47221,7 @@ const TARGETS = [
     },
     {
         "name": "캐치팡-야당점",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 장항동 740-5 양우로데오랜드 C동 102호 사격팡-일산점",
         "status": "만기도래_신규(1st)",
@@ -47236,7 +47236,7 @@ const TARGETS = [
     },
     {
         "name": "컬트쥬얼리(OCT)",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 낙원동 150-1 파고다빌딩 5층",
         "status": "만기도래_신규(1st)",
@@ -47251,7 +47251,7 @@ const TARGETS = [
     },
     {
         "name": "컴포즈커피-방학신동아점",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 방학동 484-15",
         "status": "약정만료",
@@ -47266,7 +47266,7 @@ const TARGETS = [
     },
     {
         "name": "컴포즈커피-방학신동아점",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 쌍문동 209",
         "status": "약정만료",
@@ -47281,7 +47281,7 @@ const TARGETS = [
     },
     {
         "name": "컵스앤펍스",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 효자동 121-2번지 1층",
         "status": "만기도래_신규(1st)",
@@ -47296,7 +47296,7 @@ const TARGETS = [
     },
     {
         "name": "컵스앤펍스",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 효자동 121-2번지  2층",
         "status": "만기도래_신규(1st)",
@@ -47311,7 +47311,7 @@ const TARGETS = [
     },
     {
         "name": "케이그랜드호스텔",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 성동구 하왕십리동 966-68 (하왕십리동 설악빌딩)",
         "status": "약정만료",
@@ -47326,7 +47326,7 @@ const TARGETS = [
     },
     {
         "name": "케이그랜드호스텔",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 성동구 하왕십리동  966-16 (하왕십리동 설악빌딩2)",
         "status": "약정만료",
@@ -47341,7 +47341,7 @@ const TARGETS = [
     },
     {
         "name": "케이디티",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 남산면 창촌리638",
         "status": "만기도래_재계약",
@@ -47356,7 +47356,7 @@ const TARGETS = [
     },
     {
         "name": "케이디티",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 남산면 창촌리653",
         "status": "만기도래_재계약",
@@ -47371,7 +47371,7 @@ const TARGETS = [
     },
     {
         "name": "케이마켓",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 명동2가 50-14 유네스코회관 104호",
         "status": "만기도래_신규(1st)",
@@ -47386,7 +47386,7 @@ const TARGETS = [
     },
     {
         "name": "케이비에스미디어주식회사",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 서울 마포구 매봉산로 45 KBS미디어센터",
         "status": "만기도래_신규(1st)",
@@ -47401,7 +47401,7 @@ const TARGETS = [
     },
     {
         "name": "케이비에스엔",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1652 KBS미디어센터 전층",
         "status": "만기도래_신규(1st)",
@@ -47416,7 +47416,7 @@ const TARGETS = [
     },
     {
         "name": "케이비에스엔",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1652번지 kbs미디어센터3층",
         "status": "약정만료",
@@ -47431,7 +47431,7 @@ const TARGETS = [
     },
     {
         "name": "케이비에스엔",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1652 KBS미디어센터 9층 (출입통제/화재연동)",
         "status": "약정만료",
@@ -47446,7 +47446,7 @@ const TARGETS = [
     },
     {
         "name": "케이비에스엔",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1652 KBS n 3층",
         "status": "약정만료",
@@ -47461,7 +47461,7 @@ const TARGETS = [
     },
     {
         "name": "케이비에스엔",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1652번지 kbs미디어센터",
         "status": "약정만료",
@@ -47476,7 +47476,7 @@ const TARGETS = [
     },
     {
         "name": "케이비에스엔",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1652번지 kbs미디어센터2층",
         "status": "약정만료",
@@ -47491,7 +47491,7 @@ const TARGETS = [
     },
     {
         "name": "케이비에스엔",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1652번지 KBS미디어센터9층",
         "status": "약정만료",
@@ -47506,7 +47506,7 @@ const TARGETS = [
     },
     {
         "name": "케이비에스엔",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1652 KBS n 2층",
         "status": "약정만료",
@@ -47521,7 +47521,7 @@ const TARGETS = [
     },
     {
         "name": "케이비에스엔",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1652번지 KBS미디어센터 2층",
         "status": "약정만료",
@@ -47536,7 +47536,7 @@ const TARGETS = [
     },
     {
         "name": "케이비에스엔",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1652 KBS미디어센터 2층",
         "status": "약정만료",
@@ -47551,7 +47551,7 @@ const TARGETS = [
     },
     {
         "name": "케이아이엠지",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 300-80",
         "status": "만기도래_신규(1st)",
@@ -47566,7 +47566,7 @@ const TARGETS = [
     },
     {
         "name": "케이아이엠지",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 300-80번지 옥상",
         "status": "만기도래_재계약",
@@ -47581,7 +47581,7 @@ const TARGETS = [
     },
     {
         "name": "케이아이엠지",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 300-80 케이아이엠지지하",
         "status": "만기도래_신규(1st)",
@@ -47596,7 +47596,7 @@ const TARGETS = [
     },
     {
         "name": "케이아이엠지",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 300-81번지 7층",
         "status": "만기도래_재계약",
@@ -47611,7 +47611,7 @@ const TARGETS = [
     },
     {
         "name": "케이아이엠지",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 300-80번지",
         "status": "만기도래_재계약",
@@ -47626,7 +47626,7 @@ const TARGETS = [
     },
     {
         "name": "케이아이엠지",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 300-80번지",
         "status": "만기도래_재계약",
@@ -47641,7 +47641,7 @@ const TARGETS = [
     },
     {
         "name": "케이아트스튜디오",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 광탄면 마장리 78-2 유일레져타운 6개동",
         "status": "만기도래_신규(1st)",
@@ -47656,7 +47656,7 @@ const TARGETS = [
     },
     {
         "name": "케이아트스튜디오",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 당주동 128-27번지 동원빌딩 별관1층",
         "status": "약정만료",
@@ -47671,7 +47671,7 @@ const TARGETS = [
     },
     {
         "name": "케이에스메이트",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 행구동 760번지 kt원주리더십아카데미 2층",
         "status": "약정만료",
@@ -47686,7 +47686,7 @@ const TARGETS = [
     },
     {
         "name": "케이엔코리아",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 풍동 150-6 101호",
         "status": "만기도래_신규(1st)",
@@ -47701,7 +47701,7 @@ const TARGETS = [
     },
     {
         "name": "케이와이피알지씨",
-        "manager": "박민준",
+        "manager": "G000306",
         "branch": "고양지사",
         "address": "경기 파주시 연다산동 42-2",
         "status": "만기도래_신규(1st)",
@@ -47716,7 +47716,7 @@ const TARGETS = [
     },
     {
         "name": "케이케이씨통상",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 광적면 가납리 245 가납리",
         "status": "만기도래_신규(1st)",
@@ -47731,7 +47731,7 @@ const TARGETS = [
     },
     {
         "name": "케이타이거즈그룹",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 상수동 71-16 (전층)",
         "status": "만기도래_신규(1st)",
@@ -47746,7 +47746,7 @@ const TARGETS = [
     },
     {
         "name": "케이티 스카이라이프",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1610번지 8층",
         "status": "약정만료",
@@ -47761,7 +47761,7 @@ const TARGETS = [
     },
     {
         "name": "케이티 스카이라이프",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1610번지 9층",
         "status": "약정만료",
@@ -47776,7 +47776,7 @@ const TARGETS = [
     },
     {
         "name": "케이티 스카이라이프",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1610 디디엠씨(DDMC) 89층(화재연동)",
         "status": "만기도래_신규(1st)",
@@ -47791,7 +47791,7 @@ const TARGETS = [
     },
     {
         "name": "케이티 스카이라이프",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 무실동 1857-10 시네시티타워 4층",
         "status": "약정만료",
@@ -47806,7 +47806,7 @@ const TARGETS = [
     },
     {
         "name": "케이티 스카이라이프",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1610번지 8층",
         "status": "약정만료",
@@ -47821,7 +47821,7 @@ const TARGETS = [
     },
     {
         "name": "케이티 스카이라이프",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 마포구 상암동 1610번지 부사장님실",
         "status": "약정만료",
@@ -47836,7 +47836,7 @@ const TARGETS = [
     },
     {
         "name": "케이티링커스",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 종로구 이화동 21 흥안빌딩",
         "status": "약정만료",
@@ -47851,7 +47851,7 @@ const TARGETS = [
     },
     {
         "name": "케이티링커스",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단구동 1516-5 3층",
         "status": "약정만료",
@@ -47866,7 +47866,7 @@ const TARGETS = [
     },
     {
         "name": "케이티링커스",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단구동 1516-5",
         "status": "약정만료",
@@ -47881,7 +47881,7 @@ const TARGETS = [
     },
     {
         "name": "케이티에이지",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 양서면 복포리 105-2",
         "status": "약정만료",
@@ -47896,7 +47896,7 @@ const TARGETS = [
     },
     {
         "name": "케이피씨",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 반곡동 266-3번지",
         "status": "만기도래_신규(1st)",
@@ -47911,7 +47911,7 @@ const TARGETS = [
     },
     {
         "name": "코끼리전기조명(GiGAeyes guard)",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 원남동 151-6번지 1층",
         "status": "약정만료",
@@ -47926,7 +47926,7 @@ const TARGETS = [
     },
     {
         "name": "코레일네트웍스",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 월계동 85-2번지(광운대역 주차장-장애출동)",
         "status": "약정만료",
@@ -47941,7 +47941,7 @@ const TARGETS = [
     },
     {
         "name": "코리아(설민우)애견미용학원",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 362-6번지 6층",
         "status": "약정만료",
@@ -47956,7 +47956,7 @@ const TARGETS = [
     },
     {
         "name": "코리아(설민우)애견미용학원",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동  362-6 3층 (서교동 대창빌딩)",
         "status": "약정만료",
@@ -47971,7 +47971,7 @@ const TARGETS = [
     },
     {
         "name": "코스모스팜",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 신동면 증리 695-1",
         "status": "만기도래_재계약",
@@ -47986,7 +47986,7 @@ const TARGETS = [
     },
     {
         "name": "코스포서비스",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 영월군 영월읍 정양리 중앙로 411",
         "status": "약정만료",
@@ -48001,7 +48001,7 @@ const TARGETS = [
     },
     {
         "name": "코아즈건설-역삼동현장",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 성동구 행당동 286-4 건축현장",
         "status": "약정만료",
@@ -48016,7 +48016,7 @@ const TARGETS = [
     },
     {
         "name": "코어링크홀딩스성신로데오점(OCT)",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 동선동1가 4-2 성호빌딩1층",
         "status": "약정만료",
@@ -48031,7 +48031,7 @@ const TARGETS = [
     },
     {
         "name": "코어링크홀딩스성신로데오점(OCT)",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 명륜2가 188 1층",
         "status": "약정만료",
@@ -48046,7 +48046,7 @@ const TARGETS = [
     },
     {
         "name": "코하이젠주식회사",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 회정동 7-6",
         "status": "만기도래_신규(1st)",
@@ -48061,7 +48061,7 @@ const TARGETS = [
     },
     {
         "name": "쿠온솔루션",
-        "manager": "박민준",
+        "manager": "G000306",
         "branch": "고양지사",
         "address": "경기 파주시 신촌동 32",
         "status": "약정만료",
@@ -48076,7 +48076,7 @@ const TARGETS = [
     },
     {
         "name": "쿠우쿠우 원주혁신점",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 반곡동 황금로 34 3층(반곡동)",
         "status": "약정만료",
@@ -48091,7 +48091,7 @@ const TARGETS = [
     },
     {
         "name": "크로커다일레이디-미아점",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 58-2호",
         "status": "약정만료",
@@ -48106,7 +48106,7 @@ const TARGETS = [
     },
     {
         "name": "클럽알앤비(CLUB R&B)",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 35-4 트레지오 빌딩 8층",
         "status": "약정만료",
@@ -48121,7 +48121,7 @@ const TARGETS = [
     },
     {
         "name": "키다리식품",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 인제군 하남리 371",
         "status": "약정만료",
@@ -48136,7 +48136,7 @@ const TARGETS = [
     },
     {
         "name": "키다리식품",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 화촌면 서울양양고속도로84",
         "status": "약정만료",
@@ -48151,7 +48151,7 @@ const TARGETS = [
     },
     {
         "name": "키다리식품",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 화촌면 서울양양고속도로84",
         "status": "약정만료",
@@ -48166,7 +48166,7 @@ const TARGETS = [
     },
     {
         "name": "키다리식품",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 인제군 하남리 371",
         "status": "약정만료",
@@ -48181,7 +48181,7 @@ const TARGETS = [
     },
     {
         "name": "키다리식품",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 인제군 하남리 371",
         "status": "약정만료",
@@ -48196,7 +48196,7 @@ const TARGETS = [
     },
     {
         "name": "키다리식품",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 화촌면 서울양양고속도로84-1",
         "status": "약정만료",
@@ -48211,7 +48211,7 @@ const TARGETS = [
     },
     {
         "name": "키다리식품",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 홍천군 화촌면 서울양양고속도로83-1",
         "status": "약정만료",
@@ -48226,7 +48226,7 @@ const TARGETS = [
     },
     {
         "name": "키친42일산마두점",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 마두동 799-2번지 강촌프라자 B1호 층 마두동 799-2. B1층 (강촌프라자)",
         "status": "약정만료",
@@ -48241,7 +48241,7 @@ const TARGETS = [
     },
     {
         "name": "킹개러지(GiGAeyes i-guard)",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 토평동 코스모스길215번길 114(토평동)",
         "status": "만기도래_신규(1st)",
@@ -48256,7 +48256,7 @@ const TARGETS = [
     },
     {
         "name": "킹덤키즈풀빌라리조트",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 설악면 미사리 304-12 노레방",
         "status": "약정만료",
@@ -48271,7 +48271,7 @@ const TARGETS = [
     },
     {
         "name": "킹덤키즈풀빌라리조트",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 설악면 미사리 미사리 304-8번지 4단지 22동",
         "status": "약정만료",
@@ -48286,7 +48286,7 @@ const TARGETS = [
     },
     {
         "name": "킹크로치",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 창전동 6-1번지 지하1층",
         "status": "만기도래_재계약",
@@ -48301,7 +48301,7 @@ const TARGETS = [
     },
     {
         "name": "타워푸르지오어린이집",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 온의동 방송길77 타워푸르지오 어린이집",
         "status": "약정만료",
@@ -48316,7 +48316,7 @@ const TARGETS = [
     },
     {
         "name": "타이바컴퍼니",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 간파리 310-1",
         "status": "약정만료",
@@ -48331,7 +48331,7 @@ const TARGETS = [
     },
     {
         "name": "타이바컴퍼니",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 간파리 310-1",
         "status": "만기도래_신규(1st)",
@@ -48346,7 +48346,7 @@ const TARGETS = [
     },
     {
         "name": "타이어투데이",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 1196-3",
         "status": "약정만료",
@@ -48361,7 +48361,7 @@ const TARGETS = [
     },
     {
         "name": "타이어투데이",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 1196",
         "status": "약정만료",
@@ -48376,7 +48376,7 @@ const TARGETS = [
     },
     {
         "name": "타이어투데이",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 1196-3",
         "status": "약정만료",
@@ -48391,7 +48391,7 @@ const TARGETS = [
     },
     {
         "name": "타이어프로",
-        "manager": "정양진",
+        "manager": "G000503",
         "branch": "의정부지사",
         "address": "경기 양주시 남방동 540-13번지 창고",
         "status": "만기도래_신규(1st)",
@@ -48406,7 +48406,7 @@ const TARGETS = [
     },
     {
         "name": "태광금속",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 남면 상수리 667-5  12층    양주검준공단내",
         "status": "약정만료",
@@ -48421,7 +48421,7 @@ const TARGETS = [
     },
     {
         "name": "태광커머스",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 수석동 213번지 3층",
         "status": "약정만료",
@@ -48436,7 +48436,7 @@ const TARGETS = [
     },
     {
         "name": "태광커머스",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 수석동 강변북로 658-13",
         "status": "만기도래_신규(1st)",
@@ -48451,7 +48451,7 @@ const TARGETS = [
     },
     {
         "name": "태산빌딩",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 교문동 278-21",
         "status": "약정만료",
@@ -48466,7 +48466,7 @@ const TARGETS = [
     },
     {
         "name": "태산빌딩",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 교문동 278-21 주차장",
         "status": "약정만료",
@@ -48481,7 +48481,7 @@ const TARGETS = [
     },
     {
         "name": "시립풍동어린이집(OCT)",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 풍동 349-3 풍동어린이집",
         "status": "약정만료",
@@ -48496,7 +48496,7 @@ const TARGETS = [
     },
     {
         "name": "태열당한의원",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 서종면 문호리 699-2번지  2층 사무실",
         "status": "만기도래_신규(1st)",
@@ -48511,7 +48511,7 @@ const TARGETS = [
     },
     {
         "name": "태영식품",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 수동면 송천리 418-9",
         "status": "만기도래_신규(1st)",
@@ -48526,7 +48526,7 @@ const TARGETS = [
     },
     {
         "name": "태영이엠씨",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 미탄면 수청리 수청길227",
         "status": "약정만료",
@@ -48541,7 +48541,7 @@ const TARGETS = [
     },
     {
         "name": "태웅산업개발주식회사",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 전곡읍 늘목리309번지",
         "status": "약정만료",
@@ -48556,7 +48556,7 @@ const TARGETS = [
     },
     {
         "name": "태웅산업개발주식회사",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 전곡읍 늘목리 309번지",
         "status": "만기도래_재계약",
@@ -48571,7 +48571,7 @@ const TARGETS = [
     },
     {
         "name": "태웅산업개발주식회사",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 전곡읍 늘목리 3-2 309번지",
         "status": "만기도래_재계약",
@@ -48586,7 +48586,7 @@ const TARGETS = [
     },
     {
         "name": "태일테크닉스",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 행신동 634-63",
         "status": "약정만료",
@@ -48601,7 +48601,7 @@ const TARGETS = [
     },
     {
         "name": "태진테크(주)",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 이동교리 호국로 287번길9-31",
         "status": "약정만료",
@@ -48616,7 +48616,7 @@ const TARGETS = [
     },
     {
         "name": "테크메이트코리아대부(주)",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 마포구 공덕동 473번지 KPX빌딩 3층",
         "status": "약정만료",
@@ -48631,7 +48631,7 @@ const TARGETS = [
     },
     {
         "name": "토이랜드",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 관설동 1761-2 1층",
         "status": "약정만료",
@@ -48646,7 +48646,7 @@ const TARGETS = [
     },
     {
         "name": "토즈스터디센터",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 송우리 송우리 726-78번지 랜드프라자 802호",
         "status": "약정만료",
@@ -48661,7 +48661,7 @@ const TARGETS = [
     },
     {
         "name": "토평도서관",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 인창동 674-4",
         "status": "약정만료",
@@ -48676,7 +48676,7 @@ const TARGETS = [
     },
     {
         "name": "토평도서관",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 토평동 956",
         "status": "약정만료",
@@ -48691,7 +48691,7 @@ const TARGETS = [
     },
     {
         "name": "토평도서관",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 토평동 611-59",
         "status": "약정만료",
@@ -48706,7 +48706,7 @@ const TARGETS = [
     },
     {
         "name": "톡스앤필의원",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 목동동 945-1번지4층 병원",
         "status": "만기도래_신규(1st)",
@@ -48721,7 +48721,7 @@ const TARGETS = [
     },
     {
         "name": "통나무집숯불닭갈비",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 신북읍 천전리 97-5 12층",
         "status": "약정만료",
@@ -48736,7 +48736,7 @@ const TARGETS = [
     },
     {
         "name": "퇴계이편한어린이집",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 퇴계동 산 25-9 퇴계한숲씨티 관리동 어린이집",
         "status": "약정만료",
@@ -48751,7 +48751,7 @@ const TARGETS = [
     },
     {
         "name": "투게더할인마트",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 불광동 631-1대호아파트상가 160호",
         "status": "약정만료",
@@ -48766,7 +48766,7 @@ const TARGETS = [
     },
     {
         "name": "투썸플레이스 고모호수점",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 고모리  663-2",
         "status": "약정만료",
@@ -48781,7 +48781,7 @@ const TARGETS = [
     },
     {
         "name": "투썸플레이스 고모호수점",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 고모리 고모리 663-2번지",
         "status": "약정만료",
@@ -48796,7 +48796,7 @@ const TARGETS = [
     },
     {
         "name": "투플러스",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 가곡리 308-8",
         "status": "만기도래_신규(1st)",
@@ -48811,7 +48811,7 @@ const TARGETS = [
     },
     {
         "name": "티아라스튜디오",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 187-1 2층",
         "status": "약정만료",
@@ -48826,7 +48826,7 @@ const TARGETS = [
     },
     {
         "name": "티케쥬얼리",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 연지동 125 육화빌딩 3층",
         "status": "약정만료",
@@ -48841,7 +48841,7 @@ const TARGETS = [
     },
     {
         "name": "파랑뷰호텔",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 고성군 죽왕면 삼포리 241-1 주상복합 삼포리 242-1",
         "status": "약정만료",
@@ -48856,7 +48856,7 @@ const TARGETS = [
     },
     {
         "name": "파미르",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 동면 장학리 139-157번지",
         "status": "만기도래_신규(1st)",
@@ -48871,7 +48871,7 @@ const TARGETS = [
     },
     {
         "name": "파비상가(GiGAeyes guard)",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 대현동 144번지 이룸타워",
         "status": "만기도래_신규(1st)",
@@ -48886,7 +48886,7 @@ const TARGETS = [
     },
     {
         "name": "파스토조",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 서대문구 홍제동 313-26 1층 공장",
         "status": "약정만료",
@@ -48901,7 +48901,7 @@ const TARGETS = [
     },
     {
         "name": "파스토조",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 구산동 198-2번지 3층",
         "status": "만기도래_재계약",
@@ -48916,7 +48916,7 @@ const TARGETS = [
     },
     {
         "name": "파스토조",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 광탄 800-5",
         "status": "만기도래_재계약",
@@ -48931,7 +48931,7 @@ const TARGETS = [
     },
     {
         "name": "파스토조",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 불광동 430-5",
         "status": "만기도래_재계약",
@@ -48946,7 +48946,7 @@ const TARGETS = [
     },
     {
         "name": "파스토조",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 구산동 198-2 2층",
         "status": "만기도래_재계약",
@@ -48961,7 +48961,7 @@ const TARGETS = [
     },
     {
         "name": "파스토조",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 구산동 198-15 1층 바나타이거",
         "status": "만기도래_재계약",
@@ -48976,7 +48976,7 @@ const TARGETS = [
     },
     {
         "name": "파스토조",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 광탄면 용미리 800-5",
         "status": "만기도래_재계약",
@@ -48991,7 +48991,7 @@ const TARGETS = [
     },
     {
         "name": "파스토조",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 구산동 198-15 2층",
         "status": "만기도래_재계약",
@@ -49006,7 +49006,7 @@ const TARGETS = [
     },
     {
         "name": "파스토조",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 구산동 198-2 한교빌딩 1층 파스토조",
         "status": "만기도래_재계약",
@@ -49021,7 +49021,7 @@ const TARGETS = [
     },
     {
         "name": "파스토조",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 불광동 430-5 2층",
         "status": "만기도래_재계약",
@@ -49036,7 +49036,7 @@ const TARGETS = [
     },
     {
         "name": "파스토조",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 구산동 198-2 파스토조 빌딩 지하1층",
         "status": "만기도래_재계약",
@@ -49051,7 +49051,7 @@ const TARGETS = [
     },
     {
         "name": "파스토조",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 구산동 198-2 파스토조 빌딩 4층",
         "status": "만기도래_재계약",
@@ -49066,7 +49066,7 @@ const TARGETS = [
     },
     {
         "name": "파스토조",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 은평구 구산동 198-2 2층",
         "status": "만기도래_재계약",
@@ -49081,7 +49081,7 @@ const TARGETS = [
     },
     {
         "name": "파워전기(OCT)",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 대전동 426-2",
         "status": "약정만료",
@@ -49096,7 +49096,7 @@ const TARGETS = [
     },
     {
         "name": "파주도시관광공사",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 와동동 1473 운정역환승공영주차장",
         "status": "약정만료",
@@ -49111,7 +49111,7 @@ const TARGETS = [
     },
     {
         "name": "파주도시관광공사",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 야당동 1087 야당환승주차장",
         "status": "약정만료",
@@ -49126,7 +49126,7 @@ const TARGETS = [
     },
     {
         "name": "파주도시관광공사",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 금촌동 987-1 금촌2공영주차장",
         "status": "약정만료",
@@ -49141,7 +49141,7 @@ const TARGETS = [
     },
     {
         "name": "파주도시관광공사",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 금촌동 965-1 금촌로타리통일시장",
         "status": "만기도래_신규(1st)",
@@ -49156,7 +49156,7 @@ const TARGETS = [
     },
     {
         "name": "파주도시관광공사",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 와동동 운정역 지하공영주차장",
         "status": "약정만료",
@@ -49171,7 +49171,7 @@ const TARGETS = [
     },
     {
         "name": "파주도시관광공사",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 금촌동 323-4 금촌통일시장주차장",
         "status": "만기도래_신규(1st)",
@@ -49186,7 +49186,7 @@ const TARGETS = [
     },
     {
         "name": "파주도시관광공사",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 금촌동 965-1 금촌로타리공영주차장",
         "status": "만기도래_신규(1st)",
@@ -49201,7 +49201,7 @@ const TARGETS = [
     },
     {
         "name": "파주도시관광공사",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 문산읍 문산리 8-2",
         "status": "만기도래_신규(1st)",
@@ -49216,7 +49216,7 @@ const TARGETS = [
     },
     {
         "name": "파주도시관광공사",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 문산읍 문산리 8-2 문산자유시장주차장",
         "status": "만기도래_신규(1st)",
@@ -49231,7 +49231,7 @@ const TARGETS = [
     },
     {
         "name": "파주도시관광공사",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 금촌동 987-1 금촌2주차장",
         "status": "약정만료",
@@ -49246,7 +49246,7 @@ const TARGETS = [
     },
     {
         "name": "파주도시관광공사",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 와동동 1591",
         "status": "약정만료",
@@ -49261,7 +49261,7 @@ const TARGETS = [
     },
     {
         "name": "파주도시관광공사",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 야당동 1087 (야당동)야당역환승주차장",
         "status": "약정만료",
@@ -49276,7 +49276,7 @@ const TARGETS = [
     },
     {
         "name": "파주시 공동육아나눔터 2호점",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 금촌동 782-4 파주시건강가정지원센터",
         "status": "약정만료",
@@ -49291,7 +49291,7 @@ const TARGETS = [
     },
     {
         "name": "파주시 공동육아나눔터 2호점",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 금촌동 782번지 지하1층 사무실",
         "status": "만기도래_신규(1st)",
@@ -49306,7 +49306,7 @@ const TARGETS = [
     },
     {
         "name": "주식회사 모바일최강",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 단구동 1512-1 1층 핸드폰 매장",
         "status": "약정만료",
@@ -49321,7 +49321,7 @@ const TARGETS = [
     },
     {
         "name": "파주시 청소년재단",
-        "manager": "박민준",
+        "manager": "G000306",
         "branch": "고양지사",
         "address": "경기 파주시 동패동 1691",
         "status": "약정만료",
@@ -49336,7 +49336,7 @@ const TARGETS = [
     },
     {
         "name": "파주시 청소년재단",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 문산읍 선유리 1402 문산읍행정복지센터 문산청소년수련관",
         "status": "만기도래_신규(1st)",
@@ -49351,7 +49351,7 @@ const TARGETS = [
     },
     {
         "name": "파주시 청소년재단",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 조리읍 봉일천리 163 봉일천순복음교회",
         "status": "약정만료",
@@ -49366,7 +49366,7 @@ const TARGETS = [
     },
     {
         "name": "파주시 청소년재단",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 야당동 54-1 운정3동 출장민원실 청소년복합문화센터",
         "status": "약정만료",
@@ -49381,7 +49381,7 @@ const TARGETS = [
     },
     {
         "name": "파주시 청소년재단",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 법원읍 법원리 685-15 2층",
         "status": "약정만료",
@@ -49396,7 +49396,7 @@ const TARGETS = [
     },
     {
         "name": "파주시 청소년재단",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 파주읍 연풍리 282-10",
         "status": "약정만료",
@@ -49411,7 +49411,7 @@ const TARGETS = [
     },
     {
         "name": "파주시 청소년재단",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 금촌동 605-1 금릉역사 우측  끝",
         "status": "만기도래_신규(1st)",
@@ -49426,7 +49426,7 @@ const TARGETS = [
     },
     {
         "name": "파주시 청소년재단",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 와동동 1358 운정행정복지센터 5층",
         "status": "약정만료",
@@ -49441,7 +49441,7 @@ const TARGETS = [
     },
     {
         "name": "파주시 청소년재단",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 문산읍 선유리 1402 문산읍행정복지센터 문산청소년수련관",
         "status": "만기도래_신규(1st)",
@@ -49456,7 +49456,7 @@ const TARGETS = [
     },
     {
         "name": "파주시 청소년재단",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 적성면 마지리 47-19 34층",
         "status": "약정만료",
@@ -49471,7 +49471,7 @@ const TARGETS = [
     },
     {
         "name": "파주시 청소년재단",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 금촌동 780-1 금촌도서관 청소년재산 금촌지점 및 정책기획과",
         "status": "약정만료",
@@ -49486,7 +49486,7 @@ const TARGETS = [
     },
     {
         "name": "파주시 청소년재단",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 금촌동 605-1 금릉역사 역사내 우측 끝",
         "status": "약정만료",
@@ -49501,7 +49501,7 @@ const TARGETS = [
     },
     {
         "name": "파주컨트리클럽",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 법원읍 갈곡리 358-1",
         "status": "약정만료",
@@ -49516,7 +49516,7 @@ const TARGETS = [
     },
     {
         "name": "파주컨트리클럽",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 법원읍 갈곡리 360 파주CC 클럽하우스 내 VIP룸",
         "status": "약정만료",
@@ -49531,7 +49531,7 @@ const TARGETS = [
     },
     {
         "name": "파주컨트리클럽",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 법원읍 갈곡리 358-1",
         "status": "약정만료",
@@ -49546,7 +49546,7 @@ const TARGETS = [
     },
     {
         "name": "판타스틱코인노래연습장",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 중계동 364-20번지 그린코아 지하1층 판타스틱코인노래방",
         "status": "약정만료",
@@ -49561,7 +49561,7 @@ const TARGETS = [
     },
     {
         "name": "팔마미트",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진벌리 619-2번지",
         "status": "약정만료",
@@ -49576,7 +49576,7 @@ const TARGETS = [
     },
     {
         "name": "팔복농산",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 강상면 신화리 678-2번지",
         "status": "만기도래_재계약",
@@ -49591,7 +49591,7 @@ const TARGETS = [
     },
     {
         "name": "팔복농산",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 강상면 신화리 678-2",
         "status": "약정만료",
@@ -49606,7 +49606,7 @@ const TARGETS = [
     },
     {
         "name": "팔팔병원",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 면목동 180-1번지",
         "status": "약정만료",
@@ -49621,7 +49621,7 @@ const TARGETS = [
     },
     {
         "name": "팔팔병원",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 면목동 180-1",
         "status": "약정만료",
@@ -49636,7 +49636,7 @@ const TARGETS = [
     },
     {
         "name": "팜파스리조트-속초 (kt view)",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 조양동 1401",
         "status": "약정만료",
@@ -49651,7 +49651,7 @@ const TARGETS = [
     },
     {
         "name": "패로스건축",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 염리동  10-91 (염리동 패로스 하우스) ",
         "status": "만기도래_재계약",
@@ -49666,7 +49666,7 @@ const TARGETS = [
     },
     {
         "name": "퍼시픽그린코리아",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 광탄면 분수리 48-1 광탄면 장지산로 184-31",
         "status": "만기도래_재계약",
@@ -49681,7 +49681,7 @@ const TARGETS = [
     },
     {
         "name": "평창군시설관리공단",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 봉평면 강원 평창군 팔송로 285  자연휴양림",
         "status": "약정만료",
@@ -49696,7 +49696,7 @@ const TARGETS = [
     },
     {
         "name": "평창군시설관리공단",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 방림면 방림리 1619 .",
         "status": "만기도래_신규(1st)",
@@ -49711,7 +49711,7 @@ const TARGETS = [
     },
     {
         "name": "평창군시설관리공단",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 진부면 하진부리 353-7 진부장례식장 .",
         "status": "약정만료",
@@ -49726,7 +49726,7 @@ const TARGETS = [
     },
     {
         "name": "평창군시설관리공단",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 평창읍 종부리 504 .",
         "status": "약정만료",
@@ -49741,7 +49741,7 @@ const TARGETS = [
     },
     {
         "name": "평창군시설관리공단",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 평창읍 종부리 508-204 평창행복주택 관리사무소",
         "status": "약정만료",
@@ -49756,7 +49756,7 @@ const TARGETS = [
     },
     {
         "name": "평창군시설관리공단",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 평창읍 종부리 596-3 평창종합운동장 .",
         "status": "약정만료",
@@ -49771,7 +49771,7 @@ const TARGETS = [
     },
     {
         "name": "평창군시설관리공단",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 평창읍 종부리 596-3 평창종합운동장 평창군시설관리공단",
         "status": "약정만료",
@@ -49786,7 +49786,7 @@ const TARGETS = [
     },
     {
         "name": "평창군시설관리공단",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 방림면 방림리  산692",
         "status": "약정만료",
@@ -49801,7 +49801,7 @@ const TARGETS = [
     },
     {
         "name": "평창군시설관리공단",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 봉평면 강원 평창군 팔송로 285",
         "status": "약정만료",
@@ -49816,7 +49816,7 @@ const TARGETS = [
     },
     {
         "name": "평창군시설관리공단",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 대관령면 강원 평창군 경강로 5721 대관령휴게소",
         "status": "약정만료",
@@ -49831,7 +49831,7 @@ const TARGETS = [
     },
     {
         "name": "평창군시설관리공단",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 용평면 강원 평창군 이승복생가길 160 노동계곡캠핑장",
         "status": "약정만료",
@@ -49846,7 +49846,7 @@ const TARGETS = [
     },
     {
         "name": "평화당인쇄(주)",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 견지동 60-2번지",
         "status": "약정만료",
@@ -49861,7 +49861,7 @@ const TARGETS = [
     },
     {
         "name": "평화주택(텔레캅 큐브)",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 오분동 삼척로 4246-62",
         "status": "약정만료",
@@ -49876,7 +49876,7 @@ const TARGETS = [
     },
     {
         "name": "포남새마을금고",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 포남동 1289-3 새마을금고",
         "status": "약정만료",
@@ -49891,7 +49891,7 @@ const TARGETS = [
     },
     {
         "name": "포남새마을금고",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 사천면 미노리 388-2 사천새마을금고",
         "status": "만기도래_신규(1st)",
@@ -49906,7 +49906,7 @@ const TARGETS = [
     },
     {
         "name": "포도알사물함",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 종로구 동숭동 1-67 1층 15호",
         "status": "만기도래_신규(1st)",
@@ -49921,7 +49921,7 @@ const TARGETS = [
     },
     {
         "name": "포도알사물함",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 종로구 동숭동 1-62번지 무인매장",
         "status": "만기도래_신규(1st)",
@@ -49936,7 +49936,7 @@ const TARGETS = [
     },
     {
         "name": "포스엠(GiGAeyes i-guard)",
-        "manager": "이현배",
+        "manager": "G000604",
         "branch": "남양주지사",
         "address": "경기 양평군 양평읍회현리 충신로 269",
         "status": "만기도래_신규(1st)",
@@ -49951,7 +49951,7 @@ const TARGETS = [
     },
     {
         "name": "포스파워 주식회사",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 신기면 안의리 192-4",
         "status": "약정만료",
@@ -49966,7 +49966,7 @@ const TARGETS = [
     },
     {
         "name": "포스파워 주식회사",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 적노동 산 29-3",
         "status": "약정만료",
@@ -49981,7 +49981,7 @@ const TARGETS = [
     },
     {
         "name": "포씨즈",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 종로구 숭인동 207-32 숭인동청년주택 청년주택",
         "status": "약정만료",
@@ -49996,7 +49996,7 @@ const TARGETS = [
     },
     {
         "name": "포씨즈",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 종로구 숭인동 207-32 숭인동청년주택 관리실",
         "status": "약정만료",
@@ -50011,7 +50011,7 @@ const TARGETS = [
     },
     {
         "name": "포장119",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 광탄면마장리 35-10",
         "status": "만기도래_신규(1st)",
@@ -50026,7 +50026,7 @@ const TARGETS = [
     },
     {
         "name": "포천수지",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 우금리 276-3",
         "status": "만기도래_재계약",
@@ -50041,7 +50041,7 @@ const TARGETS = [
     },
     {
         "name": "포천수지",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 우금리 276-3",
         "status": "만기도래_신규(1st)",
@@ -50056,7 +50056,7 @@ const TARGETS = [
     },
     {
         "name": "폴리테루",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 682-10",
         "status": "만기도래_신규(1st)",
@@ -50071,7 +50071,7 @@ const TARGETS = [
     },
     {
         "name": "푸드버스터",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동1가 668-97번지",
         "status": "약정만료",
@@ -50086,7 +50086,7 @@ const TARGETS = [
     },
     {
         "name": "푸디스트 주식회사",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 자양동 92-1 6층 식당",
         "status": "약정만료",
@@ -50101,7 +50101,7 @@ const TARGETS = [
     },
     {
         "name": "풍산빌딩",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 필동2가 16-6번지 풍산빌딩 풍산빌딩",
         "status": "약정만료",
@@ -50116,7 +50116,7 @@ const TARGETS = [
     },
     {
         "name": "프롬비(주)",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 고모리 784-2",
         "status": "만기도래_신규(1st)",
@@ -50131,7 +50131,7 @@ const TARGETS = [
     },
     {
         "name": "프리랜서",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 연지동 128 (서광빌딩) 4층",
         "status": "약정만료",
@@ -50146,7 +50146,7 @@ const TARGETS = [
     },
     {
         "name": "프리랜서",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 연지동 128 서광빌딩7층",
         "status": "만기도래_신규(1st)",
@@ -50161,7 +50161,7 @@ const TARGETS = [
     },
     {
         "name": "프리젠카운티",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 동빙고동 1-76번지",
         "status": "약정만료",
@@ -50176,7 +50176,7 @@ const TARGETS = [
     },
     {
         "name": "프린스빌딩 관리사무소",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계동  724-2 관리사무실",
         "status": "약정만료",
@@ -50191,7 +50191,7 @@ const TARGETS = [
     },
     {
         "name": "플래티넘빌딩",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 금곡리 1097 지젤프라자 관리실",
         "status": "약정만료",
@@ -50206,7 +50206,7 @@ const TARGETS = [
     },
     {
         "name": "플래티늄춘천요양원",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 동면 장학리 785-31",
         "status": "약정만료",
@@ -50221,7 +50221,7 @@ const TARGETS = [
     },
     {
         "name": "플랫커피(OCT)",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 통의동 61-1번지",
         "status": "만기도래_재계약",
@@ -50236,7 +50236,7 @@ const TARGETS = [
     },
     {
         "name": "플러스산업",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 우천면법주리 736",
         "status": "약정만료",
@@ -50251,7 +50251,7 @@ const TARGETS = [
     },
     {
         "name": "플러스오피스텔",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 창동 181-46 플러스오피스텔",
         "status": "약정만료",
@@ -50266,7 +50266,7 @@ const TARGETS = [
     },
     {
         "name": "플러스유",
-        "manager": "안근영",
+        "manager": "G000202",
         "branch": "서대문지사",
         "address": "서울 서대문구 남가좌동 343-50",
         "status": "약정만료",
@@ -50281,7 +50281,7 @@ const TARGETS = [
     },
     {
         "name": "플러스이레실버요양원",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 호평동 638 성보빌딩7층",
         "status": "만기도래_신규(1st)",
@@ -50296,7 +50296,7 @@ const TARGETS = [
     },
     {
         "name": "플레이즈에듀테인먼트(OCT)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동1가 685-696 갤러리아포레 지하",
         "status": "약정만료",
@@ -50311,7 +50311,7 @@ const TARGETS = [
     },
     {
         "name": "플로라운지",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 동교동 169-1",
         "status": "약정만료",
@@ -50326,7 +50326,7 @@ const TARGETS = [
     },
     {
         "name": "피비인터내셔널(OCT)",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 하월곡동 53-10번지 1층",
         "status": "약정만료",
@@ -50341,7 +50341,7 @@ const TARGETS = [
     },
     {
         "name": "피스코이엔씨",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 창동 135-1번지",
         "status": "약정만료",
@@ -50356,7 +50356,7 @@ const TARGETS = [
     },
     {
         "name": "피스코이엔씨",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 전농동 620-69 롯데건설내",
         "status": "약정만료",
@@ -50371,7 +50371,7 @@ const TARGETS = [
     },
     {
         "name": "피스코이엔씨",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 소공동 1번지 롯데백화점본점 지하 7층",
         "status": "약정만료",
@@ -50386,7 +50386,7 @@ const TARGETS = [
     },
     {
         "name": "피스코이엔씨",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 종암동 7-102 2층 피스코이엔씨",
         "status": "약정만료",
@@ -50401,7 +50401,7 @@ const TARGETS = [
     },
     {
         "name": "필로소피라운지",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 계동 140-51번지 12층",
         "status": "약정만료",
@@ -50416,7 +50416,7 @@ const TARGETS = [
     },
     {
         "name": "필로소피라운지",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 초동 53-19번지",
         "status": "만기도래_신규(1st)",
@@ -50431,7 +50431,7 @@ const TARGETS = [
     },
     {
         "name": "필로소피라운지",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 성북구 성북동1가 12번지",
         "status": "약정만료",
@@ -50446,7 +50446,7 @@ const TARGETS = [
     },
     {
         "name": "핑크버터홍은점(텔레캅 큐브)",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 서대문구 홍은동 43-2번지",
         "status": "약정만료",
@@ -50461,7 +50461,7 @@ const TARGETS = [
     },
     {
         "name": "하나건철",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 남면 구암리 구암리 368-1",
         "status": "약정만료",
@@ -50476,7 +50476,7 @@ const TARGETS = [
     },
     {
         "name": "하나건철",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 양주시 남면 368-1번지 산업단지내",
         "status": "약정만료",
@@ -50491,7 +50491,7 @@ const TARGETS = [
     },
     {
         "name": "하나전기(주)",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 고성군 토성면 아야진리 21번지",
         "status": "만기도래_재계약",
@@ -50506,7 +50506,7 @@ const TARGETS = [
     },
     {
         "name": "하나프라자",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 호원동 51-2",
         "status": "약정만료",
@@ -50521,7 +50521,7 @@ const TARGETS = [
     },
     {
         "name": "하나프라자",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 호원동 51-2",
         "status": "약정만료",
@@ -50536,7 +50536,7 @@ const TARGETS = [
     },
     {
         "name": "하브지엥",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 395-141",
         "status": "약정만료",
@@ -50551,7 +50551,7 @@ const TARGETS = [
     },
     {
         "name": "하연옥(마곡점)",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한강로2가 49-1 2층",
         "status": "약정만료",
@@ -50566,7 +50566,7 @@ const TARGETS = [
     },
     {
         "name": "하이드앤시크",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 동교동 203-57번지 SANTOH빌딩 지하1층",
         "status": "약정만료",
@@ -50581,7 +50581,7 @@ const TARGETS = [
     },
     {
         "name": "하이케이넷",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 용산구 용문동 38-47 지하1층~4층",
         "status": "약정만료",
@@ -50596,7 +50596,7 @@ const TARGETS = [
     },
     {
         "name": "하이테크",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 구산동 1240-1",
         "status": "약정만료",
@@ -50611,7 +50611,7 @@ const TARGETS = [
     },
     {
         "name": "하이테크",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 행주내동 725번지",
         "status": "약정만료",
@@ -50626,7 +50626,7 @@ const TARGETS = [
     },
     {
         "name": "하이트진로(특판북부지점)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 군자동 503 지하1층 113호",
         "status": "약정만료",
@@ -50641,7 +50641,7 @@ const TARGETS = [
     },
     {
         "name": "하이트진로(특판북부지점)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 군자동 503 1층 101호",
         "status": "약정만료",
@@ -50656,7 +50656,7 @@ const TARGETS = [
     },
     {
         "name": "하이트진로(특판북부지점)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 군자동 503 두산위브상가 지하2층",
         "status": "약정만료",
@@ -50671,7 +50671,7 @@ const TARGETS = [
     },
     {
         "name": "학)일송학원",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 서면 덕두원리 144-1번지",
         "status": "만기도래_재계약",
@@ -50686,7 +50686,7 @@ const TARGETS = [
     },
     {
         "name": "학)일송학원",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 청량리동 235-2번지 지하",
         "status": "약정만료",
@@ -50701,7 +50701,7 @@ const TARGETS = [
     },
     {
         "name": "한강로3가새마을금고",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한강로3가 65-159",
         "status": "약정만료",
@@ -50716,7 +50716,7 @@ const TARGETS = [
     },
     {
         "name": "한강로3가새마을금고",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한강로3가 65-159",
         "status": "약정만료",
@@ -50731,7 +50731,7 @@ const TARGETS = [
     },
     {
         "name": "한강로3가새마을금고",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한강로3가 65-159번지",
         "status": "약정만료",
@@ -50746,7 +50746,7 @@ const TARGETS = [
     },
     {
         "name": "한강문화(OCT)",
-        "manager": "양현성",
+        "manager": "G000410",
         "branch": "중앙지사",
         "address": "서울 중구 필동2가 119-1번지 한강문화 사옥",
         "status": "약정만료",
@@ -50761,7 +50761,7 @@ const TARGETS = [
     },
     {
         "name": "한강유치원",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 개운동  411",
         "status": "약정만료",
@@ -50776,7 +50776,7 @@ const TARGETS = [
     },
     {
         "name": "한강유치원",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 개운동 개운2길 46 (개운동)",
         "status": "약정만료",
@@ -50791,7 +50791,7 @@ const TARGETS = [
     },
     {
         "name": "한경툴주식회사",
-        "manager": "최우석",
+        "manager": "G000301",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 주교동 599-15번지 한경툴주식회사",
         "status": "만기도래_신규(1st)",
@@ -50806,7 +50806,7 @@ const TARGETS = [
     },
     {
         "name": "한국YMCA전국연맹",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 376-11",
         "status": "약정만료",
@@ -50821,7 +50821,7 @@ const TARGETS = [
     },
     {
         "name": "한국가스기술공사",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 동내면 학곡리 849",
         "status": "약정만료",
@@ -50836,7 +50836,7 @@ const TARGETS = [
     },
     {
         "name": "한국공원개발(주)",
-        "manager": "홍종철",
+        "manager": "미지정",
         "branch": "남양주지사",
         "address": "경기 남양주시 화도읍 월산리 606-1 사무실",
         "status": "약정만료",
@@ -50851,7 +50851,7 @@ const TARGETS = [
     },
     {
         "name": "한국과학기술원",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 청량리동 207-42번지 한국과학기술원 사무실",
         "status": "만기도래_신규(1st)",
@@ -50866,7 +50866,7 @@ const TARGETS = [
     },
     {
         "name": "한국과학기술원",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 청량리동 207-42 한국과학기술원 슈펙스홀 후문",
         "status": "약정만료",
@@ -50881,7 +50881,7 @@ const TARGETS = [
     },
     {
         "name": "한국과학기술원",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 청량리동 207-42 한국과학기술원",
         "status": "약정만료",
@@ -50896,7 +50896,7 @@ const TARGETS = [
     },
     {
         "name": "한국과학기술원",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 청량리동 207-42 한국과학기술원",
         "status": "약정만료",
@@ -50911,7 +50911,7 @@ const TARGETS = [
     },
     {
         "name": "한국관광공사_청주지점",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 문산읍 마정리  1360-50 평화누리 곤돌라 좌측건물",
         "status": "약정만료",
@@ -50926,7 +50926,7 @@ const TARGETS = [
     },
     {
         "name": "한국대학교선교회",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 근덕면 용화리 252-2 위아레펜션",
         "status": "만기도래_신규(1st)",
@@ -50941,7 +50941,7 @@ const TARGETS = [
     },
     {
         "name": "한국도자기",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 동대문구 신설동 100-29 한국도자기빌딩",
         "status": "만기도래_신규(1st)",
@@ -50956,7 +50956,7 @@ const TARGETS = [
     },
     {
         "name": "한국도자기",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 동대문구 신설동 100-29한국도자기 서울빌딩10층",
         "status": "약정만료",
@@ -50971,7 +50971,7 @@ const TARGETS = [
     },
     {
         "name": "한국동서발전",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 반곡동 1860-5 2층 201호202호",
         "status": "약정만료",
@@ -50986,7 +50986,7 @@ const TARGETS = [
     },
     {
         "name": "한국문화재재단",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 세종로 1-57번지 고궁박물관1층 고궁뜨락",
         "status": "약정만료",
@@ -51001,7 +51001,7 @@ const TARGETS = [
     },
     {
         "name": "한국문화재재단",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 지영동 235-14 22번 창고[지영동창고단지]",
         "status": "약정만료",
@@ -51016,7 +51016,7 @@ const TARGETS = [
     },
     {
         "name": "한국문화재재단",
-        "manager": "문성진",
+        "manager": "G000407",
         "branch": "중앙지사",
         "address": "서울 종로구 와룡동 2-71(매표소옆)",
         "status": "약정만료",
@@ -51031,7 +51031,7 @@ const TARGETS = [
     },
     {
         "name": "한국방송공사",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 온의동 581 KBS춘천방송총국 .",
         "status": "만기도래_신규(1st)",
@@ -51046,7 +51046,7 @@ const TARGETS = [
     },
     {
         "name": "한국방송공사",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 사농동 648",
         "status": "약정만료",
@@ -51061,7 +51061,7 @@ const TARGETS = [
     },
     {
         "name": "한국방송공사",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 사농동 648",
         "status": "약정만료",
@@ -51076,7 +51076,7 @@ const TARGETS = [
     },
     {
         "name": "한국보건의료인국가시험원",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 학성동 213-11 kt학성빌딩 2층",
         "status": "만기도래_재계약",
@@ -51091,7 +51091,7 @@ const TARGETS = [
     },
     {
         "name": "한국생산성본부",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 적선동 122-1 생산성빌딩 9층",
         "status": "약정만료",
@@ -51106,7 +51106,7 @@ const TARGETS = [
     },
     {
         "name": "한국생산성본부",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 적선동 122-1 생산성빌딩 7층",
         "status": "약정만료",
@@ -51121,7 +51121,7 @@ const TARGETS = [
     },
     {
         "name": "한국생산성본부",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 적선동 122-1 생산성빌딩 10층",
         "status": "약정만료",
@@ -51136,7 +51136,7 @@ const TARGETS = [
     },
     {
         "name": "한국생산성본부",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 적선동 122-1번지 생산성빌딩 4층",
         "status": "약정만료",
@@ -51151,7 +51151,7 @@ const TARGETS = [
     },
     {
         "name": "한국생산성본부",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 적선동 122-1 생산성빌딩 12층",
         "status": "약정만료",
@@ -51166,7 +51166,7 @@ const TARGETS = [
     },
     {
         "name": "한국생산성본부",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 적선동 122-1 생산성빌딩 11층",
         "status": "약정만료",
@@ -51181,7 +51181,7 @@ const TARGETS = [
     },
     {
         "name": "한국생산성본부",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 종로구 적선동 122-1 생산성빌딩 6층",
         "status": "약정만료",
@@ -51196,7 +51196,7 @@ const TARGETS = [
     },
     {
         "name": "한국수자원공사",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 지변동 704-5 3층",
         "status": "약정만료",
@@ -51211,7 +51211,7 @@ const TARGETS = [
     },
     {
         "name": "한국수자원공사",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 남양동 18-3 기아자동차삼척지점 4층",
         "status": "만기도래_신규(1st)",
@@ -51226,7 +51226,7 @@ const TARGETS = [
     },
     {
         "name": "한국수자원공사",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 교동 1863-4 5층",
         "status": "약정만료",
@@ -51241,7 +51241,7 @@ const TARGETS = [
     },
     {
         "name": "한국수자원공사",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 교동 1863-4 5층 한국수장원공사-강릉",
         "status": "약정만료",
@@ -51256,7 +51256,7 @@ const TARGETS = [
     },
     {
         "name": "한국의료재단이에프씨의원",
-        "manager": "김태규",
+        "manager": "G000104",
         "branch": "강북지사",
         "address": "서울 중랑구 묵1동 158-7번지  프라임병원",
         "status": "만기도래_재계약",
@@ -51271,7 +51271,7 @@ const TARGETS = [
     },
     {
         "name": "한국의학연구소",
-        "manager": "김상태",
+        "manager": "P000203",
         "branch": "원주지사",
         "address": "강원 원주시 문막읍 동화리 1538-10",
         "status": "약정만료",
@@ -51286,7 +51286,7 @@ const TARGETS = [
     },
     {
         "name": "한국자산관리공사국유재산관리",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 일산동 551-2번지",
         "status": "약정만료",
@@ -51301,7 +51301,7 @@ const TARGETS = [
     },
     {
         "name": "한국전기차충전서비스주식회사",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 대화동 2320번지 고양종합운동장 고양 종합운동장 내 주차장 전기차충전소",
         "status": "만기도래_신규(1st)",
@@ -51316,7 +51316,7 @@ const TARGETS = [
     },
     {
         "name": "한국전기차충전서비스주식회사",
-        "manager": "김현돈",
+        "manager": "G000605",
         "branch": "남양주지사",
         "address": "경기 남양주시 다산동 6046번지",
         "status": "만기도래_신규(1st)",
@@ -51331,7 +51331,7 @@ const TARGETS = [
     },
     {
         "name": "한국전기차충전서비스주식회사",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 설악면 미사리 145-3번지",
         "status": "만기도래_신규(1st)",
@@ -51346,7 +51346,7 @@ const TARGETS = [
     },
     {
         "name": "한국전기차충전서비스주식회사",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 설악면 미사리 149-4번지",
         "status": "만기도래_신규(1st)",
@@ -51361,7 +51361,7 @@ const TARGETS = [
     },
     {
         "name": "한국전기차충전서비스주식회사",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 안흥면 소사리 1530-1 횡성휴게소 강릉방향 현대전기차충전소 (안흥소사)",
         "status": "약정만료",
@@ -51376,7 +51376,7 @@ const TARGETS = [
     },
     {
         "name": "한국전기차충전서비스주식회사",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 인제군 상남면 하남리 371 서울방향 현대전기차충전소 (상남하남 내린천휴게소)",
         "status": "약정만료",
@@ -51391,7 +51391,7 @@ const TARGETS = [
     },
     {
         "name": "한국전기차충전서비스주식회사",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 현북면 중광정리 504",
         "status": "만기도래_신규(1st)",
@@ -51406,7 +51406,7 @@ const TARGETS = [
     },
     {
         "name": "한국전기차충전서비스주식회사",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 대화동 2601번지 현대모터스튜디오고양 지하4층 주차장 전기차 충전소",
         "status": "약정만료",
@@ -51421,7 +51421,7 @@ const TARGETS = [
     },
     {
         "name": "한국전기차충전서비스주식회사",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 안흥면 소사리 소사리 1530-1번지 횡성휴게소 강릉방향",
         "status": "약정만료",
@@ -51436,7 +51436,7 @@ const TARGETS = [
     },
     {
         "name": "한국전기차충전서비스주식회사",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 인제군 상남면 하남리 371 내린천휴게소 서울방향 전기차충전소",
         "status": "약정만료",
@@ -51451,7 +51451,7 @@ const TARGETS = [
     },
     {
         "name": "한국전기차충전서비스주식회사",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 277-15번지 현대자동차써비스(주)동부사업소 주차장 전기차충전소",
         "status": "약정만료",
@@ -51466,7 +51466,7 @@ const TARGETS = [
     },
     {
         "name": "한국전력공사",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 남산면 창촌리 636번지",
         "status": "약정만료",
@@ -51481,7 +51481,7 @@ const TARGETS = [
     },
     {
         "name": "한국주방산업",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 죽헌동 240 1층",
         "status": "만기도래_재계약",
@@ -51496,7 +51496,7 @@ const TARGETS = [
     },
     {
         "name": "한국지엠포천서비스센터",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 이동교리 634-7번지  ( 호국로 151 )",
         "status": "약정만료",
@@ -51511,7 +51511,7 @@ const TARGETS = [
     },
     {
         "name": "한국커피협회(GiGAeyes guard)",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 용강동 45-20번지",
         "status": "약정만료",
@@ -51526,7 +51526,7 @@ const TARGETS = [
     },
     {
         "name": "파주시 청소년재단",
-        "manager": "김현교",
+        "manager": "G000305",
         "branch": "고양지사",
         "address": "경기 파주시 와동동 1358 운정행정복지센터 2층 청소년문화의집",
         "status": "약정만료",
@@ -51541,7 +51541,7 @@ const TARGETS = [
     },
     {
         "name": "한국통상물류(주)",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 구산동 251-26 작업동",
         "status": "약정만료",
@@ -51556,7 +51556,7 @@ const TARGETS = [
     },
     {
         "name": "한국통상물류(주)",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 구산동 251-26 사무동",
         "status": "약정만료",
@@ -51571,7 +51571,7 @@ const TARGETS = [
     },
     {
         "name": "한국통상물류(주)",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 구산동 251-26번지 물류동",
         "status": "약정만료",
@@ -51586,7 +51586,7 @@ const TARGETS = [
     },
     {
         "name": "한국통상물류(주)",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 구산동 251-26",
         "status": "약정만료",
@@ -51601,7 +51601,7 @@ const TARGETS = [
     },
     {
         "name": "한국항만기술단",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 저동2가 73-6번지  저동빌딩",
         "status": "만기도래_재계약",
@@ -51616,7 +51616,7 @@ const TARGETS = [
     },
     {
         "name": "한국항만기술단",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 정릉1동 175-12",
         "status": "약정만료",
@@ -51631,7 +51631,7 @@ const TARGETS = [
     },
     {
         "name": "한국항만기술단",
-        "manager": "김태형",
+        "manager": "G000107",
         "branch": "강북지사",
         "address": "서울 성북구 정릉1동 서울 성북구 정릉로31나길 18 ",
         "status": "약정만료",
@@ -51646,7 +51646,7 @@ const TARGETS = [
     },
     {
         "name": "한국항만기술단",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 저동2가 73-4",
         "status": "약정만료",
@@ -51661,7 +51661,7 @@ const TARGETS = [
     },
     {
         "name": "한국환경공단",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 광탄면 분수리 분수리 479-1",
         "status": "약정만료",
@@ -51676,7 +51676,7 @@ const TARGETS = [
     },
     {
         "name": "한남G.M.U(지엠유)",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 한남대로20길 21-13",
         "status": "약정만료",
@@ -51691,7 +51691,7 @@ const TARGETS = [
     },
     {
         "name": "한남아이파크",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 한남동 828 (한남동)",
         "status": "약정만료",
@@ -51706,7 +51706,7 @@ const TARGETS = [
     },
     {
         "name": "한남초등학교",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 서면 남대천로 218",
         "status": "만기도래_재계약",
@@ -51721,7 +51721,7 @@ const TARGETS = [
     },
     {
         "name": "한남초등학교",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 양양군 서면 남대천로218",
         "status": "약정만료",
@@ -51736,7 +51736,7 @@ const TARGETS = [
     },
     {
         "name": "한농",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 연곡면 방내리 9-3",
         "status": "만기도래_재계약",
@@ -51751,7 +51751,7 @@ const TARGETS = [
     },
     {
         "name": "한빛슈테리움",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 대현동 101-11",
         "status": "만기도래_신규(1st)",
@@ -51766,7 +51766,7 @@ const TARGETS = [
     },
     {
         "name": "한빛슈테리움",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 서대문구 대현동 56-98 한빛슈테리움2차 한빛슈테리움 2차",
         "status": "만기도래_신규(1st)",
@@ -51781,7 +51781,7 @@ const TARGETS = [
     },
     {
         "name": "한빛영상의학과의원",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 백석동 1294-2 리더스프라자 5층 5층6층 (백석동리더스프라자)",
         "status": "만기도래_신규(1st)",
@@ -51796,7 +51796,7 @@ const TARGETS = [
     },
     {
         "name": "한빛케이블(주)",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 별내면 청학리 512번지 한빛케이블",
         "status": "약정만료",
@@ -51811,7 +51811,7 @@ const TARGETS = [
     },
     {
         "name": "한사랑요양병원",
-        "manager": "성형래",
+        "manager": "G000304",
         "branch": "고양지사",
         "address": "경기 파주시 파주읍 봉서리 349",
         "status": "약정만료",
@@ -51826,7 +51826,7 @@ const TARGETS = [
     },
     {
         "name": "한살림강원영동생활협동조합",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 삼척시 당저동 117-1  한살림-삼척점",
         "status": "약정만료",
@@ -51841,7 +51841,7 @@ const TARGETS = [
     },
     {
         "name": "한살림강원영동생활협동조합",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 천곡동 895 1층",
         "status": "약정만료",
@@ -51856,7 +51856,7 @@ const TARGETS = [
     },
     {
         "name": "한살림강원영동생활협동조합",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 용강동 46-33",
         "status": "약정만료",
@@ -51871,7 +51871,7 @@ const TARGETS = [
     },
     {
         "name": "한살림강원영동생활협동조합",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 포남1동 1176-3",
         "status": "약정만료",
@@ -51886,7 +51886,7 @@ const TARGETS = [
     },
     {
         "name": "한살림강원영동생활협동조합",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 강릉시 교동 광장로 100번길 8-8",
         "status": "약정만료",
@@ -51901,7 +51901,7 @@ const TARGETS = [
     },
     {
         "name": "한살림강원영동생활협동조합",
-        "manager": "최정훈",
+        "manager": "P000101",
         "branch": "강릉지사",
         "address": "강원 강릉시 입암동 113-2",
         "status": "약정만료",
@@ -51916,7 +51916,7 @@ const TARGETS = [
     },
     {
         "name": "한살림강원영동생활협동조합",
-        "manager": "김성래",
+        "manager": "P000103",
         "branch": "강릉지사",
         "address": "강원 속초시 조양동 1019 1층",
         "status": "약정만료",
@@ -51931,7 +51931,7 @@ const TARGETS = [
     },
     {
         "name": "한상드림",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 탄현동 1640번지 일산위브더제니스 상가1층",
         "status": "만기도래_신규(1st)",
@@ -51946,7 +51946,7 @@ const TARGETS = [
     },
     {
         "name": "한상드림",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 서대문구 홍제3동 서울 서대문구 통일로 460",
         "status": "약정만료",
@@ -51961,7 +51961,7 @@ const TARGETS = [
     },
     {
         "name": "한상드림",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 행신동 945-3번지  1층",
         "status": "약정만료",
@@ -51976,7 +51976,7 @@ const TARGETS = [
     },
     {
         "name": "한석현",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 행주외동 212-11 (행주외동 일반건물)",
         "status": "약정만료",
@@ -51991,7 +51991,7 @@ const TARGETS = [
     },
     {
         "name": "한성에프아이",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 답십리동 474-1번지",
         "status": "약정만료",
@@ -52006,7 +52006,7 @@ const TARGETS = [
     },
     {
         "name": "한신비엠트레지오점-지하1층",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 35-4 전층",
         "status": "약정만료",
@@ -52021,7 +52021,7 @@ const TARGETS = [
     },
     {
         "name": "한신비엠트레지오점-지하1층",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동 35-4번지 옥상(출입통제)",
         "status": "약정만료",
@@ -52036,7 +52036,7 @@ const TARGETS = [
     },
     {
         "name": "한양아이클래스관리단",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 용두동 112-8번지 한양아이클래스 건물전체",
         "status": "약정만료",
@@ -52051,7 +52051,7 @@ const TARGETS = [
     },
     {
         "name": "한양아이클래스관리단",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 용두동 112-8번지(한양아이클래스-1)",
         "status": "약정만료",
@@ -52066,7 +52066,7 @@ const TARGETS = [
     },
     {
         "name": "한양자동차정비(OCT)",
-        "manager": "백석현",
+        "manager": "G000102",
         "branch": "강북지사",
         "address": "서울 도봉구 창동 748-1",
         "status": "약정만료",
@@ -52081,7 +52081,7 @@ const TARGETS = [
     },
     {
         "name": "한영식품(OCT뷰D)",
-        "manager": "조현웅",
+        "manager": "G000309",
         "branch": "고양지사",
         "address": "경기 파주시 광탄면마장리 197-2번지",
         "status": "약정만료",
@@ -52096,7 +52096,7 @@ const TARGETS = [
     },
     {
         "name": "한올제과",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 정교리 412",
         "status": "약정만료",
@@ -52111,7 +52111,7 @@ const TARGETS = [
     },
     {
         "name": "한올제과",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 정교리 정교리 391-1번지",
         "status": "만기도래_신규(1st)",
@@ -52126,7 +52126,7 @@ const TARGETS = [
     },
     {
         "name": "한올제과",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 가산면 정교리 169",
         "status": "약정만료",
@@ -52141,7 +52141,7 @@ const TARGETS = [
     },
     {
         "name": "한우타운 숯불구이 정육식당",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 성동구 마장동 761-3 전층",
         "status": "만기도래_신규(1st)",
@@ -52156,7 +52156,7 @@ const TARGETS = [
     },
     {
         "name": "한울아이디",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 성석동 517-16번지",
         "status": "만기도래_재계약",
@@ -52171,7 +52171,7 @@ const TARGETS = [
     },
     {
         "name": "한일통신(주)",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 소초면 수암리 796-12",
         "status": "약정만료",
@@ -52186,7 +52186,7 @@ const TARGETS = [
     },
     {
         "name": "한진택배",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 양구군 남면 청리 1004-4",
         "status": "약정만료",
@@ -52201,7 +52201,7 @@ const TARGETS = [
     },
     {
         "name": "한화손해보험",
-        "manager": "송민철",
+        "manager": "G000401",
         "branch": "중앙지사",
         "address": "서울 중구 서소문동 12-1번지 서소문한화빌딩",
         "status": "약정만료",
@@ -52216,7 +52216,7 @@ const TARGETS = [
     },
     {
         "name": "한화커넥트(주)",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 중구 봉래동2가 122-11호 서울역사3층 사무실",
         "status": "약정만료",
@@ -52231,7 +52231,7 @@ const TARGETS = [
     },
     {
         "name": "한화커넥트(주)",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 중구 봉래동2가 122-11호 서울역 롯데마트 3층",
         "status": "약정만료",
@@ -52246,7 +52246,7 @@ const TARGETS = [
     },
     {
         "name": "한화커넥트(주)",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 중구 봉래동2가 봉래동2가 122-11 롯데마트 주차장 뒷편 3층 사무실",
         "status": "약정만료",
@@ -52261,7 +52261,7 @@ const TARGETS = [
     },
     {
         "name": "한화커넥트(주)",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 중구 봉래동2가 122-11 서울역롯데마트3층",
         "status": "약정만료",
@@ -52276,7 +52276,7 @@ const TARGETS = [
     },
     {
         "name": "해덕수산",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 대관령면 유천리 1-9",
         "status": "만기도래_신규(1st)",
@@ -52291,7 +52291,7 @@ const TARGETS = [
     },
     {
         "name": "해밀턴관광(주)",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 이태원동 123-12번지 해밀톤호텔본관2층",
         "status": "약정만료",
@@ -52306,7 +52306,7 @@ const TARGETS = [
     },
     {
         "name": "해밀턴관광(주)",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 이태원동 119-25번지 해밀톤호텔 쇼핑센타",
         "status": "약정만료",
@@ -52321,7 +52321,7 @@ const TARGETS = [
     },
     {
         "name": "해밀턴관광(주)",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 이태원동 119-25번지 해밀톤호텔 쇼핑센타",
         "status": "약정만료",
@@ -52336,7 +52336,7 @@ const TARGETS = [
     },
     {
         "name": "해밀턴관광(주)",
-        "manager": "오광훈",
+        "manager": "G000403",
         "branch": "중앙지사",
         "address": "서울 용산구 이태원동 119-25번지 해밀톤호텔 쇼핑센타",
         "status": "약정만료",
@@ -52351,7 +52351,7 @@ const TARGETS = [
     },
     {
         "name": "해양환경관리공단포항지사장",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 발한동 27-76번지",
         "status": "약정만료",
@@ -52366,7 +52366,7 @@ const TARGETS = [
     },
     {
         "name": "해양환경관리공단포항지사장",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 송정동 1147",
         "status": "약정만료",
@@ -52381,7 +52381,7 @@ const TARGETS = [
     },
     {
         "name": "해양환경관리공단포항지사장",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 발한동 27-76",
         "status": "약정만료",
@@ -52396,7 +52396,7 @@ const TARGETS = [
     },
     {
         "name": "햇살요양병원",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 장안동 309-1번지",
         "status": "약정만료",
@@ -52411,7 +52411,7 @@ const TARGETS = [
     },
     {
         "name": "햇살요양병원",
-        "manager": "남기민",
+        "manager": "G000405",
         "branch": "중앙지사",
         "address": "서울 동대문구 장안동 309-1번지",
         "status": "약정만료",
@@ -52426,7 +52426,7 @@ const TARGETS = [
     },
     {
         "name": "행동하는동물사랑",
-        "manager": "유창준",
+        "manager": "G000303",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 설문동 672-13번지",
         "status": "약정만료",
@@ -52441,7 +52441,7 @@ const TARGETS = [
     },
     {
         "name": "행복골프훈련소",
-        "manager": "강민수",
+        "manager": "G000308",
         "branch": "고양지사",
         "address": "경기 고양시 일산서구 덕이동 309-88 2층",
         "status": "약정만료",
@@ -52456,7 +52456,7 @@ const TARGETS = [
     },
     {
         "name": "허유재병원",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 장항동 780번지 허유재병원 4층 총무과",
         "status": "약정만료",
@@ -52471,7 +52471,7 @@ const TARGETS = [
     },
     {
         "name": "허유재병원",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산구 장항동 780번지 허유재병원 2층원무과",
         "status": "약정만료",
@@ -52486,7 +52486,7 @@ const TARGETS = [
     },
     {
         "name": "허유재병원",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 장항동 780 허유재병원8층(출입통제)",
         "status": "약정만료",
@@ -52501,7 +52501,7 @@ const TARGETS = [
     },
     {
         "name": "허유재병원",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 장항동 780번지3층",
         "status": "약정만료",
@@ -52516,7 +52516,7 @@ const TARGETS = [
     },
     {
         "name": "혁승산업(주)",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 구호동 235-16",
         "status": "약정만료",
@@ -52531,7 +52531,7 @@ const TARGETS = [
     },
     {
         "name": "혁승산업(주)",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 구호동 235-16",
         "status": "약정만료",
@@ -52546,7 +52546,7 @@ const TARGETS = [
     },
     {
         "name": "혁승산업(주)",
-        "manager": "김완용",
+        "manager": "P000104",
         "branch": "강릉지사",
         "address": "강원 동해시 구호동 공단6로 66",
         "status": "약정만료",
@@ -52561,7 +52561,7 @@ const TARGETS = [
     },
     {
         "name": "혁신나이스락볼링센터",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 원주시 반곡동 12",
         "status": "약정만료",
@@ -52576,7 +52576,7 @@ const TARGETS = [
     },
     {
         "name": "현대교통(주)",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 서대문구 홍은동 405-1 전층",
         "status": "만기도래_신규(1st)",
@@ -52591,7 +52591,7 @@ const TARGETS = [
     },
     {
         "name": "현대맨션",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 후평동 846-1",
         "status": "만기도래_재계약",
@@ -52606,7 +52606,7 @@ const TARGETS = [
     },
     {
         "name": "현대병원",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리 663번지",
         "status": "약정만료",
@@ -52621,7 +52621,7 @@ const TARGETS = [
     },
     {
         "name": "현대병원",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리 663",
         "status": "약정만료",
@@ -52636,7 +52636,7 @@ const TARGETS = [
     },
     {
         "name": "현대병원",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리 1층 응급실",
         "status": "약정만료",
@@ -52651,7 +52651,7 @@ const TARGETS = [
     },
     {
         "name": "현대병원",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리 663",
         "status": "약정만료",
@@ -52666,7 +52666,7 @@ const TARGETS = [
     },
     {
         "name": "현대병원",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리663번지 본관1층",
         "status": "약정만료",
@@ -52681,7 +52681,7 @@ const TARGETS = [
     },
     {
         "name": "현대병원",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리 663",
         "status": "약정만료",
@@ -52696,7 +52696,7 @@ const TARGETS = [
     },
     {
         "name": "현대병원",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리663번지",
         "status": "약정만료",
@@ -52711,7 +52711,7 @@ const TARGETS = [
     },
     {
         "name": "현대병원",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리 663",
         "status": "약정만료",
@@ -52726,7 +52726,7 @@ const TARGETS = [
     },
     {
         "name": "현대병원",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리663번지 별관1층",
         "status": "약정만료",
@@ -52741,7 +52741,7 @@ const TARGETS = [
     },
     {
         "name": "현대병원",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리 663",
         "status": "약정만료",
@@ -52756,7 +52756,7 @@ const TARGETS = [
     },
     {
         "name": "현대병원",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리663",
         "status": "약정만료",
@@ -52771,7 +52771,7 @@ const TARGETS = [
     },
     {
         "name": "현대병원",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리663",
         "status": "약정만료",
@@ -52786,7 +52786,7 @@ const TARGETS = [
     },
     {
         "name": "현대병원",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리 663",
         "status": "약정만료",
@@ -52801,7 +52801,7 @@ const TARGETS = [
     },
     {
         "name": "현대병원",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리663 지하1층",
         "status": "약정만료",
@@ -52816,7 +52816,7 @@ const TARGETS = [
     },
     {
         "name": "현대병원",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리 663 현대병원",
         "status": "약정만료",
@@ -52831,7 +52831,7 @@ const TARGETS = [
     },
     {
         "name": "현대병원",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리663번지 현대병원동관1층 정형외과",
         "status": "약정만료",
@@ -52846,7 +52846,7 @@ const TARGETS = [
     },
     {
         "name": "현대병원",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리 663번지",
         "status": "약정만료",
@@ -52861,7 +52861,7 @@ const TARGETS = [
     },
     {
         "name": "현대병원",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진접읍 장현리 663 현대병원",
         "status": "약정만료",
@@ -52876,7 +52876,7 @@ const TARGETS = [
     },
     {
         "name": "현대사이버평생교육원",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 용두동 788번지",
         "status": "약정만료",
@@ -52891,7 +52891,7 @@ const TARGETS = [
     },
     {
         "name": "현대사이버평생교육원",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 용두동 788 한방천하포스빌5층",
         "status": "약정만료",
@@ -52906,7 +52906,7 @@ const TARGETS = [
     },
     {
         "name": "현대사이버평생교육원",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 성동구 행당동 286-5 한동타워 16층",
         "status": "만기도래_신규(1st)",
@@ -52921,7 +52921,7 @@ const TARGETS = [
     },
     {
         "name": "현대사이버평생교육원",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 중구 흥인동 132 10층",
         "status": "약정만료",
@@ -52936,7 +52936,7 @@ const TARGETS = [
     },
     {
         "name": "현대사이버평생교육원",
-        "manager": "권대호",
+        "manager": "G000404",
         "branch": "중앙지사",
         "address": "서울 중구 흥인동 132 10층",
         "status": "약정만료",
@@ -52951,7 +52951,7 @@ const TARGETS = [
     },
     {
         "name": "형제상가",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 호원동 312-11",
         "status": "약정만료",
@@ -52966,7 +52966,7 @@ const TARGETS = [
     },
     {
         "name": "형제하우징",
-        "manager": "조형근",
+        "manager": "G000602",
         "branch": "남양주지사",
         "address": "경기 남양주시 진건읍 사능리 262-6",
         "status": "만기도래_신규(1st)",
@@ -52981,7 +52981,7 @@ const TARGETS = [
     },
     {
         "name": "형진아파트입주자대표회의",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "경기 가평군 가평읍 읍내리 681-3 형진아파트 관리실",
         "status": "만기도래_신규(1st)",
@@ -52996,7 +52996,7 @@ const TARGETS = [
     },
     {
         "name": "혜성지업",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 인현동1가 132-2  1층",
         "status": "약정만료",
@@ -53011,7 +53011,7 @@ const TARGETS = [
     },
     {
         "name": "혜성지업",
-        "manager": "우동주",
+        "manager": "G000204",
         "branch": "서대문지사",
         "address": "서울 용산구 청파동2가 28-4  1층 창고",
         "status": "약정만료",
@@ -53026,7 +53026,7 @@ const TARGETS = [
     },
     {
         "name": "혜성지업",
-        "manager": "김병조",
+        "manager": "G000402",
         "branch": "중앙지사",
         "address": "서울 중구 인현동1가 132-2 6층",
         "status": "약정만료",
@@ -53041,7 +53041,7 @@ const TARGETS = [
     },
     {
         "name": "호명산빌리지 입주자대표회의",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 녹양동 315-4번지",
         "status": "만기도래_신규(1st)",
@@ -53056,7 +53056,7 @@ const TARGETS = [
     },
     {
         "name": "호명산빌리지 입주자대표회의",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 녹양동 315-4번지",
         "status": "약정만료",
@@ -53071,7 +53071,7 @@ const TARGETS = [
     },
     {
         "name": "호명산빌리지 입주자대표회의",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 녹양동 315-4",
         "status": "약정만료",
@@ -53086,7 +53086,7 @@ const TARGETS = [
     },
     {
         "name": "호박나이트",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 수택동 424-21 지1층",
         "status": "약정만료",
@@ -53101,7 +53101,7 @@ const TARGETS = [
     },
     {
         "name": "호텔XYM",
-        "manager": "차현갑",
+        "manager": "G000501",
         "branch": "의정부지사",
         "address": "경기 의정부시 의정부동 496-7번지 ",
         "status": "만기도래_재계약",
@@ -53116,7 +53116,7 @@ const TARGETS = [
     },
     {
         "name": "호텔루",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 동교동 166-1 ",
         "status": "만기도래_신규(1st)",
@@ -53131,7 +53131,7 @@ const TARGETS = [
     },
     {
         "name": "홀인원골프연습장",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 횡성읍 조곡리 187-1 홀인원골프연습장 1층",
         "status": "만기도래_신규(1st)",
@@ -53146,7 +53146,7 @@ const TARGETS = [
     },
     {
         "name": "홀인원골프연습장",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 횡성읍 조곡리 187-1 홀인원골프연습장",
         "status": "약정만료",
@@ -53161,7 +53161,7 @@ const TARGETS = [
     },
     {
         "name": "홈에버그린",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 춘천시 신북읍 산천리 345-4",
         "status": "약정만료",
@@ -53176,7 +53176,7 @@ const TARGETS = [
     },
     {
         "name": "홍대리더스정형외과의원",
-        "manager": "최용호",
+        "manager": "G000203",
         "branch": "서대문지사",
         "address": "서울 마포구 동교동 166-13번지 삼양세븐스프링스2층",
         "status": "만기도래_신규(1st)",
@@ -53191,7 +53191,7 @@ const TARGETS = [
     },
     {
         "name": "홍대비앤미의원(GiGAeyes guard)",
-        "manager": "안수호",
+        "manager": "G000205",
         "branch": "서대문지사",
         "address": "서울 마포구 서교동 353-5 경남관광빌딩 6층",
         "status": "약정만료",
@@ -53206,7 +53206,7 @@ const TARGETS = [
     },
     {
         "name": "홍실빌딩",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 중구 신당동 250-28번지",
         "status": "만기도래_신규(1st)",
@@ -53221,7 +53221,7 @@ const TARGETS = [
     },
     {
         "name": "홍제삼성본정형외과의원(GiGAeyes i-guard premium)",
-        "manager": "유범식",
+        "manager": "G000201",
         "branch": "서대문지사",
         "address": "서울 서대문구 홍제동 158-2번지 1층~3층",
         "status": "약정만료",
@@ -53236,7 +53236,7 @@ const TARGETS = [
     },
     {
         "name": "홍콩밀크컴퍼니",
-        "manager": "김주택",
+        "manager": "G000409",
         "branch": "중앙지사",
         "address": "서울 종로구 창신동 23-729번지 12층",
         "status": "만기도래_신규(1st)",
@@ -53251,7 +53251,7 @@ const TARGETS = [
     },
     {
         "name": "화성개발",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 남산면 수동리 226-5번지",
         "status": "만기도래_재계약",
@@ -53266,7 +53266,7 @@ const TARGETS = [
     },
     {
         "name": "화성개발",
-        "manager": "경규원",
+        "manager": "P000208",
         "branch": "원주지사",
         "address": "강원 춘천시 남산면 수동리 226-5",
         "status": "약정만료",
@@ -53281,7 +53281,7 @@ const TARGETS = [
     },
     {
         "name": "화정대경프라자번영회",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 화정동 909-1번지 화정대경프라자 관리사무소",
         "status": "약정만료",
@@ -53296,7 +53296,7 @@ const TARGETS = [
     },
     {
         "name": "화정와이즈만영재교육학원",
-        "manager": "강경필",
+        "manager": "G000302",
         "branch": "고양지사",
         "address": "경기 고양시 덕양구 화정동 1002-1번지 명지프라자 9층",
         "status": "약정만료",
@@ -53311,7 +53311,7 @@ const TARGETS = [
     },
     {
         "name": "화진특수강-사무실",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동1가 656-734",
         "status": "약정만료",
@@ -53326,7 +53326,7 @@ const TARGETS = [
     },
     {
         "name": "화진특수강-사무실",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동1가 656-734번지",
         "status": "만기도래_재계약",
@@ -53341,7 +53341,7 @@ const TARGETS = [
     },
     {
         "name": "화진특수강-사무실",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동1가 656-735",
         "status": "약정만료",
@@ -53356,7 +53356,7 @@ const TARGETS = [
     },
     {
         "name": "화천군청",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 화천군 화천읍 아리 239 (화천군청)",
         "status": "약정만료",
@@ -53371,7 +53371,7 @@ const TARGETS = [
     },
     {
         "name": "화천군청",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 화천군 상서면 구운리 849-12 풍차펜션",
         "status": "약정만료",
@@ -53386,7 +53386,7 @@ const TARGETS = [
     },
     {
         "name": "화천군청",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 화천군 상서면 구운리 849-12 풍차펜션",
         "status": "약정만료",
@@ -53401,7 +53401,7 @@ const TARGETS = [
     },
     {
         "name": "화천군청",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 화천군 상서면 구운리 849-12 풍차펜션",
         "status": "약정만료",
@@ -53416,7 +53416,7 @@ const TARGETS = [
     },
     {
         "name": "화천군청",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 화천군 상서면 구운리 849-12 풍차펜션",
         "status": "약정만료",
@@ -53431,7 +53431,7 @@ const TARGETS = [
     },
     {
         "name": "화천랜드(주)",
-        "manager": "안상현",
+        "manager": "P000206",
         "branch": "원주지사",
         "address": "강원 화천군 사내면 사창리 691-2 화천랜드(주)",
         "status": "만기도래_신규(1st)",
@@ -53446,7 +53446,7 @@ const TARGETS = [
     },
     {
         "name": "환경보전협회",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 능동 18-11번지 어린이회관 2층",
         "status": "약정만료",
@@ -53461,7 +53461,7 @@ const TARGETS = [
     },
     {
         "name": "환경보전협회",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 281-8 번지 8층",
         "status": "약정만료",
@@ -53476,7 +53476,7 @@ const TARGETS = [
     },
     {
         "name": "환경보전협회",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 280-21 성수동 우림 이비즈센터 8층  807808809호",
         "status": "만기도래_신규(1st)",
@@ -53491,7 +53491,7 @@ const TARGETS = [
     },
     {
         "name": "환경보전협회",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 281-8번지 4층",
         "status": "약정만료",
@@ -53506,7 +53506,7 @@ const TARGETS = [
     },
     {
         "name": "환경보전협회",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 성동구 성수동2가 281-8 YD빌딩 6층",
         "status": "약정만료",
@@ -53521,7 +53521,7 @@ const TARGETS = [
     },
     {
         "name": "황금농장",
-        "manager": "김민수",
+        "manager": "미지정",
         "branch": "의정부지사",
         "address": "경기 연천군 백학면전동리 장백로683번길 256",
         "status": "만기도래_신규(1st)",
@@ -53536,7 +53536,7 @@ const TARGETS = [
     },
     {
         "name": "황소정형외과",
-        "manager": "김의겸",
+        "manager": "G000103",
         "branch": "강북지사",
         "address": "서울 강북구 미아동  62-28",
         "status": "약정만료",
@@ -53551,7 +53551,7 @@ const TARGETS = [
     },
     {
         "name": "황실보석",
-        "manager": "성진수",
+        "manager": "G000101",
         "branch": "강북지사",
         "address": "서울 노원구 상계5동 450번지 교림프라자 132호",
         "status": "약정만료",
@@ -53566,7 +53566,7 @@ const TARGETS = [
     },
     {
         "name": "횡성군효주간보센터",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 횡성읍 북천리 섬강로 140",
         "status": "만기도래_재계약",
@@ -53581,7 +53581,7 @@ const TARGETS = [
     },
     {
         "name": "횡성군효주간보센터",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 횡성읍 북천리 63-2 .",
         "status": "만기도래_재계약",
@@ -53596,7 +53596,7 @@ const TARGETS = [
     },
     {
         "name": "후코인노래연습장포천송우리점",
-        "manager": "정성록",
+        "manager": "G000505",
         "branch": "의정부지사",
         "address": "경기 포천시 소흘읍 경기 포천시 솔모루로 75 4층",
         "status": "만기도래_신규(1st)",
@@ -53611,7 +53611,7 @@ const TARGETS = [
     },
     {
         "name": "휘경교회(OCT)",
-        "manager": "김윤정",
+        "manager": "G000408",
         "branch": "중앙지사",
         "address": "서울 동대문구 휘경2동 295-49",
         "status": "약정만료",
@@ -53626,7 +53626,7 @@ const TARGETS = [
     },
     {
         "name": "휴드림농원",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 횡성군 둔내면 현천리 785-9",
         "status": "약정만료",
@@ -53641,7 +53641,7 @@ const TARGETS = [
     },
     {
         "name": "휴먼뜰",
-        "manager": "김광호",
+        "manager": "P000202",
         "branch": "원주지사",
         "address": "강원 평창군 봉평면 유포리 83-1 ",
         "status": "약정만료",
@@ -53656,7 +53656,7 @@ const TARGETS = [
     },
     {
         "name": "휴휴암",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 양양군 현남면 광진2길 3-16",
         "status": "약정만료",
@@ -53671,7 +53671,7 @@ const TARGETS = [
     },
     {
         "name": "휴휴암",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 양양군 현남면 광진2길 3-16",
         "status": "약정만료",
@@ -53686,7 +53686,7 @@ const TARGETS = [
     },
     {
         "name": "휴휴암",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 양양군 현남면 광진리 1 휴휴암",
         "status": "약정만료",
@@ -53701,7 +53701,7 @@ const TARGETS = [
     },
     {
         "name": "휴휴암",
-        "manager": "신명우",
+        "manager": "P000102",
         "branch": "강릉지사",
         "address": "강원 양양군 현남면 인구리 138번지",
         "status": "약정만료",
@@ -53716,7 +53716,7 @@ const TARGETS = [
     },
     {
         "name": "흔돌청구아파트상가 관리사무소",
-        "manager": "황상대",
+        "manager": "미지정",
         "branch": "고양지사",
         "address": "경기 고양시 일산동구 백석2동  1351 상가관리사무실 (백석동 흰돌청구2단지아파트)",
         "status": "약정만료",
@@ -53731,7 +53731,7 @@ const TARGETS = [
     },
     {
         "name": "힐(OCT)",
-        "manager": "김형선",
+        "manager": "G000106",
         "branch": "강북지사",
         "address": "서울 광진구 구의동 596-1 강변힐하우스 지하",
         "status": "약정만료",
@@ -53746,7 +53746,7 @@ const TARGETS = [
     },
     {
         "name": "힐스테이트갈매역스칸센관리단",
-        "manager": "원동현",
+        "manager": "G000603",
         "branch": "남양주지사",
         "address": "경기 구리시 갈매동 552-4 3층 관리지원센터",
         "status": "만기도래_신규(1st)",
@@ -53761,7 +53761,7 @@ const TARGETS = [
     },
     {
         "name": "힘코퍼레이션",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 동선동1가 84-2 창천프라자 2층",
         "status": "약정만료",
@@ -53776,7 +53776,7 @@ const TARGETS = [
     },
     {
         "name": "힘코퍼레이션",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 동선동1가 121-20번지 3층",
         "status": "약정만료",
@@ -53791,7 +53791,7 @@ const TARGETS = [
     },
     {
         "name": "힘코퍼레이션",
-        "manager": "김지한",
+        "manager": "미지정",
         "branch": "중앙지사",
         "address": "서울 성북구 동선동1가 84-2번지 창천프라자 2층",
         "status": "약정만료",

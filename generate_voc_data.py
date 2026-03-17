@@ -61,7 +61,7 @@ def generate_voc_data():
                 'contractNo': str(row['계약번호']),
                 'name': str(row['상호']),
                 'branch': row['branch'],
-                'manager': row['manager'],
+                'manager': str(row['영업구역']).strip(), # Use Area Number directly
                 'address': str(row['설치주소']),
                 'lat': float(lat),
                 'lng': float(lng),
