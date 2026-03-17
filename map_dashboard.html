@@ -1935,6 +1935,30 @@
     }
 
     window.exportToCSV = function() {
+        // --- Password Verification ---
+        const session = JSON.parse(localStorage.getItem('sales_dashboard_session') || '{}');
+        const role = session.role;
+        const inputPw = prompt('보안을 위해 로그인 비밀번호를 입력해주세요:');
+        
+        if (!inputPw) return;
+
+        let isCorrect = false;
+        if (role === 'admin') {
+            isCorrect = (inputPw === AUTH_CONFIG.admin_pw);
+        } else if (role === 'branch') {
+            const branchName = session.data.branch;
+            isCorrect = (inputPw === AUTH_CONFIG.branch_passwords[branchName]);
+        } else if (role === 'manager') {
+            const managerId = session.data.id;
+            const manager = AUTH_CONFIG.managers.find(m => m.id === managerId);
+            isCorrect = (manager && manager.pw === inputPw);
+        }
+
+        if (!isCorrect) {
+            alert('비밀번호가 일치하지 않습니다. 다운로드가 취소되었습니다.');
+            return;
+        }
+
         const allProgress = JSON.parse(localStorage.getItem(PROGRESS_STORAGE_KEY) || '{}');
         const records = Object.values(allProgress);
         
