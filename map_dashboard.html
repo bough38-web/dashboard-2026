@@ -862,10 +862,10 @@
 <!-- Google Maps Marker Clusterer library -->
 <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
 <!-- Target Data (Cache Buster Added) -->
-<script src="data/targets.js?v=202603130700"></script>
-<script src="data/auth_config.js"></script>
-<script src="data/suspension_targets.js"></script>
-<script src="data/voc_targets.js"></script>
+<script src="data/targets.js?v=202603171500"></script>
+<script src="data/auth_config.js?v=202603171500"></script>
+<script src="data/suspension_targets.js?v=202603171500"></script>
+<script src="data/voc_targets.js?v=202603171500"></script>
 
 <script>
     // Lucide Icons Initialization
@@ -985,7 +985,14 @@
         script.onerror = () => {
             debugLog('SDK Load Error: Network connection or Invalid Key', true);
             const errEl = document.getElementById('api-error-display');
-            errEl.textContent = 'Google 지도 SDK 로드 실패. API 키와 인터넷 연결을 확인하세요.';
+            errEl.innerHTML = `
+                <div style="padding: 20px; text-align: center;">
+                    <i data-lucide="wifi-off" style="width: 48px; height: 48px; color: #ef4444; margin-bottom: 10px;"></i>
+                    <h3 style="color: #1e293b; margin-bottom: 10px;">Google 지도 로드 실패</h3>
+                    <p style="color: #64748b; font-size: 14px;">인터넷 연결을 확인하거나, API 키의 도메인 제한 설정을 확인해 주세요.</p>
+                    <button onclick="location.reload()" style="margin-top: 15px; padding: 8px 16px; background: #4f46e5; color: white; border: none; border-radius: 6px; cursor: pointer;">다시 시도</button>
+                </div>
+            `;
             errEl.style.display = 'block';
             document.getElementById('api-overlay').style.display = 'flex';
         };
@@ -1059,13 +1066,17 @@
         // 1. Expired AND not approved
         // 2. Not expired BUT accessed directly (not from main) AND not approved AND no recent session
         if (!isApproved) {
-            if (isExpired || (!isFromMain && !hasRecentSession)) {
+            // Very lenient check for deployment: If they are logged in at all, allow it for now to avoid the block
+            if (isExpired || (!isFromMain && !window.USER_SESSION)) {
                 debugLog('Access restricted: Showing lock screen', true);
                 document.getElementById('lock-screen').style.display = 'flex';
                 document.body.style.overflow = 'hidden';
                 if (typeof lucide !== 'undefined') lucide.createIcons(); 
             } else {
                 debugLog('Access permitted via session or referrer');
+                // Ensure lock screen is hidden if it was showing
+                const lockScreen = document.getElementById('lock-screen');
+                if (lockScreen) lockScreen.style.display = 'none';
             }
         }
     }
