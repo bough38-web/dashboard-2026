@@ -1336,8 +1336,8 @@
             document.getElementById(`btn-show-${type}`).classList.add('active');
         }
         
-        // Show date filters if any suspension/arrears types are active
-        const dateFiltersVisible = activeSuspensionTypes.some(t => ['suspension', 'defect', 'arrears'].includes(t));
+        // Show date filters if any suspension types are active
+        const dateFiltersVisible = activeSuspensionTypes.some(t => ['suspension', 'defect'].includes(t));
         document.getElementById('date-filters').style.display = dateFiltersVisible ? 'flex' : 'none';
 
         updateSuspensionMarkers();
@@ -1378,7 +1378,7 @@
                 }
                 if (!rolePass) return false;
 
-                if (type !== 'voc') {
+                if (type !== 'voc' && type !== 'arrears') {
                     if (selectedYear !== 'all' || selectedMonth !== 'all') {
                         let matchDate = false;
                         const dateSources = [t.event_date, t.action_date].filter(d => d);
@@ -1421,9 +1421,9 @@
                 titlePrefix = '🚫 정지고객';
                 titleColor = '#ef4444';
             } else if (type === 'arrears') {
-                iconUrl = 'http://maps.google.com/mapfiles/ms/icons/brown-dot.png';
-                titlePrefix = '🟤 체납고객';
-                titleColor = '#92400e';
+                iconUrl = 'http://maps.google.com/mapfiles/ms/icons/red-dot.png';
+                titlePrefix = '🚫 체납직권(정지)';
+                titleColor = '#ef4444';
             } else if (type === 'voc') {
                 iconUrl = 'http://maps.google.com/mapfiles/ms/icons/green-dot.png';
                 titlePrefix = '🟢 사전리텐션';
@@ -1452,6 +1452,11 @@
                             ${target.action_date ? `<p style="margin:4px 0; font-size:11px; color:#64748b;">조치일: ${target.action_date}</p>` : ''}
                         </div>
                         <div style="margin-top:10px; display:flex; gap:5px;">
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=${target.lat},${target.lng}" 
+                               target="_blank" 
+                               style="display:block; flex:1; background:#4f46e5; color:white; border-radius:6px; padding:8px; text-decoration:none; font-size:12px; font-weight:bold; text-align:center;">
+                                길찾기
+                            </a>
                             <button onclick="openProgressModal('${target.contractNo}', '${target.name.replace(/'/g, "\\'")}', '${category}')" 
                                style="display:block; flex:1; background:#10b981; color:white; border-radius:6px; padding:8px; border:none; font-size:12px; font-weight:bold; cursor:pointer;">
                                 진행등록
