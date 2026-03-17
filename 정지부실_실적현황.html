@@ -83,8 +83,15 @@
 
         .table-card { background: white; border-radius: 12px; box-shadow: var(--shadow-md); padding: 12px; overflow-x: auto; border: 1px solid var(--border-light); }
         table { width: 100%; border-collapse: collapse; font-size: 10px; white-space: nowrap; text-align: center; }
-        th, td { padding: 6px 4px; border: 1px solid var(--border-light); }
+        th, td { padding: 10px 6px; border: 1px solid var(--border-light); }
         th { background: #f8fafc; font-weight: 800; color: #334155; }
+        
+        /* Sticky Column Left Border */
+        th:first-child, td:first-child {
+            position: sticky; left: 0; z-index: 10; background-color: inherit;
+            border-left: 1px solid var(--primary-dark) !important;
+            border-right: 2px solid var(--border-medium) !important;
+        }
 
         /* Shading and Heat map colors - Softened */
         .bg-sub { background-color: var(--bg-sub); }
@@ -96,9 +103,9 @@
 
         .pdf-btn { background: #0f172a; color: white; border: none; padding: 12px 24px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px; float: right; }
         
-        /* Boundary separators - Reduced thickness */
-        .sep-r { border-right: 1.5px solid var(--border-medium) !important; }
-        .sep-l { border-left: 1.5px solid var(--border-medium) !important; }
+        /* Boundary separators - Strengthened */
+        .sep-r { border-right: 2.5px solid var(--primary-dark) !important; }
+        .sep-l { border-left: 2.5px solid var(--primary-dark) !important; }
 
         /* Small toggle style */
         .small-toggle { display: flex; gap: 2px; background: #f1f5f9; padding: 2px; border-radius: 6px; border: 1px solid var(--border-light); }
@@ -402,9 +409,9 @@
     function pct0(v) { return Math.round(v * 100) + '%'; }
 
     function getHeatColor(val) {
-        if (val > 0.013) return 'heat-vhigh';
-        if (val > 0.011) return 'heat-high';
-        if (val > 0.010) return 'heat-mid';
+        if (val > 0.013) return 'heat-vhigh'; // 1.3% 초과 (진한 빨강)
+        if (val > 0.011) return 'heat-high';  // 1.1% 초과 (연한 빨강)
+        if (val > 0.010) return 'heat-mid';   // 1.0% 초과 (주황색 강조)
         return '';
     }
 
@@ -457,7 +464,10 @@
                 <td>${cellPF(item.pay_c, item.pay_v)}</td><td class="sep-r">${cellRT(pc_s, pv_s)}</td>
                 <td>${cellPF(item.gen_c, item.gen_v)}</td><td class="sep-r">${cellRT(gc_s, gv_s)}</td>
                 <td class="bg-sub">${cellPF(total_sum_c, total_sum_v)}</td><td class="bg-sub sep-r">${cellRT(acc_sc, acc_sv)}</td>
-                <td class="txt-num">C: ${pct0(pay_ratio_c)}<br>V: ${pct0(pay_ratio_v)}</td>
+                <td class="txt-num" style="padding: 2px;">
+                    <div class="${getHeatColor(pay_ratio_c)}" style="border-radius:4px; margin-bottom:1px; padding: 2px 0;">C: ${pct0(pay_ratio_c)}</div>
+                    <div class="${getHeatColor(pay_ratio_v)}" style="border-radius:4px; padding: 2px 0;">V: ${pct0(pay_ratio_v)}</div>
+                </td>
             `;
             tbody.appendChild(tr);
         });
@@ -467,18 +477,25 @@
             tfoot.style.display = 'table-row-group';
             const ts_c = sums.pay_c + sums.gen_c;
             const ts_v = sums.pay_v + sums.gen_v;
-            const footRT = (c, v, bc, bv) => `<div class="txt-num">${pct(bc > 0 ? c/bc : 0)}</div><div class="txt-num" style="font-size:10px; opacity:0.7;">${pct(bv > 0 ? v/bv : 0)}</div>`;
+            const footRT = (c, v, bc, bv) => {
+                const cr = bc > 0 ? c/bc : 0;
+                const vr = bv > 0 ? v/bv : 0;
+                return `<div class="txt-num ${getHeatColor(cr)}">${pct(cr)}</div><div class="txt-num ${getHeatColor(vr)}" style="font-size:10px; opacity:0.7;">${pct(vr)}</div>`;
+            };
             
             tfoot.innerHTML = `
-                <tr style="background:#f1f5f9; font-weight:800;">
-                    <td class="sticky-col sep-r" style="background:#f1f5f9;">합계</td>
-                    <td>${fmt(sums.total_c)}<br><small>${fmt(sums.total_v)}</small></td><td class="sep-r">${footRT(sums.total_c, sums.total_v, sums.base_c, sums.base_v)}</td>
-                    <td class="bg-sub">${fmt(sums.def_c)}<br><small>${fmt(sums.def_v)}</small></td><td class="bg-sub sep-r">${footRT(sums.def_c, sums.def_v, sums.base_c, sums.base_v)}</td>
-                    <td class="bg-sub">${fmt(sums.etc_c)}<br><small>${fmt(sums.etc_v)}</small></td><td class="bg-sub sep-r">${footRT(sums.etc_c, sums.etc_v, sums.base_e_c, sums.base_e_v)}</td>
-                    <td>${fmt(sums.pay_c)}<br><small>${fmt(sums.pay_v)}</small></td><td class="sep-r">${footRT(sums.pay_c, sums.pay_v, sums.base_c, sums.base_v)}</td>
-                    <td>${fmt(sums.gen_c)}<br><small>${fmt(sums.gen_v)}</small></td><td class="sep-r">${footRT(sums.gen_c, sums.gen_v, sums.base_c, sums.base_v)}</td>
-                    <td class="bg-sub">${fmt(ts_c)}<br><small>${fmt(ts_v)}</small></td><td class="bg-sub sep-r">${footRT(ts_c, ts_v, sums.base_c, sums.base_v)}</td>
-                    <td class="txt-num">${pct0(ts_c > 0 ? sums.pay_c/ts_c : 0)}<br>${pct0(ts_v > 0 ? sums.pay_v/ts_v : 0)}</td>
+                <tr style="background:#1e293b; color:white; font-weight:800;">
+                    <td class="sticky-col sep-r" style="background:#1e293b; color:white;">합계</td>
+                    <td style="color:white;">${fmt(sums.total_c)}<br><small style="color:white; opacity:0.8;">${fmt(sums.total_v)}</small></td><td class="sep-r">${footRT(sums.total_c, sums.total_v, sums.base_c, sums.base_v)}</td>
+                    <td class="bg-sub" style="background:#334155; color:white;">${fmt(sums.def_c)}<br><small style="color:white; opacity:0.8;">${fmt(sums.def_v)}</small></td><td class="bg-sub sep-r" style="background:#334155;">${footRT(sums.def_c, sums.def_v, sums.base_c, sums.base_v)}</td>
+                    <td class="bg-sub" style="background:#334155; color:white;">${fmt(sums.etc_c)}<br><small style="color:white; opacity:0.8;">${fmt(sums.etc_v)}</small></td><td class="bg-sub sep-r" style="background:#334155;">${footRT(sums.etc_c, sums.etc_v, sums.base_e_c, sums.base_e_v)}</td>
+                    <td style="color:white;">${fmt(sums.pay_c)}<br><small style="color:white; opacity:0.8;">${fmt(sums.pay_v)}</small></td><td class="sep-r">${footRT(sums.pay_c, sums.pay_v, sums.base_c, sums.base_v)}</td>
+                    <td style="color:white;">${fmt(sums.gen_c)}<br><small style="color:white; opacity:0.8;">${fmt(sums.gen_v)}</small></td><td class="sep-r">${footRT(sums.gen_c, sums.gen_v, sums.base_c, sums.base_v)}</td>
+                    <td class="bg-sub" style="background:#334155; color:white;">${fmt(ts_c)}<br><small style="color:white; opacity:0.8;">${fmt(ts_v)}</small></td><td class="bg-sub sep-r" style="background:#334155;">${footRT(ts_c, ts_v, sums.base_c, sums.base_v)}</td>
+                    <td class="txt-num" style="padding: 2px;">
+                        <div class="${getHeatColor(ts_c > 0 ? sums.pay_c/ts_c : 0)}" style="border-radius:4px; margin-bottom:1px; padding: 2px 0;">C: ${pct0(ts_c > 0 ? sums.pay_c/ts_c : 0)}</div>
+                        <div class="${getHeatColor(ts_v > 0 ? sums.pay_v/ts_v : 0)}" style="border-radius:4px; padding: 2px 0;">V: ${pct0(ts_v > 0 ? sums.pay_v/ts_v : 0)}</div>
+                    </td>
                 </tr>
             `;
         } else {

@@ -376,26 +376,14 @@
             box-shadow: var(--shadow-soft);
         }
 
-        .table-scroll {
-            overflow-x: auto;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 13px;
-            text-align: center;
-            white-space: nowrap;
-        }
+        .table-scroll { overflow-x: visible; border: none; }
+        table { width: 100%; border-collapse: collapse; font-size: 10.5px; text-align: center; white-space: nowrap; table-layout: auto; border: 1px solid #334155; max-width: 100%; }
 
         th,
         td {
-            border-bottom: 1px solid var(--border-color);
-            padding: 12px 10px;
+            border: 1px solid var(--border-color);
+            padding: 10px 5px;
             vertical-align: middle;
-            border-right: none; /* Reset all vertical borders */
         }
 
         thead th {
@@ -410,7 +398,7 @@
             font-weight: 700;
             font-size: 14px;
             letter-spacing: -0.01em;
-            border-bottom: none !important;
+            border-bottom: 2px solid #0f172a !important;
         }
 
         /* 구분 컬럼 고정 및 경계선 */
@@ -419,6 +407,7 @@
             left: 0;
             z-index: 10;
             background-color: inherit;
+            border-left: 1px solid #334155 !important;
             border-right: 2px solid var(--border-divider) !important;
         }
 
@@ -433,6 +422,7 @@
         /* 헤더 마감선 */
         thead tr:last-child th {
             border-bottom: 2px solid var(--border-divider) !important;
+            border-right: 1px solid #cbd5e1 !important;
             background-color: #f8fafc !important;
             color: #475569 !important;
             font-weight: 600;
@@ -440,9 +430,9 @@
         }
 
         /* 그룹 분리선 (Divider) */
-        .divider-right {
-            border-right: 2px solid var(--border-divider) !important;
-        }
+        .sep-left { border-left: 3px solid #0f172a !important; }
+        .divider-right { border-right: 2px solid var(--border-divider) !important; }
+        .border-thin { border-right: 1px solid #cbd5e1 !important; }
 
         .bg-total-col {
             background-color: var(--th-total-bg) !important;
@@ -519,16 +509,17 @@
             border-bottom: 4px solid var(--primary-dark) !important;
             border-top: 3px solid var(--primary-dark) !important;
             border-color: var(--primary-dark);
-            color: var(--primary-dark) !important;
+            background-color: #1e293b !important;
+            color: white !important;
             font-weight: 800;
         }
 
         tfoot td * {
-            color: var(--primary-dark) !important;
+            color: white !important;
         }
 
         tfoot td:first-child {
-            background-color: #f1f5f9;
+            background-color: #1e293b !important;
             position: sticky;
             left: 0;
             border-right: 2px solid var(--border-heavy) !important;
@@ -536,12 +527,13 @@
 
         tfoot .val-target,
         tfoot .val-cnt {
-            color: #64748b;
+            color: #94a3b8 !important; /* Lighter for visibility */
             background-color: transparent;
         }
 
         tfoot .val-amt {
-            color: var(--primary-dark);
+            color: white !important;
+            font-weight: 800;
         }
 
         tfoot .bg-total-col {
@@ -899,20 +891,20 @@
                         </tr>
                         <tr>
                             <th class="bg-total-col border-thin">목표(금액)</th>
-                            <th class="bg-total-col">실적(건)</th>
-                            <th class="bg-total-col">실적(금액)</th>
+                            <th class="bg-total-col border-thin">실적(건)</th>
+                            <th class="bg-total-col border-thin">실적(금액)</th>
                             <th class="bg-total-col group-end">달성률</th>
-                            <th class="highlight-col-left highlight-bg">목표(금액)</th>
-                            <th class="highlight-bg">실적(건)</th>
-                            <th class="highlight-bg">실적(금액)</th>
+                            <th class="highlight-col-left highlight-bg border-thin">목표(금액)</th>
+                            <th class="highlight-bg border-thin">실적(건)</th>
+                            <th class="highlight-bg border-thin">실적(금액)</th>
                             <th class="highlight-col-right highlight-bg">달성률</th>
-                            <th>목표(금액)</th>
-                            <th>실적(건)</th>
-                            <th>실적(금액)</th>
+                            <th class="border-thin">목표(금액)</th>
+                            <th class="border-thin">실적(건)</th>
+                            <th class="border-thin">실적(금액)</th>
                              <th class="border-heavy-right group-end">달성률</th>
-                            <th>목표(금액)</th>
-                            <th>실적(건)</th>
-                            <th>실적(금액)</th>
+                            <th class="border-thin">목표(금액)</th>
+                            <th class="border-thin">실적(건)</th>
+                            <th class="border-thin">실적(금액)</th>
                             <th>달성률</th>
                         </tr>
                     </thead>
@@ -1007,22 +999,22 @@
                 bodyHtml += `
                     <tr>
                         <td>${r.name}</td>
-                        <td class="val-num bg-total-col">${formatNum(r.total[0])}</td>
+                        <td class="val-num bg-total-col sep-left">${formatNum(r.total[0])}</td>
                         <td class="val-num bg-total-col">${formatNum(r.total[1])}</td>
                         <td class="val-num bg-total-col">${formatNum(r.total[2])}</td>
                         <td class="bg-total-col divider-right">${getBadge(r.total[0], r.total[2])}</td>
                         
-                        <td class="val-num highlight-bg">${formatNum(r.new[0])}</td>
+                        <td class="val-num highlight-bg sep-left">${formatNum(r.new[0])}</td>
                         <td class="val-num highlight-bg">${formatNum(r.new[1])}</td>
                         <td class="val-num highlight-bg">${formatNum(r.new[2])}</td>
                         <td class="highlight-bg divider-right">${getBadge(r.new[0], r.new[2])}</td>
                         
-                        <td class="val-num bg-renew">${formatNum(r.renew[0])}</td>
+                        <td class="val-num bg-renew sep-left">${formatNum(r.renew[0])}</td>
                         <td class="val-num bg-renew">${formatNum(r.renew[1])}</td>
                         <td class="val-num bg-renew">${formatNum(r.renew[2])}</td>
                         <td class="bg-renew divider-right">${getBadge(r.renew[0], r.renew[2])}</td>
                         
-                        <td class="val-num bg-expire">${formatNum(r.expire[0])}</td>
+                        <td class="val-num bg-expire sep-left">${formatNum(r.expire[0])}</td>
                         <td class="val-num bg-expire">${formatNum(r.expire[1])}</td>
                         <td class="val-num bg-expire">${formatNum(r.expire[2])}</td>
                         <td>${getBadge(r.expire[0], r.expire[2])}</td>
@@ -1035,24 +1027,24 @@
             tfoot.innerHTML = `
                 <tr>
                     <td>합 계</td>
-                    <td class="val-num bg-total-col" style="color:var(--primary-dark) !important;">${formatNum(f.total[0])}</td>
-                    <td class="val-num bg-total-col text-blue" style="color:var(--primary-blue) !important;">${formatNum(f.total[1])}</td>
-                    <td class="val-num bg-total-col text-blue" style="color:var(--primary-blue) !important;">${formatNum(f.total[2])}</td>
-                    <td class="bg-total-col divider-right">${getBadge(f.total[0], f.total[2])}</td>
+                    <td class="val-num sep-left">${formatNum(f.total[0])}</td>
+                    <td class="val-num">${formatNum(f.total[1])}</td>
+                    <td class="val-num">${formatNum(f.total[2])}</td>
+                    <td class="divider-right">${getBadge(f.total[0], f.total[2])}</td>
                     
-                    <td class="val-num highlight-bg">${formatNum(f.new[0])}</td>
-                    <td class="val-num highlight-bg">${formatNum(f.new[1])}</td>
-                    <td class="val-num highlight-bg">${formatNum(f.new[2])}</td>
-                    <td class="highlight-bg divider-right">${getBadge(f.new[0], f.new[2])}</td>
+                    <td class="val-num sep-left">${formatNum(f.new[0])}</td>
+                    <td class="val-num">${formatNum(f.new[1])}</td>
+                    <td class="val-num">${formatNum(f.new[2])}</td>
+                    <td class="divider-right">${getBadge(f.new[0], f.new[2])}</td>
                     
-                    <td class="val-num bg-renew">${formatNum(f.renew[0])}</td>
-                    <td class="val-num bg-renew">${formatNum(f.renew[1])}</td>
-                    <td class="val-num bg-renew">${formatNum(f.renew[2])}</td>
-                    <td class="bg-renew divider-right">${getBadge(f.renew[0], f.renew[2])}</td>
+                    <td class="val-num sep-left">${formatNum(f.renew[0])}</td>
+                    <td class="val-num">${formatNum(f.renew[1])}</td>
+                    <td class="val-num">${formatNum(f.renew[2])}</td>
+                    <td class="divider-right">${getBadge(f.renew[0], f.renew[2])}</td>
                     
-                    <td class="val-num bg-expire">${formatNum(f.expire[0])}</td>
-                    <td class="val-num bg-expire">${formatNum(f.expire[1])}</td>
-                    <td class="val-num bg-expire">${formatNum(f.expire[2])}</td>
+                    <td class="val-num sep-left">${formatNum(f.expire[0])}</td>
+                    <td class="val-num">${formatNum(f.expire[1])}</td>
+                    <td class="val-num">${formatNum(f.expire[2])}</td>
                     <td>${getBadge(f.expire[0], f.expire[2])}</td>
                 </tr>
             `;

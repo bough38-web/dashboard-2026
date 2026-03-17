@@ -164,40 +164,60 @@ margin: 0;
 .tab-btn:hover { color: var(--primary-dark); }
 .tab-btn.active { background-color: var(--primary-dark); color: white; box-shadow: var(--shadow-soft); }
 
-.table-scroll { overflow-x: auto; border: 1px solid var(--border-color); border-radius: 8px; }
-table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: center; white-space: nowrap; }
-th, td { border-bottom: 1px solid var(--border-color); border-right: 1px solid var(--border-color); padding: 12px 6px; vertical-align: middle; }
-th:last-child, td:last-child { border-right: none; }
-
-thead th { background-color: var(--th-bg); color: var(--primary-dark); font-weight: 700; }
-thead tr:first-child th { border-bottom: 2px solid #cbd5e1; }
-.bg-total-col { background-color: var(--th-total-bg) !important; }
+    .table-scroll { overflow-x: visible; border: none; }
+    table { table-layout: auto; width: 100%; border-collapse: collapse; font-size: 10.5px; text-align: center; border: 1px solid #334155; }
+    th, td { border: 1px solid var(--border-color); padding: 10px 5px; vertical-align: middle; }
+    
+    thead th { border: 1px solid #cbd5e1; background-color: #f8fafc; color: var(--primary-dark); font-weight: 700; }
+    thead tr:first-child th { 
+        background: linear-gradient(to bottom, #334155, #1e293b) !important;
+        color: white !important;
+        border-bottom: 2px solid #0f172a !important;
+    }
+    thead tr:last-child th {
+        border-bottom: 2px solid #94a3b8 !important;
+        border-right: 1px solid #cbd5e1 !important;
+    }
+    .bg-total-col { background-color: #f0f9ff !important; }
 .text-blue { color: var(--primary-blue); font-weight: 800; }
+
+.sep-left { border-left: 3px solid #0f172a !important; } /* 구간 구분선 */
+.border-all { border: 1px solid var(--border-color) !important; }
+.border-thin { border-right: 1px solid #cbd5e1 !important; }
 
 /* 신규(1st) 굵은 적색 테두리 강조 */
 .highlight-col-top { border-top: 4px solid #991b1b !important; }
 .highlight-col-bottom { border-bottom: 4px solid #991b1b !important; }
 .highlight-col-left { border-left: 4px solid #991b1b !important; }
 .highlight-col-right { border-right: 4px solid #991b1b !important; }
-.highlight-head-bg { background-color: #fee2e2 !important; color: #991b1b !important; }
+.highlight-head-bg { background-color: #fff1f2 !important; color: #991b1b !important; }
 .highlight-bg { background-color: #fffafb !important; }
 tfoot .highlight-foot-bg { background-color: #7f1d1d !important; border-color: #7f1d1d; }
 
 tbody, tfoot { transition: opacity 0.3s ease-in-out; }
 tbody tr:hover { background-color: #f8fafc; }
 tbody tr:hover .highlight-bg { background-color: #ffe4e6 !important; }
-tbody td:first-child { font-weight: 700; color: var(--primary-dark); background-color: #f8fafc; position: sticky; left: 0; border-right: 2px solid var(--border-color); }
+tbody td:first-child, thead th:first-child { 
+    font-weight: 700; color: var(--primary-dark); background-color: #f8fafc; position: sticky; left: 0; 
+    border-left: 1px solid #334155 !important;
+    border-right: 2px solid #94a3b8 !important; 
+}
+thead tr:first-child th:first-child { background: #334155 !important; color: white !important; }
 .val-target { color: #64748b; text-align: right; padding-right: 10px; }
 .val-cnt { color: #334155; font-weight: 600; background-color: #fcfcfd; }
 .val-amt { color: var(--primary-dark); font-weight: 800; text-align: right; padding-right: 10px; }
 .col-total { background-color: #fbfcff !important; }
 
-tfoot tr { background-color: var(--primary-dark); }
-tfoot td { border-bottom: none; border-color: #334155; color: white; font-weight: 700; }
-tfoot td:first-child { background-color: var(--primary-dark); position: sticky; left: 0; border-right: 2px solid #334155; }
-tfoot .val-target, tfoot .val-cnt { color: #cbd5e1; background-color: transparent; }
-tfoot .val-amt { color: white; }
-tfoot .bg-total-col { background-color: #1e3a8a !important; border-color: #1e40af; }
+tfoot tr { background-color: #1e293b !important; border-top: 2px solid #0f172a; }
+tfoot td { border-bottom: none; border-color: #334155; color: #ffffff !important; font-weight: 800; }
+tfoot td:first-child { 
+    background-color: #1e293b !important; position: sticky; left: 0; 
+    border-left: 1px solid #334155 !important;
+    border-right: 2px solid #334155; 
+}
+tfoot .val-target, tfoot .val-cnt { color: #94a3b8 !important; background-color: transparent; }
+tfoot .val-amt { color: white !important; }
+tfoot .bg-total-col { background-color: #0f172a !important; border-color: #0f172a; }
 
 /* 잠금 화면 스타일 - 프리미엄 글래스모피즘 디자인 */
 #lock-screen {
@@ -445,10 +465,10 @@ tfoot .bg-total-col { background-color: #1e3a8a !important; border-color: #1e40a
 <th colspan="4">③ 약정만료</th>
 </tr>
 <tr>
-<th class="bg-total-col">목표(금액)</th><th class="bg-total-col">실적(건)</th><th class="bg-total-col">실적(금액)</th><th class="bg-total-col">달성률</th>
-<th class="highlight-col-left highlight-bg">목표(금액)</th><th class="highlight-bg">실적(건)</th><th class="highlight-bg">실적(금액)</th><th class="highlight-col-right highlight-bg">달성률</th>
-<th>목표(금액)</th><th>실적(건)</th><th>실적(금액)</th><th>달성률</th>
-<th>목표(금액)</th><th>실적(건)</th><th>실적(금액)</th><th>달성률</th>
+<th class="bg-total-col sep-left border-thin">목표</th><th class="bg-total-col border-thin">실적(건)</th><th class="bg-total-col border-thin">실적(금액)</th><th class="bg-total-col">달성률</th>
+<th class="highlight-bg sep-left border-thin">목표</th><th class="highlight-bg border-thin">실적(건)</th><th class="highlight-bg border-thin">실적(금액)</th><th class="highlight-bg">달성률</th>
+<th class="sep-left">목표</th><th>실적(건)</th><th>실적(금액)</th><th>달성률</th>
+<th class="sep-left">목표</th><th>실적(건)</th><th>실적(금액)</th><th>달성률</th>
 </tr>
 </thead>
 <tbody id="tableBody"></tbody>
@@ -538,22 +558,22 @@ monthData.rows.forEach(r => {
 bodyHtml += `
 <tr>
 <td>${r.name}</td>
-<td class="val-target bg-total-col">${formatNum(r.total[0])}</td>
+<td class="val-target bg-total-col sep-left">${formatNum(r.total[0])}</td>
 <td class="val-cnt bg-total-col">${formatNum(r.total[1])}</td>
 <td class="val-amt bg-total-col">${formatNum(r.total[2])}</td>
 <td class="bg-total-col">${getBadge(r.total[0], r.total[2])}</td>
-<td class="val-target highlight-col-left highlight-bg">${formatNum(r.new[0])}</td>
+<td class="val-target highlight-bg sep-left">${formatNum(r.new[0])}</td>
 <td class="val-cnt highlight-bg">${formatNum(r.new[1])}</td>
 <td class="val-amt highlight-bg">${formatNum(r.new[2])}</td>
-<td class="highlight-col-right highlight-bg">${getBadge(r.new[0], r.new[2])}</td>
-<td class="val-target">${formatNum(r.renew[0])}</td>
+<td class="highlight-bg">${getBadge(r.new[0], r.new[2])}</td>
+<td class="val-target sep-left">${formatNum(r.renew[0])}</td>
 <td class="val-cnt">${formatNum(r.renew[1])}</td>
 <td class="val-amt">${formatNum(r.renew[2])}</td>
-<td>${getBadge(r.renew[0], r.renew[2])}</td>
-<td class="val-target">${formatNum(r.expire[0])}</td>
+<td class="">${getBadge(r.renew[0], r.renew[2])}</td>
+<td class="val-target sep-left">${formatNum(r.expire[0])}</td>
 <td class="val-cnt">${formatNum(r.expire[1])}</td>
 <td class="val-amt">${formatNum(r.expire[2])}</td>
-<td>${getBadge(r.expire[0], r.expire[2])}</td>
+<td class="">${getBadge(r.expire[0], r.expire[2])}</td>
 </tr>
 `;
 });
@@ -562,22 +582,22 @@ const f = monthData.footer;
 tfoot.innerHTML = `
 <tr>
 <td>총 합계</td>
-<td class="val-target bg-total-col">${formatNum(f.total[0])}</td>
+<td class="val-target bg-total-col sep-left">${formatNum(f.total[0])}</td>
 <td class="val-cnt bg-total-col" style="color:#fff;">${formatNum(f.total[1])}</td>
 <td class="val-amt bg-total-col">${formatNum(f.total[2])}</td>
 <td class="bg-total-col">${getBadge(f.total[0], f.total[2])}</td>
-<td class="val-target highlight-col-left highlight-col-bottom highlight-foot-bg">${formatNum(f.new[0])}</td>
-<td class="val-cnt highlight-col-bottom highlight-foot-bg" style="color:#f1f5f9;">${formatNum(f.new[1])}</td>
-<td class="val-amt highlight-col-bottom highlight-foot-bg">${formatNum(f.new[2])}</td>
-<td class="highlight-col-right highlight-col-bottom highlight-foot-bg">${getBadge(f.new[0], f.new[2])}</td>
-<td class="val-target">${formatNum(f.renew[0])}</td>
+<td class="val-target highlight-foot-bg sep-left">${formatNum(f.new[0])}</td>
+<td class="val-cnt highlight-foot-bg" style="color:#f1f5f9;">${formatNum(f.new[1])}</td>
+<td class="val-amt highlight-foot-bg">${formatNum(f.new[2])}</td>
+<td class="highlight-foot-bg">${getBadge(f.new[0], f.new[2])}</td>
+<td class="val-target sep-left">${formatNum(f.renew[0])}</td>
 <td class="val-cnt" style="color:#cbd5e1;">${formatNum(f.renew[1])}</td>
 <td class="val-amt">${formatNum(f.renew[2])}</td>
-<td>${getBadge(f.renew[0], f.renew[2])}</td>
-<td class="val-target">${formatNum(f.expire[0])}</td>
+<td class="">${getBadge(f.renew[0], f.renew[2])}</td>
+<td class="val-target sep-left">${formatNum(f.expire[0])}</td>
 <td class="val-cnt" style="color:#cbd5e1;">${formatNum(f.expire[1])}</td>
 <td class="val-amt">${formatNum(f.expire[2])}</td>
-<td>${getBadge(f.expire[0], f.expire[2])}</td>
+<td class="">${getBadge(f.expire[0], f.expire[2])}</td>
 </tr>
 `;
 }

@@ -102,11 +102,13 @@
            하단 상세 테이블 디자인
            ======================================================= */
         .table-card { background-color: var(--surface-bg); border-radius: 16px; box-shadow: var(--shadow-md); overflow-x: auto; padding: 20px; border: 1px solid var(--border-light); }
-        table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: center; white-space: nowrap; }
+        #mainTable { border-left: 1px solid var(--border-light); border-right: 1px solid var(--border-light); }
+        table { width: 100%; border-collapse: collapse; font-size: 12px; text-align: center; white-space: nowrap; min-width: 1200px; }
         
         thead tr:first-child th { border-top: 2px solid var(--primary-dark); }
-        th, td { padding: 14px 10px; vertical-align: middle; border-bottom: 1px solid var(--border-light); border-right: 1px solid var(--border-light); }
-        th:last-child, td:last-child { border-right: none; }
+        th, td { padding: 10px 6px; vertical-align: middle; border: 1px solid var(--border-light); }
+        th:last-child, td:last-child { border-right: 1px solid var(--border-light); }
+        th:first-child, td:first-child { border-left: 1px solid var(--border-heavy) !important; }
         
         thead tr:last-child th, thead tr:first-child th[rowspan="2"] { border-bottom: 4px double var(--primary-dark) !important; }
         .group-end { border-right: 2px solid var(--border-heavy) !important; }
@@ -116,18 +118,19 @@
         .bg-jan { background-color: #eff6ff; color: #1d4ed8; font-weight: 800;}
         .bg-feb { background-color: #f0fdf4; color: #15803d; font-weight: 800;}
         .bg-mom { background-color: #fdf4ff; color: #86198f; font-weight: 800;}
-        .bg-acc { background-color: #eef2ff; color: #3730a3; font-weight: 800;}
+        .bg-acc { background-color: #eef2ff; color: #3730a3; font-weight: 800; border-left: 2px solid var(--primary-dark) !important; }
 
-        .sub-th { background-color: #ffffff; color: var(--text-muted); font-size: 12.5px; font-weight: 600; }
+        .sub-th { background-color: #ffffff; color: var(--text-muted); font-size: 11px; font-weight: 600; }
         .txt-blue { color: #2563eb !important; font-weight: 800 !important; }
         .txt-pink { color: #db2777 !important; font-weight: 800 !important; }
         .txt-navy { color: #312e81 !important; font-weight: 800 !important; }
 
         tbody tr:hover { background-color: #f8fafc; }
-        tbody td:first-child, thead th:first-child, tfoot td:first-child { position: sticky; left: 0; background: inherit; z-index: 2; font-weight: 800; color: var(--primary-dark); }
-        tbody td:first-child { background: var(--surface-bg); }
+        tbody td:first-child, thead th:first-child, tfoot td:first-child { position: sticky; left: 0; background-color: var(--surface-bg); z-index: 2; font-weight: 800; color: var(--primary-dark); border-right: 2px solid var(--border-medium) !important; }
+        tbody tr:hover td:first-child { background-color: #f8fafc; }
+        tfoot td:first-child { background-color: #f1f5f9; }
         
-        .val-num { text-align: right; padding-right: 12px; font-family: 'Segoe UI', Tahoma, sans-serif; font-weight: 500; }
+        .val-num { text-align: right; padding-right: 8px; font-family: 'Segoe UI', Tahoma, sans-serif; font-weight: 500; }
         .val-highlight { font-weight: 800; color: var(--primary-blue); }
         
         /* 💡 [신규 추가] 본부별 '강북/강원' 진파랑 강조 행 */
@@ -158,6 +161,9 @@
         .badge.warn { background-color: var(--badge-warn-bg); color: var(--badge-warn-text); }
         .badge.safe { background-color: var(--badge-safe-bg); color: var(--badge-safe-text); }
         .badge.zero { background-color: var(--chart-muted); color: var(--text-muted); }
+        
+        /* Ensure the last column header doesn't get cut off */
+        thead th:last-child { min-width: 100px; }
     </style>
 </head>
 <body>
