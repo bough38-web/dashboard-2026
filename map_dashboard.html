@@ -768,10 +768,35 @@
                 </div>
 
                 <label class="filter-label">정지/부실/사전리텐션 통합 조회</label>
-                <div id="suspension-filters" class="filter-group" style="margin-bottom: 20px;">
+                <div id="suspension-filters" class="filter-group" style="margin-bottom: 8px;">
                     <button class="filter-btn" id="btn-show-suspension" onclick="toggleSuspensionLayer('suspension')" style="border-color: #ef4444; color: #ef4444;">🔴 정지</button>
                     <button class="filter-btn" id="btn-show-defect" onclick="toggleSuspensionLayer('defect')" style="border-color: #f59e0b; color: #f59e0b;">🟠 부실</button>
+                    <button class="filter-btn" id="btn-show-arrears" onclick="toggleSuspensionLayer('arrears')" style="border-color: #92400e; color: #92400e;">🟤 체납직권(정지)</button>
                     <button class="filter-btn" id="btn-show-voc" onclick="toggleSuspensionLayer('voc')" style="border-color: #10b981; color: #10b981;">🟢 사전리텐션</button>
+                </div>
+
+                <div id="date-filters" class="filter-group" style="margin-bottom: 20px; display: none; gap: 4px; padding-left: 5px;">
+                    <select id="filter-year" style="width: 85px; padding: 4px 6px; font-size: 12px; border-radius: 6px;" onchange="updateSuspensionMarkers()">
+                        <option value="all">전체(년)</option>
+                        <option value="2024">2024년</option>
+                        <option value="2025">2025년</option>
+                        <option value="2026">2026년</option>
+                    </select>
+                    <select id="filter-month" style="width: 75px; padding: 4px 6px; font-size: 12px; border-radius: 6px;" onchange="updateSuspensionMarkers()">
+                        <option value="all">전체(월)</option>
+                        <option value="01">1월</option>
+                        <option value="02">2월</option>
+                        <option value="03">3월</option>
+                        <option value="04">4월</option>
+                        <option value="05">5월</option>
+                        <option value="06">6월</option>
+                        <option value="07">7월</option>
+                        <option value="08">8월</option>
+                        <option value="09">9월</option>
+                        <option value="10">10월</option>
+                        <option value="11">11월</option>
+                        <option value="12">12월</option>
+                    </select>
                 </div>
 
                 <label class="filter-label">계약상태 필터</label>
@@ -874,7 +899,7 @@
     let map;
     let markers = [];
     let suspensionMarkers = [];
-    let activeSuspensionType = null; // 'suspension', 'defect', or null
+    let activeSuspensionTypes = []; // ['suspension', 'defect', 'arrears', 'voc']
     let clusterer;
     let allTargets = [];
     let currentRouteLine = null;
@@ -1186,9 +1211,15 @@
             btn.className = 'filter-btn' + (filters.status === s ? ' active' : '');
             btn.textContent = s;
             btn.onclick = () => {
-                document.querySelectorAll('#status-filters .filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                filters.status = s;
+                if (filters.status === s) {
+                    // Toggle Off
+                    filters.status = 'none';
+                    btn.classList.remove('active');
+                } else {
+                    document.querySelectorAll('#status-filters .filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    filters.status = s;
+                }
                 applyFilters();
             };
             statusContainer.appendChild(btn);
@@ -1249,9 +1280,14 @@
         btn.className = 'filter-btn' + (filters[type] === 'all' ? ' active' : '');
         btn.textContent = '전체';
         btn.onclick = () => {
-            document.querySelectorAll(`#${type}-filters .filter-btn`).forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            filters[type] = 'all';
+            if (filters[type] === 'all') {
+                filters[type] = 'none';
+                btn.classList.remove('active');
+            } else {
+                document.querySelectorAll(`#${type}-filters .filter-btn`).forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                filters[type] = 'all';
+            }
             applyFilters();
         };
         return btn;
@@ -1289,88 +1325,106 @@
         });
     }
 
-
     // --- Suspension Layer Logic ---
     function toggleSuspensionLayer(type) {
-        if (activeSuspensionType === type) {
-            activeSuspensionType = null;
-            document.getElementById('btn-show-suspension').classList.remove('active');
-            document.getElementById('btn-show-defect').classList.remove('active');
-            document.getElementById('btn-show-voc').classList.remove('active');
+        const index = activeSuspensionTypes.indexOf(type);
+        if (index > -1) {
+            activeSuspensionTypes.splice(index, 1);
+            document.getElementById(`btn-show-${type}`).classList.remove('active');
         } else {
-            activeSuspensionType = type;
-            document.getElementById('btn-show-suspension').classList.toggle('active', type === 'suspension');
-            document.getElementById('btn-show-defect').classList.toggle('active', type === 'defect');
-            document.getElementById('btn-show-voc').classList.toggle('active', type === 'voc');
+            activeSuspensionTypes.push(type);
+            document.getElementById(`btn-show-${type}`).classList.add('active');
         }
+        
+        // Show date filters if any suspension/arrears types are active
+        const dateFiltersVisible = activeSuspensionTypes.some(t => ['suspension', 'defect', 'arrears'].includes(t));
+        document.getElementById('date-filters').style.display = dateFiltersVisible ? 'flex' : 'none';
+
         updateSuspensionMarkers();
     }
 
     function updateSuspensionMarkers() {
-        // Clear old suspension markers
         if (typeof suspensionMarkers !== 'undefined') {
             suspensionMarkers.forEach(m => m.setMap(null));
         }
         suspensionMarkers = [];
 
-        if (!activeSuspensionType) return;
+        if (activeSuspensionTypes.length === 0) return;
 
-        // Filter suspension targets by current branch/manager from global filters
         const branchFilter = filters.branch;
         const managerFilter = filters.manager;
-        
-        let targetData = [];
-        if (activeSuspensionType === 'voc') {
-            if (typeof VOC_TARGETS === 'undefined') {
-                debugLog("Error: VOC_TARGETS not loaded.", true);
-                return;
-            }
-            targetData = VOC_TARGETS;
-        } else {
-            if (typeof SUSPENSION_TARGETS === 'undefined') {
-                debugLog("Error: SUSPENSION_TARGETS not loaded.", true);
-                return;
-            }
-            targetData = SUSPENSION_TARGETS;
-        }
+        const selectedYear = document.getElementById('filter-year').value;
+        const selectedMonth = document.getElementById('filter-month').value;
 
-        const filtered = targetData.filter(t => {
-            const matchBranch = branchFilter === 'all' || t.branch === branchFilter;
-            const matchManager = managerFilter === 'all' || t.manager === managerFilter;
-            
-            // --- Strict Role Check ---
-            const session = window.USER_SESSION;
-            let rolePass = true;
-            if (session && session.role !== 'admin' && localStorage.getItem(ACCESS_CONFIG.STORAGE_KEY) !== 'true') {
-                if (session.role === 'branch') rolePass = (t.branch === session.data.branch);
-                else if (session.role === 'manager') rolePass = (t.manager === session.data.name);
-            }
+        let allFilteredRecords = [];
 
-            if (!rolePass) return false;
-
-            if (activeSuspensionType === 'defect') {
-                return matchBranch && matchManager && (t.is_defect === 'Y' || t.is_defect === '예' || t.is_defect === '대상');
+        activeSuspensionTypes.forEach(type => {
+            let targetData = [];
+            if (type === 'voc') {
+                if (typeof VOC_TARGETS !== 'undefined') targetData = VOC_TARGETS;
             } else {
-                return matchBranch && matchManager;
+                if (typeof SUSPENSION_TARGETS !== 'undefined') targetData = SUSPENSION_TARGETS;
             }
+
+            const branchFiltered = targetData.filter(t => {
+                const matchBranch = branchFilter === 'all' || t.branch === branchFilter;
+                const matchManager = managerFilter === 'all' || t.manager === managerFilter;
+                
+                const session = window.USER_SESSION;
+                let rolePass = true;
+                if (session && session.role !== 'admin' && localStorage.getItem(ACCESS_CONFIG.STORAGE_KEY) !== 'true') {
+                    if (session.role === 'branch') rolePass = (t.branch === session.data.branch);
+                    else if (session.role === 'manager') rolePass = (t.manager === session.data.name);
+                }
+                if (!rolePass) return false;
+
+                if (type !== 'voc') {
+                    if (selectedYear !== 'all' || selectedMonth !== 'all') {
+                        let matchDate = false;
+                        const dateSources = [t.event_date, t.action_date].filter(d => d);
+                        for (const dStr of dateSources) {
+                            const [y, m, d] = dStr.split('-');
+                            if ((selectedYear === 'all' || y === selectedYear) && (selectedMonth === 'all' || m === selectedMonth)) {
+                                matchDate = true; break;
+                            }
+                        }
+                        if (!matchDate) return false;
+                    }
+                }
+
+                if (type === 'defect') return matchBranch && matchManager && (t.is_defect === 'Y' || t.is_defect === '예' || t.is_defect === '대상');
+                if (type === 'arrears') return matchBranch && matchManager && (t.is_arrears === 'Y' || t.is_arrears === '체납직권' || t.is_arrears === '대상');
+                if (type === 'suspension') return matchBranch && matchManager; 
+                if (type === 'voc') return matchBranch && matchManager;
+
+                return false;
+            });
+
+            branchFiltered.forEach(target => {
+                allFilteredRecords.push({ ...target, markerType: type });
+            });
         });
 
-        filtered.forEach(target => {
+        allFilteredRecords.forEach(target => {
             if (!target.lat || !target.lng) return;
-
+            const type = target.markerType;
             let iconUrl = '';
             let titlePrefix = '';
             let titleColor = '';
 
-            if (activeSuspensionType === 'defect') {
+            if (type === 'defect') {
                 iconUrl = 'http://maps.google.com/mapfiles/ms/icons/orange-dot.png';
                 titlePrefix = '⚠️ 부실고객';
                 titleColor = '#f59e0b';
-            } else if (activeSuspensionType === 'suspension') {
+            } else if (type === 'suspension') {
                 iconUrl = 'http://maps.google.com/mapfiles/ms/icons/red-dot.png';
                 titlePrefix = '🚫 정지고객';
                 titleColor = '#ef4444';
-            } else if (activeSuspensionType === 'voc') {
+            } else if (type === 'arrears') {
+                iconUrl = 'http://maps.google.com/mapfiles/ms/icons/brown-dot.png';
+                titlePrefix = '🟤 체납고객';
+                titleColor = '#92400e';
+            } else if (type === 'voc') {
                 iconUrl = 'http://maps.google.com/mapfiles/ms/icons/green-dot.png';
                 titlePrefix = '🟢 사전리텐션';
                 titleColor = '#10b981';
@@ -1383,29 +1437,24 @@
                 title: maskName(target.name)
             });
 
-            const category = activeSuspensionType === 'voc' ? '사전리텐션' : (activeSuspensionType === 'defect' ? '부실' : '정지');
+            const category = type === 'voc' ? '사전리텐션' : (type === 'defect' ? '부실' : (type === 'arrears' ? '체납' : '정지'));
 
             const infoWindow = new google.maps.InfoWindow({
                 content: `
                     <div style="padding:15px; width:220px; font-family: Pretendard, sans-serif;">
-                        <h4 style="margin:0 0 8px 0; color:${titleColor}; font-size:14px;">
-                            ${titlePrefix}
-                        </h4>
+                        <h4 style="margin:0 0 8px 0; color:${titleColor}; font-size:14px;">${titlePrefix}</h4>
                         <div style="background:#f8fafc; padding:10px; border-radius:8px; border:1px solid #e2e8f0; margin-bottom:10px;">
                             <p style="margin:4px 0; font-size:12px;"><strong>상호:</strong> ${maskName(target.name)}</p>
                             <p style="margin:4px 0; font-size:12px;"><strong>지사:</strong> ${target.branch}</p>
                             <p style="margin:4px 0; font-size:12px;"><strong>영업구역:</strong> ${target.manager}</p>
                             <p style="margin:4px 0; font-size:11px; color:#64748b; line-height:1.4;">${target.address}</p>
+                            ${target.event_date ? `<p style="margin:4px 0; font-size:11px; color:#64748b;">이벤트: ${target.event_date}</p>` : ''}
+                            ${target.action_date ? `<p style="margin:4px 0; font-size:11px; color:#64748b;">조치일: ${target.action_date}</p>` : ''}
                         </div>
                         <div style="margin-top:10px; display:flex; gap:5px;">
-                            <a href="https://www.google.com/maps/dir/?api=1&destination=${target.lat},${target.lng}" 
-                               target="_blank" 
-                               style="display:block; flex:1; background:#4f46e5; color:white; border-radius:6px; padding:8px; text-decoration:none; font-size:12px; font-weight:bold; text-align:center;">
-                               길찾기
-                            </a>
                             <button onclick="openProgressModal('${target.contractNo}', '${target.name.replace(/'/g, "\\'")}', '${category}')" 
                                style="display:block; flex:1; background:#10b981; color:white; border-radius:6px; padding:8px; border:none; font-size:12px; font-weight:bold; cursor:pointer;">
-                               진행등록
+                                진행등록
                             </button>
                         </div>
                     </div>
@@ -1419,7 +1468,7 @@
             suspensionMarkers.push(marker);
         });
         
-        if (typeof log === 'function') log(`Suspension markers updated: ${filtered.length} found.`);
+        if (typeof log === 'function') log(`Suspension markers updated: ${allFilteredRecords.length} found.`);
     }
 
     function applyFilters() {

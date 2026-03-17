@@ -8,7 +8,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000410",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-09-10",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51275246.0,
@@ -19,7 +22,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000401",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-16",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 20341256.0,
@@ -30,7 +36,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000402",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50345188.0,
@@ -41,7 +50,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000407",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51862821.0,
@@ -52,7 +64,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000407",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-28",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51143460.0,
@@ -63,7 +78,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000409",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-14",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51613864.0,
@@ -74,7 +92,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000409",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-10",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52205475.0,
@@ -85,7 +106,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000409",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51624415.0,
@@ -96,7 +120,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000401",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51785516.0,
@@ -107,7 +134,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000402",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-19",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51428983.0,
@@ -118,7 +148,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000401",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 20453898.0,
@@ -129,7 +162,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000410",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-18",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51603095.0,
@@ -140,7 +176,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000410",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-04",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51533013.0,
@@ -151,7 +190,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000407",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51520660.0,
@@ -162,7 +204,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000410",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-09-24",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51586690.0,
@@ -173,7 +218,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000410",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-20",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51497270.0,
@@ -184,7 +232,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000410",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-04",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51595860.0,
@@ -195,7 +246,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000409",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-17",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51748986.0,
@@ -206,7 +260,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000409",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-08-13",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51730729.0,
@@ -217,7 +274,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000401",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51744882.0,
@@ -228,7 +288,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000407",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51832466.0,
@@ -239,7 +302,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000402",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-27",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51675136.0,
@@ -250,7 +316,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000402",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-30",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51465484.0,
@@ -261,7 +330,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000409",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-10",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51986012.0,
@@ -272,7 +344,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000401",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-23",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51351800.0,
@@ -283,7 +358,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000402",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-18",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 313838.0,
@@ -294,7 +372,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000402",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-09-16",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51702293.0,
@@ -305,7 +386,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000403",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-15",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51492604.0,
@@ -316,7 +400,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000410",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-04",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50123940.0,
@@ -327,7 +414,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000401",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-17",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50496082.0,
@@ -338,7 +428,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000402",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-05",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51194288.0,
@@ -349,7 +442,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000407",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50940118.0,
@@ -360,7 +456,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000407",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-28",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51217403.0,
@@ -371,7 +470,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000401",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52306243.0,
@@ -382,7 +484,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000404",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51412532.0,
@@ -393,7 +498,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000401",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51997937.0,
@@ -404,7 +512,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000403",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-07",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51153818.0,
@@ -415,7 +526,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000408",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-04",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51734928.0,
@@ -426,7 +540,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000402",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-20",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52308231.0,
@@ -437,7 +554,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000409",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-19",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51917866.0,
@@ -448,7 +568,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000408",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-14",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51853090.0,
@@ -459,7 +582,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000407",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-03",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51892000.0,
@@ -470,7 +596,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000409",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-14",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51497502.0,
@@ -481,7 +610,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000401",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-03",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51531673.0,
@@ -492,7 +624,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000402",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-27",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52299625.0,
@@ -503,7 +638,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000407",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-10",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52183992.0,
@@ -514,7 +652,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000401",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51841244.0,
@@ -525,7 +666,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000405",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-06-13",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52030886.0,
@@ -536,7 +680,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000402",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-05",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52181017.0,
@@ -547,7 +694,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000410",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51511763.0,
@@ -558,7 +708,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000402",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-30",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52093340.0,
@@ -569,7 +722,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000410",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52156151.0,
@@ -580,7 +736,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000401",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52248408.0,
@@ -591,7 +750,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000407",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-18",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52037364.0,
@@ -602,7 +764,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000404",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-11-29",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52219144.0,
@@ -613,7 +778,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000403",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-29",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51590244.0,
@@ -624,7 +792,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000409",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51981880.0,
@@ -635,7 +806,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000409",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52060394.0,
@@ -646,7 +820,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000408",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-13",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51789267.0,
@@ -657,7 +834,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000407",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-16",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51900970.0,
@@ -668,7 +848,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000409",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-21",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52037257.0,
@@ -679,7 +862,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000403",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-25",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51890104.0,
@@ -690,7 +876,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000403",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-02",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52200152.0,
@@ -701,7 +890,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000409",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52218631.0,
@@ -712,7 +904,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000408",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52295193.0,
@@ -723,7 +918,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000409",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-11",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51971198.0,
@@ -734,7 +932,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000402",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-28",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51966376.0,
@@ -745,7 +946,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000401",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51640037.0,
@@ -756,7 +960,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000401",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-03",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51850354.0,
@@ -767,7 +974,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000403",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-03",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52200801.0,
@@ -778,7 +988,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000409",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52062188.0,
@@ -789,7 +1002,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000409",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52111311.0,
@@ -800,7 +1016,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000403",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-12",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52028594.0,
@@ -811,7 +1030,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000409",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-11",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51829817.0,
@@ -822,7 +1044,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000409",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-28",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51919453.0,
@@ -833,7 +1058,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000401",
     "is_defect": "대상",
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-08-12",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51128322.0,
@@ -844,7 +1072,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000409",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2026-01-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51667352.0,
@@ -855,7 +1086,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000409",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2026-01-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51534173.0,
@@ -866,7 +1100,10 @@ const SUSPENSION_TARGETS = [
     "branch": "중앙지사",
     "manager": "G000402",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-12-26",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50750027.0,
@@ -877,7 +1114,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000106",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51540346.0,
@@ -888,7 +1128,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52221395.0,
@@ -899,7 +1142,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-22",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52025176.0,
@@ -910,7 +1156,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51991873.0,
@@ -921,7 +1170,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000106",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-18",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51989864.0,
@@ -932,7 +1184,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000106",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-19",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51023190.0,
@@ -943,7 +1198,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000106",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51222953.0,
@@ -954,7 +1212,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000106",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52203092.0,
@@ -965,7 +1226,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000106",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-25",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51733147.0,
@@ -976,7 +1240,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51537163.0,
@@ -987,7 +1254,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000103",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-09-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51981316.0,
@@ -998,7 +1268,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000102",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51770846.0,
@@ -1009,7 +1282,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000106",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51562663.0,
@@ -1020,7 +1296,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000107",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51562673.0,
@@ -1031,7 +1310,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000107",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52252417.0,
@@ -1042,7 +1324,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52171485.0,
@@ -1053,7 +1338,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000102",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-07",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52368502.0,
@@ -1064,7 +1352,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-24",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52039898.0,
@@ -1075,7 +1366,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-25",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 20580866.0,
@@ -1086,7 +1380,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000107",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-28",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50546809.0,
@@ -1097,7 +1394,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-27",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50252778.0,
@@ -1108,7 +1408,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-26",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51481376.0,
@@ -1119,7 +1422,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000106",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-13",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52368499.0,
@@ -1130,7 +1436,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-28",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51254752.0,
@@ -1141,7 +1450,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51736257.0,
@@ -1152,7 +1464,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000106",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51854566.0,
@@ -1163,7 +1478,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000102",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52072104.0,
@@ -1174,7 +1492,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000102",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52159075.0,
@@ -1185,7 +1506,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000104",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-12",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51771509.0,
@@ -1196,7 +1520,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000107",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-10",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52231638.0,
@@ -1207,7 +1534,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52311732.0,
@@ -1218,7 +1548,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52137250.0,
@@ -1229,7 +1562,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-29",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51733407.0,
@@ -1240,7 +1576,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52309853.0,
@@ -1251,7 +1590,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52058807.0,
@@ -1262,7 +1604,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51608130.0,
@@ -1273,7 +1618,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-21",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52022989.0,
@@ -1284,7 +1632,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000106",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-30",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52052344.0,
@@ -1295,7 +1646,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51777181.0,
@@ -1306,7 +1660,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51887398.0,
@@ -1317,7 +1674,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000106",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52052337.0,
@@ -1328,7 +1688,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51848154.0,
@@ -1339,7 +1702,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51383276.0,
@@ -1350,7 +1716,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52159227.0,
@@ -1361,7 +1730,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-30",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52232054.0,
@@ -1372,7 +1744,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51629997.0,
@@ -1383,7 +1758,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52188811.0,
@@ -1394,7 +1772,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51935562.0,
@@ -1405,7 +1786,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-31",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52120820.0,
@@ -1416,7 +1800,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000106",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-11",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51101894.0,
@@ -1427,7 +1814,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-24",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51921238.0,
@@ -1438,7 +1828,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-21",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 11471163.0,
@@ -1449,7 +1842,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000106",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-11-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50873598.0,
@@ -1460,7 +1856,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000106",
     "is_defect": "대상",
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-11-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51027119.0,
@@ -1471,7 +1870,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000101",
     "is_defect": "대상",
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-08-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51527277.0,
@@ -1482,7 +1884,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000103",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-12-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51800672.0,
@@ -1493,7 +1898,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000106",
     "is_defect": "대상",
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-08-29",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51862713.0,
@@ -1504,7 +1912,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000106",
     "is_defect": "대상",
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-10-16",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51983586.0,
@@ -1515,7 +1926,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000106",
     "is_defect": "대상",
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-08-29",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52291531.0,
@@ -1526,7 +1940,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000103",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-11-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52190880.0,
@@ -1537,7 +1954,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000104",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2026-01-05",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52190908.0,
@@ -1548,7 +1968,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000104",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2026-01-05",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52256715.0,
@@ -1559,7 +1982,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000104",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2026-01-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52256747.0,
@@ -1570,7 +1996,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000104",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2026-01-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52256804.0,
@@ -1581,7 +2010,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000103",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2026-01-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52256814.0,
@@ -1592,7 +2024,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000103",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2026-01-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52336740.0,
@@ -1603,7 +2038,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강북지사",
     "manager": "G000104",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2026-01-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52190047.0,
@@ -1614,7 +2052,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-22",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51446014.0,
@@ -1625,7 +2066,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50509268.0,
@@ -1636,7 +2080,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-30",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51580928.0,
@@ -1647,7 +2094,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-23",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51587234.0,
@@ -1658,7 +2108,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000205",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-31",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52177720.0,
@@ -1669,7 +2122,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-18",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51613894.0,
@@ -1680,7 +2136,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000205",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-31",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52190828.0,
@@ -1691,7 +2150,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-18",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52238315.0,
@@ -1702,7 +2164,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-31",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52048587.0,
@@ -1713,7 +2178,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000204",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-21",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50591430.0,
@@ -1724,7 +2192,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51602086.0,
@@ -1735,7 +2206,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51081282.0,
@@ -1746,7 +2220,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000204",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-29",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51504418.0,
@@ -1757,7 +2234,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51587235.0,
@@ -1768,7 +2248,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000205",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-31",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52238334.0,
@@ -1779,7 +2262,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-31",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50408921.0,
@@ -1790,7 +2276,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000204",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-10",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52238343.0,
@@ -1801,7 +2290,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-31",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51340991.0,
@@ -1812,7 +2304,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51772265.0,
@@ -1823,7 +2318,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-18",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50403378.0,
@@ -1834,7 +2332,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-03",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52177762.0,
@@ -1845,7 +2346,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-18",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52177715.0,
@@ -1856,7 +2360,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-18",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52268554.0,
@@ -1867,7 +2374,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51773824.0,
@@ -1878,7 +2388,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-04",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52190851.0,
@@ -1889,7 +2402,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-18",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 250453.0,
@@ -1900,7 +2416,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000205",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52177769.0,
@@ -1911,7 +2430,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-18",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52238328.0,
@@ -1922,7 +2444,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-31",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52182928.0,
@@ -1933,7 +2458,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000205",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51668746.0,
@@ -1944,7 +2472,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-23",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50794218.0,
@@ -1955,7 +2486,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000205",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51424020.0,
@@ -1966,7 +2500,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-14",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51806653.0,
@@ -1977,7 +2514,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52238249.0,
@@ -1988,7 +2528,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-31",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51617550.0,
@@ -1999,7 +2542,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000204",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-21",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51285082.0,
@@ -2010,7 +2556,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-31",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52292334.0,
@@ -2021,7 +2570,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000204",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-20",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51871067.0,
@@ -2032,7 +2584,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-03",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52265096.0,
@@ -2043,7 +2598,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-24",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51866712.0,
@@ -2054,7 +2612,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50813818.0,
@@ -2065,7 +2626,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000204",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-28",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51254691.0,
@@ -2076,7 +2640,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000204",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-03",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50112567.0,
@@ -2087,7 +2654,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-12",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50892534.0,
@@ -2098,7 +2668,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-11",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 20584592.0,
@@ -2109,7 +2682,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000204",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-28",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52180907.0,
@@ -2120,7 +2696,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000205",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-16",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51525188.0,
@@ -2131,7 +2710,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000204",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-27",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50896887.0,
@@ -2142,7 +2724,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-05",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52304385.0,
@@ -2153,7 +2738,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-05",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50642024.0,
@@ -2164,7 +2752,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-24",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52028305.0,
@@ -2175,7 +2766,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000205",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-27",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52265112.0,
@@ -2186,7 +2780,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-11",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50521161.0,
@@ -2197,7 +2794,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51844880.0,
@@ -2208,7 +2808,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51656111.0,
@@ -2219,7 +2822,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51965597.0,
@@ -2230,7 +2836,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000202",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-11",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51706201.0,
@@ -2241,7 +2850,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-16",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51941320.0,
@@ -2252,7 +2864,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-14",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50359819.0,
@@ -2263,7 +2878,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52093134.0,
@@ -2274,7 +2892,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000205",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51951706.0,
@@ -2285,7 +2906,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000204",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-22",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52138929.0,
@@ -2296,7 +2920,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000205",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51239619.0,
@@ -2307,7 +2934,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-28",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 50885188.0,
@@ -2318,7 +2948,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52049360.0,
@@ -2329,7 +2962,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000203",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-01",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51771692.0,
@@ -2340,7 +2976,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000205",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52133778.0,
@@ -2351,7 +2990,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-29",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52027086.0,
@@ -2362,7 +3004,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000205",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-21",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51973464.0,
@@ -2373,7 +3018,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000204",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52092739.0,
@@ -2384,7 +3032,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51374731.0,
@@ -2395,7 +3046,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-12",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50298861.0,
@@ -2406,7 +3060,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-13",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51945223.0,
@@ -2417,7 +3074,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000205",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-26",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51115532.0,
@@ -2428,7 +3088,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000204",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-11",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51160543.0,
@@ -2439,7 +3102,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-05",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52243213.0,
@@ -2450,7 +3116,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000204",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-12",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51954976.0,
@@ -2461,7 +3130,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000204",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50572999.0,
@@ -2472,7 +3144,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000202",
     "is_defect": "대상",
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-05-13",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50858902.0,
@@ -2483,7 +3158,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000203",
     "is_defect": "대상",
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-11-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51128996.0,
@@ -2494,7 +3172,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000203",
     "is_defect": "대상",
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-05-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51205044.0,
@@ -2505,7 +3186,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000203",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-12-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51475908.0,
@@ -2516,7 +3200,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000201",
     "is_defect": "대상",
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2024-07-16",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51670968.0,
@@ -2527,7 +3214,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000204",
     "is_defect": "대상",
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-09-07",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51756877.0,
@@ -2538,7 +3228,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000203",
     "is_defect": "대상",
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2024-06-28",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51870484.0,
@@ -2549,7 +3242,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000202",
     "is_defect": "대상",
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-09-19",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52306039.0,
@@ -2560,7 +3256,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000203",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-12-08",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52322568.0,
@@ -2571,7 +3270,10 @@ const SUSPENSION_TARGETS = [
     "branch": "서대문지사",
     "manager": "G000203",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-12-17",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51210622.0,
@@ -2582,7 +3284,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52317009.0,
@@ -2593,7 +3298,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-29",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52024197.0,
@@ -2604,7 +3312,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51965527.0,
@@ -2615,7 +3326,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-22",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52154246.0,
@@ -2626,7 +3340,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51750162.0,
@@ -2637,7 +3354,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52250161.0,
@@ -2648,7 +3368,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52172025.0,
@@ -2659,7 +3382,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51744105.0,
@@ -2670,7 +3396,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000303",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-16",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52178235.0,
@@ -2681,7 +3410,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000303",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-27",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51153544.0,
@@ -2692,7 +3424,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-10",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51892638.0,
@@ -2703,7 +3438,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51848256.0,
@@ -2714,7 +3452,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-27",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52011847.0,
@@ -2725,7 +3466,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51992630.0,
@@ -2736,7 +3480,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000302",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51047563.0,
@@ -2747,7 +3494,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000305",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-24",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51393078.0,
@@ -2758,7 +3508,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-19",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51524235.0,
@@ -2769,7 +3522,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-19",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50660797.0,
@@ -2780,7 +3536,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000303",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-24",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51074467.0,
@@ -2791,7 +3550,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-15",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51440347.0,
@@ -2802,7 +3564,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000310",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-15",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51768639.0,
@@ -2813,7 +3578,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000310",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-31",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51137824.0,
@@ -2824,7 +3592,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51705009.0,
@@ -2835,7 +3606,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000302",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-26",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51362072.0,
@@ -2846,7 +3620,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-31",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51582407.0,
@@ -2857,7 +3634,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-18",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52172033.0,
@@ -2868,7 +3648,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51941659.0,
@@ -2879,7 +3662,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50161761.0,
@@ -2890,7 +3676,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-27",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51958770.0,
@@ -2901,7 +3690,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52210142.0,
@@ -2912,7 +3704,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000306",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51735185.0,
@@ -2923,7 +3718,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-19",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51513240.0,
@@ -2934,7 +3732,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000306",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-12",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50742071.0,
@@ -2945,7 +3746,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000302",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51749208.0,
@@ -2956,7 +3760,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000310",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51978138.0,
@@ -2967,7 +3774,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000305",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-11-21",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51087834.0,
@@ -2978,7 +3788,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51721908.0,
@@ -2989,7 +3802,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000302",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-26",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51489522.0,
@@ -3000,7 +3816,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000303",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-19",
+    "is_arrears": "N",
+    "action_date": "2026-02-01"
   },
   {
     "id": 51087871.0,
@@ -3011,7 +3830,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51155481.0,
@@ -3022,7 +3844,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51810421.0,
@@ -3033,7 +3858,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000303",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-16",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51877050.0,
@@ -3044,7 +3872,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000302",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52207720.0,
@@ -3055,7 +3886,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000305",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-31",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 20382456.0,
@@ -3066,7 +3900,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000303",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-15",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51139349.0,
@@ -3077,7 +3914,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-08",
+    "is_arrears": "N",
+    "action_date": "2026-02-01"
   },
   {
     "id": 51223968.0,
@@ -3088,7 +3928,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-09",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51015012.0,
@@ -3099,7 +3942,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51887970.0,
@@ -3110,7 +3956,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 50361919.0,
@@ -3121,7 +3970,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000305",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-10",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51535084.0,
@@ -3132,7 +3984,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000306",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-24",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50225811.0,
@@ -3143,7 +3998,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000305",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-18",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51939560.0,
@@ -3154,7 +4012,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50225813.0,
@@ -3165,7 +4026,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000305",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-03",
+    "is_arrears": "N",
+    "action_date": "2026-02-01"
   },
   {
     "id": 51708313.0,
@@ -3176,7 +4040,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000306",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-26",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50724390.0,
@@ -3187,7 +4054,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000305",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-18",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51088587.0,
@@ -3198,7 +4068,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": "2026-02-01"
   },
   {
     "id": 50970084.0,
@@ -3209,7 +4082,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": "2026-02-01"
   },
   {
     "id": 51470958.0,
@@ -3220,7 +4096,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000305",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-02",
+    "is_arrears": "N",
+    "action_date": "2026-02-01"
   },
   {
     "id": 52051990.0,
@@ -3231,7 +4110,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000305",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-03",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51298717.0,
@@ -3242,7 +4124,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-26",
+    "is_arrears": "N",
+    "action_date": "2026-02-20"
   },
   {
     "id": 51226826.0,
@@ -3253,7 +4138,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-26",
+    "is_arrears": "N",
+    "action_date": "2026-02-20"
   },
   {
     "id": 51307448.0,
@@ -3264,7 +4152,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000310",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-24",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50979055.0,
@@ -3275,7 +4166,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000305",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-12",
+    "is_arrears": "N",
+    "action_date": "2026-02-12"
   },
   {
     "id": 51576415.0,
@@ -3286,7 +4180,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-03",
+    "is_arrears": "N",
+    "action_date": "2026-02-03"
   },
   {
     "id": 52288108.0,
@@ -3297,7 +4194,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-25",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51933607.0,
@@ -3308,7 +4208,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000303",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-11",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50668329.0,
@@ -3319,7 +4222,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000310",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-05",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51636079.0,
@@ -3330,7 +4236,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-02",
+    "is_arrears": "N",
+    "action_date": "2026-02-01"
   },
   {
     "id": 51753813.0,
@@ -3341,7 +4250,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000310",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-19",
+    "is_arrears": "N",
+    "action_date": "2026-02-15"
   },
   {
     "id": 51237414.0,
@@ -3352,7 +4264,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000306",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-10",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52213344.0,
@@ -3363,7 +4278,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-27",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51694761.0,
@@ -3374,7 +4292,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-04",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 50367243.0,
@@ -3385,7 +4306,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000310",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-12",
+    "is_arrears": "N",
+    "action_date": "2026-02-12"
   },
   {
     "id": 51281693.0,
@@ -3396,7 +4320,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51706076.0,
@@ -3407,7 +4334,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-07",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52351294.0,
@@ -3418,7 +4348,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-24",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51721286.0,
@@ -3429,7 +4362,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-26",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52138361.0,
@@ -3440,7 +4376,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51833268.0,
@@ -3451,7 +4390,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000305",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51848216.0,
@@ -3462,7 +4404,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 50206936.0,
@@ -3473,7 +4418,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52148448.0,
@@ -3484,7 +4432,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51772201.0,
@@ -3495,7 +4446,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51706498.0,
@@ -3506,7 +4460,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-08",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51377663.0,
@@ -3517,7 +4474,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000303",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51337315.0,
@@ -3528,7 +4488,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000310",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51819969.0,
@@ -3539,7 +4502,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000305",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-14",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51558326.0,
@@ -3550,7 +4516,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-27",
+    "is_arrears": "N",
+    "action_date": "2026-03-03"
   },
   {
     "id": 51722511.0,
@@ -3561,7 +4530,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-03",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52124601.0,
@@ -3572,7 +4544,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51666886.0,
@@ -3583,7 +4558,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51659385.0,
@@ -3594,7 +4572,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51890196.0,
@@ -3605,7 +4586,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-09",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51216889.0,
@@ -3616,7 +4600,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52070639.0,
@@ -3627,7 +4614,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51508331.0,
@@ -3638,7 +4628,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52136415.0,
@@ -3649,7 +4642,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51438171.0,
@@ -3660,7 +4656,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-08",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52130406.0,
@@ -3671,7 +4670,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-27",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51873165.0,
@@ -3682,7 +4684,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-04-17",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52146202.0,
@@ -3693,7 +4698,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000303",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-20",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52194995.0,
@@ -3704,7 +4712,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-11",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52093254.0,
@@ -3715,7 +4726,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51857729.0,
@@ -3726,7 +4740,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 50178657.0,
@@ -3737,7 +4754,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-13",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52226890.0,
@@ -3748,7 +4768,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000306",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51424295.0,
@@ -3759,7 +4782,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51596475.0,
@@ -3770,7 +4796,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000310",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-30",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52106828.0,
@@ -3781,7 +4810,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000303",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-14",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51711394.0,
@@ -3792,7 +4824,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-19",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51718483.0,
@@ -3803,7 +4838,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52015743.0,
@@ -3814,7 +4852,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-09",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51975205.0,
@@ -3825,7 +4866,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000306",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52130840.0,
@@ -3836,7 +4880,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000310",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51669255.0,
@@ -3847,7 +4894,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000306",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52002961.0,
@@ -3858,7 +4908,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000302",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52031593.0,
@@ -3869,7 +4922,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000306",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52143248.0,
@@ -3880,7 +4936,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52153095.0,
@@ -3891,7 +4950,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51382658.0,
@@ -3902,7 +4964,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000305",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51494082.0,
@@ -3913,7 +4978,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51840515.0,
@@ -3924,7 +4992,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000303",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-05-31",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52049237.0,
@@ -3935,7 +5006,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000305",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-03",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51745292.0,
@@ -3946,7 +5020,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51147556.0,
@@ -3957,7 +5034,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-08",
+    "is_arrears": "N",
+    "action_date": "2026-02-01"
   },
   {
     "id": 51259484.0,
@@ -3968,7 +5048,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51667411.0,
@@ -3979,7 +5062,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51780634.0,
@@ -3990,7 +5076,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-09",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51998069.0,
@@ -4001,7 +5090,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000310",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51441954.0,
@@ -4012,7 +5104,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000302",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52049449.0,
@@ -4023,7 +5118,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000302",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-09-04",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52249483.0,
@@ -4034,7 +5132,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000303",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 50472311.0,
@@ -4045,7 +5146,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51678087.0,
@@ -4056,7 +5160,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52272095.0,
@@ -4067,7 +5174,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000303",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52239801.0,
@@ -4078,7 +5188,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000303",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-09-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52319418.0,
@@ -4089,7 +5202,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000302",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52132573.0,
@@ -4100,7 +5216,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52009809.0,
@@ -4111,7 +5230,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-22",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52135190.0,
@@ -4122,7 +5244,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52139167.0,
@@ -4133,7 +5258,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000310",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52128052.0,
@@ -4144,7 +5272,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000310",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-19",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52111187.0,
@@ -4155,7 +5286,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000305",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51765688.0,
@@ -4166,7 +5300,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-05-17",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51143265.0,
@@ -4177,7 +5314,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52017870.0,
@@ -4188,7 +5328,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000306",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51945748.0,
@@ -4199,7 +5342,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000302",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-16",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52179574.0,
@@ -4210,7 +5356,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000302",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-28",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52147687.0,
@@ -4221,7 +5370,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51359489.0,
@@ -4232,7 +5384,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51335500.0,
@@ -4243,7 +5398,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000308",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51455220.0,
@@ -4254,7 +5412,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-08",
+    "is_arrears": "N",
+    "action_date": "2026-02-01"
   },
   {
     "id": 51951343.0,
@@ -4265,7 +5426,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52070776.0,
@@ -4276,7 +5440,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000305",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52235800.0,
@@ -4287,7 +5454,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-13",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52063194.0,
@@ -4298,7 +5468,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000302",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-26",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51735098.0,
@@ -4309,7 +5482,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-27",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51082777.0,
@@ -4320,7 +5496,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-04",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52055887.0,
@@ -4331,7 +5510,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000302",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-28",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51934315.0,
@@ -4342,7 +5524,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-03",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51434688.0,
@@ -4353,7 +5538,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-23",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52016553.0,
@@ -4364,7 +5552,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52031998.0,
@@ -4375,7 +5566,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-25",
+    "is_arrears": "N",
+    "action_date": "2026-02-25"
   },
   {
     "id": 52056365.0,
@@ -4386,7 +5580,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000310",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51620534.0,
@@ -4397,7 +5594,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000304",
     "is_defect": "대상",
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-08-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51645996.0,
@@ -4408,7 +5608,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000302",
     "is_defect": "대상",
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-07-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52029865.0,
@@ -4419,7 +5622,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000306",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2026-01-08",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51572151.0,
@@ -4430,7 +5636,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000307",
     "is_defect": "대상",
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-07-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52277482.0,
@@ -4441,7 +5650,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000307",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-12-03",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51733083.0,
@@ -4452,7 +5664,10 @@ const SUSPENSION_TARGETS = [
     "branch": "고양지사",
     "manager": "G000309",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2026-01-12",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51303285.0,
@@ -4463,7 +5678,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52032084.0,
@@ -4474,7 +5692,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52198574.0,
@@ -4485,7 +5706,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51126818.0,
@@ -4496,7 +5720,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51368793.0,
@@ -4507,7 +5734,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52177699.0,
@@ -4518,7 +5748,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-03",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51502776.0,
@@ -4529,7 +5762,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51782203.0,
@@ -4540,7 +5776,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000503",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51733081.0,
@@ -4551,7 +5790,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51131121.0,
@@ -4562,7 +5804,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51690738.0,
@@ -4573,7 +5818,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51109594.0,
@@ -4584,7 +5832,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51131122.0,
@@ -4595,7 +5846,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51589239.0,
@@ -4606,7 +5860,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000503",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51009759.0,
@@ -4617,7 +5874,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 50001190.0,
@@ -4628,7 +5888,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51122656.0,
@@ -4639,7 +5902,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000503",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51685297.0,
@@ -4650,7 +5916,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51662553.0,
@@ -4661,7 +5930,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50778475.0,
@@ -4672,7 +5944,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-27",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51803108.0,
@@ -4683,7 +5958,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52175717.0,
@@ -4694,7 +5972,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000503",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52313931.0,
@@ -4705,7 +5986,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000503",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51787617.0,
@@ -4716,7 +6000,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-15",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50715803.0,
@@ -4727,7 +6014,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51537378.0,
@@ -4738,7 +6028,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51254130.0,
@@ -4749,7 +6042,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51522963.0,
@@ -4760,7 +6056,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000503",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52090817.0,
@@ -4771,7 +6070,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-09",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51242597.0,
@@ -4782,7 +6084,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51495021.0,
@@ -4793,7 +6098,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51402585.0,
@@ -4804,7 +6112,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52337089.0,
@@ -4815,7 +6126,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51708262.0,
@@ -4826,7 +6140,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000503",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-25",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51885135.0,
@@ -4837,7 +6154,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-02",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51617832.0,
@@ -4848,7 +6168,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-04",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51707605.0,
@@ -4859,7 +6182,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-06",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52136191.0,
@@ -4870,7 +6196,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-03",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52049542.0,
@@ -4881,7 +6210,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000503",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-09-04",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52036094.0,
@@ -4892,7 +6224,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000503",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-31",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50493154.0,
@@ -4903,7 +6238,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51680405.0,
@@ -4914,7 +6252,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51469771.0,
@@ -4925,7 +6266,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51679872.0,
@@ -4936,7 +6280,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 50726341.0,
@@ -4947,7 +6294,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-24",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52115919.0,
@@ -4958,7 +6308,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52266346.0,
@@ -4969,7 +6322,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51749806.0,
@@ -4980,7 +6336,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52229374.0,
@@ -4991,7 +6350,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-30",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52058734.0,
@@ -5002,7 +6364,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000503",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-19",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51715790.0,
@@ -5013,7 +6378,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52094111.0,
@@ -5024,7 +6392,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51655453.0,
@@ -5035,7 +6406,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000503",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-01-15",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52123582.0,
@@ -5046,7 +6420,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52301977.0,
@@ -5057,7 +6434,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52043134.0,
@@ -5068,7 +6448,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-05",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52142549.0,
@@ -5079,7 +6462,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51854734.0,
@@ -5090,7 +6476,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52248951.0,
@@ -5101,7 +6490,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52152138.0,
@@ -5112,7 +6504,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-12",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51325767.0,
@@ -5123,7 +6518,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51786988.0,
@@ -5134,7 +6532,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-14",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51131038.0,
@@ -5145,7 +6546,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52150835.0,
@@ -5156,7 +6560,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-10",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52027343.0,
@@ -5167,7 +6574,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51986198.0,
@@ -5178,7 +6588,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51662965.0,
@@ -5189,7 +6602,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-13",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51987552.0,
@@ -5200,7 +6616,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52040853.0,
@@ -5211,7 +6630,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000503",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-27",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50496054.0,
@@ -5222,7 +6644,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52140793.0,
@@ -5233,7 +6658,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-13",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50763545.0,
@@ -5244,7 +6672,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52001042.0,
@@ -5255,7 +6686,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000503",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-26",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51407045.0,
@@ -5266,7 +6700,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52093649.0,
@@ -5277,7 +6714,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52100584.0,
@@ -5288,7 +6728,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-10",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52214252.0,
@@ -5299,7 +6742,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51539417.0,
@@ -5310,7 +6756,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51318491.0,
@@ -5321,7 +6770,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52004720.0,
@@ -5332,7 +6784,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-23",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51508218.0,
@@ -5343,7 +6798,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000503",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51991929.0,
@@ -5354,7 +6812,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51743415.0,
@@ -5365,7 +6826,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000503",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-09",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51878135.0,
@@ -5376,7 +6840,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-05",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51593270.0,
@@ -5387,7 +6854,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000504",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52058039.0,
@@ -5398,7 +6868,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-11",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52259086.0,
@@ -5409,7 +6882,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000501",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2026-01-22",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51625302.0,
@@ -5420,7 +6896,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000505",
     "is_defect": "대상",
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-06-14",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51709377.0,
@@ -5431,7 +6910,10 @@ const SUSPENSION_TARGETS = [
     "branch": "의정부지사",
     "manager": "G000506",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2025-12-05",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51607482.0,
@@ -5442,7 +6924,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-07",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51964788.0,
@@ -5453,7 +6938,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51788619.0,
@@ -5464,7 +6952,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51804923.0,
@@ -5475,7 +6966,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000602",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51753079.0,
@@ -5486,7 +6980,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52237784.0,
@@ -5497,7 +6994,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-09-09",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52272602.0,
@@ -5508,7 +7008,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000605",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-13",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52205537.0,
@@ -5519,7 +7022,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000605",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 20464191.0,
@@ -5530,7 +7036,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-30",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 50583688.0,
@@ -5541,7 +7050,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000603",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-23",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 50227286.0,
@@ -5552,7 +7064,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000603",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-28",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51417591.0,
@@ -5563,7 +7078,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 50993101.0,
@@ -5574,7 +7092,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51117770.0,
@@ -5585,7 +7106,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000602",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-28",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51995120.0,
@@ -5596,7 +7120,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51417570.0,
@@ -5607,7 +7134,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51561484.0,
@@ -5618,7 +7148,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000605",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52039994.0,
@@ -5629,7 +7162,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000602",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-07",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51486191.0,
@@ -5640,7 +7176,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51319907.0,
@@ -5651,7 +7190,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000603",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-25",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52207542.0,
@@ -5662,7 +7204,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000605",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51707907.0,
@@ -5673,7 +7218,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-26",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51124178.0,
@@ -5684,7 +7232,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51174673.0,
@@ -5695,7 +7246,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000605",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-20",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 50244378.0,
@@ -5706,7 +7260,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-10",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51748447.0,
@@ -5717,7 +7274,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-05",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51723189.0,
@@ -5728,7 +7288,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-05",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51749738.0,
@@ -5739,7 +7302,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000602",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-11",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51426873.0,
@@ -5750,7 +7316,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51865127.0,
@@ -5761,7 +7330,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000605",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-31",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51785140.0,
@@ -5772,7 +7344,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000603",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-10-16",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52139781.0,
@@ -5783,7 +7358,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51840000.0,
@@ -5794,7 +7372,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000603",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51833115.0,
@@ -5805,7 +7386,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52289046.0,
@@ -5816,7 +7400,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000603",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-15",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51385147.0,
@@ -5827,7 +7414,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000603",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52150968.0,
@@ -5838,7 +7428,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51173252.0,
@@ -5849,7 +7442,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000602",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-16",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51801542.0,
@@ -5860,7 +7456,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-25",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51512086.0,
@@ -5871,7 +7470,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000603",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52151321.0,
@@ -5882,7 +7484,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52243473.0,
@@ -5893,7 +7498,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-30",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52183397.0,
@@ -5904,7 +7512,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000605",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51733206.0,
@@ -5915,7 +7526,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000605",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51878659.0,
@@ -5926,7 +7540,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-12",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51696182.0,
@@ -5937,7 +7554,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000605",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-01-10",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51366702.0,
@@ -5948,7 +7568,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-04-25",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52146118.0,
@@ -5959,7 +7582,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000603",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51629916.0,
@@ -5970,7 +7596,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000603",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51698339.0,
@@ -5981,7 +7610,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000605",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52116174.0,
@@ -5992,7 +7624,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 50748620.0,
@@ -6003,7 +7638,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000603",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-23",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 50585038.0,
@@ -6014,7 +7652,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000603",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-23",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52098681.0,
@@ -6025,7 +7666,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000605",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51417586.0,
@@ -6036,7 +7680,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52143255.0,
@@ -6047,7 +7694,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000603",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51980390.0,
@@ -6058,7 +7708,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-23",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51669983.0,
@@ -6069,7 +7722,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-16",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52082722.0,
@@ -6080,7 +7736,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51450772.0,
@@ -6091,7 +7750,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-09-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 20535772.0,
@@ -6102,7 +7764,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52198605.0,
@@ -6113,7 +7778,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51317095.0,
@@ -6124,7 +7792,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000602",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52120505.0,
@@ -6135,7 +7806,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-31",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51921771.0,
@@ -6146,7 +7820,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000602",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51264820.0,
@@ -6157,7 +7834,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000602",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-21",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 51994091.0,
@@ -6168,7 +7848,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000602",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51736982.0,
@@ -6179,7 +7862,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-02-18",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52143120.0,
@@ -6190,7 +7876,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52093104.0,
@@ -6201,7 +7890,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51706939.0,
@@ -6212,7 +7904,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000602",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51646322.0,
@@ -6223,7 +7918,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51116093.0,
@@ -6234,7 +7932,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000605",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-06",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51481637.0,
@@ -6245,7 +7946,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000603",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-11-14",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51764065.0,
@@ -6256,7 +7960,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-12-13",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51966562.0,
@@ -6267,7 +7974,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000602",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-11-27",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51916845.0,
@@ -6278,7 +7988,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000602",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51581614.0,
@@ -6289,7 +8002,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51977923.0,
@@ -6300,7 +8016,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51417580.0,
@@ -6311,7 +8030,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51619041.0,
@@ -6322,7 +8044,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-27",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51382144.0,
@@ -6333,7 +8058,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-09-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52110073.0,
@@ -6344,7 +8072,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52014567.0,
@@ -6355,7 +8086,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52144942.0,
@@ -6366,7 +8100,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000602",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52011422.0,
@@ -6377,7 +8114,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52140164.0,
@@ -6388,7 +8128,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51803654.0,
@@ -6399,7 +8142,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000603",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51632072.0,
@@ -6410,7 +8156,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51993359.0,
@@ -6421,7 +8170,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51404697.0,
@@ -6432,7 +8184,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-12-13",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52012907.0,
@@ -6443,7 +8198,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000603",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-25",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52108240.0,
@@ -6454,7 +8212,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000602",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51002639.0,
@@ -6465,7 +8226,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000602",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52153937.0,
@@ -6476,7 +8240,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000603",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-20",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52048372.0,
@@ -6487,7 +8254,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000604",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-14",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50165732.0,
@@ -6498,7 +8268,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000602",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-23",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51217705.0,
@@ -6509,7 +8282,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000603",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-20",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51993601.0,
@@ -6520,7 +8296,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-25",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52155147.0,
@@ -6531,7 +8310,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000601",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-26",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51923594.0,
@@ -6542,7 +8324,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000605",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51524283.0,
@@ -6553,7 +8338,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000605",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52256924.0,
@@ -6564,7 +8352,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000605",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2026-01-07",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52334730.0,
@@ -6575,7 +8366,10 @@ const SUSPENSION_TARGETS = [
     "branch": "남양주지사",
     "manager": "G000605",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2026-01-22",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52028828.0,
@@ -6586,7 +8380,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-21",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52205640.0,
@@ -6597,7 +8394,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-30",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51922393.0,
@@ -6608,7 +8408,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51658719.0,
@@ -6619,7 +8422,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51210780.0,
@@ -6630,7 +8436,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000102",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51780035.0,
@@ -6641,7 +8450,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000102",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-27",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51783437.0,
@@ -6652,7 +8464,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-10",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51861553.0,
@@ -6663,7 +8478,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-16",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52032058.0,
@@ -6674,7 +8492,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51363996.0,
@@ -6685,7 +8506,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50801614.0,
@@ -6696,7 +8520,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000102",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51798951.0,
@@ -6707,7 +8534,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51214817.0,
@@ -6718,7 +8548,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51650221.0,
@@ -6729,7 +8562,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51750689.0,
@@ -6740,7 +8576,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000102",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51750288.0,
@@ -6751,7 +8590,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000102",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-03",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51650229.0,
@@ -6762,7 +8604,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52002201.0,
@@ -6773,7 +8618,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-28",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51345220.0,
@@ -6784,7 +8632,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52029353.0,
@@ -6795,7 +8646,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51621482.0,
@@ -6806,7 +8660,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52049274.0,
@@ -6817,7 +8674,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000101",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-28",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51779131.0,
@@ -6828,7 +8688,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-30",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52247520.0,
@@ -6839,7 +8702,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-23",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52000891.0,
@@ -6850,7 +8716,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-20",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51810681.0,
@@ -6861,7 +8730,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000102",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52058489.0,
@@ -6872,7 +8744,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52021300.0,
@@ -6883,7 +8758,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51839654.0,
@@ -6894,7 +8772,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52205579.0,
@@ -6905,7 +8786,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-12",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52038107.0,
@@ -6916,7 +8800,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52109313.0,
@@ -6927,7 +8814,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52151802.0,
@@ -6938,7 +8828,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51456841.0,
@@ -6949,7 +8842,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52005185.0,
@@ -6960,7 +8856,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52133127.0,
@@ -6971,7 +8870,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51824675.0,
@@ -6982,7 +8884,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51649000.0,
@@ -6993,7 +8898,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52152118.0,
@@ -7004,7 +8912,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51738849.0,
@@ -7015,7 +8926,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52094077.0,
@@ -7026,7 +8940,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000102",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 50540614.0,
@@ -7037,7 +8954,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000102",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-27",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50277444.0,
@@ -7048,7 +8968,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-27",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52012743.0,
@@ -7059,7 +8982,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52149072.0,
@@ -7070,7 +8996,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52149972.0,
@@ -7081,7 +9010,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-20",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51993223.0,
@@ -7092,7 +9024,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51545888.0,
@@ -7103,7 +9038,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000102",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 50419632.0,
@@ -7114,7 +9052,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-18",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52032205.0,
@@ -7125,7 +9066,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-20",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52298351.0,
@@ -7136,7 +9080,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-29",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52020356.0,
@@ -7147,7 +9094,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51996973.0,
@@ -7158,7 +9108,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52111299.0,
@@ -7169,7 +9122,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51606867.0,
@@ -7180,7 +9136,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000102",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 50800027.0,
@@ -7191,7 +9150,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52111484.0,
@@ -7202,7 +9164,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52110249.0,
@@ -7213,7 +9178,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-22",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52128966.0,
@@ -7224,7 +9192,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51377805.0,
@@ -7235,7 +9206,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-21",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52002885.0,
@@ -7246,7 +9220,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52040420.0,
@@ -7257,7 +9234,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52047147.0,
@@ -7268,7 +9248,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000102",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 50570566.0,
@@ -7279,7 +9262,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52114956.0,
@@ -7290,7 +9276,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52050089.0,
@@ -7301,7 +9290,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51981724.0,
@@ -7312,7 +9304,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-28",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52234445.0,
@@ -7323,7 +9318,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-25",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51508972.0,
@@ -7334,7 +9332,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52090973.0,
@@ -7345,7 +9346,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-09-30",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52137569.0,
@@ -7356,7 +9360,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52082521.0,
@@ -7367,7 +9374,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-17",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52044500.0,
@@ -7378,7 +9388,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52116335.0,
@@ -7389,7 +9402,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-29",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51210775.0,
@@ -7400,7 +9416,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000102",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52292032.0,
@@ -7411,7 +9430,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000101",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-10",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51736170.0,
@@ -7422,7 +9444,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-21",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51602930.0,
@@ -7433,7 +9458,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52192302.0,
@@ -7444,7 +9472,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-19",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51455319.0,
@@ -7455,7 +9486,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000102",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52185577.0,
@@ -7466,7 +9500,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51633866.0,
@@ -7477,7 +9514,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-13",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52054599.0,
@@ -7488,7 +9528,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000102",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-09-25",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51138890.0,
@@ -7499,7 +9542,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000102",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52177808.0,
@@ -7510,7 +9556,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-16",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52065094.0,
@@ -7521,7 +9570,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52093036.0,
@@ -7532,7 +9584,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51920098.0,
@@ -7543,7 +9598,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-26",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51053594.0,
@@ -7554,7 +9612,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000102",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-16",
+    "is_arrears": "N",
+    "action_date": "2026-03-01"
   },
   {
     "id": 52288266.0,
@@ -7565,7 +9626,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-26",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50835484.0,
@@ -7576,7 +9640,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-27",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52121859.0,
@@ -7587,7 +9654,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-13",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50834324.0,
@@ -7598,7 +9668,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000104",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-04",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52073503.0,
@@ -7609,7 +9682,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2026-01-13",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52179025.0,
@@ -7620,7 +9696,10 @@ const SUSPENSION_TARGETS = [
     "branch": "강릉지사",
     "manager": "P000103",
     "is_defect": NaN,
-    "type": "설변"
+    "type": "설변",
+    "event_date": "2026-01-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51941835.0,
@@ -7631,7 +9710,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51500397.0,
@@ -7642,7 +9724,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52220114.0,
@@ -7653,7 +9738,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-30",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51685030.0,
@@ -7664,7 +9752,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-09-03",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51608263.0,
@@ -7675,7 +9766,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 50471342.0,
@@ -7686,7 +9780,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52291929.0,
@@ -7697,7 +9794,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52271563.0,
@@ -7708,7 +9808,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51863154.0,
@@ -7719,7 +9822,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-16",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52066669.0,
@@ -7730,7 +9836,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51793425.0,
@@ -7741,7 +9850,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-03",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52059925.0,
@@ -7752,7 +9864,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000208",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-12",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52216992.0,
@@ -7763,7 +9878,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-28",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51541621.0,
@@ -7774,7 +9892,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51667503.0,
@@ -7785,7 +9906,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51900023.0,
@@ -7796,7 +9920,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 50680791.0,
@@ -7807,7 +9934,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52023851.0,
@@ -7818,7 +9948,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51799767.0,
@@ -7829,7 +9962,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-29",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51598126.0,
@@ -7840,7 +9976,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-20",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51942535.0,
@@ -7851,7 +9990,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-08",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51955195.0,
@@ -7862,7 +10004,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-16",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52140661.0,
@@ -7873,7 +10018,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52098705.0,
@@ -7884,7 +10032,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52247355.0,
@@ -7895,7 +10046,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52231373.0,
@@ -7906,7 +10060,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51432104.0,
@@ -7917,7 +10074,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51337468.0,
@@ -7928,7 +10088,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52119702.0,
@@ -7939,7 +10102,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 50864211.0,
@@ -7950,7 +10116,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51870136.0,
@@ -7961,7 +10130,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51991934.0,
@@ -7972,7 +10144,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51967871.0,
@@ -7983,7 +10158,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52011933.0,
@@ -7994,7 +10172,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52151753.0,
@@ -8005,7 +10186,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51204253.0,
@@ -8016,7 +10200,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 50894561.0,
@@ -8027,7 +10214,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51694302.0,
@@ -8038,7 +10228,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52136299.0,
@@ -8049,7 +10242,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-09-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52133773.0,
@@ -8060,7 +10256,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-02",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52020415.0,
@@ -8071,7 +10270,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52072336.0,
@@ -8082,7 +10284,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51660051.0,
@@ -8093,7 +10298,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51867684.0,
@@ -8104,7 +10312,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52136122.0,
@@ -8115,7 +10326,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52128185.0,
@@ -8126,7 +10340,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51949874.0,
@@ -8137,7 +10354,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51338048.0,
@@ -8148,7 +10368,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51700142.0,
@@ -8159,7 +10382,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000208",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-16",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51557379.0,
@@ -8170,7 +10396,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51594795.0,
@@ -8181,7 +10410,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51669563.0,
@@ -8192,7 +10424,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51427792.0,
@@ -8203,7 +10438,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-03",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52000983.0,
@@ -8214,7 +10452,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52117080.0,
@@ -8225,7 +10466,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51794186.0,
@@ -8236,7 +10480,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-29",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50528535.0,
@@ -8247,7 +10494,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-04-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52228010.0,
@@ -8258,7 +10508,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51530840.0,
@@ -8269,7 +10522,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51652199.0,
@@ -8280,7 +10536,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-25",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51338023.0,
@@ -8291,7 +10550,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52212591.0,
@@ -8302,7 +10564,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51413724.0,
@@ -8313,7 +10578,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000208",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51822825.0,
@@ -8324,7 +10592,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-23",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52137619.0,
@@ -8335,7 +10606,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51822161.0,
@@ -8346,7 +10620,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-11-04",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52258132.0,
@@ -8357,7 +10634,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52126022.0,
@@ -8368,7 +10648,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-20",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51317990.0,
@@ -8379,7 +10662,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-11-14",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51646082.0,
@@ -8390,7 +10676,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-05-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51811566.0,
@@ -8401,7 +10690,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52059962.0,
@@ -8412,7 +10704,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000208",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-12",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52135555.0,
@@ -8423,7 +10718,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52243095.0,
@@ -8434,7 +10732,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-27",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52269225.0,
@@ -8445,7 +10746,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51530025.0,
@@ -8456,7 +10760,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51371061.0,
@@ -8467,7 +10774,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51349408.0,
@@ -8478,7 +10788,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51768495.0,
@@ -8489,7 +10802,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52041268.0,
@@ -8500,7 +10816,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-09-16",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51334071.0,
@@ -8511,7 +10830,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51372253.0,
@@ -8522,7 +10844,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52139120.0,
@@ -8533,7 +10858,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52143563.0,
@@ -8544,7 +10872,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000208",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51829349.0,
@@ -8555,7 +10886,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-03-18",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51596902.0,
@@ -8566,7 +10900,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-05-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51448689.0,
@@ -8577,7 +10914,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-11-13",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51575277.0,
@@ -8588,7 +10928,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000208",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52093658.0,
@@ -8599,7 +10942,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52136961.0,
@@ -8610,7 +10956,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51611706.0,
@@ -8621,7 +10970,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52152091.0,
@@ -8632,7 +10984,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000208",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52100788.0,
@@ -8643,7 +10998,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51998456.0,
@@ -8654,7 +11012,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51864856.0,
@@ -8665,7 +11026,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51799708.0,
@@ -8676,7 +11040,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-29",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51809550.0,
@@ -8687,7 +11054,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51801057.0,
@@ -8698,7 +11068,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000208",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51551897.0,
@@ -8709,7 +11082,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000208",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-09-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 50528451.0,
@@ -8720,7 +11096,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-04-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51360458.0,
@@ -8731,7 +11110,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-04-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51687757.0,
@@ -8742,7 +11124,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52120601.0,
@@ -8753,7 +11138,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51949926.0,
@@ -8764,7 +11152,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51630485.0,
@@ -8775,7 +11166,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51589526.0,
@@ -8786,7 +11180,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52003828.0,
@@ -8797,7 +11194,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-16",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51679439.0,
@@ -8808,7 +11208,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52093493.0,
@@ -8819,7 +11222,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-04-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51995584.0,
@@ -8830,7 +11236,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-12-11",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51787853.0,
@@ -8841,7 +11250,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51503211.0,
@@ -8852,7 +11264,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51906141.0,
@@ -8863,7 +11278,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-04",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51989408.0,
@@ -8874,7 +11292,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51823751.0,
@@ -8885,7 +11306,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-03",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52093057.0,
@@ -8896,7 +11320,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000208",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-09-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51776595.0,
@@ -8907,7 +11334,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51667770.0,
@@ -8918,7 +11348,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52112188.0,
@@ -8929,7 +11362,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51796613.0,
@@ -8940,7 +11376,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52012725.0,
@@ -8951,7 +11390,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 50388246.0,
@@ -8962,7 +11404,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52093421.0,
@@ -8973,7 +11418,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52167951.0,
@@ -8984,7 +11432,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-25",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51644663.0,
@@ -8995,7 +11446,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52247380.0,
@@ -9006,7 +11460,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52030749.0,
@@ -9017,7 +11474,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51308323.0,
@@ -9028,7 +11488,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51854111.0,
@@ -9039,7 +11502,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 50420045.0,
@@ -9050,7 +11516,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-09-12",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51679035.0,
@@ -9061,7 +11530,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-09-09",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51599571.0,
@@ -9072,7 +11544,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52047090.0,
@@ -9083,7 +11558,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-06",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51338001.0,
@@ -9094,7 +11572,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51695500.0,
@@ -9105,7 +11586,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51697280.0,
@@ -9116,7 +11600,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52118496.0,
@@ -9127,7 +11614,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51710747.0,
@@ -9138,7 +11628,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51867372.0,
@@ -9149,7 +11642,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52305018.0,
@@ -9160,7 +11656,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-17",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51995392.0,
@@ -9171,7 +11670,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-03",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52154176.0,
@@ -9182,7 +11684,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-09-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51642168.0,
@@ -9193,7 +11698,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52120010.0,
@@ -9204,7 +11712,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000208",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52233778.0,
@@ -9215,7 +11726,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52130170.0,
@@ -9226,7 +11740,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51765891.0,
@@ -9237,7 +11754,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000208",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52112969.0,
@@ -9248,7 +11768,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51460681.0,
@@ -9259,7 +11782,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-11-15",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51137803.0,
@@ -9270,7 +11796,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-10",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52112238.0,
@@ -9281,7 +11810,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51957517.0,
@@ -9292,7 +11824,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51521736.0,
@@ -9303,7 +11838,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51752098.0,
@@ -9314,7 +11852,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-10-15",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52127187.0,
@@ -9325,7 +11866,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51452275.0,
@@ -9336,7 +11880,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51993149.0,
@@ -9347,7 +11894,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-09-11",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 50815588.0,
@@ -9358,7 +11908,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-30",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51882989.0,
@@ -9369,7 +11922,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51660040.0,
@@ -9380,7 +11936,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000208",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-07-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51959222.0,
@@ -9391,7 +11950,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-30",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51792369.0,
@@ -9402,7 +11964,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51687548.0,
@@ -9413,7 +11978,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52171051.0,
@@ -9424,7 +11992,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51724865.0,
@@ -9435,7 +12006,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-12-02",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52137089.0,
@@ -9446,7 +12020,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52265589.0,
@@ -9457,7 +12034,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-24",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51602205.0,
@@ -9468,7 +12048,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000208",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51993217.0,
@@ -9479,7 +12062,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51009933.0,
@@ -9490,7 +12076,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-04-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51800581.0,
@@ -9501,7 +12090,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-11-12",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51624206.0,
@@ -9512,7 +12104,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51379116.0,
@@ -9523,7 +12118,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000208",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-12",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51935732.0,
@@ -9534,7 +12132,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-11",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51355043.0,
@@ -9545,7 +12146,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-30",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51277442.0,
@@ -9556,7 +12160,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51935252.0,
@@ -9567,7 +12174,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51785963.0,
@@ -9578,7 +12188,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52094034.0,
@@ -9589,7 +12202,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51872244.0,
@@ -9600,7 +12216,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51830677.0,
@@ -9611,7 +12230,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2024-09-11",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52203913.0,
@@ -9622,7 +12244,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52112139.0,
@@ -9633,7 +12258,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51931129.0,
@@ -9644,7 +12272,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000301",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52082612.0,
@@ -9655,7 +12286,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51987793.0,
@@ -9666,7 +12300,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52110150.0,
@@ -9677,7 +12314,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51823043.0,
@@ -9688,7 +12328,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-01-11",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52137973.0,
@@ -9699,7 +12342,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": "대상",
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-02-28",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51831063.0,
@@ -9710,7 +12356,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52200391.0,
@@ -9721,7 +12370,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51724914.0,
@@ -9732,7 +12384,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51911305.0,
@@ -9743,7 +12398,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52291808.0,
@@ -9754,7 +12412,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51935969.0,
@@ -9765,7 +12426,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-12-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51807580.0,
@@ -9776,7 +12440,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-06-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52137353.0,
@@ -9787,7 +12454,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52155961.0,
@@ -9798,7 +12468,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52178601.0,
@@ -9809,7 +12482,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000208",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51261366.0,
@@ -9820,7 +12496,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-10-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52093710.0,
@@ -9831,7 +12510,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51592611.0,
@@ -9842,7 +12524,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000207",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-11-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52115938.0,
@@ -9853,7 +12538,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-01-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51483757.0,
@@ -9864,7 +12552,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000201",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52108858.0,
@@ -9875,7 +12566,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 52002467.0,
@@ -9886,7 +12580,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000206",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2025-08-01",
+    "is_arrears": "Y",
+    "action_date": ""
   },
   {
     "id": 51906536.0,
@@ -9897,7 +12594,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000202",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-26",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51811891.0,
@@ -9908,7 +12608,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000209",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-10",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 52126770.0,
@@ -9919,7 +12622,10 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000203",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-28",
+    "is_arrears": "N",
+    "action_date": ""
   },
   {
     "id": 51223254.0,
@@ -9930,6 +12636,9 @@ const SUSPENSION_TARGETS = [
     "branch": "원주지사",
     "manager": "P000208",
     "is_defect": NaN,
-    "type": "정지"
+    "type": "정지",
+    "event_date": "2026-02-21",
+    "is_arrears": "N",
+    "action_date": ""
   }
 ];
