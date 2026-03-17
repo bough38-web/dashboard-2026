@@ -1341,6 +1341,8 @@
                 title: target.name
             });
 
+            const category = activeSuspensionType === 'voc' ? '사전리텐션' : (activeSuspensionType === 'defect' ? '부실' : '정지');
+
             const infoWindow = new google.maps.InfoWindow({
                 content: `
                     <div style="padding:15px; width:220px; font-family: Pretendard, sans-serif;">
@@ -1359,7 +1361,7 @@
                                style="display:block; flex:1; background:#4f46e5; color:white; border-radius:6px; padding:8px; text-decoration:none; font-size:12px; font-weight:bold; text-align:center;">
                                길찾기
                             </a>
-                            <button onclick="openProgressModal('${target.contractNo}', '${target.name.replace(/'/g, "\\'")}')" 
+                            <button onclick="openProgressModal('${target.contractNo}', '${target.name.replace(/'/g, "\\'")}', '${category}')" 
                                style="display:block; flex:1; background:#10b981; color:white; border-radius:6px; padding:8px; border:none; font-size:12px; font-weight:bold; cursor:pointer;">
                                진행등록
                             </button>
@@ -1513,7 +1515,7 @@
                     </div>
                     <div style="margin-top:10px; display:flex; gap:5px;">
                         <a href="https://www.google.com/maps/dir/?api=1&destination=${item.lat},${item.lng}" target="_blank" style="background:#4f46e5; color:white; border-radius:4px; padding:6px 12px; text-decoration:none; font-size:11px; font-weight:bold; flex:1; text-align:center;">길찾기</a>
-                        <button onclick="openProgressModal('${item.contractNo}', '${item.name.replace(/'/g, "\\'")}')" style="background:#10b981; color:white; border-radius:4px; border:none; padding:6px 12px; font-size:11px; font-weight:bold; flex:1; cursor:pointer;">진행등록</button>
+                        <button onclick="openProgressModal('${item.contractNo}', '${item.name.replace(/'/g, "\\'")}', '${item.status}')" style="background:#10b981; color:white; border-radius:4px; border:none; padding:6px 12px; font-size:11px; font-weight:bold; flex:1; cursor:pointer;">진행등록</button>
                     </div>
                 </div>
             `;
@@ -1808,11 +1810,13 @@
 
     // --- Progress & Admin Interaction ---
     let currentEditingId = null;
+    let currentEditingCategory = '';
     const PROGRESS_STORAGE_KEY = 'dashboard_targets_progress_2026';
 
-    window.openProgressModal = function(contractNo, name) {
+    window.openProgressModal = function(contractNo, name, category) {
         currentEditingId = contractNo;
-        document.getElementById('modal-customer-name').textContent = `고객명: ${name} (${contractNo})`;
+        currentEditingCategory = category || '기타';
+        document.getElementById('modal-customer-name').textContent = `고객명: ${name} (${contractNo}) | 구분: ${currentEditingCategory}`;
         document.getElementById('reg-date').value = new Date().toISOString().split('T')[0];
         
         // Load existing if available
@@ -1850,6 +1854,7 @@
             date,
             summary,
             detail,
+            category: currentEditingCategory,
             contractNo: currentEditingId,
             name: target ? target.name : 'Unknown',
             branch: target ? target.branch : '-',
@@ -1912,6 +1917,7 @@
                 <td style="white-space:nowrap;">${rec.date}</td>
                 <td>${rec.branch}</td>
                 <td>${rec.manager}</td>
+                <td style="font-weight:600; color:#475569;">${rec.category || '-'}</td>
                 <td>${rec.contractNo || '-'}</td>
                 <td style="font-weight:700;">${rec.name}</td>
                 <td><span class="status-tag ${statusClass}">${rec.summary}</span></td>
@@ -1937,10 +1943,10 @@
             return;
         }
         
-        let csvContent = "\ufeff등록일,지사,담당자,계약번호,고객명,진행요약,상세내역\n";
+        let csvContent = "\ufeff등록일,지사,담당자,구분,계약번호,고객명,진행요약,상세내역\n";
         records.forEach(rec => {
             const detailCsv = (rec.detail || '').replace(/"/g, '""').replace(/\n/g, ' ');
-            csvContent += `"${rec.date}","${rec.branch}","${rec.manager}","${rec.contractNo || ''}","${rec.name}","${rec.summary}","${detailCsv}"\n`;
+            csvContent += `"${rec.date}","${rec.branch}","${rec.manager}","${rec.category || ''}","${rec.contractNo || ''}","${rec.name}","${rec.summary}","${detailCsv}"\n`;
         });
         
         const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
@@ -2005,6 +2011,7 @@
                         <th>등록일</th>
                         <th>지사</th>
                         <th>담당자</th>
+                        <th>구분</th>
                         <th>계약번호</th>
                         <th>고객명</th>
                         <th>진행요약</th>
