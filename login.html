@@ -311,12 +311,19 @@
             return;
         }
 
-        // Use a Set to handle potential duplicates in data if they have same masked name and ID
-        const filtered = AUTH_CONFIG.managers.filter(m => m.branch === branch);
+        // Deduplicate by name to prevent multiple entries for the same person
+        const seenNames = new Set();
+        const filtered = AUTH_CONFIG.managers.filter(m => {
+            if (m.branch === branch && !seenNames.has(m.name)) {
+                seenNames.add(m.name);
+                return true;
+            }
+            return false;
+        });
+
         filtered.forEach(m => {
             const opt = document.createElement('option');
             opt.value = m.id;
-            // Mask name and remove ID from display text
             opt.textContent = maskName(m.name);
             managerSelect.appendChild(opt);
         });
