@@ -348,7 +348,7 @@
             if (manager && manager.pw === pw) {
                 saveSession(role, manager);
             } else {
-                showError('비밀번호가 틀렸거나 담당자를 선택하지 않았습니다.');
+                showError('비밀번호가 틀렸거나 영업구역번호를 선택하지 않았습니다.');
             }
         } else if (role === 'branch') {
             const branch = document.getElementById('branch-only-select').value;

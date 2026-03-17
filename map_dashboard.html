@@ -863,6 +863,7 @@
 <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
 <!-- Target Data (Cache Buster Added) -->
 <script src="data/targets.js?v=202603130700"></script>
+<script src="data/auth_config.js"></script>
 <script src="data/suspension_targets.js"></script>
 <script src="data/voc_targets.js"></script>
 
@@ -978,7 +979,7 @@
     function loadGoogleMap(key) {
         debugLog('Loading Google Maps SDK...');
         const script = document.createElement('script');
-        script.src = `https://maps.googleapis.com/maps/api/js?key=${key}&libraries=geometry,marker&callback=initMap`;
+        script.src = `https://maps.googleapis.com/maps/api/js?key=${key}&libraries=geometry&callback=initMap`;
         script.async = true;
         
         script.onerror = () => {
@@ -998,8 +999,7 @@
                 mapTypeControl: false,
                 streetViewControl: false,
                 fullscreenControl: false,
-                gestureHandling: 'greedy',
-                mapId: 'DEMO_MAP_ID' // Added Map ID to resolve Advanced Marker warnings
+                gestureHandling: 'greedy'
             };
             
             try {
@@ -1031,6 +1031,7 @@
         const ref = document.referrer;
         const isFromMain = ref && (
             ref.includes('index.html') || 
+            ref.includes('login.html') || 
             ref.includes('2026%EB%85%84') || 
             ref.includes('2026년') ||
             ref.endsWith('dashboard-2026/') ||
@@ -1478,7 +1479,7 @@
         if (data.length > 100) {
             const more = document.createElement('p');
             more.style.cssText = 'text-align:center; font-size:12px; color:var(--text-sub); padding:10px;';
-            more.textContent = `...외 ${data.length - 100}건 더 있음 (담당자 필터를 사용하세요)`;
+            more.textContent = `...외 ${data.length - 100}건 더 있음 (영업구역 필터를 사용하세요)`;
             listContainer.appendChild(more);
         }
 
@@ -2000,7 +2001,7 @@
             return;
         }
         
-        let csvContent = "\ufeff등록일,지사,담당자,구분,계약번호,고객명,진행요약,상세내역\n";
+        let csvContent = "\ufeff등록일,지사,영업구역,구분,계약번호,고객명,진행요약,상세내역\n";
         records.forEach(rec => {
             const detailCsv = (rec.detail || '').replace(/"/g, '""').replace(/\n/g, ' ');
             csvContent += `"${rec.date}","${rec.branch}","${rec.manager}","${rec.category || ''}","${rec.contractNo || ''}","${rec.name}","${rec.summary}","${detailCsv}"\n`;

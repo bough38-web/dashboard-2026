@@ -12,17 +12,13 @@ def process_data():
     
     # Load mapping data
     df_map = pd.read_excel(MAPPING_EXCEL)
-    mapping = df_map[['영업구역 수정', 'SP담당']].drop_duplicates().set_index('영업구역 수정')['SP담당'].to_dict()
-    
-    # Map manager names
-    df_susp['담당자'] = df_susp['영업구역정보'].map(mapping)
-    
-    # Fill NaN for 담당자
-    df_susp['담당자'] = df_susp['담당자'].fillna('미지정')
+    # Use '영업구역정보' as manager (which is the Area Number)
+    df_susp['manager_code'] = df_susp['영업구역정보'].str.strip()
+    df_susp['manager_code'] = df_susp['manager_code'].fillna('미지정')
     
     # Select and rename columns
     # '계약번호', '상호', '설치주소', '위도', '경도', '지사', '담당자', '부실여부(체납제외)', '조회구분'
-    df_final = df_susp[['계약번호', '상호', '설치주소', '위도', '경도', '지사', '담당자', '부실여부(체납제외)', '조회구분']].copy()
+    df_final = df_susp[['계약번호', '상호', '설치주소', '위도', '경도', '지사', 'manager_code', '부실여부(체납제외)', '조회구분']].copy()
     df_final.columns = ['id', 'name', 'address', 'lat', 'lng', 'branch', 'manager', 'is_defect', 'type']
     
     # Clean up branch names (Remove '지사' suffix if inconsistent, but targets.js uses '중앙지사' style often)

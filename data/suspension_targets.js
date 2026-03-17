@@ -6,7 +6,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5631543777159,
     "lng": 126.998095775283,
     "branch": "중앙지사",
-    "manager": "양현성",
+    "manager": "G000410",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -17,7 +17,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5713662807632,
     "lng": 126.965902780069,
     "branch": "중앙지사",
-    "manager": "송민철",
+    "manager": "G000401",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -28,7 +28,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5610305661136,
     "lng": 126.982150890104,
     "branch": "중앙지사",
-    "manager": "김병조",
+    "manager": "G000402",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -39,7 +39,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5747191849517,
     "lng": 126.99162176848,
     "branch": "중앙지사",
-    "manager": "문성진",
+    "manager": "G000407",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -50,7 +50,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "중앙지사",
-    "manager": "문성진",
+    "manager": "G000407",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -61,7 +61,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5649715098654,
     "lng": 127.016719643934,
     "branch": "중앙지사",
-    "manager": "김주택",
+    "manager": "G000409",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -72,7 +72,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5669261487684,
     "lng": 127.013790252156,
     "branch": "중앙지사",
-    "manager": "김주택",
+    "manager": "G000409",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -83,7 +83,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5635351528057,
     "lng": 127.016640206198,
     "branch": "중앙지사",
-    "manager": "김주택",
+    "manager": "G000409",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -94,7 +94,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5748267527679,
     "lng": 126.97294014474,
     "branch": "중앙지사",
-    "manager": "송민철",
+    "manager": "G000401",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -105,7 +105,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.561008996412,
     "lng": 126.983132520738,
     "branch": "중앙지사",
-    "manager": "김병조",
+    "manager": "G000402",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -116,7 +116,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5748267527679,
     "lng": 126.97294014474,
     "branch": "중앙지사",
-    "manager": "송민철",
+    "manager": "G000401",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -127,7 +127,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5654277932172,
     "lng": 126.993592061941,
     "branch": "중앙지사",
-    "manager": "양현성",
+    "manager": "G000410",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -138,7 +138,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5642965838068,
     "lng": 127.00925528009,
     "branch": "중앙지사",
-    "manager": "양현성",
+    "manager": "G000410",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -149,7 +149,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5751358488042,
     "lng": 126.990994576359,
     "branch": "중앙지사",
-    "manager": "문성진",
+    "manager": "G000407",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -160,7 +160,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5624227137843,
     "lng": 126.995931151636,
     "branch": "중앙지사",
-    "manager": "양현성",
+    "manager": "G000410",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -171,7 +171,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.563127984391,
     "lng": 127.00149653176,
     "branch": "중앙지사",
-    "manager": "양현성",
+    "manager": "G000410",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -182,7 +182,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5642965838068,
     "lng": 127.00925528009,
     "branch": "중앙지사",
-    "manager": "양현성",
+    "manager": "G000410",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -193,7 +193,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5556961980158,
     "lng": 127.011422172387,
     "branch": "중앙지사",
-    "manager": "김주택",
+    "manager": "G000409",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -204,7 +204,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5688231677469,
     "lng": 127.010563112968,
     "branch": "중앙지사",
-    "manager": "김주택",
+    "manager": "G000409",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -215,7 +215,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5748267527679,
     "lng": 126.97294014474,
     "branch": "중앙지사",
-    "manager": "송민철",
+    "manager": "G000401",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -226,7 +226,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5762732678424,
     "lng": 126.988918035665,
     "branch": "중앙지사",
-    "manager": "문성진",
+    "manager": "G000407",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -237,7 +237,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5669580251858,
     "lng": 126.991816307232,
     "branch": "중앙지사",
-    "manager": "김병조",
+    "manager": "G000402",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -248,7 +248,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5669580251858,
     "lng": 126.991816307232,
     "branch": "중앙지사",
-    "manager": "김병조",
+    "manager": "G000402",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -259,7 +259,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.576914672646,
     "lng": 127.015240336319,
     "branch": "중앙지사",
-    "manager": "김주택",
+    "manager": "G000409",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -270,7 +270,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5648098108629,
     "lng": 126.981089534575,
     "branch": "중앙지사",
-    "manager": "송민철",
+    "manager": "G000401",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -281,7 +281,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5732405418928,
     "lng": 126.985763819704,
     "branch": "중앙지사",
-    "manager": "김병조",
+    "manager": "G000402",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -292,7 +292,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "중앙지사",
-    "manager": "김병조",
+    "manager": "G000402",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -303,7 +303,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5180494083878,
     "lng": 126.978703263669,
     "branch": "중앙지사",
-    "manager": "오광훈",
+    "manager": "G000403",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -314,7 +314,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5642965838068,
     "lng": 127.00925528009,
     "branch": "중앙지사",
-    "manager": "양현성",
+    "manager": "G000410",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -325,7 +325,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "중앙지사",
-    "manager": "송민철",
+    "manager": "G000401",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -336,7 +336,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5680866682899,
     "lng": 126.996644974914,
     "branch": "중앙지사",
-    "manager": "김병조",
+    "manager": "G000402",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -347,7 +347,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5740908260293,
     "lng": 126.99724297585,
     "branch": "중앙지사",
-    "manager": "문성진",
+    "manager": "G000407",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -358,7 +358,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5735493028509,
     "lng": 126.990067087291,
     "branch": "중앙지사",
-    "manager": "문성진",
+    "manager": "G000407",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -369,7 +369,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5754581708464,
     "lng": 126.969963905964,
     "branch": "중앙지사",
-    "manager": "송민철",
+    "manager": "G000401",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -380,7 +380,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5547988171247,
     "lng": 127.043757193543,
     "branch": "중앙지사",
-    "manager": "권대호",
+    "manager": "G000404",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -391,7 +391,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5748267527679,
     "lng": 126.97294014474,
     "branch": "중앙지사",
-    "manager": "송민철",
+    "manager": "G000401",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -402,7 +402,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5302525815989,
     "lng": 126.992926782247,
     "branch": "중앙지사",
-    "manager": "오광훈",
+    "manager": "G000403",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -413,7 +413,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5656919721934,
     "lng": 127.041474320026,
     "branch": "중앙지사",
-    "manager": "김윤정",
+    "manager": "G000408",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -424,7 +424,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5639462204486,
     "lng": 126.984949063178,
     "branch": "중앙지사",
-    "manager": "김병조",
+    "manager": "G000402",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -435,7 +435,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.57650626008,
     "lng": 127.025608266448,
     "branch": "중앙지사",
-    "manager": "김주택",
+    "manager": "G000409",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -446,7 +446,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5887655669609,
     "lng": 127.058791788697,
     "branch": "중앙지사",
-    "manager": "김윤정",
+    "manager": "G000408",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -457,7 +457,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5798667329293,
     "lng": 126.986600654087,
     "branch": "중앙지사",
-    "manager": "문성진",
+    "manager": "G000407",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -468,7 +468,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.587338686406,
     "lng": 127.018019674621,
     "branch": "중앙지사",
-    "manager": "김주택",
+    "manager": "G000409",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -479,7 +479,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5744172415207,
     "lng": 126.968880867164,
     "branch": "중앙지사",
-    "manager": "송민철",
+    "manager": "G000401",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -490,7 +490,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5712595940952,
     "lng": 127.003992468104,
     "branch": "중앙지사",
-    "manager": "김병조",
+    "manager": "G000402",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -501,7 +501,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5770935834669,
     "lng": 126.991730633144,
     "branch": "중앙지사",
-    "manager": "문성진",
+    "manager": "G000407",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -512,7 +512,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5753615408107,
     "lng": 126.982201581367,
     "branch": "중앙지사",
-    "manager": "송민철",
+    "manager": "G000401",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -523,7 +523,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5813656655052,
     "lng": 127.052384251496,
     "branch": "중앙지사",
-    "manager": "남기민",
+    "manager": "G000405",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -534,7 +534,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5745525870897,
     "lng": 126.983795661777,
     "branch": "중앙지사",
-    "manager": "김병조",
+    "manager": "G000402",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -545,7 +545,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5908453048459,
     "lng": 127.016473047485,
     "branch": "중앙지사",
-    "manager": "양현성",
+    "manager": "G000410",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -556,7 +556,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5694423672618,
     "lng": 126.983464656183,
     "branch": "중앙지사",
-    "manager": "김병조",
+    "manager": "G000402",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -567,7 +567,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5597949971559,
     "lng": 126.978204034695,
     "branch": "중앙지사",
-    "manager": "양현성",
+    "manager": "G000410",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -578,7 +578,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5748267527679,
     "lng": 126.97294014474,
     "branch": "중앙지사",
-    "manager": "송민철",
+    "manager": "G000401",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -589,7 +589,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5832111705986,
     "lng": 127.000288585991,
     "branch": "중앙지사",
-    "manager": "문성진",
+    "manager": "G000407",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -600,7 +600,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5657244268666,
     "lng": 127.032498684727,
     "branch": "중앙지사",
-    "manager": "권대호",
+    "manager": "G000404",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -611,7 +611,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5393032977759,
     "lng": 126.990169845174,
     "branch": "중앙지사",
-    "manager": "오광훈",
+    "manager": "G000403",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -622,7 +622,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "중앙지사",
-    "manager": "김주택",
+    "manager": "G000409",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -633,7 +633,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5561801473789,
     "lng": 127.01117586544,
     "branch": "중앙지사",
-    "manager": "김주택",
+    "manager": "G000409",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -644,7 +644,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5488689550872,
     "lng": 127.026236484203,
     "branch": "중앙지사",
-    "manager": "김윤정",
+    "manager": "G000408",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -655,7 +655,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5829643949138,
     "lng": 126.987010050432,
     "branch": "중앙지사",
-    "manager": "문성진",
+    "manager": "G000407",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -666,7 +666,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "중앙지사",
-    "manager": "김주택",
+    "manager": "G000409",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -677,7 +677,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.547705994864,
     "lng": 126.979995396076,
     "branch": "중앙지사",
-    "manager": "오광훈",
+    "manager": "G000403",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -688,7 +688,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5325619217257,
     "lng": 126.990178762886,
     "branch": "중앙지사",
-    "manager": "오광훈",
+    "manager": "G000403",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -699,7 +699,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.570070913847,
     "lng": 127.011954235256,
     "branch": "중앙지사",
-    "manager": "김주택",
+    "manager": "G000409",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -710,7 +710,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5759497041671,
     "lng": 127.032923908685,
     "branch": "중앙지사",
-    "manager": "김윤정",
+    "manager": "G000408",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -721,7 +721,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5718302430066,
     "lng": 127.014737153228,
     "branch": "중앙지사",
-    "manager": "김주택",
+    "manager": "G000409",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -732,7 +732,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5683922853422,
     "lng": 126.996620964302,
     "branch": "중앙지사",
-    "manager": "김병조",
+    "manager": "G000402",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -743,7 +743,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5586280590495,
     "lng": 126.974335039439,
     "branch": "중앙지사",
-    "manager": "송민철",
+    "manager": "G000401",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -754,7 +754,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5744172415207,
     "lng": 126.968880867164,
     "branch": "중앙지사",
-    "manager": "송민철",
+    "manager": "G000401",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -765,7 +765,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5391547758285,
     "lng": 126.988744756427,
     "branch": "중앙지사",
-    "manager": "오광훈",
+    "manager": "G000403",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -776,7 +776,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5694659147977,
     "lng": 127.01494722927,
     "branch": "중앙지사",
-    "manager": "김주택",
+    "manager": "G000409",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -787,7 +787,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "중앙지사",
-    "manager": "김주택",
+    "manager": "G000409",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -798,7 +798,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5358155722818,
     "lng": 127.000645032145,
     "branch": "중앙지사",
-    "manager": "오광훈",
+    "manager": "G000403",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -809,7 +809,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.567367528784,
     "lng": 127.013942236372,
     "branch": "중앙지사",
-    "manager": "김주택",
+    "manager": "G000409",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -820,7 +820,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5628245723522,
     "lng": 127.015032488465,
     "branch": "중앙지사",
-    "manager": "김주택",
+    "manager": "G000409",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -831,7 +831,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5799510168243,
     "lng": 126.9708355197,
     "branch": "중앙지사",
-    "manager": "송민철",
+    "manager": "G000401",
     "is_defect": "대상",
     "type": "설변"
   },
@@ -842,7 +842,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5699244975499,
     "lng": 127.026802373533,
     "branch": "중앙지사",
-    "manager": "김주택",
+    "manager": "G000409",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -853,7 +853,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5621863774738,
     "lng": 127.012908923633,
     "branch": "중앙지사",
-    "manager": "김주택",
+    "manager": "G000409",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -864,7 +864,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5701747583032,
     "lng": 127.008205325492,
     "branch": "중앙지사",
-    "manager": "김병조",
+    "manager": "G000402",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -875,7 +875,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5472701577406,
     "lng": 127.063595796903,
     "branch": "강북지사",
-    "manager": "김형선",
+    "manager": "G000106",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -886,7 +886,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6143219513724,
     "lng": 127.034777597482,
     "branch": "강북지사",
-    "manager": "김의겸",
+    "manager": "G000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -897,7 +897,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6247862444014,
     "lng": 127.02744769596,
     "branch": "강북지사",
-    "manager": "김의겸",
+    "manager": "G000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -908,7 +908,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6360775918862,
     "lng": 127.029284290909,
     "branch": "강북지사",
-    "manager": "김의겸",
+    "manager": "G000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -919,7 +919,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5472852807109,
     "lng": 127.073114007533,
     "branch": "강북지사",
-    "manager": "김형선",
+    "manager": "G000106",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -930,7 +930,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5434002441146,
     "lng": 127.054664230293,
     "branch": "강북지사",
-    "manager": "김형선",
+    "manager": "G000106",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -941,7 +941,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5481878597552,
     "lng": 127.072008387563,
     "branch": "강북지사",
-    "manager": "김형선",
+    "manager": "G000106",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -952,7 +952,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5478463093728,
     "lng": 127.105439571729,
     "branch": "강북지사",
-    "manager": "김형선",
+    "manager": "G000106",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -963,7 +963,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5476667892621,
     "lng": 127.039665514518,
     "branch": "강북지사",
-    "manager": "김형선",
+    "manager": "G000106",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -974,7 +974,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6633498822476,
     "lng": 127.077362000973,
     "branch": "강북지사",
-    "manager": "성진수",
+    "manager": "G000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -985,7 +985,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6028352556546,
     "lng": 127.06677474737,
     "branch": "강북지사",
-    "manager": "김의겸",
+    "manager": "G000103",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -996,7 +996,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.653671837931,
     "lng": 127.050968727102,
     "branch": "강북지사",
-    "manager": "안수호",
+    "manager": "G000102",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1007,7 +1007,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5388588365985,
     "lng": 127.085124386664,
     "branch": "강북지사",
-    "manager": "김형선",
+    "manager": "G000106",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1018,7 +1018,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6136512602729,
     "lng": 127.013697167124,
     "branch": "강북지사",
-    "manager": "김태형",
+    "manager": "G000107",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1029,7 +1029,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6136512602729,
     "lng": 127.013697167124,
     "branch": "강북지사",
-    "manager": "김태형",
+    "manager": "G000107",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1040,7 +1040,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6362485852587,
     "lng": 127.0169336433,
     "branch": "강북지사",
-    "manager": "김의겸",
+    "manager": "G000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1051,7 +1051,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6562320533685,
     "lng": 127.039764900985,
     "branch": "강북지사",
-    "manager": "안수호",
+    "manager": "G000102",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1062,7 +1062,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5568236066222,
     "lng": 127.081375737526,
     "branch": "강북지사",
-    "manager": "김태규",
+    "manager": "G000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1073,7 +1073,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6535650662812,
     "lng": 127.060337784539,
     "branch": "강북지사",
-    "manager": "성진수",
+    "manager": "G000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1084,7 +1084,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6123503529123,
     "lng": 127.013432580772,
     "branch": "강북지사",
-    "manager": "김태형",
+    "manager": "G000107",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1095,7 +1095,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5987411779227,
     "lng": 127.094105480264,
     "branch": "강북지사",
-    "manager": "김태규",
+    "manager": "G000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1106,7 +1106,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6039417187782,
     "lng": 127.101783818356,
     "branch": "강북지사",
-    "manager": "김태규",
+    "manager": "G000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1117,7 +1117,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5435923219192,
     "lng": 127.055661269808,
     "branch": "강북지사",
-    "manager": "김형선",
+    "manager": "G000106",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1128,7 +1128,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5568236066222,
     "lng": 127.081375737526,
     "branch": "강북지사",
-    "manager": "김태규",
+    "manager": "G000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1139,7 +1139,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.607798892998,
     "lng": 127.09681298198,
     "branch": "강북지사",
-    "manager": "김태규",
+    "manager": "G000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1150,7 +1150,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5452934192074,
     "lng": 127.054479015109,
     "branch": "강북지사",
-    "manager": "김형선",
+    "manager": "G000106",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1161,7 +1161,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6463497301111,
     "lng": 127.036649694579,
     "branch": "강북지사",
-    "manager": "안수호",
+    "manager": "G000102",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1172,7 +1172,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6545021055909,
     "lng": 127.049672533607,
     "branch": "강북지사",
-    "manager": "안수호",
+    "manager": "G000102",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1183,7 +1183,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5805079048012,
     "lng": 127.087407478143,
     "branch": "강북지사",
-    "manager": "김태규",
+    "manager": "G000104",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -1194,7 +1194,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6070255747209,
     "lng": 127.030141649291,
     "branch": "강북지사",
-    "manager": "김태형",
+    "manager": "G000107",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1205,7 +1205,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6117237183137,
     "lng": 127.075273914707,
     "branch": "강북지사",
-    "manager": "김태규",
+    "manager": "G000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1216,7 +1216,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.658481761063,
     "lng": 127.061663299326,
     "branch": "강북지사",
-    "manager": "성진수",
+    "manager": "G000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1227,7 +1227,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5672135980611,
     "lng": 127.086976303664,
     "branch": "강북지사",
-    "manager": "김태규",
+    "manager": "G000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1238,7 +1238,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6068452778976,
     "lng": 127.078099937532,
     "branch": "강북지사",
-    "manager": "김태규",
+    "manager": "G000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1249,7 +1249,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6669567609885,
     "lng": 127.079688357716,
     "branch": "강북지사",
-    "manager": "성진수",
+    "manager": "G000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1260,7 +1260,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6426722860917,
     "lng": 127.022135033071,
     "branch": "강북지사",
-    "manager": "김의겸",
+    "manager": "G000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1271,7 +1271,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6220625118578,
     "lng": 127.06134243043,
     "branch": "강북지사",
-    "manager": "성진수",
+    "manager": "G000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1282,7 +1282,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5496436343707,
     "lng": 127.050391960918,
     "branch": "강북지사",
-    "manager": "김형선",
+    "manager": "G000106",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1293,7 +1293,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6509749363334,
     "lng": 127.077163320338,
     "branch": "강북지사",
-    "manager": "성진수",
+    "manager": "G000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1304,7 +1304,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6593321943226,
     "lng": 127.067589732881,
     "branch": "강북지사",
-    "manager": "성진수",
+    "manager": "G000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1315,7 +1315,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5473446340692,
     "lng": 127.040074873837,
     "branch": "강북지사",
-    "manager": "김형선",
+    "manager": "G000106",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1326,7 +1326,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6509749363334,
     "lng": 127.077163320338,
     "branch": "강북지사",
-    "manager": "성진수",
+    "manager": "G000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1337,7 +1337,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6370657429176,
     "lng": 127.025207005073,
     "branch": "강북지사",
-    "manager": "김의겸",
+    "manager": "G000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1348,7 +1348,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6404216829647,
     "lng": 127.022315875332,
     "branch": "강북지사",
-    "manager": "김의겸",
+    "manager": "G000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1359,7 +1359,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6023488282702,
     "lng": 127.095458537893,
     "branch": "강북지사",
-    "manager": "김태규",
+    "manager": "G000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1370,7 +1370,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6206003197888,
     "lng": 127.029431362837,
     "branch": "강북지사",
-    "manager": "김의겸",
+    "manager": "G000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1381,7 +1381,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "강북지사",
-    "manager": "김의겸",
+    "manager": "G000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1392,7 +1392,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6221522438119,
     "lng": 127.015319003728,
     "branch": "강북지사",
-    "manager": "김의겸",
+    "manager": "G000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1403,7 +1403,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6377813679685,
     "lng": 127.024043221909,
     "branch": "강북지사",
-    "manager": "김의겸",
+    "manager": "G000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1414,7 +1414,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5410650683703,
     "lng": 127.084309827264,
     "branch": "강북지사",
-    "manager": "김형선",
+    "manager": "G000106",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1425,7 +1425,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6011414298295,
     "lng": 127.067345561154,
     "branch": "강북지사",
-    "manager": "김의겸",
+    "manager": "G000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1436,7 +1436,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6246025260041,
     "lng": 127.07736759161,
     "branch": "강북지사",
-    "manager": "성진수",
+    "manager": "G000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1447,7 +1447,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5450420629499,
     "lng": 127.055781728956,
     "branch": "강북지사",
-    "manager": "김형선",
+    "manager": "G000106",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -1458,7 +1458,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5434516543845,
     "lng": 127.061342575064,
     "branch": "강북지사",
-    "manager": "김형선",
+    "manager": "G000106",
     "is_defect": "대상",
     "type": "설변"
   },
@@ -1469,7 +1469,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6666931962202,
     "lng": 127.051354379098,
     "branch": "강북지사",
-    "manager": "성진수",
+    "manager": "G000101",
     "is_defect": "대상",
     "type": "설변"
   },
@@ -1480,7 +1480,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6482526872703,
     "lng": 127.015497393467,
     "branch": "강북지사",
-    "manager": "김의겸",
+    "manager": "G000103",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -1491,7 +1491,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5464691611907,
     "lng": 127.052425907727,
     "branch": "강북지사",
-    "manager": "김형선",
+    "manager": "G000106",
     "is_defect": "대상",
     "type": "설변"
   },
@@ -1502,7 +1502,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5437940213396,
     "lng": 127.050527544379,
     "branch": "강북지사",
-    "manager": "김형선",
+    "manager": "G000106",
     "is_defect": "대상",
     "type": "설변"
   },
@@ -1513,7 +1513,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5464691611907,
     "lng": 127.052425907727,
     "branch": "강북지사",
-    "manager": "김형선",
+    "manager": "G000106",
     "is_defect": "대상",
     "type": "설변"
   },
@@ -1524,7 +1524,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6267812637117,
     "lng": 127.03052775851,
     "branch": "강북지사",
-    "manager": "김의겸",
+    "manager": "G000103",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -1535,7 +1535,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6131203732131,
     "lng": 127.112304310516,
     "branch": "강북지사",
-    "manager": "김태규",
+    "manager": "G000104",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -1546,7 +1546,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6131203732131,
     "lng": 127.112304310516,
     "branch": "강북지사",
-    "manager": "김태규",
+    "manager": "G000104",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -1557,7 +1557,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "강북지사",
-    "manager": "김태규",
+    "manager": "G000104",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -1568,7 +1568,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6169574275825,
     "lng": 127.0912920142,
     "branch": "강북지사",
-    "manager": "김태규",
+    "manager": "G000104",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -1579,7 +1579,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6274669977456,
     "lng": 127.024791868062,
     "branch": "강북지사",
-    "manager": "김의겸",
+    "manager": "G000103",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -1590,7 +1590,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6274669977456,
     "lng": 127.024791868062,
     "branch": "강북지사",
-    "manager": "김의겸",
+    "manager": "G000103",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -1601,7 +1601,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5810718164316,
     "lng": 127.093660162338,
     "branch": "강북지사",
-    "manager": "김태규",
+    "manager": "G000104",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -1612,7 +1612,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6121266587044,
     "lng": 126.929270656461,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -1623,7 +1623,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5591154460058,
     "lng": 126.916776275314,
     "branch": "서대문지사",
-    "manager": "안근영",
+    "manager": "G000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1634,7 +1634,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6179253300747,
     "lng": 126.919433051456,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1645,7 +1645,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5536400276825,
     "lng": 126.928963142382,
     "branch": "서대문지사",
-    "manager": "최용호",
+    "manager": "G000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1656,7 +1656,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5559398307995,
     "lng": 126.92661712413,
     "branch": "서대문지사",
-    "manager": "안수호",
+    "manager": "G000205",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -1667,7 +1667,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.599108318215,
     "lng": 126.917433154629,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1678,7 +1678,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "서대문지사",
-    "manager": "안수호",
+    "manager": "G000205",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -1689,7 +1689,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.599108318215,
     "lng": 126.917433154629,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1700,7 +1700,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6114203153696,
     "lng": 126.927102206253,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1711,7 +1711,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5363657780004,
     "lng": 126.953544786661,
     "branch": "서대문지사",
-    "manager": "우동주",
+    "manager": "G000204",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1722,7 +1722,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5637434679597,
     "lng": 126.944083900178,
     "branch": "서대문지사",
-    "manager": "최용호",
+    "manager": "G000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1733,7 +1733,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6061034131745,
     "lng": 126.922461992047,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1744,7 +1744,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5593223078125,
     "lng": 126.964086762905,
     "branch": "서대문지사",
-    "manager": "우동주",
+    "manager": "G000204",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1755,7 +1755,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5807841144405,
     "lng": 126.925267264345,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1766,7 +1766,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5559398307995,
     "lng": 126.92661712413,
     "branch": "서대문지사",
-    "manager": "안수호",
+    "manager": "G000205",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -1777,7 +1777,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6114203153696,
     "lng": 126.927102206253,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1788,7 +1788,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5595204682139,
     "lng": 126.964487662812,
     "branch": "서대문지사",
-    "manager": "우동주",
+    "manager": "G000204",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1799,7 +1799,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6114203153696,
     "lng": 126.927102206253,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1810,7 +1810,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6100893655212,
     "lng": 126.93987573393,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1821,7 +1821,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6192230055657,
     "lng": 126.919804649065,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1832,7 +1832,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5560565935817,
     "lng": 126.938257661301,
     "branch": "서대문지사",
-    "manager": "최용호",
+    "manager": "G000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1843,7 +1843,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.599108318215,
     "lng": 126.917433154629,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1854,7 +1854,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.599108318215,
     "lng": 126.917433154629,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1865,7 +1865,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5771395138127,
     "lng": 126.924012054499,
     "branch": "서대문지사",
-    "manager": "안근영",
+    "manager": "G000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1876,7 +1876,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.59880869498,
     "lng": 126.959263061639,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -1887,7 +1887,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.599108318215,
     "lng": 126.917433154629,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1898,7 +1898,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5496656051438,
     "lng": 126.909080954233,
     "branch": "서대문지사",
-    "manager": "안수호",
+    "manager": "G000205",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -1909,7 +1909,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.599108318215,
     "lng": 126.917433154629,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1920,7 +1920,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6114203153696,
     "lng": 126.927102206253,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1931,7 +1931,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5559398307995,
     "lng": 126.92661712413,
     "branch": "서대문지사",
-    "manager": "안수호",
+    "manager": "G000205",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -1942,7 +1942,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5536400276825,
     "lng": 126.928963142382,
     "branch": "서대문지사",
-    "manager": "최용호",
+    "manager": "G000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1953,7 +1953,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5575042826171,
     "lng": 126.917288266625,
     "branch": "서대문지사",
-    "manager": "안수호",
+    "manager": "G000205",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1964,7 +1964,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5575058242908,
     "lng": 126.946518912819,
     "branch": "서대문지사",
-    "manager": "최용호",
+    "manager": "G000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1975,7 +1975,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5658756338541,
     "lng": 126.919259481347,
     "branch": "서대문지사",
-    "manager": "안근영",
+    "manager": "G000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1986,7 +1986,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6114203153696,
     "lng": 126.927102206253,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -1997,7 +1997,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5412654954538,
     "lng": 126.946294819719,
     "branch": "서대문지사",
-    "manager": "우동주",
+    "manager": "G000204",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2008,7 +2008,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5952825365642,
     "lng": 126.918871599112,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2019,7 +2019,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.545182697062,
     "lng": 126.960221399119,
     "branch": "서대문지사",
-    "manager": "우동주",
+    "manager": "G000204",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -2030,7 +2030,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5899427099587,
     "lng": 126.916660099796,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2041,7 +2041,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6201115961496,
     "lng": 126.922832342088,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2052,7 +2052,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5631290241196,
     "lng": 126.922465466505,
     "branch": "서대문지사",
-    "manager": "안근영",
+    "manager": "G000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2063,7 +2063,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5417976347848,
     "lng": 126.952631668817,
     "branch": "서대문지사",
-    "manager": "우동주",
+    "manager": "G000204",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2074,7 +2074,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5439848946794,
     "lng": 126.952840642005,
     "branch": "서대문지사",
-    "manager": "우동주",
+    "manager": "G000204",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2085,7 +2085,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5982616730144,
     "lng": 126.911008505024,
     "branch": "서대문지사",
-    "manager": "안근영",
+    "manager": "G000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2096,7 +2096,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5591146578246,
     "lng": 126.922914758929,
     "branch": "서대문지사",
-    "manager": "최용호",
+    "manager": "G000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2107,7 +2107,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "서대문지사",
-    "manager": "우동주",
+    "manager": "G000204",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2118,7 +2118,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5456700512498,
     "lng": 126.922767693485,
     "branch": "서대문지사",
-    "manager": "안수호",
+    "manager": "G000205",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2129,7 +2129,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5441072585066,
     "lng": 126.970309620237,
     "branch": "서대문지사",
-    "manager": "우동주",
+    "manager": "G000204",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2140,7 +2140,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.556929545899,
     "lng": 126.925275702062,
     "branch": "서대문지사",
-    "manager": "최용호",
+    "manager": "G000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2151,7 +2151,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5576412309944,
     "lng": 126.944922346024,
     "branch": "서대문지사",
-    "manager": "최용호",
+    "manager": "G000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2162,7 +2162,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.55634694729653,
     "lng": 126.94415280524387,
     "branch": "서대문지사",
-    "manager": "최용호",
+    "manager": "G000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2173,7 +2173,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5578698377915,
     "lng": 126.917446536706,
     "branch": "서대문지사",
-    "manager": "안수호",
+    "manager": "G000205",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2184,7 +2184,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6019923419841,
     "lng": 126.928248940638,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2195,7 +2195,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5635562791671,
     "lng": 126.917937033943,
     "branch": "서대문지사",
-    "manager": "안근영",
+    "manager": "G000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2206,7 +2206,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5626959395392,
     "lng": 126.924307989757,
     "branch": "서대문지사",
-    "manager": "안근영",
+    "manager": "G000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2217,7 +2217,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5541077774581,
     "lng": 126.937821861976,
     "branch": "서대문지사",
-    "manager": "최용호",
+    "manager": "G000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2228,7 +2228,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5570953271491,
     "lng": 126.907809451745,
     "branch": "서대문지사",
-    "manager": "안근영",
+    "manager": "G000202",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -2239,7 +2239,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5591154460058,
     "lng": 126.916776275314,
     "branch": "서대문지사",
-    "manager": "안근영",
+    "manager": "G000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2250,7 +2250,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5665424723826,
     "lng": 126.917066495503,
     "branch": "서대문지사",
-    "manager": "안근영",
+    "manager": "G000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2261,7 +2261,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5814111573636,
     "lng": 126.881235424523,
     "branch": "서대문지사",
-    "manager": "안근영",
+    "manager": "G000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2272,7 +2272,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5531900553702,
     "lng": 126.922907960185,
     "branch": "서대문지사",
-    "manager": "안수호",
+    "manager": "G000205",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2283,7 +2283,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5570971965181,
     "lng": 126.954637534444,
     "branch": "서대문지사",
-    "manager": "우동주",
+    "manager": "G000204",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2294,7 +2294,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5476519332573,
     "lng": 126.920260025829,
     "branch": "서대문지사",
-    "manager": "안수호",
+    "manager": "G000205",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2305,7 +2305,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5776732059289,
     "lng": 126.931890717011,
     "branch": "서대문지사",
-    "manager": "최용호",
+    "manager": "G000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2316,7 +2316,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.568323281381566,
     "lng": 126.8985905507242,
     "branch": "서대문지사",
-    "manager": "안근영",
+    "manager": "G000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2327,7 +2327,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5627194034125,
     "lng": 126.928413614556,
     "branch": "서대문지사",
-    "manager": "최용호",
+    "manager": "G000203",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -2338,7 +2338,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5521302182207,
     "lng": 126.921685815537,
     "branch": "서대문지사",
-    "manager": "안수호",
+    "manager": "G000205",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2349,7 +2349,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5574871285241,
     "lng": 126.922963290578,
     "branch": "서대문지사",
-    "manager": "최용호",
+    "manager": "G000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2360,7 +2360,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5466660414641,
     "lng": 126.939849761332,
     "branch": "서대문지사",
-    "manager": "안수호",
+    "manager": "G000205",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -2371,7 +2371,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5350244616566,
     "lng": 126.961576811432,
     "branch": "서대문지사",
-    "manager": "우동주",
+    "manager": "G000204",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2382,7 +2382,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6207414093875,
     "lng": 126.925389831321,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2393,7 +2393,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5980010349937,
     "lng": 126.961926854411,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2404,7 +2404,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.561080043448,
     "lng": 126.902280136637,
     "branch": "서대문지사",
-    "manager": "안근영",
+    "manager": "G000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2415,7 +2415,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5500135080447,
     "lng": 126.937227298727,
     "branch": "서대문지사",
-    "manager": "안수호",
+    "manager": "G000205",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2426,7 +2426,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5419326044465,
     "lng": 126.95661762128,
     "branch": "서대문지사",
-    "manager": "우동주",
+    "manager": "G000204",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2437,7 +2437,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.556929545899,
     "lng": 126.925275702062,
     "branch": "서대문지사",
-    "manager": "최용호",
+    "manager": "G000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2448,7 +2448,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5507058562558,
     "lng": 126.956493938625,
     "branch": "서대문지사",
-    "manager": "우동주",
+    "manager": "G000204",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2459,7 +2459,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5567048056862,
     "lng": 126.9505807791,
     "branch": "서대문지사",
-    "manager": "우동주",
+    "manager": "G000204",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2470,7 +2470,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "서대문지사",
-    "manager": "안근영",
+    "manager": "G000202",
     "is_defect": "대상",
     "type": "설변"
   },
@@ -2481,7 +2481,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.55692709545,
     "lng": 126.938870015187,
     "branch": "서대문지사",
-    "manager": "최용호",
+    "manager": "G000203",
     "is_defect": "대상",
     "type": "설변"
   },
@@ -2492,7 +2492,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5579863870351,
     "lng": 126.929628346291,
     "branch": "서대문지사",
-    "manager": "최용호",
+    "manager": "G000203",
     "is_defect": "대상",
     "type": "설변"
   },
@@ -2503,7 +2503,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.55692709545,
     "lng": 126.938870015187,
     "branch": "서대문지사",
-    "manager": "최용호",
+    "manager": "G000203",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -2514,7 +2514,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5937846742185,
     "lng": 126.9229592922,
     "branch": "서대문지사",
-    "manager": "유범식",
+    "manager": "G000201",
     "is_defect": "대상",
     "type": "설변"
   },
@@ -2525,7 +2525,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5376723201353,
     "lng": 126.966608208449,
     "branch": "서대문지사",
-    "manager": "우동주",
+    "manager": "G000204",
     "is_defect": "대상",
     "type": "설변"
   },
@@ -2536,7 +2536,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5575820829467,
     "lng": 126.927793455336,
     "branch": "서대문지사",
-    "manager": "최용호",
+    "manager": "G000203",
     "is_defect": "대상",
     "type": "설변"
   },
@@ -2547,7 +2547,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5649310659823,
     "lng": 126.923230784947,
     "branch": "서대문지사",
-    "manager": "안근영",
+    "manager": "G000202",
     "is_defect": "대상",
     "type": "설변"
   },
@@ -2558,7 +2558,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5569917923473,
     "lng": 126.932274989338,
     "branch": "서대문지사",
-    "manager": "최용호",
+    "manager": "G000203",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -2569,7 +2569,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5573140266948,
     "lng": 126.943289454753,
     "branch": "서대문지사",
-    "manager": "최용호",
+    "manager": "G000203",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -2580,7 +2580,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2591,7 +2591,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2602,7 +2602,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6399745425202,
     "lng": 126.875402865817,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2613,7 +2613,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8408324327934,
     "lng": 126.822363260611,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -2624,7 +2624,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7278250576155,
     "lng": 126.790560807546,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2635,7 +2635,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6796150324843,
     "lng": 126.686478847638,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2646,7 +2646,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6525622218669,
     "lng": 126.896613116843,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2657,7 +2657,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6660432462537,
     "lng": 126.750537748679,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2668,7 +2668,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6444119615058,
     "lng": 126.788435816996,
     "branch": "고양지사",
-    "manager": "유창준",
+    "manager": "G000303",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2679,7 +2679,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6404670301572,
     "lng": 126.786547043161,
     "branch": "고양지사",
-    "manager": "유창준",
+    "manager": "G000303",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2690,7 +2690,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6660625103382,
     "lng": 126.756435827812,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2701,7 +2701,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6903408350302,
     "lng": 126.864423477089,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2712,7 +2712,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7653493390001,
     "lng": 126.821548855641,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2723,7 +2723,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6681554433021,
     "lng": 126.784865537349,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2734,7 +2734,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "고양지사",
-    "manager": "강경필",
+    "manager": "G000302",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2745,7 +2745,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.698838853026,
     "lng": 126.706941672281,
     "branch": "고양지사",
-    "manager": "김현교",
+    "manager": "G000305",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2756,7 +2756,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.9114564736633,
     "lng": 126.892932715972,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2767,7 +2767,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7157573331731,
     "lng": 126.760183498346,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2778,7 +2778,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "고양지사",
-    "manager": "유창준",
+    "manager": "G000303",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2789,7 +2789,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6660625103382,
     "lng": 126.756435827812,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2800,7 +2800,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7231828908202,
     "lng": 126.791980838847,
     "branch": "고양지사",
-    "manager": "엄태일",
+    "manager": "G000310",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2811,7 +2811,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6918796340414,
     "lng": 126.803679241098,
     "branch": "고양지사",
-    "manager": "엄태일",
+    "manager": "G000310",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2822,7 +2822,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6757162807311,
     "lng": 126.881239773389,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2833,7 +2833,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "고양지사",
-    "manager": "강경필",
+    "manager": "G000302",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2844,7 +2844,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7001291091612,
     "lng": 126.725228745963,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2855,7 +2855,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6900069778892,
     "lng": 126.762362110974,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2866,7 +2866,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6660432462537,
     "lng": 126.750537748679,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2877,7 +2877,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6635842959623,
     "lng": 126.891015290533,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2888,7 +2888,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.736884833823,
     "lng": 126.825340025044,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2899,7 +2899,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6943496272332,
     "lng": 126.76845159422,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2910,7 +2910,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7106583634298,
     "lng": 126.751305625271,
     "branch": "고양지사",
-    "manager": "박민준",
+    "manager": "G000306",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2921,7 +2921,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7180367790269,
     "lng": 126.775837524548,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2932,7 +2932,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7469041807371,
     "lng": 126.721577094993,
     "branch": "고양지사",
-    "manager": "박민준",
+    "manager": "G000306",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2943,7 +2943,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6249616615735,
     "lng": 126.8991337435,
     "branch": "고양지사",
-    "manager": "강경필",
+    "manager": "G000302",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2954,7 +2954,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7078795273033,
     "lng": 126.796837984614,
     "branch": "고양지사",
-    "manager": "엄태일",
+    "manager": "G000310",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2965,7 +2965,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7913425744138,
     "lng": 126.709983675394,
     "branch": "고양지사",
-    "manager": "김현교",
+    "manager": "G000305",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -2976,7 +2976,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8841533730311,
     "lng": 126.761787225717,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2987,7 +2987,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5796933502302,
     "lng": 126.868106701389,
     "branch": "고양지사",
-    "manager": "강경필",
+    "manager": "G000302",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -2998,7 +2998,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6634836005214,
     "lng": 126.768497070396,
     "branch": "고양지사",
-    "manager": "유창준",
+    "manager": "G000303",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3009,7 +3009,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8841533730311,
     "lng": 126.761787225717,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3020,7 +3020,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8110019761115,
     "lng": 126.775958092114,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3031,7 +3031,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6444119615058,
     "lng": 126.788435816996,
     "branch": "고양지사",
-    "manager": "유창준",
+    "manager": "G000303",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3042,7 +3042,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6051496207794,
     "lng": 126.823023628916,
     "branch": "고양지사",
-    "manager": "강경필",
+    "manager": "G000302",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3053,7 +3053,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7121132713076,
     "lng": 126.744904386496,
     "branch": "고양지사",
-    "manager": "김현교",
+    "manager": "G000305",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3064,7 +3064,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6502469656387,
     "lng": 126.794952549514,
     "branch": "고양지사",
-    "manager": "유창준",
+    "manager": "G000303",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3075,7 +3075,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7937838747438,
     "lng": 126.78995569001,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3086,7 +3086,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7291279068786,
     "lng": 126.838329201649,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3097,7 +3097,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7551349322834,
     "lng": 126.775968254086,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3108,7 +3108,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6733209244613,
     "lng": 126.755369040926,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3119,7 +3119,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.789120767924,
     "lng": 126.718736887496,
     "branch": "고양지사",
-    "manager": "김현교",
+    "manager": "G000305",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3130,7 +3130,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6983514861861,
     "lng": 126.704438581994,
     "branch": "고양지사",
-    "manager": "박민준",
+    "manager": "G000306",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3141,7 +3141,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.789120767924,
     "lng": 126.718736887496,
     "branch": "고양지사",
-    "manager": "김현교",
+    "manager": "G000305",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3152,7 +3152,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6635842959623,
     "lng": 126.891015290533,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3163,7 +3163,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7924004377503,
     "lng": 126.721848555978,
     "branch": "고양지사",
-    "manager": "김현교",
+    "manager": "G000305",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -3174,7 +3174,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.711445492006,
     "lng": 126.744830691078,
     "branch": "고양지사",
-    "manager": "박민준",
+    "manager": "G000306",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -3185,7 +3185,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.789120767924,
     "lng": 126.718736887496,
     "branch": "고양지사",
-    "manager": "김현교",
+    "manager": "G000305",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3196,7 +3196,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8621769644305,
     "lng": 126.816088285544,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3207,7 +3207,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8621769644305,
     "lng": 126.816088285544,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3218,7 +3218,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7323983063455,
     "lng": 126.751085457574,
     "branch": "고양지사",
-    "manager": "김현교",
+    "manager": "G000305",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3229,7 +3229,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8232474890104,
     "lng": 126.743243314623,
     "branch": "고양지사",
-    "manager": "김현교",
+    "manager": "G000305",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3240,7 +3240,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6696139754431,
     "lng": 126.761500546476,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3251,7 +3251,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7521557929235,
     "lng": 126.807032055659,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3262,7 +3262,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6740605942899,
     "lng": 126.808020466667,
     "branch": "고양지사",
-    "manager": "엄태일",
+    "manager": "G000310",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3273,7 +3273,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7788097937988,
     "lng": 126.726261440837,
     "branch": "고양지사",
-    "manager": "김현교",
+    "manager": "G000305",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3284,7 +3284,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7879139988986,
     "lng": 126.766667196328,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3295,7 +3295,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7111884957419,
     "lng": 126.750623396415,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3306,7 +3306,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6432007552332,
     "lng": 126.829178267791,
     "branch": "고양지사",
-    "manager": "유창준",
+    "manager": "G000303",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3317,7 +3317,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7226249502928,
     "lng": 126.803067624973,
     "branch": "고양지사",
-    "manager": "엄태일",
+    "manager": "G000310",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3328,7 +3328,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7110467650649,
     "lng": 126.868721180357,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3339,7 +3339,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6721605475203,
     "lng": 126.804417197847,
     "branch": "고양지사",
-    "manager": "엄태일",
+    "manager": "G000310",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3350,7 +3350,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7390489282014,
     "lng": 126.689172092757,
     "branch": "고양지사",
-    "manager": "박민준",
+    "manager": "G000306",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3361,7 +3361,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6986041761899,
     "lng": 126.766972111286,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3372,7 +3372,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6543535976677,
     "lng": 126.838278410805,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3383,7 +3383,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.701759250284,
     "lng": 126.826534541602,
     "branch": "고양지사",
-    "manager": "엄태일",
+    "manager": "G000310",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3394,7 +3394,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7110467650649,
     "lng": 126.868721180357,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3405,7 +3405,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6916111654713,
     "lng": 126.754057823195,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3416,7 +3416,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7597026222893,
     "lng": 126.776430996818,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3427,7 +3427,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3438,7 +3438,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7689050394357,
     "lng": 126.903763452249,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3449,7 +3449,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7313731461301,
     "lng": 126.75200775573,
     "branch": "고양지사",
-    "manager": "김현교",
+    "manager": "G000305",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3460,7 +3460,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6677280316559,
     "lng": 126.920759658341,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3471,7 +3471,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6643477994395,
     "lng": 126.844496234787,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3482,7 +3482,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7705203839701,
     "lng": 126.821940716967,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3493,7 +3493,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8822870361357,
     "lng": 126.775858145169,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3504,7 +3504,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.67371332503,
     "lng": 126.776302144962,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3515,7 +3515,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.637150319072,
     "lng": 126.77972733097,
     "branch": "고양지사",
-    "manager": "유창준",
+    "manager": "G000303",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3526,7 +3526,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6551865774233,
     "lng": 126.791396446757,
     "branch": "고양지사",
-    "manager": "엄태일",
+    "manager": "G000310",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3537,7 +3537,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7279183191974,
     "lng": 126.733721981921,
     "branch": "고양지사",
-    "manager": "김현교",
+    "manager": "G000305",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -3548,7 +3548,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7157573331731,
     "lng": 126.760183498346,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3559,7 +3559,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3570,7 +3570,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8109305292853,
     "lng": 126.86562087701,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3581,7 +3581,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7104223186094,
     "lng": 126.906330946607,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3592,7 +3592,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6411295594619,
     "lng": 126.875702209877,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3603,7 +3603,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -3614,7 +3614,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3625,7 +3625,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6697936032443,
     "lng": 126.728717900291,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -3636,7 +3636,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6679946733069,
     "lng": 126.751646859873,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3647,7 +3647,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7238485725064,
     "lng": 126.771934844716,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3658,7 +3658,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8461504002251,
     "lng": 126.749295093214,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -3669,7 +3669,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6595618413592,
     "lng": 126.84035217942,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3680,7 +3680,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7138010111537,
     "lng": 126.772948940425,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -3691,7 +3691,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6572155068514,
     "lng": 126.769797473555,
     "branch": "고양지사",
-    "manager": "유창준",
+    "manager": "G000303",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -3702,7 +3702,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6690309909228,
     "lng": 126.761876338477,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3713,7 +3713,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.68733563552,
     "lng": 126.71726001808,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3724,7 +3724,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7078263873813,
     "lng": 126.759538496432,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3735,7 +3735,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8624323427947,
     "lng": 126.790551382519,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3746,7 +3746,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7849449910583,
     "lng": 126.883969786254,
     "branch": "고양지사",
-    "manager": "박민준",
+    "manager": "G000306",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3757,7 +3757,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.859319262545,
     "lng": 126.796442229033,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3768,7 +3768,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6674922229567,
     "lng": 126.816186076939,
     "branch": "고양지사",
-    "manager": "엄태일",
+    "manager": "G000310",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3779,7 +3779,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6553835219615,
     "lng": 126.773603811191,
     "branch": "고양지사",
-    "manager": "유창준",
+    "manager": "G000303",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3790,7 +3790,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6621180524154,
     "lng": 126.889479477522,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -3801,7 +3801,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7480992521369,
     "lng": 126.863789423435,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3812,7 +3812,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6736398552924,
     "lng": 126.735090733987,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -3823,7 +3823,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7498302458079,
     "lng": 126.729194840566,
     "branch": "고양지사",
-    "manager": "박민준",
+    "manager": "G000306",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3834,7 +3834,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.65110369472,
     "lng": 126.779315913698,
     "branch": "고양지사",
-    "manager": "엄태일",
+    "manager": "G000310",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3845,7 +3845,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7065655352274,
     "lng": 126.684708205421,
     "branch": "고양지사",
-    "manager": "박민준",
+    "manager": "G000306",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3856,7 +3856,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "고양지사",
-    "manager": "강경필",
+    "manager": "G000302",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3867,7 +3867,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7125835882409,
     "lng": 126.719672320379,
     "branch": "고양지사",
-    "manager": "박민준",
+    "manager": "G000306",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3878,7 +3878,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6847807839293,
     "lng": 126.868693910376,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3889,7 +3889,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6714314407083,
     "lng": 126.760262286123,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3900,7 +3900,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7343245567056,
     "lng": 126.73672710862,
     "branch": "고양지사",
-    "manager": "김현교",
+    "manager": "G000305",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3911,7 +3911,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.828252956762,
     "lng": 126.802183855766,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3922,7 +3922,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6343468262003,
     "lng": 126.831398004085,
     "branch": "고양지사",
-    "manager": "유창준",
+    "manager": "G000303",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -3933,7 +3933,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.729526175411,
     "lng": 126.736765309998,
     "branch": "고양지사",
-    "manager": "김현교",
+    "manager": "G000305",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3944,7 +3944,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6569486537475,
     "lng": 126.841568222005,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3955,7 +3955,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8766951180783,
     "lng": 126.849663921291,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3966,7 +3966,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8556662236887,
     "lng": 126.785453969961,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3977,7 +3977,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7039182333072,
     "lng": 126.743668762591,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -3988,7 +3988,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7967223431249,
     "lng": 126.849826701547,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -3999,7 +3999,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6535414086005,
     "lng": 126.783753636147,
     "branch": "고양지사",
-    "manager": "엄태일",
+    "manager": "G000310",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4010,7 +4010,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6134249693004,
     "lng": 126.833707187084,
     "branch": "고양지사",
-    "manager": "강경필",
+    "manager": "G000302",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4021,7 +4021,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5985055568155,
     "lng": 126.892979512598,
     "branch": "고양지사",
-    "manager": "강경필",
+    "manager": "G000302",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -4032,7 +4032,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6196095628824,
     "lng": 126.824221514486,
     "branch": "고양지사",
-    "manager": "유창준",
+    "manager": "G000303",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4043,7 +4043,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4054,7 +4054,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6898611669035,
     "lng": 126.762256228571,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4065,7 +4065,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6488645698207,
     "lng": 126.786809131685,
     "branch": "고양지사",
-    "manager": "유창준",
+    "manager": "G000303",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4076,7 +4076,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6343468262003,
     "lng": 126.831398004085,
     "branch": "고양지사",
-    "manager": "유창준",
+    "manager": "G000303",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -4087,7 +4087,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5808622245802,
     "lng": 126.858173140045,
     "branch": "고양지사",
-    "manager": "강경필",
+    "manager": "G000302",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4098,7 +4098,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8331483007928,
     "lng": 126.793733779533,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4109,7 +4109,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8333123819324,
     "lng": 126.817199595775,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4120,7 +4120,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6593266431224,
     "lng": 126.920073983953,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4131,7 +4131,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6481782849285,
     "lng": 126.805963267513,
     "branch": "고양지사",
-    "manager": "엄태일",
+    "manager": "G000310",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4142,7 +4142,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7091220944709,
     "lng": 126.818512128874,
     "branch": "고양지사",
-    "manager": "엄태일",
+    "manager": "G000310",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4153,7 +4153,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "고양지사",
-    "manager": "김현교",
+    "manager": "G000305",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4164,7 +4164,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6680886566985,
     "lng": 126.75627392538,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -4175,7 +4175,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6723220289341,
     "lng": 126.770854734298,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4186,7 +4186,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7216454271566,
     "lng": 126.694807660735,
     "branch": "고양지사",
-    "manager": "박민준",
+    "manager": "G000306",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4197,7 +4197,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6082571097354,
     "lng": 126.84587382097,
     "branch": "고양지사",
-    "manager": "강경필",
+    "manager": "G000302",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4208,7 +4208,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6184753122192,
     "lng": 126.858241271107,
     "branch": "고양지사",
-    "manager": "강경필",
+    "manager": "G000302",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -4219,7 +4219,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8517814432601,
     "lng": 126.807026183958,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4230,7 +4230,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8585307731058,
     "lng": 126.79232706082,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4241,7 +4241,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6861100363734,
     "lng": 126.724105945798,
     "branch": "고양지사",
-    "manager": "강민수",
+    "manager": "G000308",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4252,7 +4252,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8581266681166,
     "lng": 126.785723538253,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4263,7 +4263,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7052907312023,
     "lng": 126.877009133765,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4274,7 +4274,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7704959688027,
     "lng": 126.71886590224,
     "branch": "고양지사",
-    "manager": "김현교",
+    "manager": "G000305",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4285,7 +4285,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6650801836674,
     "lng": 126.83818317035,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4296,7 +4296,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.593587470676,
     "lng": 126.875754377981,
     "branch": "고양지사",
-    "manager": "강경필",
+    "manager": "G000302",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4307,7 +4307,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6632938238879,
     "lng": 126.889086495552,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4318,7 +4318,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7103548175918,
     "lng": 126.904845607197,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4329,7 +4329,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.60128490598158,
     "lng": 126.89215893827816,
     "branch": "고양지사",
-    "manager": "강경필",
+    "manager": "G000302",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4340,7 +4340,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6492328901458,
     "lng": 126.874827735308,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4351,7 +4351,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7579050717611,
     "lng": 126.767609639096,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4362,7 +4362,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6639992204285,
     "lng": 126.950012745907,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4373,7 +4373,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6691669327316,
     "lng": 126.885574578087,
     "branch": "고양지사",
-    "manager": "최우석",
+    "manager": "G000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4384,7 +4384,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.674522727389,
     "lng": 126.808310595293,
     "branch": "고양지사",
-    "manager": "엄태일",
+    "manager": "G000310",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4395,7 +4395,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8211134868959,
     "lng": 126.764004273209,
     "branch": "고양지사",
-    "manager": "성형래",
+    "manager": "G000304",
     "is_defect": "대상",
     "type": "설변"
   },
@@ -4406,7 +4406,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6245348107328,
     "lng": 126.835601595135,
     "branch": "고양지사",
-    "manager": "강경필",
+    "manager": "G000302",
     "is_defect": "대상",
     "type": "설변"
   },
@@ -4417,7 +4417,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7374420707561,
     "lng": 126.717194812101,
     "branch": "고양지사",
-    "manager": "박민준",
+    "manager": "G000306",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -4428,7 +4428,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6547977763547,
     "lng": 126.77084139678,
     "branch": "고양지사",
-    "manager": "미지정",
+    "manager": "G000307",
     "is_defect": "대상",
     "type": "설변"
   },
@@ -4439,7 +4439,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.64719332821,
     "lng": 126.7918998146,
     "branch": "고양지사",
-    "manager": "미지정",
+    "manager": "G000307",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -4450,7 +4450,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7966124073604,
     "lng": 126.894679159611,
     "branch": "고양지사",
-    "manager": "조현웅",
+    "manager": "G000309",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -4461,7 +4461,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.9061602415864,
     "lng": 127.038233874,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4472,7 +4472,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7531902036241,
     "lng": 127.040749602706,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4483,7 +4483,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8422436862629,
     "lng": 127.142802051189,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4494,7 +4494,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7351838429761,
     "lng": 127.037083128024,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4505,7 +4505,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7457507400102,
     "lng": 127.091720592184,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4516,7 +4516,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8996451236835,
     "lng": 127.050079122068,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4527,7 +4527,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7345408309204,
     "lng": 127.041893572987,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4538,7 +4538,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7078538465962,
     "lng": 126.953518923802,
     "branch": "의정부지사",
-    "manager": "정양진",
+    "manager": "G000503",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4549,7 +4549,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0262051250515,
     "lng": 127.067286094727,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4560,7 +4560,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7737133503828,
     "lng": 127.156921164767,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4571,7 +4571,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8971879684924,
     "lng": 127.058314742187,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4582,7 +4582,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7345408309204,
     "lng": 127.041893572987,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4593,7 +4593,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7607530187379,
     "lng": 127.036599957793,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4604,7 +4604,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8432217752325,
     "lng": 127.062454723294,
     "branch": "의정부지사",
-    "manager": "정양진",
+    "manager": "G000503",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4615,7 +4615,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8222321450369,
     "lng": 127.155596708623,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4626,7 +4626,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8950841926002,
     "lng": 127.071953085379,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4637,7 +4637,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "의정부지사",
-    "manager": "정양진",
+    "manager": "G000503",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4648,7 +4648,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8791472485448,
     "lng": 127.050694954541,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4659,7 +4659,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7988595879502,
     "lng": 127.213613615167,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4670,7 +4670,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7557632826426,
     "lng": 127.112892809211,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4681,7 +4681,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8600652102452,
     "lng": 127.013304341004,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4692,7 +4692,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.836143846341,
     "lng": 127.096541831355,
     "branch": "의정부지사",
-    "manager": "정양진",
+    "manager": "G000503",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4703,7 +4703,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7835391063553,
     "lng": 126.973792599539,
     "branch": "의정부지사",
-    "manager": "정양진",
+    "manager": "G000503",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4714,7 +4714,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.969583827353,
     "lng": 127.006386800251,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4725,7 +4725,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7439889339696,
     "lng": 127.032479009607,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4736,7 +4736,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7326666573444,
     "lng": 127.040271082797,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4747,7 +4747,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7388667674144,
     "lng": 127.042592152177,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4758,7 +4758,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8065520100875,
     "lng": 126.998260784295,
     "branch": "의정부지사",
-    "manager": "정양진",
+    "manager": "G000503",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4769,7 +4769,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7673627271809,
     "lng": 127.203782246744,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4780,7 +4780,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7500161057265,
     "lng": 127.118580219773,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4791,7 +4791,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7928304461567,
     "lng": 127.165327935346,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4802,7 +4802,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.753504438763,
     "lng": 127.069039836386,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4813,7 +4813,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7600881233619,
     "lng": 127.168998882059,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4824,7 +4824,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "의정부지사",
-    "manager": "정양진",
+    "manager": "G000503",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -4835,7 +4835,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8353447456058,
     "lng": 127.133331023742,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4846,7 +4846,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8021123643214,
     "lng": 127.163677755775,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4857,7 +4857,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8456330061705,
     "lng": 127.18268299988,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4868,7 +4868,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8574267696255,
     "lng": 127.195504260333,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4879,7 +4879,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.776810860986,
     "lng": 126.939268195746,
     "branch": "의정부지사",
-    "manager": "정양진",
+    "manager": "G000503",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -4890,7 +4890,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8171633047042,
     "lng": 127.048162816874,
     "branch": "의정부지사",
-    "manager": "정양진",
+    "manager": "G000503",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4901,7 +4901,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4912,7 +4912,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4923,7 +4923,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1838593287313,
     "lng": 127.106215955108,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4934,7 +4934,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0738502789251,
     "lng": 126.993890201916,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4945,7 +4945,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7526643256771,
     "lng": 127.069433828522,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4956,7 +4956,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7599019266729,
     "lng": 127.041350437699,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4967,7 +4967,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0065133458883,
     "lng": 127.258115237755,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4978,7 +4978,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7458946373548,
     "lng": 127.050893027809,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -4989,7 +4989,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0192117930481,
     "lng": 127.267033726407,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5000,7 +5000,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7230875571087,
     "lng": 126.948046263377,
     "branch": "의정부지사",
-    "manager": "정양진",
+    "manager": "G000503",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5011,7 +5011,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0996198234522,
     "lng": 127.279954317949,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5022,7 +5022,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.2078384873623,
     "lng": 127.251706756989,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5033,7 +5033,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7868719490965,
     "lng": 126.994702452706,
     "branch": "의정부지사",
-    "manager": "정양진",
+    "manager": "G000503",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -5044,7 +5044,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8592846345325,
     "lng": 127.013231018901,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5055,7 +5055,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7354522250431,
     "lng": 127.043947927215,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5066,7 +5066,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0954921154782,
     "lng": 127.219839263886,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5077,7 +5077,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.737834670647,
     "lng": 127.08778566797,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5088,7 +5088,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7601265673292,
     "lng": 127.041007385729,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5099,7 +5099,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7531763355941,
     "lng": 127.040729737177,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5110,7 +5110,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0259971711348,
     "lng": 127.02796810425,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5121,7 +5121,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7345408309204,
     "lng": 127.041893572987,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5132,7 +5132,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7475698306795,
     "lng": 127.048923623413,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5143,7 +5143,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7607530187379,
     "lng": 127.036599957793,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5154,7 +5154,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1805962390249,
     "lng": 127.464792523654,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5165,7 +5165,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.9207173936331,
     "lng": 127.056408991424,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5176,7 +5176,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8766719319886,
     "lng": 126.97954838259,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5187,7 +5187,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8537419265639,
     "lng": 127.165947695716,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -5198,7 +5198,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0012579331515,
     "lng": 127.242338741584,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5209,7 +5209,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8234746533629,
     "lng": 126.987229815839,
     "branch": "의정부지사",
-    "manager": "정양진",
+    "manager": "G000503",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -5220,7 +5220,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5231,7 +5231,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0951386873855,
     "lng": 127.24368388293,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5242,7 +5242,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5253,7 +5253,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8316530722398,
     "lng": 127.069832891579,
     "branch": "의정부지사",
-    "manager": "정양진",
+    "manager": "G000503",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5264,7 +5264,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7475645114325,
     "lng": 127.036502122124,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5275,7 +5275,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.9258678597293,
     "lng": 127.298054835495,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5286,7 +5286,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7285345389207,
     "lng": 127.113768140194,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5297,7 +5297,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.923188164169,
     "lng": 127.264001195304,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5308,7 +5308,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8547501868418,
     "lng": 127.149886641541,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5319,7 +5319,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0012859867289,
     "lng": 127.073075962845,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5330,7 +5330,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1962406584092,
     "lng": 127.479720725604,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5341,7 +5341,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8049206390996,
     "lng": 127.001989675321,
     "branch": "의정부지사",
-    "manager": "정양진",
+    "manager": "G000503",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5352,7 +5352,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.2069144885915,
     "lng": 127.213831569113,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -5363,7 +5363,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8248806561523,
     "lng": 126.983379545357,
     "branch": "의정부지사",
-    "manager": "정양진",
+    "manager": "G000503",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5374,7 +5374,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0231879846435,
     "lng": 126.990757794328,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5385,7 +5385,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.9264998333239,
     "lng": 127.022485314231,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000504",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5396,7 +5396,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5407,7 +5407,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7390252194015,
     "lng": 127.08992666918,
     "branch": "의정부지사",
-    "manager": "차현갑",
+    "manager": "G000501",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -5418,7 +5418,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8406370688635,
     "lng": 127.129262717433,
     "branch": "의정부지사",
-    "manager": "정성록",
+    "manager": "G000505",
     "is_defect": "대상",
     "type": "설변"
   },
@@ -5429,7 +5429,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8959718080083,
     "lng": 127.2018050198,
     "branch": "의정부지사",
-    "manager": "김진회",
+    "manager": "G000506",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -5440,7 +5440,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5616973384205,
     "lng": 127.463631704975,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5451,7 +5451,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4967489345543,
     "lng": 127.408825229324,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5462,7 +5462,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7145472873407,
     "lng": 127.329666532519,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5473,7 +5473,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6803282129088,
     "lng": 127.207787664312,
     "branch": "남양주지사",
-    "manager": "조형근",
+    "manager": "G000602",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5484,7 +5484,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.657389290667,
     "lng": 127.302897731691,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5495,7 +5495,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4696331378024,
     "lng": 127.508756877189,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -5506,7 +5506,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6132489828097,
     "lng": 127.152083515802,
     "branch": "남양주지사",
-    "manager": "김현돈",
+    "manager": "G000605",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5517,7 +5517,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6132489828097,
     "lng": 127.152083515802,
     "branch": "남양주지사",
-    "manager": "김현돈",
+    "manager": "G000605",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5528,7 +5528,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6336851637262,
     "lng": 127.203865391444,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5539,7 +5539,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6036759230133,
     "lng": 127.145040943342,
     "branch": "남양주지사",
-    "manager": "원동현",
+    "manager": "G000603",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5550,7 +5550,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6025282787422,
     "lng": 127.145231230961,
     "branch": "남양주지사",
-    "manager": "원동현",
+    "manager": "G000603",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5561,7 +5561,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6162604689088,
     "lng": 127.339032703168,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5572,7 +5572,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6317774638003,
     "lng": 127.30572996312,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5583,7 +5583,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6518204928398,
     "lng": 127.157252446976,
     "branch": "남양주지사",
-    "manager": "조형근",
+    "manager": "G000602",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5594,7 +5594,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.487077334381,
     "lng": 127.494856972805,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5605,7 +5605,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6162604689088,
     "lng": 127.339032703168,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5616,7 +5616,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5859446337821,
     "lng": 127.172112842767,
     "branch": "남양주지사",
-    "manager": "김현돈",
+    "manager": "G000605",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5627,7 +5627,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.742869995281,
     "lng": 127.221021495826,
     "branch": "남양주지사",
-    "manager": "조형근",
+    "manager": "G000602",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5638,7 +5638,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6883218753443,
     "lng": 127.341795874122,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5649,7 +5649,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7094597674047,
     "lng": 127.129096676038,
     "branch": "남양주지사",
-    "manager": "원동현",
+    "manager": "G000603",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5660,7 +5660,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6251469555931,
     "lng": 127.154932247865,
     "branch": "남양주지사",
-    "manager": "김현돈",
+    "manager": "G000605",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -5671,7 +5671,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6905159066617,
     "lng": 127.320066652853,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -5682,7 +5682,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6312126193421,
     "lng": 127.203484333608,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5693,7 +5693,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6011894128387,
     "lng": 127.245143678502,
     "branch": "남양주지사",
-    "manager": "김현돈",
+    "manager": "G000605",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5704,7 +5704,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6349443621494,
     "lng": 127.212254259403,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5715,7 +5715,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.640500107987,
     "lng": 127.358221816771,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5726,7 +5726,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.640500107987,
     "lng": 127.358221816771,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5737,7 +5737,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6526313239799,
     "lng": 127.152558152009,
     "branch": "남양주지사",
-    "manager": "조형근",
+    "manager": "G000602",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5748,7 +5748,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7318213416511,
     "lng": 127.318268111174,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5759,7 +5759,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6079144423816,
     "lng": 127.167942073938,
     "branch": "남양주지사",
-    "manager": "김현돈",
+    "manager": "G000605",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -5770,7 +5770,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6082018722351,
     "lng": 127.138199954268,
     "branch": "남양주지사",
-    "manager": "원동현",
+    "manager": "G000603",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5781,7 +5781,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4249549792611,
     "lng": 127.538462599501,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5792,7 +5792,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6661100795354,
     "lng": 127.118449665542,
     "branch": "남양주지사",
-    "manager": "원동현",
+    "manager": "G000603",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5803,7 +5803,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6275744036769,
     "lng": 127.202354277794,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5814,7 +5814,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6009305768179,
     "lng": 127.140068360755,
     "branch": "남양주지사",
-    "manager": "원동현",
+    "manager": "G000603",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -5825,7 +5825,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5937747525544,
     "lng": 127.146579107762,
     "branch": "남양주지사",
-    "manager": "원동현",
+    "manager": "G000603",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5836,7 +5836,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.469490419485,
     "lng": 127.459681750861,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5847,7 +5847,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7154076955133,
     "lng": 127.210301921451,
     "branch": "남양주지사",
-    "manager": "조형근",
+    "manager": "G000602",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5858,7 +5858,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.591291618227,
     "lng": 127.586613090171,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -5869,7 +5869,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5945545561305,
     "lng": 127.138755820887,
     "branch": "남양주지사",
-    "manager": "원동현",
+    "manager": "G000603",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5880,7 +5880,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6183515471577,
     "lng": 127.35283757367,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5891,7 +5891,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6552588294123,
     "lng": 127.244583248337,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5902,7 +5902,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6257919986842,
     "lng": 127.154016813111,
     "branch": "남양주지사",
-    "manager": "김현돈",
+    "manager": "G000605",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5913,7 +5913,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5932461870785,
     "lng": 127.195536650545,
     "branch": "남양주지사",
-    "manager": "김현돈",
+    "manager": "G000605",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5924,7 +5924,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3911052452458,
     "lng": 127.716368656756,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -5935,7 +5935,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6144988614653,
     "lng": 127.154420631801,
     "branch": "남양주지사",
-    "manager": "김현돈",
+    "manager": "G000605",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -5946,7 +5946,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6810112594507,
     "lng": 127.30406356344,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5957,7 +5957,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6580475788277,
     "lng": 127.128669997235,
     "branch": "남양주지사",
-    "manager": "원동현",
+    "manager": "G000603",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5968,7 +5968,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5937747525544,
     "lng": 127.146579107762,
     "branch": "남양주지사",
-    "manager": "원동현",
+    "manager": "G000603",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5979,7 +5979,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6251463806598,
     "lng": 127.155369502994,
     "branch": "남양주지사",
-    "manager": "김현돈",
+    "manager": "G000605",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -5990,7 +5990,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6596023144626,
     "lng": 127.34599158469,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6001,7 +6001,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "남양주지사",
-    "manager": "원동현",
+    "manager": "G000603",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6012,7 +6012,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "남양주지사",
-    "manager": "원동현",
+    "manager": "G000603",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6023,7 +6023,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6219023431034,
     "lng": 127.159382389522,
     "branch": "남양주지사",
-    "manager": "김현돈",
+    "manager": "G000605",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6034,7 +6034,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6162604689088,
     "lng": 127.339032703168,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6045,7 +6045,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.606981597364,
     "lng": 127.134987021864,
     "branch": "남양주지사",
-    "manager": "원동현",
+    "manager": "G000603",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6056,7 +6056,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6539524274096,
     "lng": 127.241424633438,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6067,7 +6067,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6624792795825,
     "lng": 127.352032778742,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6078,7 +6078,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6544314963965,
     "lng": 127.247030014582,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6089,7 +6089,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5189370204784,
     "lng": 127.56071132095,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6100,7 +6100,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.504579005111,
     "lng": 127.427899561,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -6111,7 +6111,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6645153202882,
     "lng": 127.320884236387,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6122,7 +6122,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7291461419197,
     "lng": 127.195108560165,
     "branch": "남양주지사",
-    "manager": "조형근",
+    "manager": "G000602",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6133,7 +6133,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6640225287714,
     "lng": 127.300940029141,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6144,7 +6144,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6526740654123,
     "lng": 127.180548434191,
     "branch": "남양주지사",
-    "manager": "조형근",
+    "manager": "G000602",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6155,7 +6155,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6880787372902,
     "lng": 127.206319546407,
     "branch": "남양주지사",
-    "manager": "조형근",
+    "manager": "G000602",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6166,7 +6166,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6995335137148,
     "lng": 127.192214043899,
     "branch": "남양주지사",
-    "manager": "조형근",
+    "manager": "G000602",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6177,7 +6177,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5217309055852,
     "lng": 127.466868423353,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -6188,7 +6188,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5404230810045,
     "lng": 127.610951979597,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6199,7 +6199,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5044537084674,
     "lng": 127.520128535264,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6210,7 +6210,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7177469933997,
     "lng": 127.180207985742,
     "branch": "남양주지사",
-    "manager": "조형근",
+    "manager": "G000602",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6221,7 +6221,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6541255353003,
     "lng": 127.241894009895,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6232,7 +6232,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5548252904554,
     "lng": 127.236516146309,
     "branch": "남양주지사",
-    "manager": "김현돈",
+    "manager": "G000605",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6243,7 +6243,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6304077621053,
     "lng": 127.120904549006,
     "branch": "남양주지사",
-    "manager": "원동현",
+    "manager": "G000603",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6254,7 +6254,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5232200998218,
     "lng": 127.681113178683,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -6265,7 +6265,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7188310658391,
     "lng": 127.183290340331,
     "branch": "남양주지사",
-    "manager": "조형근",
+    "manager": "G000602",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6276,7 +6276,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7409379278436,
     "lng": 127.19904474096,
     "branch": "남양주지사",
-    "manager": "조형근",
+    "manager": "G000602",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6287,7 +6287,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4206472659289,
     "lng": 127.758686856055,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6298,7 +6298,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4536119558375,
     "lng": 127.513776894495,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6309,7 +6309,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6162604689088,
     "lng": 127.339032703168,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6320,7 +6320,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5126716904859,
     "lng": 127.421279856222,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6331,7 +6331,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6509023449392,
     "lng": 127.302224338779,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6342,7 +6342,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.501590371093,
     "lng": 127.474605641347,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6353,7 +6353,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5093947142111,
     "lng": 127.625450553346,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -6364,7 +6364,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6793698339561,
     "lng": 127.210031129121,
     "branch": "남양주지사",
-    "manager": "조형근",
+    "manager": "G000602",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6375,7 +6375,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4640355817893,
     "lng": 127.642931809794,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6386,7 +6386,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5278974508192,
     "lng": 127.491201670086,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6397,7 +6397,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5977439416664,
     "lng": 127.136152529306,
     "branch": "남양주지사",
-    "manager": "원동현",
+    "manager": "G000603",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6408,7 +6408,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4821563095928,
     "lng": 127.590943655525,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6419,7 +6419,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6589800661742,
     "lng": 127.276786964771,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6430,7 +6430,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4590633099741,
     "lng": 127.507602237422,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -6441,7 +6441,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6042136861506,
     "lng": 127.134339456019,
     "branch": "남양주지사",
-    "manager": "원동현",
+    "manager": "G000603",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -6452,7 +6452,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7302142586515,
     "lng": 127.209078266753,
     "branch": "남양주지사",
-    "manager": "조형근",
+    "manager": "G000602",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6463,7 +6463,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6785481604483,
     "lng": 127.155753885005,
     "branch": "남양주지사",
-    "manager": "조형근",
+    "manager": "G000602",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6474,7 +6474,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5928983701571,
     "lng": 127.142821438008,
     "branch": "남양주지사",
-    "manager": "원동현",
+    "manager": "G000603",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6485,7 +6485,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4871273980068,
     "lng": 127.494670965152,
     "branch": "남양주지사",
-    "manager": "이현배",
+    "manager": "G000604",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6496,7 +6496,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6994126299685,
     "lng": 127.195540303818,
     "branch": "남양주지사",
-    "manager": "조형근",
+    "manager": "G000602",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6507,7 +6507,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5731443989042,
     "lng": 127.119439476419,
     "branch": "남양주지사",
-    "manager": "원동현",
+    "manager": "G000603",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6518,7 +6518,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6485738002371,
     "lng": 127.303227704357,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6529,7 +6529,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6655602166775,
     "lng": 127.301861004009,
     "branch": "남양주지사",
-    "manager": "이한구",
+    "manager": "G000601",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6540,7 +6540,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5810761116313,
     "lng": 127.222804066921,
     "branch": "남양주지사",
-    "manager": "김현돈",
+    "manager": "G000605",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6551,7 +6551,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5905670765991,
     "lng": 127.218507451983,
     "branch": "남양주지사",
-    "manager": "김현돈",
+    "manager": "G000605",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6562,7 +6562,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6257919986842,
     "lng": 127.154016813111,
     "branch": "남양주지사",
-    "manager": "김현돈",
+    "manager": "G000605",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -6573,7 +6573,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6029516159865,
     "lng": 127.179391212687,
     "branch": "남양주지사",
-    "manager": "김현돈",
+    "manager": "G000605",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -6584,7 +6584,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1895702868246,
     "lng": 128.580471897153,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -6595,7 +6595,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0740967122551,
     "lng": 128.618908152735,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6606,7 +6606,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0794441263372,
     "lng": 128.619778011571,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6617,7 +6617,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.2890559306826,
     "lng": 129.3002033031,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6628,7 +6628,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.9036692745159,
     "lng": 128.818285383477,
     "branch": "강릉지사",
-    "manager": "신명우",
+    "manager": "P000102",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6639,7 +6639,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8895108314121,
     "lng": 128.818405332697,
     "branch": "강릉지사",
-    "manager": "신명우",
+    "manager": "P000102",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6650,7 +6650,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0274807016285,
     "lng": 128.717213466363,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6661,7 +6661,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "강릉지사",
-    "manager": "최정훈",
+    "manager": "P000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6672,7 +6672,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.3079420024963,
     "lng": 128.492837951656,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6683,7 +6683,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.2260770872477,
     "lng": 128.547509885294,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6694,7 +6694,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8490775309418,
     "lng": 128.823743194946,
     "branch": "강릉지사",
-    "manager": "신명우",
+    "manager": "P000102",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6705,7 +6705,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.2832403958938,
     "lng": 129.313391632614,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6716,7 +6716,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7601468397279,
     "lng": 128.918416954182,
     "branch": "강릉지사",
-    "manager": "최정훈",
+    "manager": "P000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6727,7 +6727,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.765571787975,
     "lng": 128.950894859203,
     "branch": "강릉지사",
-    "manager": "최정훈",
+    "manager": "P000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6738,7 +6738,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8026084670552,
     "lng": 128.871059337137,
     "branch": "강릉지사",
-    "manager": "신명우",
+    "manager": "P000102",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6749,7 +6749,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.879318466262,
     "lng": 128.833418205536,
     "branch": "강릉지사",
-    "manager": "신명우",
+    "manager": "P000102",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6760,7 +6760,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.765571787975,
     "lng": 128.950894859203,
     "branch": "강릉지사",
-    "manager": "최정훈",
+    "manager": "P000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6771,7 +6771,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1750979299908,
     "lng": 128.607039096274,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6782,7 +6782,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1902068301079,
     "lng": 128.594505131815,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6793,7 +6793,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7516986717538,
     "lng": 128.905176639742,
     "branch": "강릉지사",
-    "manager": "최정훈",
+    "manager": "P000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6804,7 +6804,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.3070176983231,
     "lng": 128.489953511634,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6815,7 +6815,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7523565240545,
     "lng": 128.896630359833,
     "branch": "강릉지사",
-    "manager": "최정훈",
+    "manager": "P000101",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -6826,7 +6826,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4859298683053,
     "lng": 129.100121781677,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6837,7 +6837,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7812715915829,
     "lng": 128.934767177732,
     "branch": "강릉지사",
-    "manager": "최정훈",
+    "manager": "P000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6848,7 +6848,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.2832403958938,
     "lng": 129.313391632614,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6859,7 +6859,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7872497760499,
     "lng": 128.873207041056,
     "branch": "강릉지사",
-    "manager": "신명우",
+    "manager": "P000102",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6870,7 +6870,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4393964824429,
     "lng": 129.168484098306,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6881,7 +6881,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4985141885152,
     "lng": 129.126091859516,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6892,7 +6892,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0760528098742,
     "lng": 128.623423867287,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6903,7 +6903,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1902068301079,
     "lng": 128.594505131815,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -6914,7 +6914,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1597830937667,
     "lng": 128.98013056024,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6925,7 +6925,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.345440628508,
     "lng": 129.048902607076,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6936,7 +6936,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1892467426552,
     "lng": 128.581713674165,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6947,7 +6947,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.2190132307477,
     "lng": 128.858002566981,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6958,7 +6958,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4728409548086,
     "lng": 129.144181933721,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6969,7 +6969,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.73401274444,
     "lng": 128.970087440039,
     "branch": "강릉지사",
-    "manager": "최정훈",
+    "manager": "P000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6980,7 +6980,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6098143663815,
     "lng": 129.036160046008,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -6991,7 +6991,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.2043271071368,
     "lng": 128.590768805592,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7002,7 +7002,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5213418576167,
     "lng": 129.115207093129,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7013,7 +7013,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4657977195218,
     "lng": 128.800861736953,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7024,7 +7024,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.9814532196241,
     "lng": 128.758034998195,
     "branch": "강릉지사",
-    "manager": "신명우",
+    "manager": "P000102",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7035,7 +7035,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8895108314121,
     "lng": 128.818405332697,
     "branch": "강릉지사",
-    "manager": "신명우",
+    "manager": "P000102",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7046,7 +7046,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0092872984545,
     "lng": 128.729516710526,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7057,7 +7057,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7711683010093,
     "lng": 128.913405756379,
     "branch": "강릉지사",
-    "manager": "최정훈",
+    "manager": "P000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7068,7 +7068,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1892467426552,
     "lng": 128.581713674165,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7079,7 +7079,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.2448243880267,
     "lng": 128.775591337275,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7090,7 +7090,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.3510423056727,
     "lng": 128.428379127248,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7101,7 +7101,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7834807978595,
     "lng": 128.915537385832,
     "branch": "강릉지사",
-    "manager": "신명우",
+    "manager": "P000102",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7112,7 +7112,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.2094728692496,
     "lng": 128.59285844797,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -7123,7 +7123,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1740375877249,
     "lng": 128.605728157797,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7134,7 +7134,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1872227086954,
     "lng": 128.601518385397,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7145,7 +7145,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.434811138922,
     "lng": 129.168996573066,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7156,7 +7156,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7612959714093,
     "lng": 128.901830841156,
     "branch": "강릉지사",
-    "manager": "최정훈",
+    "manager": "P000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7167,7 +7167,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0980779707332,
     "lng": 128.626258048683,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7178,7 +7178,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8947930267454,
     "lng": 128.824959058509,
     "branch": "강릉지사",
-    "manager": "신명우",
+    "manager": "P000102",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7189,7 +7189,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1508874394382,
     "lng": 128.598297964334,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7200,7 +7200,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3846287389804,
     "lng": 128.804415235276,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7211,7 +7211,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1895702868246,
     "lng": 128.580471897153,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7222,7 +7222,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4125300623064,
     "lng": 129.119566294007,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7233,7 +7233,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4625975823178,
     "lng": 128.853112261949,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7244,7 +7244,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1918809177798,
     "lng": 129.330224724267,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7255,7 +7255,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7593119326461,
     "lng": 128.919142111771,
     "branch": "강릉지사",
-    "manager": "최정훈",
+    "manager": "P000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7266,7 +7266,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8877666288979,
     "lng": 128.828973921117,
     "branch": "강릉지사",
-    "manager": "신명우",
+    "manager": "P000102",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7277,7 +7277,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7710215149193,
     "lng": 128.911443899157,
     "branch": "강릉지사",
-    "manager": "최정훈",
+    "manager": "P000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7288,7 +7288,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5750110074117,
     "lng": 128.955755302142,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7299,7 +7299,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7579963379306,
     "lng": 128.899498810805,
     "branch": "강릉지사",
-    "manager": "최정훈",
+    "manager": "P000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7310,7 +7310,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.2089186678098,
     "lng": 128.594193541322,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7321,7 +7321,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -7332,7 +7332,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.2983349322606,
     "lng": 128.544814921798,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7343,7 +7343,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0804827799698,
     "lng": 128.639716147385,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -7354,7 +7354,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.755108339721,
     "lng": 128.901413690354,
     "branch": "강릉지사",
-    "manager": "최정훈",
+    "manager": "P000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7365,7 +7365,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5214844334223,
     "lng": 129.113719870335,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7376,7 +7376,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3772562194473,
     "lng": 129.225692171915,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7387,7 +7387,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7567381724341,
     "lng": 128.911010514616,
     "branch": "강릉지사",
-    "manager": "최정훈",
+    "manager": "P000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7398,7 +7398,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.9036692745159,
     "lng": 128.818285383477,
     "branch": "강릉지사",
-    "manager": "신명우",
+    "manager": "P000102",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7409,7 +7409,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7693555427407,
     "lng": 128.929724904779,
     "branch": "강릉지사",
-    "manager": "최정훈",
+    "manager": "P000101",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7420,7 +7420,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4422809858335,
     "lng": 129.058494892493,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7431,7 +7431,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5936687931219,
     "lng": 128.997453613137,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7442,7 +7442,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1733106194287,
     "lng": 128.60579459145,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7453,7 +7453,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.9194981039118,
     "lng": 128.791895718675,
     "branch": "강릉지사",
-    "manager": "신명우",
+    "manager": "P000102",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7464,7 +7464,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5205791647151,
     "lng": 129.11084056592,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7475,7 +7475,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.2913476932619,
     "lng": 128.540626235794,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7486,7 +7486,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7837080223495,
     "lng": 128.921248783469,
     "branch": "강릉지사",
-    "manager": "신명우",
+    "manager": "P000102",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -7497,7 +7497,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8710798622481,
     "lng": 128.839090051591,
     "branch": "강릉지사",
-    "manager": "신명우",
+    "manager": "P000102",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7508,7 +7508,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5297416680121,
     "lng": 129.118879208734,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7519,7 +7519,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.2829632683993,
     "lng": 129.31308900832,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7530,7 +7530,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.2180084731943,
     "lng": 128.643417143084,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7541,7 +7541,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.18553286407,
     "lng": 128.602581255978,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7552,7 +7552,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7896488840986,
     "lng": 128.921229994936,
     "branch": "강릉지사",
-    "manager": "신명우",
+    "manager": "P000102",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7563,7 +7563,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.434811138922,
     "lng": 129.168996573066,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7574,7 +7574,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4211898598944,
     "lng": 129.194553230044,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7585,7 +7585,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.2395574669457,
     "lng": 128.731309384283,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7596,7 +7596,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4656197389525,
     "lng": 129.16193058184,
     "branch": "강릉지사",
-    "manager": "김완용",
+    "manager": "P000104",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7607,7 +7607,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.2554130181266,
     "lng": 128.561258701553,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -7618,7 +7618,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.4211471074657,
     "lng": 128.461304622167,
     "branch": "강릉지사",
-    "manager": "김성래",
+    "manager": "P000103",
     "is_defect": NaN,
     "type": "설변"
   },
@@ -7629,7 +7629,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7576132282961,
     "lng": 127.624390687956,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7640,7 +7640,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0900264273615,
     "lng": 127.997116962563,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7651,7 +7651,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8784261984241,
     "lng": 127.729116450913,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7662,7 +7662,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4438350005452,
     "lng": 128.071036588096,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -7673,7 +7673,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8518323404195,
     "lng": 127.744303152279,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7684,7 +7684,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3344235275605,
     "lng": 127.930817739225,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7695,7 +7695,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.124141940298,
     "lng": 128.206685766452,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7706,7 +7706,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3251442958172,
     "lng": 127.979153233776,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7717,7 +7717,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3259174379261,
     "lng": 127.943050797276,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7728,7 +7728,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3214520882457,
     "lng": 127.959045409556,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7739,7 +7739,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7573318660296,
     "lng": 127.509822063815,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7750,7 +7750,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1257406161519,
     "lng": 128.209405478169,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000208",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7761,7 +7761,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3584052138225,
     "lng": 127.800746442409,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7772,7 +7772,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3256559908477,
     "lng": 127.937617660707,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7783,7 +7783,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5862879779054,
     "lng": 128.314604689637,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7794,7 +7794,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3544148189962,
     "lng": 127.947741978547,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7805,7 +7805,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4937397971832,
     "lng": 128.012056454948,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7816,7 +7816,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8666454825837,
     "lng": 127.752887449655,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7827,7 +7827,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3406493164538,
     "lng": 127.952776579151,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7838,7 +7838,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8643851449058,
     "lng": 127.733619443559,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7849,7 +7849,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3380561778152,
     "lng": 127.964283057861,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7860,7 +7860,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3337740223418,
     "lng": 127.930997709229,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7871,7 +7871,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1805760412159,
     "lng": 127.751242475098,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7882,7 +7882,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1588625848593,
     "lng": 128.228839919233,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7893,7 +7893,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.726505073356,
     "lng": 127.553222517064,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7904,7 +7904,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8425364130645,
     "lng": 127.371790925819,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7915,7 +7915,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8705010577362,
     "lng": 127.728463833311,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7926,7 +7926,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3222599004063,
     "lng": 127.955841701405,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7937,7 +7937,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7580094960518,
     "lng": 127.497014580671,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7948,7 +7948,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3076221050781,
     "lng": 127.9495690648,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7959,7 +7959,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8356822895164,
     "lng": 127.348688543606,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7970,7 +7970,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.944365656684,
     "lng": 127.537475632946,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7981,7 +7981,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.139932078138,
     "lng": 128.209745778921,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -7992,7 +7992,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8379894910452,
     "lng": 127.500723554502,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8003,7 +8003,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3473449636938,
     "lng": 127.953684696851,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8014,7 +8014,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8494521988803,
     "lng": 127.779647940194,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8025,7 +8025,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8301225570249,
     "lng": 127.5109721332,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8036,7 +8036,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4126133772399,
     "lng": 128.157247961832,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8047,7 +8047,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8312981698592,
     "lng": 127.494902841224,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8058,7 +8058,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8069,7 +8069,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.87488670449,
     "lng": 127.740148438269,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8080,7 +8080,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.859458293701,
     "lng": 127.724966897937,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8091,7 +8091,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6903607778706,
     "lng": 128.691974305311,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8102,7 +8102,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.9679915504489,
     "lng": 127.676791150084,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8113,7 +8113,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0577711277941,
     "lng": 127.669573420083,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8124,7 +8124,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6104353531296,
     "lng": 128.4634353553,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8135,7 +8135,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8620624386405,
     "lng": 127.77007869847,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8146,7 +8146,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5791002400208,
     "lng": 128.489939988034,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8157,7 +8157,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1921693300057,
     "lng": 128.35658601468,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000208",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8168,7 +8168,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.850730156791,
     "lng": 127.483245767729,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8179,7 +8179,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.9002565914188,
     "lng": 127.727821306072,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8190,7 +8190,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8472929298531,
     "lng": 127.34263775129,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8201,7 +8201,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5020715750502,
     "lng": 128.453225941974,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8212,7 +8212,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1065917871146,
     "lng": 127.989643064513,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8223,7 +8223,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8469102565904,
     "lng": 127.771517035245,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8234,7 +8234,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1539941234652,
     "lng": 128.096086881279,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -8245,7 +8245,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0847500521567,
     "lng": 127.523405604525,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8256,7 +8256,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.341466904275,
     "lng": 127.955945504436,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8267,7 +8267,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8983693243008,
     "lng": 127.732440758073,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8278,7 +8278,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8469290865631,
     "lng": 127.372529447047,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -8289,7 +8289,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8300,7 +8300,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1401684729348,
     "lng": 128.215420003948,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8311,7 +8311,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8122052916461,
     "lng": 128.10993846314,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000208",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8322,7 +8322,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8969025951805,
     "lng": 127.524612384241,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8333,7 +8333,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4890352847053,
     "lng": 127.987346172272,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8344,7 +8344,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.2938363241238,
     "lng": 127.821239960714,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8355,7 +8355,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1346990070558,
     "lng": 128.21487503916,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8366,7 +8366,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8503878589291,
     "lng": 127.505569613634,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -8377,7 +8377,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8167708149425,
     "lng": 127.514792912569,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8388,7 +8388,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3701677324143,
     "lng": 127.935199315361,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8399,7 +8399,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7368152621847,
     "lng": 127.418165384414,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8410,7 +8410,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1257406161519,
     "lng": 128.209405478169,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000208",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8421,7 +8421,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4012092781599,
     "lng": 128.385251757971,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8432,7 +8432,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8020168513188,
     "lng": 127.531413402967,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -8443,7 +8443,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8478716019592,
     "lng": 127.558762276597,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8454,7 +8454,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.803526311157,
     "lng": 127.637301273571,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8465,7 +8465,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3446968045437,
     "lng": 127.98388887968,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8476,7 +8476,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8631056310732,
     "lng": 127.721358308058,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8487,7 +8487,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8602716867653,
     "lng": 127.744852444481,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8498,7 +8498,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1399298346087,
     "lng": 128.212337305946,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -8509,7 +8509,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3202356462096,
     "lng": 127.947819584046,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8520,7 +8520,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8531,7 +8531,7 @@ const SUSPENSION_TARGETS = [
     "lat": 36.9775909875181,
     "lng": 128.269184975419,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8542,7 +8542,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.9446179313993,
     "lng": 128.333545715716,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000208",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8553,7 +8553,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1902836553089,
     "lng": 128.547068745018,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -8564,7 +8564,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8765341641411,
     "lng": 127.746963750025,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8575,7 +8575,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5862879779054,
     "lng": 128.314604689637,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8586,7 +8586,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.698506868132,
     "lng": 127.884391414769,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000208",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8597,7 +8597,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8616519178246,
     "lng": 127.740910838737,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8608,7 +8608,7 @@ const SUSPENSION_TARGETS = [
     "lat": 36.8217002352998,
     "lng": 128.316596779874,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8619,7 +8619,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.349170123432,
     "lng": 127.929288270968,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8630,7 +8630,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8606595662635,
     "lng": 128.277766293554,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000208",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8641,7 +8641,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6048543854141,
     "lng": 127.524350835635,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8652,7 +8652,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.0356328050679,
     "lng": 128.177187013463,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8663,7 +8663,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1529087733246,
     "lng": 128.490445928697,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8674,7 +8674,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3421059427725,
     "lng": 127.955024412872,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8685,7 +8685,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1078498192516,
     "lng": 127.989638032859,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8696,7 +8696,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6127981096036,
     "lng": 127.770228600458,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000208",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8707,7 +8707,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000208",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8718,7 +8718,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0707973600631,
     "lng": 127.516144815741,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8729,7 +8729,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.9049797065791,
     "lng": 127.751813137848,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8740,7 +8740,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8762094125928,
     "lng": 127.732968814723,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8751,7 +8751,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1998144995702,
     "lng": 128.04587814749,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8762,7 +8762,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8619589066777,
     "lng": 127.770163645023,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8773,7 +8773,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.818418496303,
     "lng": 127.349304771217,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8784,7 +8784,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8250484563676,
     "lng": 127.514214800223,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8795,7 +8795,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8208988678494,
     "lng": 127.72267911579,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8806,7 +8806,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4993925671821,
     "lng": 128.457729518644,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8817,7 +8817,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3665151417124,
     "lng": 128.396551981611,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8828,7 +8828,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4440114415614,
     "lng": 128.218893668616,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -8839,7 +8839,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3228409420173,
     "lng": 127.950149535964,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8850,7 +8850,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8861,7 +8861,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3113567261344,
     "lng": 127.81775842059,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -8872,7 +8872,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.9323041377384,
     "lng": 127.784779473231,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8883,7 +8883,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.716614109715,
     "lng": 127.458345212723,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8894,7 +8894,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6952309550925,
     "lng": 127.914784662145,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000208",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8905,7 +8905,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8562860152666,
     "lng": 127.750787874432,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8916,7 +8916,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.141509120905,
     "lng": 128.467200636882,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8927,7 +8927,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3214068215832,
     "lng": 127.936486217908,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8938,7 +8938,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1427914927214,
     "lng": 128.209367911986,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8949,7 +8949,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8960,7 +8960,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4901401147358,
     "lng": 127.985353829729,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8971,7 +8971,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8118811678059,
     "lng": 127.432839511316,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8982,7 +8982,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4901242080049,
     "lng": 127.986698253339,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -8993,7 +8993,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8767872153481,
     "lng": 127.735159216452,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9004,7 +9004,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.726505073356,
     "lng": 127.553222517064,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9015,7 +9015,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3511191737852,
     "lng": 127.95223849064,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9026,7 +9026,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3768505225819,
     "lng": 127.929618863083,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9037,7 +9037,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8641010604533,
     "lng": 127.738033981757,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9048,7 +9048,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5111103636494,
     "lng": 128.217335329026,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -9059,7 +9059,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1708384778425,
     "lng": 127.866392883566,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -9070,7 +9070,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3743232618018,
     "lng": 127.875413053402,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9081,7 +9081,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1851969750384,
     "lng": 128.467417023671,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -9092,7 +9092,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9103,7 +9103,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8282690308323,
     "lng": 127.669487031726,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9114,7 +9114,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1037105794163,
     "lng": 127.706914093591,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9125,7 +9125,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4729509810593,
     "lng": 128.404535881897,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9136,7 +9136,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.061648354057,
     "lng": 127.51679863772,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9147,7 +9147,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1097491973226,
     "lng": 128.218044036588,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9158,7 +9158,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3244284636529,
     "lng": 127.829950216113,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9169,7 +9169,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3482249290238,
     "lng": 127.931081778098,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9180,7 +9180,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3939622578823,
     "lng": 128.363765350838,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9191,7 +9191,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3731676148385,
     "lng": 127.873003416785,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9202,7 +9202,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6804344699941,
     "lng": 127.875926160525,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000208",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9213,7 +9213,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.320194175641,
     "lng": 127.958548379184,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9224,7 +9224,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1351992421482,
     "lng": 128.211204300129,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9235,7 +9235,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0668267483425,
     "lng": 128.171980533022,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000208",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9246,7 +9246,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3453413498264,
     "lng": 127.947369146721,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9257,7 +9257,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.697221908976,
     "lng": 127.505743552794,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -9268,7 +9268,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8733465597673,
     "lng": 127.744834731297,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9279,7 +9279,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1185825092106,
     "lng": 128.431704749569,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9290,7 +9290,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3402546465829,
     "lng": 127.9214685548,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9301,7 +9301,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9312,7 +9312,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3204927369459,
     "lng": 127.961949282492,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9323,7 +9323,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1474633599058,
     "lng": 128.214067333763,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9334,7 +9334,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7169711260025,
     "lng": 127.382036830896,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9345,7 +9345,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3219161412573,
     "lng": 127.948219533312,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -9356,7 +9356,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.2499005508136,
     "lng": 128.142069604157,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9367,7 +9367,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3327046884175,
     "lng": 127.930634725211,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9378,7 +9378,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5897485022609,
     "lng": 127.83265846909,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000208",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9389,7 +9389,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6120615056737,
     "lng": 128.368889734634,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9400,7 +9400,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.2486038461346,
     "lng": 128.153481762076,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9411,7 +9411,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1097520972342,
     "lng": 128.24600338011,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9422,7 +9422,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4863569497705,
     "lng": 127.990200286267,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9433,7 +9433,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8199803407592,
     "lng": 127.288010834022,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9444,7 +9444,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5852548544318,
     "lng": 128.413356847627,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9455,7 +9455,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3834017990224,
     "lng": 127.975709491503,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -9466,7 +9466,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7012838785059,
     "lng": 127.695272008526,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000208",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9477,7 +9477,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8383822511561,
     "lng": 127.501455769119,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9488,7 +9488,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5077818859058,
     "lng": 127.977249537285,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9499,7 +9499,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3267599049046,
     "lng": 127.930403440917,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -9510,7 +9510,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1376374806187,
     "lng": 128.19702978199,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9521,7 +9521,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1903623666674,
     "lng": 128.319210212776,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000208",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9532,7 +9532,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.9445419187394,
     "lng": 127.537230044051,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -9543,7 +9543,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.0197317711546,
     "lng": 128.168344737979,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9554,7 +9554,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4499617168268,
     "lng": 128.437540002445,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9565,7 +9565,7 @@ const SUSPENSION_TARGETS = [
     "lat": 36.9775218304259,
     "lng": 128.357137706411,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9576,7 +9576,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1382099856092,
     "lng": 128.207908228922,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9587,7 +9587,7 @@ const SUSPENSION_TARGETS = [
     "lat": NaN,
     "lng": NaN,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9598,7 +9598,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1036275695321,
     "lng": 127.981648505625,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9609,7 +9609,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.2290534258351,
     "lng": 128.08418677934,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9620,7 +9620,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3488639305489,
     "lng": 127.949375227592,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9631,7 +9631,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.5967978111732,
     "lng": 127.506190544793,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9642,7 +9642,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8793639656656,
     "lng": 127.725940123247,
     "branch": "원주지사",
-    "manager": "미지정",
+    "manager": "P000301",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9653,7 +9653,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1936574875171,
     "lng": 128.263903180445,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9664,7 +9664,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0662738591646,
     "lng": 127.796223495102,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9675,7 +9675,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8329691908369,
     "lng": 127.328788389793,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9686,7 +9686,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7383486721091,
     "lng": 127.420225987985,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -9697,7 +9697,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.7742545657955,
     "lng": 127.351859268373,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": "대상",
     "type": "정지"
   },
@@ -9708,7 +9708,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8105499863091,
     "lng": 127.351918214792,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9719,7 +9719,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1729962224602,
     "lng": 128.478022542201,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9730,7 +9730,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.367380568231,
     "lng": 128.394348100174,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9741,7 +9741,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.1462473679821,
     "lng": 128.197506965878,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9752,7 +9752,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6967752209277,
     "lng": 128.716104149419,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9763,7 +9763,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4014868405652,
     "lng": 127.843381702029,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9774,7 +9774,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.1052094301279,
     "lng": 127.988117858764,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9785,7 +9785,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.9605056310082,
     "lng": 127.743773865524,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9796,7 +9796,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8398696313389,
     "lng": 127.759237165544,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9807,7 +9807,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6928937714751,
     "lng": 128.190417895454,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000208",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9818,7 +9818,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3584052138225,
     "lng": 127.800746442409,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9829,7 +9829,7 @@ const SUSPENSION_TARGETS = [
     "lat": 38.0558402744821,
     "lng": 127.668249190244,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9840,7 +9840,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8692343251272,
     "lng": 127.735279297465,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000207",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9851,7 +9851,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.4233940717639,
     "lng": 128.372215930601,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9862,7 +9862,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3567054923377,
     "lng": 127.902247004994,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000201",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9873,7 +9873,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3838132205164,
     "lng": 127.951379865394,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9884,7 +9884,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.8841009095838,
     "lng": 127.743216363374,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000206",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9895,7 +9895,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.3850944255065,
     "lng": 127.952712051575,
     "branch": "원주지사",
-    "manager": "김광호",
+    "manager": "P000202",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9906,7 +9906,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6499785283297,
     "lng": 127.496709377743,
     "branch": "원주지사",
-    "manager": "안상현",
+    "manager": "P000209",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9917,7 +9917,7 @@ const SUSPENSION_TARGETS = [
     "lat": 36.8666343943652,
     "lng": 128.217316879141,
     "branch": "원주지사",
-    "manager": "김상태",
+    "manager": "P000203",
     "is_defect": NaN,
     "type": "정지"
   },
@@ -9928,7 +9928,7 @@ const SUSPENSION_TARGETS = [
     "lat": 37.6818006615098,
     "lng": 127.877321496969,
     "branch": "원주지사",
-    "manager": "경규원",
+    "manager": "P000208",
     "is_defect": NaN,
     "type": "정지"
   }
