@@ -999,12 +999,27 @@
                 mapTypeControl: false,
                 streetViewControl: false,
                 fullscreenControl: false,
-                gestureHandling: 'greedy'
+                gestureHandling: 'greedy',
+                backgroundColor: '#f1f5f9'
             };
+            
+            // Set a timeout to check if map tiles actually load
+            const mapLoadTimeout = setTimeout(() => {
+                const mapDiv = document.getElementById('map');
+                if (mapDiv && mapDiv.innerHTML === "") {
+                    debugLog('Map container is empty after 5s. Possible API key restriction.', true);
+                    alert('지도 데이터 로드 지연: API 키가 현재 도메인을 지원하지 않거나 인터넷 연결이 불안정합니다.');
+                }
+            }, 5000);
             
             try {
                 map = new google.maps.Map(container, options);
                 debugLog('Map surface initialized.');
+                
+                google.maps.event.addListenerOnce(map, 'idle', () => {
+                    clearTimeout(mapLoadTimeout);
+                    debugLog('Map tiles loaded successfully.');
+                });
                 
                 // Defer marker rendering slightly to allow billing/auth checks to settle
                 if (allTargets.length > 0) {
@@ -1014,6 +1029,7 @@
                     }, 500); 
                 }
             } catch (e) {
+                clearTimeout(mapLoadTimeout);
                 debugLog('Map Init Error: See console', true);
                 console.error(e);
             }
@@ -1032,20 +1048,24 @@
         const isFromMain = ref && (
             ref.includes('index.html') || 
             ref.includes('login.html') || 
-            ref.includes('2026%EB%85%84') || 
-            ref.includes('2026년') ||
-            ref.endsWith('dashboard-2026/') ||
-            ref.endsWith('dashboard-2026')
+            ref.includes('2026') ||
+            ref.includes('dashboard')
         );
+
+        // Relaxed condition: If they have a valid session created recently, we can be more lenient
+        const hasRecentSession = window.USER_SESSION && (new Date().getTime() - window.USER_SESSION.timestamp < 3600000); // 1 hour
 
         // Locked if:
         // 1. Expired AND not approved
-        // 2. Not expired BUT accessed directly (not from main) AND not approved
+        // 2. Not expired BUT accessed directly (not from main) AND not approved AND no recent session
         if (!isApproved) {
-            if (isExpired || !isFromMain) {
+            if (isExpired || (!isFromMain && !hasRecentSession)) {
+                debugLog('Access restricted: Showing lock screen', true);
                 document.getElementById('lock-screen').style.display = 'flex';
                 document.body.style.overflow = 'hidden';
                 if (typeof lucide !== 'undefined') lucide.createIcons(); 
+            } else {
+                debugLog('Access permitted via session or referrer');
             }
         }
     }
