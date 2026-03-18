@@ -128,23 +128,29 @@ const ThemeManager = {
     checkExpiration() {
         const expiryStr = this.CONFIG.EXPIRY_DATE;
         const expiryDate = new Date(expiryStr);
-        const today = new Date();
         
-        // 시간 정보를 제거하여 '일자' 기반으로만 비교 (오늘이 만료일보다 크면 만료)
+        // 브라우저의 로컬 시간 대신 한국 시간(KST) 기준으로 '오늘' 계산
+        const kstDateStr = new Intl.DateTimeFormat('ko-KR', {
+            timeZone: 'Asia/Seoul',
+            year: 'numeric', month: '2-digit', day: '2-digit'
+        }).format(new Date());
+        
+        // '2024. 03. 18.' -> '2024-03-18' 형태로 변환하여 Date 객체 생성
+        const today = new Date(kstDateStr.replace(/\. /g, '-').replace(/\./g, ''));
+        
         today.setHours(0, 0, 0, 0);
         expiryDate.setHours(0, 0, 0, 0);
 
-        console.log(`[ExpiryCheck] Today: ${today.toISOString()}, Expiry: ${expiryDate.toISOString()}`);
-        console.log(`[ExpiryCheck] Raw Config:`, this.CONFIG);
+        console.log(`[ExpiryCheck] Today(KST): ${kstDateStr}, Expiry: ${expiryStr}`);
+        console.log(`[ExpiryCheck] Raw Configuration:`, this.CONFIG);
 
         // 세션에서 이미 승인되었는지 확인
         if (sessionStorage.getItem('dashboard_unlocked') === 'true') {
-            console.log('[ExpiryCheck] Dashboard already unlocked in this session.');
             return false;
         }
 
         if (today > expiryDate) {
-            console.log('[ExpiryCheck] Access expired. Showing lock overlay.');
+            console.log('[ExpiryCheck] Access expired based on KST. Showing lock overlay.');
             this.showLockOverlay();
             return true;
         }
@@ -292,7 +298,7 @@ const ThemeManager = {
 
     performExport(newExpiry) {
         const baseUrl = 'https://bough38-web.github.io/dashboard-2026/';
-        const version = "2026.03.18.v4"; // 버전 추적용
+        const version = "2026.03.18.v5"; // 버전 추적용
         
         // document.documentElement.outerHTML만으로는 <!DOCTYPE html>이 누락되므로 수동 추가
         let html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
