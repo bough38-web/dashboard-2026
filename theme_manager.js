@@ -108,6 +108,11 @@ const ThemeManager = {
     run() {
         if (this.checkExpiration()) return; // 만료 시 실행 중단
 
+        // Export 시 주입된 설정이 있다면 반영
+        if (window.DASHBOARD_EXPORT_CONFIG) {
+            this.CONFIG.EXPIRY_DATE = window.DASHBOARD_EXPORT_CONFIG.EXPIRY_DATE;
+        }
+
         const savedTheme = localStorage.getItem('dashboard_theme') || 'default';
         this.applyTheme(savedTheme);
         this.injectGlobalStyles();
@@ -199,6 +204,120 @@ const ThemeManager = {
 
         btn.onclick = attemptUnlock;
         input.onkeyup = (e) => { if (e.key === 'Enter') attemptUnlock(); };
+    },
+
+    showExportModal() {
+        // 전용 스타일 주입
+        const styleId = 'export-modal-styles';
+        if (!document.getElementById(styleId)) {
+            const style = document.createElement('style');
+            style.id = styleId;
+            style.textContent = `
+                .modal-overlay {
+                    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+                    background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(8px);
+                    z-index: 200000; display: flex; align-items: center; justify-content: center;
+                }
+                .export-modal {
+                    background: var(--surface-bg); padding: 40px; border-radius: 24px;
+                    width: 400px; box-shadow: var(--shadow-md); border: 1px solid var(--border-color);
+                    text-align: center; color: var(--text-main);
+                }
+                .export-modal h2 { margin-bottom: 20px; font-weight: 800; }
+                .export-modal input {
+                    width: 100%; padding: 12px; border-radius: 12px; border: 1px solid var(--border-color);
+                    margin-bottom: 16px; font-size: 15px; outline: none;
+                }
+                .export-modal .btn-group { display: flex; gap: 10px; margin-top: 20px; }
+                .export-modal .btn { flex: 1; padding: 12px; border-radius: 12px; cursor: pointer; font-weight: 700; border: none; }
+                .export-btn { background: var(--primary); color: white; }
+                .cancel-btn { background: var(--nav-bg); color: var(--text-muted); }
+            `;
+            document.head.appendChild(style);
+        }
+
+        const modal = document.createElement('div');
+        modal.className = 'modal-overlay';
+        modal.innerHTML = `
+            <div class="export-modal">
+                <h2>대시보드 내보내기</h2>
+                <div style="text-align: left; margin-bottom: 15px;">
+                    <label style="font-size: 12px; font-weight: 700; color: var(--text-muted);">관리자 암호</label>
+                    <input type="password" id="export-pw" placeholder="••••">
+                    <label style="font-size: 12px; font-weight: 700; color: var(--text-muted);">사용 만료일 설정</label>
+                    <input type="date" id="export-expiry" value="${this.CONFIG.EXPIRY_DATE}">
+                </div>
+                <p style="font-size: 12px; color: var(--text-muted); background: #f1f5f9; padding: 10px; border-radius: 8px;">
+                    설정한 만료일이 주입된 독립형 HTML 파일이 생성됩니다.
+                </p>
+                <div class="btn-group">
+                    <button class="btn cancel-btn" id="export-cancel">취소</button>
+                    <button class="btn export-btn" id="export-confirm">다운로드</button>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        document.getElementById('export-cancel').onclick = () => modal.remove();
+        document.getElementById('export-confirm').onclick = () => {
+            const pw = document.getElementById('export-pw').value;
+            const expiry = document.getElementById('export-expiry').value;
+            
+            if (pw !== this.CONFIG.ADMIN_CODE) {
+                alert('관리자 암호가 틀렸습니다.');
+                return;
+            }
+            
+            if (!expiry) {
+                alert('만료일을 설정해주세요.');
+                return;
+            }
+
+            this.performExport(expiry);
+            modal.remove();
+        };
+    },
+
+    performExport(newExpiry) {
+        // 현재 페이지의 HTML을 가져옵니다.
+        let html = document.documentElement.outerHTML;
+
+        // EXPIRY_DATE를 동적으로 교체하는 정규식
+        // theme_manager.js 내의 CONFIG 객체나, 이미 주입된 CONFIG를 찾아서 수정
+        // 하지만 theme_manager.js는 외부 파일이므로, exported html 내에 스크립트로 주입된 CONFIG가 있다면 그것을 우선시해야함.
+        // 여기서는 가장 확실하게 theme_manager.js를 로드하기 전이나 후에 CONFIG를 오버라이드하는 스크립트를 상단에 주입합니다.
+        
+        const overrideScript = `
+    <script>
+        // Exported Dashboard Configuration Override
+        window.DASHBOARD_EXPORT_CONFIG = {
+            EXPIRY_DATE: "${newExpiry}"
+        };
+        // 만약 theme_manager.js가 로드된 후라면 즉시 반영
+        if (typeof ThemeManager !== 'undefined') {
+            ThemeManager.CONFIG.EXPIRY_DATE = "${newExpiry}";
+        }
+    </script>
+`;
+        
+        // </head> 앞에 주입
+        html = html.replace('</head>', overrideScript + '</head>');
+
+        // Blob 생성 및 다운로드
+        const blob = new Blob([html], { type: 'text/html' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        const filename = `2026_Dashboard_Export_${newExpiry}.html`;
+        
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        
+        TrackingManager.log('DASHBOARD_EXPORT', { expiry: newExpiry });
+        alert('대시보드 파일이 생성되었습니다: ' + filename);
     },
 
     injectGlobalStyles() {
@@ -364,6 +483,7 @@ const ThemeManager = {
         ];
 
         const adminItems = [
+            { icon: 'fa-download', text: '대시보드 내보내기 (보안)', action: () => this.showExportModal() },
             { icon: 'fa-history', text: '활동 모니터링', href: 'ADMIN_LOGS.html' },
             { icon: 'fa-file-alt', text: '개발 보고서', href: 'https://bough38-web.github.io/dashboard-2026/PROJECT_REPORT.html', target: '_blank' },
             { icon: 'fa-book', text: '사용 매뉴얼', href: 'https://bough38-web.github.io/dashboard-2026/USER_MANUAL.html', target: '_blank' }
@@ -425,7 +545,12 @@ const ThemeManager = {
             
             adminItems.forEach(admin => {
                 const link = document.createElement('a');
-                link.href = admin.href;
+                if (admin.href) {
+                    link.href = admin.href;
+                } else {
+                    link.href = 'javascript:void(0)';
+                    link.onclick = (e) => { e.preventDefault(); admin.action(); };
+                }
                 link.className = 'admin-menu-item';
                 if (admin.target) link.target = admin.target;
                 link.innerHTML = `<i class="fas ${admin.icon}"></i><span>${admin.text}</span>`;
