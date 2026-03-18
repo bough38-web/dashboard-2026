@@ -267,7 +267,9 @@ const ThemeManager = {
             { icon: 'fa-map-marked-alt', text: '지도/방문', href: 'map_dashboard.html' },
             { icon: 'fa-sync-alt', text: '재계약/리텐션', href: 'index.html' },
             { icon: 'fa-exclamation-triangle', text: '정지/부실', href: '정지부실_실적현황.html' },
-            { icon: 'fa-coins', text: '리텐션P값', href: '리텐션P값 실적현황.html' }
+            { icon: 'fa-coins', text: '리텐션P값', href: '리텐션P값 실적현황.html' },
+            { icon: 'fa-user-slash', text: '해지율', view: 'termination' },
+            { icon: 'fa-list-check', text: '기관별 현황(요약)', view: 'summary' }
         ];
 
         const adminItems = [
@@ -276,7 +278,11 @@ const ThemeManager = {
             { icon: 'fa-book', text: '사용 매뉴얼', href: 'https://bough38-web.github.io/dashboard-2026/USER_MANUAL.html', target: '_blank' }
         ];
 
-        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+        const currentPath = decodeURIComponent(window.location.pathname.split('/').pop() || 'index.html');
+        const isIndex = (currentPath === 'index.html' || currentPath === '' || currentPath.includes('2026') || currentPath.includes('대시보드'));
+        
+        console.log(`[ThemeManager] Standardizing Navigation. Path: ${currentPath}, isIndex: ${isIndex}`);
+
         const navContainers = document.querySelectorAll('.nav-buttons, .header .nav-hub-btn-container');
         
         navContainers.forEach(container => {
@@ -285,16 +291,33 @@ const ThemeManager = {
             
             navItems.forEach(item => {
                 const btn = document.createElement('a');
-                btn.href = item.href;
                 btn.className = `premium-nav-btn`;
-                
-                const isPageMatch = (item.href === currentPath) || 
-                                   (item.href === 'index.html' && (currentPath === '' || currentPath.includes('2026년')));
-                
-                if (isPageMatch) btn.classList.add('active');
-                
                 btn.innerHTML = `<i class="fas ${item.icon}"></i><span>${item.text}</span>`;
+                
+                if (item.href) {
+                    btn.href = item.href;
+                    if ((item.href === currentPath) || (item.href === 'index.html' && isIndex)) {
+                        if (!item.view) btn.classList.add('active');
+                    }
+                }
+
+                if (item.view) {
+                    btn.id = 'nav-' + item.view;
+                    if (isIndex) {
+                        btn.href = 'javascript:void(0)';
+                        btn.onclick = (e) => { 
+                            e.preventDefault(); 
+                            console.log(`[ThemeManager] View Switch: ${item.view}`);
+                            if (typeof switchView === 'function') switchView(item.view); 
+                            else console.error('switchView function not found');
+                        };
+                    } else {
+                        btn.href = `index.html?view=${item.view}`;
+                    }
+                }
+
                 container.appendChild(btn);
+                console.log(`[ThemeManager] Injected button: ${item.text} (view: ${item.view || 'none'})`);
             });
 
             // Gear Icon with Dropdown
@@ -322,7 +345,6 @@ const ThemeManager = {
                 e.stopPropagation();
                 dropdown.classList.toggle('show');
             };
-
             document.addEventListener('click', () => dropdown.classList.remove('show'));
             dropdown.onclick = (e) => e.stopPropagation();
 

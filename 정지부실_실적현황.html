@@ -51,8 +51,8 @@
             --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        body { font-family: 'Pretendard', sans-serif; background-color: var(--bg-body); margin: 0; padding: 10px 10px; color: var(--text-main); display: flex; justify-content: center; overflow-x: hidden; }
-        .dashboard-wrapper { width: 100%; max-width: 1450px; display: flex; flex-direction: column; gap: 10px; display: none; position: relative; }
+        body { font-family: 'Pretendard', sans-serif; background-color: var(--bg-body); margin: 0; padding: 20px; color: var(--text-main); display: flex; justify-content: center; overflow-x: hidden; }
+        .dashboard-wrapper { width: 100%; max-width: 1400px; display: flex; flex-direction: column; gap: 10px; display: none; position: relative; }
         
         /* 헤더 컨트롤 패널 (리텐션P값 테마) */
         .header-control-box { background: var(--surface-bg); border-radius: 12px; box-shadow: var(--shadow-md); padding: 15px 20px; border: 1px solid var(--border-light); margin-bottom: 0; }
@@ -111,19 +111,23 @@
             border-right: 2px solid var(--border-medium) !important;
         }
 
-        /* Shading and Heat map colors - Softened */
-        .bg-sub { background-color: var(--bg-sub); }
-        .heat-high { background: #fee2e2 !important; color: #b91c1c !important; }
-        .heat-mid { background: #ffedd5 !important; color: #c2410c !important; }
-        .heat-low { background: #f0fdf4 !important; color: #15803d !important; }
-        .heat-vhigh { background: #fecaca !important; color: #b91c1c !important; font-weight: 800; }
+        .bg-total { background-color: #e0f2fe !important; }
+        .bg-defect { background-color: #fef2f2 !important; }
+        .bg-etc { background-color: #f5f3ff !important; }
+        .bg-pay { background-color: #fff7ed !important; }
+        .bg-orange { background-color: #fffbeb !important; }
+        .bg-gen { background-color: #f0fdf4 !important; }
+        .bg-blue-l { background-color: #f1f5f9 !important; border-right: 1px solid var(--border-light) !important; }
+        .bg-purple-l { background-color: #f8fafc !important; }
         .heat-sky { background: #e0f2fe !important; color: #0369a1 !important; }
 
         .pdf-btn { background: #0f172a; color: white; border: none; padding: 12px 24px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px; float: right; }
         
-        /* Boundary separators - Strengthened */
-        .sep-r { border-right: 2.5px solid var(--primary-dark) !important; }
-        .sep-l { border-left: 2.5px solid var(--primary-dark) !important; }
+        /* Boundary separators - Strengthened for Expert Layout */
+        .sep-r { border-right: 2px solid var(--primary-dark) !important; }
+        .sep-l { border-left: 2px solid var(--primary-dark) !important; }
+        .table-card thead tr:last-child th { border-bottom: 3px solid var(--primary-dark) !important; }
+        .table-card tfoot tr td { border-top: 3px solid var(--primary-dark) !important; border-bottom: 3px solid var(--primary-dark) !important; }
 
         /* Small toggle style */
         .small-toggle { display: flex; gap: 2px; background: #f1f5f9; padding: 2px; border-radius: 6px; border: 1px solid var(--border-light); }
@@ -426,10 +430,23 @@
     function pct(v) { return (v * 100).toFixed(2) + '%'; }
     function pct0(v) { return Math.round(v * 100) + '%'; }
 
-    function getHeatColor(val) {
-        if (val > 0.013) return 'heat-vhigh'; // 1.3% 초과 (진한 빨강)
-        if (val > 0.011) return 'heat-high';  // 1.1% 초과 (연한 빨강)
-        if (val > 0.010) return 'heat-mid';   // 1.0% 초과 (주황색 강조)
+    function getHeatColor(val, category = 'total') {
+        if (!val || val === 0) return '';
+        
+        // 총정지 및 합계(일반+체납) 기준
+        if (category === 'total' || category === 'acc') {
+            if (val > 0.0135) return 'heat-vhigh'; 
+            if (val > 0.0120) return 'heat-high';  
+            if (val > 0.0110) return 'heat-mid';   
+            if (val < 0.0080) return 'heat-low';   // 성과 우수 (초록)
+            return '';
+        }
+        
+        // 부실(L형), L형, SP, 장기 등 소분거리는 모수가 작으므로 기준 하향 조정
+        if (val > 0.0030) return 'heat-vhigh'; 
+        if (val > 0.0020) return 'heat-high';
+        if (val > 0.0015) return 'heat-mid';
+        if (val < 0.0005) return 'heat-low';
         return '';
     }
 
@@ -453,8 +470,8 @@
             
             // Helper for 2-line performance cells
             const cellPF = (c, v) => `<div class="txt-num">${fmt(c)}</div><div class="txt-num" style="font-size:10px; opacity:0.7;">${fmt(v)}</div>`;
-            // Helper for 2-line rate cells
-            const cellRT = (c_rate, v_rate) => `<div class="txt-num ${getHeatColor(c_rate)}">${pct(c_rate)}</div><div class="txt-num ${getHeatColor(v_rate)}" style="font-size:10px; opacity:0.7;">${pct(v_rate)}</div>`;
+            // Helper for 2-line rate cells with category-specific heat
+            const cellRT = (c_rate, v_rate, cat) => `<div class="txt-num ${getHeatColor(c_rate, cat)}">${pct(c_rate)}</div><div class="txt-num ${getHeatColor(v_rate, cat)}" style="font-size:10px; opacity:0.7;">${pct(v_rate)}</div>`;
 
             const tc_s = item.base_c > 0 ? item.total_c / item.base_c : 0;
             const tv_s = item.base_v > 0 ? item.total_v / item.base_v : 0;
@@ -476,15 +493,15 @@
 
             tr.innerHTML = `
                 <td class="sticky-col sep-r">${item.name}</td>
-                <td>${cellPF(item.total_c, item.total_v)}</td><td class="sep-r">${cellRT(tc_s, tv_s)}</td>
-                <td class="bg-sub">${cellPF(item.def_c, item.def_v)}</td><td class="bg-sub sep-r">${cellRT(dc_s, dv_s)}</td>
-                <td class="bg-sub">${cellPF(item.etc_c, item.etc_v)}</td><td class="bg-sub sep-r">${cellRT(ec_s, ev_s)}</td>
-                <td>${cellPF(item.pay_c, item.pay_v)}</td><td class="sep-r">${cellRT(pc_s, pv_s)}</td>
-                <td>${cellPF(item.gen_c, item.gen_v)}</td><td class="sep-r">${cellRT(gc_s, gv_s)}</td>
-                <td class="bg-sub">${cellPF(total_sum_c, total_sum_v)}</td><td class="bg-sub sep-r">${cellRT(acc_sc, acc_sv)}</td>
+                <td>${cellPF(item.total_c, item.total_v)}</td><td class="sep-r">${cellRT(tc_s, tv_s, 'total')}</td>
+                <td class="bg-sub">${cellPF(item.def_c, item.def_v)}</td><td class="bg-sub sep-r">${cellRT(dc_s, dv_s, 'sub')}</td>
+                <td class="bg-sub">${cellPF(item.etc_c, item.etc_v)}</td><td class="bg-sub sep-r">${cellRT(ec_s, ev_s, 'sub')}</td>
+                <td>${cellPF(item.pay_c, item.pay_v)}</td><td class="sep-r">${cellRT(pc_s, pv_s, 'sub')}</td>
+                <td>${cellPF(item.gen_c, item.gen_v)}</td><td class="sep-r">${cellRT(gc_s, gv_s, 'sub')}</td>
+                <td class="bg-sub">${cellPF(total_sum_c, total_sum_v)}</td><td class="bg-sub sep-r">${cellRT(acc_sc, acc_sv, 'acc')}</td>
                 <td class="txt-num" style="padding: 2px;">
-                    <div class="${getHeatColor(pay_ratio_c)}" style="border-radius:4px; margin-bottom:1px; padding: 2px 0;">C: ${pct0(pay_ratio_c)}</div>
-                    <div class="${getHeatColor(pay_ratio_v)}" style="border-radius:4px; padding: 2px 0;">V: ${pct0(pay_ratio_v)}</div>
+                    <div class="${getHeatColor(pay_ratio_c, 'ratio')}" style="border-radius:4px; margin-bottom:1px; padding: 2px 0;">C: ${pct0(pay_ratio_c)}</div>
+                    <div class="${getHeatColor(pay_ratio_v, 'ratio')}" style="border-radius:4px; padding: 2px 0;">V: ${pct0(pay_ratio_v)}</div>
                 </td>
             `;
             tbody.appendChild(tr);

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
-    <script src="theme_manager.js"></script>
+    <script src="theme_manager.js?v=20260318-03"></script>
     <!-- Auth Guard -->
     <script>
         (function() {
@@ -69,7 +69,7 @@
             font-family: 'Pretendard', 'Malgun Gothic', '맑은 고딕', sans-serif;
             background-color: var(--bg-body);
             margin: 0;
-            padding: 40px 20px;
+            padding: 20px;
             display: flex;
             justify-content: center;
             color: var(--text-main);
@@ -194,8 +194,10 @@
         }
 
         .t-body .percent {
-            color: var(--badge-red-text);
-            font-weight: 700;
+            color: #ef4444; /* Brighter red */
+            font-weight: 800;
+            font-size: 14px;
+            margin-left: 4px;
         }
 
         .total-row {
@@ -211,8 +213,10 @@
         }
 
         .total-row span {
-            color: var(--badge-red-text);
-            font-size: 19px;
+            color: #ef4444;
+            font-size: 22px;
+            font-weight: 900;
+            margin-left: 5px;
         }
 
         .note-text {
@@ -317,10 +321,14 @@
 하단 표 영역
 ======================================================= */
         .table-section {
-            background: var(--surface-bg);
-            padding: 25px 30px;
-            border-radius: 12px;
+            background-color: var(--surface-bg);
+            border-radius: 16px;
+            padding: 20px;
             box-shadow: var(--shadow-soft);
+            border: 1px solid var(--border-color);
+            margin-bottom: 30px;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .table-header-control {
@@ -392,6 +400,29 @@
             font-weight: 700;
         }
 
+        .kpi-header {
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+        }
+        .kpi-header:hover {
+            filter: brightness(1.1);
+            transform: translateY(-2px);
+        }
+        .kpi-header.active {
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+            z-index: 10;
+        }
+        .kpi-header.active::after {
+            content: '✓ 선택됨';
+            position: absolute;
+            right: 15px;
+            font-size: 11px;
+            background: rgba(255,255,255,0.2);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
         thead tr:first-child th {
             background: linear-gradient(to bottom, #334155, #1e293b) !important;
             color: white !important;
@@ -402,12 +433,15 @@
         }
 
         /* 구분 컬럼 고정 및 경계선 */
-        th:first-child, td:first-child {
+        th:first-child, td:first-child, .sticky-col {
             position: sticky;
             left: 0;
             z-index: 10;
             background-color: inherit;
             border-left: 1px solid #334155 !important;
+        }
+        
+        th:first-child, td:first-child, .sep-r {
             border-right: 2px solid var(--border-divider) !important;
         }
 
@@ -421,17 +455,17 @@
 
         /* 헤더 마감선 */
         thead tr:last-child th {
-            border-bottom: 3px solid #64748b !important;
+            border-bottom: 2px solid var(--border-divider) !important;
             border-right: 1px solid #cbd5e1 !important;
             background-color: #f8fafc !important;
-            color: #1e293b !important;
-            font-weight: 800;
+            color: #475569 !important;
+            font-weight: 600;
             font-size: 13px;
         }
 
         /* 그룹 분리선 (Divider) */
         .sep-left { border-left: 3px solid #0f172a !important; }
-        .divider-right { border-right: 2px solid #64748b !important; }
+        .divider-right { border-right: 2px solid var(--border-divider) !important; }
         .border-thin { border-right: 1px solid #cbd5e1 !important; }
 
         .bg-total-col {
@@ -501,25 +535,17 @@
             background-color: #fbfcff !important;
         }
 
-        tfoot tr {
-            background-color: #f1f5f9;
-        }
-
         tfoot td {
-            border-bottom: 3px solid #0f172a !important;
-            border-top: 3px solid #0f172a !important;
-            background-color: #1e293b !important;
-            color: #ffffff !important;
-            font-weight: 900;
-            font-size: 14px;
-        }
-
-        tfoot td * {
-            color: white !important;
+            border-bottom: 4px solid var(--primary-dark) !important;
+            border-top: 3px solid var(--primary-dark) !important;
+            border-color: var(--primary-dark);
+            background-color: #f8fafc !important;
+            color: var(--primary-dark) !important;
+            font-weight: 800;
         }
 
         tfoot td:first-child {
-            background-color: #1e293b !important;
+            background-color: #f8fafc !important;
             position: sticky;
             left: 0;
             border-right: 2px solid var(--border-heavy) !important;
@@ -527,13 +553,20 @@
 
         tfoot .val-target,
         tfoot .val-cnt {
-            color: #94a3b8 !important; /* Lighter for visibility */
+            color: #64748b !important;
             background-color: transparent;
         }
 
         tfoot .val-amt {
-            color: white !important;
-            font-weight: 800;
+            color: var(--primary-dark) !important;
+            font-weight: 900;
+        }
+
+        /* 풋터 뱃지 텍스트 검정색 강조 */
+        tfoot .badge {
+            color: #000000 !important;
+            font-weight: 900 !important;
+            font-size: 13.5px !important;
         }
 
         tfoot .bg-total-col {
@@ -542,15 +575,14 @@
         
         /* 배지 디자인 고도화 (Modern Pill Design) */
         .badge {
-            padding: 5px 10px;
-            border-radius: 6px;
-            font-weight: 900;
-            font-size: 12px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 800;
+            font-size: 11px;
             letter-spacing: -0.02em;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1);
             display: inline-block;
-            min-width: 50px;
-            border: 1px solid rgba(0,0,0,0.05);
+            min-width: 45px;
         }
 
         .badge.excellent { background: var(--badge-green-bg); color: var(--badge-green-text); }
@@ -650,7 +682,6 @@
             background: rgba(15, 23, 42, 0.8);
             box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
         }
-
         .lock-btn {
             width: 100%;
             padding: 14px;
@@ -663,6 +694,22 @@
             cursor: pointer;
             transition: all 0.2s;
             box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .kpi-header {
+            padding: 12px 15px;
+            font-size: 15px;
+            font-weight: 800;
+            color: white;
+            border-radius: 12px 12px 0 0;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        }
+        
+        #kpi-header-pre-retention {
+            font-size: 17px !important; /* User requested larger font */
+            letter-spacing: -0.02em;
         }
 
         .lock-btn:hover {
@@ -740,6 +787,50 @@
             box-shadow: 0 4px 12px rgba(59, 130, 246, 0.08);
         }
 
+        /* AI Review Section */
+        .ai-review-card {
+            margin-top: 25px;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border: 1px solid var(--border-divider);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: var(--shadow-soft);
+        }
+        .ai-review-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            color: var(--primary-dark);
+            font-weight: 800;
+            font-size: 16px;
+        }
+        .ai-review-content {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #334155;
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary-color);
+        }
+        .ai-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 700;
+            margin-right: 5px;
+            text-transform: uppercase;
+        }
+        .ai-tag.best { background: #dcfce7; color: #166534; }
+        .ai-tag.lag { background: #fee2e2; color: #991b1b; }
+
+        /* Summary Table Colors */
+        .bg-summary-blue { background-color: #f0f9ff !important; }
+        .bg-summary-green { background-color: #f0fdf4 !important; }
+        .bg-summary-red { background-color: #fef2f2 !important; }
+        .text-bold-heavy { font-weight: 900 !important; }
     </style>
 </head>
 
@@ -766,6 +857,8 @@
                 </div>
             </div>
         </div>
+
+        </div>
     </div>
 
     <div class="dashboard-wrapper">
@@ -789,8 +882,11 @@
                 <button class="nav-hub-btn" onclick="location.href='리텐션P값 실적현황.html'" title="리텐션P값">
                     <i class="fas fa-coins"></i><span>리텐션P값</span>
                 </button>
-                <button class="nav-hub-btn disabled" title="해지율 (오픈예정)">
-                    <i class="fas fa-user-slash"></i><span>해지율(예정)</span>
+                <button class="nav-hub-btn" id="nav-termination" onclick="switchView('termination')" title="관리고객 해지율">
+                    <i class="fas fa-user-slash"></i><span>해지율</span>
+                </button>
+                <button class="nav-hub-btn" id="nav-summary" onclick="switchView('summary')" title="기관별 현황(요약)">
+                    <i class="fas fa-list-check"></i><span>기관별 현황(요약)</span>
                 </button>
                 <div style="width: 1px; height: 24px; background: var(--border-color); margin: 0 10px;"></div>
                 <button class="logout-btn" onclick="logout()" style="background: #fee2e2; color: #ef4444; border: 1px solid #fecaca; padding: 8px 15px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: all 0.2s;">
@@ -801,7 +897,7 @@
 
         <div class="kpi-section">
             <div class="kpi-box">
-                <div class="kpi-header bg-navy">① 관리고객 재계약 활동 (목표/실적 관리)</div>
+                <div class="kpi-header bg-navy active" id="kpi-header-renewal" onclick="switchView('renewal')">① 관리고객 재계약 활동 (목표/실적 관리)</div>
                 <div class="target-cards">
                     <div class="t-card highlight">
                         <div class="t-head">① 만기도래_신규(1st)<br><span>※ '26년 만기도래 (1월~12월)</span></div>
@@ -821,7 +917,7 @@
             </div>
 
             <div class="kpi-box">
-                <div class="kpi-header bg-green">② 사전리텐션 활동 (방문율 관리)</div>
+                <div class="kpi-header bg-green" id="kpi-header-pre-retention" onclick="switchView('pre-retention')">② 사전리텐션 활동 (방문율 관리)</div>
                 <div class="steps-wrapper">
                     <div class="step">
                         <div class="hexagon hex-1">1월</div>
@@ -847,10 +943,7 @@
                         <i class="fas fa-chart-column" style="color: var(--primary-color); margin-right: 8px;"></i> 지사별 실적/달성률 분석 (<span id="vizMonthText" class="text-blue">1Q 합계</span>)
                     </div>
                     <select id="chartMetricSelect" onchange="updateMainChart()" style="padding: 6px 12px; border-radius: 6px; border: 1px solid var(--border-light); font-size: 13px; font-weight: 700; color: var(--primary-dark); outline: none; background: #f8fafc; cursor: pointer;">
-                        <option value="total">총 실적 (건수)</option>
-                        <option value="new">만기도래_신규 (건수)</option>
-                        <option value="renew">만기도래_재계약 (건수)</option>
-                        <option value="expire">약정만료 (건수)</option>
+                        <!-- Options generated dynamically -->
                     </select>
                 </div>
                 <button class="toggle-viz-btn" onclick="toggleViz()" style="background: none; border: none; font-size: 13px; font-weight: 700; color: var(--text-muted); cursor: pointer; display: flex; align-items: center; gap: 6px;">
@@ -866,7 +959,7 @@
             <div class="table-header-control">
                 <div>
                     <h2 class="table-title">지사별 재계약 활동 실적 상세 (<span id="titleMonth" class="text-blue">1Q 합계</span>)</h2>
-                    <div class="tab-nav" style="margin-top: 15px;">
+                    <div class="tab-nav" id="month-tabs" style="margin-top: 15px;">
                         <button class="tab-btn" data-month="1월" onclick="changeTab('1월')">1월</button>
                         <button class="tab-btn" data-month="2월" onclick="changeTab('2월')">2월</button>
                         <button class="tab-btn" data-month="3월" onclick="changeTab('3월')">3월</button>
@@ -880,41 +973,24 @@
             </div>
 
             <div class="table-scroll">
-                <table>
-                    <thead>
-                        <tr>
-                            <th rowspan="2" style="min-width: 80px;">구분</th>
-                            <th colspan="4" class="bg-total-col text-blue">총 실적 (계)</th>
-                            <th colspan="4"
-                                class="highlight-col-top highlight-col-left highlight-col-right highlight-head-bg">① 만기도래_신규(1st)</th>
-                            <th colspan="4">② 만기도래_재계약</th>
-                            <th colspan="4">③ 약정만료</th>
-                        </tr>
-                        <tr>
-                            <th class="bg-total-col border-thin">목표(금액)</th>
-                            <th class="bg-total-col border-thin">실적(건)</th>
-                            <th class="bg-total-col border-thin">실적(금액)</th>
-                            <th class="bg-total-col group-end">달성률</th>
-                            <th class="highlight-col-left highlight-bg border-thin">목표(금액)</th>
-                            <th class="highlight-bg border-thin">실적(건)</th>
-                            <th class="highlight-bg border-thin">실적(금액)</th>
-                            <th class="highlight-col-right highlight-bg">달성률</th>
-                            <th class="border-thin">목표(금액)</th>
-                            <th class="border-thin">실적(건)</th>
-                            <th class="border-thin">실적(금액)</th>
-                             <th class="border-heavy-right group-end">달성률</th>
-                            <th class="border-thin">목표(금액)</th>
-                            <th class="border-thin">실적(건)</th>
-                            <th class="border-thin">실적(금액)</th>
-                            <th>달성률</th>
-                        </tr>
-                    </thead>
+                <table id="dataTable">
+                    <thead id="tableHead"></thead>
                     <tbody id="tableBody"></tbody>
                     <tfoot id="tableFoot"></tfoot>
                 </table>
             </div>
         </div>
 
+        <div id="aiReviewSection" style="display: none; margin-bottom: 40px;">
+            <div class="ai-review-card">
+                <div class="ai-review-header">
+                    <i class="fas fa-robot"></i> AI 성과 분석 및 실적 코칭 리포트
+                </div>
+                <div id="aiReviewContent" class="ai-review-content">
+                    데이터를 분석하여 지사별 성과 요약을 생성 중입니다...
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -974,80 +1050,398 @@
             }
         };
 
+        const preRetentionData = {
+            rows: [
+                { name: "중앙", target: 36, done: 12, received: 21, pending: 3, share: 33 },
+                { name: "강북", target: 26, done: 3, received: 20, pending: 3, share: 12 },
+                { name: "서대문", target: 26, done: 19, received: 5, pending: 2, share: 73 },
+                { name: "고양", target: 22, done: 10, received: 12, pending: 0, share: 45 },
+                { name: "의정부", target: 39, done: 23, received: 11, pending: 5, share: 59 },
+                { name: "남양주", target: 24, done: 13, received: 11, pending: 0, share: 54 },
+                { name: "강릉", target: 22, done: 6, received: 16, pending: 0, share: 27 },
+                { name: "원주", target: 36, done: 11, received: 18, pending: 7, share: 31 }
+            ],
+            footer: { target: 231, done: 97, received: 114, pending: 20, share: 42 }
+        };
+
+        const terminationData = {
+            rows: [
+                { name: "중앙", jan: 2.9, feb: 1.7, mar: 0.1, target: 1.5, actual: 1.6, rate: 99.0 },
+                { name: "강북", jan: 3.1, feb: 1.2, mar: 1.3, target: 1.6, actual: 1.9, rate: 86.7 },
+                { name: "서대문", jan: 1.3, feb: 1.8, mar: 1.0, target: 1.6, actual: 1.4, rate: 114.3 },
+                { name: "고양", jan: 0.8, feb: 3.9, mar: 0.2, target: 2.1, actual: 1.6, rate: 132.0 },
+                { name: "의정부", jan: 1.2, feb: 1.5, mar: 0.0, target: 1.9, actual: 0.9, rate: 207.6 },
+                { name: "남양주", jan: 0.9, feb: 3.0, mar: 0.7, target: 1.9, actual: 1.5, rate: 124.0 },
+                { name: "강릉", jan: 1.3, feb: 0.8, mar: 1.7, target: 2.0, actual: 1.3, rate: 155.2 },
+                { name: "원주", jan: 0.0, feb: 1.0, mar: 1.0, target: 1.4, actual: 0.6, rate: 222.5 }
+            ],
+            footer: { jan: 1.5, feb: 1.9, mar: 0.7, target: 1.7, actual: 1.3, rate: 129.7 }
+        };
+
+        const pValueData = {
+            rows: [
+                { name: "중앙", usage: 32 }, { name: "강북", usage: 19 }, { name: "서대문", usage: 87 },
+                { name: "고양", usage: 33 }, { name: "의정부", usage: 73 }, { name: "남양주", usage: 29 },
+                { name: "강릉", usage: 93 }, { name: "원주", usage: 124 }
+            ],
+            footer: { usage: 60 }
+        };
+
+        const suspensionData = {
+            rows: [
+                { name: "중앙", total: "83(0.85%)", badL: "31/0.32%", longL: "28(0.33%)", arrears: "7(19%)" },
+                { name: "강북", total: "73(0.65%)", badL: "10(0.09%)", longL: "11(0.15%)", arrears: "8(50%)" },
+                { name: "서대문", total: "94(0.92%)", badL: "29(0.33%)", longL: "27(0.31%)", arrears: "10(10%)" },
+                { name: "고양", total: "200(1.51%)", badL: "34(0.26%)", longL: "24(0.18%)", arrears: "33(16%)" },
+                { name: "의정부", total: "100(1.02%)", badL: "7(0.07%)", longL: "8(0.08%)", arrears: "12(12%)" },
+                { name: "남양주", total: "111(1.16%)", badL: "10(0.10%)", longL: "12(0.12%)", arrears: "29(26%)" },
+                { name: "강릉", total: "102(0.98%)", badL: "9(0.09%)", longL: "17(0.16%)", arrears: "27(27%)" },
+                { name: "원주", total: "232(1.52%)", badL: "25(0.16%)", longL: "33(0.22%)", arrears: "109(47%)" }
+            ],
+            footer: { total: "995(1.09%)", badL: "155/0.17%", longL: "160/0.18%", arrears: "235(23%)" }
+        };
+
         function getBadge(target, actual) {
             if (target === 0 || actual === 0) return '<span class="badge zero">-</span>';
-            const pct = Math.round((actual / target) * 100);
+            const pctVal = Math.round((actual / target) * 100);
             let cls = 'poor';
-            if (pct >= 100) cls = 'excellent';
-            else if (pct >= 50) cls = 'good';
-            return `<span class="badge ${cls}">${pct}%</span>`;
+            if (pctVal >= 100) cls = 'excellent';
+            else if (pctVal >= 50) cls = 'good';
+            return `<span class="badge ${cls}" style="font-size:12.5px; padding: 5px 12px; min-width:55px;">${pctVal}%</span>`;
         }
 
         function formatNum(num) {
-            return num === 0 ? '-' : num.toLocaleString();
+            if (num === 0 || num === null || num === undefined) return '-';
+            return num.toLocaleString();
         }
 
+        let currentView = 'renewal';
         let currentMonth = '1Q 합계';
+
+        function switchView(view) {
+            currentView = view;
+            
+            // UI Update
+            document.querySelectorAll('.kpi-header').forEach(h => h.classList.remove('active'));
+            document.querySelectorAll('.premium-nav-btn, .nav-hub-btn').forEach(btn => btn.classList.remove('active'));
+            
+            if (view === 'renewal') {
+                document.getElementById('kpi-header-renewal').classList.add('active');
+                document.getElementById('month-tabs').style.display = 'flex';
+                document.getElementById('viz-zone').style.display = 'block';
+            } else if (view === 'pre-retention') {
+                document.getElementById('kpi-header-pre-retention').classList.add('active');
+                document.getElementById('month-tabs').style.display = 'none';
+                document.getElementById('viz-zone').style.display = 'block';
+            } else if (view === 'termination') {
+                const navBtn = document.getElementById('nav-termination');
+                if (navBtn) navBtn.classList.add('active');
+                document.getElementById('month-tabs').style.display = 'none';
+                document.getElementById('viz-zone').style.display = 'block';
+                document.getElementById('aiReviewSection').style.display = 'none';
+            } else if (view === 'summary') {
+                const navBtn = document.getElementById('nav-summary');
+                if (navBtn) navBtn.classList.add('active');
+                document.getElementById('month-tabs').style.display = 'none';
+                document.getElementById('viz-zone').style.display = 'none';
+                document.getElementById('aiReviewSection').style.display = 'block';
+                generateAIReview();
+            }
+
+            // Update Select Options
+            const select = document.getElementById('chartMetricSelect');
+            select.innerHTML = '';
+            if (view === 'renewal') {
+                select.innerHTML = `
+                    <option value="total">총 실적 (건수)</option>
+                    <option value="new">만기도래_신규 (건수)</option>
+                    <option value="renew">만기도래_재계약 (건수)</option>
+                    <option value="expire">약정만료 (건수)</option>
+                `;
+            } else if (view === 'pre-retention') {
+                select.innerHTML = `<option value="share">점유율 (%)</option><option value="target">대상 (건수)</option>`;
+            } else if (view === 'termination') {
+                select.innerHTML = `<option value="rate">1Q 달성율 (%)</option><option value="actual">1Q 실적 (평균)</option>`;
+            }
+
+            renderTable(currentMonth);
+            updateMainChart();
+        }
 
         function renderTable(month) {
             currentMonth = month;
+            const thead = document.getElementById('tableHead');
             const tbody = document.getElementById('tableBody');
             const tfoot = document.getElementById('tableFoot');
-            const monthData = tableData[month];
-            
-            let bodyHtml = '';
-            monthData.rows.forEach(r => {
-                bodyHtml += `
+            const title = document.querySelector('.table-title');
+
+            if (currentView === 'renewal') {
+                title.innerHTML = `지사별 재계약 활동 실적 상세 (<span id="titleMonth" class="text-blue">${month}</span>)`;
+                thead.innerHTML = `
                     <tr>
-                        <td>${r.name}</td>
-                        <td class="val-num bg-total-col sep-left">${formatNum(r.total[0])}</td>
-                        <td class="val-num bg-total-col">${formatNum(r.total[1])}</td>
-                        <td class="val-num bg-total-col">${formatNum(r.total[2])}</td>
-                        <td class="bg-total-col divider-right">${getBadge(r.total[0], r.total[2])}</td>
-                        
-                        <td class="val-num highlight-bg sep-left">${formatNum(r.new[0])}</td>
-                        <td class="val-num highlight-bg">${formatNum(r.new[1])}</td>
-                        <td class="val-num highlight-bg">${formatNum(r.new[2])}</td>
-                        <td class="highlight-bg divider-right">${getBadge(r.new[0], r.new[2])}</td>
-                        
-                        <td class="val-num bg-renew sep-left">${formatNum(r.renew[0])}</td>
-                        <td class="val-num bg-renew">${formatNum(r.renew[1])}</td>
-                        <td class="val-num bg-renew">${formatNum(r.renew[2])}</td>
-                        <td class="bg-renew divider-right">${getBadge(r.renew[0], r.renew[2])}</td>
-                        
-                        <td class="val-num bg-expire sep-left">${formatNum(r.expire[0])}</td>
-                        <td class="val-num bg-expire">${formatNum(r.expire[1])}</td>
-                        <td class="val-num bg-expire">${formatNum(r.expire[2])}</td>
-                        <td>${getBadge(r.expire[0], r.expire[2])}</td>
+                        <th rowspan="2" style="min-width: 80px;">구분</th>
+                        <th colspan="4" class="bg-total-col text-blue">총 실적 (계)</th>
+                        <th colspan="4" class="highlight-col-top highlight-col-left highlight-col-right highlight-head-bg">① 만기도래_신규(1st)</th>
+                        <th colspan="4">② 만기도래_재계약</th>
+                        <th colspan="4">③ 약정만료</th>
+                    </tr>
+                    <tr>
+                        <th class="bg-total-col border-thin">목표(금액)</th>
+                        <th class="bg-total-col border-thin">실적(건)</th>
+                        <th class="bg-total-col border-thin">실적(금액)</th>
+                        <th class="bg-total-col group-end">달성률</th>
+                        <th class="highlight-col-left highlight-bg border-thin">목표(금액)</th>
+                        <th class="highlight-bg border-thin">실적(건)</th>
+                        <th class="highlight-bg border-thin">실적(금액)</th>
+                        <th class="highlight-col-right highlight-bg">달성률</th>
+                        <th class="border-thin">목표(금액)</th>
+                        <th class="border-thin">실적(건)</th>
+                        <th class="border-thin">실적(금액)</th>
+                        <th class="border-heavy-right group-end">달성률</th>
+                        <th class="border-thin">목표(금액)</th>
+                        <th class="border-thin">실적(건)</th>
+                        <th class="border-thin">실적(금액)</th>
+                        <th>달성률</th>
                     </tr>
                 `;
-            });
-            tbody.innerHTML = bodyHtml;
+                const monthData = tableData[month];
+                let bodyHtml = '';
+                monthData.rows.forEach(r => {
+                    bodyHtml += `
+                        <tr>
+                            <td>${r.name}</td>
+                            <td class="val-num bg-total-col sep-left">${formatNum(r.total[0])}</td>
+                            <td class="val-num bg-total-col">${formatNum(r.total[1])}</td>
+                            <td class="val-num bg-total-col">${formatNum(r.total[2])}</td>
+                            <td class="bg-total-col divider-right">${getBadge(r.total[0], r.total[2])}</td>
+                            <td class="val-num highlight-bg sep-left">${formatNum(r.new[0])}</td>
+                            <td class="val-num highlight-bg">${formatNum(r.new[1])}</td>
+                            <td class="val-num highlight-bg">${formatNum(r.new[2])}</td>
+                            <td class="highlight-bg divider-right">${getBadge(r.new[0], r.new[2])}</td>
+                            <td class="val-num bg-renew sep-left">${formatNum(r.renew[0])}</td>
+                            <td class="val-num bg-renew">${formatNum(r.renew[1])}</td>
+                            <td class="val-num bg-renew">${formatNum(r.renew[2])}</td>
+                            <td class="bg-renew divider-right">${getBadge(r.renew[0], r.renew[2])}</td>
+                            <td class="val-num bg-expire sep-left">${formatNum(r.expire[0])}</td>
+                            <td class="val-num bg-expire">${formatNum(r.expire[1])}</td>
+                            <td class="val-num bg-expire">${formatNum(r.expire[2])}</td>
+                            <td>${getBadge(r.expire[0], r.expire[2])}</td>
+                        </tr>
+                    `;
+                });
+                tbody.innerHTML = bodyHtml;
+                const f = monthData.footer;
+                tfoot.innerHTML = `
+                    <tr style="background: #f1f5f9; font-weight: 900;">
+                        <td class="sticky-col sep-r" style="background: #f1f5f9; font-size: 14px;">합 계</td>
+                        <td class="val-num sep-left">${formatNum(f.total[0])}</td>
+                        <td class="val-num">${formatNum(f.total[1])}</td>
+                        <td class="val-num border-thin">${formatNum(f.total[2])}</td>
+                        <td class="divider-right">${getBadge(f.total[0], f.total[2])}</td>
+                        <td class="val-num sep-left">${formatNum(f.new[0])}</td>
+                        <td class="val-num">${formatNum(f.new[1])}</td>
+                        <td class="val-num">${formatNum(f.new[2])}</td>
+                        <td class="divider-right">${getBadge(f.new[0], f.new[2])}</td>
+                        <td class="val-num sep-left">${formatNum(f.renew[0])}</td>
+                        <td class="val-num">${formatNum(f.renew[1])}</td>
+                        <td class="val-num">${formatNum(f.renew[2])}</td>
+                        <td class="divider-right">${getBadge(f.renew[0], f.renew[2])}</td>
+                        <td class="val-num sep-left">${formatNum(f.expire[0])}</td>
+                        <td class="val-num">${formatNum(f.expire[1])}</td>
+                        <td class="val-num">${formatNum(f.expire[2])}</td>
+                        <td>${getBadge(f.expire[0], f.expire[2])}</td>
+                    </tr>
+                `;
+            } else if (currentView === 'pre-retention') {
+                title.innerHTML = `② 사전리텐션 활동현황 (방문율 관리)`;
+                thead.innerHTML = `
+                    <tr>
+                        <th rowspan="2" style="min-width: 80px;">구분</th>
+                        <th colspan="5" class="bg-total-col text-blue" style="color: white !important;">사전리텐션 활동현황 (방문율 관리)</th>
+                    </tr>
+                    <tr>
+                        <th class="bg-total-col">대상 (건)</th>
+                        <th class="bg-total-col">처리완료</th>
+                        <th class="highlight-bg">접수</th>
+                        <th class="highlight-bg">미접수</th>
+                        <th class="bg-total-col">점유율 (%)</th>
+                    </tr>
+                `;
+                let bodyHtml = '';
+                preRetentionData.rows.forEach(r => {
+                    bodyHtml += `
+                        <tr>
+                            <td class="sticky-col sep-r">${r.name}</td>
+                            <td>${formatNum(r.target)}</td>
+                            <td>${formatNum(r.done)}</td>
+                            <td class="highlight-bg">${formatNum(r.received)}</td>
+                            <td class="highlight-bg">${formatNum(r.pending)}</td>
+                            <td><span class="badge ${r.share >= 50 ? 'excellent' : 'good'}" style="min-width:45px;">${r.share}%</span></td>
+                        </tr>
+                    `;
+                });
+                tbody.innerHTML = bodyHtml;
+                const f = preRetentionData.footer;
+                tfoot.innerHTML = `
+                    <tr style="background: #f1f5f9; font-weight: 900;">
+                        <td class="sticky-col sep-r" style="background: #f1f5f9; font-size: 14px;">총합계</td>
+                        <td>${formatNum(f.target)}</td>
+                        <td>${formatNum(f.done)}</td>
+                        <td class="highlight-bg">${formatNum(f.received)}</td>
+                        <td class="highlight-bg">${formatNum(f.pending)}</td>
+                        <td><span class="badge excellent">${f.share}%</span></td>
+                    </tr>
+                `;
+            } else if (currentView === 'termination') {
+                title.innerHTML = `관리고객 해지율 상세 분석`;
+                thead.innerHTML = `
+                    <tr>
+                        <th rowspan="2" style="min-width: 80px;">기관</th>
+                        <th colspan="6" class="bg-total-col text-blue" style="color: white !important;">관리고객 해지율 상세 분석 (월별/분기 현황)</th>
+                    </tr>
+                    <tr>
+                        <th style="background-color: #f8fafc !important;">'26.1월</th>
+                        <th style="background-color: #f8fafc !important;">2월</th>
+                        <th style="background-color: #f8fafc !important;">3월</th>
+                        <th class="bg-total-col">1Q목표(평균)</th>
+                        <th class="bg-total-col">1Q실적(평균)</th>
+                        <th class="highlight-bg text-blue">1Q달성율(평균)</th>
+                    </tr>
+                `;
+                let bodyHtml = '';
+                terminationData.rows.forEach(r => {
+                    bodyHtml += `
+                        <tr>
+                            <td class="sticky-col sep-r">${r.name}</td>
+                            <td>${r.jan}%</td>
+                            <td>${r.feb}%</td>
+                            <td>${r.mar}%</td>
+                            <td class="bg-total-col">${r.target}%</td>
+                            <td class="bg-total-col">${r.actual}%</td>
+                            <td class="highlight-bg">${getBadge(r.target, r.actual)}</td>
+                        </tr>
+                    `;
+                });
+                tbody.innerHTML = bodyHtml;
+                const f = terminationData.footer;
+                tfoot.innerHTML = `
+                    <tr style="background: #f1f5f9; font-weight: 900;">
+                        <td class="sticky-col sep-r" style="background: #f1f5f9; font-size: 14px;">본부계</td>
+                        <td>${f.jan}%</td>
+                        <td>${f.feb}%</td>
+                        <td>${f.mar}%</td>
+                        <td class="bg-total-col">${f.target}%</td>
+                        <td class="bg-total-col">${f.actual}%</td>
+                        <td class="highlight-bg">${getBadge(f.target, f.actual)}</td>
+                    </tr>
+                `;
+            } else if (currentView === 'summary') {
+                title.innerHTML = `기관별 현황 요약 (종합 대시보드)`;
+                thead.innerHTML = `
+                    <tr>
+                        <th rowspan="2" style="min-width: 80px;">구분</th>
+                        <th colspan="4" class="bg-summary-blue">재계약 (달성율)</th>
+                        <th class="bg-summary-green">사전리텐션</th>
+                        <th class="bg-summary-red">관리_해지율</th>
+                        <th class="bg-summary-blue">리텐션P값 (2월누적)</th>
+                        <th colspan="4" class="bg-summary-red">정지 / 부실</th>
+                    </tr>
+                    <tr>
+                        <th class="bg-summary-blue" style="font-size:11px;">1st_재계약</th>
+                        <th class="bg-summary-blue" style="font-size:11px;">만기도래_재</th>
+                        <th class="bg-summary-blue" style="font-size:11px;">약정만료</th>
+                        <th class="bg-summary-blue" style="font-size:11px;">총실적</th>
+                        <th class="bg-summary-green" style="font-size:11px;">달성율</th>
+                        <th class="bg-summary-red" style="font-size:11px;">1Q 달성율(평균)</th>
+                        <th class="bg-summary-blue" style="font-size:11px;">사용율</th>
+                        <th class="bg-summary-red" style="font-size:11px;">총정지</th>
+                        <th class="bg-summary-red" style="font-size:11px;">부실(L형)</th>
+                        <th class="bg-summary-red" style="font-size:11px;">L형(장기)</th>
+                        <th class="bg-summary-red" style="font-size:11px;">체납정지(비율)</th>
+                    </tr>
+                `;
+                let bodyHtml = '';
+                const base = tableData['1Q 합계'].rows;
+                base.forEach((r, idx) => {
+                    const pr = preRetentionData.rows[idx];
+                    const tr = terminationData.rows[idx];
+                    const pv = pValueData.rows[idx];
+                    const ss = suspensionData.rows[idx];
 
-            const f = monthData.footer;
-            tfoot.innerHTML = `
-                <tr>
-                    <td>합 계</td>
-                    <td class="val-num sep-left">${formatNum(f.total[0])}</td>
-                    <td class="val-num">${formatNum(f.total[1])}</td>
-                    <td class="val-num">${formatNum(f.total[2])}</td>
-                    <td class="divider-right">${getBadge(f.total[0], f.total[2])}</td>
-                    
-                    <td class="val-num sep-left">${formatNum(f.new[0])}</td>
-                    <td class="val-num">${formatNum(f.new[1])}</td>
-                    <td class="val-num">${formatNum(f.new[2])}</td>
-                    <td class="divider-right">${getBadge(f.new[0], f.new[2])}</td>
-                    
-                    <td class="val-num sep-left">${formatNum(f.renew[0])}</td>
-                    <td class="val-num">${formatNum(f.renew[1])}</td>
-                    <td class="val-num">${formatNum(f.renew[2])}</td>
-                    <td class="divider-right">${getBadge(f.renew[0], f.renew[2])}</td>
-                    
-                    <td class="val-num sep-left">${formatNum(f.expire[0])}</td>
-                    <td class="val-num">${formatNum(f.expire[1])}</td>
-                    <td class="val-num">${formatNum(f.expire[2])}</td>
-                    <td>${getBadge(f.expire[0], f.expire[2])}</td>
-                </tr>
+                    const calcPct = (vals) => (vals[0] === 0 ? 0 : Math.round((vals[1] / vals[0]) * 100));
+
+                    bodyHtml += `
+                        <tr>
+                            <td class="sticky-col sep-r text-bold-heavy">${r.name}</td>
+                            <td class="bg-summary-blue">${calcPct(r.new)}%</td>
+                            <td class="bg-summary-blue">${r.expire[1] > 0 ? calcPct(r.renew) + '%' : '-'}</td>
+                            <td class="bg-summary-blue">${calcPct(r.expire)}%</td>
+                            <td class="bg-summary-blue text-bold-heavy">${calcPct(r.total)}%</td>
+                            <td class="bg-summary-green">${pr.share}%</td>
+                            <td class="bg-summary-red">${tr.rate}%</td>
+                            <td class="bg-summary-blue">${pv.usage}%</td>
+                            <td class="bg-summary-red">${ss.total}</td>
+                            <td class="bg-summary-red">${ss.badL}</td>
+                            <td class="bg-summary-red">${ss.longL}</td>
+                            <td class="bg-summary-red">${ss.arrears}</td>
+                        </tr>
+                    `;
+                });
+                tbody.innerHTML = bodyHtml;
+
+                const f1 = tableData['1Q 합계'].footer;
+                const fp = preRetentionData.footer;
+                const ft = terminationData.footer;
+                const fv = pValueData.footer;
+                const fs = suspensionData.footer;
+
+                const calcPctF = (vals) => (vals[0] === 0 ? 0 : Math.round((vals[1] / vals[0]) * 100));
+
+                tfoot.innerHTML = `
+                    <tr style="background: #e2e8f0; font-weight: 900; color: #1e293b;">
+                        <td class="sticky-col sep-r" style="background: #e2e8f0; font-size: 14px;">본부계</td>
+                        <td class="bg-summary-blue">${calcPctF(f1.new)}%</td>
+                        <td class="bg-summary-blue">${calcPctF(f1.renew)}%</td>
+                        <td class="bg-summary-blue">${calcPctF(f1.expire)}%</td>
+                        <td class="bg-summary-blue text-bold-heavy">${calcPctF(f1.total)}%</td>
+                        <td class="bg-summary-green">${fp.share}%</td>
+                        <td class="bg-summary-red">${ft.rate}%</td>
+                        <td class="bg-summary-blue">${fv.usage}%</td>
+                        <td class="bg-summary-red">${fs.total}</td>
+                        <td class="bg-summary-red">${fs.badL}</td>
+                        <td class="bg-summary-red">${fs.longL}</td>
+                        <td class="bg-summary-red">${fs.arrears}</td>
+                    </tr>
+                `;
+            }
+        }
+
+        function generateAIReview() {
+            const base = tableData['1Q 합계'].rows;
+            const data = base.map((r, idx) => {
+                const tr = terminationData.rows[idx];
+                const pv = pValueData.rows[idx];
+                const ss = suspensionData.rows[idx];
+                const totalPct = (r.total[0] === 0 ? 0 : Math.round((r.total[1] / r.total[0]) * 100));
+                return {
+                    name: r.name,
+                    renew: totalPct,
+                    term: tr.rate,
+                    pval: pv.usage,
+                    suspension: ss.total.match(/\((.*)%\)/) ? parseFloat(ss.total.match(/\((.*)%\)/)[1]) : 0
+                };
+            });
+
+            // Sort by combined score (Simplified: high renewal, low suspension)
+            const sorted = [...data].sort((a, b) => (b.renew - b.suspension * 10) - (a.renew - a.suspension * 10));
+            const best = sorted[0];
+            const lag = sorted[sorted.length - 1];
+
+            const content = document.getElementById('aiReviewContent');
+            content.innerHTML = `
+                <p><span class="ai-tag best">BEST</span> <strong>${best.name} 지사</strong>: 재계약 달성률(${best.renew}%)이 매우 우수하며, 정지율(${best.suspension}%) 관리가 전 지사 중 가장 안정적입니다. 타 지사의 모범 사례로 분석됩니다.</p>
+                <p><span class="ai-tag lag">LAGGING</span> <strong>${lag.name} 지사</strong>: 재계약 실적(${lag.renew}%) 대비 정지/부실 지표(${lag.suspension}%)가 상대적으로 높아 리스크 관리가 시급합니다. 특히 해지율 방어와 체납 관리에 집중적인 코칭이 필요합니다.</p>
+                <p style="margin-top:10px; font-style: italic; color: #64748b;">※ 본 분석은 실시간 실적 데이터를 기반으로 한 AI 자동 생성 리포트입니다.</p>
             `;
         }
 
@@ -1056,8 +1450,13 @@
             const activeBtn = document.querySelector(`.tab-btn[data-month="${month}"]`);
             if (activeBtn) activeBtn.classList.add('active');
             
-            document.getElementById('titleMonth').innerText = month;
-            document.getElementById('vizMonthText').innerText = month;
+            const monthText = month;
+            currentMonth = month;
+            
+            const titleMonth = document.getElementById('titleMonth');
+            const vizMonthText = document.getElementById('vizMonthText');
+            if(titleMonth) titleMonth.innerText = monthText;
+            if(vizMonthText) vizMonthText.innerText = monthText;
             
             const tbody = document.getElementById('tableBody');
             const tfoot = document.getElementById('tableFoot');
@@ -1066,7 +1465,7 @@
             
             setTimeout(() => {
                 renderTable(month);
-                updateMainChart(month);
+                updateMainChart();
                 tbody.style.opacity = 1;
                 tfoot.style.opacity = 1;
             }, 200);
@@ -1100,21 +1499,43 @@
             }
         }
 
-        function updateMainChart(month) {
-            const activeMonth = month || currentMonth;
+        function updateMainChart() {
             const ctx = document.getElementById('mainChart').getContext('2d');
             const metric = document.getElementById('chartMetricSelect').value;
-            const data = tableData[activeMonth].rows;
-            
-            const labels = data.map(r => r.name);
-            const targets = data.map(r => r[metric][0]);
-            const actuals = data.map(r => r[metric][2]);
-            const rates = data.map(r => r[metric][0] > 0 ? Math.round((r[metric][2] / r[metric][0]) * 100) : 0);
+            let labels = [];
+            let targets = [];
+            let actuals = [];
+            let rates = [];
 
-            const maxRate = Math.max(...rates);
-            const dynamicMaxY1 = Math.max(120, Math.ceil((maxRate + 20) / 20) * 20);
+            if (currentView === 'renewal') {
+                const data = tableData[currentMonth].rows;
+                labels = data.map(r => r.name);
+                targets = data.map(r => r[metric][0]);
+                actuals = data.map(r => r[metric][2]);
+                rates = data.map(r => r[metric][0] > 0 ? Math.round((r[metric][2] / r[metric][0]) * 100) : 0);
+            } else if (currentView === 'pre-retention') {
+                const data = preRetentionData.rows;
+                labels = data.map(r => r.name);
+                if (metric === 'share') {
+                    rates = data.map(r => r.share);
+                    actuals = data.map(r => r.done);
+                } else {
+                    actuals = data.map(r => r.target);
+                }
+            } else if (currentView === 'termination') {
+                const data = terminationData.rows;
+                labels = data.map(r => r.name);
+                if (metric === 'rate') {
+                    rates = data.map(r => r.rate);
+                    targets = data.map(r => r.target);
+                    actuals = data.map(r => r.actual);
+                } else {
+                    actuals = data.map(r => r.actual);
+                }
+            }
 
-            // [Expert Technique] Gradient Generator
+            const dynamicMaxY1 = rates.length > 0 ? Math.max(120, Math.ceil((Math.max(...rates) + 20) / 20) * 20) : 120;
+
             const createGradient = (color1, color2) => {
                 const grad = ctx.createLinearGradient(0, 0, 0, 300);
                 grad.addColorStop(0, color1);
@@ -1124,62 +1545,57 @@
 
             const blueGrad = createGradient('rgba(59, 130, 246, 0.9)', 'rgba(37, 99, 235, 0.7)');
             const greenGrad = createGradient('rgba(34, 197, 94, 0.9)', 'rgba(22, 163, 74, 0.7)');
+            const orangeGrad = createGradient('rgba(249, 115, 22, 0.9)', 'rgba(234, 88, 12, 0.7)');
             const grayGrad = createGradient('rgba(203, 213, 225, 0.8)', 'rgba(148, 163, 184, 0.6)');
 
-            const metricLabels = {
-                'total': '총 실적',
-                'new': '만기도래_신규',
-                'renew': '만기도래_재계약',
-                'expire': '약정만료'
-            };
-            const currentMetricLabel = metricLabels[metric];
-
-            const chartData = {
-                labels: labels,
-                datasets: [
-                    {
-                        label: `${currentMetricLabel} 달성률 (%)`,
-                        data: rates,
-                        type: 'line',
-                        borderColor: '#f43f5e',
-                        borderWidth: 3,
-                        tension: 0.4, // Smooth curve
-                        pointBackgroundColor: '#fff',
-                        pointBorderColor: '#f43f5e',
-                        pointBorderWidth: 2,
-                        pointRadius: 4,
-                        pointHoverRadius: 6,
-                        yAxisID: 'y1',
-                        datalabels: {
-                            align: 'top',
-                            offset: 4,
-                            color: '#e11d48',
-                            font: { weight: '800', size: 11 },
-                            formatter: (v) => v > 0 ? v + '%' : ''
-                        }
-                    },
-                    {
-                        label: `${currentMetricLabel} 목표`,
-                        data: targets,
-                        backgroundColor: grayGrad,
-                        borderRadius: 6,
-                        datalabels: { display: false }
-                    },
-                    {
-                        label: `${currentMetricLabel} 실적`,
-                        data: actuals,
-                        backgroundColor: rates.map(r => r >= 100 ? greenGrad : blueGrad),
-                        borderRadius: 6,
-                        datalabels: {
-                            anchor: 'end',
-                            align: 'top',
-                            color: '#475569',
-                            font: { weight: '700', size: 10 },
-                            formatter: (v) => v > 0 ? fmtSmart(v) : ''
-                        }
+            const datasets = [];
+            
+            if (rates.length > 0) {
+                datasets.push({
+                    label: `비율 (%)`,
+                    data: rates,
+                    type: 'line',
+                    borderColor: currentView === 'pre-retention' ? '#f97316' : '#f43f5e',
+                    borderWidth: 3,
+                    tension: 0.4,
+                    pointBackgroundColor: '#fff',
+                    yAxisID: 'y1',
+                    datalabels: {
+                        align: 'top',
+                        color: currentView === 'pre-retention' ? '#ea580c' : '#e11d48',
+                        font: { weight: '800', size: 11 },
+                        formatter: (v) => v > 0 ? v + '%' : ''
                     }
-                ]
-            };
+                });
+            }
+
+            if (targets.length > 0) {
+                datasets.push({
+                    label: `목표`,
+                    data: targets,
+                    backgroundColor: currentView === 'termination' ? orangeGrad : grayGrad,
+                    borderRadius: 6,
+                    datalabels: { display: false }
+                });
+            }
+
+            if (actuals.length > 0) {
+                datasets.push({
+                    label: `실적`,
+                    data: actuals,
+                    backgroundColor: currentView === 'termination' ? blueGrad : (rates.length > 0 ? rates.map(r => r >= 100 ? greenGrad : blueGrad) : blueGrad),
+                    borderRadius: 6,
+                    datalabels: {
+                        anchor: 'end',
+                        align: 'top',
+                        color: '#475569',
+                        font: { weight: '700', size: 10 },
+                        formatter: (v) => v > 0 ? (currentView === 'termination' ? v + '%' : v.toLocaleString()) : ''
+                    }
+                });
+            }
+
+            const chartData = { labels: labels, datasets: datasets };
 
             if (mainChart) {
                 mainChart.data = chartData;
@@ -1322,7 +1738,17 @@
 
         window.onload = () => {
             checkExpiration();
-            changeTab('1Q 합계');
+            
+            const urlParams = new URLSearchParams(window.location.search);
+            const viewParam = urlParams.get('view');
+            
+            if (viewParam === 'termination') {
+                switchView('termination');
+            } else if (viewParam === 'pre-retention') {
+                switchView('pre-retention');
+            } else {
+                switchView('renewal');
+            }
         };
     </script>
 

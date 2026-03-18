@@ -51,8 +51,8 @@
             --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        body { font-family: 'Pretendard', sans-serif; background-color: var(--bg-body); margin: 0; padding: 20px 20px; color: var(--text-main); display: flex; justify-content: center; }
-        .dashboard-wrapper { width: 100%; max-width: 1450px; display: flex; flex-direction: column; gap: 16px; position: relative; }
+        body { font-family: 'Pretendard', sans-serif; background-color: var(--bg-body); margin: 0; padding: 20px; color: var(--text-main); display: flex; justify-content: center; }
+        .dashboard-wrapper { width: 100%; max-width: 1400px; display: flex; flex-direction: column; gap: 16px; position: relative; }
         #pdf-content { display: flex; flex-direction: column; gap: 24px; }
 
 
@@ -121,15 +121,19 @@
            ======================================================= */
         .table-card { background-color: var(--surface-bg); border-radius: 16px; box-shadow: var(--shadow-md); overflow-x: auto; padding: 20px; border: 1px solid var(--border-light); }
         #mainTable { border-left: 1px solid var(--border-light); border-right: 1px solid var(--border-light); }
-        table { width: 100%; border-collapse: collapse; font-size: 11.5px; text-align: center; white-space: nowrap; table-layout: fixed; }
+        table { width: 100%; border-collapse: collapse; font-size: 12px; text-align: center; white-space: nowrap; min-width: 1200px; }
         
-        thead tr:first-child th { border-top: 2px solid var(--primary-dark); background-color: #f8fafc; }
-        th, td { padding: 10px 4px; vertical-align: middle; border: 1px solid #cbd5e1; overflow: hidden; text-overflow: ellipsis; }
-        th:last-child, td:last-child { border-right: 1px solid #94a3b8; }
-        th:first-child, td:first-child { border-left: 1px solid #94a3b8 !important; }
+        thead tr:first-child th { border-top: 2px solid var(--primary-dark); }
+        th, td { padding: 10px 6px; vertical-align: middle; border: 1px solid var(--border-light); }
+        th:last-child, td:last-child { border-right: 1px solid var(--border-light); }
+        th:first-child, td:first-child { border-left: 1px solid var(--border-heavy) !important; }
         
-        thead tr:last-child th, thead tr:first-child th[rowspan="2"] { border-bottom: 2px solid var(--primary-dark) !important; }
-        .group-end { border-right: 2px solid #64748b !important; }
+        thead tr:last-child th, thead tr:first-child th[rowspan="2"] { border-bottom: 3px solid var(--primary-dark) !important; }
+        .group-end { border-right: 2px solid var(--border-heavy) !important; }
+        .border-heavy-left { border-left: 2px solid var(--border-heavy) !important; }
+
+        /* 면제 컬럼 가로 폭 최적화 */
+        .col-exemption { width: 60px !important; min-width: 60px !important; max-width: 60px !important; white-space: normal !important; font-size: 11px; }
 
         /* 파스텔 헤더 */
         .bg-budget { background-color: #f8fafc; color: var(--primary-dark); font-weight: 800;}
@@ -174,11 +178,11 @@
         tfoot .val-num { color: var(--primary-dark); }
         tfoot .val-highlight { color: var(--primary-blue); }
 
-        .badge { padding: 4px 8px; border-radius: 6px; font-weight: 800; font-size: 12px; display: inline-block; min-width: 45px; text-align: center; box-shadow: 0 1px 2px rgba(0,0,0,0.1); }
-        .badge.danger { background-color: #fee2e2; color: #991b1b; border: 1px solid #fecaca; }
-        .badge.warn { background-color: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
-        .badge.safe { background-color: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
-        .badge.zero { background-color: #f1f5f9; color: #64748b; border: 1px solid #e2e8f0; }
+        .badge { padding: 4px 8px; border-radius: 6px; font-weight: 800; font-size: 11.5px; display: inline-block; min-width: 40px; text-align: center; }
+        .badge.danger { background-color: var(--badge-danger-bg); color: var(--badge-danger-text); }
+        .badge.warn { background-color: var(--badge-warn-bg); color: var(--badge-warn-text); }
+        .badge.safe { background-color: var(--badge-safe-bg); color: var(--badge-safe-text); }
+        .badge.zero { background-color: var(--chart-muted); color: var(--text-muted); }
         
         /* Ensure the last column header doesn't get cut off */
         thead th:last-child { min-width: 100px; }
@@ -444,10 +448,10 @@
             </tr>
             <tr>
                 ${showBudget ? `<th class="sub-th">분기 예산</th><th class="sub-th group-end">월 예산</th>` : ''}
-                ${showJan ? `<th class="sub-th">인하</th><th class="sub-th">할인</th><th class="sub-th txt-blue">소계</th><th class="sub-th group-end">면제</th>` : ''}
-                ${showFeb ? `<th class="sub-th">인하</th><th class="sub-th">할인</th><th class="sub-th txt-blue">소계</th><th class="sub-th group-end">면제</th>` : ''}
+                ${showJan ? `<th class="sub-th">인하</th><th class="sub-th">할인</th><th class="sub-th txt-blue">소계</th><th class="sub-th group-end col-exemption">면제</th>` : ''}
+                ${showFeb ? `<th class="sub-th">인하</th><th class="sub-th">할인</th><th class="sub-th txt-blue">소계</th><th class="sub-th group-end col-exemption">면제</th>` : ''}
                 ${showMom ? `<th class="sub-th">인하</th><th class="sub-th">할인</th><th class="sub-th txt-pink group-end">합계</th>` : ''}
-                ${showAcc ? `<th class="sub-th">예산</th><th class="sub-th txt-navy">실적</th><th class="sub-th">사용률</th><th class="sub-th group-end">면제</th>` : ''}
+                ${showAcc ? `<th class="sub-th">예산</th><th class="sub-th txt-navy">실적</th><th class="sub-th">사용률</th><th class="sub-th group-end col-exemption">면제</th>` : ''}
             </tr>
         `;
 
@@ -470,16 +474,16 @@
                 ${showBudget ? `<td class="val-num">${fmt(r.qBudget)}</td><td class="val-num group-end">${fmt(r.mBudget)}</td>` : ''}
                 
                 ${showJan ? `<td class="val-num">${fmt(r.jan[0])}</td><td class="val-num">${fmt(r.jan[1])}</td>
-                <td class="val-num val-highlight">${fmt(r.jan[2])}</td><td class="val-num group-end">${fmt(r.jan[3])}</td>` : ''}
+                <td class="val-num val-highlight">${fmt(r.jan[2])}</td><td class="val-num group-end col-exemption">${fmt(r.jan[3])}</td>` : ''}
 
                 ${showFeb ? `<td class="val-num">${fmt(r.feb[0])}</td><td class="val-num">${fmt(r.feb[1])}</td>
-                <td class="val-num val-highlight">${fmt(r.feb[2])}</td><td class="val-num group-end">${fmt(r.feb[3])}</td>` : ''}
+                <td class="val-num val-highlight">${fmt(r.feb[2])}</td><td class="val-num group-end col-exemption">${fmt(r.feb[3])}</td>` : ''}
 
                 ${showMom ? `<td class="val-num" style="${getColor(r.mom[0])}">${fmt(r.mom[0])}</td><td class="val-num" style="${getColor(r.mom[1])}">${fmt(r.mom[1])}</td>
                 <td class="val-num txt-pink group-end">${fmt(r.mom[2])}</td>` : ''}
 
                 ${showAcc ? `<td class="val-num" style="color:#475569;">${fmt(r.acc[0])}</td><td class="val-num txt-navy">${fmt(r.acc[1])}</td>
-                <td>${getBadge(r.acc[2])}</td><td class="val-num group-end">${fmt(r.acc[3])}</td>` : ''}
+                <td>${getBadge(r.acc[2])}</td><td class="val-num group-end col-exemption">${fmt(r.acc[3])}</td>` : ''}
             </tr>`;
         });
         tbody.innerHTML = bodyHtml;
@@ -494,16 +498,16 @@
                 ${showBudget ? `<td class="val-num">${fmt(f.qBudget)}</td><td class="val-num group-end">${fmt(f.mBudget)}</td>` : ''}
                 
                 ${showJan ? `<td class="val-num">${fmt(f.jan[0])}</td><td class="val-num">${fmt(f.jan[1])}</td>
-                <td class="val-num val-highlight">${fmt(f.jan[2])}</td><td class="val-num group-end">${fmt(f.jan[3])}</td>` : ''}
+                <td class="val-num val-highlight">${fmt(f.jan[2])}</td><td class="val-num group-end col-exemption">${fmt(f.jan[3])}</td>` : ''}
 
                 ${showFeb ? `<td class="val-num">${fmt(f.feb[0])}</td><td class="val-num">${fmt(f.feb[1])}</td>
-                <td class="val-num val-highlight">${fmt(f.feb[2])}</td><td class="val-num group-end">${fmt(f.feb[3])}</td>` : ''}
+                <td class="val-num val-highlight">${fmt(f.feb[2])}</td><td class="val-num group-end col-exemption">${fmt(f.feb[3])}</td>` : ''}
 
                 ${showMom ? `<td class="val-num">${fmt(f.mom[0])}</td><td class="val-num">${fmt(f.mom[1])}</td>
                 <td class="val-num val-highlight group-end" style="color:#db2777;">${fmt(f.mom[2])}</td>` : ''}
 
                 ${showAcc ? `<td class="val-num">${fmt(f.acc[0])}</td><td class="val-num val-highlight" style="color:#93c5fd;">${fmt(f.acc[1])}</td>
-                <td>${getBadge(f.acc[2])}</td><td class="val-num group-end">${fmt(f.acc[3])}</td>` : ''}
+                <td>${getBadge(f.acc[2])}</td><td class="val-num group-end col-exemption">${fmt(f.acc[3])}</td>` : ''}
             </tr>`;
         } else {
             tfoot.style.display = 'none';
