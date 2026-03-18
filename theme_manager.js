@@ -279,14 +279,17 @@ const ThemeManager = {
     },
 
     performExport(newExpiry) {
-        // 현재 페이지의 HTML을 가져옵니다.
+        const baseUrl = 'https://bough38-web.github.io/dashboard-2026/';
         let html = document.documentElement.outerHTML;
 
-        // EXPIRY_DATE를 동적으로 교체하는 정규식
-        // theme_manager.js 내의 CONFIG 객체나, 이미 주입된 CONFIG를 찾아서 수정
-        // 하지만 theme_manager.js는 외부 파일이므로, exported html 내에 스크립트로 주입된 CONFIG가 있다면 그것을 우선시해야함.
-        // 여기서는 가장 확실하게 theme_manager.js를 로드하기 전이나 후에 CONFIG를 오버라이드하는 스크립트를 상단에 주입합니다.
-        
+        // 1. 상대 경로를 절대 경로(배포 URL)로 변환 (JS, CSS, HTML)
+        // regex: src/href="파일명.확장자" (http로 시작하지 않는 경우)
+        html = html.replace(/(src|href)="(?!(http|https|#|javascript:))([^"]+)"/g, `$1="${baseUrl}$3"`);
+
+        // 2. Auth Guard 리다이렉트 경로 수정 (인라인 스크립트 대응)
+        html = html.replace(/location\.href\s*=\s*'login\.html'/g, `location.href = '${baseUrl}login.html'`);
+
+        // 3. 만료일 설정 오버라이드 스크립트 주입
         const overrideScript = `
     <script>
         // Exported Dashboard Configuration Override
@@ -299,8 +302,6 @@ const ThemeManager = {
         }
     </script>
 `;
-        
-        // </head> 앞에 주입
         html = html.replace('</head>', overrideScript + '</head>');
 
         // Blob 생성 및 다운로드
@@ -317,7 +318,7 @@ const ThemeManager = {
         URL.revokeObjectURL(url);
         
         TrackingManager.log('DASHBOARD_EXPORT', { expiry: newExpiry });
-        alert('대시보드 파일이 생성되었습니다: ' + filename);
+        alert('대시보드 파일이 생성되었습니다: ' + filename + '\n(모든 리소스가 배포 서버와 연동되어 어디서든 열람 가능합니다.)');
     },
 
     injectGlobalStyles() {
