@@ -31,6 +31,12 @@ const TrackingManager = {
 
 // Theme Manager for 2026 Management Hub - Premium Robust Edition
 const ThemeManager = {
+    // [ADMIN CONTROL] Dashboard Expiration Setting
+    CONFIG: {
+        EXPIRY_DATE: '2026-12-31', // 형식: YYYY-MM-DD
+        ADMIN_CODE: '0303'         // 잠금 해제 코드
+    },
+
     themes: {
         default: {
             '--primary': '#4f46e5',
@@ -100,6 +106,8 @@ const ThemeManager = {
     },
 
     run() {
+        if (this.checkExpiration()) return; // 만료 시 실행 중단
+
         const savedTheme = localStorage.getItem('dashboard_theme') || 'default';
         this.applyTheme(savedTheme);
         this.injectGlobalStyles();
@@ -108,6 +116,89 @@ const ThemeManager = {
         
         // Log page view
         TrackingManager.log('PAGE_VIEW', { title: document.title });
+    },
+
+    checkExpiration() {
+        const expiry = new Date(this.CONFIG.EXPIRY_DATE);
+        const today = new Date();
+        
+        // 세션에서 이미 승인되었는지 확인
+        if (sessionStorage.getItem('dashboard_unlocked') === 'true') {
+            return false;
+        }
+
+        if (today > expiry) {
+            this.showLockOverlay();
+            return true;
+        }
+        return false;
+    },
+
+    showLockOverlay() {
+        // 스타일 주입
+        const style = document.createElement('style');
+        style.textContent = `
+            #expiry-lock-overlay {
+                position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+                background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+                z-index: 100000; display: flex; align-items: center; justify-content: center;
+                color: white; font-family: 'Pretendard', sans-serif;
+            }
+            .lock-card {
+                background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px);
+                padding: 40px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.1);
+                text-align: center; max-width: 450px; width: 90%;
+                box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+            }
+            .lock-icon { font-size: 64px; margin-bottom: 24px; }
+            .lock-card h2 { font-size: 28px; margin-bottom: 16px; font-weight: 800; }
+            .lock-card p { color: #94a3b8; margin-bottom: 32px; line-height: 1.6; }
+            .lock-input {
+                width: 100%; padding: 14px; border-radius: 12px; border: 1px solid #334155;
+                background: #0f172a; color: white; margin-bottom: 16px; text-align: center;
+                font-size: 18px; letter-spacing: 4px; outline: none; transition: all 0.2s;
+            }
+            .lock-input:focus { border-color: #4f46e5; box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2); }
+            .lock-btn {
+                width: 100%; padding: 14px; border-radius: 12px; background: #4f46e5;
+                color: white; border: none; font-weight: 700; cursor: pointer; transition: all 0.2s;
+            }
+            .lock-btn:hover { background: #4338ca; transform: translateY(-2px); }
+        `;
+        document.head.appendChild(style);
+
+        const overlay = document.createElement('div');
+        overlay.id = 'expiry-lock-overlay';
+        overlay.innerHTML = `
+            <div class="lock-card">
+                <div class="lock-icon">🔒</div>
+                <h2>대시보드 사용기한 만료</h2>
+                <p>보안 정책에 따라 대시보드 사용 기한이 만료되었습니다.<br>계속 사용하시려면 관리자 코드를 입력해주세요.</p>
+                <input type="password" id="lock-code" class="lock-input" placeholder="••••">
+                <button class="lock-btn" id="unlock-btn">잠금 해제</button>
+                <div id="lock-error" style="color: #ef4444; margin-top: 10px; font-size: 14px; display: none;">잘못된 코드입니다.</div>
+            </div>
+        `;
+        document.body.appendChild(overlay);
+
+        const input = document.getElementById('lock-code');
+        const btn = document.getElementById('unlock-btn');
+        const error = document.getElementById('lock-error');
+
+        const attemptUnlock = () => {
+            if (input.value === this.CONFIG.ADMIN_CODE) {
+                sessionStorage.setItem('dashboard_unlocked', 'true');
+                overlay.remove();
+                this.run(); 
+            } else {
+                error.style.display = 'block';
+                input.value = '';
+                input.focus();
+            }
+        };
+
+        btn.onclick = attemptUnlock;
+        input.onkeyup = (e) => { if (e.key === 'Enter') attemptUnlock(); };
     },
 
     injectGlobalStyles() {
