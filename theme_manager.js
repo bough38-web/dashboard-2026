@@ -158,46 +158,44 @@ const ThemeManager = {
     },
 
     showLockOverlay() {
-        // 스타일 주입
+        // 스타일 주입 - 더욱 강렬하고 명확한 경고 스타일
         const style = document.createElement('style');
         style.textContent = `
             #expiry-lock-overlay {
                 position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-                background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
-                z-index: 100000; display: flex; align-items: center; justify-content: center;
-                color: white; font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+                background: #0f172a;
+                z-index: 1000000; display: flex; align-items: center; justify-content: center;
+                color: white; font-family: 'Pretendard', sans-serif;
             }
             .lock-card {
-                background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(20px);
-                padding: 50px 40px; border-radius: 32px; border: 1px solid rgba(255,255,255,0.15);
-                text-align: center; max-width: 480px; width: 90%;
-                box-shadow: 0 50px 100px -20px rgba(0,0,0,0.7);
-                animation: lockFadeIn 0.5s ease-out;
+                background: #1e293b; padding: 60px 40px; border-radius: 32px; 
+                border: 2px solid #ef4444; text-align: center; max-width: 500px; width: 95%;
+                box-shadow: 0 0 100px rgba(239, 68, 68, 0.3);
+                animation: lockPulse 2s infinite alternate;
             }
-            @keyframes lockFadeIn {
-                from { opacity: 0; transform: translateY(20px); }
-                to { opacity: 1; transform: translateY(0); }
+            @keyframes lockPulse {
+                from { box-shadow: 0 0 50px rgba(239, 68, 68, 0.2); }
+                to { box-shadow: 0 0 100px rgba(239, 68, 68, 0.5); }
             }
-            .lock-icon { font-size: 72px; margin-bottom: 24px; filter: drop-shadow(0 0 20px rgba(79, 70, 229, 0.4)); }
-            .lock-card h2 { font-size: 32px; margin-bottom: 20px; font-weight: 900; letter-spacing: -1px; color: #f8fafc; }
-            .lock-card p { color: #cbd5e1; margin-bottom: 40px; line-height: 1.8; font-size: 16px; font-weight: 500; }
-            .lock-card .highlight { color: #818cf8; font-weight: 700; }
-            
+            .lock-warning-badge {
+                background: #ef4444; color: white; padding: 8px 20px; border-radius: 50px;
+                font-weight: 900; font-size: 14px; margin-bottom: 30px; display: inline-block;
+            }
+            .lock-icon { font-size: 80px; margin-bottom: 24px; color: #ef4444; }
+            .lock-card h2 { font-size: 34px; margin-bottom: 24px; font-weight: 900; color: #ffffff; }
+            .lock-card p { color: #94a3b8; margin-bottom: 40px; line-height: 1.8; font-size: 18px; }
             .lock-input-wrapper { position: relative; margin-bottom: 20px; }
             .lock-input {
-                width: 100%; padding: 18px; border-radius: 16px; border: 2px solid #334155;
-                background: rgba(15, 23, 42, 0.8); color: white; text-align: center;
-                font-size: 22px; letter-spacing: 8px; outline: none; transition: all 0.3s;
+                width: 100%; padding: 20px; border-radius: 16px; border: 2px solid #334155;
+                background: #0f172a; color: white; text-align: center;
+                font-size: 24px; letter-spacing: 10px; outline: none; transition: all 0.3s;
             }
-            .lock-input:focus { border-color: #6366f1; background: #0f172a; box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2); }
-            
+            .lock-input:focus { border-color: #ef4444; box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.2); }
             .lock-btn {
-                width: 100%; padding: 16px; border-radius: 16px; background: linear-gradient(to right, #6366f1, #4f46e5);
-                color: white; border: none; font-weight: 800; font-size: 16px; cursor: pointer; 
-                transition: all 0.3s; box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
+                width: 100%; padding: 18px; border-radius: 16px; background: #ef4444;
+                color: white; border: none; font-weight: 800; font-size: 18px; cursor: pointer; transition: all 0.3s;
             }
-            .lock-btn:hover { transform: translateY(-3px); box-shadow: 0 20px 25px -5px rgba(79, 70, 229, 0.4); filter: brightness(1.1); }
-            .lock-btn:active { transform: translateY(-1px); }
+            .lock-btn:hover { background: #dc2626; transform: scale(1.02); }
         `;
         document.head.appendChild(style);
 
@@ -205,37 +203,36 @@ const ThemeManager = {
         overlay.id = 'expiry-lock-overlay';
         overlay.innerHTML = `
             <div class="lock-card">
-                <div class="lock-icon">🛡️</div>
-                <h2>대시보드 사용 제한</h2>
+                <div class="lock-warning-badge">ACCESS EXPIRED</div>
+                <div class="lock-icon">⚠️</div>
+                <h2>프로그램 사용 만료</h2>
                 <p>
-                    <span class="highlight">이 프로그램은 사용 기한이 만료되었습니다.</span><br>
-                    지속적인 이용을 위해 <span style="color:white">관리자에게 문의</span> 바랍니다.
+                    <b style="color:white; font-size: 20px;">이 프로그램은 만료되었습니다.</b><br>
+                    <span style="color:#ef4444">지속적인 사용을 위해 관리자에게 문의 바랍니다.</span><br>
+                    <small style="font-size: 12px; margin-top: 10px; display: block; opacity: 0.5;">(설정 만료일: ${this.CONFIG.EXPIRY_DATE})</small>
                 </p>
                 <div class="lock-input-wrapper">
                     <input type="password" id="lock-code" class="lock-input" placeholder="••••">
                 </div>
-                <button class="lock-btn" id="unlock-btn">관리자 인증 및 해제</button>
-                <div id="lock-error" style="color: #fb7185; margin-top: 15px; font-size: 14px; font-weight: 600; display: none;">인증 코드가 일치하지 않습니다.</div>
+                <button class="lock-btn" id="unlock-btn">인증 코드 입력</button>
             </div>
         `;
         document.body.appendChild(overlay);
 
         const input = document.getElementById('lock-code');
         const btn = document.getElementById('unlock-btn');
-        const error = document.getElementById('lock-error');
-
         const attemptUnlock = () => {
             if (input.value === this.CONFIG.ADMIN_CODE) {
                 sessionStorage.setItem('dashboard_unlocked', 'true');
                 overlay.remove();
                 this.run(); 
             } else {
-                error.style.display = 'block';
                 input.value = '';
-                input.focus();
+                input.placeholder = 'INVALID CODE';
+                input.style.borderColor = '#ef4444';
+                setTimeout(() => { input.placeholder = '••••'; input.style.borderColor = '#334155'; }, 1000);
             }
         };
-
         btn.onclick = attemptUnlock;
         input.onkeyup = (e) => { if (e.key === 'Enter') attemptUnlock(); };
     },
@@ -314,21 +311,19 @@ const ThemeManager = {
 
     performExport(newExpiry) {
         const baseUrl = 'https://bough38-web.github.io/dashboard-2026/';
-        const version = "2026.03.18.v6"; // 버전 추적용
+        const version = "2026.03.18.v7"; 
         
-        // document.documentElement.outerHTML만으로는 <!DOCTYPE html>이 누락되므로 수동 추가
         let html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
 
-        // 1. 상대 경로를 절대 경로(배포 URL)로 변환 (JS, CSS, HTML)
+        // 1. 상대 경로를 절대 경로로 변환
         html = html.replace(/(src|href)="(?!(http|https|#|javascript:))([^"]+)"/g, `$1="${baseUrl}$3"`);
 
-        // 2. Auth Guard 우회 및 리다이렉트 경로 수정 (새 창에서 세션 없이도 대시보드 진입 허용)
-        // 공백이나 줄바꿈에 관계없이 if(!session) 로직을 찾아 우회 조건을 넣습니다.
-        html = html.replace(/if\s*\(\s*!session\s*\)\s*\{/g, 'if (!session && !window.DASHBOARD_EXPORT_CONFIG) {');
-        html = html.replace(/location\.href\s*=\s*'login\.html'/g, `location.href = '${baseUrl}login.html'`);
+        // 2. [Nuclear Fix] Auth Guard를 원천적으로 무력화 (내보낸 파일 전용)
+        // script 태그 내의 IIFE 시작 부분에 즉시 리턴 코드를 삽입하여 Auth Guard 전체를 무효화합니다.
+        // 모든 인라인 스크립트의 (function() { 시작점을 찾아 if(window.DASHBOARD_EXPORT_CONFIG)return; 을 주입합니다.
+        html = html.replace(/\(function\(\)\s*\{/g, '(function(){if(window.DASHBOARD_EXPORT_CONFIG)return;');
 
         // 3. 만료일 및 캐시 정책 오버라이드 스크립트 주입
-        // </head> 앞에 붙이면 다른 스크립트보다 늦게 실행될 수 있으므로 <head> 바로 뒤에 주입
         const overrideScript = `
     <script>
         // [Security] Exported Dashboard Configuration Override
@@ -337,13 +332,14 @@ const ThemeManager = {
             BASE_URL: "${baseUrl}",
             VERSION: "${version}"
         };
-        // 즉시 반영 시도
+        // 즉시 반영
         if (typeof ThemeManager !== 'undefined') {
             ThemeManager.CONFIG.EXPIRY_DATE = "${newExpiry}";
             ThemeManager.CONFIG.BASE_URL = "${baseUrl}";
         }
     </script>
 `;
+        // <head> 바로 다음에 주입하여 그 어떤 스크립트보다 먼저 실행되게 함
         html = html.replace(/<head>/i, '<head>' + overrideScript);
 
         // Blob 생성 및 다운로드
@@ -361,8 +357,8 @@ const ThemeManager = {
         
         TrackingManager.log('DASHBOARD_EXPORT', { expiry: newExpiry, version: version });
         alert('대시보드 파일이 생성되었습니다: ' + filename + 
-              '\\n(버전: ' + version + ', 만료일: ' + newExpiry + ')\\n\\n' + 
-              '※ 새 시크릿 창을 열어 이 파일을 실행하면 만료 잠금이 즉시 작동합니다.');
+              '\\n(최종 보안 패치: ' + version + ', 만료일: ' + newExpiry + ')\\n\\n' + 
+              '※ 이제 이 파일은 로그인 없이 즉시 만료 체크가 작동합니다.');
     },
 
     injectGlobalStyles() {
