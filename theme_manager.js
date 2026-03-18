@@ -125,32 +125,46 @@ const ThemeManager = {
         TrackingManager.log('PAGE_VIEW', { title: document.title });
     },
 
+    getDailyCode() {
+        // 한국 시간 기준 YYYYMMDD 생성
+        const now = new Date();
+        const kstStr = new Intl.DateTimeFormat('ko-KR', {
+            timeZone: 'Asia/Seoul', year: 'numeric', month: '2-digit', day: '2-digit'
+        }).format(now).replace(/\. /g, '').replace(/\./g, ''); // "20240318"
+        
+        // 날짜와 어드민 코드를 조합한 간단한 해시 (보안보다는 편의용 가상번호)
+        const seed = parseInt(kstStr) + parseInt(this.CONFIG.ADMIN_CODE);
+        return (seed % 10000).toString().padStart(4, '0');
+    },
+
     checkExpiration() {
-        const expiryStr = this.CONFIG.EXPIRY_DATE;
+        // 1. 관리자 연장 날짜(localStorage)가 있는지 확인
+        const overrideStr = localStorage.getItem('dashboard_expiry_override');
+        const expiryStr = overrideStr || this.CONFIG.EXPIRY_DATE;
         const expiryDate = new Date(expiryStr);
         
-        // 브라우저의 로컬 시간 대신 한국 시간(KST) 기준으로 '오늘' 계산
+        // 한국 시간(KST) 기준으로 '오늘' 계산
         const kstDateStr = new Intl.DateTimeFormat('ko-KR', {
             timeZone: 'Asia/Seoul',
             year: 'numeric', month: '2-digit', day: '2-digit'
         }).format(new Date());
         
-        // '2024. 03. 18.' -> '2024-03-18' 형태로 변환하여 Date 객체 생성
         const today = new Date(kstDateStr.replace(/\. /g, '-').replace(/\./g, ''));
-        
         today.setHours(0, 0, 0, 0);
         expiryDate.setHours(0, 0, 0, 0);
 
-        console.log(`[ExpiryCheck] Today(KST): ${kstDateStr}, Expiry: ${expiryStr}`);
-        console.log(`[ExpiryCheck] Raw Configuration:`, this.CONFIG);
-
-        // 세션에서 이미 승인되었는지 확인
+        // 정지부실 실적현황 등에서 세션 해제 확인
         if (sessionStorage.getItem('dashboard_unlocked') === 'true') {
             return false;
         }
 
+        // 2. 일회성 가상번호 인증 확인
+        const dailyCode = this.getDailyCode();
+        if (sessionStorage.getItem('daily_code_verified') === dailyCode) {
+            return false;
+        }
+
         if (today > expiryDate) {
-            console.log('[ExpiryCheck] Access expired based on KST. Showing lock overlay.');
             this.showLockOverlay();
             return true;
         }
@@ -158,83 +172,125 @@ const ThemeManager = {
     },
 
     showLockOverlay() {
-        // 스타일 주입 - 더욱 강렬하고 명확한 경고 스타일
+        const dailyCode = this.getDailyCode();
+        
+        // 스타일 주입
         const style = document.createElement('style');
         style.textContent = `
             #expiry-lock-overlay {
                 position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-                background: #0f172a;
-                z-index: 1000000; display: flex; align-items: center; justify-content: center;
+                background: #0f172a; z-index: 1000000; display: flex; align-items: center; justify-content: center;
                 color: white; font-family: 'Pretendard', sans-serif;
             }
             .lock-card {
-                background: #1e293b; padding: 60px 40px; border-radius: 32px; 
+                background: #1e293b; padding: 50px 40px; border-radius: 32px; 
                 border: 2px solid #ef4444; text-align: center; max-width: 500px; width: 95%;
-                box-shadow: 0 0 100px rgba(239, 68, 68, 0.3);
-                animation: lockPulse 2s infinite alternate;
+                box-shadow: 0 0 100px rgba(239, 68, 68, 0.2);
             }
-            @keyframes lockPulse {
-                from { box-shadow: 0 0 50px rgba(239, 68, 68, 0.2); }
-                to { box-shadow: 0 0 100px rgba(239, 68, 68, 0.5); }
-            }
+            .admin-dashboard { display: none; text-align: left; }
             .lock-warning-badge {
-                background: #ef4444; color: white; padding: 8px 20px; border-radius: 50px;
-                font-weight: 900; font-size: 14px; margin-bottom: 30px; display: inline-block;
+                background: #ef4444; color: white; padding: 6px 16px; border-radius: 50px;
+                font-weight: 900; font-size: 13px; margin-bottom: 24px; display: inline-block;
             }
-            .lock-icon { font-size: 80px; margin-bottom: 24px; color: #ef4444; }
-            .lock-card h2 { font-size: 34px; margin-bottom: 24px; font-weight: 900; color: #ffffff; }
-            .lock-card p { color: #94a3b8; margin-bottom: 40px; line-height: 1.8; font-size: 18px; }
-            .lock-input-wrapper { position: relative; margin-bottom: 20px; }
+            .lock-card h2 { font-size: 28px; margin-bottom: 16px; font-weight: 900; }
+            .lock-card p { color: #94a3b8; margin-bottom: 30px; line-height: 1.6; font-size: 16px; }
             .lock-input {
-                width: 100%; padding: 20px; border-radius: 16px; border: 2px solid #334155;
+                width: 100%; padding: 18px; border-radius: 16px; border: 2px solid #334155;
                 background: #0f172a; color: white; text-align: center;
-                font-size: 24px; letter-spacing: 10px; outline: none; transition: all 0.3s;
+                font-size: 24px; letter-spacing: 8px; outline: none; margin-bottom: 20px;
             }
-            .lock-input:focus { border-color: #ef4444; box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.2); }
             .lock-btn {
-                width: 100%; padding: 18px; border-radius: 16px; background: #ef4444;
-                color: white; border: none; font-weight: 800; font-size: 18px; cursor: pointer; transition: all 0.3s;
+                width: 100%; padding: 16px; border-radius: 16px; background: #ef4444;
+                color: white; border: none; font-weight: 800; font-size: 16px; cursor: pointer; transition: 0.2s;
             }
             .lock-btn:hover { background: #dc2626; transform: scale(1.02); }
+            .admin-link { color: #475569; font-size: 12px; margin-top: 20px; cursor: pointer; text-decoration: underline; }
+            
+            /* 관리자 화면 스타일 */
+            .admin-item { background: #0f172a; padding: 15px; border-radius: 12px; margin-bottom: 10px; border: 1px solid #334155; }
+            .admin-item label { display: block; font-size: 12px; color: #64748b; margin-bottom: 5px; }
+            .admin-item .val { font-size: 18px; font-weight: 700; color: #818cf8; }
+            .admin-btn-secondary { background: #334155; color: white; padding: 10px; border-radius: 8px; border: none; width: 100%; cursor: pointer; margin-top: 5px; }
         `;
         document.head.appendChild(style);
 
         const overlay = document.createElement('div');
         overlay.id = 'expiry-lock-overlay';
         overlay.innerHTML = `
-            <div class="lock-card">
-                <div class="lock-warning-badge">ACCESS EXPIRED</div>
-                <div class="lock-icon">⚠️</div>
-                <h2>프로그램 사용 만료</h2>
-                <p>
-                    <b style="color:white; font-size: 20px;">이 프로그램은 만료되었습니다.</b><br>
-                    <span style="color:#ef4444">지속적인 사용을 위해 관리자에게 문의 바랍니다.</span><br>
-                    <small style="font-size: 12px; margin-top: 10px; display: block; opacity: 0.5;">(설정 만료일: ${this.CONFIG.EXPIRY_DATE})</small>
-                </p>
-                <div class="lock-input-wrapper">
+            <div class="lock-card" id="lock-main-card">
+                <div id="user-view">
+                    <div class="lock-warning-badge">ACCESS EXPIRED</div>
+                    <h2>프로그램 사용 만료</h2>
+                    <p>사용 기한이 만료되었습니다. 관리자에게 문의하여<br><b>'오늘의 가상번호'</b>를 입력하거나 승인을 받으세요.</p>
                     <input type="password" id="lock-code" class="lock-input" placeholder="••••">
+                    <button class="lock-btn" id="unlock-btn">인증 코드 입력</button>
+                    <div id="admin-login-link" class="admin-link">관리자 전용 설정</div>
                 </div>
-                <button class="lock-btn" id="unlock-btn">인증 코드 입력</button>
+
+                <div id="admin-view" class="admin-dashboard">
+                    <h2 style="color:#818cf8">Admin Management</h2>
+                    <p style="margin-bottom:20px">관리자 권한으로 시스템을 제어합니다.</p>
+                    
+                    <div class="admin-item">
+                        <label>오늘의 가상번호 (Daily Code)</label>
+                        <div class="val">${dailyCode}</div>
+                    </div>
+
+                    <div class="admin-item">
+                        <label>로컬 기간 연장 설정</label>
+                        <input type="date" id="new-expiry-date" class="lock-input" style="font-size:16px; letter-spacing:0; padding:10px; height:auto; margin-top:5px">
+                        <button class="lock-btn" id="extend-expiry-btn" style="background:#4f46e5">이 기기에서 기간 연장</button>
+                    </div>
+
+                    <button class="admin-btn-secondary" id="back-to-lock">뒤로 가기</button>
+                </div>
             </div>
         `;
         document.body.appendChild(overlay);
 
-        const input = document.getElementById('lock-code');
-        const btn = document.getElementById('unlock-btn');
-        const attemptUnlock = () => {
-            if (input.value === this.CONFIG.ADMIN_CODE) {
-                sessionStorage.setItem('dashboard_unlocked', 'true');
+        const userView = document.getElementById('user-view');
+        const adminView = document.getElementById('admin-view');
+        const lockInput = document.getElementById('lock-code');
+        const unlockBtn = document.getElementById('unlock-btn');
+        const adminLink = document.getElementById('admin-login-link');
+
+        // 가상번호 또는 관리자 번호 체크
+        const handleUnlock = () => {
+            const val = lockInput.value;
+            if (val === dailyCode) {
+                sessionStorage.setItem('daily_code_verified', dailyCode);
                 overlay.remove();
-                this.run(); 
+                location.reload();
+            } else if (val === this.CONFIG.ADMIN_CODE) {
+                userView.style.display = 'none';
+                adminView.style.display = 'block';
+                document.getElementById('lock-main-card').style.borderColor = '#4f46e5';
             } else {
-                input.value = '';
-                input.placeholder = 'INVALID CODE';
-                input.style.borderColor = '#ef4444';
-                setTimeout(() => { input.placeholder = '••••'; input.style.borderColor = '#334155'; }, 1000);
+                lockInput.value = '';
+                lockInput.placeholder = 'INVALID';
+                setTimeout(() => { lockInput.placeholder = '••••'; }, 1000);
             }
         };
-        btn.onclick = attemptUnlock;
-        input.onkeyup = (e) => { if (e.key === 'Enter') attemptUnlock(); };
+
+        unlockBtn.onclick = handleUnlock;
+        lockInput.onkeyup = (e) => { if (e.key === 'Enter') handleUnlock(); };
+        adminLink.onclick = () => { lockInput.focus(); alert('관리자 암호를 입력창에 입력해주세요.'); };
+
+        // 관리자 기능: 기간 연장
+        document.getElementById('extend-expiry-btn').onclick = () => {
+            const newDate = document.getElementById('new-expiry-date').value;
+            if (!newDate) return alert('날짜를 선택해주세요.');
+            localStorage.setItem('dashboard_expiry_override', newDate);
+            alert('이 기기에서의 사용 기한이 ' + newDate + '까지로 연장되었습니다.');
+            overlay.remove();
+            location.reload();
+        };
+
+        document.getElementById('back-to-lock').onclick = () => {
+            adminView.style.display = 'none';
+            userView.style.display = 'block';
+            document.getElementById('lock-main-card').style.borderColor = '#ef4444';
+        };
     },
 
     showExportModal() {
@@ -251,39 +307,54 @@ const ThemeManager = {
                 }
                 .export-modal {
                     background: var(--surface-bg); padding: 40px; border-radius: 24px;
-                    width: 400px; box-shadow: var(--shadow-md); border: 1px solid var(--border-color);
-                    text-align: center; color: var(--text-main);
+                    width: 420px; box-shadow: var(--shadow-md); border: 1px solid var(--border-color);
+                    text-align: center; color: var(--text-main); font-family: 'Pretendard', sans-serif;
                 }
                 .export-modal h2 { margin-bottom: 20px; font-weight: 800; }
                 .export-modal input {
                     width: 100%; padding: 12px; border-radius: 12px; border: 1px solid var(--border-color);
                     margin-bottom: 16px; font-size: 15px; outline: none;
                 }
+                .daily-code-box {
+                    background: #f8fafc; border: 1px dashed #cbd5e1; padding: 12px; border-radius: 12px;
+                    margin-bottom: 20px; text-align: center;
+                }
+                .daily-code-box span { font-size: 20px; font-weight: 800; color: #4f46e5; letter-spacing: 2px; }
                 .export-modal .btn-group { display: flex; gap: 10px; margin-top: 20px; }
                 .export-modal .btn { flex: 1; padding: 12px; border-radius: 12px; cursor: pointer; font-weight: 700; border: none; }
-                .export-btn { background: var(--primary); color: white; }
-                .cancel-btn { background: var(--nav-bg); color: var(--text-muted); }
+                .export-btn { background: #4f46e5; color: white; }
+                .cancel-btn { background: #f1f5f9; color: #64748b; }
             `;
             document.head.appendChild(style);
         }
 
+        const dailyCode = this.getDailyCode();
         const modal = document.createElement('div');
         modal.className = 'modal-overlay';
         modal.innerHTML = `
             <div class="export-modal">
-                <h2>대시보드 내보내기</h2>
+                <h2>대시보드 내보내기 (보안)</h2>
+                
+                <div class="daily-code-box">
+                    <div style="font-size: 11px; color: #64748b; margin-bottom: 4px;">오늘의 일회성 가상번호 (사용자 공유용)</div>
+                    <span>${dailyCode}</span>
+                </div>
+
                 <div style="text-align: left; margin-bottom: 15px;">
-                    <label style="font-size: 12px; font-weight: 700; color: var(--text-muted);">관리자 암호</label>
+                    <label style="font-size: 12px; font-weight: 700; color: #64748b;">관리자 암호 확인</label>
                     <input type="password" id="export-pw" placeholder="••••">
-                    <label style="font-size: 12px; font-weight: 700; color: var(--text-muted);">사용 만료일 설정</label>
+                    <label style="font-size: 12px; font-weight: 700; color: #64748b;">내보낼 파일의 만료일 설정</label>
                     <input type="date" id="export-expiry" value="${this.CONFIG.EXPIRY_DATE}">
                 </div>
-                <p style="font-size: 12px; color: var(--text-muted); background: #f1f5f9; padding: 10px; border-radius: 8px;">
-                    설정한 만료일이 주입된 독립형 HTML 파일이 생성됩니다.
+                
+                <p style="font-size: 12px; color: #64748b; line-height: 1.5;">
+                    ※ 설정한 날짜에 맞춰 자동으로 잠기는 독립형 파일이 생성됩니다.<br>
+                    ※ 관리자는 파일 생성 후에도 가상번호를 통해 원격 승인이 가능합니다.
                 </p>
+
                 <div class="btn-group">
                     <button class="btn cancel-btn" id="export-cancel">취소</button>
-                    <button class="btn export-btn" id="export-confirm">다운로드</button>
+                    <button class="btn export-btn" id="export-confirm">보안 파일 다운로드</button>
                 </div>
             </div>
         `;
@@ -311,7 +382,7 @@ const ThemeManager = {
 
     performExport(newExpiry) {
         const baseUrl = 'https://bough38-web.github.io/dashboard-2026/';
-        const version = "2026.03.18.v8"; 
+        const version = "2026.03.18.v9"; 
 
         // 1. 내보내기 전 현재 열려있는 모달 스타일 및 요소 임시 제거 (결과물에 포함되지 않도록)
         const modals = document.querySelectorAll('.modal-overlay, #expiry-lock-overlay');
@@ -327,14 +398,12 @@ const ThemeManager = {
         html = html.replace(/(src|href)="(?!(http|https|#|javascript:))([^"]+)"/g, `$1="${baseUrl}$3"`);
 
         // 3. [Advanced Fix] Auth Guard만 정밀 타겟팅하여 무력화
-        // "sales_dashboard_session" 키워드가 포함된 IIFE만 찾아 우회 코드를 주입합니다.
-        // 다른 라이브러리(Chart.js 등)에 영향을 주지 않도록 정교하게 매칭
         html = html.replace(/(\(function\(\)\s*\{)(?=[^}]*sales_dashboard_session)/g, '$1if(window.DASHBOARD_EXPORT_CONFIG)return;');
 
         // 4. 보안 설정 스크립트 주입 (최상단)
         const overrideScript = `
     <script>
-        // [Security] Standalone Dashboard Configuration (Built-in)
+        // [Security] Standalone Dashboard Configuration (Built-in v9)
         window.DASHBOARD_EXPORT_CONFIG = {
             EXPIRY_DATE: "${newExpiry}",
             BASE_URL: "${baseUrl}",
@@ -346,7 +415,6 @@ const ThemeManager = {
             ThemeManager.CONFIG.EXPIRY_DATE = "${newExpiry}";
             ThemeManager.CONFIG.BASE_URL = "${baseUrl}";
         }
-        console.log("Dashboard Standalone Mode Activated (v8)");
     </script>
 `;
         html = html.replace(/<head>/i, '<head>' + overrideScript);
@@ -367,10 +435,7 @@ const ThemeManager = {
         URL.revokeObjectURL(url);
         
         TrackingManager.log('DASHBOARD_EXPORT', { expiry: newExpiry, version: version });
-        alert('대시보드 내보내기 성공!\\n\\n파일명: ' + filename + 
-              '\\n보안 버전: ' + version + 
-              '\\n설정 만료일: ' + newExpiry + 
-              '\\n\\n※ 이 파일은 로그인 없이 즉시 사용 가능하며, 만료일 경과 시 빨간색 경고창이 나타납니다.');
+        alert('보안 대시보드가 성공적으로 생성되었습니다!\\n\\n파일명: ' + filename + '\\n\\n※ 오늘의 가상번호: ' + this.getDailyCode());
     },
 
     injectGlobalStyles() {
