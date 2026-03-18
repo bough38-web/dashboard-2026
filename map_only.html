@@ -7,8 +7,16 @@
 <script>
 (function(){
     var s=localStorage.getItem('map_only_session');
-    if(!s){location.href='map_login.html';return;}
-    try{var d=JSON.parse(s);if(new Date().getTime()-d.timestamp>24*60*60*1000){localStorage.removeItem('map_only_session');location.href='map_login.html';return;}window.MAP_SESSION=d;}catch(e){location.href='map_login.html';}
+    var ds=localStorage.getItem('sales_dashboard_session');
+    if(!s && !ds){location.href='map_login.html';return;}
+    try{
+        var d=JSON.parse(s || ds);
+        if(new Date().getTime()-d.timestamp>24*60*60*1000){
+            localStorage.removeItem(s?'map_only_session':'sales_dashboard_session');
+            location.href='map_login.html';return;
+        }
+        window.MAP_SESSION=d;
+    }catch(e){location.href='map_login.html';}
 })();
 </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
@@ -118,12 +126,12 @@ textarea.form-control{height:90px;resize:none;}
             <label class="filter-label">지표별 마커 선택</label>
             <div id="status-filters-row1" class="filter-group" style="margin-bottom:4px;">
                 <button class="filter-btn active" id="btn-show-renewal" onclick="toggleSuspensionLayer('renewal')" style="border-color:#0ea5e9;color:#0ea5e9;">🔵 재계약</button>
-                <button class="filter-btn" id="btn-show-voc" onclick="toggleSuspensionLayer('voc')" style="border-color:#10b981;color:#10b981;">🟢 사전리텐션</button>
+                <button class="filter-btn active" id="btn-show-voc" onclick="toggleSuspensionLayer('voc')" style="border-color:#10b981;color:#10b981;">🟢 사전리텐션</button>
             </div>
             <div id="status-filters-row2" class="filter-group" style="margin-bottom:8px;">
-                <button class="filter-btn" id="btn-show-suspension" onclick="toggleSuspensionLayer('suspension')" style="border-color:#ef4444;color:#ef4444;">🔴 정지</button>
-                <button class="filter-btn" id="btn-show-defect" onclick="toggleSuspensionLayer('defect')" style="border-color:#f59e0b;color:#f59e0b;">🟠 부실</button>
-                <button class="filter-btn" id="btn-show-arrears" onclick="toggleSuspensionLayer('arrears')" style="border-color:#92400e;color:#92400e;">🟤 체납직권</button>
+                <button class="filter-btn active" id="btn-show-suspension" onclick="toggleSuspensionLayer('suspension')" style="border-color:#ef4444;color:#ef4444;">🔴 정지</button>
+                <button class="filter-btn active" id="btn-show-defect" onclick="toggleSuspensionLayer('defect')" style="border-color:#f59e0b;color:#f59e0b;">🟠 부실</button>
+                <button class="filter-btn active" id="btn-show-arrears" onclick="toggleSuspensionLayer('arrears')" style="border-color:#92400e;color:#92400e;">🟤 체납직권</button>
             </div>
 
             <div id="date-filters" class="filter-group" style="margin-bottom:16px;display:none;">
@@ -221,7 +229,7 @@ lucide.createIcons();
     }
 })();
 
-var map, markers=[], suspensionMarkers=[], activeSuspensionTypes=['renewal'], clusterer, allTargets=[], currentRouteLine=null, myMarker=null;
+var map, markers=[], suspensionMarkers=[], activeSuspensionTypes=['renewal', 'suspension', 'defect', 'arrears', 'voc'], clusterer, allTargets=[], currentRouteLine=null, myMarker=null;
 var routeMarkers=[], distanceLabels=[];
 var filters={branch:'all',manager:'all',status:'만기도래_신규(1st)',quarter:'1Q',progress:'all',arpu:'all'};
 var PROGRESS_STORAGE_KEY='dashboard_targets_progress_2026';
@@ -371,6 +379,7 @@ function updateSuspensionMarkers(){
                 if(session.data.branch&&t.branch!==session.data.branch)return false;
                 if(session.data.name&&t.manager!==session.data.name)return false;
             }
+            if(type!=='voc'&&t.l_type&&t.l_type!=='L형')return false;
             if(type!=='voc'&&type!=='arrears'&&(sy!=='all'||sm!=='all')){
                 var matched=false;
                 [t.event_date,t.action_date].filter(Boolean).forEach(function(ds){var parts=ds.split('-');if((sy==='all'||parts[0]===sy)&&(sm==='all'||parts[1]===sm))matched=true;});
