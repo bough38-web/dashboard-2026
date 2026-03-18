@@ -321,18 +321,20 @@
                             <button class="filter-btn" id="mode-rate" onclick="setChartMode('rate')">정지율</button>
                         </div>
                     </div>
-                    <div id="chart-container" style="height: 240px; transition: var(--transition-smooth); overflow: hidden; display: flex; gap: 30px; padding: 15px 20px; align-items: stretch;">
-                        <div style="flex: 1.5; position: relative; min-width: 0;">
-                            <div style="font-size: 11px; font-weight: 800; color: var(--text-muted); margin-bottom: 8px; text-align: left; padding-left: 5px; border-left: 3px solid var(--primary-blue);">지사별 정지 현황 비교</div>
+                    <div id="chart-container" style="height: 300px; transition: var(--transition-smooth); overflow: hidden; display: flex; gap: 30px; padding: 15px 20px; align-items: stretch;">
+                        <div style="flex: 2; position: relative; min-width: 0;">
+                            <div style="font-size: 11px; font-weight: 800; color: var(--text-muted); margin-bottom: 8px; text-align: left; padding-left: 5px; border-left: 3px solid var(--primary-blue);">유형별 현황 (본부/지사 비교)</div>
                             <div style="height: calc(100% - 25px); position: relative;">
                                 <canvas id="suspensionChart"></canvas>
                             </div>
                         </div>
                         <div style="width: 1px; background: linear-gradient(to bottom, transparent, var(--border-light), transparent); margin: 5px 0;"></div>
-                        <div style="flex: 1; position: relative; min-width: 0; display: flex; flex-direction: column; align-items: center;">
-                            <div style="font-size: 11px; font-weight: 800; color: var(--text-muted); margin-bottom: 8px; text-align: center; width: 100%;">전체 유형별 분포 (%)</div>
-                            <div style="height: calc(100% - 25px); width: 100%; position: relative; display: flex; justify-content: center;">
-                                <canvas id="distributionChart" style="max-width: 180px;"></canvas>
+                        <div style="flex: 0.8; position: relative; min-width: 180px; display: flex; flex-direction: column; align-items: center;">
+                            <div style="font-size: 11px; font-weight: 800; color: var(--text-muted); margin-bottom: 8px; text-align: center; width: 100%;">종합 분포 (%)</div>
+                            <div style="flex: 1; width: 100%; position: relative; display: flex; justify-content: center; align-items: center;">
+                                <div style="width: 160px; height: 160px; position: relative;">
+                                    <canvas id="distributionChart"></canvas>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -635,7 +637,7 @@
 
         const container = document.getElementById('chart-container');
         if (!isVizCollapsed) {
-            container.style.height = '260px'; // Stable fixed height
+            container.style.height = '320px'; // Increased height for vertical bars
             container.style.display = 'flex';
         }
 
@@ -644,28 +646,38 @@
 
         let datasets = [];
         let options = {
-            indexAxis: 'y',
             responsive: true,
             maintainAspectRatio: false,
             plugins: {
-                legend: { display: false },
+                legend: { 
+                    display: true, 
+                    position: 'top', 
+                    labels: { boxWidth: 10, font: { size: 10, weight: 'bold' } } 
+                },
                 tooltip: {
                     callbacks: {
-                        label: (ctx) => ` ${chartMode === 'rate' ? '정지율' : '건수/금액'}: ${isRate ? (ctx.raw * 100).toFixed(2) + '%' : ctx.raw.toLocaleString()}`
+                        label: (ctx) => ` ${ctx.dataset.label}: ${isRate ? (ctx.raw * 100).toFixed(2) + '%' : ctx.raw.toLocaleString()}`
                     }
                 },
                 datalabels: {
+                    display: (ctx) => ctx.dataset.data[ctx.dataIndex] > 0 && !isRate,
                     color: '#fff',
-                    font: { weight: '800', size: 10 },
-                    anchor: 'end',
-                    align: 'right',
-                    offset: 4,
-                    formatter: (v) => isRate ? (v * 100).toFixed(1) + '%' : v.toLocaleString()
+                    font: { weight: '800', size: labels.length > 10 ? 8 : 10 },
+                    formatter: (v) => v.toLocaleString()
                 }
             },
             scales: {
-                x: { display: false, beginAtZero: true },
-                y: { grid: { display: false }, ticks: { font: { size: 11, weight: '800' } } }
+                x: { 
+                    stacked: !isRate,
+                    grid: { display: false }, 
+                    ticks: { font: { size: 10, weight: '800' }, autoSkip: false, maxRotation: 45, minRotation: 0 } 
+                },
+                y: { 
+                    stacked: !isRate,
+                    beginAtZero: true,
+                    grid: { color: '#f1f5f9' },
+                    ticks: { font: { size: 10, weight: '700' } }
+                }
             }
         };
 
@@ -676,19 +688,24 @@
                 return bc === 0 ? 0 : item[cat + '_c'] / bc;
             });
             datasets = [{
+                label: '정지율 (%)',
                 data: vals,
                 backgroundColor: 'rgba(37, 99, 235, 0.7)',
-                borderRadius: 6,
-                barThickness: 18
+                borderRadius: 4
             }];
+            options.plugins.legend.display = false;
             options.plugins.datalabels.color = '#1e293b';
+            options.plugins.datalabels.display = true;
+            options.plugins.datalabels.align = 'top';
+            options.plugins.datalabels.anchor = 'end';
+            options.plugins.datalabels.formatter = (v) => (v * 100).toFixed(1) + '%';
         } else {
             datasets = [
-                { label: '부실(L형)', data: displayData.map(d => isCount ? d.def_c : d.def_v), backgroundColor: '#ef4444', borderRadius: 4 },
-                { label: '체납/일반', data: displayData.map(d => isCount ? (d.total_c - d.def_c) : (d.total_v - d.def_v)), backgroundColor: '#10b981', borderRadius: 4 }
+                { label: '부실(L형)', data: displayData.map(d => isCount ? d.def_c : d.def_v), backgroundColor: '#ef4444' },
+                { label: 'L/SP/장기', data: displayData.map(d => isCount ? d.etc_c : d.etc_v), backgroundColor: '#7c3aed' },
+                { label: '체납정지', data: displayData.map(d => isCount ? d.pay_c : d.pay_v), backgroundColor: '#f59e0b' },
+                { label: '일반정지', data: displayData.map(d => isCount ? (d.total_c - d.def_c - d.etc_c - d.pay_c) : (d.total_v - d.def_v - d.etc_v - d.pay_v)), backgroundColor: '#10b981' }
             ];
-            options.scales.x.stacked = true;
-            options.scales.y.stacked = true;
         }
 
         chartInstance = new Chart(ctx, {
