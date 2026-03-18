@@ -34,7 +34,8 @@ const ThemeManager = {
     // [ADMIN CONTROL] Dashboard Expiration Setting
     CONFIG: {
         EXPIRY_DATE: '2026-12-31', // 형식: YYYY-MM-DD
-        ADMIN_CODE: '0303'         // 잠금 해제 코드
+        ADMIN_CODE: '0303',        // 잠금 해제 코드
+        BASE_URL: ''               // 내보내기 시 주입되는 기본 URL (공백이면 상대경로 유지)
     },
 
     themes: {
@@ -111,6 +112,7 @@ const ThemeManager = {
         // Export 시 주입된 설정이 있다면 반영
         if (window.DASHBOARD_EXPORT_CONFIG) {
             this.CONFIG.EXPIRY_DATE = window.DASHBOARD_EXPORT_CONFIG.EXPIRY_DATE;
+            this.CONFIG.BASE_URL = window.DASHBOARD_EXPORT_CONFIG.BASE_URL || '';
         }
 
         const savedTheme = localStorage.getItem('dashboard_theme') || 'default';
@@ -507,7 +509,8 @@ const ThemeManager = {
                 btn.innerHTML = `<i class="fas ${item.icon}"></i><span>${item.text}</span>`;
                 
                 if (item.href) {
-                    btn.href = item.href;
+                    // 내보내기 모드인 경우 기본 URL을 앞에 붙여 절대 경로로 만듭니다.
+                    btn.href = this.CONFIG.BASE_URL ? (this.CONFIG.BASE_URL + item.href) : item.href;
                     if ((item.href === currentPath) || (item.href === 'index.html' && isIndex)) {
                         if (!item.view) btn.classList.add('active');
                     }
@@ -582,7 +585,11 @@ const ThemeManager = {
                 if (confirm('로그아웃 하시겠습니까?')) {
                     TrackingManager.log('LOGOUT');
                     localStorage.removeItem('sales_dashboard_session');
-                    location.href = 'login.html';
+                    if (this.CONFIG.BASE_URL) {
+                        location.href = this.CONFIG.BASE_URL + 'login.html';
+                    } else {
+                        location.href = 'login.html';
+                    }
                 }
             };
             container.appendChild(logoutBtn);
