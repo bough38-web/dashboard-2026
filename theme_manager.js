@@ -282,16 +282,18 @@ const ThemeManager = {
 
     performExport(newExpiry) {
         const baseUrl = 'https://bough38-web.github.io/dashboard-2026/';
-        let html = document.documentElement.outerHTML;
+        // document.documentElement.outerHTML만으로는 <!DOCTYPE html>이 누락되므로 수동 추가
+        let html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
 
         // 1. 상대 경로를 절대 경로(배포 URL)로 변환 (JS, CSS, HTML)
-        // regex: src/href="파일명.확장자" (http로 시작하지 않는 경우)
         html = html.replace(/(src|href)="(?!(http|https|#|javascript:))([^"]+)"/g, `$1="${baseUrl}$3"`);
 
-        // 2. Auth Guard 리다이렉트 경로 수정 (인라인 스크립트 대응)
+        // 2. Auth Guard 우회 및 리다이렉트 경로 수정
+        // 내보낸 파일은 관리자가 생성하고 만료일 잠금이 있으므로 일반 로그인을 우회하도록 설정
+        html = html.replace('if (!session) {', 'if (!session && !window.DASHBOARD_EXPORT_CONFIG) {');
         html = html.replace(/location\.href\s*=\s*'login\.html'/g, `location.href = '${baseUrl}login.html'`);
 
-        // 3. 만료일 설정 오버라이드 스크립트 주입
+        // 3. 만료일 및 캐시 정책 오버라이드 스크립트 주입
         const overrideScript = `
     <script>
         // Exported Dashboard Configuration Override
