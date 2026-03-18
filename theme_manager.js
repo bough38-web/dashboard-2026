@@ -163,30 +163,41 @@ const ThemeManager = {
         style.textContent = `
             #expiry-lock-overlay {
                 position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-                background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+                background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
                 z-index: 100000; display: flex; align-items: center; justify-content: center;
-                color: white; font-family: 'Pretendard', sans-serif;
+                color: white; font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
             }
             .lock-card {
-                background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px);
-                padding: 40px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.1);
-                text-align: center; max-width: 450px; width: 90%;
-                box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+                background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(20px);
+                padding: 50px 40px; border-radius: 32px; border: 1px solid rgba(255,255,255,0.15);
+                text-align: center; max-width: 480px; width: 90%;
+                box-shadow: 0 50px 100px -20px rgba(0,0,0,0.7);
+                animation: lockFadeIn 0.5s ease-out;
             }
-            .lock-icon { font-size: 64px; margin-bottom: 24px; }
-            .lock-card h2 { font-size: 28px; margin-bottom: 16px; font-weight: 800; }
-            .lock-card p { color: #94a3b8; margin-bottom: 32px; line-height: 1.6; }
+            @keyframes lockFadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .lock-icon { font-size: 72px; margin-bottom: 24px; filter: drop-shadow(0 0 20px rgba(79, 70, 229, 0.4)); }
+            .lock-card h2 { font-size: 32px; margin-bottom: 20px; font-weight: 900; letter-spacing: -1px; color: #f8fafc; }
+            .lock-card p { color: #cbd5e1; margin-bottom: 40px; line-height: 1.8; font-size: 16px; font-weight: 500; }
+            .lock-card .highlight { color: #818cf8; font-weight: 700; }
+            
+            .lock-input-wrapper { position: relative; margin-bottom: 20px; }
             .lock-input {
-                width: 100%; padding: 14px; border-radius: 12px; border: 1px solid #334155;
-                background: #0f172a; color: white; margin-bottom: 16px; text-align: center;
-                font-size: 18px; letter-spacing: 4px; outline: none; transition: all 0.2s;
+                width: 100%; padding: 18px; border-radius: 16px; border: 2px solid #334155;
+                background: rgba(15, 23, 42, 0.8); color: white; text-align: center;
+                font-size: 22px; letter-spacing: 8px; outline: none; transition: all 0.3s;
             }
-            .lock-input:focus { border-color: #4f46e5; box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2); }
+            .lock-input:focus { border-color: #6366f1; background: #0f172a; box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2); }
+            
             .lock-btn {
-                width: 100%; padding: 14px; border-radius: 12px; background: #4f46e5;
-                color: white; border: none; font-weight: 700; cursor: pointer; transition: all 0.2s;
+                width: 100%; padding: 16px; border-radius: 16px; background: linear-gradient(to right, #6366f1, #4f46e5);
+                color: white; border: none; font-weight: 800; font-size: 16px; cursor: pointer; 
+                transition: all 0.3s; box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
             }
-            .lock-btn:hover { background: #4338ca; transform: translateY(-2px); }
+            .lock-btn:hover { transform: translateY(-3px); box-shadow: 0 20px 25px -5px rgba(79, 70, 229, 0.4); filter: brightness(1.1); }
+            .lock-btn:active { transform: translateY(-1px); }
         `;
         document.head.appendChild(style);
 
@@ -194,12 +205,17 @@ const ThemeManager = {
         overlay.id = 'expiry-lock-overlay';
         overlay.innerHTML = `
             <div class="lock-card">
-                <div class="lock-icon">🔒</div>
-                <h2>대시보드 사용기한 만료</h2>
-                <p>보안 정책에 따라 대시보드 사용 기한이 만료되었습니다.<br>계속 사용하시려면 관리자 코드를 입력해주세요.</p>
-                <input type="password" id="lock-code" class="lock-input" placeholder="••••">
-                <button class="lock-btn" id="unlock-btn">잠금 해제</button>
-                <div id="lock-error" style="color: #ef4444; margin-top: 10px; font-size: 14px; display: none;">잘못된 코드입니다.</div>
+                <div class="lock-icon">🛡️</div>
+                <h2>대시보드 사용 제한</h2>
+                <p>
+                    <span class="highlight">이 프로그램은 사용 기한이 만료되었습니다.</span><br>
+                    지속적인 이용을 위해 <span style="color:white">관리자에게 문의</span> 바랍니다.
+                </p>
+                <div class="lock-input-wrapper">
+                    <input type="password" id="lock-code" class="lock-input" placeholder="••••">
+                </div>
+                <button class="lock-btn" id="unlock-btn">관리자 인증 및 해제</button>
+                <div id="lock-error" style="color: #fb7185; margin-top: 15px; font-size: 14px; font-weight: 600; display: none;">인증 코드가 일치하지 않습니다.</div>
             </div>
         `;
         document.body.appendChild(overlay);
@@ -298,7 +314,7 @@ const ThemeManager = {
 
     performExport(newExpiry) {
         const baseUrl = 'https://bough38-web.github.io/dashboard-2026/';
-        const version = "2026.03.18.v5"; // 버전 추적용
+        const version = "2026.03.18.v6"; // 버전 추적용
         
         // document.documentElement.outerHTML만으로는 <!DOCTYPE html>이 누락되므로 수동 추가
         let html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
