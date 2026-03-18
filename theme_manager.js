@@ -292,33 +292,37 @@ const ThemeManager = {
 
     performExport(newExpiry) {
         const baseUrl = 'https://bough38-web.github.io/dashboard-2026/';
+        const version = "2026.03.18.v4"; // 버전 추적용
+        
         // document.documentElement.outerHTML만으로는 <!DOCTYPE html>이 누락되므로 수동 추가
         let html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
 
         // 1. 상대 경로를 절대 경로(배포 URL)로 변환 (JS, CSS, HTML)
         html = html.replace(/(src|href)="(?!(http|https|#|javascript:))([^"]+)"/g, `$1="${baseUrl}$3"`);
 
-        // 2. Auth Guard 우회 및 리다이렉트 경로 수정
-        // 내보낸 파일은 관리자가 생성하고 만료일 잠금이 있으므로 일반 로그인을 우회하도록 설정
-        html = html.replace('if (!session) {', 'if (!session && !window.DASHBOARD_EXPORT_CONFIG) {');
+        // 2. Auth Guard 우회 및 리다이렉트 경로 수정 (새 창에서 세션 없이도 대시보드 진입 허용)
+        // 공백이나 줄바꿈에 관계없이 if(!session) 로직을 찾아 우회 조건을 넣습니다.
+        html = html.replace(/if\s*\(\s*!session\s*\)\s*\{/g, 'if (!session && !window.DASHBOARD_EXPORT_CONFIG) {');
         html = html.replace(/location\.href\s*=\s*'login\.html'/g, `location.href = '${baseUrl}login.html'`);
 
         // 3. 만료일 및 캐시 정책 오버라이드 스크립트 주입
+        // </head> 앞에 붙이면 다른 스크립트보다 늦게 실행될 수 있으므로 <head> 바로 뒤에 주입
         const overrideScript = `
     <script>
-        // Exported Dashboard Configuration Override
+        // [Security] Exported Dashboard Configuration Override
         window.DASHBOARD_EXPORT_CONFIG = {
             EXPIRY_DATE: "${newExpiry}",
-            BASE_URL: "${baseUrl}"
+            BASE_URL: "${baseUrl}",
+            VERSION: "${version}"
         };
-        // 만약 theme_manager.js가 로드된 후라면 즉시 반영
+        // 즉시 반영 시도
         if (typeof ThemeManager !== 'undefined') {
             ThemeManager.CONFIG.EXPIRY_DATE = "${newExpiry}";
             ThemeManager.CONFIG.BASE_URL = "${baseUrl}";
         }
     </script>
 `;
-        html = html.replace('</head>', overrideScript + '</head>');
+        html = html.replace(/<head>/i, '<head>' + overrideScript);
 
         // Blob 생성 및 다운로드
         const blob = new Blob([html], { type: 'text/html' });
@@ -333,8 +337,10 @@ const ThemeManager = {
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
         
-        TrackingManager.log('DASHBOARD_EXPORT', { expiry: newExpiry });
-        alert('대시보드 파일이 생성되었습니다: ' + filename + '\n(모든 리소스가 배포 서버와 연동되어 어디서든 열람 가능합니다.)');
+        TrackingManager.log('DASHBOARD_EXPORT', { expiry: newExpiry, version: version });
+        alert('대시보드 파일이 생성되었습니다: ' + filename + 
+              '\\n(버전: ' + version + ', 만료일: ' + newExpiry + ')\\n\\n' + 
+              '※ 새 시크릿 창을 열어 이 파일을 실행하면 만료 잠금이 즉시 작동합니다.');
     },
 
     injectGlobalStyles() {
