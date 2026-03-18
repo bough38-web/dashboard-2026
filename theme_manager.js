@@ -296,11 +296,13 @@ const ThemeManager = {
     <script>
         // Exported Dashboard Configuration Override
         window.DASHBOARD_EXPORT_CONFIG = {
-            EXPIRY_DATE: "${newExpiry}"
+            EXPIRY_DATE: "${newExpiry}",
+            BASE_URL: "${baseUrl}"
         };
         // 만약 theme_manager.js가 로드된 후라면 즉시 반영
         if (typeof ThemeManager !== 'undefined') {
             ThemeManager.CONFIG.EXPIRY_DATE = "${newExpiry}";
+            ThemeManager.CONFIG.BASE_URL = "${baseUrl}";
         }
     </script>
 `;
