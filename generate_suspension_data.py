@@ -39,9 +39,12 @@ def process_data():
     df_susp['manager_code'] = df_susp['manager_code'].fillna('미지정')
     
     # Select and rename columns
-    # '계약번호', '상호', '설치주소', '위도', '경도', '지사', 'manager_code', '부실여부(체납제외)', '조회구분', '이벤트시작일', '체납', '조치일자'
-    df_final = df_susp[['계약번호', '상호', '설치주소', '위도', '경도', '지사', 'manager_code', '부실여부(체납제외)', '조회구분', '이벤트시작일', '체납', '조치일자']].copy()
-    df_final.columns = ['id', 'name', 'address', 'lat', 'lng', 'branch', 'manager', 'is_defect', 'type', 'event_date', 'is_arrears', 'action_date']
+    # '계약번호', '상호', '설치주소', '위도', '경도', '지사', 'manager_code', '부실여부(체납제외)', '조회구분', '이벤트시작일', '체납', '조치일자', 'L형/i형'
+    df_final = df_susp[['계약번호', '상호', '설치주소', '위도', '경도', '지사', 'manager_code', '부실여부(체납제외)', '조회구분', '이벤트시작일', '체납', '조치일자', 'L형/i형']].copy()
+    df_final.columns = ['id', 'name', 'address', 'lat', 'lng', 'branch', 'manager', 'is_defect', 'type', 'event_date', 'is_arrears', 'action_date', 'l_type']
+    
+    # Filter for 'L형' only
+    df_final = df_final[df_final['l_type'] == 'L형']
     
     # Format dates to string (YYYY-MM-DD)
     df_final['event_date'] = pd.to_datetime(df_final['event_date']).dt.strftime('%Y-%m-%d').fillna('')

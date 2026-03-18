@@ -11,7 +11,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-09-10",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51275246.0,
@@ -25,7 +26,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-16",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 20341256.0,
@@ -39,7 +41,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50345188.0,
@@ -53,7 +56,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-02",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51862821.0,
@@ -67,7 +71,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-08-28",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51143460.0,
@@ -81,7 +86,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-14",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51613864.0,
@@ -95,7 +101,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-10",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52205475.0,
@@ -109,7 +116,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51624415.0,
@@ -123,7 +131,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-02",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51785516.0,
@@ -137,7 +146,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-19",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51428983.0,
@@ -151,7 +161,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-02",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 20453898.0,
@@ -165,7 +176,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-10-18",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51603095.0,
@@ -179,7 +191,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-04",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51533013.0,
@@ -193,7 +206,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-02",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51520660.0,
@@ -207,7 +221,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-09-24",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51586690.0,
@@ -221,7 +236,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-20",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51497270.0,
@@ -235,7 +251,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-04",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51595860.0,
@@ -249,21 +266,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-17",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51748986.0,
-    "name": "소미******************************",
-    "address": "서울 중구 신당동 ***** **** ***",
-    "lat": 37.5688231677469,
-    "lng": 127.010563112968,
-    "branch": "중앙지사",
-    "manager": "G000409",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2024-08-13",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51730729.0,
@@ -277,7 +281,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-02",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51744882.0,
@@ -291,7 +296,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2024-12-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51832466.0,
@@ -305,7 +311,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-27",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51675136.0,
@@ -319,7 +326,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-07-30",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51465484.0,
@@ -333,7 +341,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-10",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51986012.0,
@@ -347,7 +356,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-23",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51351800.0,
@@ -361,7 +371,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-10-18",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 313838.0,
@@ -375,21 +386,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-09-16",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51702293.0,
-    "name": "이촌***********************",
-    "address": "서울 용산구 이촌동 ****** ** ** **",
-    "lat": 37.5180494083878,
-    "lng": 126.978703263669,
-    "branch": "중앙지사",
-    "manager": "G000403",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-15",
-    "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51492604.0,
@@ -403,7 +401,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-04",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50123940.0,
@@ -417,7 +416,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-17",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50496082.0,
@@ -431,7 +431,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-05",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51194288.0,
@@ -445,7 +446,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-02",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50940118.0,
@@ -459,21 +461,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-28",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51217403.0,
-    "name": "찬양*",
-    "address": "서울 종로구 필운동 ***** ***** **",
-    "lat": 37.5754581708464,
-    "lng": 126.969963905964,
-    "branch": "중앙지사",
-    "manager": "G000401",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-02",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52306243.0,
@@ -487,7 +476,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51412532.0,
@@ -501,7 +491,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-02",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51997937.0,
@@ -515,7 +506,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-07",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51153818.0,
@@ -529,7 +521,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-04",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51734928.0,
@@ -543,7 +536,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-20",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52308231.0,
@@ -557,7 +551,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-19",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51917866.0,
@@ -571,21 +566,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-14",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
-  },
-  {
-    "id": 51853090.0,
-    "name": "렐릭******************",
-    "address": "서울 종로구 계동 ***** **",
-    "lat": 37.5798667329293,
-    "lng": 126.986600654087,
-    "branch": "중앙지사",
-    "manager": "G000407",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-03",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51892000.0,
@@ -599,7 +581,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-14",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51497502.0,
@@ -613,7 +596,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-03",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51531673.0,
@@ -627,21 +611,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-27",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52299625.0,
-    "name": "서순******",
-    "address": "서울 종로구 권농동 ***** **",
-    "lat": 37.5770935834669,
-    "lng": 126.991730633144,
-    "branch": "중앙지사",
-    "manager": "G000407",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-10",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52183992.0,
@@ -655,21 +626,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-10-01",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51841244.0,
-    "name": "조석*",
-    "address": "서울 동대문구 전농동 ******",
-    "lat": 37.5813656655052,
-    "lng": 127.052384251496,
-    "branch": "중앙지사",
-    "manager": "G000405",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2024-06-13",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52030886.0,
@@ -683,7 +641,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-05",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52181017.0,
@@ -697,7 +656,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51511763.0,
@@ -711,21 +671,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-30",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52093340.0,
-    "name": "노갑*",
-    "address": "서울 중구 남창동 **** ***** *** ***",
-    "lat": 37.5597949971559,
-    "lng": 126.978204034695,
-    "branch": "중앙지사",
-    "manager": "G000410",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52156151.0,
@@ -739,7 +686,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-02",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52248408.0,
@@ -753,21 +701,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-18",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52037364.0,
-    "name": "주식*******",
-    "address": "서울 성동구 홍익동 ***** **** ** ****",
-    "lat": 37.5657244268666,
-    "lng": 127.032498684727,
-    "branch": "중앙지사",
-    "manager": "G000404",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2024-11-29",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52219144.0,
@@ -781,35 +716,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-10-29",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51590244.0,
-    "name": "한술**",
-    "address": "서울 성북구 안암동5가 ***** ****** ** ****",
-    "lat": NaN,
-    "lng": NaN,
-    "branch": "중앙지사",
-    "manager": "G000409",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51981880.0,
-    "name": "뱅뱅**",
-    "address": "서울 중구 신당동 ******** **",
-    "lat": 37.5561801473789,
-    "lng": 127.01117586544,
-    "branch": "중앙지사",
-    "manager": "G000409",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52060394.0,
@@ -823,21 +731,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-13",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51789267.0,
-    "name": "비쥬**",
-    "address": "서울 종로구 계동 ***** **** ****",
-    "lat": 37.5829643949138,
-    "lng": 126.987010050432,
-    "branch": "중앙지사",
-    "manager": "G000407",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-16",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51900970.0,
@@ -851,35 +746,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-21",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52037257.0,
-    "name": "김소*",
-    "address": "서울 용산구 후암동 *******",
-    "lat": 37.547705994864,
-    "lng": 126.979995396076,
-    "branch": "중앙지사",
-    "manager": "G000403",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-10-25",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51890104.0,
-    "name": "마켓**",
-    "address": "서울 용산구 이태원동 ***** **** ****  **",
-    "lat": 37.5325619217257,
-    "lng": 126.990178762886,
-    "branch": "중앙지사",
-    "manager": "G000403",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-02",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52200152.0,
@@ -893,63 +761,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52218631.0,
-    "name": "박진******",
-    "address": "서울 동대문구 용두동 *******",
-    "lat": 37.5759497041671,
-    "lng": 127.032923908685,
-    "branch": "중앙지사",
-    "manager": "G000408",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52295193.0,
-    "name": "하루**",
-    "address": "서울 종로구 창신동 ****** ****",
-    "lat": 37.5718302430066,
-    "lng": 127.014737153228,
-    "branch": "중앙지사",
-    "manager": "G000409",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-11-11",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51971198.0,
-    "name": "종점*****",
-    "address": "서울 중구 주교동 ******* **",
-    "lat": 37.5683922853422,
-    "lng": 126.996620964302,
-    "branch": "중앙지사",
-    "manager": "G000402",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-28",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51966376.0,
-    "name": "우지*******",
-    "address": "서울 중구 남대문로5가 ****** **",
-    "lat": 37.5586280590495,
-    "lng": 126.974335039439,
-    "branch": "중앙지사",
-    "manager": "G000401",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-02",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51640037.0,
@@ -963,91 +776,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-03",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51850354.0,
-    "name": "박기*",
-    "address": "서울 용산구 이태원동 ******* ** ****",
-    "lat": 37.5391547758285,
-    "lng": 126.988744756427,
-    "branch": "중앙지사",
-    "manager": "G000403",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-03",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52200801.0,
-    "name": "윤블*",
-    "address": "서울 중구 신당동 ******** ***** ** *** **",
-    "lat": 37.5694659147977,
-    "lng": 127.01494722927,
-    "branch": "중앙지사",
-    "manager": "G000409",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-06",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52062188.0,
-    "name": "번*",
-    "address": "서울 중구 신당동 ******* ** **",
-    "lat": NaN,
-    "lng": NaN,
-    "branch": "중앙지사",
-    "manager": "G000409",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-06",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52111311.0,
-    "name": "휴스**",
-    "address": "서울 용산구 한남동  ****** ** *****",
-    "lat": 37.5358155722818,
-    "lng": 127.000645032145,
-    "branch": "중앙지사",
-    "manager": "G000403",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-12",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52028594.0,
-    "name": "노이***************",
-    "address": "서울 중구 신당동 ****** ** ****",
-    "lat": 37.567367528784,
-    "lng": 127.013942236372,
-    "branch": "중앙지사",
-    "manager": "G000409",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-11",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51829817.0,
-    "name": "황상*",
-    "address": "서울 중구 신당동 ******** **",
-    "lat": 37.5628245723522,
-    "lng": 127.015032488465,
-    "branch": "중앙지사",
-    "manager": "G000409",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-28",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51919453.0,
@@ -1061,7 +791,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2025-08-12",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51128322.0,
@@ -1075,7 +806,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2026-01-01",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51667352.0,
@@ -1089,21 +821,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2026-01-01",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51534173.0,
-    "name": "등*",
-    "address": "서울 종로구 종로6가 ******** ******* ** *****",
-    "lat": 37.5701747583032,
-    "lng": 127.008205325492,
-    "branch": "중앙지사",
-    "manager": "G000402",
-    "is_defect": NaN,
-    "type": "설변",
-    "event_date": "2025-12-26",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50750027.0,
@@ -1117,35 +836,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51540346.0,
-    "name": "이은*******************",
-    "address": "서울 강북구 미아동 ****** **",
-    "lat": 37.6143219513724,
-    "lng": 127.034777597482,
-    "branch": "강북지사",
-    "manager": "G000103",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52221395.0,
-    "name": "지혜***",
-    "address": "서울 강북구 미아동 ****** **",
-    "lat": 37.6247862444014,
-    "lng": 127.02744769596,
-    "branch": "강북지사",
-    "manager": "G000103",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-22",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52025176.0,
@@ -1159,7 +851,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51991873.0,
@@ -1173,7 +866,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-18",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51989864.0,
@@ -1187,7 +881,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-19",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51023190.0,
@@ -1201,7 +896,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51222953.0,
@@ -1215,7 +911,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52203092.0,
@@ -1229,7 +926,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-25",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51733147.0,
@@ -1243,7 +941,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51537163.0,
@@ -1257,7 +956,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-09-01",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51981316.0,
@@ -1271,21 +971,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51770846.0,
-    "name": "할수********************",
-    "address": "서울 광진구 구의1동 ** *** ******* ** **** **",
-    "lat": 37.5388588365985,
-    "lng": 127.085124386664,
-    "branch": "강북지사",
-    "manager": "G000106",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51562663.0,
@@ -1299,7 +986,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51562673.0,
@@ -1313,7 +1001,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52252417.0,
@@ -1327,7 +1016,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52171485.0,
@@ -1341,7 +1031,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-07",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52368502.0,
@@ -1355,7 +1046,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-24",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52039898.0,
@@ -1369,7 +1061,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-25",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 20580866.0,
@@ -1383,7 +1076,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-28",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50546809.0,
@@ -1397,7 +1091,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-27",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50252778.0,
@@ -1411,7 +1106,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-26",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51481376.0,
@@ -1425,7 +1121,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-13",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52368499.0,
@@ -1439,7 +1136,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-28",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51254752.0,
@@ -1453,7 +1151,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-06",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51736257.0,
@@ -1467,21 +1166,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51854566.0,
-    "name": "원더******",
-    "address": "서울 도봉구 창동 ********",
-    "lat": 37.6463497301111,
-    "lng": 127.036649694579,
-    "branch": "강북지사",
-    "manager": "G000102",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52072104.0,
@@ -1495,7 +1181,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52159075.0,
@@ -1509,7 +1196,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-12",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51771509.0,
@@ -1523,7 +1211,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-10",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52231638.0,
@@ -1537,7 +1226,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52311732.0,
@@ -1551,35 +1241,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52137250.0,
-    "name": "진성**",
-    "address": "서울 광진구 중곡동  ***** ***** *** ****",
-    "lat": 37.5672135980611,
-    "lng": 127.086976303664,
-    "branch": "강북지사",
-    "manager": "G000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-29",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51733407.0,
-    "name": "묵동*",
-    "address": "서울 중랑구 묵동 ******* ** **",
-    "lat": 37.6068452778976,
-    "lng": 127.078099937532,
-    "branch": "강북지사",
-    "manager": "G000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52309853.0,
@@ -1593,21 +1256,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": "2026-03-01"
-  },
-  {
-    "id": 52058807.0,
-    "name": "감성*********",
-    "address": "서울 강북구 수유동 ******* **",
-    "lat": 37.6426722860917,
-    "lng": 127.022135033071,
-    "branch": "강북지사",
-    "manager": "G000103",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51608130.0,
@@ -1621,7 +1271,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-21",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52022989.0,
@@ -1635,91 +1286,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-30",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52052344.0,
-    "name": "윤오*",
-    "address": "서울 노원구 중계동 ******* ******",
-    "lat": 37.6509749363334,
-    "lng": 127.077163320338,
-    "branch": "강북지사",
-    "manager": "G000101",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-06",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51777181.0,
-    "name": "상계****",
-    "address": "서울 노원구 상계동 *********",
-    "lat": 37.6593321943226,
-    "lng": 127.067589732881,
-    "branch": "강북지사",
-    "manager": "G000101",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51887398.0,
-    "name": "(주****",
-    "address": "서울 성동구 성수동1가 ********* ****",
-    "lat": 37.5473446340692,
-    "lng": 127.040074873837,
-    "branch": "강북지사",
-    "manager": "G000106",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52052337.0,
-    "name": "윤오*",
-    "address": "서울 노원구 중계동 ******* ****** ****",
-    "lat": 37.6509749363334,
-    "lng": 127.077163320338,
-    "branch": "강북지사",
-    "manager": "G000101",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-06",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51848154.0,
-    "name": "주식*******",
-    "address": "서울 강북구 번1동 ******** ****** ****",
-    "lat": 37.6370657429176,
-    "lng": 127.025207005073,
-    "branch": "강북지사",
-    "manager": "G000103",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51383276.0,
-    "name": "수육****",
-    "address": "서울 강북구 수유동 ******* ** **",
-    "lat": 37.6404216829647,
-    "lng": 127.022315875332,
-    "branch": "강북지사",
-    "manager": "G000103",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52159227.0,
@@ -1733,35 +1301,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-30",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52232054.0,
-    "name": "장영*",
-    "address": "서울 강북구 미아동 ****** **",
-    "lat": 37.6206003197888,
-    "lng": 127.029431362837,
-    "branch": "강북지사",
-    "manager": "G000103",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51629997.0,
-    "name": "제이****",
-    "address": "서울 강북구 수유동 **** *** ****",
-    "lat": NaN,
-    "lng": NaN,
-    "branch": "강북지사",
-    "manager": "G000103",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52188811.0,
@@ -1775,7 +1316,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51935562.0,
@@ -1789,21 +1331,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-31",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52120820.0,
-    "name": "구의******",
-    "address": "서울 광진구 구의동  ******* ** **** **** *****",
-    "lat": 37.5410650683703,
-    "lng": 127.084309827264,
-    "branch": "강북지사",
-    "manager": "G000106",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-11",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51101894.0,
@@ -1817,21 +1346,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-24",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51921238.0,
-    "name": "최병*",
-    "address": "서울 노원구 공릉동 ******** **",
-    "lat": 37.6246025260041,
-    "lng": 127.07736759161,
-    "branch": "강북지사",
-    "manager": "G000101",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-21",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 11471163.0,
@@ -1845,7 +1361,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2025-11-06",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50873598.0,
@@ -1859,7 +1376,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2025-11-01",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51027119.0,
@@ -1873,21 +1391,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2025-08-01",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51527277.0,
-    "name": "블루******************",
-    "address": "서울 강북구 수유2동 ** *** ***  ****  **",
-    "lat": 37.6482526872703,
-    "lng": 127.015497393467,
-    "branch": "강북지사",
-    "manager": "G000103",
-    "is_defect": NaN,
-    "type": "설변",
-    "event_date": "2025-12-01",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51800672.0,
@@ -1901,7 +1406,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2025-08-29",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51862713.0,
@@ -1915,7 +1421,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2025-10-16",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51983586.0,
@@ -1929,7 +1436,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2025-08-29",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52291531.0,
@@ -1943,35 +1451,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2025-11-06",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52190880.0,
-    "name": "주식********",
-    "address": "서울 중랑구 신내동 ***** **** **",
-    "lat": 37.6131203732131,
-    "lng": 127.112304310516,
-    "branch": "강북지사",
-    "manager": "G000104",
-    "is_defect": NaN,
-    "type": "설변",
-    "event_date": "2026-01-05",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52190908.0,
-    "name": "다온**********",
-    "address": "서울 중랑구 신내동 *****",
-    "lat": 37.6131203732131,
-    "lng": 127.112304310516,
-    "branch": "강북지사",
-    "manager": "G000104",
-    "is_defect": NaN,
-    "type": "설변",
-    "event_date": "2026-01-05",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52256715.0,
@@ -1985,7 +1466,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2026-01-02",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52256747.0,
@@ -1999,35 +1481,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2026-01-02",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52256804.0,
-    "name": "미숙**",
-    "address": "서울 강북구 미아동 ****** **",
-    "lat": 37.6274669977456,
-    "lng": 127.024791868062,
-    "branch": "강북지사",
-    "manager": "G000103",
-    "is_defect": NaN,
-    "type": "설변",
-    "event_date": "2026-01-02",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52256814.0,
-    "name": "미숙***",
-    "address": "서울 강북구 미아동 ****** **",
-    "lat": 37.6274669977456,
-    "lng": 127.024791868062,
-    "branch": "강북지사",
-    "manager": "G000103",
-    "is_defect": NaN,
-    "type": "설변",
-    "event_date": "2026-01-02",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52336740.0,
@@ -2041,7 +1496,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2026-01-02",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52190047.0,
@@ -2055,21 +1511,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-22",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51446014.0,
-    "name": "(주******",
-    "address": "서울 마포구 성산동 **********",
-    "lat": 37.5591154460058,
-    "lng": 126.916776275314,
-    "branch": "서대문지사",
-    "manager": "G000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-06",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50509268.0,
@@ -2083,7 +1526,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-30",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51580928.0,
@@ -2097,21 +1541,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-23",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51587234.0,
-    "name": "제이********************",
-    "address": "서울 마포구 서교동 *****  **",
-    "lat": 37.5559398307995,
-    "lng": 126.92661712413,
-    "branch": "서대문지사",
-    "manager": "G000205",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-10-31",
-    "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52177720.0,
@@ -2125,21 +1556,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-18",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51613894.0,
-    "name": "제이********************",
-    "address": "서울 마포구 서교동 *******",
-    "lat": NaN,
-    "lng": NaN,
-    "branch": "서대문지사",
-    "manager": "G000205",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-10-31",
-    "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52190828.0,
@@ -2153,7 +1571,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-18",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52238315.0,
@@ -2167,7 +1586,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-31",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52048587.0,
@@ -2181,7 +1601,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-21",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50591430.0,
@@ -2195,7 +1616,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51602086.0,
@@ -2209,7 +1631,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51081282.0,
@@ -2223,7 +1646,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-29",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51504418.0,
@@ -2237,21 +1661,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51587235.0,
-    "name": "제이********************",
-    "address": "서울 마포구 서교동 ***** ****",
-    "lat": 37.5559398307995,
-    "lng": 126.92661712413,
-    "branch": "서대문지사",
-    "manager": "G000205",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-10-31",
-    "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52238334.0,
@@ -2265,7 +1676,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-31",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50408921.0,
@@ -2279,7 +1691,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-10",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 52238343.0,
@@ -2293,7 +1706,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-31",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51340991.0,
@@ -2307,7 +1721,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51772265.0,
@@ -2321,7 +1736,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-18",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50403378.0,
@@ -2335,7 +1751,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-03",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 52177762.0,
@@ -2349,7 +1766,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-18",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52177715.0,
@@ -2363,7 +1781,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-18",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52268554.0,
@@ -2377,7 +1796,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51773824.0,
@@ -2391,7 +1811,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-04",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52190851.0,
@@ -2405,7 +1826,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-18",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 250453.0,
@@ -2419,7 +1841,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-01",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 52177769.0,
@@ -2433,7 +1856,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-18",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52238328.0,
@@ -2447,21 +1871,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-31",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52182928.0,
-    "name": "주식*********",
-    "address": "서울 마포구 서교동 ***** **",
-    "lat": 37.5559398307995,
-    "lng": 126.92661712413,
-    "branch": "서대문지사",
-    "manager": "G000205",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51668746.0,
@@ -2475,7 +1886,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-23",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50794218.0,
@@ -2489,7 +1901,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51424020.0,
@@ -2503,7 +1916,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-14",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51806653.0,
@@ -2517,7 +1931,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52238249.0,
@@ -2531,21 +1946,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-31",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51617550.0,
-    "name": "뉴스*******************",
-    "address": "서울 마포구 도화동 **** ** **** *****",
-    "lat": 37.5412654954538,
-    "lng": 126.946294819719,
-    "branch": "서대문지사",
-    "manager": "G000204",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-21",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51285082.0,
@@ -2559,7 +1961,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-31",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52292334.0,
@@ -2573,7 +1976,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-20",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51871067.0,
@@ -2587,7 +1991,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-03",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52265096.0,
@@ -2601,7 +2006,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-24",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51866712.0,
@@ -2615,7 +2021,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-06",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50813818.0,
@@ -2629,7 +2036,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-28",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51254691.0,
@@ -2643,7 +2051,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-03",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50112567.0,
@@ -2657,7 +2066,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-12",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50892534.0,
@@ -2671,7 +2081,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-11",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 20584592.0,
@@ -2685,7 +2096,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-28",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52180907.0,
@@ -2699,7 +2111,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-16",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51525188.0,
@@ -2713,7 +2126,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-27",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50896887.0,
@@ -2727,7 +2141,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-05",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52304385.0,
@@ -2741,7 +2156,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-05",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50642024.0,
@@ -2755,7 +2171,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-24",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52028305.0,
@@ -2769,7 +2186,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-27",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52265112.0,
@@ -2783,7 +2201,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-11",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50521161.0,
@@ -2797,35 +2216,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51844880.0,
-    "name": "로즈****",
-    "address": "서울 마포구 연남동 ******** **",
-    "lat": 37.5626959395392,
-    "lng": 126.924307989757,
-    "branch": "서대문지사",
-    "manager": "G000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51656111.0,
-    "name": "김지*",
-    "address": "서울 마포구 노고산동 ******* **** **",
-    "lat": 37.5541077774581,
-    "lng": 126.937821861976,
-    "branch": "서대문지사",
-    "manager": "G000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51965597.0,
@@ -2839,21 +2231,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-11",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51706201.0,
-    "name": "이지************************",
-    "address": "서울 마포구 성산동 ******** **",
-    "lat": 37.5591154460058,
-    "lng": 126.916776275314,
-    "branch": "서대문지사",
-    "manager": "G000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-16",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51941320.0,
@@ -2867,7 +2246,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-14",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50359819.0,
@@ -2881,21 +2261,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52093134.0,
-    "name": "주식********",
-    "address": "서울 마포구 서교동  ****** ** ** *****",
-    "lat": 37.5531900553702,
-    "lng": 126.922907960185,
-    "branch": "서대문지사",
-    "manager": "G000205",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51951706.0,
@@ -2909,21 +2276,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-22",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
-  },
-  {
-    "id": 52138929.0,
-    "name": "위철*",
-    "address": "서울 마포구 상수동  ***** ** *****",
-    "lat": 37.5476519332573,
-    "lng": 126.920260025829,
-    "branch": "서대문지사",
-    "manager": "G000205",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51239619.0,
@@ -2937,7 +2291,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-28",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 50885188.0,
@@ -2951,91 +2306,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52049360.0,
-    "name": "최진*",
-    "address": "서울 서대문구 연희동 *********",
-    "lat": 37.5627194034125,
-    "lng": 126.928413614556,
-    "branch": "서대문지사",
-    "manager": "G000203",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-07-01",
-    "is_arrears": "N",
-    "action_date": "2026-03-01"
-  },
-  {
-    "id": 51771692.0,
-    "name": "김루*",
-    "address": "서울 마포구 서교동 ********",
-    "lat": 37.5521302182207,
-    "lng": 126.921685815537,
-    "branch": "서대문지사",
-    "manager": "G000205",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52133778.0,
-    "name": "이대****",
-    "address": "서울 마포구 동교동 ****** ** **** *****",
-    "lat": 37.5574871285241,
-    "lng": 126.922963290578,
-    "branch": "서대문지사",
-    "manager": "G000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-29",
-    "is_arrears": "N",
-    "action_date": "2026-03-01"
-  },
-  {
-    "id": 52027086.0,
-    "name": "차영*****",
-    "address": "서울 마포구 신수동 ****** ** ** ****",
-    "lat": 37.5466660414641,
-    "lng": 126.939849761332,
-    "branch": "서대문지사",
-    "manager": "G000205",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-08-21",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51973464.0,
-    "name": "훌랄***********",
-    "address": "서울 용산구 원효로2가 **** ******* ****",
-    "lat": 37.5350244616566,
-    "lng": 126.961576811432,
-    "branch": "서대문지사",
-    "manager": "G000204",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52092739.0,
-    "name": "주식*********",
-    "address": "서울 은평구 불광동 ******",
-    "lat": 37.6207414093875,
-    "lng": 126.925389831321,
-    "branch": "서대문지사",
-    "manager": "G000201",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-08-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51374731.0,
@@ -3049,7 +2321,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-12",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50298861.0,
@@ -3063,21 +2336,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-13",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51945223.0,
-    "name": "필라*****",
-    "address": "서울 마포구 신수동 ******** ** **",
-    "lat": 37.5500135080447,
-    "lng": 126.937227298727,
-    "branch": "서대문지사",
-    "manager": "G000205",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-26",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51115532.0,
@@ -3091,7 +2351,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-11",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51160543.0,
@@ -3105,7 +2366,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-05",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52243213.0,
@@ -3119,7 +2381,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-12",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51954976.0,
@@ -3133,7 +2396,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-06",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50572999.0,
@@ -3147,7 +2411,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2025-05-13",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50858902.0,
@@ -3161,7 +2426,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2025-11-01",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51128996.0,
@@ -3175,7 +2441,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2025-05-01",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51205044.0,
@@ -3189,7 +2456,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2025-12-01",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51475908.0,
@@ -3203,21 +2471,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2024-07-16",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51670968.0,
-    "name": "(주*************************",
-    "address": "서울 용산구 원효로2가 ****  **",
-    "lat": 37.5376723201353,
-    "lng": 126.966608208449,
-    "branch": "서대문지사",
-    "manager": "G000204",
-    "is_defect": "대상",
-    "type": "설변",
-    "event_date": "2025-09-07",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51756877.0,
@@ -3231,21 +2486,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2024-06-28",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51870484.0,
-    "name": "레이***********************",
-    "address": "서울 마포구 연남동 ****** **",
-    "lat": 37.5649310659823,
-    "lng": 126.923230784947,
-    "branch": "서대문지사",
-    "manager": "G000202",
-    "is_defect": "대상",
-    "type": "설변",
-    "event_date": "2025-09-19",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52306039.0,
@@ -3259,7 +2501,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2025-12-08",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52322568.0,
@@ -3273,7 +2516,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2025-12-17",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51210622.0,
@@ -3287,7 +2531,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-02",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52317009.0,
@@ -3301,7 +2546,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-29",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52024197.0,
@@ -3315,7 +2561,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51965527.0,
@@ -3329,7 +2576,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-07-22",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52154246.0,
@@ -3343,7 +2591,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51750162.0,
@@ -3357,7 +2606,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52250161.0,
@@ -3371,7 +2621,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52172025.0,
@@ -3385,7 +2636,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51744105.0,
@@ -3399,7 +2651,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-16",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52178235.0,
@@ -3413,7 +2666,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-27",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51153544.0,
@@ -3427,7 +2681,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-10",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51892638.0,
@@ -3441,7 +2696,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51848256.0,
@@ -3455,7 +2711,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-27",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52011847.0,
@@ -3469,7 +2726,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51992630.0,
@@ -3483,7 +2741,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51047563.0,
@@ -3497,7 +2756,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-24",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51393078.0,
@@ -3511,7 +2771,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-19",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51524235.0,
@@ -3525,7 +2786,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-19",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50660797.0,
@@ -3539,7 +2801,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-24",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51074467.0,
@@ -3553,7 +2816,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-15",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51440347.0,
@@ -3567,7 +2831,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-15",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51768639.0,
@@ -3581,7 +2846,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-31",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51137824.0,
@@ -3595,7 +2861,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51705009.0,
@@ -3609,21 +2876,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-26",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
-  },
-  {
-    "id": 51362072.0,
-    "name": "가람******************",
-    "address": "경기 고양시 일산구 가좌동 ****",
-    "lat": 37.7001291091612,
-    "lng": 126.725228745963,
-    "branch": "고양지사",
-    "manager": "G000308",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-31",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51582407.0,
@@ -3637,7 +2891,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-18",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 52172033.0,
@@ -3651,7 +2906,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51941659.0,
@@ -3665,7 +2921,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-02",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50161761.0,
@@ -3679,7 +2936,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-27",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51958770.0,
@@ -3693,7 +2951,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52210142.0,
@@ -3707,7 +2966,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51735185.0,
@@ -3721,7 +2981,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-19",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51513240.0,
@@ -3735,7 +2996,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-12",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50742071.0,
@@ -3749,21 +3011,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51749208.0,
-    "name": "JN**********************",
-    "address": "경기 고양시 일산동구 성석동  ***  ** ******",
-    "lat": 37.7078795273033,
-    "lng": 126.796837984614,
-    "branch": "고양지사",
-    "manager": "G000310",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51978138.0,
@@ -3777,7 +3026,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2024-11-21",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51087834.0,
@@ -3791,7 +3041,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-06",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51721908.0,
@@ -3805,7 +3056,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-26",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51489522.0,
@@ -3819,7 +3071,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-19",
     "is_arrears": "N",
-    "action_date": "2026-02-01"
+    "action_date": "2026-02-01",
+    "l_type": "L형"
   },
   {
     "id": 51087871.0,
@@ -3833,7 +3086,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-06",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51155481.0,
@@ -3847,7 +3101,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51810421.0,
@@ -3861,7 +3116,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-16",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51877050.0,
@@ -3875,7 +3131,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52207720.0,
@@ -3889,7 +3146,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-31",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 20382456.0,
@@ -3903,7 +3161,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-15",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51139349.0,
@@ -3917,7 +3176,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-08",
     "is_arrears": "N",
-    "action_date": "2026-02-01"
+    "action_date": "2026-02-01",
+    "l_type": "L형"
   },
   {
     "id": 51223968.0,
@@ -3931,7 +3191,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-09",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51015012.0,
@@ -3945,7 +3206,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51887970.0,
@@ -3959,7 +3221,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50361919.0,
@@ -3973,7 +3236,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-10",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51535084.0,
@@ -3987,7 +3251,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-24",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50225811.0,
@@ -4001,7 +3266,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-18",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51939560.0,
@@ -4015,7 +3281,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-02",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50225813.0,
@@ -4029,7 +3296,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-03",
     "is_arrears": "N",
-    "action_date": "2026-02-01"
+    "action_date": "2026-02-01",
+    "l_type": "L형"
   },
   {
     "id": 51708313.0,
@@ -4043,7 +3311,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-26",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50724390.0,
@@ -4057,7 +3326,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-18",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51088587.0,
@@ -4071,7 +3341,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": "2026-02-01"
+    "action_date": "2026-02-01",
+    "l_type": "L형"
   },
   {
     "id": 50970084.0,
@@ -4085,7 +3356,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": "2026-02-01"
+    "action_date": "2026-02-01",
+    "l_type": "L형"
   },
   {
     "id": 51470958.0,
@@ -4099,7 +3371,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-02",
     "is_arrears": "N",
-    "action_date": "2026-02-01"
+    "action_date": "2026-02-01",
+    "l_type": "L형"
   },
   {
     "id": 52051990.0,
@@ -4113,7 +3386,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-03",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51298717.0,
@@ -4127,7 +3401,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-26",
     "is_arrears": "N",
-    "action_date": "2026-02-20"
+    "action_date": "2026-02-20",
+    "l_type": "L형"
   },
   {
     "id": 51226826.0,
@@ -4141,7 +3416,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-26",
     "is_arrears": "N",
-    "action_date": "2026-02-20"
+    "action_date": "2026-02-20",
+    "l_type": "L형"
   },
   {
     "id": 51307448.0,
@@ -4155,7 +3431,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-24",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50979055.0,
@@ -4169,7 +3446,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-12",
     "is_arrears": "N",
-    "action_date": "2026-02-12"
+    "action_date": "2026-02-12",
+    "l_type": "L형"
   },
   {
     "id": 51576415.0,
@@ -4183,7 +3461,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-03",
     "is_arrears": "N",
-    "action_date": "2026-02-03"
+    "action_date": "2026-02-03",
+    "l_type": "L형"
   },
   {
     "id": 52288108.0,
@@ -4197,7 +3476,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-25",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51933607.0,
@@ -4211,7 +3491,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-11",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50668329.0,
@@ -4225,7 +3506,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-05",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51636079.0,
@@ -4239,7 +3521,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-02",
     "is_arrears": "N",
-    "action_date": "2026-02-01"
+    "action_date": "2026-02-01",
+    "l_type": "L형"
   },
   {
     "id": 51753813.0,
@@ -4253,7 +3536,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-19",
     "is_arrears": "N",
-    "action_date": "2026-02-15"
+    "action_date": "2026-02-15",
+    "l_type": "L형"
   },
   {
     "id": 51237414.0,
@@ -4267,7 +3551,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-10",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52213344.0,
@@ -4281,7 +3566,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-27",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51694761.0,
@@ -4295,7 +3581,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-04",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 50367243.0,
@@ -4309,7 +3596,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-12",
     "is_arrears": "N",
-    "action_date": "2026-02-12"
+    "action_date": "2026-02-12",
+    "l_type": "L형"
   },
   {
     "id": 51281693.0,
@@ -4323,7 +3611,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-02",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51706076.0,
@@ -4337,7 +3626,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-07",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52351294.0,
@@ -4351,7 +3641,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-24",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51721286.0,
@@ -4365,49 +3656,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-26",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
-  },
-  {
-    "id": 52138361.0,
-    "name": "반석***",
-    "address": "경기 파주시 광탄면 *** *** ******",
-    "lat": 37.7689050394357,
-    "lng": 126.903763452249,
-    "branch": "고양지사",
-    "manager": "G000309",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51833268.0,
-    "name": "차차*********",
-    "address": "경기 파주시 와동동 ********",
-    "lat": 37.7313731461301,
-    "lng": 126.75200775573,
-    "branch": "고양지사",
-    "manager": "G000305",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51848216.0,
-    "name": "유한*****",
-    "address": "경기 고양시 덕양구 오금동 ***** **",
-    "lat": 37.6677280316559,
-    "lng": 126.920759658341,
-    "branch": "고양지사",
-    "manager": "G000301",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 50206936.0,
@@ -4421,35 +3671,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52148448.0,
-    "name": "김정*",
-    "address": "경기 파주시 조리읍 *** ***** ******",
-    "lat": 37.7705203839701,
-    "lng": 126.821940716967,
-    "branch": "고양지사",
-    "manager": "G000309",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51772201.0,
-    "name": "주식*********",
-    "address": "경기 파주시 문산읍 *** ******* ***",
-    "lat": 37.8822870361357,
-    "lng": 126.775858145169,
-    "branch": "고양지사",
-    "manager": "G000304",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51706498.0,
@@ -4463,49 +3686,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-08",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51377663.0,
-    "name": "김주*",
-    "address": "경기 고양시 일산동구 장항동 ***** ** ** **",
-    "lat": 37.637150319072,
-    "lng": 126.77972733097,
-    "branch": "고양지사",
-    "manager": "G000303",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51337315.0,
-    "name": "전금*",
-    "address": "경기 고양시 일산동구 마두1동 ***** ******* ** **",
-    "lat": 37.6551865774233,
-    "lng": 126.791396446757,
-    "branch": "고양지사",
-    "manager": "G000310",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51819969.0,
-    "name": "박정*",
-    "address": "경기 파주시 목동동 ***** ******** ** **** ****",
-    "lat": 37.7279183191974,
-    "lng": 126.733721981921,
-    "branch": "고양지사",
-    "manager": "G000305",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-06-14",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51558326.0,
@@ -4519,7 +3701,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-27",
     "is_arrears": "N",
-    "action_date": "2026-03-03"
+    "action_date": "2026-03-03",
+    "l_type": "L형"
   },
   {
     "id": 51722511.0,
@@ -4533,63 +3716,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-03",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52124601.0,
-    "name": "김은*",
-    "address": "경기 파주시 광탄면 *** ***** ** ******",
-    "lat": 37.8109305292853,
-    "lng": 126.86562087701,
-    "branch": "고양지사",
-    "manager": "G000309",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51666886.0,
-    "name": "제로**",
-    "address": "경기 고양시 덕양구 고양동 *** ** ****",
-    "lat": 37.7104223186094,
-    "lng": 126.906330946607,
-    "branch": "고양지사",
-    "manager": "G000301",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51659385.0,
-    "name": "보고**",
-    "address": "경기 고양시 덕양구 원흥동 ***** ****",
-    "lat": 37.6411295594619,
-    "lng": 126.875702209877,
-    "branch": "고양지사",
-    "manager": "G000301",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51890196.0,
-    "name": "이철*",
-    "address": "경기 파주시 광탄면 *** ***",
-    "lat": NaN,
-    "lng": NaN,
-    "branch": "고양지사",
-    "manager": "G000309",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-07-09",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51216889.0,
@@ -4603,105 +3731,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-02",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52070639.0,
-    "name": "양혜*****",
-    "address": "경기 고양시 일산서구 대화동 ****** ***** **** ****",
-    "lat": 37.6697936032443,
-    "lng": 126.728717900291,
-    "branch": "고양지사",
-    "manager": "G000308",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51508331.0,
-    "name": "다올************",
-    "address": "경기 고양시 일산서구 대화동 ****** ********* ** ******",
-    "lat": 37.6679946733069,
-    "lng": 126.751646859873,
-    "branch": "고양지사",
-    "manager": "G000308",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52136415.0,
-    "name": "고경*",
-    "address": "경기 파주시 야당동  ***",
-    "lat": 37.7238485725064,
-    "lng": 126.771934844716,
-    "branch": "고양지사",
-    "manager": "G000309",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51438171.0,
-    "name": "떡볶***************",
-    "address": "경기 파주시 문산읍 *** ****",
-    "lat": 37.8461504002251,
-    "lng": 126.749295093214,
-    "branch": "고양지사",
-    "manager": "G000304",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-07-08",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52130406.0,
-    "name": "장미********",
-    "address": "경기 고양시 덕양구 성사동 ****** ***** *** *****",
-    "lat": 37.6595618413592,
-    "lng": 126.84035217942,
-    "branch": "고양지사",
-    "manager": "G000301",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-27",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51873165.0,
-    "name": "권종*******",
-    "address": "경기 파주시 상지석동 ********",
-    "lat": 37.7138010111537,
-    "lng": 126.772948940425,
-    "branch": "고양지사",
-    "manager": "G000309",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-04-17",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52146202.0,
-    "name": "젊음***",
-    "address": "경기 고양시 일산동구 장항동  ***** ****** **** *********",
-    "lat": 37.6572155068514,
-    "lng": 126.769797473555,
-    "branch": "고양지사",
-    "manager": "G000303",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-08-20",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52194995.0,
@@ -4715,35 +3746,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-11",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52093254.0,
-    "name": "김진*",
-    "address": "경기 고양시 일산서구 가좌동  **** **** ****",
-    "lat": 37.68733563552,
-    "lng": 126.71726001808,
-    "branch": "고양지사",
-    "manager": "G000308",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51857729.0,
-    "name": "마*",
-    "address": "경기 파주시 야당동 ******** ****** ****",
-    "lat": 37.7078263873813,
-    "lng": 126.759538496432,
-    "branch": "고양지사",
-    "manager": "G000309",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50178657.0,
@@ -4757,35 +3761,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-13",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52226890.0,
-    "name": "수민*",
-    "address": "경기 파주시 광탄면 *** ***** ** **",
-    "lat": 37.7849449910583,
-    "lng": 126.883969786254,
-    "branch": "고양지사",
-    "manager": "G000306",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51424295.0,
-    "name": "최영*",
-    "address": "경기 파주시 문산읍 *** *** ******* ***** **** ****",
-    "lat": 37.859319262545,
-    "lng": 126.796442229033,
-    "branch": "고양지사",
-    "manager": "G000304",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51596475.0,
@@ -4799,105 +3776,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-30",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
-  },
-  {
-    "id": 52106828.0,
-    "name": "플로****",
-    "address": "경기 고양시 일산동구 장항동 ******* ********** ** ****",
-    "lat": 37.6553835219615,
-    "lng": 126.773603811191,
-    "branch": "고양지사",
-    "manager": "G000303",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-14",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51711394.0,
-    "name": "황해**",
-    "address": "경기 고양시 덕양구 신원동 ******* **",
-    "lat": 37.6621180524154,
-    "lng": 126.889479477522,
-    "branch": "고양지사",
-    "manager": "G000301",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-08-19",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51718483.0,
-    "name": "누나*****",
-    "address": "경기 파주시 광탄면 *** ********",
-    "lat": 37.7480992521369,
-    "lng": 126.863789423435,
-    "branch": "고양지사",
-    "manager": "G000309",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52015743.0,
-    "name": "고유*",
-    "address": "경기 고양시 일산서구 대화동 ******* ****",
-    "lat": 37.6736398552924,
-    "lng": 126.735090733987,
-    "branch": "고양지사",
-    "manager": "G000308",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-08-09",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51975205.0,
-    "name": "김대*",
-    "address": "경기 파주시 오도동 ******",
-    "lat": 37.7498302458079,
-    "lng": 126.729194840566,
-    "branch": "고양지사",
-    "manager": "G000306",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52130840.0,
-    "name": "샴푸**",
-    "address": "경기 고양시 일산동구 마두동  *** **** **** **** *****",
-    "lat": 37.65110369472,
-    "lng": 126.779315913698,
-    "branch": "고양지사",
-    "manager": "G000310",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51669255.0,
-    "name": "홍승*",
-    "address": "경기 파주시 문발동 ******* ** ****",
-    "lat": 37.7065655352274,
-    "lng": 126.684708205421,
-    "branch": "고양지사",
-    "manager": "G000306",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 52002961.0,
@@ -4911,119 +3791,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52031593.0,
-    "name": "장독*********",
-    "address": "경기 파주시 동패동 ******** **** ** ****",
-    "lat": 37.7125835882409,
-    "lng": 126.719672320379,
-    "branch": "고양지사",
-    "manager": "G000306",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52143248.0,
-    "name": "신옥*",
-    "address": "경기 고양시 덕양구 원당동  ******",
-    "lat": 37.6847807839293,
-    "lng": 126.868693910376,
-    "branch": "고양지사",
-    "manager": "G000301",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52153095.0,
-    "name": "베프******",
-    "address": "경기 고양시 일산서구 주엽동 ****** **** ** ****",
-    "lat": 37.6714314407083,
-    "lng": 126.760262286123,
-    "branch": "고양지사",
-    "manager": "G000308",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51382658.0,
-    "name": "임미*",
-    "address": "경기 파주시 목동동 ***** ****** **** ** ****",
-    "lat": 37.7343245567056,
-    "lng": 126.73672710862,
-    "branch": "고양지사",
-    "manager": "G000305",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51494082.0,
-    "name": "신성*",
-    "address": "경기 파주시 파주읍 *** *** ******",
-    "lat": 37.828252956762,
-    "lng": 126.802183855766,
-    "branch": "고양지사",
-    "manager": "G000304",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51840515.0,
-    "name": "박점******",
-    "address": "경기 고양시 덕양구 화정2동 ***** **** **",
-    "lat": 37.6343468262003,
-    "lng": 126.831398004085,
-    "branch": "고양지사",
-    "manager": "G000303",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-05-31",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52049237.0,
-    "name": "위비***",
-    "address": "경기 파주시 목동동 ***** ************ **",
-    "lat": 37.729526175411,
-    "lng": 126.736765309998,
-    "branch": "고양지사",
-    "manager": "G000305",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-03",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51745292.0,
-    "name": "원당****",
-    "address": "경기 고양시 덕양구 성사동 ******** ** **",
-    "lat": 37.6569486537475,
-    "lng": 126.841568222005,
-    "branch": "고양지사",
-    "manager": "G000301",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51147556.0,
@@ -5037,7 +3806,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-08",
     "is_arrears": "N",
-    "action_date": "2026-02-01"
+    "action_date": "2026-02-01",
+    "l_type": "L형"
   },
   {
     "id": 51259484.0,
@@ -5051,91 +3821,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51667411.0,
-    "name": "에프**********",
-    "address": "경기 고양시 일산서구 덕이동 *******",
-    "lat": 37.7039182333072,
-    "lng": 126.743668762591,
-    "branch": "고양지사",
-    "manager": "G000308",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51780634.0,
-    "name": "문화****",
-    "address": "경기 파주시 광탄면 *** ***** ******",
-    "lat": 37.7967223431249,
-    "lng": 126.849826701547,
-    "branch": "고양지사",
-    "manager": "G000309",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-07-09",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51998069.0,
-    "name": "보라***",
-    "address": "경기 고양시 일산동구 마두동 ******* **** ** **** *****",
-    "lat": 37.6535414086005,
-    "lng": 126.783753636147,
-    "branch": "고양지사",
-    "manager": "G000310",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51441954.0,
-    "name": "역전**********",
-    "address": "경기 고양시 덕양구 행신동 ******* ****",
-    "lat": 37.6134249693004,
-    "lng": 126.833707187084,
-    "branch": "고양지사",
-    "manager": "G000302",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52049449.0,
-    "name": "맛도*********",
-    "address": "경기 고양시 덕양구 향동동 ***** ****",
-    "lat": 37.5985055568155,
-    "lng": 126.892979512598,
-    "branch": "고양지사",
-    "manager": "G000302",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-09-04",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52249483.0,
-    "name": "서선*",
-    "address": "경기 고양시 덕양구 토당동 ***** ******* ** **",
-    "lat": 37.6196095628824,
-    "lng": 126.824221514486,
-    "branch": "고양지사",
-    "manager": "G000303",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50472311.0,
@@ -5149,7 +3836,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51678087.0,
@@ -5163,7 +3851,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52272095.0,
@@ -5177,21 +3866,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52239801.0,
-    "name": "벨리**",
-    "address": "경기 고양시 덕양구 화정동 *** ** ****",
-    "lat": 37.6343468262003,
-    "lng": 126.831398004085,
-    "branch": "고양지사",
-    "manager": "G000303",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-09-02",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52319418.0,
@@ -5205,105 +3881,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52132573.0,
-    "name": "강효*",
-    "address": "경기 파주시 파주읍 *** *****",
-    "lat": 37.8331483007928,
-    "lng": 126.793733779533,
-    "branch": "고양지사",
-    "manager": "G000304",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52009809.0,
-    "name": "구윤*",
-    "address": "경기 파주시 파주읍 *** ******* ****",
-    "lat": 37.8333123819324,
-    "lng": 126.817199595775,
-    "branch": "고양지사",
-    "manager": "G000304",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-22",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52135190.0,
-    "name": "박홍*",
-    "address": "경기 고양시 덕양구 지축동  *** *****",
-    "lat": 37.6593266431224,
-    "lng": 126.920073983953,
-    "branch": "고양지사",
-    "manager": "G000301",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52139167.0,
-    "name": "이정***",
-    "address": "경기 고양시 일산동구 산황동  ***** *****",
-    "lat": 37.6481782849285,
-    "lng": 126.805963267513,
-    "branch": "고양지사",
-    "manager": "G000310",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52128052.0,
-    "name": "(주****",
-    "address": "경기 고양시 일산동구 문봉동  ****** *****",
-    "lat": 37.7091220944709,
-    "lng": 126.818512128874,
-    "branch": "고양지사",
-    "manager": "G000310",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-19",
-    "is_arrears": "N",
-    "action_date": "2026-03-01"
-  },
-  {
-    "id": 52111187.0,
-    "name": "권원*",
-    "address": "경기 파주시 탄현면 *** ***** ******** ******",
-    "lat": NaN,
-    "lng": NaN,
-    "branch": "고양지사",
-    "manager": "G000305",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51765688.0,
-    "name": "문촌*********",
-    "address": "경기 고양시 일산서구 주엽2동 ***** *********** ** ****",
-    "lat": 37.6680886566985,
-    "lng": 126.75627392538,
-    "branch": "고양지사",
-    "manager": "G000308",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-05-17",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51143265.0,
@@ -5317,91 +3896,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52017870.0,
-    "name": "청암**",
-    "address": "경기 파주시 문발동 ******** ****",
-    "lat": 37.7216454271566,
-    "lng": 126.694807660735,
-    "branch": "고양지사",
-    "manager": "G000306",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51945748.0,
-    "name": "(주*******",
-    "address": "경기 고양시 덕양구 강매동 ******* **",
-    "lat": 37.6082571097354,
-    "lng": 126.84587382097,
-    "branch": "고양지사",
-    "manager": "G000302",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-16",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52179574.0,
-    "name": "천만*",
-    "address": "경기 고양시 덕양구 도내동 ********",
-    "lat": 37.6184753122192,
-    "lng": 126.858241271107,
-    "branch": "고양지사",
-    "manager": "G000302",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-08-28",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52147687.0,
-    "name": "월드**",
-    "address": "경기 파주시 파주읍 *** ******",
-    "lat": 37.8517814432601,
-    "lng": 126.807026183958,
-    "branch": "고양지사",
-    "manager": "G000304",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51359489.0,
-    "name": "주식*******",
-    "address": "경기 파주시 문산읍 *** *** *******",
-    "lat": 37.8585307731058,
-    "lng": 126.79232706082,
-    "branch": "고양지사",
-    "manager": "G000304",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51335500.0,
-    "name": "드림**",
-    "address": "경기 고양시 일산서구 가좌동 ******* **** **",
-    "lat": 37.6861100363734,
-    "lng": 126.724105945798,
-    "branch": "고양지사",
-    "manager": "G000308",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51455220.0,
@@ -5415,35 +3911,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-08",
     "is_arrears": "N",
-    "action_date": "2026-02-01"
-  },
-  {
-    "id": 51951343.0,
-    "name": "유수*",
-    "address": "경기 고양시 덕양구 대자동 ******",
-    "lat": 37.7052907312023,
-    "lng": 126.877009133765,
-    "branch": "고양지사",
-    "manager": "G000301",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52070776.0,
-    "name": "최영*",
-    "address": "경기 파주시 탄현면 *** *****",
-    "lat": 37.7704959688027,
-    "lng": 126.71886590224,
-    "branch": "고양지사",
-    "manager": "G000305",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "2026-02-01",
+    "l_type": "L형"
   },
   {
     "id": 52235800.0,
@@ -5457,7 +3926,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-13",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52063194.0,
@@ -5471,21 +3941,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-26",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51735098.0,
-    "name": "주식*******",
-    "address": "경기 고양시 덕양구 신원동 ******* ***** ****",
-    "lat": 37.6632938238879,
-    "lng": 126.889086495552,
-    "branch": "고양지사",
-    "manager": "G000301",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-27",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51082777.0,
@@ -5499,7 +3956,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-04",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52055887.0,
@@ -5513,35 +3971,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-28",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51934315.0,
-    "name": "남도*****",
-    "address": "경기 고양시 덕양구 원흥동 ***** ****",
-    "lat": 37.6492328901458,
-    "lng": 126.874827735308,
-    "branch": "고양지사",
-    "manager": "G000301",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-03",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51434688.0,
-    "name": "신세******",
-    "address": "경기 파주시 금촌동 ***** ****** ****",
-    "lat": 37.7579050717611,
-    "lng": 126.767609639096,
-    "branch": "고양지사",
-    "manager": "G000304",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-23",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52016553.0,
@@ -5555,7 +3986,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-02",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52031998.0,
@@ -5569,21 +4001,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-25",
     "is_arrears": "N",
-    "action_date": "2026-02-25"
-  },
-  {
-    "id": 52056365.0,
-    "name": "소미****",
-    "address": "경기 고양시 일산동구 식사동 ******** ****",
-    "lat": 37.674522727389,
-    "lng": 126.808310595293,
-    "branch": "고양지사",
-    "manager": "G000310",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-06",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "2026-02-25",
+    "l_type": "L형"
   },
   {
     "id": 51620534.0,
@@ -5597,7 +4016,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2025-08-01",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51645996.0,
@@ -5611,7 +4031,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2025-07-01",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52029865.0,
@@ -5625,21 +4046,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2026-01-08",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51572151.0,
-    "name": "블루***",
-    "address": "경기 고양시 일산동구 장항동 ***** ***** ** *****",
-    "lat": 37.6547977763547,
-    "lng": 126.77084139678,
-    "branch": "고양지사",
-    "manager": "G000307",
-    "is_defect": "대상",
-    "type": "설변",
-    "event_date": "2025-07-01",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52277482.0,
@@ -5653,7 +4061,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2025-12-03",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51733083.0,
@@ -5667,7 +4076,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2026-01-12",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51303285.0,
@@ -5681,7 +4091,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52032084.0,
@@ -5695,7 +4106,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52198574.0,
@@ -5709,7 +4121,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51126818.0,
@@ -5723,7 +4136,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51368793.0,
@@ -5737,7 +4151,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 52177699.0,
@@ -5751,7 +4166,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-03",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51502776.0,
@@ -5765,7 +4181,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51782203.0,
@@ -5779,7 +4196,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51733081.0,
@@ -5793,7 +4211,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51131121.0,
@@ -5807,7 +4226,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51690738.0,
@@ -5821,7 +4241,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51109594.0,
@@ -5835,7 +4256,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51131122.0,
@@ -5849,7 +4271,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51589239.0,
@@ -5863,7 +4286,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51009759.0,
@@ -5877,7 +4301,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 50001190.0,
@@ -5891,7 +4316,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51122656.0,
@@ -5905,7 +4331,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51685297.0,
@@ -5919,7 +4346,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51662553.0,
@@ -5933,7 +4361,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50778475.0,
@@ -5947,7 +4376,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-27",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51803108.0,
@@ -5961,7 +4391,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52175717.0,
@@ -5975,7 +4406,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52313931.0,
@@ -5989,7 +4421,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51787617.0,
@@ -6003,7 +4436,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-15",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50715803.0,
@@ -6017,7 +4451,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51537378.0,
@@ -6031,7 +4466,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51254130.0,
@@ -6045,7 +4481,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51522963.0,
@@ -6059,7 +4496,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 52090817.0,
@@ -6073,7 +4511,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-09",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51242597.0,
@@ -6087,7 +4526,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51495021.0,
@@ -6101,7 +4541,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51402585.0,
@@ -6115,7 +4556,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 52337089.0,
@@ -6129,7 +4571,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51708262.0,
@@ -6143,7 +4586,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-25",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51885135.0,
@@ -6157,7 +4601,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-02",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51617832.0,
@@ -6171,7 +4616,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-04",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51707605.0,
@@ -6185,49 +4631,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-06",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
-  },
-  {
-    "id": 52136191.0,
-    "name": "신동*",
-    "address": "경기 포천시 군내면 *** ***",
-    "lat": 37.8574267696255,
-    "lng": 127.195504260333,
-    "branch": "의정부지사",
-    "manager": "G000505",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-03",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52049542.0,
-    "name": "김승*",
-    "address": "경기 양주시 백석읍 *** ******** **** ****",
-    "lat": 37.776810860986,
-    "lng": 126.939268195746,
-    "branch": "의정부지사",
-    "manager": "G000503",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-09-04",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52036094.0,
-    "name": "빠삭**",
-    "address": "경기 양주시 덕계동 ********",
-    "lat": 37.8171633047042,
-    "lng": 127.048162816874,
-    "branch": "의정부지사",
-    "manager": "G000503",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-31",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 50493154.0,
@@ -6241,35 +4646,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51680405.0,
-    "name": "도원*",
-    "address": "경기 동두천시 안흥동 ***",
-    "lat": NaN,
-    "lng": NaN,
-    "branch": "의정부지사",
-    "manager": "G000504",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51469771.0,
-    "name": "태화*",
-    "address": "경기 연천군 신서면 *** *** *******",
-    "lat": 38.1838593287313,
-    "lng": 127.106215955108,
-    "branch": "의정부지사",
-    "manager": "G000504",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51679872.0,
@@ -6283,7 +4661,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50726341.0,
@@ -6297,21 +4676,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-24",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52115919.0,
-    "name": "허재*",
-    "address": "경기 의정부시 녹양동  ***** ** ****",
-    "lat": 37.7599019266729,
-    "lng": 127.041350437699,
-    "branch": "의정부지사",
-    "manager": "G000501",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52266346.0,
@@ -6325,21 +4691,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51749806.0,
-    "name": "박근*",
-    "address": "경기 의정부시 의정부동 ******",
-    "lat": 37.7458946373548,
-    "lng": 127.050893027809,
-    "branch": "의정부지사",
-    "manager": "G000501",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52229374.0,
@@ -6353,7 +4706,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-30",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52058734.0,
@@ -6367,63 +4721,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-19",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51715790.0,
-    "name": "뉴 ********",
-    "address": "경기 포천시 영북면 *** ******** *********",
-    "lat": 38.0996198234522,
-    "lng": 127.279954317949,
-    "branch": "의정부지사",
-    "manager": "G000505",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52094111.0,
-    "name": "김은*",
-    "address": "강원 철원군 동송읍 *** ****",
-    "lat": 38.2078384873623,
-    "lng": 127.251706756989,
-    "branch": "의정부지사",
-    "manager": "G000504",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51655453.0,
-    "name": "공정*",
-    "address": "경기 양주시 백석읍 *** ***** **",
-    "lat": 37.7868719490965,
-    "lng": 126.994702452706,
-    "branch": "의정부지사",
-    "manager": "G000503",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-01-15",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52123582.0,
-    "name": "힐링**",
-    "address": "경기 양주시 은현면 *** ***** ******",
-    "lat": 37.8592846345325,
-    "lng": 127.013231018901,
-    "branch": "의정부지사",
-    "manager": "G000504",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52301977.0,
@@ -6437,49 +4736,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52043134.0,
-    "name": "이태*",
-    "address": "경기 포천시 관인면 ** *****",
-    "lat": 38.0954921154782,
-    "lng": 127.219839263886,
-    "branch": "의정부지사",
-    "manager": "G000505",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-05",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52142549.0,
-    "name": "혜성****",
-    "address": "경기 의정부시 용현동  ***** **** ** *****",
-    "lat": 37.737834670647,
-    "lng": 127.08778566797,
-    "branch": "의정부지사",
-    "manager": "G000501",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51854734.0,
-    "name": "숙성***",
-    "address": "경기 의정부시 녹양동 ******* ***** **",
-    "lat": 37.7601265673292,
-    "lng": 127.041007385729,
-    "branch": "의정부지사",
-    "manager": "G000501",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52248951.0,
@@ -6493,21 +4751,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52152138.0,
-    "name": "최채*",
-    "address": "경기 연천군 군남면 *** ****",
-    "lat": 38.0259971711348,
-    "lng": 127.02796810425,
-    "branch": "의정부지사",
-    "manager": "G000504",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-12",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51325767.0,
@@ -6521,21 +4766,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51786988.0,
-    "name": "달쥬************",
-    "address": "경기 의정부시 의정부동 ****** **",
-    "lat": 37.7475698306795,
-    "lng": 127.048923623413,
-    "branch": "의정부지사",
-    "manager": "G000501",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-14",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51131038.0,
@@ -6549,91 +4781,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52150835.0,
-    "name": "김종*",
-    "address": "강원 철원군 근남면 *** *** *****",
-    "lat": 38.1805962390249,
-    "lng": 127.464792523654,
-    "branch": "의정부지사",
-    "manager": "G000504",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-10",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52027343.0,
-    "name": "이*",
-    "address": "경기 동두천시 보산동 ******** **",
-    "lat": 37.9207173936331,
-    "lng": 127.056408991424,
-    "branch": "의정부지사",
-    "manager": "G000504",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51986198.0,
-    "name": "태*",
-    "address": "경기 양주시 남면 *** ***** **",
-    "lat": 37.8766719319886,
-    "lng": 126.97954838259,
-    "branch": "의정부지사",
-    "manager": "G000504",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51662965.0,
-    "name": "메가***********",
-    "address": "경기 포천시 선단동 ******",
-    "lat": 37.8537419265639,
-    "lng": 127.165947695716,
-    "branch": "의정부지사",
-    "manager": "G000505",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-08-13",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51987552.0,
-    "name": "인디*",
-    "address": "경기 포천시 영중면 *** ******* ****",
-    "lat": 38.0012579331515,
-    "lng": 127.242338741584,
-    "branch": "의정부지사",
-    "manager": "G000505",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52040853.0,
-    "name": "전영*",
-    "address": "경기 양주시 광적면 *** ******** ***** ** ****",
-    "lat": 37.8234746533629,
-    "lng": 126.987229815839,
-    "branch": "의정부지사",
-    "manager": "G000503",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-11-27",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50496054.0,
@@ -6647,21 +4796,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52140793.0,
-    "name": "강현*",
-    "address": "경기 포천시 영북면 **** *****",
-    "lat": 38.0951386873855,
-    "lng": 127.24368388293,
-    "branch": "의정부지사",
-    "manager": "G000505",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-13",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50763545.0,
@@ -6675,7 +4811,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52001042.0,
@@ -6689,35 +4826,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-26",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51407045.0,
-    "name": "미미**",
-    "address": "경기 의정부시 가능동 ******** ****",
-    "lat": 37.7475645114325,
-    "lng": 127.036502122124,
-    "branch": "의정부지사",
-    "manager": "G000501",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52093649.0,
-    "name": "손명*",
-    "address": "경기 포천시 일동면 *** ***",
-    "lat": 37.9258678597293,
-    "lng": 127.298054835495,
-    "branch": "의정부지사",
-    "manager": "G000505",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52100584.0,
@@ -6731,147 +4841,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-10",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52214252.0,
-    "name": "유민**",
-    "address": "경기 포천시 화현면 *** *****",
-    "lat": 37.923188164169,
-    "lng": 127.264001195304,
-    "branch": "의정부지사",
-    "manager": "G000505",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51539417.0,
-    "name": "정원*",
-    "address": "경기 포천시 설운동 *******",
-    "lat": 37.8547501868418,
-    "lng": 127.149886641541,
-    "branch": "의정부지사",
-    "manager": "G000505",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51318491.0,
-    "name": "나혜*",
-    "address": "경기 연천군 청산면 *** ********",
-    "lat": 38.0012859867289,
-    "lng": 127.073075962845,
-    "branch": "의정부지사",
-    "manager": "G000504",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52004720.0,
-    "name": "매월***************",
-    "address": "강원 철원군 근남면 *** * **",
-    "lat": 38.1962406584092,
-    "lng": 127.479720725604,
-    "branch": "의정부지사",
-    "manager": "G000504",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-23",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51508218.0,
-    "name": "이선*",
-    "address": "경기 양주시 백석읍 *** *** ******* ** ***",
-    "lat": 37.8049206390996,
-    "lng": 127.001989675321,
-    "branch": "의정부지사",
-    "manager": "G000503",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51991929.0,
-    "name": "박정*",
-    "address": "강원 철원군 동송읍 *** ********",
-    "lat": 38.2069144885915,
-    "lng": 127.213831569113,
-    "branch": "의정부지사",
-    "manager": "G000504",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-11-06",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51743415.0,
-    "name": "바로******",
-    "address": "경기 양주시 광적면 *** *******",
-    "lat": 37.8248806561523,
-    "lng": 126.983379545357,
-    "branch": "의정부지사",
-    "manager": "G000503",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-09",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51878135.0,
-    "name": "오창*",
-    "address": "경기 연천군 미산면 *** *******",
-    "lat": 38.0231879846435,
-    "lng": 126.990757794328,
-    "branch": "의정부지사",
-    "manager": "G000504",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-05",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51593270.0,
-    "name": "주성***",
-    "address": "경기 동두천시 안흥동 ******* **",
-    "lat": 37.9264998333239,
-    "lng": 127.022485314231,
-    "branch": "의정부지사",
-    "manager": "G000504",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-06",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52058039.0,
-    "name": "최순***",
-    "address": "경기 의정부시 고산동 ******* **",
-    "lat": NaN,
-    "lng": NaN,
-    "branch": "의정부지사",
-    "manager": "G000501",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-11",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52259086.0,
@@ -6885,35 +4856,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2026-01-22",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51625302.0,
-    "name": "항상*******",
-    "address": "경기 포천시 동교동 ***** **** ****",
-    "lat": 37.8406370688635,
-    "lng": 127.129262717433,
-    "branch": "의정부지사",
-    "manager": "G000505",
-    "is_defect": "대상",
-    "type": "설변",
-    "event_date": "2025-06-14",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51709377.0,
-    "name": "배떡******",
-    "address": "경기 포천시 신읍동 ****** **",
-    "lat": 37.8959718080083,
-    "lng": 127.2018050198,
-    "branch": "의정부지사",
-    "manager": "G000506",
-    "is_defect": NaN,
-    "type": "설변",
-    "event_date": "2025-12-05",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51607482.0,
@@ -6927,21 +4871,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-07",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51964788.0,
-    "name": "(주*****",
-    "address": "경기 양평군 운심리 ***    *****  **",
-    "lat": 37.4967489345543,
-    "lng": 127.408825229324,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-07-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51788619.0,
@@ -6955,7 +4886,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51804923.0,
@@ -6969,7 +4901,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51753079.0,
@@ -6983,7 +4916,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52237784.0,
@@ -6997,7 +4931,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-09-09",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52272602.0,
@@ -7011,7 +4946,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-13",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52205537.0,
@@ -7025,7 +4961,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 20464191.0,
@@ -7039,7 +4976,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-30",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 50583688.0,
@@ -7053,7 +4991,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-23",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 50227286.0,
@@ -7067,7 +5006,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-28",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51417591.0,
@@ -7081,7 +5021,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50993101.0,
@@ -7095,7 +5036,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51117770.0,
@@ -7109,21 +5051,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-28",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
-  },
-  {
-    "id": 51995120.0,
-    "name": "비비***********************",
-    "address": "경기 양평군 양평읍 *** ******* **",
-    "lat": 37.487077334381,
-    "lng": 127.494856972805,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51417570.0,
@@ -7137,21 +5066,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51561484.0,
-    "name": "현디*",
-    "address": "경기 남양주시 수석동 ***",
-    "lat": 37.5859446337821,
-    "lng": 127.172112842767,
-    "branch": "남양주지사",
-    "manager": "G000605",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52039994.0,
@@ -7165,7 +5081,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-07",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51486191.0,
@@ -7179,7 +5096,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51319907.0,
@@ -7193,7 +5111,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-25",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 52207542.0,
@@ -7207,7 +5126,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-06",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51707907.0,
@@ -7221,7 +5141,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-26",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51124178.0,
@@ -7235,7 +5156,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-02",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51174673.0,
@@ -7249,7 +5171,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-20",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 50244378.0,
@@ -7263,7 +5186,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-10",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51748447.0,
@@ -7277,7 +5201,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-05",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51723189.0,
@@ -7291,7 +5216,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-05",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51749738.0,
@@ -7305,21 +5231,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-11",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
-  },
-  {
-    "id": 51426873.0,
-    "name": "정다*",
-    "address": "경기 남양주시 수동면 *** *** ********",
-    "lat": 37.7318213416511,
-    "lng": 127.318268111174,
-    "branch": "남양주지사",
-    "manager": "G000601",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51865127.0,
@@ -7333,63 +5246,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-31",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51785140.0,
-    "name": "바늘**",
-    "address": "경기 구리시 인창동 ******",
-    "lat": 37.6082018722351,
-    "lng": 127.138199954268,
-    "branch": "남양주지사",
-    "manager": "G000603",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2024-10-16",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52139781.0,
-    "name": "엄선*",
-    "address": "경기 양평군 개군면 **** ****** **** ** *******",
-    "lat": 37.4249549792611,
-    "lng": 127.538462599501,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51840000.0,
-    "name": "주식*********",
-    "address": "경기 남양주시 별내동 *****",
-    "lat": 37.6661100795354,
-    "lng": 127.118449665542,
-    "branch": "남양주지사",
-    "manager": "G000603",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51833115.0,
-    "name": "세화***",
-    "address": "경기 남양주시 금곡동 ***** ***** ** ****",
-    "lat": 37.6275744036769,
-    "lng": 127.202354277794,
-    "branch": "남양주지사",
-    "manager": "G000601",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52289046.0,
@@ -7403,35 +5261,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-15",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51385147.0,
-    "name": "떡꼬*",
-    "address": "경기 구리시 수택동 ******** ****",
-    "lat": 37.5937747525544,
-    "lng": 127.146579107762,
-    "branch": "남양주지사",
-    "manager": "G000603",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52150968.0,
-    "name": "김준*",
-    "address": "경기 양평군 강상면 *** ***** ******",
-    "lat": 37.469490419485,
-    "lng": 127.459681750861,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51173252.0,
@@ -7445,63 +5276,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-16",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
-  },
-  {
-    "id": 51801542.0,
-    "name": "계곡****",
-    "address": "경기 양평군 단월면 *** *******",
-    "lat": 37.591291618227,
-    "lng": 127.586613090171,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-11-25",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51512086.0,
-    "name": "배떡****",
-    "address": "경기 구리시 수택동 ******* ***** ** ****",
-    "lat": 37.5945545561305,
-    "lng": 127.138755820887,
-    "branch": "남양주지사",
-    "manager": "G000603",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52151321.0,
-    "name": "강원*",
-    "address": "경기 양평군 서종면 *** ****** **",
-    "lat": 37.6183515471577,
-    "lng": 127.35283757367,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52243473.0,
-    "name": "이정*",
-    "address": "경기 남양주시 호평동 ***** ****",
-    "lat": 37.6552588294123,
-    "lng": 127.244583248337,
-    "branch": "남양주지사",
-    "manager": "G000601",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-30",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 52183397.0,
@@ -7515,119 +5291,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51733206.0,
-    "name": "정복*",
-    "address": "경기 남양주시 삼패동 ******* ** ****",
-    "lat": 37.5932461870785,
-    "lng": 127.195536650545,
-    "branch": "남양주지사",
-    "manager": "G000605",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51878659.0,
-    "name": "주식*****",
-    "address": "경기 양평군 양동면 *** ***** ******",
-    "lat": 37.3911052452458,
-    "lng": 127.716368656756,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-11-12",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51696182.0,
-    "name": "홍컴*******************",
-    "address": "경기 남양주시 다산동 ****** ***** ****",
-    "lat": 37.6144988614653,
-    "lng": 127.154420631801,
-    "branch": "남양주지사",
-    "manager": "G000605",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-01-10",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51366702.0,
-    "name": "배종*",
-    "address": "경기 남양주시 화도읍 *** *** ******* ****",
-    "lat": 37.6810112594507,
-    "lng": 127.30406356344,
-    "branch": "남양주지사",
-    "manager": "G000601",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2024-04-25",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52146118.0,
-    "name": "성열*",
-    "address": "경기 남양주시 별내동  ***** ** *****",
-    "lat": 37.6580475788277,
-    "lng": 127.128669997235,
-    "branch": "남양주지사",
-    "manager": "G000603",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51629916.0,
-    "name": "떡꼬*",
-    "address": "경기 구리시 수택동 ******** ** ***",
-    "lat": 37.5937747525544,
-    "lng": 127.146579107762,
-    "branch": "남양주지사",
-    "manager": "G000603",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51698339.0,
-    "name": "김대*",
-    "address": "경기 남양주시 다산동 ******** ***** ****",
-    "lat": 37.6251463806598,
-    "lng": 127.155369502994,
-    "branch": "남양주지사",
-    "manager": "G000605",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52116174.0,
-    "name": "코리******",
-    "address": "경기 남양주시 화도읍 *** *****",
-    "lat": 37.6596023144626,
-    "lng": 127.34599158469,
-    "branch": "남양주지사",
-    "manager": "G000601",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50748620.0,
@@ -7641,7 +5306,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-23",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 50585038.0,
@@ -7655,21 +5321,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-23",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
-  },
-  {
-    "id": 52098681.0,
-    "name": "국민*******",
-    "address": "경기 남양주시 다산동  ****** ** **** *****",
-    "lat": 37.6219023431034,
-    "lng": 127.159382389522,
-    "branch": "남양주지사",
-    "manager": "G000605",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51417586.0,
@@ -7683,21 +5336,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52143255.0,
-    "name": "이형*",
-    "address": "경기 구리시 인창동 *****",
-    "lat": 37.606981597364,
-    "lng": 127.134987021864,
-    "branch": "남양주지사",
-    "manager": "G000603",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51980390.0,
@@ -7711,7 +5351,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-23",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51669983.0,
@@ -7725,35 +5366,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-16",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52082722.0,
-    "name": "이모***",
-    "address": "경기 남양주시 호평동 *****",
-    "lat": 37.6544314963965,
-    "lng": 127.247030014582,
-    "branch": "남양주지사",
-    "manager": "G000601",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51450772.0,
-    "name": "김경****",
-    "address": "경기 양평군 용문면 *** ***",
-    "lat": 37.5189370204784,
-    "lng": 127.56071132095,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-09-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 20535772.0,
@@ -7767,7 +5381,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-06",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52198605.0,
@@ -7781,49 +5396,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51317095.0,
-    "name": "전영*",
-    "address": "경기 남양주시 진접읍 *** ***** ********** **** *****",
-    "lat": 37.7291461419197,
-    "lng": 127.195108560165,
-    "branch": "남양주지사",
-    "manager": "G000602",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52120505.0,
-    "name": "이혜*",
-    "address": "경기 남양주시 화도읍 *** ***** ****",
-    "lat": 37.6640225287714,
-    "lng": 127.300940029141,
-    "branch": "남양주지사",
-    "manager": "G000601",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-31",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51921771.0,
-    "name": "김효*",
-    "address": "경기 남양주시 진건읍 *** ******* ****",
-    "lat": 37.6526740654123,
-    "lng": 127.180548434191,
-    "branch": "남양주지사",
-    "manager": "G000602",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51264820.0,
@@ -7837,91 +5411,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-21",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
-  },
-  {
-    "id": 51994091.0,
-    "name": "더맛****",
-    "address": "경기 남양주시 오남읍 *** ******* ** ****",
-    "lat": 37.6995335137148,
-    "lng": 127.192214043899,
-    "branch": "남양주지사",
-    "manager": "G000602",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51736982.0,
-    "name": "노남*",
-    "address": "경기 양평군 옥천면 *** *****",
-    "lat": 37.5217309055852,
-    "lng": 127.466868423353,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-02-18",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52143120.0,
-    "name": "정용*",
-    "address": "경기 양평군 용문면 *** ******",
-    "lat": 37.5404230810045,
-    "lng": 127.610951979597,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52093104.0,
-    "name": "양평*******",
-    "address": "경기 양평군 양평읍 *** ***",
-    "lat": 37.5044537084674,
-    "lng": 127.520128535264,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51706939.0,
-    "name": "이희*",
-    "address": "경기 남양주시 진접읍 ** **** ******* ** ********* *****",
-    "lat": 37.7177469933997,
-    "lng": 127.180207985742,
-    "branch": "남양주지사",
-    "manager": "G000602",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-08-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51646322.0,
-    "name": "부뚜*********",
-    "address": "경기 남양주시 호평동 ******* **",
-    "lat": 37.6541255353003,
-    "lng": 127.241894009895,
-    "branch": "남양주지사",
-    "manager": "G000601",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 51116093.0,
@@ -7935,91 +5426,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-06",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51481637.0,
-    "name": "꽃잎********",
-    "address": "경기 구리시 갈매동 ******* ** ****",
-    "lat": 37.6304077621053,
-    "lng": 127.120904549006,
-    "branch": "남양주지사",
-    "manager": "G000603",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2024-11-14",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51764065.0,
-    "name": "김명*",
-    "address": "경기 양평군 단월면 *** ******",
-    "lat": 37.5232200998218,
-    "lng": 127.681113178683,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2024-12-13",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51966562.0,
-    "name": "예언*",
-    "address": "경기 남양주시 진접읍 *** ******** **",
-    "lat": 37.7188310658391,
-    "lng": 127.183290340331,
-    "branch": "남양주지사",
-    "manager": "G000602",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2024-11-27",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51916845.0,
-    "name": "이정*",
-    "address": "경기 남양주시 진접읍 *** ******* **** ****",
-    "lat": 37.7409379278436,
-    "lng": 127.19904474096,
-    "branch": "남양주지사",
-    "manager": "G000602",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51581614.0,
-    "name": "이민*",
-    "address": "경기 양평군 양동면 *** *** ******",
-    "lat": 37.4206472659289,
-    "lng": 127.758686856055,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51977923.0,
-    "name": "농경******",
-    "address": "경기 양평군 개군면 *** *****",
-    "lat": 37.4536119558375,
-    "lng": 127.513776894495,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-02",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51417580.0,
@@ -8033,49 +5441,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51619041.0,
-    "name": "심경*",
-    "address": "경기 양평군 양서면 *** *****",
-    "lat": 37.5126716904859,
-    "lng": 127.421279856222,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-27",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51382144.0,
-    "name": "A스**",
-    "address": "경기 남양주시 화도읍 *** *** ******* ** ****",
-    "lat": 37.6509023449392,
-    "lng": 127.302224338779,
-    "branch": "남양주지사",
-    "manager": "G000601",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-09-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52110073.0,
-    "name": "남한***",
-    "address": "경기 양평군 양평읍 *** ***** ****** ******",
-    "lat": 37.501590371093,
-    "lng": 127.474605641347,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52014567.0,
@@ -8089,133 +5456,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-01",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52144942.0,
-    "name": "크린************",
-    "address": "경기 남양주시 오남읍 *** ***** ***** ******",
-    "lat": 37.6793698339561,
-    "lng": 127.210031129121,
-    "branch": "남양주지사",
-    "manager": "G000602",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52011422.0,
-    "name": "신보*",
-    "address": "경기 양평군 지평면 *** ****** **",
-    "lat": 37.4640355817893,
-    "lng": 127.642931809794,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52140164.0,
-    "name": "이은*",
-    "address": "경기 양평군 옥천면 *** ****** ******",
-    "lat": 37.5278974508192,
-    "lng": 127.491201670086,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-07-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51803654.0,
-    "name": "일이***",
-    "address": "경기 구리시 교문동 ******* **",
-    "lat": 37.5977439416664,
-    "lng": 127.136152529306,
-    "branch": "남양주지사",
-    "manager": "G000603",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51632072.0,
-    "name": "안백*",
-    "address": "경기 양평군 용문면 *** *******",
-    "lat": 37.4821563095928,
-    "lng": 127.590943655525,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51993359.0,
-    "name": "이미*",
-    "address": "경기 남양주시 화도읍 *** ******* ******** ****",
-    "lat": 37.6589800661742,
-    "lng": 127.276786964771,
-    "branch": "남양주지사",
-    "manager": "G000601",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51404697.0,
-    "name": "김범*",
-    "address": "경기 양평군 양평읍 *** *** *****",
-    "lat": 37.4590633099741,
-    "lng": 127.507602237422,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2024-12-13",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52012907.0,
-    "name": "욜*",
-    "address": "경기 구리시 인창동 ******* ****",
-    "lat": 37.6042136861506,
-    "lng": 127.134339456019,
-    "branch": "남양주지사",
-    "manager": "G000603",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-11-25",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52108240.0,
-    "name": "김선*",
-    "address": "경기 남양주시 진접읍 *** *****",
-    "lat": 37.7302142586515,
-    "lng": 127.209078266753,
-    "branch": "남양주지사",
-    "manager": "G000602",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51002639.0,
@@ -8229,35 +5471,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52153937.0,
-    "name": "이종*",
-    "address": "경기 구리시 수택동 ******** ****",
-    "lat": 37.5928983701571,
-    "lng": 127.142821438008,
-    "branch": "남양주지사",
-    "manager": "G000603",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-20",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52048372.0,
-    "name": "구름***",
-    "address": "경기 양평군 양평읍 *** ********",
-    "lat": 37.4871273980068,
-    "lng": 127.494670965152,
-    "branch": "남양주지사",
-    "manager": "G000604",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-14",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50165732.0,
@@ -8271,7 +5486,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-23",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51217705.0,
@@ -8285,7 +5501,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-20",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51993601.0,
@@ -8299,7 +5516,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-25",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52155147.0,
@@ -8313,7 +5531,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-26",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51923594.0,
@@ -8327,21 +5546,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-06",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51524283.0,
-    "name": "브레****",
-    "address": "경기 남양주시 와부읍덕소리 ******",
-    "lat": 37.5905670765991,
-    "lng": 127.218507451983,
-    "branch": "남양주지사",
-    "manager": "G000605",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-06",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52256924.0,
@@ -8355,7 +5561,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2026-01-07",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52334730.0,
@@ -8369,7 +5576,8 @@ const SUSPENSION_TARGETS = [
     "type": "설변",
     "event_date": "2026-01-22",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52028828.0,
@@ -8383,7 +5591,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-21",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52205640.0,
@@ -8397,7 +5606,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-30",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51922393.0,
@@ -8411,7 +5621,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-02",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51658719.0,
@@ -8425,7 +5636,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51210780.0,
@@ -8439,7 +5651,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51780035.0,
@@ -8453,7 +5666,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-27",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51783437.0,
@@ -8467,7 +5681,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-10",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51861553.0,
@@ -8481,7 +5696,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-16",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52032058.0,
@@ -8495,21 +5711,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51363996.0,
-    "name": "롯데*************************",
-    "address": "강원 고성군 성천리 *** ******** *********",
-    "lat": 38.2260770872477,
-    "lng": 128.547509885294,
-    "branch": "강릉지사",
-    "manager": "P000103",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-06",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50801614.0,
@@ -8523,7 +5726,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51798951.0,
@@ -8537,7 +5741,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51214817.0,
@@ -8551,7 +5756,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51650221.0,
@@ -8565,7 +5771,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51750689.0,
@@ -8579,7 +5786,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51750288.0,
@@ -8593,7 +5801,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-03",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51650229.0,
@@ -8607,7 +5816,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52002201.0,
@@ -8621,7 +5831,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-28",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51345220.0,
@@ -8635,7 +5846,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52029353.0,
@@ -8649,7 +5861,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51621482.0,
@@ -8663,7 +5876,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": "2026-03-01"
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 52049274.0,
@@ -8677,7 +5891,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-28",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51779131.0,
@@ -8691,7 +5906,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-30",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52247520.0,
@@ -8705,7 +5921,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-23",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52000891.0,
@@ -8719,63 +5936,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-20",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51810681.0,
-    "name": "루이***",
-    "address": "강원 강릉시 난곡동 ******* *** ** ** **",
-    "lat": 37.7872497760499,
-    "lng": 128.873207041056,
-    "branch": "강릉지사",
-    "manager": "P000102",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52058489.0,
-    "name": "윤동*",
-    "address": "강원 삼척시 남양동 ******  ****",
-    "lat": 37.4393964824429,
-    "lng": 129.168484098306,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52021300.0,
-    "name": "하늘**",
-    "address": "강원 동해시 송정동 ******* ** ****",
-    "lat": 37.4985141885152,
-    "lng": 129.126091859516,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-06-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51839654.0,
-    "name": "이순*",
-    "address": "강원 양양군 양양읍 *** ****** **",
-    "lat": 38.0760528098742,
-    "lng": 128.623423867287,
-    "branch": "강릉지사",
-    "manager": "P000103",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52205579.0,
@@ -8789,49 +5951,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-08-12",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52038107.0,
-    "name": "이강*****",
-    "address": "강원 태백시 황지동 ********",
-    "lat": 37.1597830937667,
-    "lng": 128.98013056024,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52109313.0,
-    "name": "이희*",
-    "address": "강원 삼척시 신기면 **** *** *",
-    "lat": 37.345440628508,
-    "lng": 129.048902607076,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52151802.0,
-    "name": "어밥**",
-    "address": "강원 속초시 조양동  ****** ****** **** *******",
-    "lat": 38.1892467426552,
-    "lng": 128.581713674165,
-    "branch": "강릉지사",
-    "manager": "P000103",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51456841.0,
@@ -8845,7 +5966,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52005185.0,
@@ -8859,35 +5981,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52133127.0,
-    "name": "엠텍***",
-    "address": "강원 강릉시 강동면 **** ***** ***** ** *******",
-    "lat": 37.73401274444,
-    "lng": 128.970087440039,
-    "branch": "강릉지사",
-    "manager": "P000101",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51824675.0,
-    "name": "동해**",
-    "address": "강원 강릉시 옥계면 ***  ***** ****",
-    "lat": 37.6098143663815,
-    "lng": 129.036160046008,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51649000.0,
@@ -8901,49 +5996,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52152118.0,
-    "name": "도니**",
-    "address": "강원 동해시 천곡동  *** ***** ** ***",
-    "lat": 37.5213418576167,
-    "lng": 129.115207093129,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51738849.0,
-    "name": "김수****",
-    "address": "강원 정선군 임계면 *** **** ****",
-    "lat": 37.4657977195218,
-    "lng": 128.800861736953,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52094077.0,
-    "name": "오용*",
-    "address": "강원 양양군 현남면 *** *****",
-    "lat": 37.9814532196241,
-    "lng": 128.758034998195,
-    "branch": "강릉지사",
-    "manager": "P000102",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50540614.0,
@@ -8957,7 +6011,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-27",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50277444.0,
@@ -8971,49 +6026,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-27",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52012743.0,
-    "name": "이수*",
-    "address": "강원 강릉시 포남2동 ******** ***** **** ****",
-    "lat": 37.7711683010093,
-    "lng": 128.913405756379,
-    "branch": "강릉지사",
-    "manager": "P000101",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-08-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52149072.0,
-    "name": "남희***",
-    "address": "강원 속초시 조양동  ****** ** **** ***** *****",
-    "lat": 38.1892467426552,
-    "lng": 128.581713674165,
-    "branch": "강릉지사",
-    "manager": "P000103",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52149972.0,
-    "name": "이영*",
-    "address": "강원 정선군 남면 *** *****",
-    "lat": 37.2448243880267,
-    "lng": 128.775591337275,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-20",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51993223.0,
@@ -9027,21 +6041,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51545888.0,
-    "name": "레니***",
-    "address": "강원 강릉시 초당동 ******* *****",
-    "lat": 37.7834807978595,
-    "lng": 128.915537385832,
-    "branch": "강릉지사",
-    "manager": "P000102",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-08-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50419632.0,
@@ -9055,49 +6056,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-10-18",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52032205.0,
-    "name": "대청*****",
-    "address": "강원 속초시 대포동 ***** *******",
-    "lat": 38.1740375877249,
-    "lng": 128.605728157797,
-    "branch": "강릉지사",
-    "manager": "P000103",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-20",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52298351.0,
-    "name": "리브**",
-    "address": "강원 속초시 조양동 ******** ****",
-    "lat": 38.1872227086954,
-    "lng": 128.601518385397,
-    "branch": "강릉지사",
-    "manager": "P000103",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-29",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52020356.0,
-    "name": "전호****",
-    "address": "강원 삼척시 사직동 *******",
-    "lat": 37.434811138922,
-    "lng": 129.168996573066,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51996973.0,
@@ -9111,35 +6071,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52111299.0,
-    "name": "동해***",
-    "address": "강원 양양군 양양읍 *** ***** ** ******",
-    "lat": 38.0980779707332,
-    "lng": 128.626258048683,
-    "branch": "강릉지사",
-    "manager": "P000103",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51606867.0,
-    "name": "임종*",
-    "address": "강원 강릉시 주문진읍 *** *** *******",
-    "lat": 37.8947930267454,
-    "lng": 128.824959058509,
-    "branch": "강릉지사",
-    "manager": "P000102",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-08-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50800027.0,
@@ -9153,105 +6086,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52111484.0,
-    "name": "(직*****",
-    "address": "강원 정선군 화암면 *** ***",
-    "lat": 37.3846287389804,
-    "lng": 128.804415235276,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-08-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52110249.0,
-    "name": "본죽*******",
-    "address": "강원 속초시 조양동  ****** ** **** ** **** *****",
-    "lat": 38.1895702868246,
-    "lng": 128.580471897153,
-    "branch": "강릉지사",
-    "manager": "P000103",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-22",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52128966.0,
-    "name": "(주*****",
-    "address": "강원 삼척시 미로면 **** ****",
-    "lat": 37.4125300623064,
-    "lng": 129.119566294007,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-02",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51377805.0,
-    "name": "변수*",
-    "address": "강원 정선군 임계면 *** *** *** *******",
-    "lat": 37.4625975823178,
-    "lng": 128.853112261949,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-21",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52002885.0,
-    "name": "엄마**",
-    "address": "강원 삼척시 원덕읍 *** ******",
-    "lat": 37.1918809177798,
-    "lng": 129.330224724267,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52040420.0,
-    "name": "한잔**",
-    "address": "강원 강릉시 입암동 *******",
-    "lat": 37.7593119326461,
-    "lng": 128.919142111771,
-    "branch": "강릉지사",
-    "manager": "P000101",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52047147.0,
-    "name": "(직*************",
-    "address": "강원 강릉시 주문진읍 *** ******** **",
-    "lat": 37.8877666288979,
-    "lng": 128.828973921117,
-    "branch": "강릉지사",
-    "manager": "P000102",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-08-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50570566.0,
@@ -9265,21 +6101,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52114956.0,
-    "name": "손재*",
-    "address": "강원 강릉시 옥계면 *** *****",
-    "lat": 37.5750110074117,
-    "lng": 128.955755302142,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52050089.0,
@@ -9293,7 +6116,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51981724.0,
@@ -9307,35 +6131,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-28",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52234445.0,
-    "name": "최종******",
-    "address": "강원 정선군 신동읍 *** ***** ***",
-    "lat": NaN,
-    "lng": NaN,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-11-25",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51508972.0,
-    "name": "문암***",
-    "address": "강원 고성군 죽왕면 ****  **",
-    "lat": 38.2983349322606,
-    "lng": 128.544814921798,
-    "branch": "강릉지사",
-    "manager": "P000103",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52090973.0,
@@ -9349,63 +6146,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-09-30",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52137569.0,
-    "name": "이순*",
-    "address": "강원 강릉시 옥천동  ***** **",
-    "lat": 37.755108339721,
-    "lng": 128.901413690354,
-    "branch": "강릉지사",
-    "manager": "P000101",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52082521.0,
-    "name": "정한*",
-    "address": "강원 동해시 천곡동 ****** ****** ** **",
-    "lat": 37.5214844334223,
-    "lng": 129.113719870335,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-17",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52044500.0,
-    "name": "엄정*",
-    "address": "강원 삼척시 근덕면 *** ******",
-    "lat": 37.3772562194473,
-    "lng": 129.225692171915,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-08-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52116335.0,
-    "name": "강릉******",
-    "address": "강원 강릉시 입암동  ***** *****",
-    "lat": 37.7567381724341,
-    "lng": 128.911010514616,
-    "branch": "강릉지사",
-    "manager": "P000101",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-29",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51210775.0,
@@ -9419,77 +6161,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52292032.0,
-    "name": "공단*",
-    "address": "강원 강릉시 두산동 ***** ** ***",
-    "lat": 37.7693555427407,
-    "lng": 128.929724904779,
-    "branch": "강릉지사",
-    "manager": "P000101",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-10",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51736170.0,
-    "name": "이만*",
-    "address": "강원 삼척시 미로면 **** *****",
-    "lat": 37.4422809858335,
-    "lng": 129.058494892493,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-21",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51602930.0,
-    "name": "김종*",
-    "address": "강원 강릉시 옥계면 *** *** ***** **** *",
-    "lat": 37.5936687931219,
-    "lng": 128.997453613137,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52192302.0,
-    "name": "최옥******",
-    "address": "강원 속초시 대포동 ******** ***",
-    "lat": 38.1733106194287,
-    "lng": 128.60579459145,
-    "branch": "강릉지사",
-    "manager": "P000103",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-19",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51455319.0,
-    "name": "팜스**",
-    "address": "강원 양양군 현남면 **** ** *",
-    "lat": 37.9194981039118,
-    "lng": 128.791895718675,
-    "branch": "강릉지사",
-    "manager": "P000102",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52185577.0,
@@ -9503,21 +6176,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51633866.0,
-    "name": "이해*",
-    "address": "강원 고성군 토성면 *** *******",
-    "lat": 38.2913476932619,
-    "lng": 128.540626235794,
-    "branch": "강릉지사",
-    "manager": "P000103",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-13",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52054599.0,
@@ -9531,7 +6191,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-09-25",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51138890.0,
@@ -9545,7 +6206,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52177808.0,
@@ -9559,7 +6221,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-16",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52065094.0,
@@ -9573,35 +6236,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52093036.0,
-    "name": "강은*",
-    "address": "강원 정선군 신동읍 *** ******",
-    "lat": 37.2180084731943,
-    "lng": 128.643417143084,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51920098.0,
-    "name": "속초*",
-    "address": "강원 속초시 조양동 ********** ****** **",
-    "lat": 38.18553286407,
-    "lng": 128.602581255978,
-    "branch": "강릉지사",
-    "manager": "P000103",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-26",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51053594.0,
@@ -9615,21 +6251,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-16",
     "is_arrears": "N",
-    "action_date": "2026-03-01"
-  },
-  {
-    "id": 52288266.0,
-    "name": "우경*",
-    "address": "강원 삼척시 사직동 *****",
-    "lat": 37.434811138922,
-    "lng": 129.168996573066,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-26",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "2026-03-01",
+    "l_type": "L형"
   },
   {
     "id": 50835484.0,
@@ -9643,21 +6266,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-27",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52121859.0,
-    "name": "설미*",
-    "address": "강원 정선군 남면 *** *****",
-    "lat": 37.2395574669457,
-    "lng": 128.731309384283,
-    "branch": "강릉지사",
-    "manager": "P000104",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-13",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50834324.0,
@@ -9671,35 +6281,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-04",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52073503.0,
-    "name": "고윤*",
-    "address": "강원 고성군 토성면 *** *****",
-    "lat": 38.2554130181266,
-    "lng": 128.561258701553,
-    "branch": "강릉지사",
-    "manager": "P000103",
-    "is_defect": NaN,
-    "type": "설변",
-    "event_date": "2026-01-13",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52179025.0,
-    "name": "김순*",
-    "address": "강원 고성군 거진읍 *** ***** **",
-    "lat": 38.4211471074657,
-    "lng": 128.461304622167,
-    "branch": "강릉지사",
-    "manager": "P000103",
-    "is_defect": NaN,
-    "type": "설변",
-    "event_date": "2026-01-02",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51941835.0,
@@ -9713,7 +6296,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51500397.0,
@@ -9727,7 +6311,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52220114.0,
@@ -9741,7 +6326,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-30",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51685030.0,
@@ -9755,7 +6341,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-09-03",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51608263.0,
@@ -9769,7 +6356,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50471342.0,
@@ -9783,7 +6371,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52291929.0,
@@ -9797,7 +6386,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52271563.0,
@@ -9811,7 +6401,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51863154.0,
@@ -9825,7 +6416,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-16",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52066669.0,
@@ -9839,7 +6431,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51793425.0,
@@ -9853,7 +6446,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-03",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52059925.0,
@@ -9867,7 +6461,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-12",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52216992.0,
@@ -9881,7 +6476,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-28",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51541621.0,
@@ -9895,7 +6491,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51667503.0,
@@ -9909,7 +6506,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51900023.0,
@@ -9923,7 +6521,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50680791.0,
@@ -9937,7 +6536,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52023851.0,
@@ -9951,7 +6551,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51799767.0,
@@ -9965,7 +6566,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-29",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51598126.0,
@@ -9979,7 +6581,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-20",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51942535.0,
@@ -9993,7 +6596,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-08",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51955195.0,
@@ -10007,35 +6611,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-16",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52140661.0,
-    "name": "(직*********",
-    "address": "강원 화천군 화천읍 *** ***",
-    "lat": 38.1805760412159,
-    "lng": 127.751242475098,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-07-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52098705.0,
-    "name": "제천******",
-    "address": "충북 제천시 고암동  ***** ***** ****",
-    "lat": 37.1588625848593,
-    "lng": 128.228839919233,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52247355.0,
@@ -10049,7 +6626,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52231373.0,
@@ -10063,49 +6641,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51432104.0,
-    "name": "차숙*",
-    "address": "강원 춘천시 효자동 ******** **",
-    "lat": 37.8705010577362,
-    "lng": 127.728463833311,
-    "branch": "원주지사",
-    "manager": "P000207",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51337468.0,
-    "name": "착한***",
-    "address": "강원 원주시 단구동 ****** **",
-    "lat": 37.3222599004063,
-    "lng": 127.955841701405,
-    "branch": "원주지사",
-    "manager": "P000201",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52119702.0,
-    "name": "김윤*",
-    "address": "경기 가평군 가평읍 *** *****",
-    "lat": 37.7580094960518,
-    "lng": 127.497014580671,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50864211.0,
@@ -10119,77 +6656,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51870136.0,
-    "name": "김진*",
-    "address": "경기 가평군 조종면 ***  *****",
-    "lat": 37.8356822895164,
-    "lng": 127.348688543606,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51991934.0,
-    "name": "글램***",
-    "address": "경기 가평군 북면 *** ********",
-    "lat": 37.944365656684,
-    "lng": 127.537475632946,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-06-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51967871.0,
-    "name": "아모*",
-    "address": "충북 제천시 중앙로2가 ****** **",
-    "lat": 37.139932078138,
-    "lng": 128.209745778921,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52011933.0,
-    "name": "김은*",
-    "address": "경기 가평군 가평읍 *** ******",
-    "lat": 37.8379894910452,
-    "lng": 127.500723554502,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-08-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52151753.0,
-    "name": "금강**",
-    "address": "강원 원주시 중앙동  *** ** *****",
-    "lat": 37.3473449636938,
-    "lng": 127.953684696851,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51204253.0,
@@ -10203,7 +6671,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50894561.0,
@@ -10217,7 +6686,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-06-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51694302.0,
@@ -10231,63 +6701,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-10-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52136299.0,
-    "name": "가평****",
-    "address": "경기 가평군 가평읍 *** ****** ***** *******",
-    "lat": 37.8312981698592,
-    "lng": 127.494902841224,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-09-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52133773.0,
-    "name": "박순*",
-    "address": "강원 횡성군 강림면 *** *** ***",
-    "lat": NaN,
-    "lng": NaN,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-02",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52020415.0,
-    "name": "김경*",
-    "address": "강원 춘천시 효자동 ********",
-    "lat": 37.87488670449,
-    "lng": 127.740148438269,
-    "branch": "원주지사",
-    "manager": "P000207",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52072336.0,
-    "name": "국기***",
-    "address": "강원 춘천시 퇴계동 *******",
-    "lat": 37.859458293701,
-    "lng": 127.724966897937,
-    "branch": "원주지사",
-    "manager": "P000207",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51660051.0,
@@ -10301,189 +6716,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51867684.0,
-    "name": "(직*******",
-    "address": "강원 춘천시 신북읍 *** ********",
-    "lat": 37.9679915504489,
-    "lng": 127.676791150084,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-06-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52136122.0,
-    "name": "원천***",
-    "address": "강원 화천군 하남면 *** ***** ******",
-    "lat": 38.0577711277941,
-    "lng": 127.669573420083,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-07-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52128185.0,
-    "name": "나뚜************",
-    "address": "강원 평창군 용평면 **** ***** *** *** ********",
-    "lat": 37.6104353531296,
-    "lng": 128.4634353553,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51949874.0,
-    "name": "욜로**",
-    "address": "강원 춘천시 동내면 *** ******** **",
-    "lat": 37.8620624386405,
-    "lng": 127.77007869847,
-    "branch": "원주지사",
-    "manager": "P000207",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51338048.0,
-    "name": "주식***************",
-    "address": "강원 평창군 대화면 ** ****",
-    "lat": 37.5791002400208,
-    "lng": 128.489939988034,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51700142.0,
-    "name": "이흥*",
-    "address": "강원 인제군 북면 *** ******* *** ** *** ***",
-    "lat": 38.1921693300057,
-    "lng": 128.35658601468,
-    "branch": "원주지사",
-    "manager": "P000208",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-16",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51557379.0,
-    "name": "계곡***",
-    "address": "경기 가평군 가평읍 *** *** ******** **",
-    "lat": 37.850730156791,
-    "lng": 127.483245767729,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-08-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51594795.0,
-    "name": "(직*********",
-    "address": "강원 춘천시 우두동 ******** **",
-    "lat": 37.9002565914188,
-    "lng": 127.727821306072,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-06-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51669563.0,
-    "name": "(직**************",
-    "address": "경기 가평군 조종면 *** *****",
-    "lat": 37.8472929298531,
-    "lng": 127.34263775129,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-07-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51427792.0,
-    "name": "이순*",
-    "address": "강원 평창군 대화면 *** *** ********",
-    "lat": 37.5020715750502,
-    "lng": 128.453225941974,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-03",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52000983.0,
-    "name": "전연*",
-    "address": "강원 양구군 양구읍 *** ***",
-    "lat": 38.1065917871146,
-    "lng": 127.989643064513,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52117080.0,
-    "name": "유화*",
-    "address": "강원 춘천시 동내면 *** ***",
-    "lat": 37.8469102565904,
-    "lng": 127.771517035245,
-    "branch": "원주지사",
-    "manager": "P000207",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51794186.0,
-    "name": "최규*",
-    "address": "충북 제천시 봉양읍 *** ******* **",
-    "lat": 37.1539941234652,
-    "lng": 128.096086881279,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-11-29",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50528535.0,
@@ -10497,7 +6731,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-04-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52228010.0,
@@ -10511,49 +6746,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51530840.0,
-    "name": "루루***",
-    "address": "강원 춘천시 우두동 ******** ***** *** ** ****",
-    "lat": 37.8983693243008,
-    "lng": 127.732440758073,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51652199.0,
-    "name": "지금**",
-    "address": "경기 가평군 조종면 *** *****",
-    "lat": 37.8469290865631,
-    "lng": 127.372529447047,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-07-25",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51338023.0,
-    "name": "(직******************",
-    "address": "강원 평창군 평창읍 *** *****",
-    "lat": NaN,
-    "lng": NaN,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52212591.0,
@@ -10567,133 +6761,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51413724.0,
-    "name": "원성*",
-    "address": "강원 홍천군 내촌면 *** ***",
-    "lat": 37.8122052916461,
-    "lng": 128.10993846314,
-    "branch": "원주지사",
-    "manager": "P000208",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51822825.0,
-    "name": "떡바****",
-    "address": "경기 가평군 북면 *** ****** ****** **",
-    "lat": 37.8969025951805,
-    "lng": 127.524612384241,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-23",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52137619.0,
-    "name": "(직**********",
-    "address": "강원 횡성군 횡성읍 *** ****** ** **",
-    "lat": 37.4890352847053,
-    "lng": 127.987346172272,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-07-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51822161.0,
-    "name": "김용*",
-    "address": "강원 원주시 문막읍 *** *****",
-    "lat": 37.2938363241238,
-    "lng": 127.821239960714,
-    "branch": "원주지사",
-    "manager": "P000201",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2024-11-04",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52258132.0,
-    "name": "허윤*****",
-    "address": "충북 제천시 남천동 ***",
-    "lat": 37.1346990070558,
-    "lng": 128.21487503916,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52126022.0,
-    "name": "양상*",
-    "address": "경기 가평군 가평읍 *** ****** ******",
-    "lat": 37.8503878589291,
-    "lng": 127.505569613634,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-08-20",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51317990.0,
-    "name": "카페*************",
-    "address": "경기 가평군 가평읍 *** ******** ****** **",
-    "lat": 37.8167708149425,
-    "lng": 127.514792912569,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2024-11-14",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51646082.0,
-    "name": "태승**",
-    "address": "강원 원주시 우산동 *******",
-    "lat": 37.3701677324143,
-    "lng": 127.935199315361,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-05-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51811566.0,
-    "name": "(직*********",
-    "address": "경기 가평군 청평면 *** ********",
-    "lat": 37.7368152621847,
-    "lng": 127.418165384414,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-07-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52059962.0,
@@ -10707,21 +6776,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-12",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52135555.0,
-    "name": "(직*******",
-    "address": "강원 평창군 평창읍 *** **",
-    "lat": 37.4012092781599,
-    "lng": 128.385251757971,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-07-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52243095.0,
@@ -10735,7 +6791,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-27",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52269225.0,
@@ -10749,35 +6806,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51530025.0,
-    "name": "다우***",
-    "address": "강원 춘천시 남산면 *** *** ***** *****",
-    "lat": 37.803526311157,
-    "lng": 127.637301273571,
-    "branch": "원주지사",
-    "manager": "P000207",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51371061.0,
-    "name": "최원*",
-    "address": "강원 원주시 행구동 ****** **",
-    "lat": 37.3446968045437,
-    "lng": 127.98388887968,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51349408.0,
@@ -10791,133 +6821,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51768495.0,
-    "name": "오늘*********",
-    "address": "강원 춘천시 석사동 *******",
-    "lat": 37.8602716867653,
-    "lng": 127.744852444481,
-    "branch": "원주지사",
-    "manager": "P000207",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-06-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52041268.0,
-    "name": "(주***********************",
-    "address": "충북 제천시 중앙로2가 *****",
-    "lat": 37.1399298346087,
-    "lng": 128.212337305946,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-09-16",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51334071.0,
-    "name": "윤디**",
-    "address": "강원 원주시 판부면 *** *** ******** ** ****",
-    "lat": 37.3202356462096,
-    "lng": 127.947819584046,
-    "branch": "원주지사",
-    "manager": "P000201",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51372253.0,
-    "name": "(직***********",
-    "address": "강원 춘천시 사북면 *** *** ***** ** ******",
-    "lat": NaN,
-    "lng": NaN,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-06-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52139120.0,
-    "name": "(직*******",
-    "address": "충북 단양군 적성면 ** ******",
-    "lat": 36.9775909875181,
-    "lng": 128.269184975419,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-08-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52143563.0,
-    "name": "차차*****",
-    "address": "강원 인제군 기린면 ** ***** ******",
-    "lat": 37.9446179313993,
-    "lng": 128.333545715716,
-    "branch": "원주지사",
-    "manager": "P000208",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51829349.0,
-    "name": "꽃가*",
-    "address": "강원 영월군 영월읍 *** *******",
-    "lat": 37.1902836553089,
-    "lng": 128.547068745018,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-03-18",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51596902.0,
-    "name": "카페***",
-    "address": "강원 춘천시 후평동 ******* ** **",
-    "lat": 37.8765341641411,
-    "lng": 127.746963750025,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-05-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51448689.0,
-    "name": "현영**",
-    "address": "강원 평창군 봉평면 *** *******",
-    "lat": 37.5862879779054,
-    "lng": 128.314604689637,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2024-11-13",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51575277.0,
@@ -10931,77 +6836,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52093658.0,
-    "name": "김양************",
-    "address": "강원 춘천시 석사동  ***** ******* ***** ** *****",
-    "lat": 37.8616519178246,
-    "lng": 127.740910838737,
-    "branch": "원주지사",
-    "manager": "P000207",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-06-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52136961.0,
-    "name": "유진*",
-    "address": "충북 단양군 대강면 *** ****",
-    "lat": 36.8217002352998,
-    "lng": 128.316596779874,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51611706.0,
-    "name": "김영*",
-    "address": "강원 원주시 단계동 ******* **",
-    "lat": 37.349170123432,
-    "lng": 127.929288270968,
-    "branch": "원주지사",
-    "manager": "P000201",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52152091.0,
-    "name": "여차****",
-    "address": "강원 홍천군 내면 *** *** ******",
-    "lat": 37.8606595662635,
-    "lng": 128.277766293554,
-    "branch": "원주지사",
-    "manager": "P000208",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52100788.0,
-    "name": "김영*",
-    "address": "경기 가평군 설악면 *** *****",
-    "lat": 37.6048543854141,
-    "lng": 127.524350835635,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51998456.0,
@@ -11015,21 +6851,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-11-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51864856.0,
-    "name": "이민*",
-    "address": "강원 영월군 영월읍 ***  *****",
-    "lat": 37.1529087733246,
-    "lng": 128.490445928697,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51799708.0,
@@ -11043,49 +6866,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-29",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51809550.0,
-    "name": "박선***",
-    "address": "강원 양구군 양구읍 ** *******",
-    "lat": 38.1078498192516,
-    "lng": 127.989638032859,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51801057.0,
-    "name": "박용*",
-    "address": "강원 홍천군 남면 **** ********",
-    "lat": 37.6127981096036,
-    "lng": 127.770228600458,
-    "branch": "원주지사",
-    "manager": "P000208",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-07-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51551897.0,
-    "name": "김민*",
-    "address": "강원 홍천군 화촌면 *** *** *** *** *******",
-    "lat": NaN,
-    "lng": NaN,
-    "branch": "원주지사",
-    "manager": "P000208",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-09-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50528451.0,
@@ -11099,91 +6881,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-04-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51360458.0,
-    "name": "(직*************",
-    "address": "강원 춘천시 동면 *** *** *******",
-    "lat": 37.9049797065791,
-    "lng": 127.751813137848,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-04-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51687757.0,
-    "name": "(직***********",
-    "address": "강원 춘천시 운교동 ******** **",
-    "lat": 37.8762094125928,
-    "lng": 127.732968814723,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-06-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52120601.0,
-    "name": "(직*******",
-    "address": "강원 양구군 동면 *** *****",
-    "lat": 38.1998144995702,
-    "lng": 128.04587814749,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-07-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51949926.0,
-    "name": "욜로**",
-    "address": "강원 춘천시 동내면 *** ******** **",
-    "lat": 37.8619589066777,
-    "lng": 127.770163645023,
-    "branch": "원주지사",
-    "manager": "P000207",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51630485.0,
-    "name": "현리*******",
-    "address": "경기 가평군 조종면 ** ******* **** ****",
-    "lat": 37.818418496303,
-    "lng": 127.349304771217,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51589526.0,
-    "name": "팔공****",
-    "address": "경기 가평군 가평읍 *** *** ******* ***** * ** ******",
-    "lat": 37.8250484563676,
-    "lng": 127.514214800223,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-07-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52003828.0,
@@ -11197,49 +6896,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-16",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51679439.0,
-    "name": "박오*",
-    "address": "강원 평창군 대화면 ***  ****** *****",
-    "lat": 37.4993925671821,
-    "lng": 128.457729518644,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-06-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52093493.0,
-    "name": "이정*",
-    "address": "강원 평창군 평창읍 *** ****",
-    "lat": 37.3665151417124,
-    "lng": 128.396551981611,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-04-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51995584.0,
-    "name": "임주*",
-    "address": "강원 횡성군 안흥면 *** **** **",
-    "lat": 37.4440114415614,
-    "lng": 128.218893668616,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2024-12-11",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51787853.0,
@@ -11253,133 +6911,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51503211.0,
-    "name": "(주****",
-    "address": "강원 춘천시 남산면 *** ******",
-    "lat": NaN,
-    "lng": NaN,
-    "branch": "원주지사",
-    "manager": "P000207",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-08-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51906141.0,
-    "name": "봄 ****",
-    "address": "강원 원주시 문막읍 *** ******** ** ** * ****",
-    "lat": 37.3113567261344,
-    "lng": 127.81775842059,
-    "branch": "원주지사",
-    "manager": "P000201",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-07-04",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51989408.0,
-    "name": "이주*",
-    "address": "강원 춘천시 신북읍 *** ******* ***** ** ****",
-    "lat": 37.9323041377384,
-    "lng": 127.784779473231,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51823751.0,
-    "name": "최태*",
-    "address": "경기 가평군 청평면 *** ******* ******* ****",
-    "lat": 37.716614109715,
-    "lng": 127.458345212723,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-03",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52093057.0,
-    "name": "함형*",
-    "address": "강원 홍천군 홍천읍 *** *****",
-    "lat": 37.6952309550925,
-    "lng": 127.914784662145,
-    "branch": "원주지사",
-    "manager": "P000208",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-09-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51776595.0,
-    "name": "주식*******",
-    "address": "강원 춘천시 동내면 *** ******* ********",
-    "lat": 37.8562860152666,
-    "lng": 127.750787874432,
-    "branch": "원주지사",
-    "manager": "P000207",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51667770.0,
-    "name": "조석*",
-    "address": "강원 영월군 영월읍 *** ********",
-    "lat": 37.141509120905,
-    "lng": 128.467200636882,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52112188.0,
-    "name": "글로*********",
-    "address": "강원 원주시 판부면 *** *** ******",
-    "lat": 37.3214068215832,
-    "lng": 127.936486217908,
-    "branch": "원주지사",
-    "manager": "P000201",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-06-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51796613.0,
-    "name": "민족********",
-    "address": "충북 제천시 의림동 *******",
-    "lat": 37.1427914927214,
-    "lng": 128.209367911986,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52012725.0,
@@ -11393,7 +6926,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50388246.0,
@@ -11407,21 +6941,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52093421.0,
-    "name": "독스*",
-    "address": "경기 가평군 가평읍 *** ***** ***",
-    "lat": 37.8118811678059,
-    "lng": 127.432839511316,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-06-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52167951.0,
@@ -11435,21 +6956,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-25",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51644663.0,
-    "name": "(직********",
-    "address": "강원 춘천시 운교동 ******* *** ****",
-    "lat": 37.8767872153481,
-    "lng": 127.735159216452,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-06-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52247380.0,
@@ -11463,49 +6971,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52030749.0,
-    "name": "김성*",
-    "address": "강원 원주시 평원동 **** **** ****",
-    "lat": 37.3511191737852,
-    "lng": 127.95223849064,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51308323.0,
-    "name": "서정*",
-    "address": "강원 원주시 우산동 ***** **",
-    "lat": 37.3768505225819,
-    "lng": 127.929618863083,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51854111.0,
-    "name": "불타************",
-    "address": "강원 춘천시 효자동 ***** **",
-    "lat": 37.8641010604533,
-    "lng": 127.738033981757,
-    "branch": "원주지사",
-    "manager": "P000207",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50420045.0,
@@ -11519,273 +6986,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2024-09-12",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51679035.0,
-    "name": "최지*",
-    "address": "강원 원주시 귀래면 *** ********",
-    "lat": 37.1708384778425,
-    "lng": 127.866392883566,
-    "branch": "원주지사",
-    "manager": "P000201",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-09-09",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51599571.0,
-    "name": "이브****",
-    "address": "강원 원주시 지정면 *** *** ******** **",
-    "lat": 37.3743232618018,
-    "lng": 127.875413053402,
-    "branch": "원주지사",
-    "manager": "P000201",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52047090.0,
-    "name": "주식*******",
-    "address": "강원 영월군 영월읍 *** ******* ****",
-    "lat": 37.1851969750384,
-    "lng": 128.467417023671,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-08-06",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51338001.0,
-    "name": "(직******************",
-    "address": "강원 평창군 평창읍 *** ***",
-    "lat": NaN,
-    "lng": NaN,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51695500.0,
-    "name": "주식***********",
-    "address": "강원 춘천시 서면 **** *******",
-    "lat": 37.8282690308323,
-    "lng": 127.669487031726,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51697280.0,
-    "name": "(직*********************",
-    "address": "강원 화천군 화천읍 ** ******* ****",
-    "lat": 38.1037105794163,
-    "lng": 127.706914093591,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-06-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52118496.0,
-    "name": ".*",
-    "address": "강원 평창군 대화면 **** ***",
-    "lat": 37.4729509810593,
-    "lng": 128.404535881897,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51710747.0,
-    "name": "서*",
-    "address": "강원 화천군 사내면 *** ******* ******** **",
-    "lat": 38.061648354057,
-    "lng": 127.51679863772,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-06-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51867372.0,
-    "name": "(직*************",
-    "address": "충북 제천시 강제동 *****",
-    "lat": 37.1097491973226,
-    "lng": 128.218044036588,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-07-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52305018.0,
-    "name": "안윤*",
-    "address": "강원 원주시 문막읍 *** ****",
-    "lat": 37.3244284636529,
-    "lng": 127.829950216113,
-    "branch": "원주지사",
-    "manager": "P000201",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-17",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51995392.0,
-    "name": "풀*",
-    "address": "강원 원주시 단계동 ******* ** **",
-    "lat": 37.3482249290238,
-    "lng": 127.931081778098,
-    "branch": "원주지사",
-    "manager": "P000201",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-03",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52154176.0,
-    "name": "장일*",
-    "address": "강원 평창군 평창읍 *** *******",
-    "lat": 37.3939622578823,
-    "lng": 128.363765350838,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-09-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51642168.0,
-    "name": "카페***",
-    "address": "강원 원주시 지정면 *** ********",
-    "lat": 37.3731676148385,
-    "lng": 127.873003416785,
-    "branch": "원주지사",
-    "manager": "P000201",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52120010.0,
-    "name": "청솔**",
-    "address": "강원 홍천군 홍천읍 *** ****** ******",
-    "lat": 37.6804344699941,
-    "lng": 127.875926160525,
-    "branch": "원주지사",
-    "manager": "P000208",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52233778.0,
-    "name": "김가*",
-    "address": "강원 원주시 단구동 ********* **",
-    "lat": 37.320194175641,
-    "lng": 127.958548379184,
-    "branch": "원주지사",
-    "manager": "P000201",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52130170.0,
-    "name": "백송*",
-    "address": "충북 제천시 남천동  **** *****",
-    "lat": 37.1351992421482,
-    "lng": 128.211204300129,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51765891.0,
-    "name": "유정*",
-    "address": "강원 인제군 인제읍 *** ***** ****",
-    "lat": 38.0668267483425,
-    "lng": 128.171980533022,
-    "branch": "원주지사",
-    "manager": "P000208",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-08-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52112969.0,
-    "name": "원*",
-    "address": "강원 원주시 원동  *** *** ************",
-    "lat": 37.3453413498264,
-    "lng": 127.947369146721,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51460681.0,
-    "name": "크레***********",
-    "address": "경기 가평군 설악면  ******",
-    "lat": 37.697221908976,
-    "lng": 127.505743552794,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2024-11-15",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51137803.0,
@@ -11799,21 +7001,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-10",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52112238.0,
-    "name": "이상*",
-    "address": "강원 영월군 남면 *** ***",
-    "lat": 37.1185825092106,
-    "lng": 128.431704749569,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51957517.0,
@@ -11827,7 +7016,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-12-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51521736.0,
@@ -11841,63 +7031,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51752098.0,
-    "name": "또래*******",
-    "address": "강원 원주시 관설동 ******** ****",
-    "lat": 37.3204927369459,
-    "lng": 127.961949282492,
-    "branch": "원주지사",
-    "manager": "P000201",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2024-10-15",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52127187.0,
-    "name": "(직*********",
-    "address": "충북 제천시 청전동  ****** **",
-    "lat": 37.1474633599058,
-    "lng": 128.214067333763,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-07-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51452275.0,
-    "name": "박성*",
-    "address": "경기 가평군 대성리 ******* **",
-    "lat": 37.7169711260025,
-    "lng": 127.382036830896,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-07-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51993149.0,
-    "name": "오오*",
-    "address": "강원 원주시 단구동 ********* **",
-    "lat": 37.3219161412573,
-    "lng": 127.948219533312,
-    "branch": "원주지사",
-    "manager": "P000201",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-09-11",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 50815588.0,
@@ -11911,161 +7046,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-30",
     "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51882989.0,
-    "name": "(직********",
-    "address": "강원 원주시 무실동 ******** **",
-    "lat": 37.3327046884175,
-    "lng": 127.930634725211,
-    "branch": "원주지사",
-    "manager": "P000201",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-07-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51660040.0,
-    "name": "(직********",
-    "address": "강원 홍천군 남면 *** *******",
-    "lat": 37.5897485022609,
-    "lng": 127.83265846909,
-    "branch": "원주지사",
-    "manager": "P000208",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-07-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51959222.0,
-    "name": "마*",
-    "address": "강원 평창군 봉평면 *** ******** **",
-    "lat": 37.6120615056737,
-    "lng": 128.368889734634,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-30",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51792369.0,
-    "name": "선아*",
-    "address": "강원 원주시 신림면 *** *******",
-    "lat": 37.2486038461346,
-    "lng": 128.153481762076,
-    "branch": "원주지사",
-    "manager": "P000201",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51687548.0,
-    "name": "김경*",
-    "address": "충북 제천시 고명동 *******",
-    "lat": 37.1097520972342,
-    "lng": 128.24600338011,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52171051.0,
-    "name": "호유******",
-    "address": "강원 횡성군 횡성읍읍상리 ******",
-    "lat": 37.4863569497705,
-    "lng": 127.990200286267,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51724865.0,
-    "name": "이순*",
-    "address": "경기 가평군 상면 *** ***",
-    "lat": 37.8199803407592,
-    "lng": 127.288010834022,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2024-12-02",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52137089.0,
-    "name": "이대*",
-    "address": "강원 평창군 용평면 *** *****",
-    "lat": 37.5852548544318,
-    "lng": 128.413356847627,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52265589.0,
-    "name": "15***",
-    "address": "강원 원주시 소초면 *** **** ****",
-    "lat": 37.3834017990224,
-    "lng": 127.975709491503,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-10-24",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51602205.0,
-    "name": "이가***",
-    "address": "강원 홍천군 서면 **** **** ********",
-    "lat": 37.7012838785059,
-    "lng": 127.695272008526,
-    "branch": "원주지사",
-    "manager": "P000208",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-08-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51993217.0,
-    "name": "박금*",
-    "address": "경기 가평군 가평읍 *** ****** ******",
-    "lat": 37.8383822511561,
-    "lng": 127.501455769119,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51009933.0,
@@ -12079,77 +7061,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-04-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51800581.0,
-    "name": "이지***",
-    "address": "강원 원주시 무실동 ********",
-    "lat": 37.3267599049046,
-    "lng": 127.930403440917,
-    "branch": "원주지사",
-    "manager": "P000201",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2024-11-12",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51624206.0,
-    "name": "순수************",
-    "address": "충북 제천시 하소동 ******** **",
-    "lat": 37.1376374806187,
-    "lng": 128.19702978199,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-06-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51379116.0,
-    "name": "권인*",
-    "address": "강원 인제군 북면 *** ******",
-    "lat": 38.1903623666674,
-    "lng": 128.319210212776,
-    "branch": "원주지사",
-    "manager": "P000208",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-12",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51935732.0,
-    "name": "김종*",
-    "address": "경기 가평군 북면 *** ********",
-    "lat": 37.9445419187394,
-    "lng": 127.537230044051,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-11-11",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51355043.0,
-    "name": "청풍*****",
-    "address": "충북 제천시 청풍면 *** *** ******",
-    "lat": 37.0197317711546,
-    "lng": 128.168344737979,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-30",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51277442.0,
@@ -12163,245 +7076,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-10-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51935252.0,
-    "name": "(직*******",
-    "address": "충북 단양군 단양읍 *** ***** ***** ****",
-    "lat": 36.9775218304259,
-    "lng": 128.357137706411,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-06-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51785963.0,
-    "name": "(직*********************",
-    "address": "충북 제천시 명동 ***** **",
-    "lat": 37.1382099856092,
-    "lng": 128.207908228922,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-06-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52094034.0,
-    "name": "김해*",
-    "address": "충북 단양군 단성면 *** *****",
-    "lat": NaN,
-    "lng": NaN,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-06-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51872244.0,
-    "name": "우채*",
-    "address": "강원 양구군 양구읍 *** ******* ** ***",
-    "lat": 38.1036275695321,
-    "lng": 127.981648505625,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51830677.0,
-    "name": "힐스***********",
-    "address": "강원 원주시 신림면 ***  ** **  ****  **",
-    "lat": 37.2290534258351,
-    "lng": 128.08418677934,
-    "branch": "원주지사",
-    "manager": "P000201",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2024-09-11",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52203913.0,
-    "name": "김이*",
-    "address": "강원 원주시 일산동 ***** **",
-    "lat": 37.3488639305489,
-    "lng": 127.949375227592,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52112139.0,
-    "name": "강명*",
-    "address": "경기 가평군 설악면 *** ***** ******",
-    "lat": 37.5967978111732,
-    "lng": 127.506190544793,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51931129.0,
-    "name": "박서****",
-    "address": "강원 춘천시 중앙로2가 ****",
-    "lat": 37.8793639656656,
-    "lng": 127.725940123247,
-    "branch": "원주지사",
-    "manager": "P000301",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-10-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52082612.0,
-    "name": "조형*",
-    "address": "충북 제천시 송학면 *** ****** ** ****",
-    "lat": 37.1936574875171,
-    "lng": 128.263903180445,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51987793.0,
-    "name": "(직*******",
-    "address": "강원 화천군 간동면 *** *****",
-    "lat": 38.0662738591646,
-    "lng": 127.796223495102,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-08-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52110150.0,
-    "name": "현진*******",
-    "address": "경기 가평군 조종면 *** *****",
-    "lat": 37.8329691908369,
-    "lng": 127.328788389793,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51823043.0,
-    "name": "김희*",
-    "address": "경기 가평군 청평면 *** ******** ******* **",
-    "lat": 37.7383486721091,
-    "lng": 127.420225987985,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-01-11",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52137973.0,
-    "name": "농업*****************",
-    "address": "경기 가평군 상면 *** ***** ******",
-    "lat": 37.7742545657955,
-    "lng": 127.351859268373,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": "대상",
-    "type": "정지",
-    "event_date": "2025-02-28",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51831063.0,
-    "name": "헤어***",
-    "address": "경기 가평군 조종면 ** ******** ** ******",
-    "lat": 37.8105499863091,
-    "lng": 127.351918214792,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52200391.0,
-    "name": "현대***",
-    "address": "강원 영월군 영월읍 *** *******",
-    "lat": 37.1729962224602,
-    "lng": 128.478022542201,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51724914.0,
-    "name": "문채*",
-    "address": "강원 평창군 평창읍 ** *******",
-    "lat": 37.367380568231,
-    "lng": 128.394348100174,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51911305.0,
-    "name": "심명*",
-    "address": "충북 제천시 하소동 ***** ******** **** *****",
-    "lat": 37.1462473679821,
-    "lng": 128.197506965878,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-08-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52291808.0,
@@ -12415,63 +7091,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-01-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51935969.0,
-    "name": "달월*",
-    "address": "강원 원주시 지정면 *** ******",
-    "lat": 37.4014868405652,
-    "lng": 127.843381702029,
-    "branch": "원주지사",
-    "manager": "P000201",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-12-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51807580.0,
-    "name": "어깨**",
-    "address": "강원 양구군 양구읍 ** ******** ****",
-    "lat": 38.1052094301279,
-    "lng": 127.988117858764,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-06-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52137353.0,
-    "name": "지만*",
-    "address": "강원 춘천시 신북읍 *** *** ** **",
-    "lat": 37.9605056310082,
-    "lng": 127.743773865524,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52155961.0,
-    "name": "이시*",
-    "address": "강원 춘천시 동내면 *** *****",
-    "lat": 37.8398696313389,
-    "lng": 127.759237165544,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-08-01",
-    "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 52178601.0,
@@ -12485,7 +7106,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-01",
     "is_arrears": "Y",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51261366.0,
@@ -12499,133 +7121,8 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2025-10-01",
     "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52093710.0,
-    "name": "하늘***********",
-    "address": "강원 화천군 하남면 *** *** ** ***",
-    "lat": 38.0558402744821,
-    "lng": 127.668249190244,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51592611.0,
-    "name": "라임**",
-    "address": "강원 춘천시 효자동 ********* ****",
-    "lat": 37.8692343251272,
-    "lng": 127.735279297465,
-    "branch": "원주지사",
-    "manager": "P000207",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-11-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52115938.0,
-    "name": "더반***",
-    "address": "강원 평창군 평창읍 *** **** ******",
-    "lat": 37.4233940717639,
-    "lng": 128.372215930601,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-01-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51483757.0,
-    "name": "박달******",
-    "address": "강원 원주시 호저면 *** *** *****",
-    "lat": 37.3567054923377,
-    "lng": 127.902247004994,
-    "branch": "원주지사",
-    "manager": "P000201",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52108858.0,
-    "name": "(직********",
-    "address": "강원 원주시 태장동  ******* ********* *****",
-    "lat": 37.3838132205164,
-    "lng": 127.951379865394,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-08-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 52002467.0,
-    "name": "유쾌****",
-    "address": "강원 춘천시 후평동 ******* **",
-    "lat": 37.8841009095838,
-    "lng": 127.743216363374,
-    "branch": "원주지사",
-    "manager": "P000206",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2025-08-01",
-    "is_arrears": "Y",
-    "action_date": ""
-  },
-  {
-    "id": 51906536.0,
-    "name": "흥부***",
-    "address": "강원 원주시 태장동 ********* **",
-    "lat": 37.3850944255065,
-    "lng": 127.952712051575,
-    "branch": "원주지사",
-    "manager": "P000202",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-26",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 51811891.0,
-    "name": "허유*",
-    "address": "경기 가평군 설악면 *** *****",
-    "lat": 37.6499785283297,
-    "lng": 127.496709377743,
-    "branch": "원주지사",
-    "manager": "P000209",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-10",
-    "is_arrears": "N",
-    "action_date": ""
-  },
-  {
-    "id": 52126770.0,
-    "name": "이국*",
-    "address": "충북 제천시 덕산면 *** ***** ******",
-    "lat": 36.8666343943652,
-    "lng": 128.217316879141,
-    "branch": "원주지사",
-    "manager": "P000203",
-    "is_defect": NaN,
-    "type": "정지",
-    "event_date": "2026-02-28",
-    "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   },
   {
     "id": 51223254.0,
@@ -12639,6 +7136,7 @@ const SUSPENSION_TARGETS = [
     "type": "정지",
     "event_date": "2026-02-21",
     "is_arrears": "N",
-    "action_date": ""
+    "action_date": "",
+    "l_type": "L형"
   }
 ];

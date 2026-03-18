@@ -388,8 +388,19 @@ function updateSuspensionMarkers(){
         var prefix=type==='defect'?'🟠 부실':type==='voc'?'🟢 사전리텐션':type==='arrears'?'🟤 체납':'🔴 정지';
         var color=type==='defect'?'#f59e0b':type==='voc'?'#10b981':'#ef4444';
         var cat=type==='voc'?'사전리텐션':type==='defect'?'부실':type==='arrears'?'체납':'정지';
-        var m=new google.maps.Marker({position:{lat:parseFloat(target.lat),lng:parseFloat(target.lng)},map:map,icon:iconUrl,title:maskName(target.name)});
-        var iw=new google.maps.InfoWindow({content:'<div style="padding:12px;width:210px;font-family:Pretendard,sans-serif;"><h4 style="margin:0 0 6px;color:'+color+';font-size:13px;">'+prefix+'</h4><div style="background:#f8fafc;padding:8px;border-radius:8px;border:1px solid #e2e8f0;margin-bottom:8px;"><p style="margin:3px 0;font-size:11px;"><b>상호:</b> '+maskName(target.name)+'</p><p style="margin:3px 0;font-size:11px;"><b>지사:</b> '+target.branch+'</p><p style="margin:3px 0;font-size:11px;"><b>영업구역:</b> '+target.manager+'</p><p style="margin:3px 0;font-size:11px;color:#64748b;">'+target.address+'</p></div><div style="display:flex;gap:5px;"><a href="https://www.google.com/maps/dir/?api=1&destination='+target.lat+','+target.lng+'" target="_blank" style="flex:1;background:#0ea5e9;color:white;border-radius:6px;padding:7px;text-decoration:none;font-size:11px;font-weight:bold;text-align:center;">길찾기</a><button onclick="openProgressModal(\''+target.contractNo+'\',\''+target.name.replace(/'/g,"\\'")+'\',\''+cat+'\')" style="flex:1;background:#10b981;color:white;border-radius:6px;padding:7px;border:none;font-size:11px;font-weight:bold;cursor:pointer;">진행등록</button></div></div>'});
+        var m=new google.maps.Marker({
+            position:{lat:parseFloat(target.lat),lng:parseFloat(target.lng)},
+            map:map,
+            icon:iconUrl,
+            title:maskName(target.name),
+            label: (type !== 'voc') ? {
+                text: "L형",
+                color: "white",
+                fontSize: "10px",
+                fontWeight: "bold"
+            } : null
+        });
+        var iw=new google.maps.InfoWindow({content:'<div style="padding:12px;width:210px;font-family:Pretendard,sans-serif;"><h4 style="margin:0 0 6px;color:'+color+';font-size:13px;">'+prefix+' '+(type !== 'voc' ? '<span style="background:rgba(0,0,0,0.1); padding:2px 4px; border-radius:4px; font-size:10px; margin-left:4px;">[L형]</span>' : '')+'</h4><div style="background:#f8fafc;padding:8px;border-radius:8px;border:1px solid #e2e8f0;margin-bottom:8px;"><p style="margin:3px 0;font-size:11px;"><b>상호:</b> '+maskName(target.name)+'</p><p style="margin:3px 0;font-size:11px;"><b>지사:</b> '+target.branch+'</p><p style="margin:3px 0;font-size:11px;"><b>영업구역:</b> '+target.manager+'</p><p style="margin:3px 0;font-size:11px;color:#64748b;">'+target.address+'</p></div><div style="display:flex;gap:5px;"><a href="https://www.google.com/maps/dir/?api=1&destination='+target.lat+','+target.lng+'" target="_blank" style="flex:1;background:#0ea5e9;color:white;border-radius:6px;padding:7px;text-decoration:none;font-size:11px;font-weight:bold;text-align:center;">길찾기</a><button onclick="openProgressModal(\''+target.contractNo+'\',\''+target.name.replace(/'/g,"\\'")+'\',\''+cat+'\')" style="flex:1;background:#10b981;color:white;border-radius:6px;padding:7px;border:none;font-size:11px;font-weight:bold;cursor:pointer;">진행등록</button></div></div>'});
         m.addListener('click',function(){iw.open(map,m);});
         suspensionMarkers.push(m);
     });

@@ -1437,7 +1437,13 @@
                 position: { lat: parseFloat(target.lat), lng: parseFloat(target.lng) },
                 map: map,
                 icon: iconUrl,
-                title: maskName(target.name)
+                title: maskName(target.name),
+                label: (type !== 'voc') ? {
+                    text: "L형",
+                    color: "white",
+                    fontSize: "10px",
+                    fontWeight: "bold"
+                } : null
             });
 
             const category = type === 'voc' ? '사전리텐션' : (type === 'defect' ? '부실' : (type === 'arrears' ? '체납' : '정지'));
@@ -1445,7 +1451,7 @@
             const infoWindow = new google.maps.InfoWindow({
                 content: `
                     <div style="padding:15px; width:220px; font-family: Pretendard, sans-serif;">
-                        <h4 style="margin:0 0 8px 0; color:${titleColor}; font-size:14px;">${titlePrefix}</h4>
+                        <h4 style="margin:0 0 8px 0; color:${titleColor}; font-size:14px;">${titlePrefix} ${type !== 'voc' ? '<span style="background:rgba(0,0,0,0.1); padding:2px 6px; border-radius:4px; font-size:11px; margin-left:4px;">[L형]</span>' : ''}</h4>
                         <div style="background:#f8fafc; padding:10px; border-radius:8px; border:1px solid #e2e8f0; margin-bottom:10px;">
                             <p style="margin:4px 0; font-size:12px;"><strong>상호:</strong> ${maskName(target.name)}</p>
                             <p style="margin:4px 0; font-size:12px;"><strong>지사:</strong> ${target.branch}</p>
