@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현장 지도 접속 - 강북/강원 관리</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --primary: #0ea5e9;
+            --primary-hover: #0284c7;
+            --bg-body: #0c1a2e;
+            --card-bg: rgba(255, 255, 255, 0.07);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --input-bg: rgba(255, 255, 255, 0.06);
+            --border-glass: rgba(255, 255, 255, 0.12);
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background: radial-gradient(ellipse at top left, #0c2340, #0c1a2e 60%, #050d1a);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Animated background blobs */
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.15;
+            pointer-events: none;
+        }
+        .blob-1 { width: 400px; height: 400px; background: var(--primary); top: -100px; left: -100px; animation: float1 8s ease-in-out infinite; }
+        .blob-2 { width: 300px; height: 300px; background: #6366f1; bottom: -80px; right: -80px; animation: float2 10s ease-in-out infinite; }
+        @keyframes float1 { 0%,100%{transform:translate(0,0);} 50%{transform:translate(40px,30px);} }
+        @keyframes float2 { 0%,100%{transform:translate(0,0);} 50%{transform:translate(-30px,-40px);} }
+
+        .login-wrapper {
+            width: 100%;
+            max-width: 440px;
+            padding: 0 20px;
+            z-index: 10;
+            animation: fadeUp 0.7s ease-out;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(14, 165, 233, 0.15);
+            border: 1px solid rgba(14, 165, 233, 0.3);
+            color: var(--primary);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 0.05em;
+        }
+
+        .map-icon-wrap {
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, var(--primary), #6366f1);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            box-shadow: 0 0 40px rgba(14, 165, 233, 0.3);
+        }
+
+        .login-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border-glass);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255,255,255,0.03);
+        }
+
+        .header { margin-bottom: 32px; }
+        .header h1 { font-size: 26px; font-weight: 800; line-height: 1.2; margin-bottom: 8px; }
+        .header p { font-size: 14px; color: var(--text-muted); line-height: 1.5; }
+
+        .info-banner {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            background: rgba(14, 165, 233, 0.08);
+            border: 1px solid rgba(14, 165, 233, 0.2);
+            border-radius: 12px;
+            padding: 12px 14px;
+            margin-bottom: 28px;
+            font-size: 12.5px;
+            color: #7dd3fc;
+            line-height: 1.5;
+        }
+
+        .form-group { margin-bottom: 20px; }
+        .form-label {
+            display: block;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+            padding-left: 2px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 13px 16px;
+            border: 1px solid var(--border-glass);
+            border-radius: 12px;
+            background: var(--input-bg);
+            color: white;
+            font-size: 15px;
+            outline: none;
+            transition: var(--transition-smooth);
+            appearance: none;
+            font-family: 'Pretendard', sans-serif;
+        }
+        select option { background: #1e293b; color: white; }
+
+        select:focus, input:focus {
+            border-color: var(--primary);
+            background: rgba(14, 165, 233, 0.06);
+            box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.12);
+        }
+
+        .input-wrapper { position: relative; }
+        .pw-toggle {
+            position: absolute;
+            right: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: var(--text-muted);
+            font-size: 18px;
+            transition: color 0.2s;
+        }
+        .pw-toggle:hover { color: var(--primary); }
+
+        .login-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, var(--primary), #0284c7);
+            color: white;
+            border: none;
+            border-radius: 14px;
+            font-size: 16px;
+            font-weight: 800;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            margin-top: 8px;
+            font-family: 'Pretendard', sans-serif;
+            letter-spacing: -0.01em;
+            box-shadow: 0 8px 24px rgba(14, 165, 233, 0.3);
+        }
+
+        .login-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(14, 165, 233, 0.4);
+        }
+
+        .login-btn:active { transform: translateY(0); }
+
+        .error-msg {
+            color: #fb7185;
+            font-size: 13px;
+            margin-top: 16px;
+            text-align: center;
+            display: none;
+            font-weight: 600;
+            padding: 10px 14px;
+            background: rgba(251, 113, 133, 0.1);
+            border: 1px solid rgba(251, 113, 133, 0.2);
+            border-radius: 10px;
+        }
+
+        .footer-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .footer-link a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .footer-link a:hover { text-decoration: underline; }
+
+        .footer-credit {
+            position: fixed;
+            bottom: 20px;
+            right: 24px;
+            font-size: 11px;
+            color: rgba(148,163,184,0.5);
+            font-weight: 500;
+        }
+
+        @media (max-width: 480px) {
+            .login-card { padding: 28px 24px; border-radius: 20px; }
+            .header h1 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+
+<div class="login-wrapper">
+    <div class="login-card">
+        <div class="map-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" x2="9" y1="3" y2="18"/><line x1="15" x2="15" y1="6" y2="21"/></svg>
+        </div>
+
+        <div class="badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            현장직원 전용 접속
+        </div>
+
+        <div class="header">
+            <h1>현장 지도/방문<br>관제 시스템</h1>
+            <p>영업구역번호로 접속하세요.<br>지도와 방문 관리 기능만 제공됩니다.</p>
+        </div>
+
+        <div class="info-banner">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:1px"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            <span>담당 영업구역의 고객만 표시됩니다. 재계약/실적 대시보드는 관리자에게 문의하세요.</span>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">소속 지사</label>
+            <select id="branch-select">
+                <option value="">지사를 선택하세요</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">영업구역번호</label>
+            <select id="manager-select" disabled>
+                <option value="">지사를 먼저 선택하세요</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">비밀번호</label>
+            <div class="input-wrapper">
+                <input type="password" id="manager-pw" placeholder="영업구역번호(영문소문자)" onkeydown="if(event.key==='Enter') doLogin()">
+                <i data-lucide="eye" class="pw-toggle" onclick="togglePw()"></i>
+            </div>
+        </div>
+
+        <button class="login-btn" onclick="doLogin()">
+            🗺️ 지도 접속하기
+        </button>
+
+        <p id="error-display" class="error-msg">인증 정보가 올바르지 않습니다.</p>
+
+        <div class="footer-link">
+            전체 대시보드 접속은 <a href="login.html">여기</a>를 클릭하세요
+        </div>
+    </div>
+</div>
+
+<div class="footer-credit">Developed by SE-EUN Daddy</div>
+
+<script src="data/auth_config.js"></script>
+<script>
+    lucide.createIcons();
+
+    // Already logged in to map_only? redirect
+    (function() {
+        const s = localStorage.getItem('map_only_session');
+        if (s) {
+            try {
+                const sd = JSON.parse(s);
+                if (new Date().getTime() - sd.timestamp < 24 * 60 * 60 * 1000) {
+                    location.href = 'map_only.html';
+                }
+            } catch(e) {}
+        }
+    })();
+
+    // Populate branches
+    AUTH_CONFIG.branches.forEach(br => {
+        const opt = document.createElement('option');
+        opt.value = br;
+        opt.textContent = br;
+        document.getElementById('branch-select').appendChild(opt);
+    });
+
+    document.getElementById('branch-select').onchange = function() {
+        const branch = this.value;
+        const sel = document.getElementById('manager-select');
+        sel.innerHTML = '<option value="">영업구역번호를 선택하세요</option>';
+        if (!branch) { sel.disabled = true; return; }
+        AUTH_CONFIG.managers
+            .filter(m => m.branch === branch)
+            .forEach(m => {
+                const opt = document.createElement('option');
+                opt.value = m.id;
+                opt.textContent = m.name;
+                sel.appendChild(opt);
+            });
+        sel.disabled = false;
+    };
+
+    function togglePw() {
+        const input = document.getElementById('manager-pw');
+        const icon = input.nextElementSibling;
+        if (input.type === 'password') {
+            input.type = 'text';
+            icon.setAttribute('data-lucide', 'eye-off');
+        } else {
+            input.type = 'password';
+            icon.setAttribute('data-lucide', 'eye');
+        }
+        lucide.createIcons();
+    }
+
+    function doLogin() {
+        const id = document.getElementById('manager-select').value;
+        const pw = document.getElementById('manager-pw').value;
+        const manager = AUTH_CONFIG.managers.find(m => m.id === id);
+
+        if (manager && manager.pw === pw) {
+            const session = {
+                role: 'manager',
+                data: { id: manager.id, name: manager.name, branch: manager.branch },
+                timestamp: new Date().getTime()
+            };
+            localStorage.setItem('map_only_session', JSON.stringify(session));
+            location.href = 'map_only.html';
+        } else {
+            const err = document.getElementById('error-display');
+            err.textContent = !id ? '영업구역번호를 선택해주세요.' : '비밀번호가 올바르지 않습니다.';
+            err.style.display = 'block';
+            document.getElementById('manager-pw').style.borderColor = '#fb7185';
+            setTimeout(() => {
+                err.style.display = 'none';
+                document.getElementById('manager-pw').style.borderColor = '';
+            }, 3000);
+        }
+    }
+</script>
+</body>
+</html>
