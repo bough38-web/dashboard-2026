@@ -107,13 +107,13 @@ const ThemeManager = {
     },
 
     run() {
-        if (this.checkExpiration()) return; // 만료 시 실행 중단
-
-        // Export 시 주입된 설정이 있다면 반영
+        // Export 시 주입된 설정이 있다면 가장 먼저 반영
         if (window.DASHBOARD_EXPORT_CONFIG) {
             this.CONFIG.EXPIRY_DATE = window.DASHBOARD_EXPORT_CONFIG.EXPIRY_DATE;
             this.CONFIG.BASE_URL = window.DASHBOARD_EXPORT_CONFIG.BASE_URL || '';
         }
+
+        if (this.checkExpiration()) return; // 만료 시 실행 중단
 
         const savedTheme = localStorage.getItem('dashboard_theme') || 'default';
         this.applyTheme(savedTheme);
