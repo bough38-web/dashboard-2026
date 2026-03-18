@@ -311,38 +311,49 @@ const ThemeManager = {
 
     performExport(newExpiry) {
         const baseUrl = 'https://bough38-web.github.io/dashboard-2026/';
-        const version = "2026.03.18.v7"; 
+        const version = "2026.03.18.v8"; 
+
+        // 1. 내보내기 전 현재 열려있는 모달 스타일 및 요소 임시 제거 (결과물에 포함되지 않도록)
+        const modals = document.querySelectorAll('.modal-overlay, #expiry-lock-overlay');
+        modals.forEach(m => m.style.display = 'none');
         
+        // 스냅샷 촬영
         let html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
 
-        // 1. 상대 경로를 절대 경로로 변환
+        // 모달 다시 표시 (현재 화면 유지용)
+        modals.forEach(m => m.style.display = 'flex');
+
+        // 2. 상대 경로를 절대 경로로 변환
         html = html.replace(/(src|href)="(?!(http|https|#|javascript:))([^"]+)"/g, `$1="${baseUrl}$3"`);
 
-        // 2. [Nuclear Fix] Auth Guard를 원천적으로 무력화 (내보낸 파일 전용)
-        // script 태그 내의 IIFE 시작 부분에 즉시 리턴 코드를 삽입하여 Auth Guard 전체를 무효화합니다.
-        // 모든 인라인 스크립트의 (function() { 시작점을 찾아 if(window.DASHBOARD_EXPORT_CONFIG)return; 을 주입합니다.
-        html = html.replace(/\(function\(\)\s*\{/g, '(function(){if(window.DASHBOARD_EXPORT_CONFIG)return;');
+        // 3. [Advanced Fix] Auth Guard만 정밀 타겟팅하여 무력화
+        // "sales_dashboard_session" 키워드가 포함된 IIFE만 찾아 우회 코드를 주입합니다.
+        // 다른 라이브러리(Chart.js 등)에 영향을 주지 않도록 정교하게 매칭
+        html = html.replace(/(\(function\(\)\s*\{)(?=[^}]*sales_dashboard_session)/g, '$1if(window.DASHBOARD_EXPORT_CONFIG)return;');
 
-        // 3. 만료일 및 캐시 정책 오버라이드 스크립트 주입
+        // 4. 보안 설정 스크립트 주입 (최상단)
         const overrideScript = `
     <script>
-        // [Security] Exported Dashboard Configuration Override
+        // [Security] Standalone Dashboard Configuration (Built-in)
         window.DASHBOARD_EXPORT_CONFIG = {
             EXPIRY_DATE: "${newExpiry}",
             BASE_URL: "${baseUrl}",
-            VERSION: "${version}"
+            VERSION: "${version}",
+            EXPORTED_AT: "${new Date().toLocaleString('ko-KR', {timeZone: 'Asia/Seoul'})}"
         };
-        // 즉시 반영
+        // 즉시 반영 명령
         if (typeof ThemeManager !== 'undefined') {
             ThemeManager.CONFIG.EXPIRY_DATE = "${newExpiry}";
             ThemeManager.CONFIG.BASE_URL = "${baseUrl}";
         }
+        console.log("Dashboard Standalone Mode Activated (v8)");
     </script>
 `;
-        // <head> 바로 다음에 주입하여 그 어떤 스크립트보다 먼저 실행되게 함
         html = html.replace(/<head>/i, '<head>' + overrideScript);
 
-        // Blob 생성 및 다운로드
+        // 5. 불필요한 내보내기용 스타일 제거 (결과물 최적화)
+        html = html.replace(/<style id="export-modal-styles">.*?<\/style>/s, '');
+
         const blob = new Blob([html], { type: 'text/html' });
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
@@ -356,9 +367,10 @@ const ThemeManager = {
         URL.revokeObjectURL(url);
         
         TrackingManager.log('DASHBOARD_EXPORT', { expiry: newExpiry, version: version });
-        alert('대시보드 파일이 생성되었습니다: ' + filename + 
-              '\\n(최종 보안 패치: ' + version + ', 만료일: ' + newExpiry + ')\\n\\n' + 
-              '※ 이제 이 파일은 로그인 없이 즉시 만료 체크가 작동합니다.');
+        alert('대시보드 내보내기 성공!\\n\\n파일명: ' + filename + 
+              '\\n보안 버전: ' + version + 
+              '\\n설정 만료일: ' + newExpiry + 
+              '\\n\\n※ 이 파일은 로그인 없이 즉시 사용 가능하며, 만료일 경과 시 빨간색 경고창이 나타납니다.');
     },
 
     injectGlobalStyles() {
