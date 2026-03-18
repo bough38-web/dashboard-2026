@@ -126,15 +126,25 @@ const ThemeManager = {
     },
 
     checkExpiration() {
-        const expiry = new Date(this.CONFIG.EXPIRY_DATE);
+        const expiryStr = this.CONFIG.EXPIRY_DATE;
+        const expiryDate = new Date(expiryStr);
         const today = new Date();
         
+        // 시간 정보를 제거하여 '일자' 기반으로만 비교 (오늘이 만료일보다 크면 만료)
+        today.setHours(0, 0, 0, 0);
+        expiryDate.setHours(0, 0, 0, 0);
+
+        console.log(`[ExpiryCheck] Today: ${today.toISOString()}, Expiry: ${expiryDate.toISOString()}`);
+        console.log(`[ExpiryCheck] Raw Config:`, this.CONFIG);
+
         // 세션에서 이미 승인되었는지 확인
         if (sessionStorage.getItem('dashboard_unlocked') === 'true') {
+            console.log('[ExpiryCheck] Dashboard already unlocked in this session.');
             return false;
         }
 
-        if (today > expiry) {
+        if (today > expiryDate) {
+            console.log('[ExpiryCheck] Access expired. Showing lock overlay.');
             this.showLockOverlay();
             return true;
         }
