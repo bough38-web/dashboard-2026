@@ -117,12 +117,39 @@ const ThemeManager = {
 
         const savedTheme = localStorage.getItem('dashboard_theme') || 'default';
         this.applyTheme(savedTheme);
+        this.applySettings();
         this.injectGlobalStyles();
         this.standardizeNavigation();
         this.createThemeSelector();
         
         // Log page view
         TrackingManager.log('PAGE_VIEW', { title: document.title });
+    },
+
+    applySettings() {
+        const settings = JSON.parse(localStorage.getItem('dashboard_settings') || '{"visibility": "all", "zoom": "100"}');
+        if (settings.zoom && settings.zoom !== '100') {
+            document.body.style.zoom = settings.zoom + '%';
+            // Scale and center for browsers that don't support zoom property perfectly
+            if (!('zoom' in document.body.style)) {
+                const scale = parseInt(settings.zoom) / 100;
+                document.body.style.transform = `scale(${scale})`;
+                document.body.style.transformOrigin = 'top center';
+            }
+        }
+    },
+
+    async fetchData(filename) {
+        try {
+            const response = await fetch(`data/${filename}`);
+            if (response.ok) {
+                return await response.json();
+            }
+            return null;
+        } catch (e) {
+            console.error(`[ThemeManager] Error fetching ${filename}:`, e);
+            return null;
+        }
     },
 
     getDailyCode() {
@@ -454,14 +481,16 @@ const ThemeManager = {
                 display: flex !important;
                 align-items: center !important;
                 background: var(--nav-bg) !important;
-                padding: 6px !important;
-                border-radius: 24px !important;
-                gap: 4px !important;
-                box-shadow: var(--shadow-sm) !important;
+                padding: 6px 12px 6px 6px !important;
+                border-radius: 20px !important;
+                gap: 6px !important;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.08) !important;
                 width: fit-content !important;
+                box-sizing: border-box !important;
                 margin-left: auto !important;
                 border: 1px solid var(--border-color) !important;
                 position: relative;
+                overflow: visible !important;
             }
             .premium-nav-btn {
                 display: flex !important;
@@ -502,7 +531,7 @@ const ThemeManager = {
             }
             .premium-nav-btn.logout:hover {
                 background: #fecaca !important;
-                box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2) !important;
+                box-shadow: 0 4px 12px rgba(239, 68, 68, 0.1) !important;
             }
             .premium-nav-btn.disabled {
                 opacity: 0.4 !important;
@@ -591,6 +620,9 @@ const ThemeManager = {
     },
 
     standardizeNavigation() {
+        const settings = JSON.parse(localStorage.getItem('dashboard_settings') || '{"visibility": "all", "zoom": "100", "enabled_dashboards": ["지도/방문", "재계약/리텐션", "정지/부실", "리텐션P값", "해지율", "기관별 현황(요약)"]}');
+        const enabledDashboards = settings.enabled_dashboards || [];
+
         const navItems = [
             { icon: 'fa-map-marked-alt', text: '지도/방문', href: 'map_dashboard.html' },
             { icon: 'fa-sync-alt', text: '재계약/리텐션', href: 'index.html' },
@@ -598,11 +630,12 @@ const ThemeManager = {
             { icon: 'fa-coins', text: '리텐션P값', href: '리텐션P값 실적현황.html' },
             { icon: 'fa-user-slash', text: '해지율', view: 'termination' },
             { icon: 'fa-list-check', text: '기관별 현황(요약)', view: 'summary' }
-        ];
+        ].filter(item => enabledDashboards.includes(item.text));
 
         const adminItems = [
             { icon: 'fa-download', text: '대시보드 내보내기 (보안)', action: () => this.showExportModal() },
             { icon: 'fa-history', text: '활동 모니터링', href: 'ADMIN_LOGS.html' },
+            { icon: 'fa-sliders-h', text: '대시보드 노출/사이즈 설정', action: () => this.showAdminSettingsModal() },
             { icon: 'fa-file-alt', text: '개발 보고서', href: 'https://bough38-web.github.io/dashboard-2026/PROJECT_REPORT.html', target: '_blank' },
             { icon: 'fa-book', text: '사용 매뉴얼', href: 'https://bough38-web.github.io/dashboard-2026/USER_MANUAL.html', target: '_blank' }
         ];
@@ -695,6 +728,9 @@ const ThemeManager = {
             // Add Logout
             const logoutBtn = document.createElement('button');
             logoutBtn.className = 'premium-nav-btn logout';
+            logoutBtn.style.padding = '8px 16px';
+            logoutBtn.style.fontSize = '12px';
+            logoutBtn.style.marginRight = '2px';
             logoutBtn.innerHTML = `<i class="fas fa-sign-out-alt"></i><span>로그아웃</span>`;
             logoutBtn.onclick = () => {
                 if (confirm('로그아웃 하시겠습니까?')) {
@@ -739,6 +775,94 @@ const ThemeManager = {
         });
 
         nav.insertBefore(selector, nav.firstChild);
+    },
+
+    showAdminSettingsModal() {
+        // 전용 스타일 주입
+        const styleId = 'admin-settings-modal-styles';
+        if (!document.getElementById(styleId)) {
+            const style = document.createElement('style');
+            style.id = styleId;
+            style.textContent = `
+                .modal-overlay {
+                    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+                    background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(8px);
+                    z-index: 200000; display: flex; align-items: center; justify-content: center;
+                }
+                .settings-modal {
+                    background: var(--surface-bg); padding: 30px; border-radius: 20px;
+                    width: 450px; box-shadow: var(--shadow-md); border: 1px solid var(--border-color);
+                    color: var(--text-main); font-family: 'Pretendard', sans-serif;
+                }
+                .settings-modal h2 { margin-top: 0; font-weight: 800; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 20px; }
+                .setting-item { margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center; }
+                .setting-label { font-weight: 700; font-size: 14px; }
+                .setting-control { width: 120px; padding: 6px; border-radius: 8px; border: 1px solid var(--border-color); font-size: 13px; }
+                .btn-group { display: flex; gap: 10px; margin-top: 25px; }
+                .btn { flex: 1; padding: 12px; border-radius: 12px; cursor: pointer; font-weight: 700; border: none; }
+                .save-btn { background: #4f46e5; color: white; }
+                .cancel-btn { background: #f1f5f9; color: #64748b; }
+            `;
+            document.head.appendChild(style);
+        }
+
+        const settings = JSON.parse(localStorage.getItem('dashboard_settings') || '{"visibility": "all", "zoom": "100", "enabled_dashboards": ["지도/방문", "재계약/리텐션", "정지/부실", "리텐션P값", "해지율", "기관별 현황(요약)"]}');
+        const allDashboards = ["지도/방문", "재계약/리텐션", "정지/부실", "리텐션P값", "해지율", "기관별 현황(요약)"];
+        const enabledDashboards = settings.enabled_dashboards || allDashboards;
+
+        const modal = document.createElement('div');
+        modal.className = 'modal-overlay';
+        modal.innerHTML = `
+            <div class="settings-modal" style="width: 500px">
+                <h2>대시보드 운영 설정 <i class="fas fa-sliders-h"></i></h2>
+                
+                <div style="margin-bottom: 20px; background: #f8fafc; padding: 15px; border-radius: 12px; border: 1px solid var(--border-color);">
+                    <div class="setting-label" style="margin-bottom: 12px; color: var(--primary);">메뉴 활성화 설정 (보여줄 대시보드 선택)</div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                        ${allDashboards.map(db => `
+                            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 13px; font-weight: 600;">
+                                <input type="checkbox" class="db-toggle" value="${db}" ${enabledDashboards.includes(db) ? 'checked' : ''}>
+                                ${db}
+                            </label>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <div class="setting-item">
+                    <span class="setting-label">시스템 노출 수준</span>
+                    <select id="settings-visibility" class="setting-control">
+                        <option value="all" ${settings.visibility === 'all' ? 'selected' : ''}>전체 노출</option>
+                        <option value="essential" ${settings.visibility === 'essential' ? 'selected' : ''}>필수 항목만</option>
+                        <option value="admin" ${settings.visibility === 'admin' ? 'selected' : ''}>관리부서 전용</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <span class="setting-label">화면 배율 (%)</span>
+                    <input type="number" id="settings-zoom" class="setting-control" value="${settings.zoom}" min="50" max="150" step="5">
+                </div>
+                <div class="btn-group">
+                    <button class="btn cancel-btn" id="settings-cancel">취소</button>
+                    <button class="btn save-btn" id="settings-save">기기 환경 저장</button>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        document.getElementById('settings-cancel').onclick = () => modal.remove();
+        document.getElementById('settings-save').onclick = () => {
+            const visibility = document.getElementById('settings-visibility').value;
+            const zoom = document.getElementById('settings-zoom').value;
+            const chosenDashboards = Array.from(document.querySelectorAll('.db-toggle:checked')).map(cb => cb.value);
+            
+            localStorage.setItem('dashboard_settings', JSON.stringify({ 
+                visibility, 
+                zoom, 
+                enabled_dashboards: chosenDashboards 
+            }));
+            
+            alert('기기 설정이 성공적으로 저장되었습니다.');
+            location.reload();
+        };
     }
 };
 

@@ -126,8 +126,8 @@
         /* Boundary separators - Strengthened for Expert Layout */
         .sep-r { border-right: 2px solid var(--primary-dark) !important; }
         .sep-l { border-left: 2px solid var(--primary-dark) !important; }
-        .table-card thead tr:last-child th { border-bottom: 3px solid var(--primary-dark) !important; }
-        .table-card tfoot tr td { border-top: 3px solid var(--primary-dark) !important; border-bottom: 3px solid var(--primary-dark) !important; }
+        .table-card thead tr:last-child th { border-bottom: 2px solid var(--primary-dark) !important; }
+        .table-card tfoot tr td { border-top: 2.5px solid var(--primary-dark) !important; border-bottom: 2.5px solid var(--primary-dark) !important; }
 
         /* Small toggle style */
         .small-toggle { display: flex; gap: 2px; background: #f1f5f9; padding: 2px; border-radius: 6px; border: 1px solid var(--border-light); }
@@ -232,6 +232,13 @@
                     <div class="title-group">
                         <h1 style="font-size: 22px;">정지 / 부실 현황 분석 (강북·강원본부)</h1>
                         <p style="font-size: 13px;">집계 기준 : 2026. 02. 28 &nbsp;|&nbsp; 단위 : 건, 천원, %</p>
+                        <div style="margin-top: 10px; display: flex; gap: 8px;">
+                            <a href="https://script.google.com/macros/s/AKfycbwkWSXQIQEBkE0DGRs6YC9ObDyyzdBHbGH48zUC7PCKHkWzEcLqBuvVH2W6WSmyuJNCAw/exec" 
+                               target="_blank" 
+                               style="display: inline-flex; align-items: center; gap: 8px; background: #ffffff; color: #16a34a; border: 1.5px solid #16a34a; padding: 10px 18px; border-radius: 10px; font-size: 13px; font-weight: 800; text-decoration: none; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 6px -1px rgba(22, 163, 74, 0.1);">
+                                <i class="fas fa-chart-line"></i> <span>구글 시각화 도구 바로가기</span>
+                            </a>
+                        </div>
                     </div>
                     <button class="pdf-btn" onclick="downloadPDF()">📄 PDF 다운로드</button>
                 </div>
@@ -314,8 +321,16 @@
                             <button class="filter-btn" id="mode-rate" onclick="setChartMode('rate')">정지율</button>
                         </div>
                     </div>
-                    <div id="chart-container" style="height: 150px; transition: height 0.3s ease, opacity 0.3s ease; overflow: hidden;">
-                        <canvas id="suspensionChart"></canvas>
+                    <div id="chart-container" style="height: 220px; transition: var(--transition-smooth); overflow: hidden; display: flex; gap: 20px; padding: 10px;">
+                        <div style="flex: 1.2; position: relative;">
+                            <div style="font-size: 11px; font-weight: 700; color: var(--text-muted); margin-bottom: 5px; text-align: center;">지사별 정지 현황 비교</div>
+                            <canvas id="suspensionChart"></canvas>
+                        </div>
+                        <div style="width: 1px; background: var(--border-light); margin: 10px 0;"></div>
+                        <div style="flex: 0.8; position: relative;">
+                            <div style="font-size: 11px; font-weight: 700; color: var(--text-muted); margin-bottom: 5px; text-align: center;">전체 유형별 분포 (%)</div>
+                            <canvas id="distributionChart"></canvas>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -388,6 +403,7 @@
     let currentFilter = 'all';
     let chartMode = 'count';
     let chartInstance = null;
+    let distChartInstance = null;
     let lastSums = null;
     let isVizCollapsed = false;
 
@@ -395,6 +411,51 @@
         document.getElementById('app').style.display = 'flex';
         init();
     });
+
+    async function init() {
+        // Try to sync with external Python data first
+        await syncExternalData();
+        
+        updateKPIs();
+        render();
+        
+        // Auto-refresh data check if any external changes
+        setInterval(syncExternalData, 300000); // 5 mins
+    }
+
+    async function syncExternalData() {
+        if (typeof ThemeManager === 'undefined') return;
+        
+        const suspensionData = await ThemeManager.fetchData('suspension_data.json');
+        const defectData = await ThemeManager.fetchData('defect_data.json');
+        
+        if (suspensionData && defectData) {
+            console.log("[DataSync] External data found. Updating dashboard...");
+            
+            // Helper to map headers even if they vary slightly
+            const mapKeys = (item) => {
+                const mapping = {
+                    "지사": "name", "구분": "name", "본부": "name",
+                    "총정지건수": "total_c", "총정지월정료": "total_v",
+                    "부실건수": "def_c", "부실월정료": "def_v",
+                    "기타건수": "etc_c", "기타월정료": "etc_v",
+                    "체납건수": "pay_c", "체납월정료": "pay_v",
+                    "일반건수": "gen_c", "일반월정료": "gen_v",
+                    "전체고객수": "base_c", "전체월정료": "base_v"
+                };
+                const newItem = {};
+                for (let k in item) {
+                    const mappedKey = mapping[k.replace(/\s+/g, '')] || k;
+                    newItem[mappedKey] = item[k];
+                }
+                return newItem;
+            };
+
+            // Assuming suspensionData is an array of objects
+            // If Level or Category is present, filter accordingly
+            // For now, let's keep it flexible
+        }
+    }
 
     function setView(view) {
         currentView = view;
@@ -538,7 +599,7 @@
         }
 
         updateKPIs(sums);
-        updateChart(sums);
+        updateChart(filteredData); // Pass filteredData to updateChart
     }
 
     function updateKPIs(sums) {

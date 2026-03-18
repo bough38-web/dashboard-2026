@@ -35,7 +35,7 @@
             --primary-light: #eff6ff;
             --border-light: #e2e8f0;
             --border-medium: #cbd5e1;
-            --border-heavy: #334155;
+            --border-heavy: #94a3b8;
             --text-main: #334155;
             --text-muted: #64748b;
             
@@ -80,12 +80,12 @@
         .title-group h1 { margin: 0 0 8px 0; font-size: 24px; color: var(--primary-dark); font-weight: 800; letter-spacing: -0.5px; }
         .title-group p { margin: 0; font-size: 14px; color: var(--text-muted); font-weight: 500; }
 
-        .controls-wrapper { display: flex; gap: 24px; flex-wrap: wrap; width: 100%; align-items: flex-end; }
-        .filter-section { display: flex; flex-direction: column; gap: 8px; }
+        .controls-wrapper { display: flex; gap: 15px; flex-wrap: nowrap; width: 100%; align-items: flex-end; overflow-x: auto; padding-bottom: 5px; }
+        .filter-section { display: flex; flex-direction: column; gap: 8px; flex-shrink: 0; }
         .filter-label { font-size: 13px; font-weight: 800; color: var(--text-muted); padding-left: 4px; }
         
         .filter-group { display: flex; gap: 4px; background: #f8fafc; padding: 4px; border-radius: 24px; border: 1px solid var(--border-light); }
-        .filter-btn { padding: 10px 20px; background: transparent; border: none; border-radius: 8px; color: var(--text-muted); font-size: 14px; font-weight: 700; cursor: pointer; transition: var(--transition-smooth); }
+        .filter-btn { padding: 8px 15px; background: transparent; border: none; border-radius: 8px; color: var(--text-muted); font-size: 13px; font-weight: 700; cursor: pointer; transition: var(--transition-smooth); }
         .filter-btn:hover { color: var(--primary-dark); background: #f1f5f9; }
         
         .filter-btn.active { background: var(--surface-bg); box-shadow: 0 2px 4px rgba(0,0,0,0.06); }
@@ -123,12 +123,12 @@
         #mainTable { border-left: 1px solid var(--border-light); border-right: 1px solid var(--border-light); }
         table { width: 100%; border-collapse: collapse; font-size: 12px; text-align: center; white-space: nowrap; min-width: 1200px; }
         
-        thead tr:first-child th { border-top: 2px solid var(--primary-dark); }
-        th, td { padding: 10px 6px; vertical-align: middle; border: 1px solid var(--border-light); }
+        thead tr:first-child th { border-top: 1.5px solid var(--primary-dark); }
+        th, td { padding: 8px 4px; vertical-align: middle; border: 1px solid var(--border-light); }
         th:last-child, td:last-child { border-right: 1px solid var(--border-light); }
-        th:first-child, td:first-child { border-left: 1px solid var(--border-heavy) !important; }
+        th:first-child, td:first-child { border-left: 1px solid var(--border-medium) !important; }
         
-        thead tr:last-child th, thead tr:first-child th[rowspan="2"] { border-bottom: 3px solid var(--primary-dark) !important; }
+        thead tr:last-child th, thead tr:first-child th[rowspan="2"] { border-bottom: 2px solid var(--primary-dark) !important; }
         .group-end { border-right: 2px solid var(--border-heavy) !important; }
         .border-heavy-left { border-left: 2px solid var(--border-heavy) !important; }
 
@@ -173,8 +173,8 @@
         tbody tr.row-highlight-blue:hover td { background-color: #e0f2fe !important; }
 
         tfoot tr { background-color: #f1f5f9; }
-        tfoot td { color: var(--primary-dark); font-weight: 800; border-bottom: none; border-top: 2px solid var(--primary-dark) !important; border-bottom: 4px double var(--primary-dark) !important; }
-        tfoot td:first-child { background-color: #f1f5f9; border-right: 2px solid var(--border-heavy) !important; }
+        tfoot td { color: var(--primary-dark); font-weight: 800; border-bottom: none; border-top: 1.5px solid var(--primary-dark) !important; border-bottom: 2px solid var(--primary-dark) !important; }
+        tfoot td:first-child { background-color: #f1f5f9; border-right: 2px solid var(--border-medium) !important; }
         tfoot .val-num { color: var(--primary-dark); }
         tfoot .val-highlight { color: var(--primary-blue); }
 
