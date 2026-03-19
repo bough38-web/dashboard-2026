@@ -84,8 +84,6 @@ textarea.form-control{height:90px;resize:none;}
 .btn{padding:9px 18px;border-radius:8px;font-weight:700;cursor:pointer;border:none;font-family:'Pretendard',sans-serif;}
 .btn-primary{background:var(--primary);color:white;}
 .btn-secondary{background:#e2e8f0;color:var(--text-main);}
-.progress-btn-mini{background:#f0f9ff;color:var(--primary);border:1px solid var(--border-color);padding:3px 7px;border-radius:6px;font-size:10px;font-weight:700;display:inline-flex;align-items:center;gap:3px;margin-top:6px;cursor:pointer;font-family:'Pretendard',sans-serif;}
-.progress-btn-mini:hover{background:#e0f2fe;}
 .debug-console{position:absolute;bottom:16px;right:16px;background:rgba(0,0,0,0.65);color:#4ade80;padding:8px;border-radius:8px;font-family:monospace;font-size:10px;max-width:280px;pointer-events:none;z-index:400;}
 #date-filters{gap:4px;padding-left:4px;}
 @media(max-width:768px){#sidebar{width:100%;position:absolute;bottom:0;height:50%;border-right:none;border-top:1px solid var(--border-color);}#app{flex-direction:column;}.route-btn{bottom:52%;}}
@@ -189,27 +187,6 @@ textarea.form-control{height:90px;resize:none;}
 </main>
 </div>
 
-<!-- Progress Modal -->
-<div id="progress-modal" class="modal-overlay">
-    <div class="modal-content">
-        <h3 class="modal-title"><i data-lucide="edit-3"></i> 진행사항 등록</h3>
-        <p id="modal-customer-name" style="font-size:13px;color:var(--text-sub);margin-bottom:14px;"></p>
-        <div class="form-group"><label class="form-label-m">등록일자</label><input type="text" id="reg-date" class="form-control" readonly></div>
-        <div class="form-group"><label class="form-label-m">진행요약</label>
-            <select id="reg-summary" class="form-control">
-                <option value="계약완료">계약완료 ✅</option>
-                <option value="진행중">진행중 ⏳</option>
-                <option value="해지예정">해지예정 ⚠️</option>
-                <option value="정지예정">정지예정 🛑</option>
-            </select>
-        </div>
-        <div class="form-group"><label class="form-label-m">진행내역 상세</label><textarea id="reg-detail" class="form-control" placeholder="상담 기록 또는 특이사항을 입력하세요."></textarea></div>
-        <div class="modal-footer">
-            <button class="btn btn-secondary" onclick="closeProgressModal()">취소</button>
-            <button class="btn btn-primary" onclick="saveProgress()">저장하기</button>
-        </div>
-    </div>
-</div>
 
 <div style="position:fixed;bottom:12px;right:16px;font-size:10px;color:#94a3b8;opacity:0.7;pointer-events:none;z-index:9999;">Developed by SE-EUN Daddy</div>
 
@@ -409,7 +386,7 @@ function updateSuspensionMarkers(){
                 fontWeight: "bold"
             } : null
         });
-        var iw=new google.maps.InfoWindow({content:'<div style="padding:12px;width:210px;font-family:Pretendard,sans-serif;"><h4 style="margin:0 0 6px;color:'+color+';font-size:13px;">'+prefix+' '+(type !== 'voc' ? '<span style="background:rgba(0,0,0,0.1); padding:2px 4px; border-radius:4px; font-size:10px; margin-left:4px;">[L형]</span>' : '')+'</h4><div style="background:#f8fafc;padding:8px;border-radius:8px;border:1px solid #e2e8f0;margin-bottom:8px;"><p style="margin:3px 0;font-size:11px;"><b>상호:</b> '+maskName(target.name)+'</p><p style="margin:3px 0;font-size:11px;"><b>지사:</b> '+target.branch+'</p><p style="margin:3px 0;font-size:11px;"><b>영업구역:</b> '+target.manager+'</p><p style="margin:3px 0;font-size:11px;color:#64748b;">'+target.address+'</p></div><div style="display:flex;gap:5px;"><a href="https://www.google.com/maps/dir/?api=1&destination='+target.lat+','+target.lng+'" target="_blank" style="flex:1;background:#0ea5e9;color:white;border-radius:6px;padding:7px;text-decoration:none;font-size:11px;font-weight:bold;text-align:center;">길찾기</a><button onclick="openProgressModal(\''+target.contractNo+'\',\''+target.name.replace(/'/g,"\\'")+'\',\''+cat+'\')" style="flex:1;background:#10b981;color:white;border-radius:6px;padding:7px;border:none;font-size:11px;font-weight:bold;cursor:pointer;">진행등록</button></div></div>'});
+        var iw=new google.maps.InfoWindow({content:'<div style="padding:12px;width:210px;font-family:Pretendard,sans-serif;"><h4 style="margin:0 0 6px;color:'+color+';font-size:13px;">'+prefix+' '+(type !== 'voc' ? '<span style="background:rgba(0,0,0,0.1); padding:2px 4px; border-radius:4px; font-size:10px; margin-left:4px;">[L형]</span>' : '')+'</h4><div style="background:#f8fafc;padding:8px;border-radius:8px;border:1px solid #e2e8f0;margin-bottom:8px;"><p style="margin:3px 0;font-size:11px;"><b>상호:</b> '+maskName(target.name)+'</p><p style="margin:3px 0;font-size:11px;"><b>지사:</b> '+target.branch+'</p><p style="margin:3px 0;font-size:11px;"><b>영업구역:</b> '+target.manager+'</p><p style="margin:3px 0;font-size:11px;color:#64748b;">'+target.address+'</p></div><div style="display:flex;gap:5px;"><a href="https://www.google.com/maps/dir/?api=1&destination='+target.lat+','+target.lng+'" target="_blank" style="flex:1;background:#0ea5e9;color:white;border-radius:6px;padding:7px;text-decoration:none;font-size:11px;font-weight:bold;text-align:center;">길찾기</a></div></div>'});
         m.addListener('click',function(){iw.open(map,m);});
         suspensionMarkers.push(m);
     });
@@ -446,7 +423,7 @@ function updateDashboard(data){
         var isUrgent=item.expiryDate&&item.expiryDate.includes('2026-03');
         var sc=isUrgent?'status-alert':'status-normal',st=isUrgent?'만기 임박':'재계약 관리중';
         if(item.progress&&item.progress!=='진행대상'){sc=getStatusClass(item.progress);st=item.progress;}
-        card.innerHTML='<span class="target-name">'+maskName(item.name)+(item.isHighArpu?'<span class="arpu-badge">고ARPU</span>':'')+'</span><div class="target-info"><p style="margin:2px 0;">🏢 '+item.branch+'</p><p style="margin:2px 0;">👤 '+item.manager+' | '+item.contractNo+'</p><p style="margin:2px 0;">📍 '+maskAddress(item.address)+'</p>'+(item.expiryDate?'<p style="margin:2px 0;font-weight:600;color:var(--primary);">만기: '+item.expiryDate+'</p>':'')+(item.lastContactDate?'<p style="margin:2px 0;font-size:10px;color:#10b981;"><b>최근:</b> '+item.lastContactDate+'('+item.progress+')</p>':'')+'</div><div style="display:flex;justify-content:space-between;align-items:center;"><span class="status-tag '+sc+'">'+st+'</span><button class="progress-btn-mini" onclick="event.stopPropagation();openProgressModal(\''+item.contractNo+'\',\''+item.name.replace(/'/g,"\\'")+'\')">✏️ 진행등록</button></div>';
+        card.innerHTML='<span class="target-name">'+maskName(item.name)+(item.isHighArpu?'<span class="arpu-badge">고ARPU</span>':'')+'</span><div class="target-info"><p style="margin:2px 0;">🏢 '+item.branch+'</p><p style="margin:2px 0;">👤 '+item.manager+' | '+item.contractNo+'</p><p style="margin:2px 0;">📍 '+maskAddress(item.address)+'</p>'+(item.expiryDate?'<p style="margin:2px 0;font-weight:600;color:var(--primary);">만기: '+item.expiryDate+'</p>':'')+(item.lastContactDate?'<p style="margin:2px 0;font-size:10px;color:#10b981;"><b>최근:</b> '+item.lastContactDate+'('+item.progress+')</p>':'')+'</div><div style="display:flex;justify-content:space-between;align-items:center;"><span class="status-tag '+sc+'">'+st+'</span></div>';
         card.onclick=function(){focusTarget(item,card);};
         list.appendChild(card);
     });
@@ -463,7 +440,7 @@ function renderMarkers(data){
         if(!item.lat||!item.lng)return;
         var pos={lat:item.lat,lng:item.lng};
         var marker=new google.maps.Marker({position:pos,title:maskName(item.name),map:map});
-        var iw=new google.maps.InfoWindow({content:'<div style="padding:12px;width:230px;font-family:Pretendard,sans-serif;"><h4 style="margin:0 0 4px;color:#0f172a;">'+maskName(item.name)+(item.isHighArpu?'<span class="arpu-badge">고ARPU</span>':'')+'</h4><p style="font-size:12px;color:#64748b;margin:3px 0;">지사: '+item.branch+'</p><p style="font-size:12px;color:#64748b;margin:3px 0;">영업구역: '+item.manager+' ('+item.contractNo+')</p><p style="font-size:12px;color:#64748b;margin:3px 0;">주소: '+maskAddress(item.address)+'</p><div style="margin:8px 0;padding:8px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;"><p style="font-size:11px;margin:2px 0;"><b>상태:</b> '+( item.progress||'진행대상')+'</p><p style="font-size:11px;margin:2px 0;"><b>월정료:</b> '+formatArpu(item.arpu)+'</p><p style="font-size:11px;margin:2px 0;color:#ef4444;"><b>만기:</b> '+(item.expiryDate||'정보없음')+'</p>'+(item.lastContactDate?'<p style="font-size:10px;margin:4px 0 0;color:#10b981;"><b>최근('+item.lastContactDate+'):</b> '+(item.lastContactDetail||'-')+'</p>':'')+'</div><div style="display:flex;gap:5px;"><a href="https://www.google.com/maps/dir/?api=1&destination='+item.lat+','+item.lng+'" target="_blank" style="background:#0ea5e9;color:white;border-radius:4px;padding:6px 10px;text-decoration:none;font-size:11px;font-weight:bold;flex:1;text-align:center;">길찾기</a><button onclick="openProgressModal(\''+item.contractNo+'\',\''+item.name.replace(/'/g,"\\'")+'\',\''+item.status+'\')" style="background:#10b981;color:white;border-radius:4px;border:none;padding:6px 10px;font-size:11px;font-weight:bold;flex:1;cursor:pointer;">진행등록</button></div></div>'});
+        var iw=new google.maps.InfoWindow({content:'<div style="padding:12px;width:230px;font-family:Pretendard,sans-serif;"><h4 style="margin:0 0 4px;color:#0f172a;">'+maskName(item.name)+(item.isHighArpu?'<span class="arpu-badge">고ARPU</span>':'')+'</h4><p style="font-size:12px;color:#64748b;margin:3px 0;">지사: '+item.branch+'</p><p style="font-size:12px;color:#64748b;margin:3px 0;">영업구역: '+item.manager+' ('+item.contractNo+')</p><p style="font-size:12px;color:#64748b;margin:3px 0;">주소: '+maskAddress(item.address)+'</p><div style="margin:8px 0;padding:8px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;"><p style="font-size:11px;margin:2px 0;"><b>상태:</b> '+( item.progress||'진행대상')+'</p><p style="font-size:11px;margin:2px 0;"><b>월정료:</b> '+formatArpu(item.arpu)+'</p><p style="font-size:11px;margin:2px 0;color:#ef4444;"><b>만기:</b> '+(item.expiryDate||'정보없음')+'</p>'+(item.lastContactDate?'<p style="font-size:10px;margin:4px 0 0;color:#10b981;"><b>최근('+item.lastContactDate+'):</b> '+(item.lastContactDetail||'-')+'</p>':'')+'</div><div style="display:flex;gap:5px;"><a href="https://www.google.com/maps/dir/?api=1&destination='+item.lat+','+item.lng+'" target="_blank" style="background:#0ea5e9;color:white;border-radius:4px;padding:6px 10px;text-decoration:none;font-size:11px;font-weight:bold;flex:1;text-align:center;">길찾기</a></div></div>'});
         marker.addListener('click',function(){iw.open(map,marker);});
         markers.push(marker);bounds.extend(pos);
     });
@@ -527,29 +504,6 @@ function drawRoute(sLat,sLng,path){
     if(linePath.length>0){var b=new google.maps.LatLngBounds();linePath.forEach(function(p){b.extend(p);});map.fitBounds(b);}
 }
 
-window.openProgressModal=function(contractNo,name,category){
-    currentEditingId=contractNo;currentEditingCategory=category||'기타';
-    document.getElementById('modal-customer-name').textContent='고객명: '+name+' ('+contractNo+') | 구분: '+currentEditingCategory;
-    document.getElementById('reg-date').value=new Date().toISOString().split('T')[0];
-    var allProg=JSON.parse(localStorage.getItem(PROGRESS_STORAGE_KEY)||'{}');
-    var ex=allProg[contractNo];
-    if(ex){document.getElementById('reg-summary').value=ex.summary;document.getElementById('reg-detail').value=ex.detail;}
-    else{document.getElementById('reg-summary').value='진행중';document.getElementById('reg-detail').value='';}
-    document.getElementById('progress-modal').style.display='flex';lucide.createIcons();
-};
-window.closeProgressModal=function(){document.getElementById('progress-modal').style.display='none';currentEditingId=null;};
-window.saveProgress=function(){
-    if(!currentEditingId)return;
-    var summary=document.getElementById('reg-summary').value;
-    var detail=document.getElementById('reg-detail').value;
-    var date=document.getElementById('reg-date').value;
-    var allProg=JSON.parse(localStorage.getItem(PROGRESS_STORAGE_KEY)||'{}');
-    var target=allTargets.find(function(t){return t.contractNo===currentEditingId;});
-    allProg[currentEditingId]={date:date,summary:summary,detail:detail,category:currentEditingCategory,contractNo:currentEditingId,name:target?target.name:'Unknown',branch:target?target.branch:'-',manager:target?target.manager:'-'};
-    localStorage.setItem(PROGRESS_STORAGE_KEY,JSON.stringify(allProg));
-    alert('진행사항이 저장되었습니다.');
-    closeProgressModal();
-};
 </script>
 </body>
 </html>
