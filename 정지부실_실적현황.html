@@ -214,6 +214,93 @@
             transition: all 0.2s;
         }
         .logout-btn:hover { background: #fecaca; }
+
+        /* AI Report Styling */
+        .ai-report-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid rgba(37, 99, 235, 0.1);
+            margin-top: 20px;
+        }
+        .ai-report-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 12px;
+        }
+        .ai-report-header i {
+            font-size: 24px;
+            color: var(--primary-blue);
+        }
+        .ai-report-header h2 {
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--primary-dark);
+            margin: 0;
+        }
+        .ai-report-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .ai-section {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            border: 1px solid #e2e8f0;
+        }
+        .ai-section.top { border-left: 5px solid #10b981; }
+        .ai-section.bottom { border-left: 5px solid #ef4444; }
+        .ai-section-title {
+            font-size: 14px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .ai-branch-item {
+            margin-bottom: 12px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #e2e8f0;
+        }
+        .ai-branch-item:last-child { border-bottom: none; margin-bottom: 0; }
+        .ai-branch-name {
+            font-size: 13px;
+            font-weight: 800;
+            color: var(--primary-dark);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ai-branch-score {
+            font-size: 11px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: #f1f5f9;
+            color: #64748b;
+        }
+        .ai-coaching-text {
+            font-size: 12px;
+            line-height: 1.6;
+            color: #475569;
+            margin-top: 5px;
+        }
+        .ai-coaching-text b { color: var(--primary-dark); }
+        .ai-badge {
+            font-size: 10px;
+            padding: 1px 4px;
+            border-radius: 3px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .ai-badge.good { background: #dcfce7; color: #166534; }
+        .ai-badge.bad { background: #fee2e2; color: #991b1b; }
+        .ai-badge.warn { background: #fef08a; color: #854d0e; }
     </style>
 </head>
 <body>
@@ -368,6 +455,8 @@
                 </div>
             </div>
 
+            <div id="ai-report-container"></div>
+
             <div class="table-card" style="margin-top: 15px; padding: 20px;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
                     <h2 style="margin: 0; font-size: 18px; font-weight: 800; color: var(--primary-dark); letter-spacing: -0.5px;">정지 / 부실 현황 상세 (지사별)</h2>
@@ -416,23 +505,23 @@
 <script>
     // Data Updated: 2026-03-30 (v10) - 精密集計 반영
     const HQ_DATA = [
-        { name: "강남/서부", total_c: 1245, total_v: 73688, def_c: 231, def_v: 14666, etc_c: 102, etc_v: 9307, pay_c: 471, pay_v: 15265, gen_c: 217, gen_v: 12769, base_c: 122059, base_v: 6822963, base_e_c: 85000, base_e_v: 5816875 },
-        { name: "강북/강원", total_c: 922, total_v: 59390, def_c: 135, def_v: 10253, etc_c: 146, etc_v: 12634, pay_c: 229, pay_v: 10188, gen_c: 123, gen_v: 9024, base_c: 91287, base_v: 5998990, base_e_c: 56153, base_e_v: 4859230 },
-        { name: "부산/경남", total_c: 595, total_v: 29624, def_c: 103, def_v: 5121, etc_c: 44, etc_v: 2699, pay_c: 150, pay_v: 4355, gen_c: 95, gen_v: 4627, base_c: 63978, base_v: 2821333, base_e_c: 44000, base_e_v: 2699000 },
-        { name: "전남/전북", total_c: 1024, total_v: 43591, def_c: 259, def_v: 9745, etc_c: 189, etc_v: 8264, pay_c: 320, pay_v: 10024, gen_c: 252, gen_v: 9454, base_c: 67815, base_v: 2945338, base_e_c: 42000, base_e_v: 2665806 },
-        { name: "충남/충북", total_c: 199, total_v: 15659, def_c: 5, def_v: 864, etc_c: 5, etc_v: 864, pay_c: 0, pay_v: 0, gen_c: 5, gen_v: 864, base_c: 52368, base_v: 3011346, base_e_c: 50000, base_e_v: 2880000 },
-        { name: "대구/경북", total_c: 502, total_v: 26678, def_c: 91, def_v: 7904, etc_c: 60, etc_v: 6681, pay_c: 152, pay_v: 4328, gen_c: 85, gen_v: 7172, base_c: 47810, base_v: 2319826, base_e_c: 33333, base_e_v: 2024545 }
+        { name: "강남/서부", total_c: 1245, total_v: 73688, def_c: 231, def_v: 14666, etc_c: 102, etc_v: 9307, pay_c: 471, pay_v: 15265, gen_c: 217, gen_v: 12769, base_c: 122059, base_v: 6822963, base_e_c: 85000, base_e_v: 5816875, p_rate: 126 },
+        { name: "강북/강원", total_c: 922, total_v: 59390, def_c: 135, def_v: 10253, etc_c: 146, etc_v: 12634, pay_c: 229, pay_v: 10188, gen_c: 123, gen_v: 9024, base_c: 91287, base_v: 5998990, base_e_c: 56153, base_e_v: 4859230, p_rate: 60 },
+        { name: "부산/경남", total_c: 595, total_v: 29624, def_c: 103, def_v: 5121, etc_c: 44, etc_v: 2699, pay_c: 150, pay_v: 4355, gen_c: 95, gen_v: 4627, base_c: 63978, base_v: 2821333, base_e_c: 44000, base_e_v: 2699000, p_rate: 97 },
+        { name: "전남/전북", total_c: 1024, total_v: 43591, def_c: 259, def_v: 9745, etc_c: 189, etc_v: 8264, pay_c: 320, pay_v: 10024, gen_c: 252, gen_v: 9454, base_c: 67815, base_v: 2945338, base_e_c: 42000, base_e_v: 2665806, p_rate: 93 },
+        { name: "충남/충북", total_c: 199, total_v: 15659, def_c: 5, def_v: 864, etc_c: 5, etc_v: 864, pay_c: 0, pay_v: 0, gen_c: 5, gen_v: 864, base_c: 52368, base_v: 3011346, base_e_c: 50000, base_e_v: 2880000, p_rate: 197 },
+        { name: "대구/경북", total_c: 502, total_v: 26678, def_c: 91, def_v: 7904, etc_c: 60, etc_v: 6681, pay_c: 152, pay_v: 4328, gen_c: 85, gen_v: 7172, base_c: 47810, base_v: 2319826, base_e_c: 33333, base_e_v: 2024545, p_rate: 115 }
     ];
 
     const BRANCH_DATA = [
-        { name: "중앙", total_c: 70, total_v: 6894, def_c: 24, def_v: 2325, etc_c: 24, etc_v: 2641, pay_c: 7, pay_v: 686, gen_c: 23, gen_v: 2175, base_c: 12727, base_v: 696363, base_e_c: 8571, base_e_v: 550208 },
-        { name: "강북", total_c: 70, total_v: 4590, def_c: 9, def_v: 695, etc_c: 10, etc_v: 611, pay_c: 8, pay_v: 296, gen_c: 7, gen_v: 295, base_c: 11290, base_v: 882692, base_e_c: 7692, base_e_v: 763750 },
-        { name: "서대문", total_c: 84, total_v: 8421, def_c: 27, def_v: 3365, etc_c: 26, etc_v: 3446, pay_c: 10, pay_v: 562, gen_c: 27, gen_v: 3365, base_c: 8842, base_v: 539807, base_e_c: 6341, base_e_v: 459466 },
-        { name: "고양", total_c: 192, total_v: 13397, def_c: 34, def_v: 2010, etc_c: 22, etc_v: 1707, pay_c: 31, pay_v: 1344, gen_c: 26, gen_v: 1397, base_c: 13241, base_v: 641000, base_e_c: 9166, base_e_v: 517272 },
-        { name: "의정부", total_c: 85, total_v: 5047, def_c: 4, def_v: 108, etc_c: 6, etc_v: 361, pay_c: 10, pay_v: 490, gen_c: 4, gen_v: 108, base_c: 9770, base_v: 509797, base_e_c: 6000, base_e_v: 361000 },
-        { name: "남양주", total_c: 101, total_v: 5449, def_c: 8, def_v: 536, etc_c: 10, etc_v: 765, pay_c: 29, pay_v: 1378, gen_c: 7, gen_v: 471, base_c: 9619, base_v: 523942, base_e_c: 6250, base_e_v: 402631 },
-        { name: "강릉", total_c: 96, total_v: 6242, def_c: 9, def_v: 467, etc_c: 16, etc_v: 1326, pay_c: 26, pay_v: 1384, gen_c: 9, gen_v: 467, base_c: 10434, base_v: 487656, base_e_c: 5714, base_e_v: 348947 },
-        { name: "원주", total_c: 224, total_v: 9350, def_c: 20, def_v: 747, etc_c: 32, etc_v: 1777, pay_c: 108, pay_v: 4048, gen_c: 20, gen_v: 747, base_c: 15342, base_v: 766393, base_e_c: 7272, base_e_v: 507714 }
+        { name: "중앙", total_c: 70, total_v: 6894, def_c: 24, def_v: 2325, etc_c: 24, etc_v: 2641, pay_c: 7, pay_v: 686, gen_c: 23, gen_v: 2175, base_c: 12727, base_v: 696363, base_e_c: 8571, base_e_v: 550208, p_rate: 32 },
+        { name: "강북", total_c: 70, total_v: 4590, def_c: 9, def_v: 695, etc_c: 10, etc_v: 611, pay_c: 8, pay_v: 296, gen_c: 7, gen_v: 295, base_c: 11290, base_v: 882692, base_e_c: 7692, base_e_v: 763750, p_rate: 19 },
+        { name: "서대문", total_c: 84, total_v: 8421, def_c: 27, def_v: 3365, etc_c: 26, etc_v: 3446, pay_c: 10, pay_v: 562, gen_c: 27, gen_v: 3365, base_c: 8842, base_v: 539807, base_e_c: 6341, base_e_v: 459466, p_rate: 87 },
+        { name: "고양", total_c: 192, total_v: 13397, def_c: 34, def_v: 2010, etc_c: 22, etc_v: 1707, pay_c: 31, pay_v: 1344, gen_c: 26, gen_v: 1397, base_c: 13241, base_v: 641000, base_e_c: 9166, base_e_v: 517272, p_rate: 33 },
+        { name: "의정부", total_c: 85, total_v: 5047, def_c: 4, def_v: 108, etc_c: 6, etc_v: 361, pay_c: 10, pay_v: 490, gen_c: 4, gen_v: 108, base_c: 9770, base_v: 509797, base_e_c: 6000, base_e_v: 361000, p_rate: 73 },
+        { name: "남양주", total_c: 101, total_v: 5449, def_c: 8, def_v: 536, etc_c: 10, etc_v: 765, pay_c: 29, pay_v: 1378, gen_c: 7, gen_v: 471, base_c: 9619, base_v: 523942, base_e_c: 6250, base_e_v: 402631, p_rate: 29 },
+        { name: "강릉", total_c: 96, total_v: 6242, def_c: 9, def_v: 467, etc_c: 16, etc_v: 1326, pay_c: 26, pay_v: 1384, gen_c: 9, gen_v: 467, base_c: 10434, base_v: 487656, base_e_c: 5714, base_e_v: 348947, p_rate: 93 },
+        { name: "원주", total_c: 224, total_v: 9350, def_c: 20, def_v: 747, etc_c: 32, etc_v: 1777, pay_c: 108, pay_v: 4048, gen_c: 20, gen_v: 747, base_c: 15342, base_v: 766393, base_e_c: 7272, base_e_v: 507714, p_rate: 124 }
     ];
 
     let currentView = 'hq';
@@ -567,6 +656,112 @@
         return `<span class="status-chip ${cls}">${icon} ${pct(rate)}</span>`;
     }
 
+    function generateAIReport(data) {
+        if (!data || data.length === 0) return;
+        
+        const reportContainer = document.getElementById('ai-report-container');
+        
+        // Calculate scores for each branch
+        const scoredData = data.map(item => {
+            const totalRate = item.total_c / item.base_c;
+            const defRate = item.def_c / item.base_c;
+            const pRate = item.p_rate;
+            
+            // Score components (0-100, higher is better)
+            const sTotal = Math.max(0, 100 - (totalRate / 0.02) * 100);
+            const sDef = Math.max(0, 100 - (defRate / 0.005) * 100);
+            
+            // P-Value Score: Best at 80-100%. Over 100% is bad, under 50% is bad.
+            let sP = 0;
+            if (pRate >= 80 && pRate <= 100) sP = 100;
+            else if (pRate > 100) sP = Math.max(0, 100 - (pRate - 100)); // Drop score as it goes over 100
+            else sP = pRate; // Linear for under 80
+            
+            const totalScore = (sTotal * 0.35) + (sDef * 0.35) + (sP * 0.30);
+            
+            return { ...item, totalRate, defRate, totalScore };
+        });
+
+        // Sort by total score
+        const sorted = [...scoredData].sort((a, b) => b.totalScore - a.totalScore);
+        const top3 = sorted.slice(0, 3);
+        const bottom3 = [...sorted].reverse().slice(0, 3);
+
+        const getCoachingText = (item) => {
+            const tr = pct(item.totalRate);
+            const dr = pct(item.defRate);
+            const pr = item.p_rate + '%';
+            
+            let feedback = `<b>${item.name}</b> 지사는 `;
+            
+            // Analyze Strengths
+            let strengths = [];
+            if (item.totalRate < 0.01) strengths.push(`총정지율(<b>${tr}</b>) 관리`);
+            if (item.defRate < 0.002) strengths.push(`부실(L형) 방어`);
+            if (item.p_rate >= 70 && item.p_rate <= 100) strengths.push(`리텐션 P값(<b>${pr}</b>)의 효율적 집행`);
+            
+            // Analyze Weaknesses
+            let weaknesses = [];
+            if (item.totalRate > 0.013) weaknesses.push(`높은 정지율(<b>${tr}</b>)`);
+            if (item.def_c > 20) weaknesses.push(`부실 채권(<b>${item.def_c}건</b>) 증가`);
+            if (item.p_rate > 100) weaknesses.push(`P값 예산 초과(<b>${pr}</b>)`);
+            if (item.p_rate < 50) weaknesses.push(`방어 도구(P값) 활용 미흡(<b>${pr}</b>)`);
+
+            if (strengths.length > 0) {
+                feedback += `${strengths.join(', ')} 측면에서 우수한 성과를 보이고 있으나, `;
+            } else {
+                feedback += `전반적인 지표 관리가 정체된 상태이며, `;
+            }
+
+            if (weaknesses.length > 0) {
+                feedback += `현재 ${weaknesses.join(', ')} 부분에서 개선 노력이 절실히 필요합니다. 특히 현장 밀착 코칭을 통한 지표 조기 정상화가 요구됩니다.`;
+            } else {
+                feedback += `특별한 결점 없이 안정적인 운영을 이어가고 있습니다. 우수 사례 공유를 통한 본부 전체 역량 상향 평준화에 기여가 기대됩니다.`;
+            }
+            
+            return feedback;
+        };
+
+        let html = `
+            <div class="ai-report-card">
+                <div class="ai-report-header">
+                    <i class="fas fa-robot"></i>
+                    <h2>AI 성과 분석 및 실적 코칭 리포트</h2>
+                </div>
+                <div class="ai-report-grid">
+                    <div class="ai-section top">
+                        <div class="ai-section-title" style="color: #10b981;">
+                            <i class="fas fa-trophy"></i> 🏆 성과 우수 지사 (TOP 3)
+                        </div>
+                        ${top3.map(item => `
+                            <div class="ai-branch-item">
+                                <div class="ai-branch-name">
+                                    ${item.name} <span class="ai-branch-score">종합 점수: ${Math.round(item.totalScore)}점</span>
+                                </div>
+                                <div class="ai-coaching-text">${getCoachingText(item)}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="ai-section bottom">
+                        <div class="ai-section-title" style="color: #ef4444;">
+                            <i class="fas fa-exclamation-circle"></i> ⚠️ 집중 관리 지사 (하위 3)
+                        </div>
+                        ${bottom3.map(item => `
+                            <div class="ai-branch-item">
+                                <div class="ai-branch-name">
+                                    ${item.name} <span class="ai-branch-score">종합 점수: ${Math.round(item.totalScore)}점</span>
+                                </div>
+                                <div class="ai-coaching-text">${getCoachingText(item)}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        reportContainer.innerHTML = html;
+    }
+
     function render() {
         const data = currentView === 'hq' ? HQ_DATA : BRANCH_DATA;
         const tbody = document.getElementById('table-body');
@@ -671,6 +866,9 @@
         } else {
             tfoot.style.display = 'none';
         }
+
+        // Generate AI Report (Use the current dataset: HQ or Branch)
+        generateAIReport(data);
 
         updateKPIs(sums);
         updateChart(filteredData);
