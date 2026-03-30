@@ -65,6 +65,17 @@
             --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
+        .kpi-header {
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .kpi-header:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
         body {
             font-family: 'Pretendard', 'Malgun Gothic', '맑은 고딕', sans-serif;
             background-color: var(--bg-body);
@@ -808,7 +819,7 @@
 
         <div class="kpi-section">
             <div class="kpi-box">
-                <div class="kpi-header bg-navy">① 관리고객 재계약 활동 (목표/실적 관리)</div>
+                <div class="kpi-header bg-navy" onclick="location.href='index.html?view=renewal'">① 관리고객 재계약 활동 (목표/실적 관리)</div>
                 <div class="target-cards">
                     <div class="t-card highlight">
                         <div class="t-head">① 만기도래_신규(1st)<br><span>※ '26년 만기도래 (1월~12월)</span></div>
@@ -828,7 +839,7 @@
             </div>
 
             <div class="kpi-box">
-                <div class="kpi-header bg-green">② 사전리텐션 활동 (방문율 관리)</div>
+                <div class="kpi-header bg-green" onclick="location.href='index.html?view=pre-retention'">② 사전리텐션 활동 (방문율 관리)</div>
                 <div class="steps-wrapper">
                     <div class="step">
                         <div class="hexagon hex-1">1월</div>
@@ -840,7 +851,7 @@
                     </div>
                     <div class="step">
                         <div class="hexagon hex-1">3월</div>
-                        <div class="data-card"><span class="val">231건/97건</span><span class="pct">(42%)</span></div>
+                        <div class="data-card"><span class="val">231건/155건</span><span class="pct">(67%)</span></div>
                     </div>
                 </div>
                 <div class="arrow-box">~12월 매월 대상 선정 및 VOC지령(담당SP)</div>
@@ -881,7 +892,7 @@
                     </div>
                 </div>
                 <div class="meta-info">
-                    <strong>집계일자 :</strong> 2026. 03. 18 기준<br>
+                    <strong>집계일자 :</strong> 2026. 03. 30 기준<br>
                     <strong>단위 :</strong> 건, 천원, %
                 </div>
             </div>
@@ -930,54 +941,54 @@
             "1월": {
                 rows: [
                     { name: "중앙", total: [1217, 1, 375], new: [680, 0, 0], renew: [14, 0, 0], expire: [523, 1, 375] },
-                    { name: "강북", total: [704, 3, 298], new: [389, 0, 0], renew: [18, 0, 0], expire: [297, 3, 298] },
+                    { name: "강북", total: [704, 0, 0], new: [389, 0, 0], renew: [18, 0, 0], expire: [297, 0, 0] },
                     { name: "서대문", total: [929, 1, 275], new: [607, 0, 0], renew: [15, 0, 0], expire: [308, 1, 275] },
-                    { name: "고양", total: [952, 12, 1254], new: [632, 0, 0], renew: [30, 3, 341], expire: [291, 9, 913] },
-                    { name: "의정부", total: [740, 5, 779], new: [395, 0, 0], renew: [37, 0, 0], expire: [308, 5, 779] },
+                    { name: "고양", total: [952, 14, 1388], new: [632, 0, 0], renew: [30, 3, 341], expire: [291, 11, 1047] },
+                    { name: "의정부", total: [740, 6, 879], new: [395, 0, 0], renew: [37, 0, 0], expire: [308, 6, 879] },
                     { name: "남양주", total: [679, 0, 0], new: [385, 0, 0], renew: [20, 0, 0], expire: [275, 0, 0] },
                     { name: "강릉", total: [594, 1, 91], new: [355, 0, 0], renew: [18, 0, 0], expire: [221, 1, 91] },
-                    { name: "원주", total: [1034, 19, 1613], new: [560, 0, 0], renew: [62, 1, 100], expire: [412, 18, 1513] }
+                    { name: "원주", total: [1034, 19, 1660], new: [560, 0, 0], renew: [62, 1, 100], expire: [412, 18, 1560] }
                 ],
-                footer: { total: [6849, 42, 4685], new: [4003, 0, 0], renew: [212, 4, 441], expire: [2634, 38, 4244] }
+                footer: { total: [6849, 42, 4668], new: [4003, 0, 0], renew: [212, 4, 441], expire: [2634, 38, 4227] }
             },
             "2월": {
                 rows: [
                     { name: "중앙", total: [1217, 6, 560], new: [680, 0, 0], renew: [14, 0, 0], expire: [523, 6, 560] },
-                    { name: "강북", total: [704, 0, 0], new: [389, 0, 0], renew: [18, 0, 0], expire: [297, 0, 0] },
+                    { name: "강북", total: [704, 3, 298], new: [389, 0, 0], renew: [18, 0, 0], expire: [297, 3, 298] },
                     { name: "서대문", total: [929, 1, 282], new: [607, 0, 0], renew: [15, 0, 0], expire: [308, 1, 282] },
                     { name: "고양", total: [952, 3, 337], new: [632, 0, 0], renew: [30, 1, 88], expire: [291, 2, 249] },
-                    { name: "의정부", total: [740, 4, 316], new: [395, 0, 0], renew: [37, 0, 0], expire: [308, 3, 271] },
-                    { name: "남양주", total: [679, 0, 0], new: [385, 0, 0], renew: [20, 0, 0], expire: [275, 0, 0] },
+                    { name: "의정부", total: [740, 3, 271], new: [395, 0, 0], renew: [37, 0, 0], expire: [308, 3, 271] },
+                    { name: "남양주", total: [679, 1, 44], new: [385, 0, 0], renew: [20, 0, 0], expire: [275, 1, 44] },
                     { name: "강릉", total: [594, 1, 70], new: [355, 0, 0], renew: [18, 0, 0], expire: [221, 1, 70] },
                     { name: "원주", total: [1034, 5, 881], new: [560, 0, 0], renew: [62, 1, 536], expire: [412, 4, 345] }
                 ],
-                footer: { total: [6849, 20, 2445], new: [4003, 0, 0], renew: [212, 2, 624], expire: [2634, 18, 1821] }
+                footer: { total: [6849, 23, 2742], new: [4003, 0, 0], renew: [212, 2, 624], expire: [2634, 21, 2118] }
             },
             "3월": {
                 rows: [
                     { name: "중앙", total: [1217, 4, 406], new: [680, 3, 325], renew: [14, 0, 0], expire: [523, 1, 81] },
                     { name: "강북", total: [704, 1, 95], new: [389, 1, 95], renew: [18, 0, 0], expire: [297, 0, 0] },
-                    { name: "서대문", total: [929, 3, 263], new: [607, 3, 263], renew: [15, 0, 0], expire: [308, 0, 0] },
-                    { name: "고양", total: [952, 19, 1555], new: [632, 2, 117], renew: [30, 0, 0], expire: [291, 17, 1437] },
-                    { name: "의정부", total: [740, 12, 1123], new: [395, 5, 232], renew: [37, 1, 163], expire: [308, 7, 773] },
-                    { name: "남양주", total: [679, 9, 1146], new: [385, 6, 981], renew: [20, 0, 0], expire: [275, 3, 165] },
+                    { name: "서대문", total: [929, 4, 371], new: [607, 3, 263], renew: [15, 0, 0], expire: [308, 1, 108] },
+                    { name: "고양", total: [952, 18, 1616], new: [632, 2, 117], renew: [30, 0, 0], expire: [291, 16, 1499] },
+                    { name: "의정부", total: [740, 16, 1663], new: [395, 8, 652], renew: [37, 1, 163], expire: [308, 7, 848] },
+                    { name: "남양주", total: [679, 9, 1302], new: [385, 7, 1181], renew: [20, 0, 0], expire: [275, 2, 121] },
                     { name: "강릉", total: [594, 0, 0], new: [355, 0, 0], renew: [18, 0, 0], expire: [221, 0, 0] },
-                    { name: "원주", total: [1034, 3, 490], new: [560, 1, 180], renew: [62, 0, 0], expire: [412, 2, 310] }
+                    { name: "원주", total: [1034, 12, 1135], new: [560, 1, 180], renew: [62, 0, 0], expire: [412, 11, 955] }
                 ],
-                footer: { total: [6849, 20, 5079], new: [4003, 21, 2193], renew: [212, 1, 163], expire: [2634, 29, 2722] }
+                footer: { total: [6849, 64, 6588], new: [4003, 25, 2813], renew: [212, 1, 163], expire: [2634, 38, 3612] }
             },
             "1Q 합계": {
                 rows: [
                     { name: "중앙", total: [3652, 11, 1341], new: [2041, 3, 325], renew: [42, 0, 0], expire: [1569, 8, 1016] },
                     { name: "강북", total: [2112, 4, 393], new: [1168, 1, 95], renew: [53, 0, 0], expire: [891, 3, 298] },
-                    { name: "서대문", total: [2788, 5, 820], new: [1822, 3, 263], renew: [44, 0, 0], expire: [923, 2, 557] },
-                    { name: "고양", total: [2857, 34, 3145], new: [1895, 2, 117], renew: [89, 4, 429], expire: [873, 28, 2599] },
-                    { name: "의정부", total: [2219, 21, 2218], new: [1186, 5, 232], renew: [110, 1, 163], expire: [923, 15, 1823] },
-                    { name: "남양주", total: [2038, 9, 1146], new: [1154, 6, 981], renew: [59, 0, 0], expire: [826, 3, 165] },
+                    { name: "서대문", total: [2788, 6, 928], new: [1822, 3, 263], renew: [44, 0, 0], expire: [923, 3, 665] },
+                    { name: "고양", total: [2857, 35, 3341], new: [1895, 2, 117], renew: [89, 4, 429], expire: [873, 29, 2794] },
+                    { name: "의정부", total: [2219, 25, 2813], new: [1186, 8, 652], renew: [110, 1, 163], expire: [923, 16, 1998] },
+                    { name: "남양주", total: [2038, 10, 1346], new: [1154, 7, 1181], renew: [59, 0, 0], expire: [826, 3, 165] },
                     { name: "강릉", total: [1781, 2, 161], new: [1065, 0, 0], renew: [53, 0, 0], expire: [663, 2, 161] },
-                    { name: "원주", total: [3101, 27, 2984], new: [1680, 1, 180], renew: [186, 2, 636], expire: [1236, 24, 2168] }
+                    { name: "원주", total: [3101, 36, 3676], new: [1680, 1, 180], renew: [186, 2, 636], expire: [1236, 33, 2860] }
                 ],
-                footer: { total: [20548, 82, 12208], new: [12010, 21, 2193], renew: [635, 7, 1228], expire: [7903, 85, 8787] }
+                footer: { total: [20548, 129, 13998], new: [12010, 25, 2813], renew: [635, 7, 1228], expire: [7903, 97, 9956] }
             }
         };
 
@@ -1001,9 +1012,16 @@
             const tbody = document.getElementById('tableBody');
             const tfoot = document.getElementById('tableFoot');
             const monthData = tableData[month];
+            const userBranch = window.USER_SESSION ? window.USER_SESSION.branch : null;
             
             let bodyHtml = '';
-            monthData.rows.forEach(r => {
+            let rowsToRender = monthData.rows;
+
+            if (userBranch && userBranch !== '전체' && userBranch !== '본부' && userBranch !== '강북강원본부') {
+                rowsToRender = rowsToRender.filter(r => r.name.includes(userBranch) || userBranch.includes(r.name));
+            }
+
+            rowsToRender.forEach(r => {
                 bodyHtml += `
                     <tr>
                         <td>${r.name}</td>
