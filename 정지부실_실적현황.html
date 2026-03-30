@@ -344,8 +344,8 @@
             </div>
 
             <div class="table-card" style="margin-top: 15px;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; border-bottom: 2px solid var(--primary-dark); padding-bottom: 8px;">
-                    <h2 style="margin: 0; font-size: 16px; font-weight: 800; color: var(--primary-dark);"><i class="fas fa-list-ol" style="margin-right: 8px;"></i>정지 / 부실 현황 상세 (지사별)</h2>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 2px solid var(--primary-dark); padding-bottom: 10px;">
+                    <h2 style="margin: 0; font-size: 18px; font-weight: 800; color: var(--primary-dark); letter-spacing: -0.5px;">정지 / 부실 현황 상세 (지사별)</h2>
                     <div style="font-size: 11px; font-weight: 700; color: var(--text-muted);">[단위 : 건, 천원, %]</div>
                 </div>
                 <table id="main-table">
@@ -616,15 +616,15 @@
             `;
             
             tfoot.innerHTML = `
-                <tr style="background:#0f172a; color:white; font-weight:800;">
-                    <td class="sticky-col sep-r" style="background:#0f172a; color:white; font-size:13px;">합 계</td>
-                    <td class="border-thin-r">${footPF(sums.total_c, sums.total_v)}</td><td class="sep-r">${footRT(sums.total_c, sums.total_v, sums.base_c, sums.base_v, 'total')}</td>
-                    <td class="border-thin-r">${footPF(sums.def_c, sums.def_v)}</td><td class="sep-r">${footRT(sums.def_c, sums.def_v, sums.base_c, sums.base_v, 'sub')}</td>
-                    <td class="border-thin-r">${footPF(sums.etc_c, sums.etc_v)}</td><td class="sep-r">${footRT(sums.etc_c, sums.etc_v, sums.base_e_c, sums.base_e_v, 'sub')}</td>
-                    <td class="border-thin-r">${footPF(sums.pay_c, sums.pay_v)}</td><td class="sep-r">${footRT(sums.pay_c, sums.pay_v, sums.base_c, sums.base_v, 'sub')}</td>
-                    <td class="border-thin-r">${footPF(sums.gen_c, sums.gen_v)}</td><td class="sep-r">${footRT(sums.gen_c, sums.gen_v, sums.base_c, sums.base_v, 'sub')}</td>
-                    <td class="border-thin-r">${footPF(ts_c, ts_v)}</td><td class="sep-r">${footRT(ts_c, ts_v, sums.base_c, sums.base_v, 'acc')}</td>
-                    <td class="txt-num" style="padding: 2px;">
+                <tr style="background:#0f172a; color:white; font-weight:800; border-top: 3px solid #1e293b;">
+                    <td class="sticky-col sep-r" style="background:#0f172a; color:white; font-size:13px; border-top: 3px solid #1e293b;">합 계</td>
+                    <td class="border-thin-r" style="border-top: 3px solid #1e293b;">${footPF(sums.total_c, sums.total_v)}</td><td class="sep-r" style="border-top: 3px solid #1e293b;">${footRT(sums.total_c, sums.total_v, sums.base_c, sums.base_v, 'total')}</td>
+                    <td class="border-thin-r" style="border-top: 3px solid #1e293b;">${footPF(sums.def_c, sums.def_v)}</td><td class="sep-r" style="border-top: 3px solid #1e293b;">${footRT(sums.def_c, sums.def_v, sums.base_c, sums.base_v, 'sub')}</td>
+                    <td class="border-thin-r" style="border-top: 3px solid #1e293b;">${footPF(sums.etc_c, sums.etc_v)}</td><td class="sep-r" style="border-top: 3px solid #1e293b;">${footRT(sums.etc_c, sums.etc_v, sums.base_e_c, sums.base_e_v, 'sub')}</td>
+                    <td class="border-thin-r" style="border-top: 3px solid #1e293b;">${footPF(sums.pay_c, sums.pay_v)}</td><td class="sep-r" style="border-top: 3px solid #1e293b;">${footRT(sums.pay_c, sums.pay_v, sums.base_c, sums.base_v, 'sub')}</td>
+                    <td class="border-thin-r" style="border-top: 3px solid #1e293b;">${footPF(sums.gen_c, sums.gen_v)}</td><td class="sep-r" style="border-top: 3px solid #1e293b;">${footRT(sums.gen_c, sums.gen_v, sums.base_c, sums.base_v, 'sub')}</td>
+                    <td class="border-thin-r" style="border-top: 3px solid #1e293b;">${footPF(ts_c, ts_v)}</td><td class="sep-r" style="border-top: 3px solid #1e293b;">${footRT(ts_c, ts_v, sums.base_c, sums.base_v, 'acc')}</td>
+                    <td class="txt-num" style="padding: 2px; border-top: 3px solid #1e293b;">
                         <div style="background: rgba(255,255,255,0.1); border-radius:4px; margin-bottom:1px; padding: 2px 0;">C: ${pct0(ts_c > 0 ? sums.pay_c/ts_c : 0)}</div>
                         <div style="background: rgba(255,255,255,0.1); border-radius:4px; padding: 2px 0;">V: ${pct0(ts_v > 0 ? sums.pay_v/ts_v : 0)}</div>
                     </td>
