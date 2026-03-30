@@ -102,14 +102,13 @@
         /* Expert Table Styling */
         .table-card { 
             background: white; border-radius: 12px; box-shadow: var(--shadow-md); padding: 0; 
-            overflow: hidden; border: 1px solid var(--border-light); max-height: 85vh;
-            border-collapse: separate; /* Required for border-radius clipping */
+            overflow: hidden; border: none; max-height: 85vh;
         }
         table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 11px; white-space: nowrap; }
-        .table-wrap { overflow: auto; max-height: inherit; } /* Added wrap for better clipping */
+        .table-wrap { overflow: auto; max-height: inherit; }
         
         /* Table Borders: Horizontal Only */
-        th, td { padding: 12px 10px; border-bottom: 1px solid #E5E7EB; border-right: none; border-left: none; vertical-align: middle; text-align: center; }
+        th, td { padding: 12px 10px; border-bottom: 1px solid #E5E7EB; border-top: none; border-right: none; border-left: none; vertical-align: middle; }
         
         /* Navy Border: Top & Bottom of visible table area */
         thead tr:first-child th { border-top: 2px solid #1E293B !important; }
@@ -127,7 +126,7 @@
         th:first-child, td:first-child {
             position: sticky; left: 0; z-index: 40; background-color: #F1F5F9;
             border-right: 1px solid #E5E7EB !important;
-            text-align: center; /* Center aligned as requested */
+            text-align: left; padding-left: 14px;
         }
         td:first-child { background-color: white; font-weight: 700; z-index: 10; }
         
@@ -586,15 +585,15 @@
             const tr = document.createElement('tr');
             if (item.name === '강북/강원') tr.className = 'highlight-row';
             
-            // Helper for 2-line performance cells - Center aligned
+            // Helper for 2-line performance cells - Right aligned for numbers
             const cellPF = (c, v) => `
-                <div class="txt-num text-center">${fmt(c)}</div>
-                <div class="txt-num text-center" style="font-size:10px; opacity:0.6;">${fmt(v)}</div>
+                <div class="txt-num text-right">${fmt(c)}</div>
+                <div class="txt-num text-right" style="font-size:10px; opacity:0.55;">${fmt(v)}</div>
             `;
             // Helper for 2-line rate cells - Center aligned with chips
             const cellRT = (c_rate, v_rate, cat) => `
                 <div class="text-center">${getRateIcon(c_rate, cat)}</div>
-                <div class="txt-num text-center" style="font-size:10px; opacity:0.6; margin-top:2px;">${pct(v_rate)}</div>
+                <div class="txt-num text-center" style="font-size:10px; opacity:0.55; margin-top:2px;">${pct(v_rate)}</div>
             `;
 
             const tc_s = item.base_c > 0 ? item.total_c / item.base_c : 0;
@@ -644,8 +643,8 @@
             };
             
             const footPF = (c, v) => `
-                <div class="txt-num text-center" style="color:white; font-weight:800;">${fmt(c)}</div>
-                <div class="txt-num text-center" style="font-size:10px; color:rgba(255,255,255,0.6);">${fmt(v)}</div>
+                <div class="txt-num text-right" style="color:white; font-weight:800;">${fmt(c)}</div>
+                <div class="txt-num text-right" style="font-size:10px; color:rgba(255,255,255,0.55);">${fmt(v)}</div>
             `;
             
             tfoot.innerHTML = `
