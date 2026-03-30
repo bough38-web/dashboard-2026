@@ -343,9 +343,10 @@
                 </div>
             </div>
 
-            <div class="table-card" style="margin-top: 10px;">
-                <div style="text-align: right; font-size: 11px; font-weight: 700; margin-bottom: 8px; color: var(--text-muted);">
-                    [단위 : 건, 천원, %]
+            <div class="table-card" style="margin-top: 15px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; border-bottom: 2px solid var(--primary-dark); padding-bottom: 8px;">
+                    <h2 style="margin: 0; font-size: 16px; font-weight: 800; color: var(--primary-dark);"><i class="fas fa-list-ol" style="margin-right: 8px;"></i>정지 / 부실 현황 상세 (지사별)</h2>
+                    <div style="font-size: 11px; font-weight: 700; color: var(--text-muted);">[단위 : 건, 천원, %]</div>
                 </div>
                 <table id="main-table">
                     <thead>
@@ -601,24 +602,31 @@
             tfoot.style.display = 'table-row-group';
             const ts_c = sums.pay_c + sums.gen_c;
             const ts_v = sums.pay_v + sums.gen_v;
-            const footRT = (c, v, bc, bv) => {
+            const footRT = (c, v, bc, bv, cat) => {
                 const cr = bc > 0 ? c/bc : 0;
                 const vr = bv > 0 ? v/bv : 0;
-                return `<div class="txt-num ${getHeatColor(cr)}">${pct(cr)}</div><div class="txt-num ${getHeatColor(vr)}" style="font-size:10px; opacity:0.7;">${pct(vr)}</div>`;
+                return `
+                    <div class="txt-num" style="color:white; font-weight:800;">${getRateIcon(cr, cat)} ${pct(cr)}</div>
+                    <div class="txt-num" style="font-size:10px; color:rgba(255,255,255,0.8);">${pct(vr)}</div>
+                `;
             };
+            const footPF = (c, v) => `
+                <div class="txt-num" style="color:white; font-weight:800;">${fmt(c)}</div>
+                <div class="txt-num" style="font-size:10px; color:rgba(255,255,255,0.8);">${fmt(v)}</div>
+            `;
             
             tfoot.innerHTML = `
-                <tr style="background:#1e293b; color:white; font-weight:800;">
-                    <td class="sticky-col sep-r" style="background:#1e293b; color:white;">합계</td>
-                    <td class="border-thin-r" style="color:white; border-color: rgba(255,255,255,0.1) !important;">${fmt(sums.total_c)}<br><small style="color:white; opacity:0.8;">${fmt(sums.total_v)}</small></td><td class="sep-r">${footRT(sums.total_c, sums.total_v, sums.base_c, sums.base_v)}</td>
-                    <td class="bg-sub border-thin-r" style="background:#334155; color:white; border-color: rgba(255,255,255,0.1) !important;">${fmt(sums.def_c)}<br><small style="color:white; opacity:0.8;">${fmt(sums.def_v)}</small></td><td class="bg-sub sep-r" style="background:#334155;">${footRT(sums.def_c, sums.def_v, sums.base_c, sums.base_v)}</td>
-                    <td class="bg-sub border-thin-r" style="background:#334155; color:white; border-color: rgba(255,255,255,0.1) !important;">${fmt(sums.etc_c)}<br><small style="color:white; opacity:0.8;">${fmt(sums.etc_v)}</small></td><td class="bg-sub sep-r" style="background:#334155;">${footRT(sums.etc_c, sums.etc_v, sums.base_e_c, sums.base_e_v)}</td>
-                    <td class="border-thin-r" style="color:white; border-color: rgba(255,255,255,0.1) !important;">${fmt(sums.pay_c)}<br><small style="color:white; opacity:0.8;">${fmt(sums.pay_v)}</small></td><td class="sep-r">${footRT(sums.pay_c, sums.pay_v, sums.base_c, sums.base_v)}</td>
-                    <td class="border-thin-r" style="color:white; border-color: rgba(255,255,255,0.1) !important;">${fmt(sums.gen_c)}<br><small style="color:white; opacity:0.8;">${fmt(sums.gen_v)}</small></td><td class="sep-r">${footRT(sums.gen_c, sums.gen_v, sums.base_c, sums.base_v)}</td>
-                    <td class="bg-sub border-thin-r" style="background:#334155; color:white; border-color: rgba(255,255,255,0.1) !important;">${fmt(ts_c)}<br><small style="color:white; opacity:0.8;">${fmt(ts_v)}</small></td><td class="bg-sub sep-r" style="background:#334155;">${footRT(ts_c, ts_v, sums.base_c, sums.base_v)}</td>
+                <tr style="background:#0f172a; color:white; font-weight:800;">
+                    <td class="sticky-col sep-r" style="background:#0f172a; color:white; font-size:13px;">합 계</td>
+                    <td class="border-thin-r">${footPF(sums.total_c, sums.total_v)}</td><td class="sep-r">${footRT(sums.total_c, sums.total_v, sums.base_c, sums.base_v, 'total')}</td>
+                    <td class="border-thin-r">${footPF(sums.def_c, sums.def_v)}</td><td class="sep-r">${footRT(sums.def_c, sums.def_v, sums.base_c, sums.base_v, 'sub')}</td>
+                    <td class="border-thin-r">${footPF(sums.etc_c, sums.etc_v)}</td><td class="sep-r">${footRT(sums.etc_c, sums.etc_v, sums.base_e_c, sums.base_e_v, 'sub')}</td>
+                    <td class="border-thin-r">${footPF(sums.pay_c, sums.pay_v)}</td><td class="sep-r">${footRT(sums.pay_c, sums.pay_v, sums.base_c, sums.base_v, 'sub')}</td>
+                    <td class="border-thin-r">${footPF(sums.gen_c, sums.gen_v)}</td><td class="sep-r">${footRT(sums.gen_c, sums.gen_v, sums.base_c, sums.base_v, 'sub')}</td>
+                    <td class="border-thin-r">${footPF(ts_c, ts_v)}</td><td class="sep-r">${footRT(ts_c, ts_v, sums.base_c, sums.base_v, 'acc')}</td>
                     <td class="txt-num" style="padding: 2px;">
-                        <div class="${getHeatColor(ts_c > 0 ? sums.pay_c/ts_c : 0)}" style="border-radius:4px; margin-bottom:1px; padding: 2px 0;">C: ${pct0(ts_c > 0 ? sums.pay_c/ts_c : 0)}</div>
-                        <div class="${getHeatColor(ts_v > 0 ? sums.pay_v/ts_v : 0)}" style="border-radius:4px; padding: 2px 0;">V: ${pct0(ts_v > 0 ? sums.pay_v/ts_v : 0)}</div>
+                        <div style="background: rgba(255,255,255,0.1); border-radius:4px; margin-bottom:1px; padding: 2px 0;">C: ${pct0(ts_c > 0 ? sums.pay_c/ts_c : 0)}</div>
+                        <div style="background: rgba(255,255,255,0.1); border-radius:4px; padding: 2px 0;">V: ${pct0(ts_v > 0 ? sums.pay_v/ts_v : 0)}</div>
                     </td>
                 </tr>
             `;
