@@ -99,47 +99,65 @@
         .kpi-box .unit { font-size: 11px; font-weight: 700; }
         .kpi-box .sub-val { font-size: 13px; font-weight: 700; margin-top: 1px; opacity: 0.9; }
 
-        .table-card { background: white; border-radius: 12px; box-shadow: var(--shadow-md); padding: 12px; overflow-x: auto; border: 1px solid var(--border-light); }
-        table { width: 100%; border-collapse: collapse; font-size: 10px; white-space: nowrap; text-align: center; }
-        th, td { padding: 10px 6px; border: 1px solid var(--border-light); }
-        th { background: #f8fafc; font-weight: 800; color: #334155; }
-        
-        /* Sticky Column Left Border */
-        th:first-child, td:first-child {
-            position: sticky; left: 0; z-index: 10; background-color: inherit;
-            border-left: 1px solid var(--primary-dark) !important;
-            border-right: 2px solid var(--border-medium) !important;
+        /* Expert Table Styling */
+        .table-card { 
+            background: white; border-radius: 12px; box-shadow: var(--shadow-md); padding: 0; 
+            overflow: auto; border: 1px solid var(--border-light); max-height: 85vh;
         }
-
-        .bg-total { background-color: #e0f2fe !important; }
-        .bg-defect { background-color: #fef2f2 !important; }
-        .bg-etc { background-color: #f5f3ff !important; }
-        .bg-pay { background-color: #fff7ed !important; }
-        .bg-orange { background-color: #fffbeb !important; }
-        .bg-gen { background-color: #f0fdf4 !important; }
-        .bg-blue-l { background-color: #f1f5f9 !important; }
-        .bg-purple-l { background-color: #f8fafc !important; }
-        .heat-sky { background: #e0f2fe !important; color: #0369a1 !important; }
-
-        .pdf-btn { background: #0f172a; color: white; border: none; padding: 12px 24px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px; float: right; }
+        table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 11px; white-space: nowrap; }
         
-        /* Boundary separators - Strengthened for Expert Layout */
-        .sep-r { border-right: 2px solid var(--primary-dark) !important; }
-        .sep-l { border-left: 2px solid var(--primary-dark) !important; }
-        .table-card thead tr:last-child th { border-bottom: 2px solid var(--primary-dark) !important; }
-        .table-card tfoot tr td { border-top: 2.5px solid var(--primary-dark) !important; border-bottom: 2.5px solid var(--primary-dark) !important; }
+        /* Table Borders: Horizontal Only */
+        th, td { padding: 12px 10px; border-bottom: 1px solid #E5E7EB; border-right: none; border-left: none; vertical-align: middle; }
+        
+        /* Navy Border: Top & Bottom of visible table area */
+        thead tr:first-child th { border-top: 2px solid #1E293B !important; }
+        
+        /* Header Styling */
+        thead th { background: #F1F5F9; font-weight: 800; color: #1E293B; position: sticky; top: 0; z-index: 30; }
+        thead tr:nth-child(2) th { top: 38px; } /* Offset for multi-row sticky header */
+        thead tr:nth-child(3) th { top: 70px; }
+        
+        /* White Gutters between groups */
+        .gutter-r { border-right: 4px solid white !important; }
+        
+        /* Sticky Column (구분) */
+        th:first-child, td:first-child {
+            position: sticky; left: 0; z-index: 40; background-color: #F1F5F9;
+            border-right: 1px solid #E5E7EB !important;
+        }
+        td:first-child { background-color: white; font-weight: 700; z-index: 10; }
+        
+        /* Zebra Striping */
+        tbody tr:nth-child(even) td { background-color: #F9FAFB; }
+        tbody tr:nth-child(even) td:first-child { background-color: #F9FAFB; }
+        
+        /* Sticky Footer (Total Row) */
+        tfoot { position: sticky; bottom: 0; z-index: 50; }
+        tfoot tr td { 
+            background: #1E293B !important; color: white !important; font-weight: 800; 
+            border-top: 2px solid #1E293B; border-bottom: 2px solid #1E293B;
+        }
+        tfoot td:first-child { z-index: 60; }
 
-        /* Small toggle style */
-        .small-toggle { display: flex; gap: 2px; background: #f1f5f9; padding: 2px; border-radius: 6px; border: 1px solid var(--border-light); }
-        .btn-sm { padding: 4px 12px; border: none; background: transparent; border-radius: 4px; cursor: pointer; font-weight: 700; font-size: 11px; color: var(--text-muted); transition: 0.1s; }
-        .btn-sm.active { background: white; color: var(--primary-dark); box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+        /* Alignment Helpers */
+        .text-left { text-align: left; }
+        .text-right { text-align: right; }
+        .text-center { text-align: center; }
 
-        .highlight-row { background-color: #f1f5f9; font-weight: 800; }
-        .txt-num { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .border-thin-r { border-right: 1px solid rgba(0,0,0,0.08) !important; }
-        .border-thin-r-light { border-right: 1px solid rgba(255,255,255,0.05) !important; }
-        .sep-r-light { border-right: 2px solid rgba(255,255,255,0.15) !important; }
-        .th-sub { background-color: #f8fafc !important; color: #475569 !important; font-size: 11px; vertical-align: middle !important; }
+        /* Status Chips */
+        .status-chip {
+            padding: 3px 8px; border-radius: 12px; font-weight: 800; font-size: 11px;
+            display: inline-flex; align-items: center; gap: 4px; border: 1px solid rgba(0,0,0,0.05);
+        }
+        .chip-green { background: #DCFCE7; color: #166534; }
+        .chip-yellow { background: #FEF9C3; color: #854D0E; }
+        .chip-red { background: #FEE2E2; color: #991B1B; }
+
+        .heat-vhigh { background: rgba(239, 68, 68, 0.1) !important; color: #ef4444; }
+        .heat-low { background: rgba(34, 197, 94, 0.1) !important; color: #34d399; }
+
+        .txt-num { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; letter-spacing: -0.2px; }
+        .highlight-row { background-color: #F1F5F9 !important; font-weight: 800; }
         .icon-small { font-size: 11px; vertical-align: middle; margin-right: 2px; }
 
         /* Nav Buttons Styling */
@@ -354,32 +372,33 @@
                 <table id="main-table">
                     <thead>
                         <tr>
-                            <th rowspan="3" class="sticky-col sep-r">구분</th>
-                            <th colspan="2" class="bg-total sep-r">총정지</th>
-                            <th colspan="2" class="bg-defect sep-r">부실(L형)</th>
-                            <th colspan="2" class="bg-etc sep-r">L형, SP, 장기</th>
-                            <th colspan="2" class="bg-pay sep-r">체납정지</th>
-                            <th colspan="2" class="bg-orange sep-r">일반정지</th>
-                            <th colspan="2" class="bg-gen sep-r">계(일반+체납)</th>
-                            <th class="bg-pay">체납비중</th>
+                        <tr>
+                            <th rowspan="3" class="sticky-col">구분</th>
+                            <th colspan="2" class="gutter-r">총정지</th>
+                            <th colspan="2" class="gutter-r">부실(L형)</th>
+                            <th colspan="2" class="gutter-r">L형, SP, 장기</th>
+                            <th colspan="2" class="gutter-r">체납정지</th>
+                            <th colspan="2" class="gutter-r">일반정지</th>
+                            <th colspan="2" class="gutter-r">계(일반+체납)</th>
+                            <th class="">체납비중</th>
                         </tr>
                         <tr>
-                            <th class="th-sub border-thin-r">실적</th><th class="th-sub sep-r">정지율</th>
-                            <th class="th-sub border-thin-r">실적</th><th class="th-sub sep-r">정지율</th>
-                            <th class="th-sub border-thin-r">실적</th><th class="th-sub sep-r">정지율</th>
-                            <th class="th-sub border-thin-r">실적</th><th class="th-sub sep-r">정지율</th>
-                            <th class="th-sub border-thin-r">실적</th><th class="th-sub sep-r">정지율</th>
-                            <th class="th-sub border-thin-r">실적</th><th class="th-sub sep-r">정지율</th>
-                            <th class="th-sub bg-pay" style="border-right: none !important;">비율(C/V)</th>
+                            <th class="">실적</th><th class="gutter-r">정지율</th>
+                            <th class="">실적</th><th class="gutter-r">정지율</th>
+                            <th class="">실적</th><th class="gutter-r">정지율</th>
+                            <th class="">실적</th><th class="gutter-r">정지율</th>
+                            <th class="">실적</th><th class="gutter-r">정지율</th>
+                            <th class="">실적</th><th class="gutter-r">정지율</th>
+                            <th class="" style="border-right: none !important;">비율(C/V)</th>
                         </tr>
                         <tr class="sub-header-row">
-                            <th class="th-sub border-thin-r">건수<br>월정료</th><th class="th-sub sep-r">건수<br>월정료</th>
-                            <th class="th-sub border-thin-r">건수<br>월정료</th><th class="th-sub sep-r">건수<br>월정료</th>
-                            <th class="th-sub border-thin-r">건수<br>월정료</th><th class="th-sub sep-r">건수<br>월정료</th>
-                            <th class="th-sub border-thin-r">건수<br>월정료</th><th class="th-sub sep-r">건수<br>월정료</th>
-                            <th class="th-sub border-thin-r">건수<br>월정료</th><th class="th-sub sep-r">건수<br>월정료</th>
-                            <th class="th-sub border-thin-r">건수<br>월정료</th><th class="th-sub sep-r">건수<br>월정료</th>
-                            <th class="th-sub bg-pay" style="border-right: none !important;">건/금액</th>
+                            <th class="">건수<br>월정료</th><th class="gutter-r">건수<br>월정료</th>
+                            <th class="">건수<br>월정료</th><th class="gutter-r">건수<br>월정료</th>
+                            <th class="">건수<br>월정료</th><th class="gutter-r">건수<br>월정료</th>
+                            <th class="">건수<br>월정료</th><th class="gutter-r">건수<br>월정료</th>
+                            <th class="">건수<br>월정료</th><th class="gutter-r">건수<br>월정료</th>
+                            <th class="">건수<br>월정료</th><th class="gutter-r">건수<br>월정료</th>
+                            <th class="" style="border-right: none !important;">건/금액</th>
                         </tr>
                     </thead>
                     <tbody id="table-body"></tbody>
@@ -526,17 +545,21 @@
     function getRateIcon(rate, category = 'total') {
         if (!rate || rate === 0) return '';
         
+        let icon = '';
+        let cls = '';
+        
         // 총정지 기준
         if (category === 'total' || category === 'acc') {
-            if (rate < 0.008) return '🟢'; // 0.8% 미만 우수
-            if (rate < 0.012) return '🟡'; // 0.8% ~ 1.2% 보통
-            return '🔴';                   // 1.2% 초과 주의
+            if (rate < 0.008) { icon = '🟢'; cls = 'chip-green'; }
+            else if (rate < 0.012) { icon = '🟡'; cls = 'chip-yellow'; }
+            else { icon = '🔴'; cls = 'chip-red'; }
+        } else {
+            // 소분류 기준 (부실, 장기 등)
+            if (rate < 0.001) { icon = '🟢'; cls = 'chip-green'; }
+            else if (rate < 0.003) { icon = '🟡'; cls = 'chip-yellow'; }
+            else { icon = '🔴'; cls = 'chip-red'; }
         }
-        
-        // 소분류 기준 (부실, 장기 등)
-        if (rate < 0.001) return '🟢'; // 0.1% 미만 우수
-        if (rate < 0.003) return '🟡'; // 0.3% 미만 보통
-        return '🔴';                   // 0.3% 이상 주의
+        return `<span class="status-chip ${cls}">${icon} ${pct(rate)}</span>`;
     }
 
     function render() {
@@ -557,12 +580,15 @@
             const tr = document.createElement('tr');
             if (item.name === '강북/강원') tr.className = 'highlight-row';
             
-            // Helper for 2-line performance cells
-            const cellPF = (c, v) => `<div class="txt-num">${fmt(c)}</div><div class="txt-num" style="font-size:10px; opacity:0.7;">${fmt(v)}</div>`;
-            // Helper for 2-line rate cells with category-specific heat and icons
+            // Helper for 2-line performance cells - Right aligned
+            const cellPF = (c, v) => `
+                <div class="txt-num text-right">${fmt(c)}</div>
+                <div class="txt-num text-right" style="font-size:10px; opacity:0.6;">${fmt(v)}</div>
+            `;
+            // Helper for 2-line rate cells - Center aligned with chips
             const cellRT = (c_rate, v_rate, cat) => `
-                <div class="txt-num ${getHeatColor(c_rate, cat)}">${getRateIcon(c_rate, cat)} ${pct(c_rate)}</div>
-                <div class="txt-num ${getHeatColor(v_rate, cat)}" style="font-size:10px; opacity:0.7; padding-left:15px;">${pct(v_rate)}</div>
+                <div class="text-center">${getRateIcon(c_rate, cat)}</div>
+                <div class="txt-num text-center" style="font-size:10px; opacity:0.6; margin-top:2px;">${pct(v_rate)}</div>
             `;
 
             const tc_s = item.base_c > 0 ? item.total_c / item.base_c : 0;
@@ -584,16 +610,16 @@
             const acc_sv = item.base_v > 0 ? total_sum_v / item.base_v : 0;
 
             tr.innerHTML = `
-                <td class="sticky-col sep-r">${item.name}</td>
-                <td class="border-thin-r">${cellPF(item.total_c, item.total_v)}</td><td class="sep-r">${cellRT(tc_s, tv_s, 'total')}</td>
-                <td class="bg-sub border-thin-r">${cellPF(item.def_c, item.def_v)}</td><td class="bg-sub sep-r">${cellRT(dc_s, dv_s, 'sub')}</td>
-                <td class="bg-sub border-thin-r">${cellPF(item.etc_c, item.etc_v)}</td><td class="bg-sub sep-r">${cellRT(ec_s, ev_s, 'sub')}</td>
-                <td class="border-thin-r">${cellPF(item.pay_c, item.pay_v)}</td><td class="sep-r">${cellRT(pc_s, pv_s, 'sub')}</td>
-                <td class="border-thin-r">${cellPF(item.gen_c, item.gen_v)}</td><td class="sep-r">${cellRT(gc_s, gv_s, 'sub')}</td>
-                <td class="bg-sub border-thin-r">${cellPF(total_sum_c, total_sum_v)}</td><td class="bg-sub sep-r">${cellRT(acc_sc, acc_sv, 'acc')}</td>
-                <td class="txt-num" style="padding: 2px;">
-                    <div class="${getHeatColor(pay_ratio_c, 'ratio')}" style="border-radius:4px; margin-bottom:1px; padding: 2px 0;">C: ${pct0(pay_ratio_c)}</div>
-                    <div class="${getHeatColor(pay_ratio_v, 'ratio')}" style="border-radius:4px; padding: 2px 0;">V: ${pct0(pay_ratio_v)}</div>
+                <td class="sticky-col text-left">${item.name}</td>
+                <td class="">${cellPF(item.total_c, item.total_v)}</td><td class="gutter-r">${cellRT(tc_s, tv_s, 'total')}</td>
+                <td class="">${cellPF(item.def_c, item.def_v)}</td><td class="gutter-r">${cellRT(dc_s, dv_s, 'sub')}</td>
+                <td class="">${cellPF(item.etc_c, item.etc_v)}</td><td class="gutter-r">${cellRT(ec_s, ev_s, 'sub')}</td>
+                <td class="">${cellPF(item.pay_c, item.pay_v)}</td><td class="gutter-r">${cellRT(pc_s, pv_s, 'sub')}</td>
+                <td class="">${cellPF(item.gen_c, item.gen_v)}</td><td class="gutter-r">${cellRT(gc_s, gv_s, 'sub')}</td>
+                <td class="">${cellPF(total_sum_c, total_sum_v)}</td><td class="gutter-r">${cellRT(acc_sc, acc_sv, 'acc')}</td>
+                <td class="txt-num text-center" style="padding: 2px;">
+                    <div style="font-weight:700;">C: ${pct0(pay_ratio_c)}</div>
+                    <div style="font-weight:700;">V: ${pct0(pay_ratio_v)}</div>
                 </td>
             `;
             tbody.appendChild(tr);
@@ -601,40 +627,39 @@
 
         const tfoot = document.getElementById('table-foot');
         if (currentFilter === 'all') {
-            tfoot.style.display = 'table-row-group';
+            tfoot.style.display = 'table-footer-group';
             const ts_c = sums.pay_c + sums.gen_c;
             const ts_v = sums.pay_v + sums.gen_v;
+            
             const footRT = (c, v, bc, bv, cat) => {
                 const cr = bc > 0 ? c/bc : 0;
                 const vr = bv > 0 ? v/bv : 0;
-                return `
-                    <div class="txt-num" style="color:var(--primary-dark); font-weight:800;">${getRateIcon(cr, cat)} ${pct(cr)}</div>
-                    <div class="txt-num" style="font-size:10px; color:var(--text-muted);">${pct(vr)}</div>
-                `;
+                return `<div class="text-center">${getRateIcon(cr, cat)}</div>`;
             };
+            
             const footPF = (c, v) => `
-                <div class="txt-num" style="color:var(--primary-dark); font-weight:800;">${fmt(c)}</div>
-                <div class="txt-num" style="font-size:10px; color:var(--text-muted);">${fmt(v)}</div>
+                <div class="txt-num text-right" style="color:white; font-weight:800;">${fmt(c)}</div>
+                <div class="txt-num text-right" style="font-size:10px; color:rgba(255,255,255,0.6);">${fmt(v)}</div>
             `;
             
             tfoot.innerHTML = `
-                <tr style="background:#f1f5f9; color:var(--primary-dark); font-weight:900; border-top: 2.5px solid var(--primary-dark);">
-                    <td class="sticky-col sep-r" style="background:#f1f5f9; color:var(--primary-dark); font-size:13px; border-bottom: 2px solid var(--primary-dark);">합 계</td>
-                    <td class="border-thin-r" style="border-bottom: 2px solid var(--primary-dark);">${footPF(sums.total_c, sums.total_v)}</td>
-                    <td class="sep-r" style="border-bottom: 2px solid var(--primary-dark);">${footRT(sums.total_c, sums.total_v, sums.base_c, sums.base_v, 'total')}</td>
-                    <td class="border-thin-r" style="border-bottom: 2px solid var(--primary-dark);">${footPF(sums.def_c, sums.def_v)}</td>
-                    <td class="sep-r" style="border-bottom: 2px solid var(--primary-dark);">${footRT(sums.def_c, sums.def_v, sums.base_c, sums.base_v, 'sub')}</td>
-                    <td class="border-thin-r" style="border-bottom: 2px solid var(--primary-dark);">${footPF(sums.etc_c, sums.etc_v)}</td>
-                    <td class="sep-r" style="border-bottom: none; border-bottom: 2px solid var(--primary-dark);">${footRT(sums.etc_c, sums.etc_v, sums.base_e_c, sums.base_e_v, 'sub')}</td>
-                    <td class="border-thin-r" style="border-bottom: 2px solid var(--primary-dark);">${footPF(sums.pay_c, sums.pay_v)}</td>
-                    <td class="sep-r" style="border-bottom: 2px solid var(--primary-dark);">${footRT(sums.pay_c, sums.pay_v, sums.base_c, sums.base_v, 'sub')}</td>
-                    <td class="border-thin-r" style="border-bottom: 2px solid var(--primary-dark);">${footPF(sums.gen_c, sums.gen_v)}</td>
-                    <td class="sep-r" style="border-bottom: none; border-bottom: 2px solid var(--primary-dark);">${footRT(sums.gen_c, sums.gen_v, sums.base_c, sums.base_v, 'sub')}</td>
-                    <td class="border-thin-r" style="border-bottom: 2px solid var(--primary-dark);">${footPF(ts_c, ts_v)}</td>
-                    <td class="sep-r" style="border-bottom: 2px solid var(--primary-dark);">${footRT(ts_c, ts_v, sums.base_c, sums.base_v, 'acc')}</td>
-                    <td class="txt-num" style="padding: 2px; border-bottom: 2px solid var(--primary-dark);">
-                        <div style="background: rgba(0,0,0,0.03); border-radius:4px; margin-bottom:1px; padding: 2px 0; font-weight:800;">C: ${pct0(ts_c > 0 ? sums.pay_c/ts_c : 0)}</div>
-                        <div style="background: rgba(0,0,0,0.03); border-radius:4px; padding: 2px 0; font-weight:800;">V: ${pct0(ts_v > 0 ? sums.pay_v/ts_v : 0)}</div>
+                <tr>
+                    <td class="text-left">합 계</td>
+                    <td class="">${footPF(sums.total_c, sums.total_v)}</td>
+                    <td class="gutter-r">${footRT(sums.total_c, sums.total_v, sums.base_c, sums.base_v, 'total')}</td>
+                    <td class="">${footPF(sums.def_c, sums.def_v)}</td>
+                    <td class="gutter-r">${footRT(sums.def_c, sums.def_v, sums.base_c, sums.base_v, 'sub')}</td>
+                    <td class="">${footPF(sums.etc_c, sums.etc_v)}</td>
+                    <td class="gutter-r">${footRT(sums.etc_c, sums.etc_v, sums.base_e_c, sums.base_e_v, 'sub')}</td>
+                    <td class="">${footPF(sums.pay_c, sums.pay_v)}</td>
+                    <td class="gutter-r">${footRT(sums.pay_c, sums.pay_v, sums.base_c, sums.base_v, 'sub')}</td>
+                    <td class="">${footPF(sums.gen_c, sums.gen_v)}</td>
+                    <td class="gutter-r">${footRT(sums.gen_c, sums.gen_v, sums.base_c, sums.base_v, 'sub')}</td>
+                    <td class="">${footPF(ts_c, ts_v)}</td>
+                    <td class="gutter-r">${footRT(ts_c, ts_v, sums.base_c, sums.base_v, 'acc')}</td>
+                    <td class="txt-num text-center" style="padding: 2px;">
+                        <div style="font-weight:800;">C: ${pct0(ts_c > 0 ? sums.pay_c/ts_c : 0)}</div>
+                        <div style="font-weight:800;">V: ${pct0(ts_v > 0 ? sums.pay_v/ts_v : 0)}</div>
                     </td>
                 </tr>
             `;
@@ -643,7 +668,7 @@
         }
 
         updateKPIs(sums);
-        updateChart(filteredData); // Pass filteredData to updateChart
+        updateChart(filteredData);
     }
 
     function updateKPIs(sums) {
