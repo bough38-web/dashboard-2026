@@ -109,7 +109,7 @@
         .table-wrap { overflow: auto; max-height: inherit; } /* Added wrap for better clipping */
         
         /* Table Borders: Horizontal Only */
-        th, td { padding: 12px 10px; border-bottom: 1px solid #E5E7EB; border-right: none; border-left: none; vertical-align: middle; }
+        th, td { padding: 12px 10px; border-bottom: 1px solid #E5E7EB; border-right: none; border-left: none; vertical-align: middle; text-align: center; }
         
         /* Navy Border: Top & Bottom of visible table area */
         thead tr:first-child th { border-top: 2px solid #1E293B !important; }
@@ -586,10 +586,10 @@
             const tr = document.createElement('tr');
             if (item.name === '강북/강원') tr.className = 'highlight-row';
             
-            // Helper for 2-line performance cells - Right aligned
+            // Helper for 2-line performance cells - Center aligned
             const cellPF = (c, v) => `
-                <div class="txt-num text-right">${fmt(c)}</div>
-                <div class="txt-num text-right" style="font-size:10px; opacity:0.6;">${fmt(v)}</div>
+                <div class="txt-num text-center">${fmt(c)}</div>
+                <div class="txt-num text-center" style="font-size:10px; opacity:0.6;">${fmt(v)}</div>
             `;
             // Helper for 2-line rate cells - Center aligned with chips
             const cellRT = (c_rate, v_rate, cat) => `
@@ -644,8 +644,8 @@
             };
             
             const footPF = (c, v) => `
-                <div class="txt-num text-right" style="color:white; font-weight:800;">${fmt(c)}</div>
-                <div class="txt-num text-right" style="font-size:10px; color:rgba(255,255,255,0.6);">${fmt(v)}</div>
+                <div class="txt-num text-center" style="color:white; font-weight:800;">${fmt(c)}</div>
+                <div class="txt-num text-center" style="font-size:10px; color:rgba(255,255,255,0.6);">${fmt(v)}</div>
             `;
             
             tfoot.innerHTML = `
