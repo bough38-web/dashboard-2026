@@ -34,7 +34,7 @@
             --primary-dark: #0f172a;
             --primary-blue: #2563eb;
             --primary-light: #eff6ff;
-            --border-light: rgba(0,0,0,0.05);
+            --border-light: #e2e8f0;
             --border-medium: #94a3b8;
             --border-heavy: #475569;
             --bg-sub: #f8fafc;
@@ -136,9 +136,10 @@
 
         .highlight-row { background-color: #f1f5f9; font-weight: 800; }
         .txt-num { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .border-thin-r { border-right: 1px solid rgba(0,0,0,0.05) !important; }
+        .border-thin-r { border-right: 1px solid rgba(0,0,0,0.08) !important; }
         .border-thin-r-light { border-right: 1px solid rgba(255,255,255,0.05) !important; }
         .sep-r-light { border-right: 2px solid rgba(255,255,255,0.15) !important; }
+        .th-sub { background-color: #f8fafc !important; color: #475569 !important; font-size: 11px; vertical-align: middle !important; }
         .icon-small { font-size: 11px; vertical-align: middle; margin-right: 2px; }
 
         /* Nav Buttons Styling */
@@ -363,22 +364,22 @@
                             <th class="bg-pay">체납비중</th>
                         </tr>
                         <tr>
-                            <th class="bg-blue-l border-thin-r">실적</th><th class="bg-purple-l sep-r">정지율</th>
-                            <th class="bg-blue-l border-thin-r">실적</th><th class="bg-purple-l sep-r">정지율</th>
-                            <th class="bg-blue-l border-thin-r">실적</th><th class="bg-purple-l sep-r">정지율</th>
-                            <th class="bg-blue-l border-thin-r">실적</th><th class="bg-purple-l sep-r">정지율</th>
-                            <th class="bg-blue-l border-thin-r">실적</th><th class="bg-purple-l sep-r">정지율</th>
-                            <th class="bg-blue-l border-thin-r">실적</th><th class="bg-purple-l sep-r">정지율</th>
-                            <th class="bg-purple-l">비율(C/V)</th>
+                            <th class="th-sub border-thin-r">실적</th><th class="th-sub sep-r">정지율</th>
+                            <th class="th-sub border-thin-r">실적</th><th class="th-sub sep-r">정지율</th>
+                            <th class="th-sub border-thin-r">실적</th><th class="th-sub sep-r">정지율</th>
+                            <th class="th-sub border-thin-r">실적</th><th class="th-sub sep-r">정지율</th>
+                            <th class="th-sub border-thin-r">실적</th><th class="th-sub sep-r">정지율</th>
+                            <th class="th-sub border-thin-r">실적</th><th class="th-sub sep-r">정지율</th>
+                            <th class="th-sub bg-pay" style="border-right: none !important;">비율(C/V)</th>
                         </tr>
                         <tr class="sub-header-row">
-                            <th class="border-thin-r">건수<br>월정료</th><th class="sep-r">건수<br>월정료</th>
-                            <th class="border-thin-r">건수<br>월정료</th><th class="sep-r">건수<br>월정료</th>
-                            <th class="border-thin-r">건수<br>월정료</th><th class="sep-r">건수<br>월정료</th>
-                            <th class="border-thin-r">건수<br>월정료</th><th class="sep-r">건수<br>월정료</th>
-                            <th class="border-thin-r">건수<br>월정료</th><th class="sep-r">건수<br>월정료</th>
-                            <th class="border-thin-r">건수<br>월정료</th><th class="sep-r">건수<br>월정료</th>
-                            <th>건/금액</th>
+                            <th class="th-sub border-thin-r">건수<br>월정료</th><th class="th-sub sep-r">건수<br>월정료</th>
+                            <th class="th-sub border-thin-r">건수<br>월정료</th><th class="th-sub sep-r">건수<br>월정료</th>
+                            <th class="th-sub border-thin-r">건수<br>월정료</th><th class="th-sub sep-r">건수<br>월정료</th>
+                            <th class="th-sub border-thin-r">건수<br>월정료</th><th class="th-sub sep-r">건수<br>월정료</th>
+                            <th class="th-sub border-thin-r">건수<br>월정료</th><th class="th-sub sep-r">건수<br>월정료</th>
+                            <th class="th-sub border-thin-r">건수<br>월정료</th><th class="th-sub sep-r">건수<br>월정료</th>
+                            <th class="th-sub bg-pay" style="border-right: none !important;">건/금액</th>
                         </tr>
                     </thead>
                     <tbody id="table-body"></tbody>
