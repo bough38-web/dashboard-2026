@@ -608,33 +608,33 @@
                 const cr = bc > 0 ? c/bc : 0;
                 const vr = bv > 0 ? v/bv : 0;
                 return `
-                    <div class="txt-num" style="color:white; font-weight:800;">${getRateIcon(cr, cat)} ${pct(cr)}</div>
-                    <div class="txt-num" style="font-size:10px; color:rgba(255,255,255,0.6);">${pct(vr)}</div>
+                    <div class="txt-num" style="color:var(--primary-dark); font-weight:800;">${getRateIcon(cr, cat)} ${pct(cr)}</div>
+                    <div class="txt-num" style="font-size:10px; color:var(--text-muted);">${pct(vr)}</div>
                 `;
             };
             const footPF = (c, v) => `
-                <div class="txt-num" style="color:white; font-weight:800;">${fmt(c)}</div>
-                <div class="txt-num" style="font-size:10px; color:rgba(255,255,255,0.6);">${fmt(v)}</div>
+                <div class="txt-num" style="color:var(--primary-dark); font-weight:800;">${fmt(c)}</div>
+                <div class="txt-num" style="font-size:10px; color:var(--text-muted);">${fmt(v)}</div>
             `;
             
             tfoot.innerHTML = `
-                <tr style="background:#0f172a; color:white; font-weight:800; border-top: 2px solid var(--primary-dark);">
-                    <td class="sticky-col sep-r-light" style="background:#0f172a; color:white; font-size:13px; border-bottom: none;">합 계</td>
-                    <td class="border-thin-r-light" style="border-bottom: none;">${footPF(sums.total_c, sums.total_v)}</td>
-                    <td class="sep-r-light" style="border-bottom: none;">${footRT(sums.total_c, sums.total_v, sums.base_c, sums.base_v, 'total')}</td>
-                    <td class="border-thin-r-light" style="border-bottom: none;">${footPF(sums.def_c, sums.def_v)}</td>
-                    <td class="sep-r-light" style="border-bottom: none;">${footRT(sums.def_c, sums.def_v, sums.base_c, sums.base_v, 'sub')}</td>
-                    <td class="border-thin-r-light" style="border-bottom: none;">${footPF(sums.etc_c, sums.etc_v)}</td>
-                    <td class="sep-r-light" style="border-bottom: none;">${footRT(sums.etc_c, sums.etc_v, sums.base_e_c, sums.base_e_v, 'sub')}</td>
-                    <td class="border-thin-r-light" style="border-bottom: none;">${footPF(sums.pay_c, sums.pay_v)}</td>
-                    <td class="sep-r-light" style="border-bottom: none;">${footRT(sums.pay_c, sums.pay_v, sums.base_c, sums.base_v, 'sub')}</td>
-                    <td class="border-thin-r-light" style="border-bottom: none;">${footPF(sums.gen_c, sums.gen_v)}</td>
-                    <td class="sep-r-light" style="border-bottom: none;">${footRT(sums.gen_c, sums.gen_v, sums.base_c, sums.base_v, 'sub')}</td>
-                    <td class="border-thin-r-light" style="border-bottom: none;">${footPF(ts_c, ts_v)}</td>
-                    <td class="sep-r-light" style="border-bottom: none;">${footRT(ts_c, ts_v, sums.base_c, sums.base_v, 'acc')}</td>
-                    <td class="txt-num" style="padding: 2px; border-bottom: none;">
-                        <div style="background: rgba(255,255,255,0.1); border-radius:4px; margin-bottom:1px; padding: 2px 0;">C: ${pct0(ts_c > 0 ? sums.pay_c/ts_c : 0)}</div>
-                        <div style="background: rgba(255,255,255,0.1); border-radius:4px; padding: 2px 0;">V: ${pct0(ts_v > 0 ? sums.pay_v/ts_v : 0)}</div>
+                <tr style="background:#f1f5f9; color:var(--primary-dark); font-weight:900; border-top: 2.5px solid var(--primary-dark);">
+                    <td class="sticky-col sep-r" style="background:#f1f5f9; color:var(--primary-dark); font-size:13px; border-bottom: 2px solid var(--primary-dark);">합 계</td>
+                    <td class="border-thin-r" style="border-bottom: 2px solid var(--primary-dark);">${footPF(sums.total_c, sums.total_v)}</td>
+                    <td class="sep-r" style="border-bottom: 2px solid var(--primary-dark);">${footRT(sums.total_c, sums.total_v, sums.base_c, sums.base_v, 'total')}</td>
+                    <td class="border-thin-r" style="border-bottom: 2px solid var(--primary-dark);">${footPF(sums.def_c, sums.def_v)}</td>
+                    <td class="sep-r" style="border-bottom: 2px solid var(--primary-dark);">${footRT(sums.def_c, sums.def_v, sums.base_c, sums.base_v, 'sub')}</td>
+                    <td class="border-thin-r" style="border-bottom: 2px solid var(--primary-dark);">${footPF(sums.etc_c, sums.etc_v)}</td>
+                    <td class="sep-r" style="border-bottom: none; border-bottom: 2px solid var(--primary-dark);">${footRT(sums.etc_c, sums.etc_v, sums.base_e_c, sums.base_e_v, 'sub')}</td>
+                    <td class="border-thin-r" style="border-bottom: 2px solid var(--primary-dark);">${footPF(sums.pay_c, sums.pay_v)}</td>
+                    <td class="sep-r" style="border-bottom: 2px solid var(--primary-dark);">${footRT(sums.pay_c, sums.pay_v, sums.base_c, sums.base_v, 'sub')}</td>
+                    <td class="border-thin-r" style="border-bottom: 2px solid var(--primary-dark);">${footPF(sums.gen_c, sums.gen_v)}</td>
+                    <td class="sep-r" style="border-bottom: none; border-bottom: 2px solid var(--primary-dark);">${footRT(sums.gen_c, sums.gen_v, sums.base_c, sums.base_v, 'sub')}</td>
+                    <td class="border-thin-r" style="border-bottom: 2px solid var(--primary-dark);">${footPF(ts_c, ts_v)}</td>
+                    <td class="sep-r" style="border-bottom: 2px solid var(--primary-dark);">${footRT(ts_c, ts_v, sums.base_c, sums.base_v, 'acc')}</td>
+                    <td class="txt-num" style="padding: 2px; border-bottom: 2px solid var(--primary-dark);">
+                        <div style="background: rgba(0,0,0,0.03); border-radius:4px; margin-bottom:1px; padding: 2px 0; font-weight:800;">C: ${pct0(ts_c > 0 ? sums.pay_c/ts_c : 0)}</div>
+                        <div style="background: rgba(0,0,0,0.03); border-radius:4px; padding: 2px 0; font-weight:800;">V: ${pct0(ts_v > 0 ? sums.pay_v/ts_v : 0)}</div>
                     </td>
                 </tr>
             `;
