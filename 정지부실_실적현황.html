@@ -102,9 +102,11 @@
         /* Expert Table Styling */
         .table-card { 
             background: white; border-radius: 12px; box-shadow: var(--shadow-md); padding: 0; 
-            overflow: auto; border: 1px solid var(--border-light); max-height: 85vh;
+            overflow: hidden; border: 1px solid var(--border-light); max-height: 85vh;
+            border-collapse: separate; /* Required for border-radius clipping */
         }
         table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 11px; white-space: nowrap; }
+        .table-wrap { overflow: auto; max-height: inherit; } /* Added wrap for better clipping */
         
         /* Table Borders: Horizontal Only */
         th, td { padding: 12px 10px; border-bottom: 1px solid #E5E7EB; border-right: none; border-left: none; vertical-align: middle; }
@@ -116,6 +118,7 @@
         thead th { background: #F1F5F9; font-weight: 800; color: #1E293B; position: sticky; top: 0; z-index: 30; }
         thead tr:nth-child(2) th { top: 38px; } /* Offset for multi-row sticky header */
         thead tr:nth-child(3) th { top: 70px; }
+        thead tr:last-child th { border-bottom: 2px solid #1E293B !important; }
         
         /* White Gutters between groups */
         .gutter-r { border-right: 4px solid white !important; }
@@ -124,6 +127,7 @@
         th:first-child, td:first-child {
             position: sticky; left: 0; z-index: 40; background-color: #F1F5F9;
             border-right: 1px solid #E5E7EB !important;
+            text-align: center; /* Center aligned as requested */
         }
         td:first-child { background-color: white; font-weight: 700; z-index: 10; }
         
@@ -143,6 +147,7 @@
         .text-left { text-align: left; }
         .text-right { text-align: right; }
         .text-center { text-align: center; }
+        .border-thin-v { border-right: 1px solid #E5E7EB !important; }
 
         /* Status Chips */
         .status-chip {
@@ -369,41 +374,42 @@
                     <h2 style="margin: 0; font-size: 18px; font-weight: 800; color: var(--primary-dark); letter-spacing: -0.5px;">정지 / 부실 현황 상세 (지사별)</h2>
                     <div style="font-size: 11px; font-weight: 700; color: var(--text-muted);">[단위 : 건, 천원, %]</div>
                 </div>
-                <table id="main-table">
-                    <thead>
-                        <tr>
-                        <tr>
-                            <th rowspan="3" class="sticky-col">구분</th>
-                            <th colspan="2" class="gutter-r">총정지</th>
-                            <th colspan="2" class="gutter-r">부실(L형)</th>
-                            <th colspan="2" class="gutter-r">L형, SP, 장기</th>
-                            <th colspan="2" class="gutter-r">체납정지</th>
-                            <th colspan="2" class="gutter-r">일반정지</th>
-                            <th colspan="2" class="gutter-r">계(일반+체납)</th>
-                            <th class="">체납비중</th>
-                        </tr>
-                        <tr>
-                            <th class="">실적</th><th class="gutter-r">정지율</th>
-                            <th class="">실적</th><th class="gutter-r">정지율</th>
-                            <th class="">실적</th><th class="gutter-r">정지율</th>
-                            <th class="">실적</th><th class="gutter-r">정지율</th>
-                            <th class="">실적</th><th class="gutter-r">정지율</th>
-                            <th class="">실적</th><th class="gutter-r">정지율</th>
-                            <th class="" style="border-right: none !important;">비율(C/V)</th>
-                        </tr>
-                        <tr class="sub-header-row">
-                            <th class="">건수<br>월정료</th><th class="gutter-r">건수<br>월정료</th>
-                            <th class="">건수<br>월정료</th><th class="gutter-r">건수<br>월정료</th>
-                            <th class="">건수<br>월정료</th><th class="gutter-r">건수<br>월정료</th>
-                            <th class="">건수<br>월정료</th><th class="gutter-r">건수<br>월정료</th>
-                            <th class="">건수<br>월정료</th><th class="gutter-r">건수<br>월정료</th>
-                            <th class="">건수<br>월정료</th><th class="gutter-r">건수<br>월정료</th>
-                            <th class="" style="border-right: none !important;">건/금액</th>
-                        </tr>
-                    </thead>
-                    <tbody id="table-body"></tbody>
-                    <tfoot id="table-foot"></tfoot>
-                </table>
+                <div class="table-wrap">
+                    <table id="main-table">
+                        <thead>
+                            <tr>
+                                <th rowspan="3" class="sticky-col">구분</th>
+                                <th colspan="2" class="gutter-r">총정지</th>
+                                <th colspan="2" class="gutter-r">부실(L형)</th>
+                                <th colspan="2" class="gutter-r">L형, SP, 장기</th>
+                                <th colspan="2" class="gutter-r">체납정지</th>
+                                <th colspan="2" class="gutter-r">일반정지</th>
+                                <th colspan="2" class="gutter-r">계(일반+체납)</th>
+                                <th class="">체납비중</th>
+                            </tr>
+                            <tr>
+                                <th class="border-thin-v">실적</th><th class="gutter-r">정지율</th>
+                                <th class="border-thin-v">실적</th><th class="gutter-r">정지율</th>
+                                <th class="border-thin-v">실적</th><th class="gutter-r">정지율</th>
+                                <th class="border-thin-v">실적</th><th class="gutter-r">정지율</th>
+                                <th class="border-thin-v">실적</th><th class="gutter-r">정지율</th>
+                                <th class="border-thin-v">실적</th><th class="gutter-r">정지율</th>
+                                <th class="" style="border-right: none !important;">비율(C/V)</th>
+                            </tr>
+                            <tr class="sub-header-row">
+                                <th class="border-thin-v">건수<br>월정료</th><th class="gutter-r">건수<br>월정료</th>
+                                <th class="border-thin-v">건수<br>월정료</th><th class="gutter-r">건수<br>월정료</th>
+                                <th class="border-thin-v">건수<br>월정료</th><th class="gutter-r">건수<br>월정료</th>
+                                <th class="border-thin-v">건수<br>월정료</th><th class="gutter-r">건수<br>월정료</th>
+                                <th class="border-thin-v">건수<br>월정료</th><th class="gutter-r">건수<br>월정료</th>
+                                <th class="border-thin-v">건수<br>월정료</th><th class="gutter-r">건수<br>월정료</th>
+                                <th class="" style="border-right: none !important;">건/금액</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body"></tbody>
+                        <tfoot id="table-foot"></tfoot>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -611,12 +617,12 @@
 
             tr.innerHTML = `
                 <td class="sticky-col text-left">${item.name}</td>
-                <td class="">${cellPF(item.total_c, item.total_v)}</td><td class="gutter-r">${cellRT(tc_s, tv_s, 'total')}</td>
-                <td class="">${cellPF(item.def_c, item.def_v)}</td><td class="gutter-r">${cellRT(dc_s, dv_s, 'sub')}</td>
-                <td class="">${cellPF(item.etc_c, item.etc_v)}</td><td class="gutter-r">${cellRT(ec_s, ev_s, 'sub')}</td>
-                <td class="">${cellPF(item.pay_c, item.pay_v)}</td><td class="gutter-r">${cellRT(pc_s, pv_s, 'sub')}</td>
-                <td class="">${cellPF(item.gen_c, item.gen_v)}</td><td class="gutter-r">${cellRT(gc_s, gv_s, 'sub')}</td>
-                <td class="">${cellPF(total_sum_c, total_sum_v)}</td><td class="gutter-r">${cellRT(acc_sc, acc_sv, 'acc')}</td>
+                <td class="border-thin-v">${cellPF(item.total_c, item.total_v)}</td><td class="gutter-r">${cellRT(tc_s, tv_s, 'total')}</td>
+                <td class="border-thin-v">${cellPF(item.def_c, item.def_v)}</td><td class="gutter-r">${cellRT(dc_s, dv_s, 'sub')}</td>
+                <td class="border-thin-v">${cellPF(item.etc_c, item.etc_v)}</td><td class="gutter-r">${cellRT(ec_s, ev_s, 'sub')}</td>
+                <td class="border-thin-v">${cellPF(item.pay_c, item.pay_v)}</td><td class="gutter-r">${cellRT(pc_s, pv_s, 'sub')}</td>
+                <td class="border-thin-v">${cellPF(item.gen_c, item.gen_v)}</td><td class="gutter-r">${cellRT(gc_s, gv_s, 'sub')}</td>
+                <td class="border-thin-v">${cellPF(total_sum_c, total_sum_v)}</td><td class="gutter-r">${cellRT(acc_sc, acc_sv, 'acc')}</td>
                 <td class="txt-num text-center" style="padding: 2px;">
                     <div style="font-weight:700;">C: ${pct0(pay_ratio_c)}</div>
                     <div style="font-weight:700;">V: ${pct0(pay_ratio_v)}</div>
@@ -644,18 +650,18 @@
             
             tfoot.innerHTML = `
                 <tr>
-                    <td class="text-left">합 계</td>
-                    <td class="">${footPF(sums.total_c, sums.total_v)}</td>
+                    <td class="text-center">합 계</td>
+                    <td class="border-thin-v">${footPF(sums.total_c, sums.total_v)}</td>
                     <td class="gutter-r">${footRT(sums.total_c, sums.total_v, sums.base_c, sums.base_v, 'total')}</td>
-                    <td class="">${footPF(sums.def_c, sums.def_v)}</td>
+                    <td class="border-thin-v">${footPF(sums.def_c, sums.def_v)}</td>
                     <td class="gutter-r">${footRT(sums.def_c, sums.def_v, sums.base_c, sums.base_v, 'sub')}</td>
-                    <td class="">${footPF(sums.etc_c, sums.etc_v)}</td>
+                    <td class="border-thin-v">${footPF(sums.etc_c, sums.etc_v)}</td>
                     <td class="gutter-r">${footRT(sums.etc_c, sums.etc_v, sums.base_e_c, sums.base_e_v, 'sub')}</td>
-                    <td class="">${footPF(sums.pay_c, sums.pay_v)}</td>
+                    <td class="border-thin-v">${footPF(sums.pay_c, sums.pay_v)}</td>
                     <td class="gutter-r">${footRT(sums.pay_c, sums.pay_v, sums.base_c, sums.base_v, 'sub')}</td>
-                    <td class="">${footPF(sums.gen_c, sums.gen_v)}</td>
+                    <td class="border-thin-v">${footPF(sums.gen_c, sums.gen_v)}</td>
                     <td class="gutter-r">${footRT(sums.gen_c, sums.gen_v, sums.base_c, sums.base_v, 'sub')}</td>
-                    <td class="">${footPF(ts_c, ts_v)}</td>
+                    <td class="border-thin-v">${footPF(ts_c, ts_v)}</td>
                     <td class="gutter-r">${footRT(ts_c, ts_v, sums.base_c, sums.base_v, 'acc')}</td>
                     <td class="txt-num text-center" style="padding: 2px;">
                         <div style="font-weight:800;">C: ${pct0(ts_c > 0 ? sums.pay_c/ts_c : 0)}</div>
