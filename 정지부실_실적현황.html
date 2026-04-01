@@ -301,6 +301,45 @@
         .ai-badge.good { background: #dcfce7; color: #166534; }
         .ai-badge.bad { background: #fee2e2; color: #991b1b; }
         .ai-badge.warn { background: #fef08a; color: #854d0e; }
+        
+        .ai-tag {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 800;
+            margin-right: 8px;
+            text-transform: uppercase;
+            width: 55px; /* Consistent width for alignment */
+            text-align: center;
+        }
+        .ai-tag.best { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+        .ai-tag.lag { background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; }
+
+        .ai-review-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .ai-review-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .ai-feedback-text {
+            display: block;
+            margin-top: 6px;
+            color: #475569;
+            text-align: justify; /* This completes the '줄맞춤' request */
+            line-height: 1.6;
+            word-break: break-all;
+        }
+        .ai-report-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: start;
+        }
     </style>
 </head>
 <body>
@@ -345,7 +384,7 @@
                 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 5px;">
                     <div class="title-group">
                         <h1 style="font-size: 22px;">정지 / 부실 현황 분석 (강북·강원본부)</h1>
-                        <p style="font-size: 13px;">집계 기준 : 2026. 03. 30 &nbsp;|&nbsp; 단위 : 건, 천원, %</p>
+                        <p style="font-size: 13px;">집계 기준 : 2026. 03. 31 &nbsp;|&nbsp; 단위 : 건, 천원, %</p>
                         <div style="margin-top: 10px; display: flex; gap: 8px;">
                             <a href="https://script.google.com/macros/s/AKfycbwkWSXQIQEBkE0DGRs6YC9ObDyyzdBHbGH48zUC7PCKHkWzEcLqBuvVH2W6WSmyuJNCAw/exec" 
                                target="_blank" 
@@ -412,7 +451,7 @@
                         </div>
                     </div>
                     <div style="margin-top: 15px; font-size: 10px; color: #64748b; text-align: center; opacity: 0.8;">
-                        ※ 집계 데이터: 2026. 03. 30 기준
+                        ※ 집계 데이터: 2026. 03. 31 기준
                     </div>
                 </div>
 
@@ -473,14 +512,14 @@
                                 <th colspan="2" class="gutter-r">체납정지</th>
                                 <th colspan="2" class="gutter-r">일반정지</th>
                                 <th colspan="2" class="gutter-r">계(일반+체납)</th>
-                                <th class="">체납비중</th>
+                                <th class="">비중(건)</th>
                             </tr>
                             <tr>
                                 <th class="border-thin-v">실적</th><th class="gutter-r">정지율</th>
                                 <th class="border-thin-v">실적</th><th class="gutter-r">정지율</th>
                                 <th class="border-thin-v">실적</th><th class="gutter-r">정지율</th>
-                                <th class="border-thin-v">실적</th><th class="gutter-r">정지율</th>
-                                <th class="border-thin-v">실적</th><th class="gutter-r">정지율</th>
+                                <th class="border-thin-v">실적</th><th class="gutter-r">비중(건)</th>
+                                <th class="border-thin-v">실적</th><th class="gutter-r">비중(건)</th>
                                 <th class="border-thin-v">실적</th><th class="gutter-r">정지율</th>
                                 <th class="" style="border-right: none !important;">비율(C/V)</th>
                             </tr>
@@ -505,23 +544,23 @@
 <script>
     // Data Updated: 2026-03-30 (v10) - 精密集計 반영
     const HQ_DATA = [
-        { name: "강남/서부", total_c: 1245, total_v: 73688, def_c: 231, def_v: 14666, etc_c: 102, etc_v: 9307, pay_c: 471, pay_v: 15265, gen_c: 217, gen_v: 12769, base_c: 122059, base_v: 6822963, base_e_c: 85000, base_e_v: 5816875, p_rate: 126 },
-        { name: "강북/강원", total_c: 922, total_v: 59390, def_c: 135, def_v: 10253, etc_c: 146, etc_v: 12634, pay_c: 229, pay_v: 10188, gen_c: 123, gen_v: 9024, base_c: 91287, base_v: 5998990, base_e_c: 56153, base_e_v: 4859230, p_rate: 60 },
-        { name: "부산/경남", total_c: 595, total_v: 29624, def_c: 103, def_v: 5121, etc_c: 44, etc_v: 2699, pay_c: 150, pay_v: 4355, gen_c: 95, gen_v: 4627, base_c: 63978, base_v: 2821333, base_e_c: 44000, base_e_v: 2699000, p_rate: 97 },
-        { name: "전남/전북", total_c: 1024, total_v: 43591, def_c: 259, def_v: 9745, etc_c: 189, etc_v: 8264, pay_c: 320, pay_v: 10024, gen_c: 252, gen_v: 9454, base_c: 67815, base_v: 2945338, base_e_c: 42000, base_e_v: 2665806, p_rate: 93 },
-        { name: "충남/충북", total_c: 199, total_v: 15659, def_c: 5, def_v: 864, etc_c: 5, etc_v: 864, pay_c: 0, pay_v: 0, gen_c: 5, gen_v: 864, base_c: 52368, base_v: 3011346, base_e_c: 50000, base_e_v: 2880000, p_rate: 197 },
-        { name: "대구/경북", total_c: 502, total_v: 26678, def_c: 91, def_v: 7904, etc_c: 60, etc_v: 6681, pay_c: 152, pay_v: 4328, gen_c: 85, gen_v: 7172, base_c: 47810, base_v: 2319826, base_e_c: 33333, base_e_v: 2024545, p_rate: 115 }
+        { name: "강남/서부", total_c: 1238, total_v: 70619, def_c: 217, def_v: 13767, etc_c: 88, etc_v: 8409, pay_c: 471, pay_v: 15265, gen_c: 203, gen_v: 11871, base_c: 121372, base_v: 6790288, base_e_c: 88000, base_e_v: 5606000, p_rate: 126 },
+        { name: "강북/강원", total_c: 917, total_v: 59568, def_c: 115, def_v: 8795, etc_c: 115, etc_v: 10540, pay_c: 207, pay_v: 9064, gen_c: 105, gen_v: 7880, base_c: 90792, base_v: 5048135, base_e_c: 57500, base_e_v: 3903703, p_rate: 60 },
+        { name: "부산/경남", total_c: 587, total_v: 29297, def_c: 82, def_v: 4033, etc_c: 30, etc_v: 1769, pay_c: 148, pay_v: 4282, gen_c: 74, gen_v: 3539, base_c: 63804, base_v: 3255222, base_e_c: 42857, base_e_v: 2527142, p_rate: 97 },
+        { name: "전남/전북", total_c: 1044, total_v: 44403, def_c: 248, def_v: 9111, etc_c: 177, etc_v: 7567, pay_c: 317, pay_v: 9907, gen_c: 241, gen_v: 8820, base_c: 67792, base_v: 3415615, base_e_c: 42142, base_e_v: 2702500, p_rate: 93 },
+        { name: "충남/충북", total_c: 181, total_v: 14013, def_c: 1, def_v: 60, etc_c: 1, etc_v: 60, pay_c: 0, pay_v: 0, gen_c: 1, gen_v: 60, base_c: 51714, base_v: 3046304, base_e_c: 50000, base_e_v: 3000000, p_rate: 197 },
+        { name: "대구/경북", total_c: 484, total_v: 26158, def_c: 85, def_v: 6918, etc_c: 54, etc_v: 6221, pay_c: 149, pay_v: 4190, gen_c: 80, gen_v: 6786, base_c: 47920, base_v: 2444672, base_e_c: 33750, base_e_v: 2073666, p_rate: 115 }
     ];
 
     const BRANCH_DATA = [
-        { name: "중앙", total_c: 70, total_v: 6894, def_c: 24, def_v: 2325, etc_c: 24, etc_v: 2641, pay_c: 7, pay_v: 686, gen_c: 23, gen_v: 2175, base_c: 12727, base_v: 696363, base_e_c: 8571, base_e_v: 550208, p_rate: 32 },
-        { name: "강북", total_c: 70, total_v: 4590, def_c: 9, def_v: 695, etc_c: 10, etc_v: 611, pay_c: 8, pay_v: 296, gen_c: 7, gen_v: 295, base_c: 11290, base_v: 882692, base_e_c: 7692, base_e_v: 763750, p_rate: 19 },
-        { name: "서대문", total_c: 84, total_v: 8421, def_c: 27, def_v: 3365, etc_c: 26, etc_v: 3446, pay_c: 10, pay_v: 562, gen_c: 27, gen_v: 3365, base_c: 8842, base_v: 539807, base_e_c: 6341, base_e_v: 459466, p_rate: 87 },
-        { name: "고양", total_c: 192, total_v: 13397, def_c: 34, def_v: 2010, etc_c: 22, etc_v: 1707, pay_c: 31, pay_v: 1344, gen_c: 26, gen_v: 1397, base_c: 13241, base_v: 641000, base_e_c: 9166, base_e_v: 517272, p_rate: 33 },
-        { name: "의정부", total_c: 85, total_v: 5047, def_c: 4, def_v: 108, etc_c: 6, etc_v: 361, pay_c: 10, pay_v: 490, gen_c: 4, gen_v: 108, base_c: 9770, base_v: 509797, base_e_c: 6000, base_e_v: 361000, p_rate: 73 },
-        { name: "남양주", total_c: 101, total_v: 5449, def_c: 8, def_v: 536, etc_c: 10, etc_v: 765, pay_c: 29, pay_v: 1378, gen_c: 7, gen_v: 471, base_c: 9619, base_v: 523942, base_e_c: 6250, base_e_v: 402631, p_rate: 29 },
-        { name: "강릉", total_c: 96, total_v: 6242, def_c: 9, def_v: 467, etc_c: 16, etc_v: 1326, pay_c: 26, pay_v: 1384, gen_c: 9, gen_v: 467, base_c: 10434, base_v: 487656, base_e_c: 5714, base_e_v: 348947, p_rate: 93 },
-        { name: "원주", total_c: 224, total_v: 9350, def_c: 20, def_v: 747, etc_c: 32, etc_v: 1777, pay_c: 108, pay_v: 4048, gen_c: 20, gen_v: 747, base_c: 15342, base_v: 766393, base_e_c: 7272, base_e_v: 507714, p_rate: 124 }
+        { name: "중앙", total_c: 76, total_v: 7162, def_c: 25, def_v: 2410, etc_c: 25, etc_v: 2726, pay_c: 7, pay_v: 686, gen_c: 24, gen_v: 2260, base_c: 12667, base_v: 695340, base_e_c: 8333, base_e_v: 556326, p_rate: 32 },
+        { name: "강북", total_c: 53, total_v: 3467, def_c: 4, def_v: 307, etc_c: 3, etc_v: 127, pay_c: 0, pay_v: 0, gen_c: 3, gen_v: 127, base_c: 11277, base_v: 888974, base_e_c: 7500, base_e_v: 635000, p_rate: 19 },
+        { name: "서대문", total_c: 82, total_v: 8262, def_c: 23, def_v: 3137, etc_c: 26, etc_v: 3446, pay_c: 10, pay_v: 562, gen_c: 23, gen_v: 3137, base_c: 8817, base_v: 540000, base_e_c: 6341, base_e_v: 459466, p_rate: 87 },
+        { name: "고양", total_c: 197, total_v: 13994, def_c: 23, def_v: 1164, etc_c: 11, etc_v: 903, pay_c: 30, pay_v: 1327, gen_c: 16, gen_v: 643, base_c: 13221, base_v: 641926, base_e_c: 9166, base_e_v: 501666, p_rate: 33 },
+        { name: "의정부", total_c: 84, total_v: 5316, def_c: 4, def_v: 108, etc_c: 0, etc_v: 0, pay_c: 4, pay_v: 129, gen_c: 4, gen_v: 108, base_c: 9767, base_v: 511153, base_e_c: 1000, base_e_v: 100000, p_rate: 73 },
+        { name: "남양주", total_c: 102, total_v: 5376, def_c: 7, def_v: 456, etc_c: 3, etc_v: 275, pay_c: 23, pay_v: 968, gen_c: 6, gen_v: 391, base_c: 9623, base_v: 521941, base_e_c: 6000, base_e_v: 392857, p_rate: 29 },
+        { name: "강릉", total_c: 101, total_v: 6591, def_c: 9, def_v: 467, etc_c: 16, etc_v: 1326, pay_c: 26, pay_v: 1384, gen_c: 9, gen_v: 467, base_c: 10412, base_v: 488222, base_e_c: 5714, base_e_v: 348947, p_rate: 93 },
+        { name: "원주", total_c: 222, total_v: 9400, def_c: 20, def_v: 747, etc_c: 31, etc_v: 1737, pay_c: 107, pay_v: 4008, gen_c: 20, gen_v: 747, base_c: 15310, base_v: 770492, base_e_c: 7209, base_e_v: 510882, p_rate: 124 }
     ];
 
     let currentView = 'hq';
@@ -647,6 +686,11 @@
             if (rate < 0.008) { icon = '🟢'; cls = 'chip-green'; }
             else if (rate < 0.012) { icon = '🟡'; cls = 'chip-yellow'; }
             else { icon = '🔴'; cls = 'chip-red'; }
+        } else if (category === 'portion') {
+            // 비중 기준 (체납/일반 비중) - 50% 초과시 레드
+            if (rate < 0.3) { icon = '🟢'; cls = 'chip-green'; }
+            else if (rate <= 0.5) { icon = '🟡'; cls = 'chip-yellow'; } // 50% 이하면 옐로우
+            else { icon = '🔴'; cls = 'chip-red'; } // 50% 초과시 레드
         } else {
             // 소분류 기준 (부실, 장기 등)
             if (rate < 0.001) { icon = '🟢'; cls = 'chip-green'; }
@@ -689,10 +733,9 @@
 
         const getCoachingText = (item) => {
             const tr = pct(item.totalRate);
-            const dr = pct(item.defRate);
             const pr = item.p_rate + '%';
             
-            let feedback = `<b>${item.name}</b> 지사는 `;
+            let feedback = ``;
             
             // Analyze Strengths
             let strengths = [];
@@ -714,9 +757,9 @@
             }
 
             if (weaknesses.length > 0) {
-                feedback += `현재 ${weaknesses.join(', ')} 부분에서 개선 노력이 절실히 필요합니다. 특히 현장 밀착 코칭을 통한 지표 조기 정상화가 요구됩니다.`;
+                feedback += `현재 ${weaknesses.join(', ')} 부분에서 개선 노력이 절실히 필요합니다.`;
             } else {
-                feedback += `특별한 결점 없이 안정적인 운영을 이어가고 있습니다. 우수 사례 공유를 통한 본부 전체 역량 상향 평준화에 기여가 기대됩니다.`;
+                feedback += `특별한 결점 없이 안정적인 운영을 이어가고 있습니다.`;
             }
             
             return feedback;
@@ -726,36 +769,76 @@
             <div class="ai-report-card">
                 <div class="ai-report-header">
                     <i class="fas fa-robot"></i>
-                    <h2>AI 성과 분석 및 실적 코칭 리포트</h2>
+                    <h2 style="display:flex; align-items:center; gap:10px;">
+                        AI 성과 분석 및 실적 코칭 리포트 
+                        <span style="font-size: 10px; font-weight: normal; color: #64748b;">(v2.1 - 260331)</span>
+                    </h2>
                 </div>
+                
+                <p style="margin: 0 0 15px 0; line-height: 1.6; font-size: 14px; color: #334155;"><strong>▶ 본부 종합:</strong> 전체 <b>건수 기준 정지율</b> 지표는 전반적으로 안정세에 있으나, 일부 지사에서 부실 채권 및 체납정지 비중이 임계치를 상회하고 있습니다. 월정료보다 건수 중심의 지표 방어에 집중이 요구됩니다.</p>
+                
                 <div class="ai-report-grid">
                     <div class="ai-section top">
-                        <div class="ai-section-title" style="color: #10b981;">
-                            <i class="fas fa-trophy"></i> 🏆 성과 우수 지사 (TOP 3)
+                        <div class="ai-section-title" style="color: #166534; margin-bottom: 15px; font-size: 14px; font-weight: 800; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-trophy"></i> BEST 성과 지사 (TOP 3)
                         </div>
                         ${top3.map(item => `
-                            <div class="ai-branch-item">
-                                <div class="ai-branch-name">
-                                    ${item.name} <span class="ai-branch-score">종합 점수: ${Math.round(item.totalScore)}점</span>
+                            <div class="ai-review-item">
+                                <div style="display: flex; align-items: center;">
+                                    <span class="ai-tag best">BEST</span>
+                                    <strong style="font-size: 14px; color: #1e293b;">${item.name}</strong>
+                                    <span style="font-size: 11px; color: #64748b; margin-left: auto;">종합 점수: ${Math.round(item.totalScore)}점</span>
                                 </div>
-                                <div class="ai-coaching-text">${getCoachingText(item)}</div>
+                                <span class="ai-feedback-text">${getCoachingText(item)}</span>
                             </div>
                         `).join('')}
                     </div>
                     <div class="ai-section bottom">
-                        <div class="ai-section-title" style="color: #ef4444;">
-                            <i class="fas fa-exclamation-circle"></i> ⚠️ 집중 관리 지사 (하위 3)
+                        <div class="ai-section-title" style="color: #991b1b; margin-bottom: 15px; font-size: 14px; font-weight: 800; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-exclamation-triangle"></i> LAGGING 부진 지사 (하위 3)
                         </div>
                         ${bottom3.map(item => `
-                            <div class="ai-branch-item">
-                                <div class="ai-branch-name">
-                                    ${item.name} <span class="ai-branch-score">종합 점수: ${Math.round(item.totalScore)}점</span>
+                            <div class="ai-review-item">
+                                <div style="display: flex; align-items: center;">
+                                    <span class="ai-tag lag">LAGGING</span>
+                                    <strong style="font-size: 14px; color: #1e293b;">${item.name}</strong>
+                                    <span style="font-size: 11px; color: #64748b; margin-left: auto;">종합 점수: ${Math.round(item.totalScore)}점</span>
                                 </div>
-                                <div class="ai-coaching-text">${getCoachingText(item)}</div>
+                                <span class="ai-feedback-text">${getCoachingText(item)}</span>
                             </div>
                         `).join('')}
                     </div>
                 </div>
+
+                <!-- New: Detailed branch-specific coaching section -->
+                <div style="margin-top: 30px; border-top: 2px solid #e2e8f0; padding-top: 25px;">
+                    <h5 style="margin: 0 0 20px 0; color: #1e3a8a; font-size: 15px; font-weight: 800; display: flex; align-items: center; gap: 8px;">
+                        <i class="fas fa-list-check"></i> 지사별 세부 실적 코칭 가이드 (전체)
+                    </h5>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px 40px;">
+                        ${data.map(item => {
+                            const isBest = top3.some(t => t.name === item.name);
+                            const isLag = bottom3.some(l => l.name === item.name);
+                            let tag = '';
+                            if (isBest) tag = '<span class="ai-tag best">BEST</span>';
+                            else if (isLag) tag = '<span class="ai-tag lag">LAGGING</span>';
+                            else tag = '<span class="ai-tag" style="background:#f1f5f9; color:#475569; border:1px solid #e2e8f0;">NORMAL</span>';
+
+                            return `
+                                <div class="ai-review-item">
+                                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                                        ${tag}
+                                        <strong style="font-size: 14px; color: #1e293b;">${item.name}</strong>
+                                        <span style="font-size: 11px; color: #64748b; margin-left: auto;">종합: ${Math.round(item.totalScore)}점</span>
+                                    </div>
+                                    <span class="ai-feedback-text" style="font-size: 12.5px;">${getCoachingText(item)}</span>
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                </div>
+                
+                <p style="margin-top:20px; font-style: italic; color: #94a3b8; font-size: 11px; border-top: 1px dashed #e2e8f0; padding-top: 15px; text-align: right;">※ 본 분석은 실시간 실적·해지·정지 데이터 융합을 통한 AI 생성 리포트입니다.</p>
             </div>
         `;
         
@@ -785,11 +868,14 @@
                 <div class="txt-num">${fmt(c)}</div>
                 <div class="txt-num" style="font-size:10px; opacity:0.55;">${fmt(v)}</div>
             `;
-            // Helper for 2-line rate cells - Center aligned with chips
+            // Helper for 2-line rate cells - Center aligned with chips (Primarily Count-based)
             const cellRT = (c_rate, v_rate, cat) => `
                 <div class="text-center">${getRateIcon(c_rate, cat)}</div>
-                <div class="txt-num text-center" style="font-size:10px; opacity:0.55; margin-top:2px;">${pct(v_rate)}</div>
+                <div class="txt-num text-center" style="font-size:10px; opacity:0; height:0; overflow:hidden;">${pct(v_rate)}</div>
             `;
+
+            const total_sum_c = item.pay_c + item.gen_c;
+            const total_sum_v = item.pay_v + item.gen_v;
 
             const tc_s = item.base_c > 0 ? item.total_c / item.base_c : 0;
             const tv_s = item.base_v > 0 ? item.total_v / item.base_v : 0;
@@ -797,25 +883,25 @@
             const dv_s = item.base_v > 0 ? item.def_v / item.base_v : 0;
             const ec_s = item.base_e_c > 0 ? item.etc_c / item.base_e_c : 0;
             const ev_s = item.base_e_v > 0 ? item.etc_v / item.base_e_v : 0;
-            const pc_s = item.base_c > 0 ? item.pay_c / item.base_c : 0;
-            const pv_s = item.base_v > 0 ? item.pay_v / item.base_v : 0;
-            const gc_s = item.base_c > 0 ? item.gen_c / item.base_c : 0;
-            const gv_s = item.base_v > 0 ? item.gen_v / item.base_v : 0;
             
-            const total_sum_c = item.pay_c + item.gen_c;
-            const total_sum_v = item.pay_v + item.gen_v;
-            const pay_ratio_c = total_sum_c > 0 ? item.pay_c / total_sum_c : 0;
-            const pay_ratio_v = total_sum_v > 0 ? item.pay_v / total_sum_v : 0;
+            const pc_s = total_sum_c > 0 ? item.pay_c / total_sum_c : 0;
+            const pv_s = total_sum_v > 0 ? item.pay_v / total_sum_v : 0;
+            const gc_s = total_sum_c > 0 ? item.gen_c / total_sum_c : 0;
+            const gv_s = total_sum_v > 0 ? item.gen_v / total_sum_v : 0;
+            
             const acc_sc = item.base_c > 0 ? total_sum_c / item.base_c : 0;
             const acc_sv = item.base_v > 0 ? total_sum_v / item.base_v : 0;
+            
+            const pay_ratio_c = total_sum_c > 0 ? item.pay_c / total_sum_c : 0;
+            const pay_ratio_v = total_sum_v > 0 ? item.pay_v / total_sum_v : 0;
 
             tr.innerHTML = `
                 <td class="sticky-col text-left">${item.name}</td>
                 <td class="border-thin-v">${cellPF(item.total_c, item.total_v)}</td><td class="gutter-r">${cellRT(tc_s, tv_s, 'total')}</td>
                 <td class="border-thin-v">${cellPF(item.def_c, item.def_v)}</td><td class="gutter-r">${cellRT(dc_s, dv_s, 'sub')}</td>
                 <td class="border-thin-v">${cellPF(item.etc_c, item.etc_v)}</td><td class="gutter-r">${cellRT(ec_s, ev_s, 'sub')}</td>
-                <td class="border-thin-v">${cellPF(item.pay_c, item.pay_v)}</td><td class="gutter-r">${cellRT(pc_s, pv_s, 'sub')}</td>
-                <td class="border-thin-v">${cellPF(item.gen_c, item.gen_v)}</td><td class="gutter-r">${cellRT(gc_s, gv_s, 'sub')}</td>
+                <td class="border-thin-v">${cellPF(item.pay_c, item.pay_v)}</td><td class="gutter-r">${cellRT(pc_s, pv_s, 'portion')}</td>
+                <td class="border-thin-v">${cellPF(item.gen_c, item.gen_v)}</td><td class="gutter-r">${cellRT(gc_s, gv_s, 'portion')}</td>
                 <td class="border-thin-v">${cellPF(total_sum_c, total_sum_v)}</td><td class="gutter-r">${cellRT(acc_sc, acc_sv, 'acc')}</td>
                 <td class="txt-num text-center" style="padding: 2px;">
                     <div style="font-weight:700;">C: ${pct0(pay_ratio_c)}</div>
@@ -852,9 +938,9 @@
                     <td class="border-thin-v">${footPF(sums.etc_c, sums.etc_v)}</td>
                     <td class="gutter-r">${footRT(sums.etc_c, sums.etc_v, sums.base_e_c, sums.base_e_v, 'sub')}</td>
                     <td class="border-thin-v">${footPF(sums.pay_c, sums.pay_v)}</td>
-                    <td class="gutter-r">${footRT(sums.pay_c, sums.pay_v, sums.base_c, sums.base_v, 'sub')}</td>
+                    <td class="gutter-r">${footRT(sums.pay_c, sums.pay_v, ts_c, ts_v, 'portion')}</td>
                     <td class="border-thin-v">${footPF(sums.gen_c, sums.gen_v)}</td>
-                    <td class="gutter-r">${footRT(sums.gen_c, sums.gen_v, sums.base_c, sums.base_v, 'sub')}</td>
+                    <td class="gutter-r">${footRT(sums.gen_c, sums.gen_v, ts_c, ts_v, 'portion')}</td>
                     <td class="border-thin-v">${footPF(ts_c, ts_v)}</td>
                     <td class="gutter-r">${footRT(ts_c, ts_v, sums.base_c, sums.base_v, 'acc')}</td>
                     <td class="txt-num text-center" style="padding: 2px;">
@@ -875,18 +961,24 @@
     }
 
     function updateKPIs(sums) {
+        const totalRate = sums.base_c > 0 ? (sums.total_c / sums.base_c * 100).toFixed(2) : '0.00';
+        const defectRate = sums.base_c > 0 ? (sums.def_c / sums.base_c * 100).toFixed(2) : '0.00';
+        
         document.getElementById('kpi-total').innerText = fmt(sums.total_c);
-        document.getElementById('kpi-total-v').innerText = fmtSmart(sums.total_v, 'value');
+        document.getElementById('kpi-total-v').innerText = `건수 점유율: ${totalRate}%`;
         document.getElementById('kpi-defect').innerText = fmt(sums.def_c);
-        document.getElementById('kpi-defect-v').innerText = fmtSmart(sums.def_v, 'value');
+        document.getElementById('kpi-defect-v').innerText = `건수 점유율: ${defectRate}%`;
         
         if (document.getElementById('kpi-etc')) {
+            const etcRate = sums.base_e_c > 0 ? (sums.etc_c / sums.base_e_c * 100).toFixed(2) : '0.00';
             document.getElementById('kpi-etc').innerText = fmt(sums.etc_c);
-            document.getElementById('kpi-etc-v').innerText = fmtSmart(sums.etc_v, 'value');
+            document.getElementById('kpi-etc-v').innerText = `건수 점유율: ${etcRate}%`;
         }
         if (document.getElementById('kpi-pay')) {
+            const totalSum = sums.pay_c + sums.gen_c;
+            const payPortion = totalSum > 0 ? Math.round(sums.pay_c / totalSum * 100) : 0;
             document.getElementById('kpi-pay').innerText = fmt(sums.pay_c);
-            document.getElementById('kpi-pay-v').innerText = fmtSmart(sums.pay_v, 'value');
+            document.getElementById('kpi-pay-v').innerText = `건수 비중: ${payPortion}%`;
         }
     }
 

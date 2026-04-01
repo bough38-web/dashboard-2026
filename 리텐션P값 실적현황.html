@@ -210,8 +210,8 @@
         <div class="header-control-box animate-up" style="padding: 20px 25px;">
             <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
                 <div class="title-group">
-                    <h1 id="mainTitleText" style="font-size: 22px;">리텐션 P값 집행 현황 (본부별 / 2월 누적)</h1>
-                    <p style="font-size: 13px;">집계 기준 : 2026. 2월 말 &nbsp;|&nbsp; 단위 : 천원, %</p>
+                    <h1 id="mainTitleText" style="font-size: 22px;">리텐션 P값 집행 현황 (본부별 / 3월 누적)</h1>
+                    <p style="font-size: 13px;">집계 기준 : 2026. 3월 말 &nbsp;|&nbsp; 단위 : 천원, %</p>
                 </div>
                 <div class="pdf-btn-container" style="margin: 0;">
                     <button id="downloadPdfBtn" class="pdf-btn" onclick="downloadPDF()">📄 PDF 다운로드</button>
@@ -233,6 +233,7 @@
                         <button class="filter-btn view-btn active" data-view="all" onclick="changeView('all')">전체 현황</button>
                         <button class="filter-btn view-btn" data-view="1월" onclick="changeView('1월')">1월 실적</button>
                         <button class="filter-btn view-btn" data-view="2월" onclick="changeView('2월')">2월 실적</button>
+                        <button class="filter-btn view-btn" data-view="3월" onclick="changeView('3월')">3월 실적</button>
                     </div>
                 </div>
 
@@ -247,20 +248,20 @@
         <div class="top-grid animate-up">
             <div class="card kpi-wrapper">
                 <div class="kpi-box box-blue">
-                    <h3 id="kpiTitle1">전국 본부 2월 누적 예산</h3>
+                    <h3 id="kpiTitle1">전국 본부 3월 누적 예산</h3>
                     <div class="value" id="kpiBudget">-<span class="sub-value">천원</span></div>
                 </div>
                 <div class="kpi-box box-red">
-                    <h3 id="kpiTitle2">전국 본부 2월 누적 실적 (사용률)</h3>
+                    <h3 id="kpiTitle2">전국 본부 3월 누적 실적 (사용률)</h3>
                     <div class="value"><span id="kpiActual">-</span><span class="sub-value">천원</span> <span id="kpiRate" style="margin-left:8px; font-size: 22px;">(0%)</span></div>
                 </div>
             </div>
             <div class="card">
-                <div class="card-title">📊 <span id="chartTitle1">2월 누적 실적 현황</span></div>
+                <div class="card-title">📊 <span id="chartTitle1">3월 누적 실적 현황</span></div>
                 <div class="chart-container"><canvas id="budgetChart"></canvas></div>
             </div>
             <div class="card">
-                <div class="card-title">📈 1월 vs 2월 실적(소계) 추이</div>
+                <div class="card-title">📈 2월 vs 3월 실적(소계) 추이</div>
                 <div class="chart-container"><canvas id="trendChart"></canvas></div>
             </div>
         </div>
@@ -288,26 +289,26 @@
     });
 
     const hqData = [
-        { name: "강남/서부", base: 4401, qBudget: 13204, mBudget: 4401, jan: [2720, 1758, 4478, 6534], feb: [5465, 1105, 6571, 8874], mom: [2745, -653, 2092], acc: [8803, 11049, 126, 15409] },
-        { name: "강북/강원", base: 2867, qBudget: 8600, mBudget: 2867, jan: [1381, 154, 1535, 970], feb: [1669, 220, 1889, 361], mom: [288, 67, 354], acc: [5734, 3424, 60, 1331] },
-        { name: "부산/경남", base: 2142, qBudget: 6425, mBudget: 2142, jan: [1708, 170, 1879, 682], feb: [2279, 0, 2279, 917], mom: [570, -170, 400], acc: [4284, 4157, 97, 1599] },
-        { name: "전남/전북", base: 2239, qBudget: 6717, mBudget: 2239, jan: [2656, 40, 2696, 1473], feb: [1463, 10, 1473, 1580], mom: [-1192, -30, -1223], acc: [4478, 4169, 93, 3054] },
-        { name: "충남/충북", base: 1798, qBudget: 5395, mBudget: 1798, jan: [3309, 1391, 4700, 909], feb: [657, 1719, 2376, 419], mom: [-2652, 328, -2324], acc: [3596, 7076, 197, 1328] },
-        { name: "대구/경북", base: 1592, qBudget: 4775, mBudget: 1592, jan: [2233, 0, 2233, 1403], feb: [1427, 0, 1427, 6660], mom: [-806, 0, -806], acc: [3183, 3661, 115, 8063] }
+        { name: "강남/서부", base: 4401, qBudget: 13204, mBudget: 4401, jan: [2720, 1758, 4478, 6534], feb: [5465, 1105, 6571, 8874], mar: [2368, 1826, 4194, 6676], mom: [-3098, 721, -2377], acc: [13204, 15242, 115, 22085] },
+        { name: "강북/강원", base: 2867, qBudget: 8600, mBudget: 2867, jan: [1381, 154, 1535, 970], feb: [1669, 220, 1889, 361], mar: [3665, 299, 3964, 67], mom: [1997, 78, 2075], acc: [8600, 7388, 86, 1398] },
+        { name: "부산/경남", base: 2142, qBudget: 6425, mBudget: 2142, jan: [1708, 170, 1879, 682], feb: [2279, 0, 2279, 917], mar: [1798, 112, 1911, 801], mom: [-481, 112, -368], acc: [6425, 6068, 94, 2400] },
+        { name: "전남/전북", base: 2239, qBudget: 6717, mBudget: 2239, jan: [2656, 40, 2696, 1473], feb: [1463, 10, 1473, 1580], mar: [2354, 37, 2391, 358], mom: [891, 27, 918], acc: [6717, 6560, 98, 3412] },
+        { name: "충남/충북", base: 1798, qBudget: 5395, mBudget: 1798, jan: [3309, 1391, 4700, 909], feb: [657, 1719, 2376, 419], mar: [2689, 1195, 3884, 419], mom: [2032, -524, 1508], acc: [5395, 10960, 203, 1747] },
+        { name: "대구/경북", base: 1592, qBudget: 4775, mBudget: 1592, jan: [2233, 0, 2233, 1403], feb: [1427, 0, 1427, 6660], mar: [3795, 22, 3817, 1664], mom: [2368, 22, 2390], acc: [4775, 7478, 157, 9727] }
     ];
-    const totalHqData = { name: "전체 합계", base: 15039, qBudget: 45117, mBudget: 15039, jan: [14007, 3513, 17521, 11971], feb: [12961, 3055, 16015, 18812], mom: [-1047, -459, -1505], acc: [30078, 33536, 112, 30783] };
+    const totalHqData = { name: "전체 합계", base: 15039, qBudget: 45117, mBudget: 15039, jan: [14007, 3513, 17521, 11971], feb: [12961, 3055, 16015, 18812], mar: [16670, 3491, 20161, 9986], mom: [3709, 437, 4146], acc: [45117, 53697, 119, 40769] };
 
     const branchData = [
-        { name: "중앙", base: 427, qBudget: 1280, mBudget: 427, jan: [31, 12, 43, 49], feb: [216, 12, 229, 127], mom: [185, 0, 185], acc: [854, 272, 32, 176] },
-        { name: "강북", base: 353, qBudget: 1058, mBudget: 353, jan: [123, 0, 123, 0], feb: [0, 11, 11, 0], mom: [-123, 11, -112], acc: [705, 134, 19, 0] },
-        { name: "서대문", base: 318, qBudget: 953, mBudget: 318, jan: [215, 0, 215, 90], feb: [334, 6, 340, 90], mom: [119, 6, 125], acc: [635, 555, 87, 180] },
-        { name: "고양", base: 414, qBudget: 1243, mBudget: 414, jan: [178, 0, 178, 645], feb: [93, 0, 93, 23], mom: [-85, 0, -85], acc: [828, 271, 33, 668] },
-        { name: "의정부", base: 321, qBudget: 962, mBudget: 321, jan: [243, 0, 243, 0], feb: [200, 27, 227, 60], mom: [-43, 27, -16], acc: [642, 470, 73, 60] },
-        { name: "남양주", base: 338, qBudget: 1015, mBudget: 338, jan: [84, 37, 121, 120], feb: [64, 9, 73, 38], mom: [-20, -28, -48], acc: [677, 194, 29, 158] },
-        { name: "강릉", base: 321, qBudget: 964, mBudget: 321, jan: [191, 10, 201, 22], feb: [386, 8, 394, 22], mom: [195, -2, 193], acc: [642, 595, 93, 44] },
-        { name: "원주", base: 375, qBudget: 1125, mBudget: 375, jan: [316, 94, 410, 104], feb: [375, 148, 523, 361], mom: [59, 54, 113], acc: [750, 933, 124, 465] }
+        { name: "중앙", base: 427, qBudget: 1280, mBudget: 427, jan: [31, 12, 43, 49], feb: [216, 12, 229, 127], mar: [59, 0, 59, 0], mom: [185, 0, 185], acc: [1280, 331, 26, 176] },
+        { name: "강북", base: 353, qBudget: 1058, mBudget: 353, jan: [123, 0, 123, 0], feb: [0, 11, 11, 0], mar: [287, 0, 287, 0], mom: [-123, 11, -112], acc: [1058, 421, 40, 0] },
+        { name: "서대문", base: 318, qBudget: 953, mBudget: 318, jan: [215, 0, 215, 90], feb: [334, 6, 340, 90], mar: [323, 0, 323, 0], mom: [119, 6, 125], acc: [953, 878, 92, 180] },
+        { name: "고양", base: 414, qBudget: 1243, mBudget: 414, jan: [178, 0, 178, 645], feb: [93, 0, 93, 23], mar: [639, 0, 639, 22], mom: [-85, 0, -85], acc: [1243, 911, 73, 690] },
+        { name: "의정부", base: 321, qBudget: 962, mBudget: 321, jan: [243, 0, 243, 0], feb: [200, 27, 227, 60], mar: [963, 51, 1014, 0], mom: [-43, 27, -16], acc: [962, 1483, 154, 0] },
+        { name: "남양주", base: 338, qBudget: 1015, mBudget: 338, jan: [84, 37, 121, 120], feb: [64, 9, 73, 38], mar: [998, 84, 1081, 0], mom: [-20, -28, -48], acc: [1015, 1275, 126, 180] },
+        { name: "강릉", base: 321, qBudget: 964, mBudget: 321, jan: [191, 10, 201, 22], feb: [386, 8, 394, 38], mar: [82, 19, 101, 0], mom: [195, -2, 193], acc: [964, 695, 72, 60] },
+        { name: "원주", base: 375, qBudget: 1125, mBudget: 375, jan: [316, 94, 410, 44], feb: [375, 148, 523, 22], mar: [316, 145, 461, 45], mom: [59, 54, 113], acc: [1125, 1394, 124, 111] }
     ];
-    const totalBranchData = { name: "강북/강원 합계", base: 2867, qBudget: 8600, mBudget: 2867, jan: [1381, 154, 1535, 1030], feb: [1669, 220, 1889, 721], mom: [288, 67, 354], acc: [5734, 3424, 60, 1751] };
+    const totalBranchData = { name: "강북/강원 합계", base: 2867, qBudget: 8600, mBudget: 2867, jan: [1381, 154, 1535, 970], feb: [1669, 220, 1889, 361], mar: [3665, 299, 3964, 67], mom: [288, 67, 354], acc: [8600, 7388, 86, 1398] };
 
     let currentLevel = 'hq'; 
     let currentView = 'all'; 
@@ -341,7 +342,7 @@
 
         const filterGroup = document.getElementById('filterBtnGroup');
         document.getElementById('filterLabelText').innerText = level === 'hq' ? '본부 선택' : '지사 선택';
-        document.getElementById('mainTitleText').innerText = `리텐션 P값 집행 현황 (${level === 'hq' ? '본부별' : '지사별'} / ${currentView === 'all' ? '2월 누적' : currentView})`;
+        document.getElementById('mainTitleText').innerText = `리텐션 P값 집행 현황 (${level === 'hq' ? '본부별' : '지사별'} / ${currentView === 'all' ? '3월 누적' : currentView})`;
 
         let btnsHtml = `<button class="filter-btn item-btn active" data-target="all" onclick="filterItem('all')">전체</button>`;
         const dataArr = getActiveDataArray();
@@ -358,7 +359,7 @@
         document.querySelector(`.view-btn[data-view="${viewMode}"]`).classList.add('active');
         currentView = viewMode;
         
-        let viewText = viewMode === 'all' ? '2월 누적' : viewMode;
+        let viewText = viewMode === 'all' ? '3월 누적' : viewMode;
         document.getElementById('mainTitleText').innerText = `리텐션 P값 집행 현황 (${currentLevel === 'hq' ? '본부별' : '지사별'} / ${viewText})`;
         
         refreshAll(true);
@@ -397,7 +398,7 @@
 
         let targetData = currentFilter === 'all' ? getActiveTotalData() : getActiveDataArray().find(d => d.name === currentFilter);
         let prefix = currentFilter === 'all' ? (currentLevel === 'hq' ? '전국 본부' : '강북/강원 산하') : `[${currentFilter}]`;
-        let viewText = currentView === 'all' ? '2월 누적' : currentView;
+        let viewText = currentView === 'all' ? '3월 누적' : currentView;
 
         title1.innerText = `${prefix} ${viewText} 예산`;
         title2.innerText = `${prefix} ${viewText} 실적 (사용률)`;
@@ -410,6 +411,10 @@
         } else if (currentView === '2월') {
             budget = targetData.mBudget;
             actual = targetData.feb[2];
+            rate = Math.round((actual/budget)*100);
+        } else if (currentView === '3월') {
+            budget = targetData.mBudget;
+            actual = targetData.mar[2];
             rate = Math.round((actual/budget)*100);
         } else {
             budget = targetData.acc[0];
@@ -433,8 +438,9 @@
         const showBudget = currentView === 'all';
         const showJan = currentView === 'all' || currentView === '1월';
         const showFeb = currentView === 'all' || currentView === '2월';
+        const showMar = currentView === 'all' || currentView === '3월';
         const showMom = currentView === 'all';
-        const showAcc = currentView === 'all' || currentView === '2월';
+        const showAcc = currentView === 'all' || currentView === '3월';
 
         thead.innerHTML = `
             <tr>
@@ -443,13 +449,15 @@
                 ${showBudget ? `<th colspan="2" class="bg-budget group-end">총 예산 현황</th>` : ''}
                 ${showJan ? `<th colspan="4" class="bg-jan group-end">1월 실적</th>` : ''}
                 ${showFeb ? `<th colspan="4" class="bg-feb group-end">2월 실적</th>` : ''}
+                ${showMar ? `<th colspan="4" class="bg-mar group-end">3월 실적</th>` : ''}
                 ${showMom ? `<th colspan="3" class="bg-mom group-end">전월대비 (증감)</th>` : ''}
-                ${showAcc ? `<th colspan="4" class="bg-acc group-end">2월 누적 종합</th>` : ''}
+                ${showAcc ? `<th colspan="4" class="bg-acc group-end">3월 누적 종합</th>` : ''}
             </tr>
             <tr>
                 ${showBudget ? `<th class="sub-th">분기 예산</th><th class="sub-th group-end">월 예산</th>` : ''}
                 ${showJan ? `<th class="sub-th">인하</th><th class="sub-th">할인</th><th class="sub-th txt-blue">소계</th><th class="sub-th group-end col-exemption">면제</th>` : ''}
                 ${showFeb ? `<th class="sub-th">인하</th><th class="sub-th">할인</th><th class="sub-th txt-blue">소계</th><th class="sub-th group-end col-exemption">면제</th>` : ''}
+                ${showMar ? `<th class="sub-th">인하</th><th class="sub-th">할인</th><th class="sub-th txt-blue">소계</th><th class="sub-th group-end col-exemption">면제</th>` : ''}
                 ${showMom ? `<th class="sub-th">인하</th><th class="sub-th">할인</th><th class="sub-th txt-pink group-end">합계</th>` : ''}
                 ${showAcc ? `<th class="sub-th">예산</th><th class="sub-th txt-navy">실적</th><th class="sub-th">사용률</th><th class="sub-th group-end col-exemption">면제</th>` : ''}
             </tr>
@@ -479,6 +487,9 @@
                 ${showFeb ? `<td class="val-num">${fmt(r.feb[0])}</td><td class="val-num">${fmt(r.feb[1])}</td>
                 <td class="val-num val-highlight">${fmt(r.feb[2])}</td><td class="val-num group-end col-exemption">${fmt(r.feb[3])}</td>` : ''}
 
+                ${showMar ? `<td class="val-num">${fmt(r.mar[0])}</td><td class="val-num">${fmt(r.mar[1])}</td>
+                <td class="val-num val-highlight">${fmt(r.mar[2])}</td><td class="val-num group-end col-exemption">${fmt(r.mar[3])}</td>` : ''}
+
                 ${showMom ? `<td class="val-num" style="${getColor(r.mom[0])}">${fmt(r.mom[0])}</td><td class="val-num" style="${getColor(r.mom[1])}">${fmt(r.mom[1])}</td>
                 <td class="val-num txt-pink group-end">${fmt(r.mom[2])}</td>` : ''}
 
@@ -502,6 +513,9 @@
 
                 ${showFeb ? `<td class="val-num">${fmt(f.feb[0])}</td><td class="val-num">${fmt(f.feb[1])}</td>
                 <td class="val-num val-highlight">${fmt(f.feb[2])}</td><td class="val-num group-end col-exemption">${fmt(f.feb[3])}</td>` : ''}
+
+                ${showMar ? `<td class="val-num">${fmt(f.mar[0])}</td><td class="val-num">${fmt(f.mar[1])}</td>
+                <td class="val-num val-highlight">${fmt(f.mar[2])}</td><td class="val-num group-end col-exemption">${fmt(f.mar[3])}</td>` : ''}
 
                 ${showMom ? `<td class="val-num">${fmt(f.mom[0])}</td><td class="val-num">${fmt(f.mom[1])}</td>
                 <td class="val-num val-highlight group-end" style="color:#db2777;">${fmt(f.mom[2])}</td>` : ''}
@@ -566,8 +580,8 @@
             data: {
                 labels: labels,
                 datasets: [
-                    { label: '2월 소계(실적)', data: dataArr.map(d => d.feb[2]), backgroundColor: getBgColor('#f43f5e', '#e11d48'), borderRadius: 4, order: 2 },
-                    { label: '1월 소계(실적)', type: 'line', data: dataArr.map(d => d.jan[2]), borderColor: currentFilter==='all' ? '#94a3b8' : '#cbd5e1', backgroundColor: currentFilter==='all' ? '#94a3b8' : '#cbd5e1', borderWidth: 2, pointRadius: 4, order: 1 }
+                    { label: '3월 소계(실적)', data: dataArr.map(d => d.mar[2]), backgroundColor: getBgColor('#f43f5e', '#e11d48'), borderRadius: 4, order: 2 },
+                    { label: '2월 소계(실적)', type: 'line', data: dataArr.map(d => d.feb[2]), borderColor: currentFilter==='all' ? '#94a3b8' : '#cbd5e1', backgroundColor: currentFilter==='all' ? '#94a3b8' : '#cbd5e1', borderWidth: 2, pointRadius: 4, order: 1 }
                 ]
             },
             options: {

@@ -1001,15 +1001,36 @@
         }
         .ai-tag {
             display: inline-block;
-            padding: 2px 8px;
+            padding: 3px 8px;
             border-radius: 4px;
-            font-size: 11px;
-            font-weight: 700;
-            margin-right: 5px;
+            font-size: 10px;
+            font-weight: 800;
+            margin-right: 8px;
             text-transform: uppercase;
+            width: 55px; /* Consistent width for alignment */
+            text-align: center;
         }
-        .ai-tag.best { background: #dcfce7; color: #166534; }
-        .ai-tag.lag { background: #fee2e2; color: #991b1b; }
+        .ai-tag.best { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+        .ai-tag.lag { background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; }
+
+        .ai-review-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .ai-review-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .ai-feedback-text {
+            display: block;
+            margin-top: 6px;
+            color: #475569;
+            text-align: justify; /* This completes the '줄맞춤' request */
+            line-height: 1.6;
+            word-break: break-all;
+        }
 
         /* Summary Table Colors */
         .bg-summary-blue { background-color: #f0f9ff !important; }
@@ -1102,7 +1123,7 @@
             </div>
 
             <div class="kpi-box">
-                <div class="kpi-header bg-green" id="kpi-header-pre-retention" onclick="switchView('pre-retention')">② 사전리텐션 활동 (방문율 관리)</div>
+                <div class="kpi-header bg-green" id="kpi-header-pre-retention" onclick="switchView('pre-retention')">② 사전리텐션 활동현황 (방문율 관리)</div>
                 <div class="steps-wrapper">
                     <div class="step">
                         <div class="hexagon hex-1">1월</div>
@@ -1114,7 +1135,7 @@
                     </div>
                     <div class="step">
                         <div class="hexagon hex-1">3월</div>
-                        <div class="data-card"><span class="val">231건/155건</span><span class="pct">(67%)</span></div>
+                        <div class="data-card"><span class="val">231건/176건</span><span class="pct">(76%)</span></div>
                     </div>
                 </div>
                 <div class="arrow-box">~12월 매월 대상 선정 및 VOC지령(영업구역)</div>
@@ -1144,7 +1165,9 @@
             <div class="table-header-control">
                 <div class="table-title-group">
                     <h2 class="table-title">지사별 재계약 활동 실적 상세 (<span id="titleMonth" class="text-blue">1Q 합계</span>)</h2>
-                    <div class="tab-nav" id="month-tabs" style="margin-top: 15px;">
+                    <div class="tab-nav" id="month-tabs" style="margin-top: 15px; display: flex; gap: 10px;">
+                        <button class="tab-btn" data-view="summary" onclick="switchView('summary')" style="background-color: #1e3a8a; color: white;">기관별 현황(요약)</button>
+                        <div style="width: 2px; background: #cbd5e1; margin: 5px 0;"></div>
                         <button class="tab-btn" data-month="1월" onclick="changeTab('1월')">1월</button>
                         <button class="tab-btn" data-month="2월" onclick="changeTab('2월')">2월</button>
                         <button class="tab-btn" data-month="3월" onclick="changeTab('3월')">3월</button>
@@ -1157,7 +1180,7 @@
                         <input type="text" id="branchSearch" class="search-input" placeholder="지사명 검색..." oninput="renderTable(currentMonth)">
                     </div>
                     <div class="meta-info">
-                        <strong>집계일자 :</strong> 2026. 03. 30 기준<br>
+                        <strong>집계일자 :</strong> 2026. 03. 31 기준<br>
                         <strong>단위 :</strong> 건, 천원, %
                     </div>
                 </div>
@@ -1175,7 +1198,7 @@
         <div id="aiReviewSection" style="display: none; margin-bottom: 40px;">
             <div class="ai-review-card">
                 <div class="ai-review-header">
-                    <i class="fas fa-robot"></i> AI 성과 분석 및 실적 코칭 리포트
+                    <i class="fas fa-robot"></i> AI 성과 분석 및 실적 코칭 리포트 <span style="font-size: 10px; font-weight: normal; color: #64748b; margin-left: 10px;">(v2.1 - 260331)</span>
                 </div>
                 <div id="aiReviewContent" class="ai-review-content">
                     데이터를 분석하여 지사별 성과 요약을 생성 중입니다...
@@ -1216,80 +1239,80 @@
             "3월": {
                 rows: [
                     { name: "중앙", total: [1217, 4, 406], new: [680, 3, 325], renew: [14, 0, 0], expire: [523, 1, 81] },
-                    { name: "강북", total: [704, 1, 95], new: [389, 1, 95], renew: [18, 0, 0], expire: [297, 0, 0] },
+                    { name: "강북", total: [704, 5, 483], new: [389, 5, 483], renew: [18, 0, 0], expire: [297, 0, 0] },
                     { name: "서대문", total: [929, 4, 371], new: [607, 3, 263], renew: [15, 0, 0], expire: [308, 1, 108] },
                     { name: "고양", total: [952, 18, 1616], new: [632, 2, 117], renew: [30, 0, 0], expire: [291, 16, 1499] },
                     { name: "의정부", total: [740, 16, 1663], new: [395, 8, 652], renew: [37, 1, 163], expire: [308, 7, 848] },
                     { name: "남양주", total: [679, 9, 1302], new: [385, 7, 1181], renew: [20, 0, 0], expire: [275, 2, 121] },
                     { name: "강릉", total: [594, 0, 0], new: [355, 0, 0], renew: [18, 0, 0], expire: [221, 0, 0] },
-                    { name: "원주", total: [1034, 12, 1135], new: [560, 1, 180], renew: [62, 0, 0], expire: [412, 11, 955] }
+                    { name: "원주", total: [1034, 14, 1365], new: [560, 3, 410], renew: [62, 0, 0], expire: [412, 11, 955] }
                 ],
-                footer: { total: [6849, 64, 6588], new: [4003, 25, 2813], renew: [212, 1, 163], expire: [2634, 38, 3612] }
+                footer: { total: [6849, 70, 7206], new: [4003, 31, 3431], renew: [212, 1, 163], expire: [2634, 38, 3612] }
             },
             "1Q 합계": {
                 rows: [
                     { name: "중앙", total: [3652, 11, 1341], new: [2041, 3, 325], renew: [42, 0, 0], expire: [1569, 8, 1016] },
-                    { name: "강북", total: [2112, 4, 393], new: [1168, 1, 95], renew: [53, 0, 0], expire: [891, 3, 298] },
-                    { name: "서대문", total: [2788, 6, 928], new: [1822, 3, 263], renew: [44, 0, 0], expire: [923, 3, 665] },
+                    { name: "강북", total: [2112, 8, 780], new: [1168, 5, 483], renew: [53, 0, 0], expire: [891, 3, 298] },
+                    { name: "서대문", total: [2788, 6, 928], new: [1822, 3, 263], renew: [43, 0, 0], expire: [923, 3, 665] },
                     { name: "고양", total: [2857, 35, 3341], new: [1895, 2, 117], renew: [89, 4, 429], expire: [873, 29, 2794] },
                     { name: "의정부", total: [2219, 25, 2813], new: [1186, 8, 652], renew: [110, 1, 163], expire: [923, 16, 1998] },
-                    { name: "남양주", total: [2038, 10, 1346], new: [1154, 7, 1181], renew: [59, 0, 0], expire: [826, 3, 165] },
+                    { name: "남양주", total: [2038, 10, 1346], new: [1154, 7, 1181], renew: [59, 0, 0], expire: [825, 3, 165] },
                     { name: "강릉", total: [1781, 2, 161], new: [1065, 0, 0], renew: [53, 0, 0], expire: [663, 2, 161] },
-                    { name: "원주", total: [3101, 36, 3676], new: [1680, 1, 180], renew: [186, 2, 636], expire: [1236, 33, 2860] }
+                    { name: "원주", total: [3101, 38, 3906], new: [1680, 3, 410], renew: [186, 2, 636], expire: [1235, 33, 2860] }
                 ],
-                footer: { total: [20548, 129, 13998], new: [12010, 25, 2813], renew: [635, 7, 1228], expire: [7903, 97, 9956] }
+                footer: { total: [20548, 135, 14615], new: [12010, 31, 3431], renew: [635, 7, 1228], expire: [7903, 97, 9956] }
             }
         };
 
         const preRetentionData = {
             rows: [
-                { name: "중앙", target: 36, done: 15, received: 18, pending: 3, share: 42 },
+                { name: "중앙", target: 36, done: 17, received: 16, pending: 3, share: 47 },
                 { name: "강북", target: 26, done: 17, received: 9, pending: 0, share: 65 },
                 { name: "서대문", target: 26, done: 20, received: 6, pending: 0, share: 77 },
-                { name: "고양", target: 22, done: 13, received: 9, pending: 0, share: 59 },
-                { name: "의정부", target: 39, done: 38, received: 1, pending: 0, share: 97 },
+                { name: "고양", target: 22, done: 20, received: 2, pending: 0, share: 91 },
+                { name: "의정부", target: 39, done: 39, received: 0, pending: 0, share: 100 },
                 { name: "남양주", target: 24, done: 13, received: 11, pending: 0, share: 54 },
-                { name: "강릉", target: 22, done: 17, received: 5, pending: 0, share: 77 },
-                { name: "원주", target: 36, done: 22, received: 13, pending: 1, share: 61 }
+                { name: "강릉", target: 22, done: 18, received: 4, pending: 0, share: 82 },
+                { name: "원주", target: 36, done: 32, received: 4, pending: 0, share: 89 }
             ],
-            footer: { target: 231, done: 155, received: 72, pending: 4, share: 67 }
+            footer: { target: 231, done: 176, received: 52, pending: 3, share: 76 }
         };
 
         const terminationData = {
             rows: [
-                { name: "중앙", jan: 2.9, feb: 1.7, mar: 1.7, target: 2.1, actual: 2.1, rate: 74.0 },
-                { name: "강북", jan: 3.1, feb: 1.2, mar: 1.3, target: 1.9, actual: 1.9, rate: 86.7 },
-                { name: "서대문", jan: 1.3, feb: 1.8, mar: 1.2, target: 1.4, actual: 1.4, rate: 111.0 },
-                { name: "고양", jan: 0.8, feb: 3.9, mar: 2.2, target: 2.3, actual: 2.3, rate: 92.8 },
-                { name: "의정부", jan: 1.2, feb: 1.5, mar: 0.5, target: 1.1, actual: 1.1, rate: 175.5 },
-                { name: "남양주", jan: 0.9, feb: 3.0, mar: 1.3, target: 1.7, actual: 1.7, rate: 108.2 },
-                { name: "강릉", jan: 1.3, feb: 0.8, mar: 2.2, target: 1.4, actual: 1.4, rate: 140.6 },
-                { name: "원주", jan: 0.0, feb: 1.0, mar: 1.0, target: 0.6, actual: 0.6, rate: 222.5 }
+                { name: "중앙", jan: 2.9, feb: 1.7, mar: 2.2, target: 2.3, actual: 2.3, rate: 68.0 },
+                { name: "강북", jan: 3.1, feb: 1.2, mar: 3.4, target: 2.6, actual: 2.6, rate: 63.1 },
+                { name: "서대문", jan: 1.3, feb: 1.8, mar: 1.5, target: 1.5, actual: 1.5, rate: 103.5 },
+                { name: "고양", jan: 0.8, feb: 3.9, mar: 3.0, target: 2.5, actual: 2.5, rate: 83.4 },
+                { name: "의정부", jan: 1.2, feb: 1.5, mar: 1.5, target: 1.4, actual: 1.4, rate: 134.4 },
+                { name: "남양주", jan: 0.9, feb: 3.0, mar: 2.3, target: 2.1, actual: 2.1, rate: 91.4 },
+                { name: "강릉", jan: 1.3, feb: 0.8, mar: 2.7, target: 1.6, actual: 1.6, rate: 125.2 },
+                { name: "원주", jan: 0.0, feb: 1.0, mar: 1.6, target: 0.9, actual: 0.9, rate: 168.9 }
             ],
-            footer: { jan: 1.5, feb: 1.9, mar: 1.4, target: 1.6, actual: 1.6, rate: 110.0 }
+            footer: { jan: 1.5, feb: 1.9, mar: 2.2, target: 1.8, actual: 1.8, rate: 93.7 }
         };
 
         const pValueData = {
             rows: [
-                { name: "중앙", usage: 32 }, { name: "강북", usage: 19 }, { name: "서대문", usage: 87 },
-                { name: "고양", usage: 33 }, { name: "의정부", usage: 73 }, { name: "남양주", usage: 29 },
-                { name: "강릉", usage: 93 }, { name: "원주", usage: 124 }
+                { name: "중앙", usage: 26 }, { name: "강북", usage: 40 }, { name: "서대문", usage: 92 },
+                { name: "고양", usage: 73 }, { name: "의정부", usage: 154 }, { name: "남양주", usage: 126 },
+                { name: "강릉", usage: 72 }, { name: "원주", usage: 124 }
             ],
-            footer: { usage: 60 }
+            footer: { usage: 86 }
         };
 
         const suspensionData = {
             rows: [
-                { name: "중앙", total: "70(0.55%)", total_c: 70, badL: "24(0.19%)", longL: "24(0.28%)", arrears: "7(23%)" },
-                { name: "강북", total: "70(0.62%)", total_c: 70, badL: "9(0.08%)", longL: "10(0.13%)", arrears: "8(53%)" },
-                { name: "서대문", total: "84(0.95%)", total_c: 84, badL: "27(0.31%)", longL: "26(0.41%)", arrears: "10(27%)" },
-                { name: "고양", total: "192(1.45%)", total_c: 192, badL: "34(0.26%)", longL: "22(0.24%)", arrears: "31(54%)" },
-                { name: "의정부", total: "85(0.87%)", total_c: 85, badL: "4(0.04%)", longL: "6(0.10%)", arrears: "10(71%)" },
-                { name: "남양주", total: "101(1.05%)", total_c: 101, badL: "8(0.08%)", longL: "10(0.16%)", arrears: "29(81%)" },
-                { name: "강릉", total: "96(0.92%)", total_c: 96, badL: "9(0.09%)", longL: "16(0.28%)", arrears: "26(74%)" },
-                { name: "원주", total: "224(1.46%)", total_c: 224, badL: "20(0.13%)", longL: "32(0.44%)", arrears: "108(84%)" }
+                { name: "중앙", total: "76(0.60%)", total_c: 76, badL: "25(0.20%)", longL: "25(0.30%)", arrears: "7(23%)" },
+                { name: "강북", total: "53(0.47%)", total_c: 53, badL: "4(0.04%)", longL: "3(0.04%)", arrears: "0(0%)" },
+                { name: "서대문", total: "82(0.93%)", total_c: 82, badL: "23(0.26%)", longL: "26(0.41%)", arrears: "10(30%)" },
+                { name: "고양", total: "197(1.49%)", total_c: 197, badL: "23(0.17%)", longL: "11(0.12%)", arrears: "30(65%)" },
+                { name: "의정부", total: "84(0.86%)", total_c: 84, badL: "4(0.04%)", longL: "0(0.00%)", arrears: "4(50%)" },
+                { name: "남양주", total: "102(1.06%)", total_c: 102, badL: "7(0.07%)", longL: "3(0.05%)", arrears: "23(79%)" },
+                { name: "강릉", total: "101(0.97%)", total_c: 101, badL: "9(0.09%)", longL: "16(0.28%)", arrears: "26(74%)" },
+                { name: "원주", total: "222(1.45%)", total_c: 222, badL: "20(0.13%)", longL: "31(0.43%)", arrears: "107(84%)" }
             ],
-            footer: { total: "922(1.01%)", total_c: 922, badL: "135(0.15%)", longL: "146(0.26%)", arrears: "229(65%)" }
+            footer: { total: "917(1.01%)", total_c: 917, badL: "115(0.13%)", longL: "115(0.20%)", arrears: "207(66%)" }
         };
 
         function getBadge(target, actual) {
@@ -1366,8 +1389,8 @@
             if (val === undefined || val === null || val === '-') return '';
             const num = parseFloat(val);
             if (isNaN(num)) return '';
-            if (num < 100) return '🟢';   // For termination, lower rate is better
-            if (num <= 120) return '🟡';
+            if (num >= 100) return '🟢';   // Reversed logic to match overall target metric style
+            if (num >= 50) return '🟡';
             return '🔴';
         }
 
@@ -1385,18 +1408,55 @@
             const match = str.match(/\(([\d.]+)%\)/);
             if (match) {
                 const val = parseFloat(match[1]);
-                return val > 50 ? '🔴' : '🔵';
+                if (val > 50) return '🔴';
+                if (val > 30) return '🟡';
+                return '🟢';
             }
             return '';
         }
 
         function flexCell(icon, text) {
             if (!icon) return text;
-            const textWidth = text.includes('(') ? '75px' : '45px';
-            return `<div style="display: flex; justify-content: center; align-items: center; gap: 4px;">
-                        <span style="width: 16px; text-align: center; font-size: 11px;">${icon}</span>
-                        <span style="width: ${textWidth}; text-align: right;">${text}</span>
+            const textWidth = text.includes('(') ? '72px' : '42px';
+            return `<div style="display: flex; align-items: center; justify-content: space-between; width: max-content; margin: 0 auto;">
+                        <span style="width: 16px; text-align: center; font-size: 11px; flex-shrink: 0; margin-right: 4px;">${icon}</span>
+                        <span style="width: ${textWidth}; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap;">${text}</span>
                     </div>`;
+        }
+
+        function extractPct(str) {
+            if (!str || str === '-') return 0;
+            const m = str.match(/\(([\d.]+)%\)/);
+            return m ? parseFloat(m[1]) : 0;
+        }
+
+        function getCoachingText(item) {
+            let strengths = [];
+            let weaknesses = [];
+
+            if (item.renew >= 100) strengths.push(`재계약 달성(${item.renew}%)`);
+            if (item.suspension > 0 && item.suspension < 1.0) strengths.push(`건수 정지율(${item.suspension}%) 선방`);
+            if (item.pval >= 70 && item.pval <= 100) strengths.push(`P값(${item.pval}%) 효율 운영`);
+
+            if (item.renew < 60) weaknesses.push(`재계약 부진(${item.renew}%)`);
+            if (item.term > 110) weaknesses.push(`해지율(${item.term}%) 상승`);
+            if (item.suspension > 1.3) weaknesses.push(`건수 정지율(${item.suspension}%) 위험`);
+            if (item.pval > 100) weaknesses.push(`P값 예산 초과(${item.pval}%)`);
+            if (item.pval < 50) weaknesses.push(`방어 툴(P값) 활용 미흡(${item.pval}%)`);
+
+            let feedback = "";
+            if (strengths.length > 0) {
+                feedback += `<strong>${strengths.join(', ')}</strong> 측면에서 우수한 성과를 보이고 있으나, `;
+            } else {
+                feedback += `전반적인 지표가 정체되어 있으며, `;
+            }
+
+            if (weaknesses.length > 0) {
+                feedback += `<strong>${weaknesses.join(', ')}</strong> 부분은 집중적인 개선 노력이 필요합니다.`;
+            } else {
+                feedback += `안정적으로 지표를 유지하고 있습니다.`;
+            }
+            return feedback;
         }
 
         let currentView = 'renewal';
@@ -1712,21 +1772,21 @@
                         <th colspan="4" class="bg-summary-blue">재계약 (달성율)</th>
                         <th class="bg-summary-green">사전리텐션</th>
                         <th class="bg-summary-red">관리_해지율</th>
-                        <th class="bg-summary-blue">리텐션P값 (2월누적)</th>
+                        <th class="bg-summary-blue">리텐션P값 (3월 누적)</th>
                         <th colspan="4" class="bg-summary-red">정지 / 부실</th>
                     </tr>
                     <tr>
-                        <th class="bg-summary-blue" style="font-size:12px;">1st_재계약</th>
-                        <th class="bg-summary-blue" style="font-size:12px;">만기도래_재</th>
-                        <th class="bg-summary-blue" style="font-size:12px;">약정만료</th>
-                        <th class="bg-summary-blue" style="font-size:12px;">총실적</th>
-                        <th class="bg-summary-green" style="font-size:12px;">달성율</th>
-                        <th class="bg-summary-red" style="font-size:12px;">1Q 달성율(평균)</th>
-                        <th class="bg-summary-blue" style="font-size:12px;">사용율</th>
-                        <th class="bg-summary-red" style="font-size:12px;">총정지</th>
-                        <th class="bg-summary-red" style="font-size:12px;">부실(L형)</th>
-                        <th class="bg-summary-red" style="font-size:12px;">L형(장기)</th>
-                        <th class="bg-summary-red" style="font-size:12px;">체납정지(비율)</th>
+                        <th class="bg-summary-blue" style="font-size:11px;">만기도래_신규</th>
+                        <th class="bg-summary-blue" style="font-size:11px;">만기도래_재계약</th>
+                        <th class="bg-summary-blue" style="font-size:11px;">약정만료</th>
+                        <th class="bg-summary-blue" style="font-size:11px;">총실적</th>
+                        <th class="bg-summary-green" style="font-size:11px;">달성율</th>
+                        <th class="bg-summary-red" style="font-size:11px;">1Q 달성율</th>
+                        <th class="bg-summary-blue" style="font-size:11px;">사용율</th>
+                        <th class="bg-summary-red" style="font-size:11px;">총정지</th>
+                        <th class="bg-summary-red" style="font-size:11px;">부실(L형)</th>
+                        <th class="bg-summary-red" style="font-size:11px;">L형(장기)</th>
+                        <th class="bg-summary-red" style="font-size:11px;">체납정지</th>
                     </tr>
                 `;
                 let bodyHtml = '';
@@ -1742,32 +1802,33 @@
                     summaryRows = summaryRows.filter(r => r.name.includes(userBranch) || userBranch.includes(r.name));
                 }
 
-                summaryRows.forEach((r) => {
-                    const originalIdx = summarySource.rows.findIndex(row => row.name === r.name);
-                    const pr = preRetentionData.rows.find(row => row.name === r.name) || { share: 0 };
-                    const tr = terminationData.rows.find(row => row.name === r.name) || { rate: 0 };
-                    const pv = pValueData.rows.find(row => row.name === r.name) || { usage: 0 };
-                    const ss = suspensionData.rows.find(row => row.name === r.name) || { total: '-', badL: '-', longL: '-', arrears: '-' };
+                    summaryRows.forEach((r) => {
+                        const originalIdx = summarySource.rows.findIndex(row => row.name === r.name);
+                        const pr = preRetentionData.rows.find(row => row.name === r.name) || { share: 0 };
+                        const tr = terminationData.rows.find(row => row.name === r.name) || { rate: 0 };
+                        const pv = pValueData.rows.find(row => row.name === r.name) || { usage: 0 };
+                        const ss = suspensionData.rows.find(row => row.name === r.name) || { total: '-', badL: '-', longL: '-', arrears: '-' };
 
-                    const calcPct = (vals) => (vals && vals[0] > 0 ? Math.round((vals[2] / vals[0]) * 100) : 0);
+                        const calcPct = (vals) => (vals && vals[0] > 0 ? Math.round((vals[2] / vals[0]) * 100) : 0);
+                        const totalPct = calcPct(r.total);
 
-                    bodyHtml += `
-                        <tr class="zebra-row">
-                            <td class="sticky-col text-c text-bold-heavy">${r.name}</td>
-                            <td class="val-num bg-summary-blue" style="padding: 0;">${flexCell(getGoalIcon(calcPct(r.new)), calcPct(r.new) + '%')}</td>
-                            <td class="val-num bg-summary-blue" style="padding: 0;">${(r.renew && r.renew[0] > 0) ? flexCell(getGoalIcon(calcPct(r.renew)), calcPct(r.renew) + '%') : '-'}</td>
-                            <td class="val-num bg-summary-blue" style="padding: 0;">${flexCell(getGoalIcon(calcPct(r.expire)), calcPct(r.expire) + '%')}</td>
-                            <td class="val-num bg-summary-blue text-bold-heavy" style="padding: 0;">${flexCell(getGoalIcon(calcPct(r.total)), calcPct(r.total) + '%')}</td>
-                            <td class="val-num bg-summary-green" style="padding: 0;">${flexCell(getGoalIcon(pr.share), pr.share + '%')}</td>
-                            <td class="val-num bg-summary-red" style="padding: 0;">${flexCell(getReverseGoalIcon(tr.rate), tr.rate + '%')}</td>
-                            <td class="val-num bg-summary-blue" style="padding: 0;">${flexCell(getPValueIcon(pv.usage), pv.usage + '%')}</td>
-                            <td class="text-c bg-summary-red" style="padding: 0;">${flexCell(getSuspensionIcon(ss.total), ss.total)}</td>
-                            <td class="text-c bg-summary-red" style="padding: 0;">${flexCell(getSuspensionIcon(ss.badL, true), ss.badL)}</td>
-                            <td class="text-c bg-summary-red" style="padding: 0;">${flexCell(getSuspensionIcon(ss.longL, true), ss.longL)}</td>
-                            <td class="text-c bg-summary-red" style="padding: 0;">${flexCell(getArrearsIcon(ss.arrears), ss.arrears)}</td>
-                        </tr>
-                    `;
-                });
+                        bodyHtml += `
+                            <tr class="zebra-row">
+                                <td class="sticky-col text-c text-bold-heavy">${r.name}</td>
+                                <td class="val-num bg-summary-blue" style="padding: 0;">${flexCell(getGoalIcon(calcPct(r.new)), calcPct(r.new) + '%')}</td>
+                                <td class="val-num bg-summary-blue" style="padding: 0;">${(r.renew && r.renew[0] > 0) ? flexCell(getGoalIcon(calcPct(r.renew)), calcPct(r.renew) + '%') : '-'}</td>
+                                <td class="val-num bg-summary-blue" style="padding: 0;">${flexCell(getGoalIcon(calcPct(r.expire)), calcPct(r.expire) + '%')}</td>
+                                <td class="val-num bg-summary-blue text-bold-heavy" style="padding: 0;">${flexCell(getGoalIcon(totalPct), totalPct + '%')}</td>
+                                <td class="val-num bg-summary-green" style="padding: 0;">${flexCell(getGoalIcon(pr.share), pr.share + '%')}</td>
+                                <td class="val-num bg-summary-red" style="padding: 0;">${flexCell(getReverseGoalIcon(tr.rate), tr.rate + '%')}</td>
+                                <td class="val-num bg-summary-blue" style="padding: 0;">${flexCell(getPValueIcon(pv.usage), pv.usage + '%')}</td>
+                                <td class="text-c bg-summary-red" style="padding: 0;">${flexCell(getSuspensionIcon(ss.total), ss.total)}</td>
+                                <td class="text-c bg-summary-red" style="padding: 0;">${flexCell(getSuspensionIcon(ss.badL, true), ss.badL)}</td>
+                                <td class="text-c bg-summary-red" style="padding: 0;">${flexCell(getSuspensionIcon(ss.longL, true), ss.longL)}</td>
+                                <td class="text-c bg-summary-red" style="padding: 0;">${flexCell(getArrearsIcon(ss.arrears), ss.arrears)}</td>
+                            </tr>
+                        `;
+                    });
                 tbody.innerHTML = bodyHtml;
 
                 const f1 = tableData['1Q 합계'].footer;
@@ -1801,33 +1862,96 @@
             const base = tableData['1Q 합계'].rows;
             const data = base.map((r, idx) => {
                 const tr = terminationData.rows[idx];
-                const pv = pValueData.rows[idx];
                 const ss = suspensionData.rows[idx];
-                const pr = preRetentionData.rows[idx];
-                // Use [2] (Amount) for correct achievement pct instead of [1]
+                const pv = pValueData.rows[idx];
                 const totalPct = (r.total[0] === 0 ? 0 : Math.round((r.total[2] / r.total[0]) * 100));
                 return {
                     name: r.name,
                     renew: totalPct,
                     term: tr.rate,
                     pval: pv.usage,
-                    suspension: ss.total.match(/\((.*)%\)/) ? parseFloat(ss.total.match(/\((.*)%\)/)[1]) : 0,
-                    arrears: ss.arrears.match(/\((.*)%\)/) ? parseFloat(ss.arrears.match(/\((.*)%\)/)[1]) : 0
+                    suspension: extractPct(ss.total),
+                    arrears: extractPct(ss.arrears)
                 };
             });
 
-            // Sort by combined score: High renewal is good (+), High suspension is bad (-), High term pct is bad (-)
-            const sorted = [...data].sort((a, b) => (b.renew - (b.suspension * 20) - (b.term * 0.5)) - (a.renew - (a.suspension * 20) - (a.term * 0.5)));
-            const best = sorted[0];
-            const lag = sorted[sorted.length - 1];
+            const sorted = [...data].sort((a, b) => (b.renew - (b.suspension * 10)) - (a.renew - (a.suspension * 10)));
+            const top3 = sorted.slice(0, 3);
+            const bottom3 = [...sorted].reverse().slice(0, 3);
+
+
 
             const content = document.getElementById('aiReviewContent');
-            content.innerHTML = `
-                <p style="margin: 0 0 10px 0;"><strong>▶ 본부 종합:</strong> 전체 재계약 달성율 68%로 실적 제고가 시급합니다('1st_재계약' 가장 부진, 23%). 또한 해지 평잔 대상 달성(110%) 및 체납정지(65%) 등 리스크 관리 지표가 높은 수준이므로 전사적인 모니터링이 요구됩니다.</p>
-                <p style="margin: 0 0 8px 0;"><span style="display:inline-block; background:#dcfce7; color:#166534; padding:2px 8px; border-radius:12px; font-weight:700; margin-right:5px; font-size:12px;">BEST</span> <strong>${best.name} 지사</strong>: 재계약 평균 실적(${best.renew}%)이 훌륭하며, 1Q 해지율(${best.term}%) 및 총 정지율(${best.suspension}%) 측면에서 성과방어와 리스크 감소율 관리가 전 지사 중 가장 우수합니다.</p>
-                <p style="margin: 0;"><span style="display:inline-block; background:#fee2e2; color:#991b1b; padding:2px 8px; border-radius:12px; font-weight:700; margin-right:5px; font-size:12px;">LAGGING</span> <strong>${lag.name} 지사</strong>: 불량 지표인 관리 해지율(${lag.term}%) 및 정지/부실 지표(${lag.suspension}%)가 상대적으로 열위하여 리스크 집중 관리가 시급합니다. 특히 체납정지 비중(${lag.arrears}%)과 기초 이탈 관리에 즉각적인 코칭이 필요합니다.</p>
-                <p style="margin-top:10px; font-style: italic; color: #64748b; font-size: 13px;">※ 본 분석은 실시간 실적·해지·정지 데이터 융합을 통한 AI 생성 리포트입니다.</p>
-            `;
+            content.innerHTML = '<div style="text-align: center; padding: 20px;">AI 리포트를 생성 중입니다...</div>';
+            
+            let html = `<p style="margin: 0 0 15px 0; line-height: 1.6;"><strong>▶ 본부 종합:</strong> 전체 재계약 달성율 71%로 실적 제고가 시급합니다('만기도래_신규' 부진 대비, '약정만료' 선방). 또한 <b>국초 기준 리텐션P값 누적 집행율(119%)</b> 및 <b>건수 기준 총정지율(1.01%)</b> 등 리스크 관리 지표가 높은 수준이므로 전사적인 모니터링이 요구됩니다.</p>`;
+            
+            html += `<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start;">`;
+            
+            // BEST Section
+            html += `<div>
+                <h5 style="margin: 0 0 15px 0; color: #166534; font-size: 14px; font-weight: 800; display: flex; align-items: center; gap: 6px;">
+                    <i class="fas fa-trophy" style="font-size: 14px;"></i> BEST 성과 지사 (TOP 3)
+                </h5>`;
+            top3.forEach(item => {
+                html += `<div class="ai-review-item">
+                    <div style="display: flex; align-items: center;">
+                        <span class="ai-tag best">BEST</span>
+                        <strong style="font-size: 14px; color: #1e293b;">${item.name}</strong>
+                    </div>
+                    <span class="ai-feedback-text">${getCoachingText(item)}</span>
+                </div>`;
+            });
+            html += `</div>`;
+
+            // LAGGING Section
+            html += `<div>
+                <h5 style="margin: 0 0 15px 0; color: #991b1b; font-size: 14px; font-weight: 800; display: flex; align-items: center; gap: 6px;">
+                    <i class="fas fa-exclamation-triangle" style="font-size: 14px;"></i> LAGGING 부진 지사 (하위 3)
+                </h5>`;
+            bottom3.forEach(item => {
+                html += `<div class="ai-review-item">
+                    <div style="display: flex; align-items: center;">
+                        <span class="ai-tag lag">LAGGING</span>
+                        <strong style="font-size: 14px; color: #1e293b;">${item.name}</strong>
+                    </div>
+                    <span class="ai-feedback-text">${getCoachingText(item)}</span>
+                </div>`;
+            });
+            html += `</div>`;
+            
+            html += `</div>`; // Close highlight grid
+
+            // New: Detailed branch-specific coaching section
+            html += `<div style="margin-top: 30px; border-top: 2px solid #e2e8f0; padding-top: 25px;">
+                <h5 style="margin: 0 0 20px 0; color: #1e3a8a; font-size: 15px; font-weight: 800; display: flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-list-check"></i> 지사별 세부 성과 코칭 가이드 (전체)
+                </h5>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px 40px;">`;
+            
+            data.forEach(item => {
+                const isBest = top3.some(t => t.name === item.name);
+                const isLag = bottom3.some(l => l.name === item.name);
+                let tag = '';
+                if (isBest) tag = '<span class="ai-tag best">BEST</span>';
+                else if (isLag) tag = '<span class="ai-tag lag">LAGGING</span>';
+                else tag = '<span class="ai-tag" style="background:#f1f5f9; color:#475569; border:1px solid #e2e8f0;">NORMAL</span>';
+
+                html += `<div class="ai-review-item">
+                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                        ${tag}
+                        <strong style="font-size: 14px; color: #1e293b;">${item.name}</strong>
+                        <span style="font-size: 11px; color: #64748b; margin-left: auto;">종합: ${item.renew}% / 해지: ${item.term}%</span>
+                    </div>
+                    <span class="ai-feedback-text" style="font-size: 12.5px;">${getCoachingText(item)}</span>
+                </div>`;
+            });
+            
+            html += `</div></div>`;
+            
+            html += `<p style="margin-top:20px; font-style: italic; color: #94a3b8; font-size: 11px; border-top: 1px dashed #e2e8f0; padding-top: 15px; text-align: right;">※ 본 분석은 실시간 실적·해지·정지 데이터 융합을 통한 AI 생성 리포트입니다.</p>`;
+            
+            content.innerHTML = html;
         }
 
         function changeTab(month) {

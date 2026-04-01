@@ -1,646 +1,2295 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<meta charset="UTF-8">
-<title>2026년 관리고객 재계약 / 리텐션P값 / 정지·부실 현황 보드</title>
-<!-- Auth Guard -->
-<script>
-    (function() {
-        const session = localStorage.getItem('sales_dashboard_session');
-        if (!session) {
-            location.href = 'login.html';
-            return;
+    <meta charset="UTF-8">
+    <title>강북/강원 관리 대시보드</title>
+    <!-- External Resources -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <script src="theme_manager.js?v=20260318-09"></script>
+    <!-- Auth Guard -->
+    <script>
+        (function() {
+            const session = localStorage.getItem('sales_dashboard_session');
+            if (!session) {
+                location.href = 'login.html';
+                return;
+            }
+            const sessionData = JSON.parse(session);
+            const now = new Date().getTime();
+            if (now - sessionData.timestamp > 24 * 60 * 60 * 1000) {
+                localStorage.removeItem('sales_dashboard_session');
+                location.href = 'login.html';
+                return;
+            }
+            window.USER_SESSION = sessionData;
+        })();
+    </script>
+    <style>
+        :root {
+            /* 컬러 팔레트 */
+            --bg-body: #f8fafc;
+            --surface-bg: #ffffff;
+            --primary-dark: #1e293b;
+            --primary-blue: #3b82f6;
+            --primary-color: #6366f1;
+            --border-color: #f1f5f9; /* Subtle Slate-100 for horizontal lines */
+            --border-divider: #94a3b8; /* Clear Slate-400 for group dividers */
+            --text-main: #334155;
+            --text-muted: #64748b;
+            
+            /* 그룹별 포인트 컬러 (High-End Minimalist - Further Softened) */
+            --group-new-bg: #fff1f2;    
+            --group-renew-bg: #f5f7ff;  
+            --group-expire-bg: #f8fafc; 
+
+            /* 테이블 헤더 컬러 */
+            --th-bg: #f8fafc;
+            --th-total-bg: #f1f5f9;
+
+            /* 달성률 뱃지 컬러 */
+            --badge-green-bg: #dcfce7;
+            --badge-green-text: #166534;
+            --badge-red-bg: #fee2e2;
+            --badge-red-text: #991b1b;
+            --badge-blue-bg: #dbeafe;
+            --badge-blue-text: #1e40af;
+            --badge-gray-bg: #f1f5f9;
+            --badge-gray-text: #475569;
+
+            --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            --shadow-hover: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05);
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        const sessionData = JSON.parse(session);
-        const now = new Date().getTime();
-        if (now - sessionData.timestamp > 24 * 60 * 60 * 1000) {
-            localStorage.removeItem('sales_dashboard_session');
-            location.href = 'login.html';
-            return;
+
+        /* [Premium Windows/Web Compatibility] Slim Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 7px;
+            height: 7px;
         }
-        window.USER_SESSION = sessionData;
-    })();
-</script>
-<style>
-:root {
-/* 컬러 팔레트 */
---bg-body: #f1f5f9;
---surface-bg: #ffffff;
---primary-dark: #0f172a;
---primary-blue: #3b82f6;
---border-color: #e2e8f0;
---text-main: #334155;
---text-muted: #64748b;
-/* 테이블 헤더 컬러 */
---th-bg: #f8fafc;
---th-total-bg: #eff6ff;
-/* 달성률 뱃지 컬러 */
---badge-green-bg: #dcfce7;
---badge-green-text: #166534;
---badge-red-bg: #fee2e2;
---badge-red-text: #991b1b;
---badge-blue-bg: #dbeafe;
---badge-blue-text: #1e40af;
---badge-gray-bg: #f1f5f9;
---badge-gray-text: #475569;
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+            border: 1px solid #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
 
---shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
---shadow-hover: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
-}
-</style>
-<script src="theme_manager.js?v=20260318-09"></script>
+        * {
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+        }
 
-<body>
-font-family: 'Pretendard', 'Malgun Gothic', '맑은 고딕', sans-serif;
-background-color: var(--bg-body);
-margin: 0;
-padding: 40px 20px;
-display: flex;
-justify-content: center;
-color: var(--text-main);
-}
+        body {
+            font-family: 'Pretendard', 'Malgun Gothic', '맑은 고딕', sans-serif;
+            background-color: var(--bg-body);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            color: var(--text-main);
+        }
 
-.dashboard-wrapper {
-width: 100%;
-max-width: 1400px;
-display: flex;
-flex-direction: column;
-gap: 25px;
-}
+        .dashboard-wrapper {
+            width: 100%;
+            max-width: 1400px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
 
-/* 메인 대시보드 타이틀 */
-.main-title {
-font-size: 26px;
-color: var(--primary-dark);
-margin: 0;
-padding-bottom: 10px;
-border-bottom: 3px solid var(--primary-dark);
-display: flex;
-align-items: center;
-gap: 10px;
-}
-.main-title::before { content: '🎯'; font-size: 28px; }
+        /* 메인 대시보드 타이틀 */
+        .main-title {
+            font-size: 26px;
+            color: var(--primary-dark);
+            margin: 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-/* =======================================================
+        .main-title::before {
+            content: '🎯';
+            font-size: 28px;
+        }
+
+        /* =======================================================
 상단 KPI 패널 영역 (요청하신 이미지 2개 적용)
 ======================================================= */
-.kpi-section {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 25px;
-}
+        .kpi-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
 
-.kpi-box {
-background: #f8fafc;
-border: 1px solid var(--border-color);
-border-radius: 12px;
-padding: 20px;
-box-shadow: var(--shadow-soft);
-}
+        .kpi-box {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: var(--shadow-soft);
+        }
 
-.kpi-header {
-color: white;
-text-align: center;
-padding: 12px;
-border-radius: 8px;
-font-weight: 700;
-font-size: 16px;
-margin-bottom: 20px;
-letter-spacing: -0.3px;
-}
-.bg-navy { background-color: #1e3a8a; }
-.bg-green { background-color: #2f855a; }
+        .kpi-header {
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 20px;
+            letter-spacing: -0.3px;
+        }
 
-/* KPI - 왼쪽 (재계약 활동) */
-.target-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 15px; }
-.t-card {
-background: white; border: 1px solid var(--border-color); border-radius: 8px; text-align: center;
-overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-}
-.t-card.highlight { border: 2px solid #4ade80; }
-.t-card.highlight .t-head { background-color: #f0fdf4; color: #166534; border-bottom: 1px solid #4ade80; }
-.t-head { background-color: #f1f5f9; padding: 12px 6px; font-size: 13px; font-weight: 700; border-bottom: 1px solid var(--border-color); }
-.t-head span { display: block; font-size: 11px; color: var(--text-muted); margin-top: 4px; font-weight: 400; }
-.t-body { padding: 15px 5px; font-size: 13px; color: var(--text-muted); }
-.t-body strong { display: block; font-size: 17px; color: var(--primary-dark); margin: 6px 0; font-weight: 800; }
-.t-body .percent { color: var(--badge-red-text); font-weight: 700; }
-.total-row { background-color: #e0e7ff; border: 1px solid #c7d2fe; color: var(--primary-dark); text-align: center; padding: 14px; border-radius: 8px; font-weight: 700; margin-bottom: 12px; font-size: 15px; }
-.total-row span { color: var(--badge-red-text); font-size: 19px; }
-.note-text { color: var(--badge-red-text); font-size: 13px; text-align: center; font-weight: 600; border: 1px solid #fca5a5; padding: 8px; border-radius: 6px; background: #fef2f2; }
+        .bg-navy {
+            background-color: #1e3a8a;
+        }
 
-/* KPI - 오른쪽 (사전리텐션 스텝) */
-.steps-wrapper { display: flex; justify-content: space-around; align-items: center; margin-bottom: 30px; margin-top: 30px; padding: 0 10px; }
-.step { display: flex; flex-direction: column; align-items: center; gap: 16px; }
-.hexagon {
-width: 56px; height: 48px; color: white; display: flex; align-items: center; justify-content: center;
-font-weight: 800; font-size: 15px; clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-box-shadow: var(--shadow-soft);
-}
-.hex-1 { background-color: #3b82f6; }
-.hex-2 { background-color: #eab308; }
-.hex-3 { background-color: #ef4444; }
-.data-card {
-background-color: white; border: 1.5px solid var(--border-color); border-radius: 25px; padding: 12px 20px; text-align: center;
-box-shadow: var(--shadow-soft); min-width: 110px;
-}
-.data-card .val { font-size: 16px; font-weight: 800; color: var(--text-main); margin-bottom: 4px; display: block; }
-.data-card .pct { font-size: 14px; font-weight: 500; color: var(--text-muted); }
-.data-card.highlight { background-color: #dcfce7; border-color: #86efac; }
-.arrow-box {
-height: 60px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; color: var(--primary-dark); padding-right: 15px; margin: 0 20px;
-background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='1,1 95,1 99,50 95,99 1,99' fill='%23ffffff' stroke='%23cbd5e1' stroke-width='2' vector-effect='non-scaling-stroke' stroke-linejoin='miter'/%3E%3C/svg%3E");
-background-size: 100% 100%; background-repeat: no-repeat; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.04));
-}
+        .bg-green {
+            background-color: #2f855a;
+        }
 
-/* =======================================================
+        /* KPI - 왼쪽 (재계약 활동) */
+        .target-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .t-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            text-align: center;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+        }
+
+        .t-card.highlight {
+            border: 2px solid #4ade80;
+        }
+
+        .t-card.highlight .t-head {
+            background-color: #f0fdf4;
+            color: #166534;
+            border-bottom: 1px solid #4ade80;
+        }
+
+        .t-head {
+            background-color: #f1f5f9;
+            padding: 12px 6px;
+            font-size: 13px;
+            font-weight: 700;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .t-head span {
+            display: block;
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 4px;
+            font-weight: 400;
+        }
+
+        .t-body {
+            padding: 15px 5px;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .t-body strong {
+            display: block;
+            font-size: 17px;
+            color: var(--primary-dark);
+            margin: 6px 0;
+            font-weight: 800;
+        }
+
+        .t-body .percent {
+            color: #ef4444; /* Brighter red */
+            font-weight: 800;
+            font-size: 14px;
+            margin-left: 4px;
+        }
+
+        .total-row {
+            background-color: #e0e7ff;
+            border: 1px solid #c7d2fe;
+            color: var(--primary-dark);
+            text-align: center;
+            padding: 14px;
+            border-radius: 8px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        .total-row span {
+            color: #ef4444;
+            font-size: 22px;
+            font-weight: 900;
+            margin-left: 5px;
+        }
+
+        .note-text {
+            color: var(--badge-red-text);
+            font-size: 13px;
+            text-align: center;
+            font-weight: 600;
+            border: 1px solid #fca5a5;
+            padding: 8px;
+            border-radius: 6px;
+            background: #fef2f2;
+        }
+
+        /* KPI - 오른쪽 (사전리텐션 스텝) */
+        .steps-wrapper {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            padding: 0 10px;
+        }
+
+        .step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .hexagon {
+            width: 56px;
+            height: 48px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 15px;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .hex-1 {
+            background-color: #3b82f6;
+        }
+
+        .hex-2 {
+            background-color: #eab308;
+        }
+
+        .hex-3 {
+            background-color: #ef4444;
+        }
+
+        .data-card {
+            background-color: white;
+            border: 1.5px solid var(--border-color);
+            border-radius: 25px;
+            padding: 12px 20px;
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+            min-width: 110px;
+        }
+
+        .data-card .val {
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        .data-card .pct {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        .data-card.highlight {
+            background-color: #dcfce7;
+            border-color: #86efac;
+        }
+
+        .arrow-box {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            padding-right: 15px;
+            margin: 0 20px;
+            background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='1,1 95,1 99,50 95,99 1,99' fill='%23ffffff' stroke='%23cbd5e1' stroke-width='2' vector-effect='non-scaling-stroke' stroke-linejoin='miter'/%3E%3C/svg%3E");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.04));
+        }
+
+        /* =======================================================
 하단 표 영역
 ======================================================= */
-.table-section {
-background: var(--surface-bg);
-padding: 25px 30px;
-border-radius: 12px;
-box-shadow: var(--shadow-soft);
-}
+        .table-section {
+            background-color: var(--surface-bg);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--border-color);
+            margin-bottom: 30px;
+            width: 100%;
+            box-sizing: border-box;
+        }
 
-.table-header-control {
-display: flex;
-justify-content: space-between;
-align-items: flex-end;
-margin-bottom: 20px;
-}
+        .table-header-control {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 20px;
+        }
 
-.table-title {
-font-size: 18px;
-font-weight: 700;
-color: var(--primary-dark);
-margin: 0;
-}
+        .table-title-group {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
 
-.meta-info { font-size: 13px; color: var(--text-muted); text-align: right; line-height: 1.6; }
+        .search-wrapper {
+            position: relative;
+            min-width: 280px;
+        }
 
-/* 탭 버튼 스타일 */
-.tab-nav { display: flex; gap: 8px; background: #f1f5f9; padding: 6px; border-radius: 8px; border: 1px solid var(--border-color); }
-.tab-btn { padding: 8px 20px; background-color: transparent; border: none; color: var(--text-muted); font-size: 14px; font-weight: 700; border-radius: 6px; cursor: pointer; transition: all 0.2s ease; }
-.tab-btn:hover { color: var(--primary-dark); }
-.tab-btn.active { background-color: var(--primary-dark); color: white; box-shadow: var(--shadow-soft); }
+        .search-input {
+            width: 100%;
+            padding: 10px 15px 10px 40px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            background: #f8fafc;
+            font-size: 14px;
+            outline: none;
+            transition: all 0.2s;
+        }
 
-    .table-scroll { overflow-x: visible; border: none; }
-    table { table-layout: auto; width: 100%; border-collapse: collapse; font-size: 10.5px; text-align: center; border: 1px solid #334155; }
-    th, td { border: 1px solid var(--border-color); padding: 10px 5px; vertical-align: middle; }
-    
-    thead th { border: 1px solid #cbd5e1; background-color: #f8fafc; color: var(--primary-dark); font-weight: 700; }
-    thead tr:first-child th { 
-        background: linear-gradient(to bottom, #334155, #1e293b) !important;
-        color: white !important;
-        border-bottom: 2px solid #0f172a !important;
-    }
-    thead tr:last-child th {
-        border-bottom: 2px solid #94a3b8 !important;
-        border-right: 1px solid #cbd5e1 !important;
-    }
-    .bg-total-col { background-color: #f0f9ff !important; }
-.text-blue { color: var(--primary-blue); font-weight: 800; }
+        .search-input:focus {
+            border-color: var(--primary-blue);
+            background: #fff;
+            box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+        }
 
-.sep-left { border-left: 3px solid #0f172a !important; } /* 구간 구분선 */
-.border-all { border: 1px solid var(--border-color) !important; }
-.border-thin { border-right: 1px solid #cbd5e1 !important; }
+        .search-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            pointer-events: none;
+        }
 
-/* 신규(1st) 굵은 적색 테두리 강조 */
-.highlight-col-top { border-top: 4px solid #991b1b !important; }
-.highlight-col-bottom { border-bottom: 4px solid #991b1b !important; }
-.highlight-col-left { border-left: 4px solid #991b1b !important; }
-.highlight-col-right { border-right: 4px solid #991b1b !important; }
-.highlight-head-bg { background-color: #fff1f2 !important; color: #991b1b !important; }
-.highlight-bg { background-color: #fffafb !important; }
-tfoot .highlight-foot-bg { background-color: #7f1d1d !important; border-color: #7f1d1d; }
+        .table-title {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--primary-dark);
+            margin: 0;
+            letter-spacing: -0.02em;
+        }
 
-tbody, tfoot { transition: opacity 0.3s ease-in-out; }
-tbody tr:hover { background-color: #f8fafc; }
-tbody tr:hover .highlight-bg { background-color: #ffe4e6 !important; }
-tbody td:first-child, thead th:first-child { 
-    font-weight: 700; color: var(--primary-dark); background-color: #f8fafc; position: sticky; left: 0; 
-    border-left: 1px solid #334155 !important;
-    border-right: 2px solid #94a3b8 !important; 
-}
-thead tr:first-child th:first-child { background: #334155 !important; color: white !important; }
-.val-target { color: #64748b; text-align: right; padding-right: 10px; }
-.val-cnt { color: #334155; font-weight: 600; background-color: #fcfcfd; }
-.val-amt { color: var(--primary-dark); font-weight: 800; text-align: right; padding-right: 10px; }
-.col-total { background-color: #fbfcff !important; }
+        .meta-info {
+            font-size: 13px;
+            color: var(--text-muted);
+            text-align: right;
+            line-height: 1.6;
+        }
 
-tfoot tr { background-color: #1e293b !important; border-top: 2px solid #0f172a; }
-tfoot td { border-bottom: none; border-color: #334155; color: #ffffff !important; font-weight: 800; }
-tfoot td:first-child { 
-    background-color: #1e293b !important; position: sticky; left: 0; 
-    border-left: 1px solid #334155 !important;
-    border-right: 2px solid #334155; 
-}
-tfoot .val-target, tfoot .val-cnt { color: #94a3b8 !important; background-color: transparent; }
-tfoot .val-amt { color: white !important; }
-tfoot .bg-total-col { background-color: #0f172a !important; border-color: #0f172a; }
+        /* 탭 버튼 스타일 */
+        .tab-nav {
+            display: flex;
+            gap: 8px;
+            background: #f1f5f9;
+            padding: 6px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
 
-/* 잠금 화면 스타일 - 프리미엄 글래스모피즘 디자인 */
-#lock-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at center, rgba(15, 23, 42, 0.9) 0%, rgba(2, 6, 23, 0.98) 100%);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    color: white;
-}
+        .tab-btn {
+            padding: 8px 20px;
+            background-color: transparent;
+            border: none;
+            color: var(--text-muted);
+            font-size: 14px;
+            font-weight: 700;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
 
-.lock-box {
-    background: rgba(30, 41, 59, 0.7);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    padding: 50px 40px;
-    border-radius: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.1);
-    text-align: center;
-    max-width: 450px;
-    width: 90%;
-    animation: lockAppear 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-}
+        .tab-btn:hover {
+            color: var(--primary-dark);
+        }
 
-@keyframes lockAppear {
-    from { opacity: 0; transform: scale(0.95) translateY(20px); }
-    to { opacity: 1; transform: scale(1) translateY(0); }
-}
+        .tab-btn.active {
+            background-color: var(--primary-dark);
+            color: white;
+            box-shadow: var(--shadow-soft);
+        }
 
-.lock-icon {
-    font-size: 48px;
-    margin-bottom: 24px;
-    filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.5));
-}
+        .table-scroll { 
+            overflow: auto; 
+            max-height: 750px; 
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            width: 100%; 
+            background: white;
+            box-sizing: border-box;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+            /* Hide scrollbar for "no-scroll" view on large screens if desired, but default to slim scroll */
+        }
 
-.lock-box h2 {
-    margin-top: 0;
-    font-size: 28px;
-    font-weight: 800;
-    background: linear-gradient(to bottom right, #f8fafc, #94a3b8);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 12px;
-}
+        /* [Responsive Breakpoints] */
+        @media (max-width: 1440px) {
+            .dashboard-wrapper {
+                max-width: 96%;
+                padding: 10px;
+            }
+            .table-title { font-size: 18px; }
+            table { font-size: 12px; }
+            th, td { padding: 10px 6px; }
+        }
 
-.lock-box p {
-    color: #94a3b8;
-    margin-bottom: 30px;
-    font-size: 15px;
-    line-height: 1.6;
-}
+        @media (max-width: 1200px) {
+            .kpi-section {
+                grid-template-columns: 1fr;
+            }
+            .dashboard-wrapper {
+                gap: 20px;
+            }
+            .table-scroll {
+                overflow-x: auto !important; /* Allow horizontal scroll on smaller screens */
+            }
+            #dataTable {
+                table-layout: auto !important; /* Switch from fixed to auto to prevent squashing */
+            }
+        }
 
-.lock-input-group {
-    position: relative;
-    margin-bottom: 20px;
-}
+        @media (max-width: 768px) {
+            .table-header-control {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .search-wrapper {
+                width: 100%;
+                min-width: 100%;
+            }
+            .meta-info {
+                text-align: left;
+            }
+        }
+        table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 13px; text-align: center; white-space: nowrap; table-layout: auto; }
 
-.lock-input {
-    width: 100%;
-    padding: 14px 20px;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(15, 23, 42, 0.6);
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    outline: none;
-    transition: all 0.2s;
-    box-sizing: border-box;
-    letter-spacing: 4px;
-}
+        th,
+        td {
+            border: 1px solid var(--border-color);
+            padding: 12px 10px;
+            vertical-align: middle;
+            text-align: center !important; /* Unified Center Alignment */
+        }
 
-.lock-input:focus {
-    border-color: #3b82f6;
-    background: rgba(15, 23, 42, 0.8);
-    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
-}
+        thead th {
+            background-color: var(--th-bg);
+            color: var(--primary-dark);
+            font-weight: 700;
+        }
 
-.lock-btn {
-    width: 100%;
-    padding: 14px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-    color: white;
-    font-weight: 700;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s;
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
-}
+        .kpi-header {
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+        }
+        .kpi-header:hover {
+            filter: brightness(1.1);
+            transform: translateY(-2px);
+        }
+        .kpi-header.active {
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+            z-index: 10;
+        }
+        .kpi-header.active::after {
+            content: '✓ 선택됨';
+            position: absolute;
+            right: 15px;
+            font-size: 11px;
+            background: rgba(255,255,255,0.2);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
 
-.lock-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
-}
+        thead {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+        }
 
-.lock-btn:active {
-    transform: translateY(0);
-}
+        thead tr:first-child th {
+            background: linear-gradient(to bottom, #334155, #1e293b) !important;
+            color: white !important;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: -0.01em;
+            border-bottom: 2px solid #0f172a !important;
+            border-top: 1px solid #475569 !important;
+        }
 
-.request-link {
-    margin-top: 25px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
+        /* 구분 컬럼 고정 및 경계선 */
+        th:first-child, td:first-child, .sticky-col {
+            position: sticky;
+            left: 0;
+            z-index: 10;
+            background-color: inherit;
+            border-left: 1px solid var(--border-light) !important;
+        }
+        
+        th:first-child, td:first-child, .sep-r {
+            border-right: 2px solid var(--border-divider) !important;
+        }
 
-.request-btn {
-    background: transparent;
-    color: #94a3b8;
-    border: 1px solid rgba(148, 163, 184, 0.3);
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s;
-}
+        thead th:first-child {
+            background-color: var(--th-bg) !important;
+        }
 
-.request-btn:hover {
-    color: white;
-    border-color: rgba(255, 255, 255, 0.5);
-    background: rgba(255, 255, 255, 0.05);
-}
+        thead tr:first-child th:first-child {
+            background: #334155 !important;
+        }
+        
+        .table-summary-active table { font-size: 11px !important; }
+        .table-summary-active th, .table-summary-active td { padding: 8px 4px; }
 
-.contact-info {
-    display: none;
-    background: rgba(15, 23, 42, 0.4);
-    padding: 12px;
-    border-radius: 8px;
-    font-size: 13px;
-    color: #3b82f6;
-    margin-top: 10px;
-}
+        /* 재계약 활동 표 가로 최적화 */
+        .table-renewal-active table { font-size: 12.5px !important; }
+        .table-renewal-active th, .table-renewal-active td { padding: 8px 6px !important; }
+        .table-renewal-active th:first-child, .table-renewal-active td:first-child { min-width: 75px !important; }
 
-/* 에러 흔들기 효과 */
-.shake {
-    animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both;
-}
+        /* 헤더 마감선 */
+        thead tr:last-child th {
+            border-bottom: 2px solid var(--border-divider) !important;
+            border-right: 1px solid #cbd5e1 !important;
+            background-color: #f8fafc !important;
+            color: #475569 !important;
+            font-weight: 600;
+            font-size: 14px;
+        }
 
-@keyframes shake {
-    10%, 90% { transform: translate3d(-1px, 0, 0); }
-    20%, 80% { transform: translate3d(2px, 0, 0); }
-    30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
-    40%, 60% { transform: translate3d(4px, 0, 0); }
-}
-</style>
+        /* 그룹 분리선 (Divider) */
+        .sep-left { border-left: 3px solid #0f172a !important; }
+        .divider-right { border-right: 2px solid var(--border-divider) !important; }
+        .border-thin { border-right: 1px solid #cbd5e1 !important; }
+
+        .bg-total-col {
+            background-color: var(--th-total-bg) !important;
+        }
+
+        .text-blue {
+            color: var(--primary-blue);
+            font-weight: 800;
+        }
+
+        .highlight-bg {
+            background-color: var(--group-new-bg) !important;
+        }
+
+        .bg-renew {
+            background-color: var(--group-renew-bg);
+        }
+
+        .bg-expire {
+            background-color: var(--group-expire-bg);
+        }
+
+        tbody,
+        tfoot {
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f5f9 !important;
+        }
+
+        tbody tr:hover .highlight-bg {
+            background-color: #ffe4e6 !important;
+        }
+
+        tbody td:first-child {
+            font-weight: 700;
+            color: var(--primary-dark);
+            background-color: #f8fafc;
+            position: sticky;
+            left: 0;
+            border-right: 2px solid var(--border-heavy) !important;
+            z-index: 10;
+            min-width: 90px;
+            text-align: center !important;
+        }
+
+        .val-num {
+            font-variant-numeric: tabular-nums;
+            letter-spacing: -0.01em;
+            text-align: center !important; /* Changed to center by request */
+        }
+
+        .text-l { text-align: center !important; }
+        .text-r { text-align: center !important; }
+        .text-c { text-align: center !important; }
+
+        /* Section Dividers */
+        .group-divider-left { border-left: 2px solid #64748b !important; }
+        .group-divider-right { border-right: 2px solid #64748b !important; }
+        .sep-heavy-right { border-right: 3px solid #1e293b !important; }
+
+        .sparkline-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .sparkline-svg {
+            width: 45px;
+            height: 18px;
+            stroke: var(--primary-blue);
+            stroke-width: 2;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            filter: drop-shadow(0 1px 1px rgba(0,0,0,0.1));
+        }
+
+        .val-target {
+            color: #64748b;
+            text-align: right;
+            padding-right: 15px;
+        }
+
+        .val-cnt {
+            color: #334155;
+            font-weight: 600;
+            background-color: transparent;
+            text-align: right;
+            padding-right: 15px;
+        }
+
+        .val-amt {
+            color: var(--primary-dark);
+            font-weight: 800;
+            text-align: right;
+            padding-right: 15px;
+        }
+
+        .col-total {
+            background-color: #fbfcff !important;
+        }
+
+        tfoot td {
+            border-top: 2px solid #64748b !important;
+            border-bottom: 2px solid #64748b !important;
+            border-left: none !important;
+            border-right: none !important;
+            background-color: #f8fafc !important;
+            color: var(--primary-dark) !important;
+            font-weight: 800;
+            font-size: 14.5px;
+        }
+
+        tfoot td:first-child {
+            background-color: #f8fafc !important;
+            position: sticky;
+            left: 0;
+            border-right: 2px solid var(--border-heavy) !important;
+        }
+
+        tfoot .val-target,
+        tfoot .val-cnt {
+            color: #64748b !important;
+            background-color: transparent;
+        }
+
+        tfoot .val-amt {
+            color: var(--primary-dark) !important;
+            font-weight: 900;
+        }
+
+        /* 풋터 뱃지 텍스트 검정색 강조 */
+        tfoot .badge {
+            color: #000000 !important;
+            font-weight: 900 !important;
+            font-size: 13.5px !important;
+        }
+
+        tfoot .bg-total-col {
+            background-color: #dbeafe !important; /* Deeper Indigo for emphasis */
+        }
+        
+        /* 배지 디자인 고도화 (Modern Pill Design) */
+        .badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 800;
+            font-size: 12px;
+            letter-spacing: -0.02em;
+            box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1);
+            display: inline-block;
+            min-width: 45px;
+        }
+
+        .badge.excellent { background: var(--badge-green-bg); color: var(--badge-green-text); }
+        .badge.good { background: var(--badge-blue-bg); color: var(--badge-blue-text); }
+        .badge.poor { background: var(--badge-red-bg); color: var(--badge-red-text); }
+        .badge.zero { background: var(--badge-gray-bg); color: var(--badge-gray-text); opacity: 0.6; }
+
+        /* 테이블 숫자 가독성 튜닝 */
+        .val-num {
+            font-variant-numeric: tabular-nums;
+            letter-spacing: -0.01em;
+        }
+
+        /* 잠금 화면 스타일 - 프리미엄 글래스모피즘 디자인 */
+        #lock-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(15, 23, 42, 0.9) 0%, rgba(2, 6, 23, 0.98) 100%);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            color: white;
+        }
+
+        .lock-box {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 50px 40px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+            animation: lockAppear 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes lockAppear {
+            from { opacity: 0; transform: scale(0.95) translateY(20px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        .lock-icon {
+            font-size: 48px;
+            margin-bottom: 24px;
+            filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.5));
+        }
+
+        .lock-box h2 {
+            margin-top: 0;
+            font-size: 28px;
+            font-weight: 800;
+            background: linear-gradient(to bottom right, #f8fafc, #94a3b8);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 12px;
+        }
+
+        .lock-box p {
+            color: #94a3b8;
+            margin-bottom: 30px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .lock-input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .lock-input {
+            width: 100%;
+            padding: 14px 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(15, 23, 42, 0.6);
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            outline: none;
+            transition: all 0.2s;
+            box-sizing: border-box;
+            letter-spacing: 4px;
+        }
+
+        .lock-input:focus {
+            border-color: #3b82f6;
+            background: rgba(15, 23, 42, 0.8);
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+        }
+        .lock-btn {
+            width: 100%;
+            padding: 14px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .kpi-header {
+            padding: 12px 15px;
+            font-size: 15px;
+            font-weight: 800;
+            color: white;
+            border-radius: 12px 12px 0 0;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        }
+        
+        #kpi-header-pre-retention {
+            font-size: 17px !important; /* User requested larger font */
+            letter-spacing: -0.02em;
+        }
+
+        .kpi-header {
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .kpi-header:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .lock-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+        }
+
+        .lock-btn:active {
+            transform: translateY(0);
+        }
+
+        .request-link {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .request-btn {
+            background: transparent;
+            color: #94a3b8;
+            border: 1px solid rgba(148, 163, 184, 0.3);
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .request-btn:hover {
+            color: white;
+            border-color: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .contact-info {
+            display: none;
+            background: rgba(15, 23, 42, 0.4);
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 13px;
+            color: #3b82f6;
+            margin-top: 10px;
+        }
+
+        /* 내비게이션 허브 버튼 스타일 */
+        .nav-hub-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            color: var(--text-muted);
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav-hub-btn i {
+            font-size: 15px;
+            opacity: 0.8;
+        }
+
+        .nav-hub-btn:hover {
+            background: #eff6ff;
+            color: var(--primary-blue);
+            border-color: var(--primary-blue);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.08);
+        }
+
+        /* AI Review Section */
+        .ai-review-card {
+            margin-top: 25px;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border: 1px solid var(--border-divider);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: var(--shadow-soft);
+        }
+        .ai-review-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            color: var(--primary-dark);
+            font-weight: 800;
+            font-size: 16px;
+        }
+        .ai-review-content {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #334155;
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary-color);
+        }
+        .ai-tag {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 800;
+            margin-right: 8px;
+            text-transform: uppercase;
+            width: 55px; /* Consistent width for alignment */
+            text-align: center;
+        }
+        .ai-tag.best { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+        .ai-tag.lag { background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; }
+
+        .ai-review-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .ai-review-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .ai-feedback-text {
+            display: block;
+            margin-top: 6px;
+            color: #475569;
+            text-align: justify; /* This completes the '줄맞춤' request */
+            line-height: 1.6;
+            word-break: break-all;
+        }
+
+        /* Summary Table Colors */
+        .bg-summary-blue { background-color: #f0f9ff !important; }
+        .bg-summary-green { background-color: #f0fdf4 !important; }
+        .bg-summary-red { background-color: #fef2f2 !important; }
+        .text-bold-heavy { font-weight: 900 !important; }
+    </style>
 </head>
+
 <body>
 
-    <!-- Main Dashboard -->
-    <div class="dashboard-wrapper">
-        <header style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; padding: 20px 30px; background: white; border-radius: 24px; box-shadow: var(--shadow-md);">
-            <div style="display: flex; align-items: center; gap: 18px;">
-                <div style="background: var(--primary); color: white; width: 45px; height: 45px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; box-shadow: var(--shadow-md);">
-                    <i class="fas fa-sync-alt"></i>
-                </div>
-                <div>
-                    <h1 style="font-size: 22px; font-weight: 800; color: var(--primary-dark); margin: 0; letter-spacing: -0.5px;">2026 Management Hub</h1>
-                    <p style="font-size: 13px; color: var(--text-muted); margin: 3px 0 0 0;">강북강원본부 재계약/리텐션 통합 관리</p>
+    <div id="lock-screen">
+        <div class="lock-box">
+            <div class="lock-icon">🔒</div>
+            <h2>대시보드 열람 제한</h2>
+            <p>이 대시보드는 보안 및 라이센스 정책에 따라<br>일정 기간이 경과하여 관리자 승인이 필요합니다.</p>
+            
+            <div class="lock-input-group">
+                <input type="password" id="accessCode" class="lock-input" placeholder="ACCESS CODE" onkeyup="if(window.event.keyCode==13){verifyAccess()}">
+            </div>
+            
+            <button class="lock-btn" onclick="verifyAccess()">승인 및 대시보드 보기</button>
+            <p id="error-msg" style="color: #ef4444; margin-top: 15px; font-size: 13px; font-weight: 600; display: none;">잘못된 코드입니다. 다시 시도해주세요.</p>
+
+            <div class="request-link">
+                <button class="request-btn" onclick="requestLicense()">라이센스 연장/신규 요청</button>
+                <div id="contact-info" class="contact-info">
+                    관리자에게 문의해주세요.<br>
+                    <strong>문의처: 재계약 관리 영업구역 담당</strong>
                 </div>
             </div>
-            <div class="nav-buttons"></div>
-        </header>
+        </div>
 
-<div class="kpi-section">
-<div class="kpi-box">
-<div class="kpi-header bg-navy">① 관리고객 재계약 활동 (목표/실적 관리)</div>
-<div class="target-cards">
-<div class="t-card highlight">
-<div class="t-head">① 만기도래_신규(1st)<br><span>※ '26년 만기도래 (1월~12월)</span></div>
-<div class="t-body">월 목표<br><strong>4,003천원</strong><span class="percent">(58%)</span></div>
-</div>
-<div class="t-card">
-<div class="t-head">② 만기도래_재계약<br><span>※ '26년 만기도래 (수동재계약)</span></div>
-<div class="t-body">월 목표<br><strong>212천원</strong><span class="percent">(3%)</span></div>
-</div>
-<div class="t-card">
-<div class="t-head">③ 약정만료<br><span>※ '26년 만기도래 (자동재계약)</span></div>
-<div class="t-body">월 목표<br><strong>2,634천원</strong><span class="percent">(38%)</span></div>
-</div>
-</div>
-<div class="total-row">재계약활동 월 목표 합계 : <span>6,849천원</span></div>
-<div class="note-text">매월 실적집계 : 당월 전산 수동재계약 적용분만 당월 실적 인정</div>
-</div>
+        </div>
+    </div>
 
-<div class="kpi-box">
-<div class="kpi-header bg-green">② 사전리텐션 활동 (방문율 관리)</div>
-<div class="steps-wrapper">
-<div class="step">
-<div class="hexagon hex-1">1월</div>
-<div class="data-card"><span class="val">304건/301건</span><span class="pct">(99.3%)</span></div>
-</div>
-<div class="step">
-<div class="hexagon hex-2">2월</div>
-<div class="data-card"><span class="val">200건/148건</span><span class="pct">(74.0%)</span></div>
-</div>
-                    <div class="step">
-                        <div class="hexagon hex-3">3월</div>
-                        <div class="data-card highlight"><span class="val">231건/97건</span><span class="pct">(42%)</span></div>
+    <div class="dashboard-wrapper">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; padding: 15px 25px; background: white; border-radius: 12px; box-shadow: var(--shadow-soft);">
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <div style="background: var(--primary-dark); color: white; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px;">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+                <h1 style="font-size: 22px; font-weight: 800; color: var(--primary-dark); margin: 0;">2026 Management Hub <span style="font-size: 14px; font-weight: 400; color: var(--text-muted); margin-left:10px;">| 강북/강원 통합 관제</span></h1>
+            </div>
+            <div class="nav-buttons" style="display: flex; gap: 8px;">
+                <button class="nav-hub-btn" onclick="location.href='map_dashboard.html'" title="지도/방문관리">
+                    <i class="fas fa-map-marked-alt"></i><span>지도/방문</span>
+                </button>
+                <button class="nav-hub-btn active" onclick="location.href='index.html'" title="재계약/사전리텐션">
+                    <i class="fas fa-sync-alt"></i><span>재계약/리텐션</span>
+                </button>
+                <button class="nav-hub-btn" onclick="location.href='정지부실_실적현황.html'" title="정지/부실">
+                    <i class="fas fa-exclamation-triangle"></i><span>정지/부실</span>
+                </button>
+                <button class="nav-hub-btn" onclick="location.href='리텐션P값 실적현황.html'" title="리텐션P값">
+                    <i class="fas fa-coins"></i><span>리텐션P값</span>
+                </button>
+                <button class="nav-hub-btn" id="nav-termination" onclick="switchView('termination')" title="관리고객 해지율">
+                    <i class="fas fa-user-slash"></i><span>해지율</span>
+                </button>
+                <button class="nav-hub-btn" id="nav-summary" onclick="switchView('summary')" title="기관별 현황(요약)">
+                    <i class="fas fa-list-check"></i><span>기관별 현황(요약)</span>
+                </button>
+                <div style="width: 1px; height: 24px; background: var(--border-color); margin: 0 10px;"></div>
+                <button class="logout-btn" onclick="logout()" style="background: #fee2e2; color: #ef4444; border: 1px solid #fecaca; padding: 8px 15px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: all 0.2s;">
+                    <i class="fas fa-sign-out-alt"></i> 로그아웃
+                </button>
+            </div>
+        </div>
+
+        <div class="kpi-section" id="mainKpiSection">
+            <div class="kpi-box">
+                <div class="kpi-header bg-navy active" id="kpi-header-renewal" onclick="switchView('renewal')">① 관리고객 재계약 활동 (목표/실적 관리)</div>
+                <div class="target-cards">
+                    <div class="t-card highlight">
+                        <div class="t-head">① 만기도래_신규(1st)<br><span>※ '26년 만기도래 (1월~12월)</span></div>
+                        <div class="t-body">월 목표<br><strong>4,003천원</strong><span class="percent">(58%)</span></div>
                     </div>
-</div>
-<div class="arrow-box">~12월 매월 대상 선정 및 VOC지령(담당SP)</div>
-</div>
-</div>
+                    <div class="t-card">
+                        <div class="t-head">② 만기도래_재계약<br><span>※ '26년 만기도래 (수동재계약)</span></div>
+                        <div class="t-body">월 목표<br><strong>212천원</strong><span class="percent">(3%)</span></div>
+                    </div>
+                    <div class="t-card">
+                        <div class="t-head">③ 약정만료<br><span>※ '26년 만기도래 (자동재계약)</span></div>
+                        <div class="t-body">월 목표<br><strong>2,634천원</strong><span class="percent">(38%)</span></div>
+                    </div>
+                </div>
+                <div class="total-row">재계약활동 월 목표 합계 : <span>6,849천원</span></div>
+                <div class="note-text">매월 실적집계 : 당월 전산 수동재계약 적용분만 당월 실적 인정</div>
+            </div>
 
-<div class="table-section">
-<div class="table-header-control">
-<div>
-<h2 class="table-title">지사별 재계약 활동 실적 상세 (<span id="titleMonth" class="text-blue">1Q 합계</span>)</h2>
-<div class="tab-nav" style="margin-top: 15px;">
-<button class="tab-btn" data-month="1월" onclick="changeTab('1월')">1월</button>
-<button class="tab-btn" data-month="2월" onclick="changeTab('2월')">2월</button>
-<button class="tab-btn" data-month="3월" onclick="changeTab('3월')">3월</button>
-<button class="tab-btn active" data-month="1Q 합계" onclick="changeTab('1Q 합계')">1Q 합계</button>
-</div>
-</div>
-<div class="meta-info">
-<strong>집계일자 :</strong> 2026. 03. 18 기준<br>
-<strong>단위 :</strong> 건, 천원, %
-</div>
-</div>
+            <div class="kpi-box">
+                <div class="kpi-header bg-green" id="kpi-header-pre-retention" onclick="switchView('pre-retention')">② 사전리텐션 활동현황 (방문율 관리)</div>
+                <div class="steps-wrapper">
+                    <div class="step">
+                        <div class="hexagon hex-1">1월</div>
+                        <div class="data-card"><span class="val">304건/301건</span><span class="pct">(99.3%)</span></div>
+                    </div>
+                    <div class="step">
+                        <div class="hexagon hex-2">2월</div>
+                        <div class="data-card"><span class="val">200건/148건</span><span class="pct">(74.0%)</span></div>
+                    </div>
+                    <div class="step">
+                        <div class="hexagon hex-1">3월</div>
+                        <div class="data-card"><span class="val">231건/176건</span><span class="pct">(76%)</span></div>
+                    </div>
+                </div>
+                <div class="arrow-box">~12월 매월 대상 선정 및 VOC지령(영업구역)</div>
+            </div>
+        </div>
 
-<div class="table-scroll">
-<table>
-<thead>
-<tr>
-<th rowspan="2" style="min-width: 80px;">거점명</th>
-<th colspan="4" class="bg-total-col text-blue">총 실적 (계)</th>
-<th colspan="4" class="highlight-col-top highlight-col-left highlight-col-right highlight-head-bg">① 만기도래_신규(1st)</th>
-<th colspan="4">② 만기도래_재계약</th>
-<th colspan="4">③ 약정만료</th>
-</tr>
-<tr>
-<th class="bg-total-col sep-left border-thin">목표</th><th class="bg-total-col border-thin">실적(건)</th><th class="bg-total-col border-thin">실적(금액)</th><th class="bg-total-col">달성률</th>
-<th class="highlight-bg sep-left border-thin">목표</th><th class="highlight-bg border-thin">실적(건)</th><th class="highlight-bg border-thin">실적(금액)</th><th class="highlight-bg">달성률</th>
-<th class="sep-left">목표</th><th>실적(건)</th><th>실적(금액)</th><th>달성률</th>
-<th class="sep-left">목표</th><th>실적(건)</th><th>실적(금액)</th><th>달성률</th>
-</tr>
-</thead>
-<tbody id="tableBody"></tbody>
-<tfoot id="tableFoot"></tfoot>
-</table>
-</div>
-</div>
+        <div class="viz-card" id="viz-zone" style="margin-bottom: 25px;">
+            <div class="viz-header" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 20px; border-bottom: 2px solid var(--border-light); margin-bottom: 20px;">
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <div class="viz-title" style="font-size: 18px; font-weight: 800; color: var(--primary-dark); margin: 0;">
+                        <i class="fas fa-chart-column" style="color: var(--primary-color); margin-right: 8px;"></i> 지사별 실적/달성률 분석 (<span id="vizMonthText" class="text-blue">1Q 합계</span>)
+                    </div>
+                    <select id="chartMetricSelect" onchange="updateMainChart()" style="padding: 6px 12px; border-radius: 6px; border: 1px solid var(--border-light); font-size: 13px; font-weight: 700; color: var(--primary-dark); outline: none; background: #f8fafc; cursor: pointer;">
+                        <!-- Options generated dynamically -->
+                    </select>
+                </div>
+                <button class="toggle-viz-btn" onclick="toggleViz()" style="background: none; border: none; font-size: 13px; font-weight: 700; color: var(--text-muted); cursor: pointer; display: flex; align-items: center; gap: 6px;">
+                    <i class="fas fa-chevron-up"></i> <span>시각화 접기</span>
+                </button>
+            </div>
+            <div id="viz-content" style="transition: all 0.3s ease; overflow: hidden; height: 350px;">
+                <canvas id="mainChart"></canvas>
+            </div>
+        </div>
 
-</div>
+        <div class="table-section">
+            <div class="table-header-control">
+                <div class="table-title-group">
+                    <h2 class="table-title">지사별 재계약 활동 실적 상세 (<span id="titleMonth" class="text-blue">1Q 합계</span>)</h2>
+                    <div class="tab-nav" id="month-tabs" style="margin-top: 15px; display: flex; gap: 10px;">
+                        <button class="tab-btn" data-view="summary" onclick="switchView('summary')" style="background-color: #1e3a8a; color: white;">기관별 현황(요약)</button>
+                        <div style="width: 2px; background: #cbd5e1; margin: 5px 0;"></div>
+                        <button class="tab-btn" data-month="1월" onclick="changeTab('1월')">1월</button>
+                        <button class="tab-btn" data-month="2월" onclick="changeTab('2월')">2월</button>
+                        <button class="tab-btn" data-month="3월" onclick="changeTab('3월')">3월</button>
+                        <button class="tab-btn active" data-month="1Q 합계" onclick="changeTab('1Q 합계')">1Q 합계</button>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 12px;">
+                    <div class="search-wrapper">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="branchSearch" class="search-input" placeholder="지사명 검색..." oninput="renderTable(currentMonth)">
+                    </div>
+                    <div class="meta-info">
+                        <strong>집계일자 :</strong> 2026. 03. 31 기준<br>
+                        <strong>단위 :</strong> 건, 천원, %
+                    </div>
+                </div>
+            </div>
 
-<script>
-// 데이터셋: 중앙과 강북 값 정상 매핑 완벽 반영
-const tableData = {
-"1월": {
-rows: [
-{ name: "중앙", total: [1217, 1, 375], new: [680, 0, 0], renew: [14, 0, 0], expire: [523, 1, 375] },
-{ name: "강북", total: [704, 3, 298], new: [389, 0, 0], renew: [18, 0, 0], expire: [297, 3, 298] },
-{ name: "서대문", total: [929, 1, 275], new: [607, 0, 0], renew: [15, 0, 0], expire: [308, 1, 275] },
-{ name: "고양", total: [952, 12, 1254], new: [632, 0, 0], renew: [30, 3, 341], expire: [291, 9, 913] },
-{ name: "의정부", total: [740, 5, 779], new: [395, 0, 0], renew: [37, 0, 0], expire: [308, 5, 779] },
-{ name: "남양주", total: [679, 0, 0], new: [385, 0, 0], renew: [20, 0, 0], expire: [275, 0, 0] },
-{ name: "강릉", total: [594, 1, 91], new: [355, 0, 0], renew: [18, 0, 0], expire: [221, 1, 91] },
-{ name: "원주", total: [1034, 19, 1613], new: [560, 0, 0], renew: [62, 1, 100], expire: [412, 18, 1513] }
-],
-footer: { total: [6849, 42, 4685], new: [4003, 0, 0], renew: [212, 4, 441], expire: [2634, 38, 4244] }
-},
-"2월": {
-rows: [
-{ name: "중앙", total: [1217, 6, 560], new: [680, 0, 0], renew: [14, 0, 0], expire: [523, 6, 560] },
-{ name: "강북", total: [704, 0, 0], new: [389, 0, 0], renew: [18, 0, 0], expire: [297, 0, 0] },
-{ name: "서대문", total: [929, 1, 282], new: [607, 0, 0], renew: [15, 0, 0], expire: [308, 1, 282] },
-{ name: "고양", total: [952, 3, 337], new: [632, 0, 0], renew: [30, 1, 88], expire: [291, 2, 249] },
-{ name: "의정부", total: [740, 4, 316], new: [395, 0, 0], renew: [37, 0, 0], expire: [308, 3, 271] },
-{ name: "남양주", total: [679, 0, 0], new: [385, 0, 0], renew: [20, 0, 0], expire: [275, 0, 0] },
-{ name: "강릉", total: [594, 1, 70], new: [355, 0, 0], renew: [18, 0, 0], expire: [221, 1, 70] },
-{ name: "원주", total: [1034, 5, 881], new: [560, 0, 0], renew: [62, 1, 536], expire: [412, 4, 345] }
-],
-footer: { total: [6849, 20, 2445], new: [4003, 0, 0], renew: [212, 2, 624], expire: [2634, 18, 1821] }
-},
-"3월": {
-rows: [
-{ name: "중앙", total: [1217, 4, 406], new: [680, 3, 325], renew: [14, 0, 0], expire: [523, 1, 81] },
-{ name: "강북", total: [704, 1, 95], new: [389, 1, 95], renew: [18, 0, 0], expire: [297, 0, 0] },
-{ name: "서대문", total: [929, 3, 263], new: [607, 3, 263], renew: [15, 0, 0], expire: [308, 0, 0] },
-{ name: "고양", total: [952, 19, 1555], new: [632, 2, 117], renew: [30, 0, 0], expire: [291, 17, 1437] },
-{ name: "의정부", total: [740, 12, 1123], new: [395, 5, 232], renew: [37, 1, 163], expire: [308, 7, 773] },
-{ name: "남양주", total: [679, 9, 1146], new: [385, 6, 981], renew: [20, 0, 0], expire: [275, 3, 165] },
-{ name: "강릉", total: [594, 0, 0], new: [355, 0, 0], renew: [18, 0, 0], expire: [221, 0, 0] },
-{ name: "원주", total: [1034, 3, 490], new: [560, 1, 180], renew: [62, 0, 0], expire: [412, 2, 310] }
-],
-footer: { total: [6849, 20, 5079], new: [4003, 21, 2193], renew: [212, 1, 163], expire: [2634, 29, 2722] }
-},
-"1Q 합계": {
-rows: [
-{ name: "중앙", total: [3652, 11, 1341], new: [2041, 3, 325], renew: [42, 0, 0], expire: [1569, 8, 1016] },
-{ name: "강북", total: [2112, 4, 393], new: [1168, 1, 95], renew: [53, 0, 0], expire: [891, 3, 298] },
-{ name: "서대문", total: [2788, 5, 820], new: [1822, 3, 263], renew: [44, 0, 0], expire: [923, 2, 557] },
-{ name: "고양", total: [2857, 34, 3145], new: [1895, 2, 117], renew: [89, 4, 429], expire: [873, 28, 2599] },
-{ name: "의정부", total: [2219, 21, 2218], new: [1186, 5, 232], renew: [110, 1, 163], expire: [923, 15, 1823] },
-{ name: "남양주", total: [2038, 9, 1146], new: [1154, 6, 981], renew: [59, 0, 0], expire: [826, 3, 165] },
-{ name: "강릉", total: [1781, 2, 161], new: [1065, 0, 0], renew: [53, 0, 0], expire: [663, 2, 161] },
-{ name: "원주", total: [3101, 27, 2984], new: [1680, 1, 180], renew: [186, 2, 636], expire: [1236, 24, 2168] }
-],
-footer: { total: [20548, 82, 12208], new: [12010, 21, 2193], renew: [635, 7, 1228], expire: [7903, 85, 8787] }
-}
-};
+            <div class="table-scroll">
+                <table id="dataTable">
+                    <thead id="tableHead"></thead>
+                    <tbody id="tableBody"></tbody>
+                    <tfoot id="tableFoot"></tfoot>
+                </table>
+            </div>
+        </div>
 
-function getBadge(target, actual) {
-if (target === 0 || actual === 0) return '<span class="badge zero">-</span>';
-const pct = Math.round((actual / target) * 100);
-let cls = 'poor';
-if (pct >= 100) cls = 'excellent';
-else if (pct >= 50) cls = 'good';
-return `<span class="badge ${cls}">${pct}%</span>`;
-}
+        <div id="aiReviewSection" style="display: none; margin-bottom: 40px;">
+            <div class="ai-review-card">
+                <div class="ai-review-header">
+                    <i class="fas fa-robot"></i> AI 성과 분석 및 실적 코칭 리포트 <span style="font-size: 10px; font-weight: normal; color: #64748b; margin-left: 10px;">(v2.1 - 260331)</span>
+                </div>
+                <div id="aiReviewContent" class="ai-review-content">
+                    데이터를 분석하여 지사별 성과 요약을 생성 중입니다...
+                </div>
+            </div>
+        </div>
+    </div>
 
-function formatNum(num) {
-return num === 0 ? '-' : num.toLocaleString();
-}
+    <script>
+        // 데이터셋: 중앙과 강북 값 정상 매핑 완벽 반영
+        const tableData = {
+            "1월": {
+                rows: [
+                    { name: "중앙", total: [1217, 1, 375], new: [680, 0, 0], renew: [14, 0, 0], expire: [523, 1, 375] },
+                    { name: "강북", total: [704, 0, 0], new: [389, 0, 0], renew: [18, 0, 0], expire: [297, 0, 0] },
+                    { name: "서대문", total: [929, 1, 275], new: [607, 0, 0], renew: [15, 0, 0], expire: [308, 1, 275] },
+                    { name: "고양", total: [952, 14, 1388], new: [632, 0, 0], renew: [30, 3, 341], expire: [291, 11, 1047] },
+                    { name: "의정부", total: [740, 6, 879], new: [395, 0, 0], renew: [37, 0, 0], expire: [308, 6, 879] },
+                    { name: "남양주", total: [679, 0, 0], new: [385, 0, 0], renew: [20, 0, 0], expire: [275, 0, 0] },
+                    { name: "강릉", total: [594, 1, 91], new: [355, 0, 0], renew: [18, 0, 0], expire: [221, 1, 91] },
+                    { name: "원주", total: [1034, 19, 1660], new: [560, 0, 0], renew: [62, 1, 100], expire: [412, 18, 1560] }
+                ],
+                footer: { total: [6849, 42, 4668], new: [4003, 0, 0], renew: [212, 4, 441], expire: [2634, 38, 4227] }
+            },
+            "2월": {
+                rows: [
+                    { name: "중앙", total: [1217, 6, 560], new: [680, 0, 0], renew: [14, 0, 0], expire: [523, 6, 560] },
+                    { name: "강북", total: [704, 3, 298], new: [389, 0, 0], renew: [18, 0, 0], expire: [297, 3, 298] },
+                    { name: "서대문", total: [929, 1, 282], new: [607, 0, 0], renew: [15, 0, 0], expire: [308, 1, 282] },
+                    { name: "고양", total: [952, 3, 337], new: [632, 0, 0], renew: [30, 1, 88], expire: [291, 2, 249] },
+                    { name: "의정부", total: [740, 3, 271], new: [395, 0, 0], renew: [37, 0, 0], expire: [308, 3, 271] },
+                    { name: "남양주", total: [679, 1, 44], new: [385, 0, 0], renew: [20, 0, 0], expire: [275, 1, 44] },
+                    { name: "강릉", total: [594, 1, 70], new: [355, 0, 0], renew: [18, 0, 0], expire: [221, 1, 70] },
+                    { name: "원주", total: [1034, 5, 881], new: [560, 0, 0], renew: [62, 1, 536], expire: [412, 4, 345] }
+                ],
+                footer: { total: [6849, 23, 2742], new: [4003, 0, 0], renew: [212, 2, 624], expire: [2634, 21, 2118] }
+            },
+            "3월": {
+                rows: [
+                    { name: "중앙", total: [1217, 4, 406], new: [680, 3, 325], renew: [14, 0, 0], expire: [523, 1, 81] },
+                    { name: "강북", total: [704, 5, 483], new: [389, 5, 483], renew: [18, 0, 0], expire: [297, 0, 0] },
+                    { name: "서대문", total: [929, 4, 371], new: [607, 3, 263], renew: [15, 0, 0], expire: [308, 1, 108] },
+                    { name: "고양", total: [952, 18, 1616], new: [632, 2, 117], renew: [30, 0, 0], expire: [291, 16, 1499] },
+                    { name: "의정부", total: [740, 16, 1663], new: [395, 8, 652], renew: [37, 1, 163], expire: [308, 7, 848] },
+                    { name: "남양주", total: [679, 9, 1302], new: [385, 7, 1181], renew: [20, 0, 0], expire: [275, 2, 121] },
+                    { name: "강릉", total: [594, 0, 0], new: [355, 0, 0], renew: [18, 0, 0], expire: [221, 0, 0] },
+                    { name: "원주", total: [1034, 14, 1365], new: [560, 3, 410], renew: [62, 0, 0], expire: [412, 11, 955] }
+                ],
+                footer: { total: [6849, 70, 7206], new: [4003, 31, 3431], renew: [212, 1, 163], expire: [2634, 38, 3612] }
+            },
+            "1Q 합계": {
+                rows: [
+                    { name: "중앙", total: [3652, 11, 1341], new: [2041, 3, 325], renew: [42, 0, 0], expire: [1569, 8, 1016] },
+                    { name: "강북", total: [2112, 8, 780], new: [1168, 5, 483], renew: [53, 0, 0], expire: [891, 3, 298] },
+                    { name: "서대문", total: [2788, 6, 928], new: [1822, 3, 263], renew: [43, 0, 0], expire: [923, 3, 665] },
+                    { name: "고양", total: [2857, 35, 3341], new: [1895, 2, 117], renew: [89, 4, 429], expire: [873, 29, 2794] },
+                    { name: "의정부", total: [2219, 25, 2813], new: [1186, 8, 652], renew: [110, 1, 163], expire: [923, 16, 1998] },
+                    { name: "남양주", total: [2038, 10, 1346], new: [1154, 7, 1181], renew: [59, 0, 0], expire: [825, 3, 165] },
+                    { name: "강릉", total: [1781, 2, 161], new: [1065, 0, 0], renew: [53, 0, 0], expire: [663, 2, 161] },
+                    { name: "원주", total: [3101, 38, 3906], new: [1680, 3, 410], renew: [186, 2, 636], expire: [1235, 33, 2860] }
+                ],
+                footer: { total: [20548, 135, 14615], new: [12010, 31, 3431], renew: [635, 7, 1228], expire: [7903, 97, 9956] }
+            }
+        };
 
-function renderTable(month) {
-const tbody = document.getElementById('tableBody');
-const tfoot = document.getElementById('tableFoot');
-const monthData = tableData[month];
-let bodyHtml = '';
-monthData.rows.forEach(r => {
-bodyHtml += `
-<tr>
-<td>${r.name}</td>
-<td class="val-target bg-total-col sep-left">${formatNum(r.total[0])}</td>
-<td class="val-cnt bg-total-col">${formatNum(r.total[1])}</td>
-<td class="val-amt bg-total-col">${formatNum(r.total[2])}</td>
-<td class="bg-total-col">${getBadge(r.total[0], r.total[2])}</td>
-<td class="val-target highlight-bg sep-left">${formatNum(r.new[0])}</td>
-<td class="val-cnt highlight-bg">${formatNum(r.new[1])}</td>
-<td class="val-amt highlight-bg">${formatNum(r.new[2])}</td>
-<td class="highlight-bg">${getBadge(r.new[0], r.new[2])}</td>
-<td class="val-target sep-left">${formatNum(r.renew[0])}</td>
-<td class="val-cnt">${formatNum(r.renew[1])}</td>
-<td class="val-amt">${formatNum(r.renew[2])}</td>
-<td class="">${getBadge(r.renew[0], r.renew[2])}</td>
-<td class="val-target sep-left">${formatNum(r.expire[0])}</td>
-<td class="val-cnt">${formatNum(r.expire[1])}</td>
-<td class="val-amt">${formatNum(r.expire[2])}</td>
-<td class="">${getBadge(r.expire[0], r.expire[2])}</td>
-</tr>
-`;
-});
-tbody.innerHTML = bodyHtml;
-const f = monthData.footer;
-tfoot.innerHTML = `
-<tr>
-<td>총 합계</td>
-<td class="val-target bg-total-col sep-left">${formatNum(f.total[0])}</td>
-<td class="val-cnt bg-total-col" style="color:#fff;">${formatNum(f.total[1])}</td>
-<td class="val-amt bg-total-col">${formatNum(f.total[2])}</td>
-<td class="bg-total-col">${getBadge(f.total[0], f.total[2])}</td>
-<td class="val-target highlight-foot-bg sep-left">${formatNum(f.new[0])}</td>
-<td class="val-cnt highlight-foot-bg" style="color:#f1f5f9;">${formatNum(f.new[1])}</td>
-<td class="val-amt highlight-foot-bg">${formatNum(f.new[2])}</td>
-<td class="highlight-foot-bg">${getBadge(f.new[0], f.new[2])}</td>
-<td class="val-target sep-left">${formatNum(f.renew[0])}</td>
-<td class="val-cnt" style="color:#cbd5e1;">${formatNum(f.renew[1])}</td>
-<td class="val-amt">${formatNum(f.renew[2])}</td>
-<td class="">${getBadge(f.renew[0], f.renew[2])}</td>
-<td class="val-target sep-left">${formatNum(f.expire[0])}</td>
-<td class="val-cnt" style="color:#cbd5e1;">${formatNum(f.expire[1])}</td>
-<td class="val-amt">${formatNum(f.expire[2])}</td>
-<td class="">${getBadge(f.expire[0], f.expire[2])}</td>
-</tr>
-`;
-}
+        const preRetentionData = {
+            rows: [
+                { name: "중앙", target: 36, done: 17, received: 16, pending: 3, share: 47 },
+                { name: "강북", target: 26, done: 17, received: 9, pending: 0, share: 65 },
+                { name: "서대문", target: 26, done: 20, received: 6, pending: 0, share: 77 },
+                { name: "고양", target: 22, done: 20, received: 2, pending: 0, share: 91 },
+                { name: "의정부", target: 39, done: 39, received: 0, pending: 0, share: 100 },
+                { name: "남양주", target: 24, done: 13, received: 11, pending: 0, share: 54 },
+                { name: "강릉", target: 22, done: 18, received: 4, pending: 0, share: 82 },
+                { name: "원주", target: 36, done: 32, received: 4, pending: 0, share: 89 }
+            ],
+            footer: { target: 231, done: 176, received: 52, pending: 3, share: 76 }
+        };
 
-function changeTab(month) {
-document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-document.querySelector(`.tab-btn[data-month="${month}"]`).classList.add('active');
-document.getElementById('titleMonth').innerText = month;
-const tbody = document.getElementById('tableBody');
-const tfoot = document.getElementById('tableFoot');
-tbody.style.opacity = 0;
-tfoot.style.opacity = 0;
-setTimeout(() => {
-renderTable(month);
-tbody.style.opacity = 1;
-tfoot.style.opacity = 1;
-}, 200);
-}
+        const terminationData = {
+            rows: [
+                { name: "중앙", jan: 2.9, feb: 1.7, mar: 2.2, target: 2.3, actual: 2.3, rate: 68.0 },
+                { name: "강북", jan: 3.1, feb: 1.2, mar: 3.4, target: 2.6, actual: 2.6, rate: 63.1 },
+                { name: "서대문", jan: 1.3, feb: 1.8, mar: 1.5, target: 1.5, actual: 1.5, rate: 103.5 },
+                { name: "고양", jan: 0.8, feb: 3.9, mar: 3.0, target: 2.5, actual: 2.5, rate: 83.4 },
+                { name: "의정부", jan: 1.2, feb: 1.5, mar: 1.5, target: 1.4, actual: 1.4, rate: 134.4 },
+                { name: "남양주", jan: 0.9, feb: 3.0, mar: 2.3, target: 2.1, actual: 2.1, rate: 91.4 },
+                { name: "강릉", jan: 1.3, feb: 0.8, mar: 2.7, target: 1.6, actual: 1.6, rate: 125.2 },
+                { name: "원주", jan: 0.0, feb: 1.0, mar: 1.6, target: 0.9, actual: 0.9, rate: 168.9 }
+            ],
+            footer: { jan: 1.5, feb: 1.9, mar: 2.2, target: 1.8, actual: 1.8, rate: 93.7 }
+        };
 
-window.onload = () => {
-    renderTable('1Q 합계');
-};
-</script>
+        const pValueData = {
+            rows: [
+                { name: "중앙", usage: 26 }, { name: "강북", usage: 40 }, { name: "서대문", usage: 92 },
+                { name: "고양", usage: 73 }, { name: "의정부", usage: 154 }, { name: "남양주", usage: 126 },
+                { name: "강릉", usage: 72 }, { name: "원주", usage: 124 }
+            ],
+            footer: { usage: 86 }
+        };
 
+        const suspensionData = {
+            rows: [
+                { name: "중앙", total: "76(0.60%)", total_c: 76, badL: "25(0.20%)", longL: "25(0.30%)", arrears: "7(23%)" },
+                { name: "강북", total: "53(0.47%)", total_c: 53, badL: "4(0.04%)", longL: "3(0.04%)", arrears: "0(0%)" },
+                { name: "서대문", total: "82(0.93%)", total_c: 82, badL: "23(0.26%)", longL: "26(0.41%)", arrears: "10(30%)" },
+                { name: "고양", total: "197(1.49%)", total_c: 197, badL: "23(0.17%)", longL: "11(0.12%)", arrears: "30(65%)" },
+                { name: "의정부", total: "84(0.86%)", total_c: 84, badL: "4(0.04%)", longL: "0(0.00%)", arrears: "4(50%)" },
+                { name: "남양주", total: "102(1.06%)", total_c: 102, badL: "7(0.07%)", longL: "3(0.05%)", arrears: "23(79%)" },
+                { name: "강릉", total: "101(0.97%)", total_c: 101, badL: "9(0.09%)", longL: "16(0.28%)", arrears: "26(74%)" },
+                { name: "원주", total: "222(1.45%)", total_c: 222, badL: "20(0.13%)", longL: "31(0.43%)", arrears: "107(84%)" }
+            ],
+            footer: { total: "917(1.01%)", total_c: 917, badL: "115(0.13%)", longL: "115(0.20%)", arrears: "207(66%)" }
+        };
+
+        function getBadge(target, actual) {
+            if (target === 0 || actual === 0) return '<span class="badge zero">-</span>';
+            const pctVal = Math.round((actual / target) * 100);
+            let cls = 'poor';
+            let icon = '🔴';
+            if (pctVal >= 100) { 
+                cls = 'excellent'; 
+                icon = '🟢'; 
+            } else if (pctVal >= 50) { 
+                cls = 'good'; 
+                icon = '🟡'; 
+            }
+            return `<span class="badge ${cls}" style="display: inline-flex; align-items: center; gap: 4px; justify-content: center; min-width: 65px;">
+                <span style="font-size: 10px;">${icon}</span>
+                <span>${pctVal}%</span>
+            </span>`;
+        }
+
+        function renderSparkline(values) {
+            if (!values || values.length < 2) return '';
+            const min = Math.min(...values);
+            const max = Math.max(...values);
+            const range = (max - min) || 1;
+            const width = 45;
+            const height = 18;
+            const points = values.map((v, i) => {
+                const x = (i / (values.length - 1)) * width + 2;
+                const y = height - ((v - min) / range) * (height - 4) - 2;
+                return `${x},${y}`;
+            }).join(' ');
+            return `
+                <div class="sparkline-container">
+                    <svg class="sparkline-svg" viewBox="0 0 ${width + 4} ${height}">
+                        <polyline points="${points}" />
+                    </svg>
+                </div>
+            `;
+        }
+
+        function formatNum(num) {
+            if (num === 0 || num === null || num === undefined) return '-';
+            return num.toLocaleString();
+        }
+
+        function getSuspensionIcon(valStr, isSub = false) {
+            if (!valStr || valStr === '-' || !valStr.includes('(')) return '';
+            const match = valStr.match(/\(([\d.]+)%\)/);
+            if (!match) return '';
+            const rate = parseFloat(match[1]);
+            
+            if (isSub) {
+                if (rate < 0.1) return '🟢';
+                if (rate < 0.3) return '🟡';
+                return '🔴';
+            } else {
+                if (rate < 0.8) return '🟢';
+                if (rate < 1.2) return '🟡';
+                return '🔴';
+            }
+        }
+
+        function getGoalIcon(val) {
+            if (val === undefined || val === null || val === '-') return '';
+            const num = parseFloat(val);
+            if (isNaN(num)) return '';
+            if (num >= 100) return '🟢';
+            if (num >= 50) return '🟡';
+            return '🔴';
+        }
+
+        function getReverseGoalIcon(val) {
+            if (val === undefined || val === null || val === '-') return '';
+            const num = parseFloat(val);
+            if (isNaN(num)) return '';
+            if (num >= 100) return '🟢';   // Reversed logic to match overall target metric style
+            if (num >= 50) return '🟡';
+            return '🔴';
+        }
+
+        function getPValueIcon(val) {
+            if (val === undefined || val === null || val === '-') return '';
+            const num = parseFloat(val);
+            if (isNaN(num)) return '';
+            if (num < 50) return '🟢';    // 리텐션P값 사용율: 높을수록 나쁨
+            if (num < 100) return '🟡';
+            return '🔴';
+        }
+
+        function getArrearsIcon(str) {
+            if (!str) return '';
+            const match = str.match(/\(([\d.]+)%\)/);
+            if (match) {
+                const val = parseFloat(match[1]);
+                if (val > 50) return '🔴';
+                if (val > 30) return '🟡';
+                return '🟢';
+            }
+            return '';
+        }
+
+        function flexCell(icon, text) {
+            if (!icon) return text;
+            const textWidth = text.includes('(') ? '72px' : '42px';
+            return `<div style="display: flex; align-items: center; justify-content: space-between; width: max-content; margin: 0 auto;">
+                        <span style="width: 16px; text-align: center; font-size: 11px; flex-shrink: 0; margin-right: 4px;">${icon}</span>
+                        <span style="width: ${textWidth}; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap;">${text}</span>
+                    </div>`;
+        }
+
+        function extractPct(str) {
+            if (!str || str === '-') return 0;
+            const m = str.match(/\(([\d.]+)%\)/);
+            return m ? parseFloat(m[1]) : 0;
+        }
+
+        function getCoachingText(item) {
+            let strengths = [];
+            let weaknesses = [];
+
+            if (item.renew >= 100) strengths.push(`재계약 달성(${item.renew}%)`);
+            if (item.suspension > 0 && item.suspension < 1.0) strengths.push(`건수 정지율(${item.suspension}%) 선방`);
+            if (item.pval >= 70 && item.pval <= 100) strengths.push(`P값(${item.pval}%) 효율 운영`);
+
+            if (item.renew < 60) weaknesses.push(`재계약 부진(${item.renew}%)`);
+            if (item.term > 110) weaknesses.push(`해지율(${item.term}%) 상승`);
+            if (item.suspension > 1.3) weaknesses.push(`건수 정지율(${item.suspension}%) 위험`);
+            if (item.pval > 100) weaknesses.push(`P값 예산 초과(${item.pval}%)`);
+            if (item.pval < 50) weaknesses.push(`방어 툴(P값) 활용 미흡(${item.pval}%)`);
+
+            let feedback = "";
+            if (strengths.length > 0) {
+                feedback += `<strong>${strengths.join(', ')}</strong> 측면에서 우수한 성과를 보이고 있으나, `;
+            } else {
+                feedback += `전반적인 지표가 정체되어 있으며, `;
+            }
+
+            if (weaknesses.length > 0) {
+                feedback += `<strong>${weaknesses.join(', ')}</strong> 부분은 집중적인 개선 노력이 필요합니다.`;
+            } else {
+                feedback += `안정적으로 지표를 유지하고 있습니다.`;
+            }
+            return feedback;
+        }
+
+        let currentView = 'renewal';
+        let currentMonth = '1Q 합계';
+
+        function switchView(view) {
+            currentView = view;
+            
+            // UI Update
+            document.querySelectorAll('.kpi-header').forEach(h => h.classList.remove('active'));
+            document.querySelectorAll('.premium-nav-btn, .nav-hub-btn').forEach(btn => btn.classList.remove('active'));
+            
+            // KPI Section Visibility
+            const kpiSection = document.getElementById('mainKpiSection');
+            if (view === 'renewal' || view === 'pre-retention') {
+                if (kpiSection) kpiSection.style.display = 'grid';
+            } else {
+                if (kpiSection) kpiSection.style.display = 'none';
+            }
+
+            // Table Section State Reset
+            const tableSection = document.querySelector('.table-section');
+            if (tableSection) {
+                tableSection.classList.remove('table-summary-active', 'table-renewal-active');
+            }
+
+            // View Specific Configuration
+            if (view === 'renewal') {
+                const header = document.getElementById('kpi-header-renewal');
+                if (header) header.classList.add('active');
+                document.getElementById('month-tabs').style.display = 'flex';
+                document.getElementById('viz-zone').style.display = 'block';
+                if (tableSection) tableSection.classList.add('table-renewal-active');
+            } else if (view === 'pre-retention') {
+                const header = document.getElementById('kpi-header-pre-retention');
+                if (header) header.classList.add('active');
+                document.getElementById('month-tabs').style.display = 'none';
+                document.getElementById('viz-zone').style.display = 'block';
+            } else if (view === 'termination') {
+                const navBtn = document.getElementById('nav-termination');
+                if (navBtn) navBtn.classList.add('active');
+                document.getElementById('month-tabs').style.display = 'none';
+                document.getElementById('viz-zone').style.display = 'block';
+                const aiReview = document.getElementById('aiReviewSection');
+                if (aiReview) aiReview.style.display = 'none';
+            } else if (view === 'summary') {
+                const navBtn = document.getElementById('nav-summary');
+                if (navBtn) navBtn.classList.add('active');
+                document.getElementById('month-tabs').style.display = 'none';
+                document.getElementById('viz-zone').style.display = 'block';
+                if (tableSection) tableSection.classList.add('table-summary-active');
+                const aiReview = document.getElementById('aiReviewSection');
+                if (aiReview) {
+                    aiReview.style.display = 'block';
+                    generateAIReview();
+                }
+                updateMainChart('summary', 'total');
+            }
+
+            // Update Metric Select Options
+            const select = document.getElementById('chartMetricSelect');
+            if (select) {
+                select.innerHTML = '';
+                if (view === 'renewal') {
+                    select.innerHTML = `
+                        <option value="total">총 실적 (건수)</option>
+                        <option value="new">만기도래_신규 (건수)</option>
+                        <option value="renew">만기도래_재계약 (건수)</option>
+                        <option value="expire">약정만료 (건수)</option>
+                    `;
+                } else if (view === 'pre-retention') {
+                    select.innerHTML = `<option value="share">점유율 (%)</option><option value="target">대상 (건수)</option>`;
+                } else if (view === 'termination') {
+                    select.innerHTML = `<option value="rate">1Q 달성율 (%)</option><option value="actual">1Q 실적 (평균)</option>`;
+                } else if (view === 'summary') {
+                    select.innerHTML = `<option value="total">재계약 총실적 (%)</option><option value="retention">리텐션 달성율 (%)</option><option value="suspension">총정지율 (%)</option>`;
+                }
+            }
+
+            renderTable(currentMonth);
+            updateMainChart();
+        }
+
+        function renderTable(month) {
+            currentMonth = month;
+            const container = document.querySelector('.table-scroll');
+            
+            // Re-show standard table structure
+            container.innerHTML = `<table id="dataTable"><thead id="tableHead"></thead><tbody id="tableBody"></tbody><tfoot id="tableFoot"></tfoot></table>`;
+            
+            const thead = document.getElementById('tableHead');
+            const tbody = document.getElementById('tableBody');
+            const tfoot = document.getElementById('tableFoot');
+            const title = document.querySelector('.table-title');
+
+            // Shared Variables for All Views
+            const userBranch = window.USER_SESSION ? window.USER_SESSION.branch : null;
+            const searchTerm = (document.getElementById('branchSearch')?.value || '').toLowerCase();
+            let bodyHtml = '';
+
+            if (currentView === 'renewal') {
+                title.innerHTML = `지사별 재계약 활동 실적 상세 (<span id="titleMonth" class="text-blue">${month}</span>)`;
+                thead.innerHTML = `
+                    <tr>
+                        <th rowspan="2" style="min-width: 80px;">구분</th>
+                        <th colspan="4" class="bg-total-col text-blue">총 실적 (계)</th>
+                        <th colspan="4" class="highlight-col-top highlight-col-left highlight-col-right highlight-head-bg">① 만기도래_신규(1st)</th>
+                        <th colspan="4">② 만기도래_재계약</th>
+                        <th colspan="4">③ 약정만료</th>
+                    </tr>
+                    <tr>
+                        <th class="bg-total-col border-thin">목표(금액)</th>
+                        <th class="bg-total-col border-thin">실적(건)</th>
+                        <th class="bg-total-col border-thin">실적(금액)</th>
+                        <th class="bg-total-col group-end">달성률</th>
+                        <th class="highlight-col-left highlight-bg border-thin">목표(금액)</th>
+                        <th class="highlight-bg border-thin">실적(건)</th>
+                        <th class="highlight-bg border-thin">실적(금액)</th>
+                        <th class="highlight-col-right highlight-bg">달성률</th>
+                        <th class="border-thin">목표(금액)</th>
+                        <th class="border-thin">실적(건)</th>
+                        <th class="border-thin">실적(금액)</th>
+                        <th class="border-heavy-right group-end">달성률</th>
+                        <th class="border-thin">목표(금액)</th>
+                        <th class="border-thin">실적(건)</th>
+                        <th class="border-thin">실적(금액)</th>
+                        <th>달성률</th>
+                    </tr>
+                `;
+                const monthData = tableData[month];
+                let rowsToRender = monthData.rows;
+                
+                // Search Filtering Logic
+                if (searchTerm) {
+                    rowsToRender = rowsToRender.filter(r => r.name.toLowerCase().includes(searchTerm));
+                }
+                
+                // Branch Isolation Filtering logic
+                if (userBranch && userBranch !== '전체' && userBranch !== '본부' && userBranch !== '강북강원본부') {
+                    rowsToRender = rowsToRender.filter(r => r.name.includes(userBranch) || userBranch.includes(r.name));
+                }
+
+                rowsToRender.forEach(r => {
+                    // Extract trend data for sparklines (Jan, Feb, Mar totals)
+                    const trendValues = [
+                        tableData['1월'].rows.find(row => row.name === r.name)?.total[2] || 0,
+                        tableData['2월'].rows.find(row => row.name === r.name)?.total[2] || 0,
+                        tableData['3월'].rows.find(row => row.name === r.name)?.total[2] || 0
+                    ];
+
+                    bodyHtml += `
+                        <tr class="zebra-row">
+                            <td class="sticky-col text-c">${r.name}</td>
+                            <td class="val-num bg-total-col group-divider-left">${formatNum(r.total[0])}</td>
+                            <td class="val-num bg-total-col">${formatNum(r.total[1])}</td>
+                            <td class="val-num bg-total-col">
+                                <div class="sparkline-container" style="justify-content: center;">
+                                    ${renderSparkline(trendValues)}
+                                    <span>${formatNum(r.total[2])}</span>
+                                </div>
+                            </td>
+                            <td class="bg-total-col group-divider-right">${getBadge(r.total[0], r.total[2])}</td>
+                            
+                            <td class="val-num highlight-bg group-divider-left">${formatNum(r.new[0])}</td>
+                            <td class="val-num highlight-bg">${formatNum(r.new[1])}</td>
+                            <td class="val-num highlight-bg">${formatNum(r.new[2])}</td>
+                            <td class="highlight-bg group-divider-right">${getBadge(r.new[0], r.new[2])}</td>
+                            
+                            <td class="val-num bg-renew group-divider-left">${formatNum(r.renew[0])}</td>
+                            <td class="val-num bg-renew">${formatNum(r.renew[1])}</td>
+                            <td class="val-num bg-renew">${formatNum(r.renew[2])}</td>
+                            <td class="bg-renew group-divider-right">${getBadge(r.renew[0], r.renew[2])}</td>
+                            
+                            <td class="val-num bg-expire group-divider-left">${formatNum(r.expire[0])}</td>
+                            <td class="val-num bg-expire">${formatNum(r.expire[1])}</td>
+                            <td class="val-num bg-expire">${formatNum(r.expire[2])}</td>
+                            <td class="group-divider-right">${getBadge(r.expire[0], r.expire[2])}</td>
+                        </tr>
+                    `;
+                });
+                tbody.innerHTML = bodyHtml;
+                const f = monthData.footer;
+                tfoot.innerHTML = `
+                    <tr style="background: #f1f5f9; font-weight: 900;">
+                        <td class="sticky-col text-c" style="background: #f1f5f9; font-size: 14px;">합 계</td>
+                        <td class="val-num center-val border-left-heavy">${formatNum(f.total[0])}</td>
+                        <td class="val-num center-val">${formatNum(f.total[1])}</td>
+                        <td class="val-num center-val">${formatNum(f.total[2])}</td>
+                        <td class="center-val border-right-heavy">${getBadge(f.total[0], f.total[2])}</td>
+                        <td class="val-num center-val border-left-heavy">${formatNum(f.new[0])}</td>
+                        <td class="val-num center-val">${formatNum(f.new[1])}</td>
+                        <td class="val-num center-val">${formatNum(f.new[2])}</td>
+                        <td class="center-val border-right-heavy">${getBadge(f.new[0], f.new[2])}</td>
+                        <td class="val-num center-val border-left-heavy">${formatNum(f.renew[0])}</td>
+                        <td class="val-num center-val">${formatNum(f.renew[1])}</td>
+                        <td class="val-num center-val">${formatNum(f.renew[2])}</td>
+                        <td class="center-val border-right-heavy">${getBadge(f.renew[0], f.renew[2])}</td>
+                        <td class="val-num center-val border-left-heavy">${formatNum(f.expire[0])}</td>
+                        <td class="val-num center-val">${formatNum(f.expire[1])}</td>
+                        <td class="val-num center-val">${formatNum(f.expire[2])}</td>
+                        <td class="center-val border-right-heavy">${getBadge(f.expire[0], f.expire[2])}</td>
+                    </tr>
+                `;
+            } else if (currentView === 'pre-retention') {
+                title.innerHTML = `② 사전리텐션 활동현황 (방문율 관리)`;
+                thead.innerHTML = `
+                    <tr>
+                        <th rowspan="2" style="min-width: 80px;">구분</th>
+                        <th colspan="5" class="bg-total-col text-blue" style="color: white !important;">사전리텐션 활동현황 (방문율 관리)</th>
+                    </tr>
+                    <tr>
+                        <th class="bg-total-col">대상 (건)</th>
+                        <th class="bg-total-col">처리완료</th>
+                        <th class="highlight-bg">접수</th>
+                        <th class="highlight-bg">미접수</th>
+                        <th class="bg-total-col">점유율 (%)</th>
+                    </tr>
+                `;
+                let rowsToRender = [...preRetentionData.rows];
+                
+                if (searchTerm) {
+                    rowsToRender = rowsToRender.filter(r => r.name.toLowerCase().includes(searchTerm));
+                }
+                
+                if (userBranch && userBranch !== '전체' && userBranch !== '본부' && userBranch !== '강북강원본부') {
+                    rowsToRender = rowsToRender.filter(r => r.name.includes(userBranch) || userBranch.includes(r.name));
+                }
+
+                rowsToRender.forEach(r => {
+                    bodyHtml += `
+                        <tr class="zebra-row">
+                            <td class="sticky-col text-c">${r.name}</td>
+                            <td class="val-num center-val">${formatNum(r.target)}</td>
+                            <td class="val-num center-val">${formatNum(r.done)}</td>
+                            <td class="val-num highlight-bg center-val">${formatNum(r.received)}</td>
+                            <td class="val-num highlight-bg center-val">${formatNum(r.pending)}</td>
+                            <td class="text-c"><span class="badge ${r.share >= 50 ? 'excellent' : 'good'}">${r.share}%</span></td>
+                        </tr>
+                    `;
+                });
+                tbody.innerHTML = bodyHtml;
+                const f = preRetentionData.footer;
+                tfoot.innerHTML = `
+                    <tr style="background: #f1f5f9; font-weight: 900;">
+                        <td class="sticky-col sep-r" style="background: #f1f5f9; font-size: 14px;">총합계</td>
+                        <td>${formatNum(f.target)}</td>
+                        <td>${formatNum(f.done)}</td>
+                        <td class="highlight-bg">${formatNum(f.received)}</td>
+                        <td class="highlight-bg">${formatNum(f.pending)}</td>
+                        <td><span class="badge excellent">${f.share}%</span></td>
+                    </tr>
+                `;
+            } else if (currentView === 'termination') {
+                title.innerHTML = `관리고객 해지율 상세 분석`;
+                thead.innerHTML = `
+                    <tr>
+                        <th rowspan="2" style="width: 120px; min-width: 100px;">기관</th>
+                        <th colspan="5" class="bg-total-col text-blue" style="color: white !important;">관리고객 해지율 상세 분석 (월별/분기 현황)</th>
+                    </tr>
+                    <tr>
+                        <th style="background-color: #f8fafc !important; width: 15%;">'26.1월</th>
+                        <th style="background-color: #f8fafc !important; width: 15%;">2월</th>
+                        <th style="background-color: #f8fafc !important; width: 15%;">3월</th>
+                        <th class="bg-total-col" style="width: 20%;">1Q실적(평균)</th>
+                        <th class="highlight-bg text-blue" style="width: 20%;">1Q달성율(평균)</th>
+                    </tr>
+                `;
+                let rowsToRender = terminationData.rows;
+
+                if (searchTerm) {
+                    rowsToRender = rowsToRender.filter(r => r.name.toLowerCase().includes(searchTerm));
+                }
+
+                if (userBranch && userBranch !== '전체' && userBranch !== '본부' && userBranch !== '강북강원본부') {
+                    rowsToRender = rowsToRender.filter(r => r.name.includes(userBranch) || userBranch.includes(r.name));
+                }
+
+                rowsToRender.forEach(r => {
+                    const trendValues = [r.jan, r.feb, r.mar];
+                    bodyHtml += `
+                        <tr class="zebra-row">
+                            <td class="sticky-col text-c">${r.name}</td>
+                            <td class="val-num text-c" style="width: 15%;">${r.jan}%</td>
+                            <td class="val-num text-c" style="width: 15%;">${r.feb}%</td>
+                            <td class="val-num text-c" style="width: 15%;">${r.mar}%</td>
+                            <td class="val-num bg-total-col text-c" style="width: 20%;">
+                                <div class="sparkline-container">
+                                    ${renderSparkline(trendValues)}
+                                    <span style="font-weight:700; min-width: 35px; text-align: left;">${r.actual}%</span>
+                                </div>
+                            </td>
+                            <td class="text-c highlight-bg" style="width: 20%;">${getBadge(100, r.rate)}</td>
+                        </tr>
+                    `;
+                });
+                tbody.innerHTML = bodyHtml;
+                const f = terminationData.footer;
+                tfoot.innerHTML = `
+                    <tr style="background: #f1f5f9; font-weight: 900;">
+                        <td class="sticky-col text-c" style="background: #f1f5f9; font-size: 14px;">본부계</td>
+                        <td class="text-c">${f.jan}%</td>
+                        <td class="text-c">${f.feb}%</td>
+                        <td class="text-c">${f.mar}%</td>
+                        <td class="bg-total-col text-c">${f.actual}%</td>
+                        <td class="highlight-bg text-c">${getBadge(100, f.rate)}</td>
+                    </tr>
+                `;
+            } else if (currentView === 'summary') {
+                title.innerHTML = `기관별 현황 요약 (종합 대시보드)`;
+                thead.innerHTML = `
+                    <tr>
+                        <th rowspan="2" style="min-width: 80px;">구분</th>
+                        <th colspan="4" class="bg-summary-blue">재계약 (달성율)</th>
+                        <th class="bg-summary-green">사전리텐션</th>
+                        <th class="bg-summary-red">관리_해지율</th>
+                        <th class="bg-summary-blue">리텐션P값 (3월 누적)</th>
+                        <th colspan="4" class="bg-summary-red">정지 / 부실</th>
+                    </tr>
+                    <tr>
+                        <th class="bg-summary-blue" style="font-size:11px;">만기도래_신규</th>
+                        <th class="bg-summary-blue" style="font-size:11px;">만기도래_재계약</th>
+                        <th class="bg-summary-blue" style="font-size:11px;">약정만료</th>
+                        <th class="bg-summary-blue" style="font-size:11px;">총실적</th>
+                        <th class="bg-summary-green" style="font-size:11px;">달성율</th>
+                        <th class="bg-summary-red" style="font-size:11px;">1Q 달성율</th>
+                        <th class="bg-summary-blue" style="font-size:11px;">사용율</th>
+                        <th class="bg-summary-red" style="font-size:11px;">총정지</th>
+                        <th class="bg-summary-red" style="font-size:11px;">부실(L형)</th>
+                        <th class="bg-summary-red" style="font-size:11px;">L형(장기)</th>
+                        <th class="bg-summary-red" style="font-size:11px;">체납정지</th>
+                    </tr>
+                `;
+                let bodyHtml = '';
+                // Ensure rowsToRender is explicitly calculated from 1Q 합계
+                const summarySource = tableData['1Q 합계'];
+                if (!summarySource) return;
+                
+                let summaryRows = [...summarySource.rows];
+                if (searchTerm) {
+                    summaryRows = summaryRows.filter(r => r.name.toLowerCase().includes(searchTerm));
+                }
+                if (userBranch && userBranch !== '전체' && userBranch !== '본부' && userBranch !== '강북강원본부') {
+                    summaryRows = summaryRows.filter(r => r.name.includes(userBranch) || userBranch.includes(r.name));
+                }
+
+                    summaryRows.forEach((r) => {
+                        const originalIdx = summarySource.rows.findIndex(row => row.name === r.name);
+                        const pr = preRetentionData.rows.find(row => row.name === r.name) || { share: 0 };
+                        const tr = terminationData.rows.find(row => row.name === r.name) || { rate: 0 };
+                        const pv = pValueData.rows.find(row => row.name === r.name) || { usage: 0 };
+                        const ss = suspensionData.rows.find(row => row.name === r.name) || { total: '-', badL: '-', longL: '-', arrears: '-' };
+
+                        const calcPct = (vals) => (vals && vals[0] > 0 ? Math.round((vals[2] / vals[0]) * 100) : 0);
+                        const totalPct = calcPct(r.total);
+
+                        bodyHtml += `
+                            <tr class="zebra-row">
+                                <td class="sticky-col text-c text-bold-heavy">${r.name}</td>
+                                <td class="val-num bg-summary-blue" style="padding: 0;">${flexCell(getGoalIcon(calcPct(r.new)), calcPct(r.new) + '%')}</td>
+                                <td class="val-num bg-summary-blue" style="padding: 0;">${(r.renew && r.renew[0] > 0) ? flexCell(getGoalIcon(calcPct(r.renew)), calcPct(r.renew) + '%') : '-'}</td>
+                                <td class="val-num bg-summary-blue" style="padding: 0;">${flexCell(getGoalIcon(calcPct(r.expire)), calcPct(r.expire) + '%')}</td>
+                                <td class="val-num bg-summary-blue text-bold-heavy" style="padding: 0;">${flexCell(getGoalIcon(totalPct), totalPct + '%')}</td>
+                                <td class="val-num bg-summary-green" style="padding: 0;">${flexCell(getGoalIcon(pr.share), pr.share + '%')}</td>
+                                <td class="val-num bg-summary-red" style="padding: 0;">${flexCell(getReverseGoalIcon(tr.rate), tr.rate + '%')}</td>
+                                <td class="val-num bg-summary-blue" style="padding: 0;">${flexCell(getPValueIcon(pv.usage), pv.usage + '%')}</td>
+                                <td class="text-c bg-summary-red" style="padding: 0;">${flexCell(getSuspensionIcon(ss.total), ss.total)}</td>
+                                <td class="text-c bg-summary-red" style="padding: 0;">${flexCell(getSuspensionIcon(ss.badL, true), ss.badL)}</td>
+                                <td class="text-c bg-summary-red" style="padding: 0;">${flexCell(getSuspensionIcon(ss.longL, true), ss.longL)}</td>
+                                <td class="text-c bg-summary-red" style="padding: 0;">${flexCell(getArrearsIcon(ss.arrears), ss.arrears)}</td>
+                            </tr>
+                        `;
+                    });
+                tbody.innerHTML = bodyHtml;
+
+                const f1 = tableData['1Q 합계'].footer;
+                const fp = preRetentionData.footer;
+                const ft = terminationData.footer;
+                const fv = pValueData.footer;
+                const fs = suspensionData.footer;
+
+                const calcPctF = (vals) => (vals[0] === 0 ? 0 : Math.round((vals[2] / vals[0]) * 100));
+
+                tfoot.innerHTML = `
+                    <tr style="background: #e2e8f0; font-weight: 900; color: #1e293b;">
+                        <td class="sticky-col text-c" style="background: #e2e8f0; font-size: 14px;">본부계</td>
+                        <td class="bg-summary-blue text-c" style="padding: 0;">${flexCell(getGoalIcon(calcPctF(f1.new)), calcPctF(f1.new) + '%')}</td>
+                        <td class="bg-summary-blue text-c" style="padding: 0;">${flexCell(getGoalIcon(calcPctF(f1.renew)), calcPctF(f1.renew) + '%')}</td>
+                        <td class="bg-summary-blue text-c" style="padding: 0;">${flexCell(getGoalIcon(calcPctF(f1.expire)), calcPctF(f1.expire) + '%')}</td>
+                        <td class="bg-summary-blue text-c text-bold-heavy" style="padding: 0;">${flexCell(getGoalIcon(calcPctF(f1.total)), calcPctF(f1.total) + '%')}</td>
+                        <td class="bg-summary-green text-c" style="padding: 0;">${flexCell(getGoalIcon(fp.share), fp.share + '%')}</td>
+                        <td class="bg-summary-red text-c" style="padding: 0;">${flexCell(getReverseGoalIcon(ft.rate), ft.rate + '%')}</td>
+                        <td class="bg-summary-blue text-c" style="padding: 0;">${flexCell(getPValueIcon(fv.usage), fv.usage + '%')}</td>
+                        <td class="bg-summary-red text-c" style="padding: 0;">${flexCell(getSuspensionIcon(fs.total), fs.total)}</td>
+                        <td class="bg-summary-red text-c" style="padding: 0;">${flexCell(getSuspensionIcon(fs.badL, true), fs.badL)}</td>
+                        <td class="bg-summary-red text-c" style="padding: 0;">${flexCell(getSuspensionIcon(fs.longL, true), fs.longL)}</td>
+                        <td class="bg-summary-red text-c" style="padding: 0;">${flexCell(getArrearsIcon(fs.arrears), fs.arrears)}</td>
+                    </tr>
+                `;
+            }
+        }
+
+        function generateAIReview() {
+            const base = tableData['1Q 합계'].rows;
+            const data = base.map((r, idx) => {
+                const tr = terminationData.rows[idx];
+                const ss = suspensionData.rows[idx];
+                const pv = pValueData.rows[idx];
+                const totalPct = (r.total[0] === 0 ? 0 : Math.round((r.total[2] / r.total[0]) * 100));
+                return {
+                    name: r.name,
+                    renew: totalPct,
+                    term: tr.rate,
+                    pval: pv.usage,
+                    suspension: extractPct(ss.total),
+                    arrears: extractPct(ss.arrears)
+                };
+            });
+
+            const sorted = [...data].sort((a, b) => (b.renew - (b.suspension * 10)) - (a.renew - (a.suspension * 10)));
+            const top3 = sorted.slice(0, 3);
+            const bottom3 = [...sorted].reverse().slice(0, 3);
+
+
+
+            const content = document.getElementById('aiReviewContent');
+            content.innerHTML = '<div style="text-align: center; padding: 20px;">AI 리포트를 생성 중입니다...</div>';
+            
+            let html = `<p style="margin: 0 0 15px 0; line-height: 1.6;"><strong>▶ 본부 종합:</strong> 전체 재계약 달성율 71%로 실적 제고가 시급합니다('만기도래_신규' 부진 대비, '약정만료' 선방). 또한 <b>국초 기준 리텐션P값 누적 집행율(119%)</b> 및 <b>건수 기준 총정지율(1.01%)</b> 등 리스크 관리 지표가 높은 수준이므로 전사적인 모니터링이 요구됩니다.</p>`;
+            
+            html += `<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start;">`;
+            
+            // BEST Section
+            html += `<div>
+                <h5 style="margin: 0 0 15px 0; color: #166534; font-size: 14px; font-weight: 800; display: flex; align-items: center; gap: 6px;">
+                    <i class="fas fa-trophy" style="font-size: 14px;"></i> BEST 성과 지사 (TOP 3)
+                </h5>`;
+            top3.forEach(item => {
+                html += `<div class="ai-review-item">
+                    <div style="display: flex; align-items: center;">
+                        <span class="ai-tag best">BEST</span>
+                        <strong style="font-size: 14px; color: #1e293b;">${item.name}</strong>
+                    </div>
+                    <span class="ai-feedback-text">${getCoachingText(item)}</span>
+                </div>`;
+            });
+            html += `</div>`;
+
+            // LAGGING Section
+            html += `<div>
+                <h5 style="margin: 0 0 15px 0; color: #991b1b; font-size: 14px; font-weight: 800; display: flex; align-items: center; gap: 6px;">
+                    <i class="fas fa-exclamation-triangle" style="font-size: 14px;"></i> LAGGING 부진 지사 (하위 3)
+                </h5>`;
+            bottom3.forEach(item => {
+                html += `<div class="ai-review-item">
+                    <div style="display: flex; align-items: center;">
+                        <span class="ai-tag lag">LAGGING</span>
+                        <strong style="font-size: 14px; color: #1e293b;">${item.name}</strong>
+                    </div>
+                    <span class="ai-feedback-text">${getCoachingText(item)}</span>
+                </div>`;
+            });
+            html += `</div>`;
+            
+            html += `</div>`; // Close highlight grid
+
+            // New: Detailed branch-specific coaching section
+            html += `<div style="margin-top: 30px; border-top: 2px solid #e2e8f0; padding-top: 25px;">
+                <h5 style="margin: 0 0 20px 0; color: #1e3a8a; font-size: 15px; font-weight: 800; display: flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-list-check"></i> 지사별 세부 성과 코칭 가이드 (전체)
+                </h5>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px 40px;">`;
+            
+            data.forEach(item => {
+                const isBest = top3.some(t => t.name === item.name);
+                const isLag = bottom3.some(l => l.name === item.name);
+                let tag = '';
+                if (isBest) tag = '<span class="ai-tag best">BEST</span>';
+                else if (isLag) tag = '<span class="ai-tag lag">LAGGING</span>';
+                else tag = '<span class="ai-tag" style="background:#f1f5f9; color:#475569; border:1px solid #e2e8f0;">NORMAL</span>';
+
+                html += `<div class="ai-review-item">
+                    <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                        ${tag}
+                        <strong style="font-size: 14px; color: #1e293b;">${item.name}</strong>
+                        <span style="font-size: 11px; color: #64748b; margin-left: auto;">종합: ${item.renew}% / 해지: ${item.term}%</span>
+                    </div>
+                    <span class="ai-feedback-text" style="font-size: 12.5px;">${getCoachingText(item)}</span>
+                </div>`;
+            });
+            
+            html += `</div></div>`;
+            
+            html += `<p style="margin-top:20px; font-style: italic; color: #94a3b8; font-size: 11px; border-top: 1px dashed #e2e8f0; padding-top: 15px; text-align: right;">※ 본 분석은 실시간 실적·해지·정지 데이터 융합을 통한 AI 생성 리포트입니다.</p>`;
+            
+            content.innerHTML = html;
+        }
+
+        function changeTab(month) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            const activeBtn = document.querySelector(`.tab-btn[data-month="${month}"]`);
+            if (activeBtn) activeBtn.classList.add('active');
+            
+            const monthText = month;
+            currentMonth = month;
+            
+            const titleMonth = document.getElementById('titleMonth');
+            const vizMonthText = document.getElementById('vizMonthText');
+            if(titleMonth) titleMonth.innerText = monthText;
+            if(vizMonthText) vizMonthText.innerText = monthText;
+            
+            const tbody = document.getElementById('tableBody');
+            const tfoot = document.getElementById('tableFoot');
+            tbody.style.opacity = 0;
+            tfoot.style.opacity = 0;
+            
+            setTimeout(() => {
+                renderTable(month);
+                updateMainChart();
+                tbody.style.opacity = 1;
+                tfoot.style.opacity = 1;
+            }, 200);
+        }
+
+        let mainChart = null;
+
+        function fmtSmart(val, unit = '천원') {
+            if (val === 0) return '0';
+            if (unit === '천원' && val >= 1000) {
+                // 천원 단위 데이터이므로 1000이면 1,000,000원임.
+                // 1000 이상이면 백만 단위로 환산 (천원 -> 백만원)
+                return (val / 1000).toFixed(1) + '백만원';
+            }
+            return val.toLocaleString() + unit;
+        }
+
+        function toggleViz() {
+            const content = document.getElementById('viz-content');
+            const btn = document.querySelector('.toggle-viz-btn');
+            const isCollapsed = content.style.height === '0px';
+
+            if (isCollapsed) {
+                content.style.height = '350px';
+                btn.innerHTML = '<i class="fas fa-chevron-up"></i> <span>시각화 접기</span>';
+                btn.classList.remove('collapsed');
+            } else {
+                content.style.height = '0px';
+                btn.innerHTML = '<i class="fas fa-chevron-down"></i> <span>시각화 펼치기</span>';
+                btn.classList.add('collapsed');
+            }
+        }
+
+        function updateMainChart() {
+            const ctx = document.getElementById('mainChart').getContext('2d');
+            const metric = document.getElementById('chartMetricSelect').value;
+            let labels = [];
+            let targets = [];
+            let actuals = [];
+            let rates = [];
+
+            if (currentView === 'renewal') {
+                const data = tableData[currentMonth].rows;
+                labels = data.map(r => r.name);
+                targets = data.map(r => r[metric][0]);
+                actuals = data.map(r => r[metric][2]);
+                rates = data.map(r => r[metric][0] > 0 ? Math.round((r[metric][2] / r[metric][0]) * 100) : 0);
+            } else if (currentView === 'pre-retention') {
+                const data = preRetentionData.rows;
+                labels = data.map(r => r.name);
+                if (metric === 'share') {
+                    rates = data.map(r => r.share);
+                    actuals = data.map(r => r.done);
+                } else {
+                    actuals = data.map(r => r.target);
+                }
+            } else if (currentView === 'termination') {
+                const data = terminationData.rows;
+                labels = data.map(r => r.name);
+                if (metric === 'rate') {
+                    rates = data.map(r => r.rate);
+                    targets = data.map(r => r.target);
+                    actuals = data.map(r => r.actual);
+                } else {
+                    actuals = data.map(r => r.actual);
+                }
+            } else if (currentView === 'summary' || currentView === 'renewal') {
+                const base = tableData['1Q 합계'] ? tableData['1Q 합계'].rows : [];
+                labels = base.map(r => r.name);
+                if (metric === 'total' || metric === 'share' || metric === 'new' || metric === 'renew' || metric === 'expire') {
+                    const mKey = (metric === 'total' || metric === 'share') ? 'total' : metric;
+                    rates = base.map(r => (r[mKey][0] === 0 ? 0 : Math.round((r[mKey][2] / r[mKey][0]) * 100)));
+                    targets = base.map(r => r[mKey][0]);
+                    actuals = base.map(r => r[mKey][2]);
+                } else if (metric === 'retention') {
+                    const retData = preRetentionData ? preRetentionData.rows : [];
+                    rates = retData.map(r => r.share || 0);
+                    actuals = retData.map(r => r.done || 0);
+                } else if (metric === 'suspension') {
+                    const suspData = suspensionData ? suspensionData.rows : [];
+                    rates = suspData.map(r => {
+                        const m = r.total ? r.total.match(/\((.*)%\)/) : null;
+                        return m ? parseFloat(m[1]) : 0;
+                    });
+                    // Extract count from "70(0.55%)"
+                    actuals = suspData.map(r => {
+                        if (r.total_c) return r.total_c;
+                        const m = r.total ? r.total.match(/^(\d+)/) : null;
+                        return m ? parseInt(m[1]) : 0;
+                    });
+                    labels = suspData.map(r => r.name);
+                }
+            }
+
+            const dynamicMaxY1 = rates.length > 0 ? Math.max(120, Math.ceil((Math.max(...rates) + 20) / 20) * 20) : 120;
+
+            const createGradient = (color1, color2) => {
+                const grad = ctx.createLinearGradient(0, 0, 0, 300);
+                grad.addColorStop(0, color1);
+                grad.addColorStop(1, color2);
+                return grad;
+            };
+
+            const blueGrad = createGradient('rgba(59, 130, 246, 0.9)', 'rgba(37, 99, 235, 0.7)');
+            const greenGrad = createGradient('rgba(34, 197, 94, 0.9)', 'rgba(22, 163, 74, 0.7)');
+            const orangeGrad = createGradient('rgba(249, 115, 22, 0.9)', 'rgba(234, 88, 12, 0.7)');
+            const grayGrad = createGradient('rgba(203, 213, 225, 0.8)', 'rgba(148, 163, 184, 0.6)');
+
+            const datasets = [];
+            
+            if (rates.length > 0) {
+                datasets.push({
+                    label: `달성률 (%)`,
+                    data: rates,
+                    type: 'line',
+                    borderColor: currentView === 'pre-retention' ? '#f97316' : '#2563eb',
+                    borderWidth: 3,
+                    tension: 0.4,
+                    pointBackgroundColor: '#fff',
+                    yAxisID: 'y1',
+                    datalabels: {
+                        align: 'top',
+                        color: currentView === 'pre-retention' ? '#ea580c' : '#e11d48',
+                        font: { weight: '800', size: 11 },
+                        formatter: (v) => v > 0 ? v + '%' : ''
+                    }
+                });
+            }
+
+            if (targets.length > 0) {
+                datasets.push({
+                    label: `목표`,
+                    data: targets,
+                    backgroundColor: currentView === 'termination' ? orangeGrad : grayGrad,
+                    borderRadius: 6,
+                    datalabels: { display: false }
+                });
+            }
+
+            if (actuals.length > 0) {
+                datasets.push({
+                    label: `실적`,
+                    data: actuals,
+                    backgroundColor: currentView === 'termination' ? blueGrad : (rates.length > 0 ? rates.map(r => r >= 100 ? greenGrad : blueGrad) : blueGrad),
+                    borderRadius: 6,
+                    datalabels: {
+                        anchor: 'end',
+                        align: 'top',
+                        color: '#475569',
+                        font: { weight: '700', size: 10 },
+                        formatter: (v) => v > 0 ? (currentView === 'termination' ? v + '%' : v.toLocaleString()) : ''
+                    }
+                });
+            }
+
+            const chartData = { labels: labels, datasets: datasets };
+
+            if (mainChart) {
+                mainChart.data = chartData;
+                mainChart.options.scales.y1.max = dynamicMaxY1;
+                mainChart.update();
+            } else {
+                mainChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: chartData,
+                    plugins: [ChartDataLabels],
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        layout: { padding: { top: 30, left: 10, right: 10 } },
+                        scales: {
+                            x: { 
+                                grid: { display: false },
+                                border: { display: false },
+                                ticks: { font: { weight: '600' } }
+                            },
+                            y: {
+                                beginAtZero: true,
+                                border: { display: false },
+                                grid: { color: '#f1f5f9' },
+                                ticks: { 
+                                    font: { size: 10 },
+                                    callback: v => v >= 1000 ? (v / 1000) + 'M' : v
+                                }
+                            },
+                            y1: {
+                                position: 'right',
+                                beginAtZero: true,
+                                max: dynamicMaxY1,
+                                border: { display: false },
+                                grid: { display: false },
+                                ticks: { 
+                                    font: { size: 10 },
+                                    callback: v => v + '%'
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: { 
+                                position: 'bottom', 
+                                align: 'center',
+                                labels: { 
+                                    boxWidth: 8, 
+                                    usePointStyle: true,
+                                    padding: 20,
+                                    font: { size: 12, weight: '600' } 
+                                } 
+                            },
+                            tooltip: {
+                                padding: 12,
+                                backgroundColor: 'rgba(15, 23, 42, 0.9)',
+                                titleFont: { size: 14, weight: '800' },
+                                bodyFont: { size: 13 },
+                                cornerRadius: 10,
+                                callbacks: {
+                                    label: function(context) {
+                                        let label = context.dataset.label || '';
+                                        if (label) label += ': ';
+                                        if (context.dataset.type === 'line') label += context.raw + '%';
+                                        else label += fmtSmart(context.raw);
+                                        return label;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        }
+
+        // 액세스 관리 설정
+        const CONFIG = {
+            LIMIT_DATE: "2026-12-31", // Updated limit date to end of year
+            ADMIN_CODE: "0303",      // Master Admin Code added
+            CODE_PREFIX: "0303",     // Prefix for dynamic month code
+            STORAGE_KEY: 'dashboard_access_approved_2026',
+            KAKAO_LINK: "https://invite.kakao.com/tc/GfDLhXls01"
+        };
+
+        function checkExpiration() {
+            const isApproved = localStorage.getItem(CONFIG.STORAGE_KEY) === 'true';
+            const today = new Date().toISOString().split('T')[0];
+
+            if (today > CONFIG.LIMIT_DATE && !isApproved) {
+                document.getElementById('lock-screen').style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function verifyAccess() {
+            const input = document.getElementById('accessCode').value;
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const dynamicCode = CONFIG.CODE_PREFIX + year + month;
+
+            // Allow Master 0303 or dynamic monthly code
+            if (input === CONFIG.ADMIN_CODE || input === dynamicCode) {
+                localStorage.setItem(CONFIG.STORAGE_KEY, 'true');
+                document.getElementById('lock-screen').style.opacity = '0';
+                setTimeout(() => {
+                    document.getElementById('lock-screen').style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }, 300);
+            } else {
+                const errorMsg = document.getElementById('error-msg');
+                errorMsg.style.display = 'block';
+                const lockBox = document.querySelector('.lock-box');
+                lockBox.classList.add('shake');
+                setTimeout(() => lockBox.classList.remove('shake'), 500);
+            }
+        }
+
+        function requestLicense() {
+            if (CONFIG.KAKAO_LINK && CONFIG.KAKAO_LINK !== "" && !CONFIG.KAKAO_LINK.includes("YOUR_LINK")) {
+                window.open(CONFIG.KAKAO_LINK, '_blank');
+            } else {
+                toggleContact();
+            }
+        }
+
+        function toggleContact() {
+            const info = document.getElementById('contact-info');
+            info.style.display = info.style.display === 'block' ? 'none' : 'block';
+        }
+
+        window.logout = function() {
+            if (confirm('로그아웃 하시겠습니까?')) {
+                if (typeof TrackingManager !== 'undefined') {
+                    TrackingManager.log('LOGOUT');
+                }
+                localStorage.removeItem('sales_dashboard_session');
+                location.href = 'login.html';
+            }
+        };
+
+        window.onload = () => {
+            checkExpiration();
+            
+            const urlParams = new URLSearchParams(window.location.search);
+            const viewParam = urlParams.get('view');
+            
+            if (viewParam === 'termination') {
+                switchView('termination');
+            } else if (viewParam === 'pre-retention') {
+                switchView('pre-retention');
+            } else {
+                switchView('renewal');
+            }
+        };
+    </script>
+
+    <div style="position: fixed; bottom: 15px; right: 20px; font-size: 11px; color: #94a3b8; font-weight: 500; font-family: 'Segoe UI', sans-serif; opacity: 0.8; z-index: 9999; pointer-events: none;">
+        Developed by SE-EUN Daddy
+    </div>
 </body>
+
 </html>

@@ -638,11 +638,11 @@
             </div>
 
             <div class="kpi-box">
-                <div class="kpi-header bg-green" onclick="location.href='index.html?view=pre-retention'">② 사전리텐션 활동 (방문율 관리)</div>
+                <div class="kpi-header bg-green" onclick="location.href='index.html?view=pre-retention'">② 사전리텐션 활동현황 (방문율 관리)</div>
                 <div class="steps-wrapper">
                     <div class="step">
                         <div class="hexagon hex-1">3월</div>
-                        <div class="data-card"><span class="val">231건/155건</span><span class="pct">(67%)</span></div>
+                        <div class="data-card"><span class="val">231건/176건</span><span class="pct">(76%)</span></div>
                     </div>
                 </div>
             </div>
@@ -651,7 +651,7 @@
         <div class="table-section">
             <div class="table-header-control">
                 <h2 class="table-title">사전리텐션 활동현황 상세</h2>
-                <div class="meta-info">집계일자 : 2026. 03. 30 기준</div>
+                <div class="meta-info">집계일자 : 2026. 03. 31 기준</div>
             </div>
             <div class="table-scroll">
                 <table>
@@ -678,16 +678,16 @@
     <script>
         const preRetentionData = {
             rows: [
-                { name: "중앙", target: 36, done: 15, received: 18, pending: 3, share: 42 },
+                { name: "중앙", target: 36, done: 17, received: 16, pending: 3, share: 47 },
                 { name: "강북", target: 26, done: 17, received: 9, pending: 0, share: 65 },
                 { name: "서대문", target: 26, done: 20, received: 6, pending: 0, share: 77 },
-                { name: "고양", target: 22, done: 13, received: 9, pending: 0, share: 59 },
-                { name: "의정부", target: 39, done: 38, received: 1, pending: 0, share: 97 },
+                { name: "고양", target: 22, done: 20, received: 2, pending: 0, share: 91 },
+                { name: "의정부", target: 39, done: 39, received: 0, pending: 0, share: 100 },
                 { name: "남양주", target: 24, done: 13, received: 11, pending: 0, share: 54 },
-                { name: "강릉", target: 22, done: 17, received: 5, pending: 0, share: 77 },
-                { name: "원주", target: 36, done: 22, received: 13, pending: 1, share: 61 }
+                { name: "강릉", target: 22, done: 18, received: 4, pending: 0, share: 82 },
+                { name: "원주", target: 36, done: 32, received: 4, pending: 0, share: 89 }
             ],
-            footer: { target: 231, done: 155, received: 72, pending: 4, share: 67 }
+            footer: { target: 231, done: 176, received: 52, pending: 3, share: 76 }
         };
 
         function getBadge(target, actual) {
